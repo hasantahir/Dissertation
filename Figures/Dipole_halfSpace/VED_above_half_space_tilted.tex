@@ -1,0 +1,129 @@
+    \documentclass{article}
+    \usepackage{verbatim}
+
+    \usepackage{tikz}   %TikZ is required for this to work.  Make sure this exists before the next line
+
+    \usepackage{tikz-3dplot} %requires 3dplot.sty to be in same directory, or in your LaTeX installation
+    \usetikzlibrary{%
+        decorations.pathreplacing,%
+        decorations.pathmorphing%
+    }
+    \usepackage[active,tightpage]{preview}  %generates a tightly fitting border around the work
+    \PreviewEnvironment{tikzpicture}
+    \setlength\PreviewBorder{2mm}
+
+    \begin{document}
+
+    %Angle Definitions
+    %-----------------
+
+    %set the plot display orientation
+    %syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
+    % \tdplotsetmaincoords{60}{00}
+
+    %define polar coordinates for some vector
+    %TODO: look into using 3d spherical coordinate system
+    \pgfmathsetmacro{\rvec}{1}
+    \pgfmathsetmacro{\thetavec}{60}
+    \pgfmathsetmacro{\phivec}{60}
+
+    %start tikz picture, and use the tdplot_main_coords style to implement the display 
+    %coordinate transformation provided by 3dplot
+    \begin{tikzpicture}[scale=2,tdplot_main_coords]
+
+    %set up some coordinates 
+    %-----------------------
+    \coordinate (O) at (0,0,0);
+
+    %set up some lengths 
+    %-----------------------
+    \pgfmathsetmacro{\len}{2}
+    \pgfmathsetmacro{\h}{.5}
+    \pgfmathsetmacro{\l}{.25}
+
+    %determine a coordinate (P) using (r,\theta,\phi) coordinates.  This command
+    %also determines (Pxy), (Pxz), and (Pyz): the xy-, xz-, and yz-projections
+    %of the point (P).
+    %syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
+    \tdplotsetcoord{P}{\rvec}{\thetavec}{\phivec}
+
+    %draw figure contents
+    %--------------------
+
+    \tikzset{facestyle/.style={fill=lightgray,draw=black,thin,dashed, line join=round}}
+    % face "back" 
+    \begin{scope}[canvas is zy plane at x=-\len]
+      \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
+    \end{scope}
+    % face  "left"
+    \begin{scope}[canvas is zx plane at y=-\len]
+      \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
+    \end{scope}
+    % face "front"
+    \begin{scope}[canvas is zy plane at x=\len]
+      \path[facestyle, shade] (-.5,-\len) rectangle (0,\len);
+    \end{scope}
+    % face  "right"
+    \begin{scope}[canvas is zx plane at y=\len]
+      \path[facestyle, shade] (-.5,-\len) rectangle (0,\len);
+    \end{scope}
+    % face "top" 
+    \begin{scope}[canvas is yx plane at z =0]
+     \path[facestyle] (-\len,-\len) rectangle (\len,\len);
+    \end{scope}
+
+    %draw the main coordinate system axes
+    \draw[thick,->] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
+    \draw[thick,->] (0,0,0) -- (0,1,0) node[anchor=north west]{$y$};
+    \draw[thick,->] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
+
+    %draw the negative coordinate system axes
+    \draw[thick,dashed] (0,0,0) -- (-1,0,0);
+    \draw[thick,dashed] (0,0,0) -- (0,-1,0);
+    % \draw[thick,dashed] (0,0,0) -- (0,0,-.5);
+
+% 
+  % 
+    % draw the Dipole
+    \draw[-stealth,very thick, color=red] (0,0,\h - \l/2) -- (0,0,\h + \l/2) node[anchor=east, color = black]{$h$};
+        % \draw[-stealth,very thick, color=red] (0,0,\h) -- (0,0,\h) node[anchor=south]{$h$};
+    % 
+    % 
+
+    %draw a vector from origin to point (P) 
+    \draw[-stealth,color=black] (O) -- (P) node[anchor=south]{$P$};
+
+    % %draw projection on xy plane, and a connecting line
+    % \draw[dashed, color=red] (O) -- (Pxy);
+    % \draw[dashed, color=red] (P) -- (Pxy);
+
+    %draw the angle \phi, and label it
+    % %syntax: \tdplotdrawarc[coordinate frame, draw options]{center point}{r}{angle}{label options}{label}
+    % \tdplotdrawarc{(O)}{0.2}{0}{\phivec}{anchor=north}{$\phi$}
+
+
+    %set the rotated coordinate system so the x'-y' plane lies within the
+    %"theta plane" of the main coordinate system
+    %syntax: \tdplotsetthetaplanecoords{\phi}
+    \tdplotsetthetaplanecoords{\phivec}
+
+    %draw theta arc and label, using rotated coordinate system
+    % \tdplotdrawarc[tdplot_rotated_coords]{(0,0,0)}{0.5}{0}{\thetavec}{anchor=south west}{$\theta$}
+
+    %draw some dashed arcs, demonstrating direct arc drawing
+    % \draw[dashed,tdplot_rotated_coords] (\rvec,0,0) arc (0:90:\rvec);
+    % \draw[dashed] (\rvec,0,0) arc (0:90:\rvec);
+
+    %set the rotated coordinate definition within display using a translation
+    %coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+    %syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+    \tdplotsetrotatedcoords{\phivec}{\thetavec}{0}
+
+    %translate the rotated coordinate system
+    %syntax: \tdplotsetrotatedcoordsorigin{point}
+    \tdplotsetrotatedcoordsorigin{(P)}
+
+
+    \end{tikzpicture}
+
+    \end{document}

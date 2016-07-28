@@ -1,0 +1,260 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+%\usepackage{color}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{datetime}
+\usetikzlibrary{decorations.markings}
+\graphicspath{}
+\usepackage{mathptmx}
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palatino needs more leading (space between lines)
+%\usepackage[T1]{fontenc}
+%\usepackage{pxfonts}
+
+
+%\usepackage{euler}
+%\usepackage{eucal}
+
+
+%----Version------
+%\usepackage[hundred, xspace]{vrsion}
+%\keepversion
+%------------------------------------------------------------
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{problem}{Problem}
+\newtheorem{remark}{Remark}
+
+\newcommand{\twopartdef}[4]
+{
+	\left\{
+		\begin{array}{ll}
+			#1 & \mbox{if } #2 \\
+			#3 & \mbox{if } #4
+		\end{array}
+	\right.
+}
+
+\begin{document}
+\title{\textsc{Notes on Complex Analysis}\\}
+\author{Hasan Tahir Abbas}
+\date{January 6, 2016\footnote{Last Modified: \currenttime, \today.}}
+%Version: \version
+\maketitle
+This monograph is sort of a crash course in Complex Analysis entirely based on study notes of \cite{ablowitz2003complex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{\textbf{Definitions}} %
+
+
+
+
+\subsection*{Mapping}
+
+Graphs of the form $y = f(x)$ nicely represent a one-dimensional real variable \textbf{mapping} or \textbf{transformation}. However, in the complex plane, such visualization is difficult to make due to the fact there are four dimensions involved in the transformation (two real, two imaginary). 
+
+\subsection*{Analyticity of functions} 
+
+All we need (in the mathematical jargon \textbf{necessary condition}) for a function to be analytic is to satisfy the \emph{Cauchy-Riemann conditions}.
+
+\begin{equation}
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \frac{\partial v}{\partial x} = - \frac{\partial u}{\partial y}
+\end{equation}
+
+\subsection*{Multivalued Functions} 
+
+This is the biggest issue that requires us to take extra care while dealing with complex functions. For a complex function $w = f(z)$, we get two values of $w$ for a given value of $z$. The example that we'll be dealing with the most in this work is the square-root function.
+%\begin{equation}
+$$
+w = \sqrt{z}
+$$
+%\end{equation}
+
+\subsection*{Branch point} 
+
+A direct consequence of multivaluedness of a complex function, a point where the complex function becomes discontinuous is called a \emph{branch point}.
+\begin{equation}
+w = z^\frac{1}{2} = r^\frac{1}{2} e^{i \frac{\theta}{2}}e^{\pi i n} 
+\end{equation}
+
+A branch point can be identified by following these steps:
+\begin{itemize}
+\item Substitute $ z = r e^{j \theta}$
+\item Check for the value of function at $ \theta = 0$ and $ \theta = 2 \pi$ 
+\item A sign change leads to a branch point
+\end{itemize}
+\begin{quotation}
+An important consequence of the multivaluedness of $w$ is that as $z$ traverses
+a small circuit around $z = 0$, $w$ does not return to its original value. Indeed,
+suppose we start at $ z = \epsilon$ for real $\epsilon > 0$. Let us see what happens to $w$ as
+we return to this point after going around a circle with radius $\epsilon$. Let $n = 0$.
+When we start, $\theta_p = 0$ and $w = \sqrt{\epsilon}$;
+when we return to $z = \epsilon$, $\theta_p = 2\pi$ and
+$ w = \sqrt{\epsilon} e^{\frac{2\pi i}{2}} =  − \sqrt{\epsilon}$.
+We note that the value $− \sqrt{\epsilon}$ can also be obtained from
+$\theta_p = 0$ provided we take $n = 1$. In other words, we started with a value $w$
+corresponding to $n = 0$ and ended up with a value $w$ corresponding to $n = 1!$
+(Any even/odd values of $n$ suffice for this argument.) The point $z = 0$ is called
+a branch point. \\ \\
+(pg. 46 \emph{Complex Variables} book by Ablowitz and Fokas [2003])
+\end{quotation}
+
+
+\subsection*{Branch cut} 
+
+In order to solve the literally complex problem of analyzing (esp. integrating) of complex functions, special care needs to be taken to avoid multivaluedness of complex numbers. This is done with carefully tackling the branch points to avoid any sign change problems. The way to deal with problem is to divide the problem into regions such that the function in each region is single-valued and continuous. Such regions are called \textbf{branches} of the multivalued function and the boundaries are called branch cuts.
+
+It should be noted that a branch cut must end at the branch points. Its location in the complex plane is not unique.
+
+\begin{quotation}
+If a circuit is made around a sufficiently small, simple closed contour enclosing the branch point,
+then the value assumed by the function at the end of the circuit differs from
+its initial value. A branch point is an example of a nonisolated singular point,
+because a circuit (no matter how small) around the branch point results in a
+discontinuity. We also recall that in order to make a multivalued function $f(z)$
+single-valued, we must introduce a branchcut. Since $f(z)$ has a discontinuity
+across the cut, we shall consider the branch cut as a singular curve (it is
+not simply a point). However, it is important to recognize that a branch cut
+may be moved, as opposed to a branch point, and therefore the nature of its
+singularity is somewhat artificial.
+\\ \\
+(pg. 151 \emph{Complex Variables} book by Ablowitz and Fokas [2003])
+\end{quotation}
+
+
+
+\subsection*{Riemann Surface}
+
+An intuitive way to visualize the branches of a complex function is to consider each of them to be in a different complex plane. As an example, since the square-root function has to branches, they will lie in two different planes. Each plane is called the \emph{Riemann sheet} and we call the complete illustration, a Riemann surface.
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Contour Integration}
+
+
+
+\subsubsection*{Cauchy's Thoerem}
+
+An extension of the \emph{Fundamental Theorem of Calculus}, one of the ways in which it can be stated is that the closed contour integral of a complex analytic function is zero.
+\begin{equation}
+\oint \limits_C f(z) dz = 0
+\end{equation}
+
+Alternately, it can also be said an integral of a complex analytic function is independent of the contour followed. The contour has a constraint that it must be \textbf{simply connected}.
+
+\subsubsection*{Cauchy's Integral Formula}
+
+For an analytic function $f(z)$ lying in the interior of a simply connected contour $C$. Then at any point $z$,
+
+\begin{equation}
+ f(z)  = \frac{1}{2\pi i} \oint \limits_C \frac{f(\zeta)}{\zeta - z} d\zeta
+\end{equation}
+
+\subsubsection*{Cauchy's Integral Formula involving derivative}
+
+\begin{equation}
+ f^{(k)}(z)  = \frac{k!}{2\pi i} \oint \limits_C \frac{f(\zeta)}{(\zeta - z)^{(k+1)}} d\zeta
+\end{equation}
+
+
+
+\section*{Singularities of Complex Functions}
+
+
+A complex function becomes singular at a point at which it is no longer analytic. To define a singularity, a branch at which the function is single-valued needs to be selected. A non-removable singularity is called a \emph{pole}.
+
+\subsection*{Entire function}
+
+Theoretically speaking, no function is analytic everywhere except a constant. We put a restriction by making the $z-$plane finite over which the function is analytic. Such a function is called entire. A entire function having poles is called a \textbf{meromorhpic function}.
+
+\subsubsection*{Cauchy Residue Theorem}
+
+For an analytic function $f(z)$ inside a simply connected closed contour $C$, except for a finite number of isolated singular points $z_1, ..., z_N$ located inside $C$, we have,
+\begin{equation}
+\oint \limits_C f(z) d(z) = 2 \pi i \sum_{j = 1}^N a_j
+\end{equation}
+where $a_j$ is the corresponding residue of the $jth$ singular point.
+
+\subsection*{\color{red}Jordan's Lemma}
+
+Frivolously used through \emph{Sommerfeld Integral Analysis}, Jordan's Lemma is an important extension of the Residual Theorem that says that for a function of the form $f(z) e^{j k z}$, the following integral is zero as long as the the limit at $\infty$ of the function is zero:
+
+\begin{equation}
+\int \limits_{-\infty}^{\infty} f(z) e^{j k z} d(z) = 0
+\end{equation}
+where $k > 0$. Here the integral is evaluated at the upper infinite semi-circle.
+
+\subsection*{Turgenev: First Love}
+\subsection*{Turgenev: Asya}
+
+
+\subsection*{Pippa Wright: Unsuitable Men} A woman breaks up 
+with her boyfriend and then dates a few men, most of which she
+thinks are unsuitable in one way or the other. She starts 
+feeling ambivalent for a handsome man who is working odd jobs
+at her aunt's place---finally she starts going out with him.
+
+\subsection*{Sarah Rayner: One Moment, One Morning}
+Story of three women living in Brighton. One of them is 
+Karen, married with two young kids. Her husband dies in a 
+train one morning. This tragic incident is observed by Lou, a 
+gay woman in her early thirties who is struggling with 
+'coming out' in front of her mum. The third woman is
+Anna, Karen's best friend and a middle aged woman who is 
+struggling with her relatively younger, gorgeous drunkard
+boyfriend. During a visit to her mum's place, Lou finally 
+comes out while Karen continues to struggle with her life
+without her loving husband. Anna breaks up with her 
+boyfriend after he gets drunk at the funeral.
+
+
+\subsection*{Iqbal: The Reconstruction of Religious Thoughts in Islam}
+
+\section*{Translations}
+\subsection*{The Count of Monte Cristo}
+\subsection*{The Three Musketeers}
+\subsection*{Great Expectations}
+\subsection*{AlTayyeb Saleh: A Season of Migration to the North}
+\section*{Urdu}
+\subsection*{Mushtaq Ahmad Yousfui: Aab-e-Gum}
+\subsection*{Mumtaz Mufti: Ali Pur Ka Aili}
+\subsection*{Qudratullah Shahab: Shahab Namah}
+\subsection*{Ashfaq Ahmad: Tota Kahani}
+\subsection*{Bano Qudsiya: Raja Gidh}
+\subsection*{Naseem Hijazi: Muhammad Bin Qasim}
+I think this was the first novel I ever read. I was
+very young then, so much so that I was probably not
+supposed to have acquired any serious reading 
+skills by then. And I actually don't remember
+much about that part of my life any more.  However, part of 
+my subconscious chose to keep a very vivid memory of 
+how I picked this book from a 
+green coloured plastic box filled with random books, some 
+on chemistry and some on medicine, belonging to my father
+and mother respectively. I started reading it and I still 
+remember the feeling of being hooked to something, for the 
+very first time.
+
+
+
+\bibliographystyle{plain}
+\bibliography{biblioList}
+\end{document}

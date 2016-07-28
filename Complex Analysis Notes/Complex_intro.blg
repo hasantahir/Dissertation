@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Complex_intro.aux
+The style file: plain.bst
+I couldn't open database file biblioList.bib
+---line 4 of file Complex_intro.aux
+ : \bibdata{biblioList
+ :                    }
+I'm skipping whatever remains of this command
+I found no database files---while reading file Complex_intro.aux
+Warning--I didn't find a database entry for "ablowitz2003complex"
+(There were 2 error messages)
