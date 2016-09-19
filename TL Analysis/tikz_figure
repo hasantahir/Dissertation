@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\author{Hasan Tahir Abbas}
+\usepackage{graphicx}
+%\usepackage{epstopdf}
+\usepackage{pgfplots}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{amsmath}
+%\usepackage{tikzpicture}
+\usepackage[americanresistors,americaninductors]{circuitikz}
+\usepackage{standalone}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\pgfplotsset{compat=1.13}
+\tikzset{every picture/.append style={font=\normalsize}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  \begin{figure}
+    \centering
+    \subfloat{
+    % \centering
+    {\includestandalone[width=\textwidth]{figures/xsystem}}
+    }
+    \newline
+    \caption{Cubic Spline Interpolation of a traveling car with fixed ends}
+    \label{fig:Car_fixed}
+  \end{figure}
+\end{document}

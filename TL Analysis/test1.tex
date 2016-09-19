@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+% \usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+% Personal definitions
+\newcommand{\v}[1]{\mathbf{#1}} % vectors
+\newcommand{\t}[1]{\tilde{#1}} % spectral representation
+\renewcommand{\w}{\omega}  % omega
+\renewcommand{\e}{\varepsilon}  % epsilon
+\renewcommand{\u}{\mu}  % mu
+\renewcommand{\p}{\rho}  % rho
+
+\begin{document}
+  \title{\textsc{Equivalent Tranmission Line Models for Layered Structures with Sources}\\}
+  \date{\footnote{Last Modified: \currenttime, \today.}}
+  \maketitle
+  We consider a multilayered structure with piece-wise material that is assumed unbounded in the tranverse direction
+  \begin{subequations}
+    \begin{align}
+      \nabla\times{\v E} ={}& -j \w \u \v{H} -\v{M},
+      \label{eq:E}\\
+      \nabla\times{\v H} ={}& j \w \e \v{E} + \v{J}.
+      \label{eq:H}
+    \end{align}
+    \label{eq:MaxE}
+  \end{subequations}
+
+  For boundary-value problems involving planarly multilayer structures displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\nabla}$ operator into two components, one $\dv{}{z}$ and the other to a transverse (to z) operator, $\v{\nabla_t}$ \cite[p. 64]{felsen1994radiation}. The analysis can be simplified by taking Fourier transform represented by the operator $\mathcal{F}$, in both $x$ and $y$ directions. This transforms the $\v{\nabla}$ operator to $-j k_x \v{\hat{x}} - j k_y \v{\hat{y}} + \v{\hat{z}}\dv{}{z}$ containing only a single derivative in $z$.
+  The Fourier transform along with its inverse is defined as:
+
+  \begin{subequations}
+    \begin{align}
+      \mathcal{F}[f(\v{r})] \equiv \t{f}(\v{k_{\p}},z) ={}& \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}
+      f(\v{r}) \exp(-j \v{k_{\p}} \cdot \v{\p}) dx dy
+      \label{eq:Fourier}\\
+      \mathcal{F}^{-1}[\t{f}(\v{k_{\p}},z)] \equiv f(\v{r}) ={}& \frac{1}{(2\pi)^2} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \t{f}(\v{k_{\p}},z)
+      \exp(j \v{k_{\p}} \cdot \v{\p}) dk_x dk_y
+      \label{eq:IFourier}
+    \end{align}
+    \label{eq:FT}
+  \end{subequations}
+  where,
+  \begin{equation}
+    \v{\p} = x\v{\hat{x}} + y\v{\hat{y}},
+    \v{k_{\p}} = k_x\v{\hat{x}} + k_y\v{\hat{y}},
+  \end{equation}
+  and the $~$ above indicates the Fourier transform with respect to the transverse coordinates.
+
+  As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates since as we shall shortly, the longitudinal component can be completely described in terms of the transverse one. Taking the Fourier transform of the Maxwell's equation (\ref{eq:MaxE}), we obtain:
+
+  \begin{subequations}
+    \begin{align}
+      \left(-j\v{k_{\p}} + \v{\hat{z}} \dv{}{z} \right)\times (\v{\t{E}_t} + \v{\t{E}_z})  ={}& -j \w \u (\v{\t{H}_t} + \v{\t{H}_z}) -
+      (\v{\t{M}_t} + \v{\t{M}_z}),
+      \label{eq:FT_E}\\
+      \left(-j\v{k_{\p}} + \v{\hat{z}} \dv{}{z} \right)\times (\v{\t{H}_t} + \v{\t{H}_z})  ={}& j \w \e (\v{\t{E}_t} + \v{\t{E}_z}) -
+      (\v{\t{J}_t} + \v{\t{J}_z}),
+      \label{eq:FT_H}
+    \end{align}
+    \label{eq:FT_MaxE}
+  \end{subequations}
+
+  Separating the transverse and longitudinal components in (\ref{eq:FT_E}), we write:
+
+  \begin{subequations}
+    \begin{align}
+      -j\v{k_{\p}} \times \v{\t{E}_z} +
+      \dv{}{z}\v{\hat{z}} \times \v{\t{E}_t} ={}&
+      -j \w \u \v{\t{H}_t} -
+      \v{\t{M}_t},
+      \label{eq:FT_TE}\\
+      -j\v{k_{\p}} \times \v{\t{E}_t} ={}&
+      -j \w \u \v{\t{H}_z} -
+      \v{\t{M}_z},
+      \label{eq:FT_LE}
+    \end{align}
+    \label{eq:FT_TLE}
+  \end{subequations}
+
+  Using the vector cross product property \cite[p. 117]{fang2009antenna},
+  \begin{equation}
+    \v{A}\times\v{B} =\v{A}\cdot (\v{B} \times \v{\hat{n}})\v{\hat{n}}
+    \label{eq:vec}
+  \end{equation}
+  where the unit vector $\v{\hat{n}}$ is normal to the plane containing vectors $\v{A}$ and $\v{B}$, we obtain a scalar form of the longitudinal component of the electric field. Applying the aforementioned property on (\ref{eq:FT_LE}), we get:
+
+  \begin{equation}
+    -j \v{k_{\p}} \cdot (\v{\t{E}_t} \times \v{\hat{z}})\v{\hat{z}} =
+    -j \w \u \v{\t{H}_z} - \v{\t{M}_z}
+    \label{eq:FT_sLE}
+  \end{equation}
+
+  Scalar representation of (\ref{eq:FT_sLE}) gives us:
+
+  \begin{equation}
+    -j \w \u \t{H}_z =
+    -j \v{k_{\p}} \cdot (\v{\t{E}_t} \times \v{\hat{z}}) + {\t{M}_z}
+    \label{eq:sLH}
+  \end{equation}
+
+  Taking cross product with unit vector $\v{\hat{z}}$ on both sides, the transverse electric field component can be expressed as:
+
+  \begin{equation}
+    \begin{split}
+      \dv{\v{\t{E}_t}}{z} = -j (\v{k_{\p}} \times \v{\t{E}_z}) \times \v{\hat{z}}
+      -j \w \u \v{\t{H}_t} \times \v{\hat{z}}  -
+      \v{\t{M}_t} \times \v{\hat{z}} \\
+      = -j \v{k_{\p}} \t{{E}_z} -j \w \u \v{\t{H}_t} \times \v{\hat{z}}  -
+      \v{\t{M}_t} \times \v{\hat{z}}
+    \end{split}
+    \label{eq:dFT_ET}
+  \end{equation}
+
+  where the BAC-CAB vector triple product identity, $(\v{A} \times \v{B})\times\v{C} = \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been used.
+
+  Following similar procedure beginning with (\ref{eq:FT_H}), we obtain the transverse magnetic field and scalar longitudinal component of the electric field.
+
+  \begin{equation}
+    \begin{split}
+      \dv{\v{\t{H}_t}}{z} = -j (\v{k_{\p}} \times \v{\t{H}_z}) \times \v{\hat{z}}
+      + j \w \e \v{\t{E}_t} \times \v{\hat{z}} +
+      \v{\t{J}_t} \times \v{\hat{z}} \\
+      = -j \v{k_{\p}} \t{{H}_z} + j \w \e \v{\t{E}_t} \times \v{\hat{z}}  +
+      \v{\t{J}_t} \times \v{\hat{z}}
+    \end{split}
+    \label{eq:dFT_HT}
+  \end{equation}
+
+  \begin{equation}
+    -j \w \e \t{E}_z =
+    j \v{k_{\p}} \cdot (\v{\t{H}_t} \times \v{\hat{z}}) + {\t{J}_z}
+    \label{eq:sLE}
+  \end{equation}
+
+  Substituing (\ref{eq:sLE}) into (\ref{eq:dFT_ET}) we get:
+
+  \begin{equation}
+    \dv{\v{\t{E}_t}}{z} =
+    \frac{1}{j \w \e} \left( k^2 - \v{k_{\p}}\v{k_{\p}} \cdot \right) (\v{\t{H}_t} \times \v{\hat{z}}) + \v{k_{\p}} \frac{\t{J}_z}{\w \e} - \v{\t{M}_t}
+    \times \v{\hat{z}}
+    \label{eq:Et}
+  \end{equation}
+
+  Similarly, by substituting (\ref{eq:sLH}) into (\ref{eq:dFT_HT}), we obtain the expression of transverse magnetic field:
+
+  \begin{equation}
+    \dv{\v{\t{H}_t}}{z} =
+    \frac{1}{j \w \u} \left( k^2 - \v{k_{\p}}\v{k_{\p}} \cdot \right) (\v{\hat{z}} \times \v{\t{E}_t}) + \v{k_{\p}} \frac{\t{M}_z}{\w \u} + \v{\t{J}_t}
+    \times \v{\hat{z}}
+    \label{eq:Ht}
+  \end{equation}
+
+  where $k = \w \sqrt{\u \e}$ is the medium wave-vector in (\ref{eq:Et}) and (\ref{eq:Ht}).
+
+
+
+
+
+  \bibliography{mylib}
+  \bibliographystyle{ieeetr}
+
+\end{document}

@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{felsen1994radiation}
+L.~Felsen and N.~Marcuvitz, {\em Radiation and Scattering of Waves}.
+\newblock IEEE Press Series on Electromagnetic Wave Theory, Wiley, 1994.
+
+\bibitem{fang2009antenna}
+D.-G. Fang, {\em Antenna theory and microstrip antennas}.
+\newblock CRC Press, 2009.
+
+\bibitem{itoh1980spectral}
+T.~Itoh, ``Spectral domain immitance approach for dispersion characteristics of
+  generalized printed transmission lines,'' {\em IEEE transactions on Microwave
+  Theory and Techniques}, vol.~28, no.~7, pp.~733--736, 1980.
+
+\bibitem{kastner1988spectral}
+R.~Kastner, E.~Heyman, and A.~Sabban, ``Spectral domain iterative analysis of
+  single-and double-layered microstrip antennas using the conjugate gradient
+  algorithm,'' {\em IEEE transactions on antennas and propagation}, vol.~36,
+  no.~9, pp.~1204--1212, 1988.
+
+\bibitem{michalski1997multilayered}
+K.~A. Michalski and J.~R. Mosig, ``Multilayered media green's functions in
+  integral equation formulations,'' {\em IEEE Transactions on Antennas and
+  Propagation}, vol.~45, no.~3, pp.~508--519, 1997.
+
+\bibitem{michalski2005electromagnetic}
+K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
+  {\em Encyclopedia of RF and microwave engineering}, 2005.
+
+\end{thebibliography}
