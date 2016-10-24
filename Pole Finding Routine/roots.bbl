@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{Carpentier1982c}
+M.~P. Carpentier and A.~F. {Dos Santos}, ``{Solution of equations involving
+  analytic functions},'' {\em Journal of Computational Physics}, vol.~45,
+  no.~2, pp.~210--220, 1982.
+
+\bibitem{Gillan2006c}
+C.~J. Gillan, A.~Schuchinsky, and I.~Spence, ``{Computing zeros of analytic
+  functions in the complex plane without using derivatives},'' {\em Computer
+  Physics Communications}, vol.~175, no.~4, pp.~304--313, 2006.
+
+\bibitem{Krantz1999}
+S.~G. Krantz, {\em The Argument Principle}, pp.~69--78.
+\newblock Boston, MA: Birkh{\"a}user Boston, 1999.
+
+\bibitem{press2007numerical}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery, {\em
+  Numerical Recipes 3rd Edition: The Art of Scientific Computing}.
+\newblock New York, NY, USA: Cambridge University Press, 3~ed., 2007.
+
+\bibitem{Delves1967c}
+L.~Delves and J.~Lyness, ``{A numerical method for locating the zeros of an
+  analytic function},'' {\em Mathematics of Computation}, vol.~21, no.~100,
+  pp.~543--543, 1967.
+
+\bibitem{Kravanja1999}
+P.~Kravanja, T.~Sakurai, and M.~Van~Barel, ``On locating clusters of zeros of
+  analytic functions,'' {\em BIT Numerical Mathematics}, vol.~39, no.~4,
+  pp.~646--682, 1999.
+
+\bibitem{Kravanja2000c}
+P.~Kravanja, M.~{Van Barel}, O.~Ragos, M.~N. Vrahatis, and F.~A. Zafiropoulos,
+  ``{ZEAL: a mathematical software package for computing zeros of analytic
+  functions},'' {\em Computer Physics Communications}, vol.~124, no.~2-3,
+  pp.~212--232, 2000.
+
+\end{thebibliography}

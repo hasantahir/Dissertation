@@ -1,0 +1,243 @@
+\documentclass[12pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[T1]{fontenc}
+\usepackage[cmex10]{amsmath}
+\usepackage{calc}
+% \usepackage{systeme} % For system of equations
+\usepackage{amsfonts} % to load math symbols
+\usepackage{mdwmath}
+\usepackage{commath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
+\usepackage[doublespacing]{setspace}
+\usepackage{tocloft}
+% \usepackage[rm, tiny, center, compact]{titlesec}
+\usepackage{indentfirst}
+\usepackage{etoolbox}
+%
+\usepackage{tocvsec2}
+% \usepackage[titletoc]{appendix}
+% \usepackage{appendix}
+% \usepackage{tamuconfig}
+%
+% \usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{standalone}
+\usepackage[americanresistors,americaninductors]{circuitikz}
+\usepackage{tikz-dimline} % For dimensional drawing
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{subfig}
+% The following is done to hide ugly color boxes around the links
+\usepackage{xcolor}
+\hypersetup{
+colorlinks,
+linkcolor={red!50!black},
+citecolor={blue!50!black},
+urlcolor={blue!80!black}
+}
+% pdflatex -synctex=-1
+\usepackage{mathptmx} % Times new Roman
+\usepackage{times}
+%
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+
+% Use = for single equations
+
+% Use commath package to properly write differential operators and derivatives.
+
+% Use \int\limits to nicely put integral limits
+
+% To hide section numbers, place an asterisk after the section, e.g., \section*{}
+
+% Put comments % in between the lines in order to avoid forming a new paragraph.
+
+% To enter special characters into Inkspace figures, use Ctrl+U and then enter       the unicode. e.g., for \times symbol, the unicode is U+0D7. So the key entry would be Ctrl+U U+0d7 and then press enter.
+
+% Put \eqref instead or \ref to reference equations. This will automatically put parantheses around the eq. number. amsmath package required.
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+% Personal definitions
+% Operators
+\renewcommand{\v}[1]{\mathbf{#1}} % vectors
+\newcommand{\ti}[1]{\tilde{#1}} % spectral representation
+
+% Symbols
+\renewcommand{\O}{\omega}  % omega
+\newcommand{\E}{\varepsilon}  % epsilon
+\renewcommand{\u}{\mu}  % mu
+\newcommand{\p}{\rho}  % rho
+\newcommand{\x}{\times}  % times
+\renewcommand{\inf}{\infty}  % infinity
+\newcommand{\infint}{\int\limits_{-\inf}^\inf} % integral by R
+% \newcommand{\del}{\nabla}  % nabla operator
+% \renewcommand{\^}{\hat}  % unit vector
+
+\begin{document}
+\title{\textsc{Equivalent Tranmission Line Models for Layered Structures with Sources}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+%
+A method to extract zeros of a complex function based on the Argument principle method. The
+%
+\begin{equation}
+  f(z_k) = 0
+  \label{eq:def}
+\end{equation}
+%
+We seek to solve \eqref{eq:def} in the complex plane to obtain $z_k$ in a given search region $\mathbb{C}$. For the multilayer problem, $f$ represents the dispersion relation or the characteristic equation of the Transmission Line Green's Functions (TLGF). Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$ correspond to the surface wave poles of the TLGF.
+%
+\subsection*{Counting the zeros}
+In order to develop an efficient method of locating the zeros, we assume that the function $f$ is holomorphic, and non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. Furthermore, the region is assumed rectangular. According to the Argument Principle Method (APM), the number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found by \cite{Carpentier1982c,Gillan2006c}:
+%
+\begin{equation}
+  N = \frac{1}{2 \pi} \oint \limits_{\Gamma} \dif {\{ \arg f(z)\} }
+  \label{eq:numzeros}
+\end{equation}
+%
+which states that each enclosed zero increments the argument by a factor of $2 \pi$. The integration around the contour is performed in a counter-clockwise manner and computed using a $15^{th}$ order adaptive Gauss-Konrod quadrature (\emph{MATLAB}'s quadgk routine) with breakpoints defining the contour. In addition to \eqref{eq:def}, the APM can also be stated in terms of the Cauchy's Integral Theorem \cite[pg. 71]{Krantz1999}:
+%
+\begin{equation}
+  N = \frac{1}{2 \pi j} \oint \limits_{\Gamma} \frac{f'(z)}{f(z)} \dif z
+  \label{eq:cauchyth}
+\end{equation}
+%
+Since finding an analytical derivative of $f$ in the case of multilayer structure is cumbersome, we approximate it with a finite difference:
+%
+\begin{equation}
+  f'(z) = \frac{f(z + h) - f(z - h)}{2 h}
+  \label{eq:FD}
+\end{equation}
+%
+where $h \sim \sqrt{\epsilon_m}z$ with $\epsilon_m = 2.2204 \times 10^{-16}$ as the double-precison machine accuracy \cite[pg. 230]{press2007numerical}.
+%
+\subsection*{Locating the zeros}
+%
+Once the number of zeros is evaluated through \eqref{eq:numzeros}, the next step involves the approximation the dispersion function $f$ with an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$ with the condition that it has same roots, $z_k$ where $k = 1,2,...,N$ as $f$ \cite{Delves1967c,Kravanja1999}. The Lagrange representation is:
+%
+\begin{equation}
+  \mathcal{P}_N(z) = \prod \limits_{k = 1}^N \left(z - z_k \right)
+  \label{eq:poly}
+\end{equation}
+%
+For orthogonality, we require the inner product,
+%
+\begin{equation}
+  \langle z^k{,} \mathcal{P}_N(z)\rangle = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \mathcal{P}_N(z) \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,...,N-1.
+  \label{eq:fop}
+\end{equation}
+%
+to be zero \cite{Kravanja2000c}. The polynomial approximation of the original function reduces the complexity of the problem as techniques for finding polynomial roots are robust and well-established. To find the roots, we consider the sequence of integrals:
+%
+\begin{equation}
+  s_k = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,2,...
+  \label{eq:sk}
+\end{equation}
+%
+% From the residue theorem, the integrals $s_k$'s called the \emph{Newton moments}
+% are equal to the \emph{Newton sums} of the yet unknown zeros \cite{Kravanja1999thesis}:
+% %
+% \begin{equation}
+%   s_i = \sum \limits_{k = 1}^N \alpha_k z_k^i, \quad \mathrm{with} \quad i = 0,1,2,...
+%   \label{eq:newtsm}
+% \end{equation}
+%
+The summation notation polynomial $\mathcal{P}$ is more convenient than \eqref{eq:poly} for its solution:
+%
+\begin{equation}
+  \mathcal{P}_N(z) = \sum \limits_{k = 0}^N \alpha_k z^k
+  \label{eq:poly_sum}
+\end{equation}
+%
+For a \emph{monic polynomial}, $\alpha_N = 1$, and $\alpha_k$ are the sums of products of zeros, $Z_k$. The unknown $\alpha$'s in \eqref{eq:poly_sum} can be found by applying the \emph{Newton's Identities} \cite{Kravanja1999}.
+%
+\begin{equation}
+  \begin{aligned}
+    s_1 + \alpha_1 ={}& 0 \\
+    s_2 + s_1 \alpha_1 + 2 \alpha_2 ={}& 0 \\
+    {\vdots}\\
+    s_N + s_{N-1} \alpha_{1} + ... + s_1 \alpha_{N-1} + N \alpha_N ={}& 0
+    \label{eq:newtid}
+  \end{aligned}
+\end{equation}
+%
+Next, we construct two Hankel matrices, $\mathbf H$ and $\mathbf H^<$ to set up the eigenvalue problem:
+%
+\begin{equation}
+  \mathbf H =
+  \begin{bmatrix}
+    s_1 & s_2 & \cdots & s_k \\
+    s_2 & s_3 & \cdots & s_{k+1} \\
+    s_3 & s_4 & \cdots & s_{k+2} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    s_k & s_{k+1} & \cdots & s_{2k} \\
+  \end{bmatrix}
+  \label{eq:Hmat}
+\end{equation}
+%
+and
+%
+\begin{equation}
+  \mathbf H^< =
+  \begin{bmatrix}
+    s_0 & s_1 & \cdots & s_{k-1} \\
+    s_1 & s_2 & \cdots & s_{k} \\
+    s_2 & s_3 & \cdots & s_{k+1} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    s_{k-1} & s_{k} & \cdots & s_{2k-2} \\
+  \end{bmatrix}
+  \label{eq:Hmat<}
+\end{equation}
+%
+The roots of the polynomial $\mathcal P$ are the generalized eigenvalues, $\lambda$ of the matrix pencil:
+%
+\begin{equation}
+  \left( \mathbf H - \lambda \mathbf H^< \right) \mathbf x = 0
+  \label{eq:evp}
+\end{equation}
+%
+\subsection{Refining the roots}
+
+Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}. For problems pertinents to multilayer structures, a safe choice of $M$ is $3$.
+
+The accuracy of the roots obtained from the eigenvalues,$\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent inintial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Halley's} method having cubic convergence and the iteration formula:
+%
+\begin{equation}
+  x_{n+1} = x_n - \frac {2 f(x_n) f'(x_n)} {2 {[f'(x_n)]}^2 - f(x_n) f''(x_n)}
+  \label{eq:halley}
+\end{equation}
+%
+with $f'(x)$ and $f''(x)$, the first and second order derivatives approximated by finite differences. In general the roots, $z_k$'s lie in the complex plane. The iteration \eqref{eq:halley} needs to be performed on both the real and imaginary parts simultaneously.
+
+\subsection{Branch Cuts}
+
+For multilayer structures,
+
+
+
+
+
+
+
+
+
+%% Make this end of each document
+\clearpage % Force Bibliography to the end of document
+\bibliography{citations}
+\bibliographystyle{ieeetr}
+
+\end{document}
