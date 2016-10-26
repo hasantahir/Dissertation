@@ -14,12 +14,15 @@
 \usepackage{datetime} % Insert date and time
 \usepackage[letterpaper]{geometry}
 \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
-\usepackage[doublespacing]{setspace}
+\usepackage[nodisplayskipstretch,doublespacing]{setspace}
+\setstretch{1.5}
 \usepackage{tocloft}
 % \usepackage[rm, tiny, center, compact]{titlesec}
 \usepackage{indentfirst}
 \usepackage{etoolbox}
-%
+% \AtBeginEnvironment{equation}{\leavevmode\singlespace}
+% \AfterEndEnvironment{equation}{\endsinglespace\vskip0.5\baselineskip\noindent\ignorespaces}
+% %
 \usepackage{tocvsec2}
 % \usepackage[titletoc]{appendix}
 % \usepackage{appendix}
@@ -92,31 +95,29 @@ urlcolor={blue!80!black}
 \date{\footnote{Last Modified: \currenttime, \today.}}
 \maketitle
 %
-A method to extract zeros of a complex function based on the Argument principle method. The
 %
+%
+We seek to solve \eqref{eq:def} in the complex plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For the multilayer problem, $f$ represents the dispersion relation which is the characteristic equation of the Transmission Line Green's Functions (TLGF). Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$ correspond to the surface wave poles of the TLGF.
 \begin{equation}
   f(z_k) = 0
   \label{eq:def}
 \end{equation}
-%
-We seek to solve \eqref{eq:def} in the complex plane to obtain $z_k$ in a given search region $\mathbb{C}$. For the multilayer problem, $f$ represents the dispersion relation or the characteristic equation of the Transmission Line Green's Functions (TLGF). Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$ correspond to the surface wave poles of the TLGF.
-%
 \subsection*{Counting the zeros}
-In order to develop an efficient method of locating the zeros, we assume that the function $f$ is holomorphic, and non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. Furthermore, the region is assumed rectangular. According to the Argument Principle Method (APM), the number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found by \cite{Carpentier1982c,Gillan2006c}:
+In order to develop an efficient method of locating the zeros, we assume that the function $f$ is holomorphic, and non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. Furthermore, the region is assumed rectangular. According to the Argument Principle Method (APM) initially proposed by Delves and Lyness, the number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found by \cite{Delves1967c,Carpentier1982c,Gillan2006c}:
 %
 \begin{equation}
   N = \frac{1}{2 \pi} \oint \limits_{\Gamma} \dif {\{ \arg f(z)\} }
   \label{eq:numzeros}
 \end{equation}
 %
-which states that each enclosed zero increments the argument by a factor of $2 \pi$. The integration around the contour is performed in a counter-clockwise manner and computed using a $15^{th}$ order adaptive Gauss-Konrod quadrature (\emph{MATLAB}'s quadgk routine) with breakpoints defining the contour. In addition to \eqref{eq:def}, the APM can also be stated in terms of the Cauchy's Integral Theorem \cite[pg. 71]{Krantz1999}:
+which states that each enclosed zero increments the argument by a factor of $2 \pi$. The integration around the contour is performed in a counter-clockwise manner and computed using an adaptive Gauss-Konrod quadrature (\emph{MATLAB}'s quadgk routine) with breakpoints defining the contour. In addition to \eqref{eq:numzeros}, the APM can also be stated in terms of the Cauchy's Integral Theorem \cite[pg. 71]{Krantz1999}:
 %
 \begin{equation}
   N = \frac{1}{2 \pi j} \oint \limits_{\Gamma} \frac{f'(z)}{f(z)} \dif z
   \label{eq:cauchyth}
 \end{equation}
 %
-Since finding an analytical derivative of $f$ in the case of multilayer structure is cumbersome, we approximate it with a finite difference:
+where the integrand is the logarithmic derivative of the function. Obtaining an analytical derivative of functions is cumbersome, specially in case of multilayer problems. Therefore, we approximate the derivative with a finite difference formula:
 %
 \begin{equation}
   f'(z) = \frac{f(z + h) - f(z - h)}{2 h}
@@ -127,43 +128,37 @@ where $h \sim \sqrt{\epsilon_m}z$ with $\epsilon_m = 2.2204 \times 10^{-16}$ as 
 %
 \subsection*{Locating the zeros}
 %
-Once the number of zeros is evaluated through \eqref{eq:numzeros}, the next step involves the approximation the dispersion function $f$ with an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$ with the condition that it has same roots, $z_k$ where $k = 1,2,...,N$ as $f$ \cite{Delves1967c,Kravanja1999}. The Lagrange representation is:
+Aftering predicting the number of zeros through \eqref{eq:numzeros}, the next step involves the approximation of the dispersion function $f$ with an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$ with the condition that it has same roots, $z_k$ where $k = 1,2,...,N$ as $f$ \cite{Delves1967c,Kravanja1999}. The Lagrange representation of the polynomial is:
 %
 \begin{equation}
-  \mathcal{P}_N(z) = \prod \limits_{k = 1}^N \left(z - z_k \right)
+  \mathcal{P}_N(z) = \prod \limits_{k = 1}^N \left(z - z_k \right).
   \label{eq:poly}
 \end{equation}
 %
 For orthogonality, we require the inner product,
 %
 \begin{equation}
-  \langle z^k{,} \mathcal{P}_N(z)\rangle = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \mathcal{P}_N(z) \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,...,N-1.
+  \langle z^k{,} \mathcal{P}_N(z)\rangle = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \mathcal{P}_N(z) \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,...,N-1
   \label{eq:fop}
 \end{equation}
 %
-to be zero \cite{Kravanja2000c}. The polynomial approximation of the original function reduces the complexity of the problem as techniques for finding polynomial roots are robust and well-established. To find the roots, we consider the sequence of integrals:
-%
-\begin{equation}
-  s_k = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,2,...
-  \label{eq:sk}
-\end{equation}
-%
-% From the residue theorem, the integrals $s_k$'s called the \emph{Newton moments}
-% are equal to the \emph{Newton sums} of the yet unknown zeros \cite{Kravanja1999thesis}:
-% %
-% \begin{equation}
-%   s_i = \sum \limits_{k = 1}^N \alpha_k z_k^i, \quad \mathrm{with} \quad i = 0,1,2,...
-%   \label{eq:newtsm}
-% \end{equation}
-%
-The summation notation polynomial $\mathcal{P}$ is more convenient than \eqref{eq:poly} for its solution:
+to be zero \cite{Kravanja2000c}. The polynomial approximation of the original function reduces the complexity of the problem as techniques for finding polynomial roots are robust and well-established. Before we proceed, for the sake of convenience in obtaining the required polynomial, we express $\mathcal{P}$ in an alternate summation notation:
 %
 \begin{equation}
   \mathcal{P}_N(z) = \sum \limits_{k = 0}^N \alpha_k z^k
   \label{eq:poly_sum}
 \end{equation}
 %
-For a \emph{monic polynomial}, $\alpha_N = 1$, and $\alpha_k$ are the sums of products of zeros, $Z_k$. The unknown $\alpha$'s in \eqref{eq:poly_sum} can be found by applying the \emph{Newton's Identities} \cite{Kravanja1999}.
+For a \emph{monic polynomial}, $\alpha_N = 1$, and $\alpha_k$ are the sums of products of zeros, $Z_k$.
+
+Next we look at a sequence of integrals:
+%
+\begin{equation}
+  s_k = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,2,...
+  \label{eq:sk}
+\end{equation}
+%
+where the $s_k$'s are the \emph{Newton moments} and related to the unknown coefficients $\alpha_k$'s through the \emph{Newton identities}:
 %
 \begin{equation}
   \begin{aligned}
@@ -175,7 +170,7 @@ For a \emph{monic polynomial}, $\alpha_N = 1$, and $\alpha_k$ are the sums of pr
   \end{aligned}
 \end{equation}
 %
-Next, we construct two Hankel matrices, $\mathbf H$ and $\mathbf H^<$ to set up the eigenvalue problem:
+After using the Newton's identities to construct the associated polynomial, we set up an eigenvalue problem in terms of two Hankel matrices, $\mathbf H$ and $\mathbf H^<$ which is derived from the Companion matrix of the polynomial \cite{Gillan2006c}:
 %
 \begin{equation}
   \mathbf H =
@@ -210,8 +205,10 @@ The roots of the polynomial $\mathcal P$ are the generalized eigenvalues, $\lamb
   \label{eq:evp}
 \end{equation}
 %
-\subsection{Refining the roots}
-
+where the column vector $\mathbf{x}$ is the eigenvector.
+%
+\subsection*{Refining the roots}
+%
 Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}. For problems pertinents to multilayer structures, a safe choice of $M$ is $3$.
 
 The accuracy of the roots obtained from the eigenvalues,$\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent inintial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Halley's} method having cubic convergence and the iteration formula:
@@ -223,10 +220,15 @@ The accuracy of the roots obtained from the eigenvalues,$\lambda_k$ of \eqref{eq
 %
 with $f'(x)$ and $f''(x)$, the first and second order derivatives approximated by finite differences. In general the roots, $z_k$'s lie in the complex plane. The iteration \eqref{eq:halley} needs to be performed on both the real and imaginary parts simultaneously.
 
-\subsection{Branch Cuts}
+\subsection*{Branch Cuts}
 
-For multilayer structures,
-
+The TLGF for a multilayer possesses two types singularities in the complex plane. We are primarily interested in finding the pole singularities that correspond to guided modes. In addition, the branch point singularities correspond to the radiation modes. Branch points arise due to the propagation constant, $k_{zi}$ of the layers having semi-infinite dimensions. The dispersion relation shows an even dependence on $k_{zi}$ of the layers that have finite width, hence there is no corresponding branch point.   \cite[Section~5.3a]{felsen1994radiation}. In order to satisfy Sommerfeld radiation condition that all fields must decay to zero at infinity, the proper sheet of the Riemann surface of the square-root function needs to be selected. This is accomplished by enforcing that the imaginary part of $k_{zi}$ that contributes a branch point, is negative everywhere.
+%
+\begin{equation}
+  \Im (k_{zi}) < 0
+  \label{eq:proper}
+\end{equation}
+%
 
 
 
