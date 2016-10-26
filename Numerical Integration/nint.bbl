@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{arfken2001mathematical}
+G.~Arfken and H.~Weber, {\em Mathematical Methods for Physicists}.
+\newblock Academic Press, Harcourt/Academic Press, 2001.
+
+\bibitem{golubovic2012efficient}
+R.~Golubovic, A.~G. Polimeridis, and J.~R. Mosig, ``Efficient algorithms for
+  computing {S}ommerfeld integral tails,'' {\em IEEE Transactions on Antennas
+  and Propagation}, vol.~60, no.~5, pp.~2409--2417, 2012.
+
+\bibitem{michalski2016efficient}
+K.~A. Michalski and J.~R. Mosig, ``Efficient computation of {S}ommerfeld
+  integral tails--methods and algorithms,'' {\em Journal of Electromagnetic
+  Waves and Applications}, vol.~30, no.~3, pp.~281--317, 2016.
+
+\bibitem{takahasi1974double}
+H.~Takahasi and M.~Mori, ``Double exponential formulas for numerical
+  integration,'' {\em Publications of the Research Institute for Mathematical
+  Sciences}, vol.~9, no.~3, pp.~721--741, 1974.
+
+\bibitem{bailey2005comparison}
+D.~H. Bailey, K.~Jeyabalan, and X.~S. Li, ``A comparison of three
+  high-precision quadrature schemes,'' {\em Experimental Mathematics}, vol.~14,
+  no.~3, pp.~317--329, 2005.
+
+\bibitem{mori2005discovery}
+M.~Mori, ``Discovery of the double exponential transformation and its
+  developments,'' {\em Publications of the Research Institute for Mathematical
+  Sciences}, vol.~41, no.~4, pp.~897--935, 2005.
+
+\bibitem{sommerfeld1949partial}
+A.~Sommerfeld, {\em Partial Differential Equations in Physics}.
+\newblock Pure and Applied Mathematics, Elsevier Science, 1949.
+
+\bibitem{novotny2006principles}
+L.~Novotny and B.~Hecht, {\em Principles of Nano-Optics}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{michalski2005electromagnetic}
+K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
+  {\em Encyclopedia of RF and microwave engineering}, 2005.
+
+\end{thebibliography}

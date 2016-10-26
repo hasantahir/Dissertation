@@ -1,0 +1,45 @@
+\documentclass{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations  %
+
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+\begin{document}
+  \title{\textsc{Atmospheric Absorption of Terahertz waves}\\}
+  \date{\footnote{Last Modified: \currenttime, \today.}}
+  \maketitle
+
+  The idea of terahertz communication appears fascinating owing primarily to great bandwidth at hand. By the historic Shannon's capacity theorem, \cite{shannon1949communication} the data rate, C of a communication medium is related to the bandwidth, W as:
+  \begin{equation}
+    C = W \log_2 \left( 1 + \frac{S}{N} \right )
+    \label{eq:shannon}
+  \end{equation}
+  where $\frac{S}{N}$ is the signal-to-noise ratio of the communicating wave. As it is evident in \ref{eq:shannon}, higher bandwidths lead to higher data rates. However, the applicability of terahertz waves for communication is hampered by the significant influence of the atmosphere. For frequencies greater than $ 1 THz$, signals face attenuation due to wave absorption due to water vapors and oxygen present in the atmosphere\cite{danylov2006thz}.
+
+  \bibliography{mylib}
+  \bibliographystyle{ieeetr}
+
+  % \bibliographystyle{IEEEtran}
+  % % argument is your BibTeX string definitions and bibliography database(s)
+  % \bibliography{mylib}
+
+\begin{equation}
+  \delta_r = \sinr
+\end{equation}
+
+  \end{document}

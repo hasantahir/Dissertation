@@ -1,0 +1,238 @@
+\documentclass[11pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{standalone}
+\usepackage[americanresistors,americaninductors]{circuitikz} % For circuit elements
+\usepackage{tikz-dimline} % For dimensional drawing
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{subfig}
+% The following is done to hide ugly color boces around the links
+\usepackage{xcolor}
+\hypersetup{
+colorlinks,
+linkcolor={red!50!black},
+citecolor={blue!50!black},
+urlcolor={blue!80!black}
+}
+% \usepackage{pdfsync} % use to back search tex lines from pdf
+% pdflatex -synctex=-1
+% \usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations
+% For
+% Put comments % in between the lines in order to avoid forming a new paragraph.
+% To enter special characters into Inkspace figures, use Ctrl+U and then enter       the unicode. e.g., for \times symbol, the unicode is U+0D7. So the key entry would be Ctrl+U U+0d7 and then press enter.
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+% Personal definitions
+% Operators
+\renewcommand{\v}[1]{\mathbf{#1}} % vectors
+\newcommand{\ti}[1]{\tilde{#1}} % spectral representation
+
+% Symbols
+\renewcommand{\O}{\omega}  % omega
+\newcommand{\E}{\varepsilon}  % epsilon
+\renewcommand{\u}{\mu}  % mu
+\newcommand{\p}{\rho}  % rho
+\newcommand{\x}{\times}  % times
+\renewcommand{\inf}{\infty}  % infinity
+\newcommand{\infint}{\int\limits_{-\inf}^\inf} % integral by R
+\newcommand{\del}{\nabla}  % nabla operator
+\renewcommand{\^}{\hat}  % unit vector
+
+
+\begin{document}
+  \title{\textsc{Horizontal Electric Dipole}\\}
+  \date{\footnote{Last Modified: \currenttime, \today.}}
+  \maketitle
+  The transmission line Greens functions (TLGF) for planar multilayers of a High Electron Mobility Transistor (HEMT) are derived by modeling the radiating 2DEG as a embedded horizontal electric dipole illustrated in Fig. \ref{fig:structure}.
+
+  \begin{figure}[h!]
+    \centering
+    \includestandalone[width=.55\textwidth]{figures/structure}
+    \caption{Current Source in a multi-section transmission line}
+    \label{fig:structure}
+  \end{figure}
+
+
+  From Transmission Line (TL) theory, the voltage and current in a source-free section can be expressed through the telegrapher's equations:
+
+  \begin{subequations}
+    \begin{align}
+      \dv{}{z}{V(z)} ={}& -jk_z Z I(z),
+      \label{eq:TL_V}\\
+      %
+      \dv{}{z}{I(z)} ={}& -jk_z Y V(z).
+      \label{eq:TL_I}
+    \end{align}
+    \label{eq:TL}
+  \end{subequations}
+
+  where $k_z$ is the propagation constant of the TL, $Z$ and $Y$ are respectively, the characteristic impedance and admittance of the transmission line. By combining (\ref{eq:TL_V}) and (\ref{eq:TL_I}), a second-order homogoneous differential equation in either $V$ or $I$ can be obtained:
+
+  \begin{align}
+    \left( \dv[2]{}{z} + k_z^2 \right) \Bigg \{
+    \begin{split}
+      V(z)\\
+      I(z)
+      \end{split} = 0
+      \label{eq:HomoVI}
+    \end{align}
+
+    A travelling wave solution of (\ref{eq:HomoVI}) can be written as:
+
+    \begin{align}
+      \begin{split}
+        V(z)\\
+        Z I(z)
+      \end{split} \Bigg \}= V^+ e^{-jk_z (z-z')} + V^- e^{jk_z (z-z')}
+      \label{eq:homo_sol}
+    \end{align}
+
+    where the two terms represent forward and backward propagating waves with amplitudes $V^+$ and $V^-$ respectively. The exponentials can be phased referenced to any point; the current choice will become evident in the treatment of a multilayer case.
+
+    For a transmission line of infinite extent excited by a current source of unit amplitude located at $z = z'$, the voltage and current can be expressed as:
+
+    \begin{subequations}
+      \begin{align}
+        V(z) ={}& \frac{Z}{2} e^{-jk_z \left|z-z'\right| },
+        \label{eq:TL_source_V}\\
+        %
+        I(z) ={}& \pm \frac{1}{2} e^{-jk_z \left|z-z'\right|}.
+        \label{eq:TL_source_I}
+      \end{align}
+      \label{eq:TL_source}
+    \end{subequations}
+
+    The $+$ sign in (\ref{eq:TL_source_I}) is for $z > z'$ and vice versa. The discontinuity due to the presence of the source at $z = z'$ should also be observed due to change of signs at $ z = z'$.
+
+    \section{Multi-section Transmission Line}
+
+    We now consider a multi-section transmission line excited by a unit strength current source located in the $n^{th}$ section as illustrated in Fig. \ref{fig:TL}.
+
+    \begin{figure}[h!]
+      \centering
+      \includestandalone[width=1\textwidth]{figures/tl}
+      \caption{Current Source in a multi-section transmission line}
+      \label{fig:TL}
+    \end{figure}
+
+    The voltage and current expressions in any section now consist of a particular solution due to source and a homogeneous solution accounting for boundaries of the section. Due to a current source at $z = z'$, the solutions at any point $z$ in the $n^{th}$ section with propagation constant $k_{zn}$ become:
+
+    \begin{subequations}
+      \begin{align}
+        V_i(z, z') ={}& \frac{Z}{2} e^{-jk_z \left|z-z'\right| } + A_n e^{-j k_{zn} z } + B_n e^{j k_{zn} z},
+        \label{eq:multi_V}\\
+        %
+        I_i(z, z') ={}& \pm \frac{1}{2} e^{-jk_z \left|z-z'\right|} + A_n e^{-j k_{zn} z } - B_n e^{j k_{zn} z}.
+        \label{eq:multi_I}
+      \end{align}
+      \label{eq:multi}
+    \end{subequations}
+
+    In order to find the unknowns $A_n$ and $B_n$, we invoke the boundary conditions that ensure continuity of the characteristic impedance along the transmission line. At the left edge $z_n$ and the right edge $z_{n+1}$, we write:
+
+    \begin{subequations}
+      \begin{align}
+        \frac{V_i(z_n,z')}{I_i(z_n,z')} ={}& -\overleftarrow{Z_n} , \quad z = z_n
+        \label{eq:BC_left}\\
+        %
+        \frac{V_i(z_{n+1},z')}{I_i(z_{n+1},z')} ={}& \overrightarrow{Z_n} ,\quad  z = z_{n+1}.
+        \label{eq:BC_right}
+      \end{align}
+      \label{eq:BC}
+    \end{subequations}
+
+    From (\ref{eq:multi}) and (\ref{eq:BC}), we obtain:
+
+    \begin{subequations}
+      \begin{align}
+        \left( Z_n - \overleftarrow{Z_n} \right) e^{-j k_{zn} (z' - z_n) } +  A_n\left( Z_n + \overleftarrow{Z_n} \right) e^{-j k_{zn} z_n } +
+        B_n\left( Z_n - \overleftarrow{Z_n} \right) e^{+j k_{zn} z_n } = 0
+        \label{eq:BC_at_left}\\
+        %
+        \left( Z_n - \overrightarrow{Z_n} \right) e^{-j k_{zn} (z_{n+1} - z') } +  A_n\left( Z_n - \overrightarrow{Z_n} \right) e^{-j k_{zn} z_{n+1} } +
+        B_n \left( Z_n - \overrightarrow{Z_n} \right) e^{+j k_{zn} z_{n+1} } = 0
+        \label{eq:BC_at_right}
+      \end{align}
+      \label{eq:BC_val}
+    \end{subequations}
+
+    The solution of the system of two linear equations (\ref{eq:BC_val}) can be written in general form as:
+
+    \begin{align}
+      A_n = \frac{ c e - b f }{bd - a e}\quad , \quad
+      %
+      B_n = \frac{ a f - c d }{bd - a e}
+      \label{eq:gen_sol}
+    \end{align}
+
+    where,
+    \begin{subequations}
+      \begin{align}
+        a ={}& \left( Z_n + \overleftarrow{Z_n} \right) e^{-j k_{zn} z_n },\\
+        b ={}& \left( Z_n - \overleftarrow{Z_n} \right) e^{+j k_{zn} z_n },\\
+        c ={}& \left( Z_n - \overleftarrow{Z_n} \right) e^{-j k_{zn} (z' - z_n)},\\
+        d ={}& \left( Z_n - \overrightarrow{Z_n} \right) e^{-j k_{zn} z_{n+1} },\\
+        e ={}& \left( Z_n - \overrightarrow{Z_n} \right) e^{+j k_{zn} z_{n+1} },\\
+        f ={}& \left( Z_n - \overrightarrow{Z_n} \right) e^{-j k_{zn} (z_{n+1} - z') }.
+        \label{eq:terms}
+      \end{align}
+    \end{subequations}
+
+    The solution for unknowns, therefore is \cite[p. 1178]{michalski2005electromagnetic}:
+    \begin{subequations}
+      \begin{align}
+        A_n = \frac{\overleftarrow{\Gamma_n} e^{j k_{zn} 2z_n }}
+        {1-\overleftarrow{\Gamma_n} \overrightarrow{\Gamma_n} e^{-2j k_{zn} d_{n} }}
+        \left[ e^{-j k_{zn} z'} + \overrightarrow{\Gamma_n} e^{-j k_{zn} (2z_{n+1} -z')} \right],\\
+        %
+        B_n = \frac{\overrightarrow{\Gamma_n} e^{-j k_{zn} 2z_{n+1} }}
+        {1-\overleftarrow{\Gamma_n} \overrightarrow{\Gamma_n} e^{-2j k_{zn} d_{n} }}
+        \left[ e^{+j k_{zn} z'} + \overleftarrow{\Gamma_n} e^{+j k_{zn} (2z_n -z')} \right]
+        \label{eq:AnB}
+      \end{align}
+    \end{subequations}
+    where $\overleftarrow{\Gamma_n}$ and $\overrightarrow{\Gamma_n}$ are the left and right looking reflection coefficients:
+
+    \begin{subequations}
+      \begin{align}
+        \overleftarrow{\Gamma_n} ={}& \frac{\overleftarrow{Z_n} - Z_n}{\overleftarrow{Z_n} + Z_n}
+        \label{eq:R_left}\\
+        %
+        \overrightarrow{\Gamma_n} ={}& \frac{\overrightarrow{Z_n} - Z_n}{\overrightarrow{Z_n} + Z_n}
+        \label{eq:R_right}
+      \end{align}
+      \label{eq:R}
+    \end{subequations}
+
+    and $d_n = z_{n+1} - z_n$ is the thickness of the $n^{th}$ section of the transmission line as illustrated in Fig. \ref{fig:TL}.
+
+    \section{Spectral Domain Dyadic Greens functions}
+
+    The transmsission line Greens fucnctions obtained in (\ref{eq:multi})
+
+    \clearpage % Force Bibliography to the end of document
+    \bibliography{mylib}
+    \bibliographystyle{ieeetr}
+
+  \end{document}

@@ -1,0 +1,82 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'structure_with_PEC_Backing.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{327.99889343bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.72679377)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{structure_with_PEC_Backing.pdf}}%
+    \put(0.5857656,0.37383383){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{x}}}}}%
+    \put(0.42474067,0.71336851){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{structure_with_PEC_Backing.pdf}}%
+    \put(0.42258822,0.22556199){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{J}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{structure_with_PEC_Backing.pdf}}%
+    \put(0.88395563,0.18846735){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z  =-d}}}}}%
+    \put(0.89808068,0.18391246){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{0}}}}%
+    \put(0.89808068,0.18391246){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{structure_with_PEC_Backing.pdf}}%
+    \put(0.88395563,0.36257769){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z  = 0}}}}}%
+    \put(0.89808068,0.3580228){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.91309597,0.3580228){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{structure_with_PEC_Backing.pdf}}%
+    \put(0.88395563,0.273553){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z  =-d/2}}}}}%
+    \put(0.89808068,0.26899811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{p}}}}%
+    \put(0.91309597,0.26899811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.88395563,0.01163748){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z  = -5d}}}}}%
+    \put(0.89808068,0.00708259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{-1}}}}%
+    \put(0.89808068,0.00708259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.02352895,0.26500478){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{}}}%
+    \put(0.08499245,0.27817463){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{ε  = 9.7}}}}%
+    \put(0.09691628,0.27479958){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.08499245,0.42649507){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{ε  = 1}}}}%
+    \put(0.09691628,0.42312003){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.08499245,0.15356818){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{ε  = 11}}}}%
+    \put(0.09691628,0.15019314){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.79390513,0.63170945){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{f = 1 THz}\textbf{\\ }}}}%
+    \put(0.75244156,0.57317267){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{d = }\textbf{λ }}}}%
+  \end{picture}%
+\endgroup%

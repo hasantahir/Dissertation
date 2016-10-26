@@ -1,0 +1,52 @@
+\documentclass[9pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper, margin=0in,landscape]{geometry}
+\usepackage{graphicx}
+% \usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+\begin{document}
+
+  \begin{equation}
+    \centering
+    \frac{2\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\, \left({\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} + {\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} - \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\right)}{\mathrm{\beta}_{a}\, \mathrm{\beta}_{b} - \mathrm{\beta}_{a}\, \mathrm{\beta}_{c} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c} + {\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} - {\mathrm{\beta}_{b}}^2 + \mathrm{\beta}_{a}\, \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}}
+    \label{eq:X1}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    -\frac{\mathrm{e}^{- \mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\, \left(\mathrm{\beta}_{a} - \mathrm{\beta}_{b}\right)\, \left(\mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} - \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} + \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\right)}{\mathrm{\beta}_{a}\, \mathrm{\beta}_{b} - \mathrm{\beta}_{a}\, \mathrm{\beta}_{c} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c} + {\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} - {\mathrm{\beta}_{b}}^2 + \mathrm{\beta}_{a}\, \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}}
+    \label{eq:X2}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \frac{\mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\, \left(\mathrm{\beta}_{b} - \mathrm{\beta}_{c}\right)\, \left( - \mathrm{\beta}_{a}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\right)}{\mathrm{\beta}_{a}\, \mathrm{\beta}_{b} - \mathrm{\beta}_{a}\, \mathrm{\beta}_{c} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c} + {\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} - {\mathrm{\beta}_{b}}^2 + \mathrm{\beta}_{a}\, \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}}
+    \label{eq:X3}
+  \end{equation}
+
+
+  \begin{equation}
+    \centering
+    \frac{2\, \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\, \mathrm{e}^{- \mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}}\, \left( - \mathrm{\beta}_{a}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{2}\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, \mathrm{i}}\, \mathrm{e}^{\mathrm{\beta}_{b}\, h_{1}\, \mathrm{i}}\right)}{\mathrm{\beta}_{a}\, \mathrm{\beta}_{b} - \mathrm{\beta}_{a}\, \mathrm{\beta}_{c} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c} + {\mathrm{\beta}_{b}}^2\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} - {\mathrm{\beta}_{b}}^2 + \mathrm{\beta}_{a}\, \mathrm{\beta}_{b}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{a}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}} + \mathrm{\beta}_{b}\, \mathrm{\beta}_{c}\, \mathrm{e}^{\mathrm{\beta}_{b}\, \left(h_{1} + h_{2}\right)\, 2\, \mathrm{i}}}
+    \label{eq:X4}
+  \end{equation}
+
+\end{document}
