@@ -1,0 +1,134 @@
+\documentclass{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[cmex10]{amsmath}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage{mathptmx} % Times new Roman
+
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+% Use = for single equations
+  %
+  % ----------------- To compile with references use the following order in Shell"
+  % 1. pdflatex filename.tex
+  % 2. bibtex filename (no extension)
+  % 3. bibtex filename (no extension)
+  % 4. pdflatex filename.tex
+  % -----------------
+
+\begin{document}
+  \title{\textsc{Line Source above a Dielectric Half-space}\\}
+  \date{\footnote{Last Modified: \currenttime, \today.}}
+  \maketitle
+\section{Green's Function Derivation}
+  We consider the problem of a horizontally oriented magnetic line source located above a lossy dielectric half-space in air and follow the Stinson's approach [\cite{stinson1976intermediate, nevels2014behavior}]. We assume the source to be time-harmonic and z-directed as shown in \ref{fig:illustration}. The lossy dielectric characterized by a complex dielctric constant ($\varepsilon_b$) exists in the region $y < 0$. For simplicity, we assume that the source lies at a height $y = h$ above the interface, $y = 0$ and is expressed as:
+
+  \begin{equation}
+    \overrightarrow{M} = \mathcal{I}_m \delta(x) \delta(y -h) \widehat{z}
+    \label{eq:Current}
+  \end{equation}
+
+  where $\mathcal{I}_m$ is the amplitude of the source.
+
+  For the two-dimensional problem at hand, we write the scalar Helmholtz equations for the respective media.
+
+  \begin{subequations}
+    \begin{align}
+      \left( \nabla_t^2 + k_a^2 \right) F_z^a ={}& -\varepsilon_0 \mathcal{I}_m  \delta(x) \delta(y - h), y > 0
+      \label{eq:Hemup} \\
+      \left( \nabla_t^2 + k_b^2 \right) F_z^b ={}& 0,     y <= 0
+      \label{eq:Hemdn}.
+    \end{align}
+    \label{Hem}
+  \end{subequations}
+
+  where $\nabla_t^2$ is the Laplacian in the transverse direction to the source (xy-plane). In terms of the magnetic vector potential, the electric and magnetic fields are given by:
+
+  \begin{subequations}
+    \begin{align}
+      \overrightarrow{E}  ={}& \frac{-1}{\varepsilon} \nabla \times \overrightarrow{F}
+      \label{eq:E} \\
+      \overrightarrow{H}  ={}& \frac{-j\omega}{k^2} \left( k^2 + \nabla \nabla \cdot \right) \overrightarrow{F}
+      \label{eq:H}
+    \end{align}
+  \end{subequations}
+
+  The boundary conditions extracted from the continuity of the tangential fields at the interface $y = 0$ are:
+
+  \begin{subequations}
+    \begin{align}
+      \widetilde{F}_z^a ={}& \widetilde{F}_z^b
+      \label{eq:HBC} \\
+      1 /\varepsilon_0 \frac{\partial \widetilde{F}_z^a}{\partial y} ={}& 1 /\varepsilon_b\frac{\partial \widetilde{F}_z^b}{\partial y}
+      \label{eq:EBC}
+    \end{align}
+    \label{eq:BC}
+  \end{subequations}
+
+  The $\sim$ in the preceding equations indicates that the magnetic potential has been Fourier transformed in one dimension from $x$ to $k_x$. Eqs. (\ref{eq:Hemup}) and (\ref{eq:Hemdn}) are transformed to:
+
+  \begin{subequations}
+    \begin{align}
+      \left( \dv[2]{}{y} + (k_a^2 - k_y^2) \right) \widetilde{F}_z^a ={}& -\varepsilon_0 \mathcal{\widetilde{I}}_m \delta(y - h), y > 0
+      \label{eq:FTHemup} \\
+      \left( \dv[2]{}{y} + (k_b^2 - k_y^2) \right) \widetilde{F}_z^b ={}& 0,     y <= 0 \label{eq:Hemdn}
+    \end{align}
+  \end{subequations}
+
+  Where,
+  \begin{equation}
+    \mathcal{\widetilde{I}}_m = \frac{\mathcal{I}_m}{\sqrt{2\pi}}
+    \label{eq:sourceFT}
+  \end{equation}
+  The above particular solutions of the equations above can be written as:
+  \begin{subequations}
+    \begin{align}
+      \widetilde{F}_z^a ={}& A e^{\left(-j\beta_a(y - h) \right)}, y \geq h \\
+      \widetilde{F}_z^a ={}& B e^{\left(j\beta_a(y - h) \right)} + C e^{\left(-j\beta_a(y + h) \right)}, 0 \leq y \leq h \\
+      \widetilde{F}_z^b ={}& D e^{\left(j\beta_b y \right)} , y \leq 0
+    \end{align}
+  \end{subequations}
+  The four unknown constants can be found by using the boundary conditions (\ref{eq:BC}) and source strength (\ref{eq:sourceFT}). They are:
+
+  \begin{subequations}
+    \begin{align}
+      A ={}& \frac{\mathcal{I}_m}{j2\beta_a \sqrt{2\pi}}, \\
+      B ={}& \mathcal{R} A, \\
+      C ={}& A \left( 1 + Re^{-2j\beta_a h} \right), \\
+      D ={}& \frac{2\beta_a}{\beta_b + \varepsilon_b \beta_a} A.
+    \end{align}
+  \end{subequations}
+
+  Where,
+  \begin{equation}
+    \mathcal{R} = 1 - \frac{-2\beta_b}{\beta_b + \varepsilon_b \beta_a}
+  \end{equation}
+  and
+  \begin{equation}
+    \beta_{a,b} = \sqrt{k_{a,b}^2 - k_y^2}
+  \end{equation}
+The general solutions for the mangetic potentials in the x-space can, therefore be constructed as:
+\begin{subequations}
+  \begin{align}
+    F_z^a ={}& \frac{\mathcal{I}_m}{4 \pi j}\int_{-\infty}^{\infty} \frac{1}{\beta_a} \left[ e^{-j \beta_a |y - h|} + \mathcal{R} e^{-j \beta_a (y + h)} \right] dk_x \\
+    F_z^b ={}& \frac{\mathcal{I}_m}{2 \pi j}\int_{-\infty}^{\infty} \frac{1}{\beta_b + \varepsilon_b \beta_a} \left[e^{-j \beta_b y} \right] dk_x
+  \end{align}
+  \label{eq:potentials}
+\end{subequations}
+
+\section{Field Computation}
+
+Ever since Sommerfeld first expressed the fields for the problem of a vertical Hertzian dipole above a lossy half-space in terms of Fourier-Bessel Transforms (FBT),[\cite{Sommerfeld}] there has been an enormous interest in similar problems owing to its
+
+\bibliography{mylib}
+\bibliographystyle{ieeetr}
+
+% \bibliographystyle{IEEEtran}
+% % argument is your BibTeX string definitions and bibliography database(s)
+% \bibliography{mylib}
+
+\end{document}
