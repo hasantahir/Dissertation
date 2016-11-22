@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.9.11)  21 NOV 2016 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.9.11)  22 NOV 2016 00:02
 entering extended mode
 **./d_sheet.tex
 (d_sheet.tex
@@ -6,8 +6,8 @@ LaTeX2e <2016/03/31> patch level 2
 Babel <3.9r> and hyphenation patterns for 9 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -2332,12 +2332,12 @@ LaTeX Info: Redefining \nameref on input line 111.
 * \topmargin=-18.9325pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -2400,11 +2400,11 @@ LaTeX Font Info:    Try loading font information for OMS+ptm on input line 116.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 116.
 
 
@@ -2419,49 +2419,57 @@ LaTeX Warning: Reference `' on page 1 undefined on input line 128.
 
 LaTeX Warning: Reference `' on page 2 undefined on input line 162.
 
-[2] [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
+[2] [3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 289.
+ [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
  (d_sheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
-Package rerunfilecheck Info: File `d_sheet.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 292.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
 
+
+Package rerunfilecheck Warning: File `d_sheet.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `d_sheet.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  08FF55EFB00A2A255C35DCA0C2877892;52.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
  ) 
 Here is how much of TeX's memory you used:
- 44424 strings out of 495089
- 1046464 string characters out of 3178345
- 1292216 words of memory out of 10000000
- 47060 multiletter control sequences out of 15000+200000
- 36620 words of font info for 65 fonts, out of 3000000 for 9000
+ 44435 strings out of 495089
+ 1046593 string characters out of 3178345
+ 1293218 words of memory out of 10000000
+ 47065 multiletter control sequences out of 15000+200000
+ 43211 words of font info for 70 fonts, out of 3000000 for 9000
  81 hyphenation exceptions out of 8191
  67i,17n,102p,10429b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+ic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+mi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d_sheet.pdf (4 pages, 170500 bytes).
+e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on d_sheet.pdf (4 pages, 168168 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
