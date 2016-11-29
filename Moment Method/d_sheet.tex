@@ -225,15 +225,15 @@ Since the electric field is only z-directed, we obtain a scalar equation by the 
 Similarly, the magnetic field can be written as:
 %
 \begin{align}
-  H_i &=  \frac{j \O}{k_0^2}\left(k_0^2 +  \pdv[2]{}{x} \right) \int\limits_{l} -M_x(\v \p') H_0^{(2)}(k_0 |\v \p - \v \p'|) \diff{l'} \notag\\
+  H_i^{tan} &=  \frac{j \O}{k_0^2}\left(k_0^2 +  \pdv[2]{}{x} \right) \int\limits_{l} -M_x(\v \p') H_0^{(2)}(k_0 |\v \p - \v \p'|) \diff{l'} \notag\\
   &\qquad + \frac{j \O}{k_2^2}\left(k_2^2 +  \pdv[2]{}{x} \right) \int\limits_{l} -M_x(\v \p') H_0^{(2)}(k_2 |\v \p - \v \p'|) \diff{l'}
   \label{eq:scalarH}
 \end{align}
 %
-\eqref{eq:scalarH} represents an integro-differential equation in which the differential and integral operators on the right hand side may be interchanged, thereby obtaining:
+where the superscript $tan$ indicates the tangential component of the incident magnetic field in the x-direction. \eqref{eq:scalarH} represents an integro-differential equation in which the differential and integral operators on the right hand side may be interchanged, thereby obtaining:
 %
 \begin{align}
-  H_i &=  \frac{j \O}{k_0^2} \int\limits_{l} -M_x(\v \p') \left(k_0^2 +  \pdv[2]{}{x} \right) H_0^{(2)}(k_0 |\v \p - \v \p'|) \diff{l'} \notag\\
+  H_i^{tan} &=  \frac{j \O}{k_0^2} \int\limits_{l} -M_x(\v \p') \left(k_0^2 +  \pdv[2]{}{x} \right) H_0^{(2)}(k_0 |\v \p - \v \p'|) \diff{l'} \notag\\
   &\qquad + \frac{j \O}{k_2^2} \int\limits_{l} -M_x(\v \p') \left(k_2^2 +  \pdv[2]{}{x} \right) H_0^{(2)}(k_2 |\v \p - \v \p'|) \diff{l'}
   \label{eq:scalarH_pock}
 \end{align}
@@ -272,7 +272,7 @@ The differential operator in \eqref{eq:scalarH_pock} can now removed by applying
 \begin{equation}
   \begin{split}
     \left(k_i^2 + \pdv[2]{}{x} \right) H_0^{(2)}(k_i r) &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \left[ \frac{(x-x')^2}{r^2} - \frac{1}{2} \right] H_2^{(2)}(k_i r) \\
-    &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \left( \cos \zeta - \frac{1}{2} \right) H_2^{(2)}(k_i r) \\
+    &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \left( \cos^2 \zeta - \frac{1}{2} \right) H_2^{(2)}(k_i r) \\
     &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \cos {(2\zeta)} H_2^{(2)}(k_i r)
   \end{split}
   \label{eq:Hankel_final}
@@ -281,12 +281,40 @@ The differential operator in \eqref{eq:scalarH_pock} can now removed by applying
 where $\cos \zeta = {(x-x')/r}$. The magnetic field in \eqref{eq:scalarH_pock} can be re-expressed as:
 %
 \begin{align}
-  H_i &=  \frac{j \O}{2} \int\limits_{l} -M_x(\v \p') \left[ H_0^{(2)}(k_0 r) + \cos {(2 \zeta)} H_2^{(2)}(k_0 r) \right. \notag\\
+  H_i^{tan} &=  \frac{-j \O}{2} \int\limits_{l} M_x(\v \p') \left[ H_0^{(2)}(k_0 r) + \cos {(2 \zeta)} H_2^{(2)}(k_0 r) \right. \notag\\
   &\qquad \left. {} + H_0^{(2)}(k_2 r) + \cos {(2\zeta)} H_2^{(2)}(k_2 r)\right]\diff{l'}
   \label{eq:H_final}
 \end{align}
 
-\section{x-directed plate}
+\section{Flat Dieletric Plate}
 
-For
+Consider a plane wave given by \eqref{eq:E_i} incident on an infinitesimally thin planar dielectric strip lying along the x-axis , that is phase referenced to origin. The field expressions \eqref{eq:scalarE},\eqref{eq:H_final} can be reduced for the pertinent structure:
+%
+\begin{subequations}
+  \begin{align}
+    E_i &= \frac{\O \u}{4} \int\limits_c J_z(x') \left[ H_0^{(2)}(k_0 |x - x'|) + H_0^{(2)}(k_2 |x - x'|)\right] \diff{l'}
+    \label{eq:E_plate}\\
+    H_i^{tan} &=  \frac{-j \O}{2} \int\limits_{l} M_x(x') \left[ H_0^{(2)}(k_0 |x - x'|) + H_2^{(2)}(k_0 |x - x'|) \right. \notag\\
+    &\qquad \left. {} + H_0^{(2)}(k_2 |x - x'|) + H_2^{(2)}(k_2 |x - x'|)\right]\diff{l'}
+    \label{eq:H_plate}
+  \end{align}
+  \label{eq:plate}
+\end{subequations}
+%
+The incident electric and magnetic fields are related as:
+%
+\begin{equation}
+  \v H_i = \hat{\v k} \x \frac{\v E_i}{\eta}
+  \label{eq:H_i}
+\end{equation}
+%
+where $\hat{\v k}$ is the unit vector along the wave-vector and $\eta$ is the characteristic impedance of free space. Hence, the scalar component of the tangential magnetic field, $H_i^{tan}$ becomes:
+%
+\begin{equation}
+  H_i^{tan} = \frac{-E_i^0}{\eta} \sin \phi_i e^{-j k_0 \cos \phi_i}
+  \label{eq:H_itan}
+\end{equation}
+%
+
+
 \end{document}
