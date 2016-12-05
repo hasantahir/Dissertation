@@ -5,33 +5,14 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{arrows}
 \usepackage{tikz-dimline}
+\usepackage{amsmath}
+% \usepackage{mathpazo}
+
 
 \begin{document}
-% \tdplotsetmaincoords{90}{0}
-% %
-% \pgfmathsetmacro{\rvec}{.8}
-% \pgfmathsetmacro{\thetavec}{30}
-% \pgfmathsetmacro{\phivec}{60}
-% %
-% \begin{tikzpicture}[scale=5,tdplot_main_coords]
-%     \coordinate (O) at (0,0,0);
-%     \draw[thick,->] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
-%     \draw[thick,->] (0,0,0) -- (0,1,0) node[anchor=north west]{$y$};
-% \draw[thick,->] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
-%     \tdplotsetcoord{P}{\rvec}{\thetavec}{\phivec}
-%     \draw[-stealth,color=red] (O) -- (P) node[above right] {$P$};
-%     \draw[dashed, color=red] (O) -- (Pxy);
-%     \draw[dashed, color=red] (P) -- (Pxy);
-%     \tdplotdrawarc{(O)}{0.2}{0}{\phivec}{anchor=north}{$\phi$}
-%     \tdplotsetthetaplanecoords{\phivec}
-%     \tdplotdrawarc[tdplot_rotated_coords]{(0,0,0)}{0.5}{0}%
-%         {\thetavec}{anchor=south west}{$\theta$}
 
-
-% \end{tikzpicture}
 \begin{tikzpicture}
   % % Draw coordinate system
-
   % Axes
   % z-axis
   % \draw [color=black, fill=black] (0, 0) circle (0.1);
@@ -47,19 +28,34 @@
   % y-axis label
   \node at (0, 5.2) {$y$};
 
+% Normal Vector n
+\draw [line width=0.5mm,arrows={-latex}] (0, 0) -- (0, 1)
+node [near end, above right,black] {$\mathbf{\hat n}$};;
+
+
+
+  % Draw Angle Arcs
+  % Observation Angle
+  \draw [gray,line width=0.25mm] (1.0,0) arc [start angle=0, end angle=45, radius=1cm]
+  node [midway, right,black] {$\phi_s$};
+
+  % Source Angle
+  \draw [gray,line width=0.25mm] (.5,0) arc [start angle=0, end angle=135, radius=.5cm]
+  node [near end, above left,black] {$\phi_s$};
+
   % Source and Observation points
   % Observation Coordinates
   % p
   \draw [line width=0.25mm,arrows={-latex}] (0, 0) -- (4, 4);
   % p label
-  \node at (4.14, 4.14) {$\mathbf{\rho}$};
+  \node at (4.14, 4.14) {$\boldsymbol{\rho}$};
 
   % Source Point
   % p'
   \draw [line width=0.25mm,arrows={-latex}] (0, 0) -- (-4, 4);
 
   % p' label
-  \node at (-4.14, 4.14) {$\mathbf{\rho'}$};
+  \node at (-4.14, 4.14) {$\boldsymbol{\rho'}$};
 
   % Field Specs
 
@@ -76,14 +72,7 @@
   \draw [color=black, fill=black] (-3, 3) circle (0.05);
   \node at (-3.25, 2.75) {$\mathbf{H}^i$};
 
-  % Draw Angle Arcs
-  % Observation Angle
-  \draw [black, thin] (1.0,0) arc [start angle=0, end angle=45, radius=1cm]
-  node [midway, right] {$\phi^s$};
 
-  % Source Angle
-  \draw [black, thin] (.5,0) arc [start angle=0, end angle=135, radius=.5cm]
-  node [near end, above left] {$\phi^i$};
 
 
 
@@ -93,7 +82,7 @@
   % Draw Dimension
   \dimline[line style = {gray, line width=0.2},
   extension start length=-.1,
-  extension end length=-.1] {(-2.5,-.5)}{(2.5, -.5)}{ $L$};
+  extension end length=-.1] {(-2.5,-.5)}{(2.5, -.5)}{$L$};
 \end{tikzpicture}
 \end{document}
 

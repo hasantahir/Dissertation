@@ -1,16 +1,24 @@
 \documentclass[11pt]{article}
-% Horizontal Magnetic Dipole over a lossy half-space
-\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
-\usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+% \usepackage[T1]{fontenc}
+
+% \usepackage{systeme} % For system of equations
+
+%%%%%%%%%%
+%%%%%%%%%% MATH
+%%%%%%%%%%
 \usepackage[cmex10]{amsmath}
 \usepackage{calc}
-% \usepackage{systeme} % For system of equations
 \usepackage{amsfonts} % to load math symbols
 \usepackage{mdwmath}
 \usepackage{commath}
-\usepackage{mdwtab}
-\usepackage{hyperref}
 \usepackage{physics} % For using the oridnary derivative nomenclature
+
+
+%%%%%%%%%%
+%%%%%%%%%% TABLES and FORMATTING
+%%%%%%%%%%
+\usepackage{mdwtab}
 \usepackage{datetime} % Insert date and time
 \usepackage[letterpaper]{geometry}
 \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
@@ -24,13 +32,6 @@
 \setlength\abovedisplayshortskip{4pt}
 \setlength\belowdisplayshortskip{4pt}
 }
-% \abovedisplayskip=12pt
-% \belowdisplayskip=12pt
-% \abovedisplayshortskip=0pt
-% \belowdisplayshortskip=7pt
-% \appto{\normalsize}{\zerodisplayskips}
-% \appto{\small}{\zerodisplayskips}0pt
-% \appto{\footnotesize}{\zerodisplayskips}
 \usepackage{tocloft}
 % \usepackage[rm, tiny, center, compact]{titlesec}
 \usepackage{indentfirst}
@@ -38,12 +39,19 @@
 % \usepackage[titletoc]{appendix}
 % \usepackage{appendix}
 % \usepackage{tamuconfig}
-%
 % \usepackage{rotating}
+% pdflatex -synctex=-1
+% \usepackage{mathptmx} % Times new Roman
+\usepackage{hyperref}
+\usepackage{mathpazo}
+
+%%%%%%%%%%
+%%%%%%%%%% GRAPHICS
+%%%%%%%%%%
+\usepackage[letterpaper]{geometry}
 \usepackage{graphicx}
 \usepackage{pgfplots}
 \usepackage{tikz}
-\usepackage{standalone}
 \usepackage[americanresistors,americaninductors]{circuitikz}
 \usepackage{tikz-dimline} % For dimensional drawing
 \usetikzlibrary{positioning}
@@ -57,9 +65,10 @@ linkcolor={red!50!black},
 citecolor={blue!50!black},
 urlcolor={blue!80!black}
 }
-% pdflatex -synctex=-1
-% \usepackage{mathptmx} % Times new Roman
-\usepackage{times}
+
+%%%%%%%%%%
+%%%%%%%%%% TIPS and TRICKS
+%%%%%%%%%%
 %
 % ------------------------------- Useful Tricks Learnt
 % Use ={}& to align subequations to the left
@@ -285,8 +294,10 @@ where $\cos \zeta = {(x-x')/r}$. The magnetic field in \eqref{eq:scalarH_pock} c
   &\qquad \left. {} + H_0^{(2)}(k_2 r) + \cos {(2\zeta)} H_2^{(2)}(k_2 r)\right]\diff{l'}
   \label{eq:H_final}
 \end{align}
-
-\section{Flat Dieletric Plate}
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Flat Dieletric Plate}
 
 Consider a plane wave given by \eqref{eq:E_i} incident on an infinitesimally thin planar dielectric strip lying along the x-axis , that is phase referenced to origin. The field expressions \eqref{eq:scalarE},\eqref{eq:H_final} can be reduced for the pertinent structure:
 %
@@ -308,13 +319,15 @@ The incident electric and magnetic fields are related as:
   \label{eq:H_i}
 \end{equation}
 %
-where $\hat{\v k}$ is the unit vector along the wave-vector and $\eta$ is the characteristic impedance of free space. Hence, the scalar component of the tangential magnetic field, $H_i^{tan}$ becomes:
+where $\hat{\v k}$ is the unit vector along the wave-vector and $\eta$ is the characteristic impedance of free space. Hence, the scalar component of the tangential magnetic field, along the x-axis becomes:
 %
 \begin{equation}
   H_i^{tan} = \frac{-E_i^0}{\eta} \sin \phi_i e^{-j k_0 \cos \phi_i}
   \label{eq:H_itan}
 \end{equation}
 %
+\section{Solution with Method of Moments}
 
+\subsection*{Pulse Functions and Point Matching}
 
 \end{document}

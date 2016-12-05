@@ -235,7 +235,7 @@ The component of the electric field tangential to the sheet surface is $x$ direc
 %
 \begin{align}
   E^0 \sin \phi_i  e^{j k_1 x \cos \phi_i} &=  \frac{\O \u}{4 k_1^2}\left(k_1^2 +  \pdv[2]{}{x} \right) \int\limits_{l} J_x(x') H_0^{(2)}(k_1 |x - x'|) \diff{l'} \notag\\
-    &\qquad + \frac{\O \u}{4 k_2^2}\left(k_2^2 +  \pdv[2]{}{x} \right) \int\limits_{l} J_x(x') H_0^{(2)}(k_2 |x - x'|) \diff{l'}
+  &\qquad + \frac{\O \u}{4 k_2^2}\left(k_2^2 +  \pdv[2]{}{x} \right) \int\limits_{l} J_x(x') H_0^{(2)}(k_2 |x - x'|) \diff{l'}
   \label{eq:scalarE}
 \end{align}
 %
@@ -299,22 +299,22 @@ where $i = 1,2$ and $ \cos \psi = {(x-x')/\zeta}$. The electric current \eqref{e
 \begin{align}
   E^0 \sin \phi_i  e^{j k_1 x \cos \phi_i} &=  \frac{-j \O}{2} \int\limits_{l} J_x(x') \left[ H_0^{(2)}(k_1 \zeta) + \cos {(2 \psi)} H_2^{(2)}(k_1 \zeta) \right. \notag\\
   &\qquad \left. {} + H_0^{(2)}(k_2 \zeta) + \cos {(2\psi)} H_2^{(2)}(k_2 \zeta)\right]\diff{l'}
-  \label{eq:E_final}
+  \label{eq:J_final}
 \end{align}
 %
 For a flat sheet lying along the $x$ axis, the factor $\cos \psi$ equals $1$.
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
-\section*{Flat Dieletric Plate}
-
-
-\begin{equation}
-  H_i^{tan} = \frac{-E_i^0}{\eta} \sin \phi_i e^{-j k_0 \cos \phi_i}
-  \label{eq:H_itan}
-\end{equation}
+% \section*{Flat Dieletric Plate}
 %
-\section{Solution with Method of Moments}
+%
+% \begin{equation}
+%   H_i^{tan} = \frac{-E_i^0}{\eta} \sin \phi_i e^{-j k_0 \cos \phi_i}
+%   \label{eq:H_itan}
+% \end{equation}
+%
+\section*{Solution with Method of Moments}
 
 The Method of Moments (MoM) is a procedure to reduce the integral equations, like \eqref{eq:E_final} and \eqref{eq:scalarH} of the form:
 %
@@ -325,20 +325,20 @@ The Method of Moments (MoM) is a procedure to reduce the integral equations, lik
 %
 where $\mathrm L$ is the integral operator $\int G(x,x') \diff{x'}$, $f$ is the unknown function and $g$ is an excitation source,into a system of linear equations in terms of the unknown function which can be approximated by a finite series of weighted subdomain expansion functions:
 \begin{equation}
-    f(x') \approx \sum\limits_{n = 1}^N \alpha_n f_n(x'),
-    \label{eq:MOM_f}
+  f(x') \approx \sum\limits_{n = 1}^N \alpha_n f_n(x'),
+  \label{eq:MOM_f}
 \end{equation}
 %
 where $\alpha_n$'s are the unknown weighting coefficients. A common choice of  the expansion functions $f_n(x')$ is a set of orthogonal pulse functions which results in a staircase approximation of the original function:
 %
- \begin{equation}
-   f_n(x') =
-   \begin{cases}
-     1, & \text{for}\; x' \text{in}\; \Delta x_n'  \\
-     0, & \text{otherwise}
-   \end{cases}
-   \label{eq:pulse}
- \end{equation}
+\begin{equation}
+  f_n(x') =
+  \begin{cases}
+    1, & \text{for}\; x' \text{in}\; \Delta x_n'  \\
+    0, & \text{otherwise}
+  \end{cases}
+  \label{eq:pulse}
+\end{equation}
 %
 Introducing a series approximation of the unknown results in a residual:
 \begin{equation}
@@ -370,7 +370,7 @@ equation \eqref{eq:moment} becomes:
 The equation set in matrix form can be written as:
 %
 \begin{equation}
-  [\mathrm Z][\mathrm \alpha_n] = [\mathrm g_m]
+  \mathrm Z[\mathrm \alpha_n = \mathrm g_m
   \label{eq:matrixMoM}
 \end{equation}
 %
@@ -387,6 +387,37 @@ where,
 \end{equation}
 %
 and the vectors $\mathrm \alpha_n$ and $\mathrm g_m$ contain the unknown coefficients and the source respectively. Once $\mathrm \alpha_n$ is found through matrix inversion in \eqref{eq:matrixMoM}, the unknown function $f$ is computed through \eqref{eq:MOM_f}.
-\subsection*{Pulse Functions and Point Matching}
+
+The matrix terms for electric and magnetic currents for a dielectric sheet follow from \eqref{eq:J_final} and \eqref{eq:scalarH} respectively:
+%
+\begin{subequations}
+  \begin{align}
+    Z_{mn}^J &= \frac{\O \u}{4} \int \limits_{x_n}^{x_{n+1}}  \left[ H_0^{(2)}(k_1 |x_m - x_n|) +  H_0^{(2)}(k_2 |x_m - x_n|) \right]\diff{x'}
+    \label{eq:Z_J}\\
+    Z_{mn}^M &= \frac{\O}{8} \int \limits_{x_n}^{x_{n+1}}  \left[ \E_1 H_0^{(2)}(k_1 |x_m - x_n|) +  \E_2 H_0^{(2)}(k_2 |x_m - x_n|) + \E_1 H_2^{(2)}(k_2 |x_m - x_n|) + \E_2 H_2^{(2)}(k_2 |x_m - x_n|) \right]\diff{x'}
+    \label{eq:Z_M}
+  \end{align}
+  \label{eq:Z}
+\end{subequations}
+%
+The the integrals in the $Z_{mn}$ terms can only be evaluated with any quadrature routine except for the self terms ($m = n$) for which small argument approximations of the Hankel function are used to estimate the integral. For the self terms:
+%
+\begin{subequations}
+  \begin{align}
+    Z_{nn}^J &=  -\frac{\O \u \Delta}{8} \left\{
+    2 -\frac{j}{\pi} \left[ 6 + 2 \ln \left(\frac{\mathrm e^{\gamma} k_1 \Delta}{4 \mathrm e}\right) + \frac{16}{(k_1 \Delta)^2} + 2 \ln \left(\frac{\mathrm e^{\gamma} k_2 \Delta}{4 \mathrm e}\right) + \frac{16}{(k_1 \Delta)^2} \right]   \right\}
+    \label{eq:Z_J}\\
+    Z_{nn}^M &= -\frac{\O \u \Delta}{4} \left\{ 2 -\frac{2 j}{\pi}\ln \left(\frac{\mathrm e^{\gamma} k_1 \Delta}{4 \mathrm e}\right) -
+    \frac{2 j}{\pi}\ln \left(\frac{\mathrm e^{\gamma} k_2 \Delta}{4 \mathrm e}
+    \right)
+    \right\}
+    \label{eq:Z_M}
+  \end{align}
+  \label{eq:Z}
+\end{subequations}
+
+
+
+
 
 \end{document}

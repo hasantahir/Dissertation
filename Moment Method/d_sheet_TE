@@ -292,37 +292,16 @@ where $i = 1,2$ and $ \cos \psi = {(x-x')/\zeta}$. The electric current \eqref{e
 \begin{align}
   E^0 \sin \phi_i  e^{j k_1 x \cos \phi_i} &=  \frac{-j \O}{2} \int\limits_{l} J_x(x') \left[ H_0^{(2)}(k_1 \zeta) + \cos {(2 \psi)} H_2^{(2)}(k_1 \zeta) \right. \notag\\
   &\qquad \left. {} + H_0^{(2)}(k_2 \zeta) + \cos {(2\psi)} H_2^{(2)}(k_2 \zeta)\right]\diff{l'}
-  \label{eq:H_final}
+  \label{eq:E_final}
 \end{align}
 %
-For a sheet lyinh flat along the $x$ axis, the factor $\cos \psi$ equals $1$.
+For a flat sheet lying along the $x$ axis, the factor $\cos \psi$ equals $1$.
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
 \section*{Flat Dieletric Plate}
 
-Consider a plane wave given by \eqref{eq:E_i} incident on an infinitesimally thin planar dielectric strip lying along the x-axis , that is phase referenced to origin. The field expressions \eqref{eq:scalarE},\eqref{eq:H_final} can be reduced for the pertinent structure:
-%
-\begin{subequations}
-  \begin{align}
-    E_i &= \frac{\O \u}{4} \int\limits_c J_z(x') \left[ H_0^{(2)}(k_0 |x - x'|) + H_0^{(2)}(k_2 |x - x'|)\right] \diff{l'}
-    \label{eq:E_plate}\\
-    H_i^{tan} &=  \frac{-j \O}{2} \int\limits_{l} M_x(x') \left[ H_0^{(2)}(k_0 |x - x'|) + H_2^{(2)}(k_0 |x - x'|) \right. \notag\\
-    &\qquad \left. {} + H_0^{(2)}(k_2 |x - x'|) + H_2^{(2)}(k_2 |x - x'|)\right]\diff{l'}
-    \label{eq:H_plate}
-  \end{align}
-  \label{eq:plate}
-\end{subequations}
-%
-The incident electric and magnetic fields are related as:
-%
-\begin{equation}
-  \v H_i = \hat{\v k} \x \frac{\v E_i}{\eta}
-  \label{eq:H_i}
-\end{equation}
-%
-where $\hat{\v k}$ is the unit vector along the wave-vector and $\eta$ is the characteristic impedance of free space. Hence, the scalar component of the tangential magnetic field, along the x-axis becomes:
-%
+
 \begin{equation}
   H_i^{tan} = \frac{-E_i^0}{\eta} \sin \phi_i e^{-j k_0 \cos \phi_i}
   \label{eq:H_itan}
@@ -330,6 +309,77 @@ where $\hat{\v k}$ is the unit vector along the wave-vector and $\eta$ is the ch
 %
 \section{Solution with Method of Moments}
 
+The Method of Moments (MoM) is a procedure to reduce the integral equations, like \eqref{eq:E_final} and \eqref{eq:scalarH} of the form:
+%
+\begin{equation}
+  \mathrm L (f) = g
+  \label{eq:MoM}
+\end{equation}
+%
+where $\mathrm L$ is the integral operator $\int G(x,x') \diff{x'}$, $f$ is the unknown function and $g$ is an excitation source,into a system of linear equations in terms of the unknown function which can be approximated by a finite series of weighted subdomain expansion functions:
+\begin{equation}
+    f(x') \approx \sum\limits_{n = 1}^N \alpha_n f_n(x'),
+    \label{eq:MOM_f}
+\end{equation}
+%
+where $\alpha_n$'s are the unknown weighting coefficients. A common choice of  the expansion functions $f_n(x')$ is a set of orthogonal pulse functions which results in a staircase approximation of the original function:
+%
+ \begin{equation}
+   f_n(x') =
+   \begin{cases}
+     1, & \text{for}\; x' \text{in}\; \Delta x_n'  \\
+     0, & \text{otherwise}
+   \end{cases}
+   \label{eq:pulse}
+ \end{equation}
+%
+Introducing a series approximation of the unknown results in a reidual:
+\begin{equation}
+  R_N = \sum \limits_{n = 1}^N \alpha_n \mathrm L [f_n(x')] - g
+  \label{eq:residual}
+\end{equation}
+%
+In order to minimize the approximation error, a \emph{moment} or an inner product is applied on a suitable choice of testing functions $w_m$ introduced:
+%
+\begin{equation}
+  \sum \limits_{n = 1}^N \alpha_n \langle w_m, \mathrm L [f_n(x')] \rangle - \langle w_m, g \rangle = 0, \text{for}\ m = 1,2,....,N.
+  \label{eq:moment}
+\end{equation}
+%
+where $\langle \cdot, \cdot \rangle$ represents the inner product operation which is difficult to compute. To circumvent this, delta functions are used as the testing functions and this process is called \emph{ Point Matching method}. With:
+%
+\begin{equation}
+  w_m = \delta(x' - x_m)
+  \label{eq:delta}
+\end{equation}
+%
+equation \eqref{eq:moment} becomes:
+%
+\begin{equation}
+  \sum \limits_{n = 1}^N \alpha_n  \mathrm L [f_n(x_m)]  = g(x_m), \text{for}\ m = 1,2,....,N.
+  \label{eq:moment}
+\end{equation}
+%
+The equation set in matrix form can be written as:
+%
+\begin{equation}
+  [\mathrm Z][\upgreek{\alpha}_n] = [\mathrm g_m]
+  \label{eq:matrixMoM}
+\end{equation}
+%
+where,
+\begin{equation}
+  \mathrm Z =
+  \begin{bmatrix}
+    \mathrm L [f_1(x_1)] & \mathrm L [f_2(x_1)] & \cdots & \mathrm L [f_N(x_1)] \\
+    \mathrm L [f_1(x_2)] & \mathrm L [f_2(x_2)] & \cdots & \mathrm L [f_N(x_2)] \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \mathrm L [f_1(x_N)] & \mathrm L [f_2(x_N)] & \cdots & \mathrm L [f_N(x_N)] \\
+  \end{bmatrix}
+  \label{eq:Zmat}
+\end{equation}
+%
+and the vectors $\mathrm \alpha_n$ and $\mathrm g_m$ contain the unknown coefficients and the source respectively.
 \subsection*{Pulse Functions and Point Matching}
 
 \end{document}
