@@ -1,0 +1,16 @@
+Something about the Structured Illumination Microscopy technique
+
+
+The attainable resolution from conventional microscopic techniques is restricted to half of the wavelength of light by Abbe diffraction limit. With ever increasing demands of fast and accurate observation of objects close to the nanoscale, especially in the biological sciences, higher resolution techniques going beyond the diffraction limit are of pivotal significance in today's world. Various non-linear processes exist that enhance the obtained resolution, however, they are generally lossy meaning that some of the light captured by the device is discarded. With structured illumination microscopy, subwavelength resolution is obtained while capturing all the light emitted by the sample in which high resolution information is also captured in the form of Moir\'e patterns. Processing a series of such captured patterns reconstructs a highly resolved image of the object under observation.
+
+Speaking in terms of two dimensional (2D) spatial frequency domain, the observable region through a microscope is governed by a circular region where the radius corresponds to the diffraction limit. The spatial fr
+
+In SIM, the sample is observed with a non-uniform signal unlike the conventional microscopy where a uniform illumination is used. With slightly different signals are multiplicatively superposed to create what are commonly known as Moir\'e patterns that contain much lower frequency content than the original signals observable through the microscope. The high frequency content can be extracted using computational techniques yielding a highly resolved image after the processing. As an example, the source signal contains spatial frequency of $k_1$ and the sample fluoresces at $k_2$. The Moir\'e patterns are generated at $k_1 - k_2$ that can be detected by the microscope.
+
+
+To illustrate the working of the technique, consider a microscope with a circular observable spatial frequency space of radius $k_0$. The illumination source signal with spatial frequency $k_1$ is multiplicatively superposed to the sample frequency of $k$ to generate a Moir\'e pattern having frequency $k_1 - k$. If the resulting pattern falls under the observable space, i.e. $| k_1 - k_2| < k_0$, the high frequency information is indirectly observed. The frequency space increases from $k_0$ to $k_0 + k_1$, hence increasing the resolution. Idealistically, it would be desirable to have a very high value of $k_1$. However, just as the diffraction limit restricts the microscopic resolution, the maximum spatial frequency attainable through the illumination source signal is limited and the maximum resolution that can be possibly obtained is by a factor of 2.
+
+To achieve enhanced resolution in a two-dimensional sense, the above process is repeated with different phases to obtain a series of images that are then used for reconstruction. An illustration of the whole process is shown in \ref Fig. 1 where each phase shift contributes three images.
+
+
+Description of SIM
