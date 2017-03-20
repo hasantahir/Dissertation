@@ -115,4 +115,46 @@ Near the plasma frequency of Gallium Arsenide (GaAs), the
 Suppose we somehow achieve the standing wave pattern required to achieve all the physical phenomena, the field expressions look like:
 
 
+\section{Fluorescence of the sample}
+
+The idea behind using this techniques is that the molecules in a biological sample fluoresce at frequencies that lie as low as the far infrared frequency range. In order to be visible under the microscope the samples must fluoresce. With the technique of the ungated 2DEG, the idea is that the sample can be excited by the 2DEG plasma waves that form a standing wave pattern in the channel. The field emitted by the plasma wave doesn't need to be very strong since all we need as a nice regular periodic pattern. This is achieved in our work as shown by the simulations done in COMSOL. The standing wave pattern can be vertically shifted through the use of an external plane wave source.
+
+Getting back to the fluroscence issue, if we can excite the electrons in the sample to higher energy levels and once they fluoresce, it can be detected by the microscopy. The idea here that the plasma wavelength is around 2 orders of magnitude smaller than the free-space wavelength provides is pivotal to (read and cite the idea of plasmonic imaging used by the guys in san dieogo - chinese guys).
+
+It is seen that the imaginary part of the wavenumber is really small in the case of 2deg plasma wave propagation. This means that there will be very small attenuation of the wave.
+
+While simulating it was noticed that the dielectric function had a very small imaginary part and it had a negative real part which is necessary for surface wave propagation.
+
+\section{Fourier Transformation of the image}
+
+While the working principle of the SIM is predominantly understood in the frequency domain, th image acquired is in the spatial domain. In order to get a deeper understanding of how it works, we look at the fourier transform:
+
+write the fourier transform expression
+\begin{equation}
+  I(k_x, k_y) = \iint \limit_{\inf}^{\inf} i(x,y) e^{j (k_x x + k_y y)} \diff x \diff y
+  \label{eq:FT}
+\end{equation}
+When the image is reconstructed in the spatial domain, we take the inversee fourier transform:
+\begin{equation}
+  i(x, y) = \iint \limit_{\inf}^{\inf} I(k_x,k_y) e^{j (k_x x + k_y y)} \diff x \diff y
+  \label{eq:IFT}
+\end{equation}
+
+talk about how we need an infinite spectrum to recover the complete original image.
+
+\section{Theory of Structured Illumination Microscopy}
+
+In conventional microscopic techniques, the sample under observation is illuminated with a uniform distribution of light and the resulting fluorescence is detected by the photodetector. Since all the sample area is illuminated and excited simultaneously, a very large unfocused region is also detected which reduces the overall contrast of the acquired image. The most common method to enhance the contrast between the sample and background is the confocal microscopy in which the sample is illuminated by a non-uniform distribution by introducing a pin-hole that eliminates the unfocused light. The pin-hole illuminates provides a pointed illumination which in turn excites only a small portion of the sample. The resulting fluorescence is highly localized which when acquired through the photodetector of the microscope, provides a high contrast image. Moreover, due to localized illumination, only a small region is focused. Collecting a series of images by moving the illuminated region through mechanical means, a high resolution image is obtained.
+
+Although, resolution enhancement can be obtained through confocal microscopy, a large amount of light is wasted due to the pinhole. As a result, the method is very inefficient in terms of signal-to-noise ratio and long exposure times are required to achieve meaningful contrast between the sample and background.
+
+In Structured Illumination Microscopy, all of the sample is illuminated with a laterally modulated, patterned light and observed through wide-field microscope. (cite Heintzmann and Gustaffsson) The patterned light increases the spatial frequency content of the acquired light, in effect, enhancing the resolution without any wastage of light through the use pin-hole structures. The obtainable resolution through this linear technique surpasses the classical diffraction limit of 2.
+
+Moiré effect
+
+Two similar patterns when multiplicatively super-posed, generate an interference pattern that has frequency content much lower than its constituents which is clearly observable under the microscope that is bandlimited. If the constituting illumination pattern is known a-priori, the sample structure information can be extracted from the moiré fringes using spatial frequency Fourier analyses. As spatial frequency content much higher than what can is observable through conventional microscopic methods is possible through this technique.
+
+Insert Fourier analysis equations from Lancozs 1967 to show the mathematical background of the technique.
+
+Standing wave pattern in plasma wave  devices
 \end{document}

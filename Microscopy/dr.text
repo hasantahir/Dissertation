@@ -1,14 +1,3 @@
-\documentclass[11pt]{article}
-
-% Insert style guide
-\usepackage{my_thesis}
-
-
-\begin{document}
-\title{\textsc{Current on a planar Dieletric plate}\\}
-\date{\footnote{Last Modified: \currenttime, \today.}}
-\maketitle
-
 Structured Illumination Microscopy is a technique in which high frequency content is can be extracted using Moiré images. After post-processing of the image , a high resolution image can be obtained using this technique.
 
 
@@ -45,7 +34,7 @@ Plasma wave sin the 2EG
 
  Solving for the three layers, the dispersion relation is given by:
 
- $$$$ paste from somewhere that I have already written
+ $$$$$ paste from somewhere that I have already written
 
 The dispersion relation of the 2deg region can be used to illustrate the subwavelength properties of the system. As shown in the figure, for a particular frequency the wavenumber in the 2DEG is much larger than the free-space wavenumber (light line). This can be reciprocated to an extremely small wavelength in the 2deg region. According to the figure,  the wavelength can be reduced by a factor as high as 250 without any appreciable loss in the system.
 
@@ -62,5 +51,3 @@ The dispersion relation of the 2deg region can be used to illustrate the subwave
 
 
  According to the Dyakanov-Shur theory (cite DS instability papers, gated and ungated), when the channel is biased with a dc voltage, the electrons in the channel start to oscillate (make this strong, it does not make sense). The source and drain terminals present conducting boundary conditions which result in the reflection of these waves. When the length of the channel is such that it corresponds to the eigenfrequency of the system, a standing waves pattern is obtained due to collective oscillations of the incident and reflected waves in the channel. If the voltage bias is further increased, the electrons are accelerated further resulting in a stronger oscillation. Ultimately, the waves get unstable due to the under-damping occurring in the channel. This instability results in radiation of waves whose frequency lies in the terahertz frequency range. This phenomenon was originally observed in traditional FET structures with a gate covering the 2deg layer. The presence of a metal gate is undesirable as it prevents the radiation from leaving the system. A similar phenomenon has also been observed in ungated regions of the transistor. The purpose of the gate terminal is to tune the electron concentration in the 2deg layer by varying the voltage bias. However, the electron concentration is found even without the presence of the gate terminal because of the formation of the 2DEG.
-
- \end{document}

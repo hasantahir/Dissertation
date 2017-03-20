@@ -29,4 +29,24 @@ In the basence of an extrenal elextric field, the electrons in a mterial move ra
 
 8/3/2017
 
-It is very hard to find a resonant frequency that will correspond to an eigenmode of the 2DEG strip. 
+It is very hard to find a resonant frequency that will correspond to an eigenmode of the 2DEG strip.
+
+
+13/3/2017
+
+Back to work after wrist sprain and the expected sluggishness from the weeknend.
+
+14/3/2017
+
+Been trying to shift the standing wave pattern in comsol. Haven't found a way yet but.
+
+At the plasma frequency the real part of the dielectric function vanishes to zero and oscillations can appear in the electron gas, even without an external excitation. For metals the plasma frequency is located in the optical or ultra-violet region, for doped
+semiconductors the plasma frequency can be found in the THz range.
+
+18/3/2017
+
+The imaginary part of the dielectric function should be close to zero in order to obtain a standing wave pattern in the 2DEG.
+
+20/3/2017
+
+It is a real struggle to put words to the things
