@@ -45,8 +45,10 @@ semiconductors the plasma frequency can be found in the THz range.
 
 18/3/2017
 
-The imaginary part of the dielectric function should be close to zero in order to obtain a standing wave pattern in the 2DEG.
+The imaginary part of the dielectric function should be close to zero in order to obtain a standing wave pattern in the 2DEG. I tried various values to see, the wave is damped due to presence of even a small value of imaginarty  part of the dielectric. The value should be in the range of the few thousandth of the decimals. This can be done through increasing the mobility of the 2DEG by decreasing the temperature. It all falls to the fact that these devices can only be operated at cryognic  temperatures. At room temperature, the mobility will drop substantially which will increase the imaginary part of the dielecric function.
 
 20/3/2017
 
-It is a real struggle to put words to the things
+The scattering time in order to achieve the mobility of 10^6 is 114 ps which is 100 times larger than at  temperature of 77 K. This corresponds to the mobility of GaN/AlGan heterostructure at 3 K. The mobility of the heterostructure is related to the temperature by:
+
+\mu \proportional \frac{1}{T^{3/2}}
