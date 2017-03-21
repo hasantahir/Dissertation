@@ -56,3 +56,29 @@ Dispersion relation
 Simulation
 
 GaN/AlGaN heterostructure
+
+Structure details
+
+We consider a Gallium Nitride / Aluminum Gallium Nitride (GaN / AlGaN) semiconductor heterostructure whose material properties are taken from [\cite popov paper, nitronex template]. The length of structure is taken as $.1 \mu m$. The layer thickness of the 2DEG region is taken as $5 nm$ and the superstrate layer is $20 nm$ thick. When a TM polarized plane wave having electric field components in the plane of the structure is incident on the structure, the dispsersion relation can be derived by expressing fields in each region of the structure. Although the structure is finite in length, for the sake of simplicity, it is assumed here that the structure has infinte lateral dimensions. The dispersion relation can be written as:
+
+\begin{equation}
+  disp equation expression
+  \label{eq: dispersion}
+\end{equation}
+
+It should be pointed out only in the case of a TM polarized do we get real solutions of propagation constant from the dispersion relation. For TE case, the real solutions are obtained only when an anisotropic conductivity of the 2DEG layer is assumed.
+
+Simulation details:
+
+The structure under observation is simulated in COMSOL using the RF module where a TM polarized plane wave is used to excite the structure. Furthermore, in order to model the charges in the 2DEG region, a surface current density is inserted expressed in terms of the complex surface conductivity and the electric field by:
+
+\begin{equation}
+  J_s (x) = \sigma_s(\O) E_x
+  \label{eq:Js}
+\end{equation}
+
+This current is due to the tangential boundary conditions applied on the magnetic field. The 2DEG and spacer layers are terminated in a PEC to model the source and drain terminals of the transistor. For absorbing boundary conditions, Scattering boundary condition is applied on the outer perimeter of the structure. Figure shows the standing wave pattern obtained on the face of the structure. The structure is sumulated at $25$ THz where the conductivity is $6.9 \times 10^{-8} + j 7.15 \times 10^{-5}$ [S/m]  and the corresponding dielectric constant for a layer of thickness $5$ nm is $-.878 + j 5.3 \times 10^{-3}$. The free charge density at the GaN / AlGaN interface is typically $7.5 \times 10 ^{12} \mathrm{cm}^{-2}$ with the mobility of $10^{6} \mathrm{C/cm^{-2}/s}$ at temperature of $3$ K. The dielectric constants of GaN and AlGaN layers are 9.7 and 9.4 repsectively where the mole fraction of the AlGan is taken as $x = .54$.
+
+Shifting of the Pattern
+
+One of the key requirements of Structured Illuminatiom Microscopy is that the standing wave pattern be shifted laterally. This is achieved by shining a TM polarized plane wave beam on the structure and controlling the magnitudes of the components of the electric field. For the configuration with the boundary conditions discussed above, the electric field component along the 2DEG will be cosine function and the normal component is a sine function.
