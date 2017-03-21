@@ -21,4 +21,4 @@ Outline for the plasmonic SIM chapter
 3. Image processing results seeking help from Xiaodong
 
 	
-	
+	E0*sqrt(w0/w(y))*exp(-(x/w(y))^2)*exp(j*k*x^2/(2*R(y)))*exp(j*(k*y-0.5*atan(y/z0)))
