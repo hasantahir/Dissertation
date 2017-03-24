@@ -1,14 +1,36 @@
-Generation of Plasma waves
+\documentclass[11pt]{article}
 
-Talk about ungated plasma waves
-dispersion relation
-dyakanov-shur instability
+% <<<<<<< HEAD
+% Talk about ungated plasma waves
+% dispersion relation
+% dyakanov-shur instability
+%
+% resonance
+% terahertz
+% conductivity
+% mobility
+% dielectric function approximated
+% =======
+% Insert style guide
+\usepackage{my_thesis}
 
-resonance
-terahertz
-conductivity
-mobility
-dielectric function approximated
+
+\begin{document}
+\title{\textsc{Structured Illumination Microscopy with 2D Plasma waves}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+% Generation of Plasma waves
+%
+% Talk about ungated plasma waves
+% dispersion relation
+% dyakanov-shur instability
+% resonance
+% terahertz
+% conductivity
+% mobility
+% dielectric function approximated
+% >>>>>>> 5a79dc62cfa25d14e52f596d8b1e81409543eafb
 
 
 For the ungated 2DEG, the dispersion relation is given by:
@@ -19,7 +41,8 @@ For the ungated 2DEG, the dispersion relation is given by:
 
 The plasma frequency for an ungated region is an order of magnitude higher than the gated region of the transistor. Moreover, the Q-factor of the resonance is also higher. This paves the way for devices operating in the range of 20-30 THz. Some of the molecules found in biological sciences fluoresce in this region. Therefore, plasma oscillations that are resonant can be used to excite these molecules.
 
-The generation of plasma waves in the gated region has been thoroughly studied owing to their analogy with the shallow water waves found in hydrodynamics. A similar treatment of plasma waves in the ungated region are analagous to deep water waves {\cite Shur ungated}.
+The generation of plasma waves in the gated region has been thoroughly studied owing to their analogy with the shallow water waves found in hydrodynamics. A similar treatment of plasma waves in the ungated region are analagous to deep water waves
+% {\cite Shur ungated}.
 
 When the plasma waves come across appropriate boundary conditions in the form of an ac open short source and and dc short drain terminal, they tend to reflect and form a standing wave in the 2DEG. Further excitement of these plasma waves lead to their instability. For an ungated region, due to the absence of grating structure in the form of the gate terminal, the plasma waves tend to not radiate as efficiently due to the momentum mismatch (large difference of wavenumber) between the plasma waves and free-space. However, due to the very thin nature of the superstatet spacer layer on the 2DEG, partially decayed plasma waves exist at the top face of the structure which can be used to excite the sample.
 
@@ -40,7 +63,7 @@ The quantity $\tau$ is the mean scattering time of the electrons in the 2DEG whi
 In order to obtain the desired properties for conductivity and dielectric function discussed above, the mobility should be as high as possible. Unfortunately, it is highly temperature dependent and reduces exponentially with increase in temperature by the following relation:
 
 \begin{equation}
-  \u \prop \frac{1}{T^{3/2}}
+  \u = \frac{1}{T^{3/2}}
   \label{eq:uT}
 \end{equation}
 
@@ -60,10 +83,11 @@ GaN/AlGaN heterostructure
 
 Structure details
 
-We consider a Gallium Nitride / Aluminum Gallium Nitride (GaN / AlGaN) semiconductor heterostructure whose material properties are taken from [\cite popov paper, nitronex template]. The length of structure is taken as $.1 \mu m$. The layer thickness of the 2DEG region is taken as $5 nm$ and the superstrate layer is $20 nm$ thick. When a TM polarized plane wave having electric field components in the plane of the structure is incident on the structure, the dispsersion relation can be derived by expressing fields in each region of the structure. Although the structure is finite in length, for the sake of simplicity, it is assumed here that the structure has infinte lateral dimensions. The dispersion relation can be written as:
+We consider a Gallium Nitride / Aluminum Gallium Nitride (GaN / AlGaN) semiconductor heterostructure whose material properties are taken from
+[\cite popov paper, nitronex template]. The length of structure is taken as $.1 \mu m$. The layer thickness of the 2DEG region is taken as $5 nm$ and the superstrate layer is $20 nm$ thick. When a TM polarized plane wave having electric field components in the plane of the structure is incident on the structure, the dispsersion relation can be derived by expressing fields in each region of the structure. Although the structure is finite in length, for the sake of simplicity, it is assumed here that the structure has infinte lateral dimensions. The dispersion relation can be written as:
 
 \begin{equation}
-  disp equation expression
+  % disp equation expression
   \label{eq: dispersion}
 \end{equation}
 
@@ -83,3 +107,14 @@ This current is due to the tangential boundary conditions applied on the magneti
 Shifting of the Pattern
 
 One of the key requirements of Structured Illuminatiom Microscopy is that the standing wave pattern be shifted laterally. This is achieved by shining a TM polarized plane wave beam on the structure and controlling the magnitudes of the components of the electric field. For the configuration with the boundary conditions discussed above, the electric field component along the 2DEG will be cosine function and the normal component is a sine function.
+
+Discuss why there is a need to shift the standing wave pattern in the first place.
+
+The shift in phase change of the standing wave pattern will lead to detection of a range of frequencies.
+
+I discussed with Dr Nevels about possibilities of a phase shifter. He totally agreed with me on the issue of generating a phase shift just by adding an external plane wave beam. Since the bondary coondtions remain the same forcing the tangential component of the field to always go to zero no matter what, we don't see it possible to change the phase.
+
+There is a whole science of standing wave microscopy, similar to the idea of structured illumination microscopy. The 2DEG structure natively supports a standing wave pattern that goes unstable when the plasma waves are highly undamped and grow along the channel.
+
+
+\end{document}
