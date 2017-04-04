@@ -1,0 +1,10 @@
+1. Model the dielectric constants that are closest to the material data. Something on the grounds of Critical Points based Drude model.
+
+2. Write an intro of Surface Integral Equations
+	Study van Bladel, Chow's books and Mittra's book on Comp. EM
+
+3. Work with Dr Zubairy's post doc to propose a 2DEG based imaging device
+
+4. Exactly for what reason do we require a standing wave in the structure?
+
+5. Plot the Standing wave pattern and according to the Xiaodong, the paper is done

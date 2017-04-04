@@ -1,0 +1,13 @@
+-19.91+.159i : Best figure so far yet. 2deg_fem_8THz_5nm_final
+	       Lc = .1 um
+	       t = 5 nm
+
+Try:
+
+-27 + .8i    :t = 1 nm : FAIL
+
+5 THz, 5 nm, -3.023 + .4473i
+
+This is a good value for -.42+.0046i for length assumed 3 nm in thicnkess 
+
+For a different scattering time (defined by tau = 1 ps) -.42 + .2649i

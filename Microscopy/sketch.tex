@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+
+% Insert style guide
+\usepackage{my_thesis}
+
+
+\begin{document}
+\title{\textsc{Current on a planar Dieletric plate}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+Structured Illumination Microscopy is a technique in which high frequency content is can be extracted using Moiré images. After post-processing of the image , a high resolution image can be obtained using this technique.
+
+
+Plasma wave sin the 2EG
+In a semiconductor heterostructure present in the most field effect transistors, the mismatch of the materials creates a highly charged concentrated layers of electrons at the interface in which the electrons are tightly confined in the one directions and free to move in the other directions. Upon applying an external electric field, current flow channel can be obtained in the region.
+
+When an appropriate voltage bias is applied across the channel, electrons start to oscillate showing a plasma like behavior. since the boundary conditions to this channel are due the metal source and drain terminal assumed perfectly conducting, the channel forms a resonant cavity in which a standing wave pattern is created. The interesting feature of this standing wave pattern is that due to the interesting properties of the 2deg resulting in negative dielectric constant, the wavelength is much smaller than the corresponding free-space wavelength. This can be attributed to the plasmonic behavior of such waves. As a result of this method can be used to create super resolution imaging techniques,
+
+
+
+Working of the @DEG and the standing wave pattern generation
+
+
+In order to characterize he extreme wavelength properties of the 2DEG system, we first look at the dispersion relation in which the 2deG is characterized by a thin sheet of charge sandwiched between the two slightly dissimilar polar semiconductor materials. As an example, we look at the Gallium Nitride / Aluminum Gallium Nitride heterostructure that has been generating interest due to its advantages over devices made of Arsenide. For the system under test, the length of the device is assumed $1\mu m$, the thickness of each layer as $ 1 \mu m$ for the substrate layer and the $30 nm$ for the spacer layer. The 2DEG region is modeled as a thin sheet of thickness of $5 nm$. We assume that the 2deg region formed has a free charge concentration of $7.5e 12 cm^{-2}$ which is typically of GaN/AlGaN structures. The complex surface conductivity of the region is given by:
+
+\begin{equation}
+  \sigma_s(\O) = \frac{e^2 N_s \tau}{m^{\ast}(1 - j \O \tau)}
+\end{equation}
+
+Here $e$ is the free electron charge, $\tau$ is the mean scattering time which determines how mobile the electrons are in the region, $\omega$ is the angular frequency and $m^{\ast}$ is the effective electron mass which is .2 times the electron mass.
+
+We observe a scenario in which a TM polarized is incident on the system from the top which will induce a surface current in the 2deg given by:
+
+\begin{equation}
+  j_s = \sigma_s(\O) E_x
+\end{equation}
+
+Expressing the fields and applying the boundary conditions (cite Nakayama's paper), :
+
+\begin{equation}
+  E_x1 = E_x2
+  H_z1 - H_z2 = J_s
+\end{equation}
+
+Solving for the three layers, the dispersion relation is given by:
+
+$$$$ paste from somewhere that I have already written
+
+The dispersion relation of the 2deg region can be used to illustrate the subwavelength properties of the system. As shown in the figure, for a particular frequency the wavenumber in the 2DEG is much larger than the free-space wavenumber (light line). This can be reciprocated to an extremely small wavelength in the 2deg region. According to the figure,  the wavelength can be reduced by a factor as high as 250 without any appreciable loss in the system.
+
+The permittivity of the 2deg region can be approximated by:
+
+\begin{equation}
+  \E \approx \E_0 \E_r + j \frac{\sigma_s}{\O \Delta}
+\end{equation}
+
+where $\E_r$ is the permittivity of the substrate layer and $\Delta$ is the thickness of the 2deg layer.
+
+
+Standing wave patter generation
+
+
+According to the Dyakanov-Shur theory (cite DS instability papers, gated and ungated), when the channel is biased with a dc voltage, the electrons in the channel start to oscillate (make this strong, it does not make sense). The source and drain terminals present conducting boundary conditions which result in the reflection of these waves. When the length of the channel is such that it corresponds to the eigenfrequency of the system, a standing waves pattern is obtained due to collective oscillations of the incident and reflected waves in the channel. If the voltage bias is further increased, the electrons are accelerated further resulting in a stronger oscillation. Ultimately, the waves get unstable due to the under-damping occurring in the channel. This instability results in radiation of waves whose frequency lies in the terahertz frequency range. This phenomenon was originally observed in traditional FET structures with a gate covering the 2deg layer. The presence of a metal gate is undesirable as it prevents the radiation from leaving the system. A similar phenomenon has also been observed in ungated regions of the transistor. The purpose of the gate terminal is to tune the electron concentration in the 2deg layer by varying the voltage bias. However, the electron concentration is found even without the presence of the gate terminal because of the formation of the 2DEG.
+
+\section{Details of the GaN/AlGaN heterostructure}
+
+The properties of the GaN/AlGaN heterostructure used are taken from (cite popov's paper with GaN). The permittivities of GaN and AlGaN ar $9.7$ and 9.6 respectively. The surface charge density is assumed 7.5 \times 10^12 cm^-2. The mobility at room temperature of the elctron gas is 1000 V/cm^2-s. The surface conductuvuty of the electron gas is given as:
+
+
+The approximation of the permittivity function is done via assuming a finite thicnkess of the 2deg layer ( here it is taken as 5 nm).
+
+Dispersion relation is given by the formula derived above.
+
+\section{Working Principle of the Structured Illumination Microscopy}
+
+The attainable resolution from conventional microscopic techniques is restricted to half the wavelength of light by the well-known Abbe diffraction limit. With ever increasing demands of fast and accurate observation of objects close to the nanoscale, especially in the biological sciences, higher resolution techniques going beyond the diffraction limit are of pivotal significance(write something like hamain is cheese ki zaroorat ha aj kal ke dor me specially considering the field of biological sicinces). Various non-linear processes exist that enhance the obtained resolution, however, they generally require high power and are typically lossy meaning that some of the light captured by the device is discarded. With structured illumination microscopy, subwavelength resolution is obtained while capturing all the light emitted by the sample in which high resolution information is also captured in the form of Moir\'e patterns. Processing a series of such captured patterns reconstructs a highly resolved image of the object under observation.
+
+Speaking in terms of two dimensional (2D) spatial frequency domain, the observable region through a microscope is governed by a circular region where the radius corresponds to the diffraction limit. The spatial fr
+
+In SIM, the sample is observed with a non-uniform signal unlike the conventional microscopy where a uniform illumination is used. With slightly different signals are multiplicatively superposed to create what are commonly known as Moir\'e patterns that contain much lower frequency content than the original signals observable through the microscope. The high frequency content can be extracted using computational techniques yielding a highly resolved image after the processing. As an example, the source signal contains spatial frequency of $k_1$ and the sample fluoresces at $k_2$. The Moir\'e patterns are generated at $k_1 - k_2$ that can be detected by the microscope.
+
+
+To illustrate the working of the technique, consider a microscope with a circular observable spatial frequency space of radius $k_0$. The illumination source signal with spatial frequency $k_1$ is multiplicatively superposed to the sample frequency of $k$ to generate a Moir\'e pattern having frequency $k_1 - k$. If the resulting pattern falls under the observable space, i.e. $| k_1 - k_2| < k_0$, the high frequency information is indirectly observed. The frequency space increases from $k_0$ to $k_0 + k_1$, hence increasing the resolution. Idealistically, it would be desirable to have a very high value of $k_1$. However, just as the diffraction limit restricts the microscopic resolution, the maximum spatial frequency attainable through the illumination source signal is limited and the maximum resolution that can be possibly obtained is by a factor of 2.
+
+To achieve enhanced resolution in a two-dimensional sense, the above process is repeated with different phases to obtain a series of images that are then used for reconstruction. An illustration of the whole process is shown in \ref Fig. 1 where each phase shift contributes three images.
+
+\section*{Generation of Standing waves}
+
+The reason to generate a standing wave pattern just underneath the specimen is that we need to
+
+Standing wave pattern is necessary in order to achieve position dependent trapped state.
+
+Lasing without inversion
+
+The dispersion relation for plasmons in a 2DEG heterostructure excited by TM wave is given by:
+\begin{equation}
+  \frac{\E_2(\O)}{k_{z2}} = -\frac{\sigma_s(\O)}{\O}}
+  \label{eq:disp_TM_two}
+\end{equation}
+
+where the surface conductivity, $\sigma_s$ is given by:
+\begin{equation}
+  \sigma_s(\O) = \frac{N_s e^2 \tau}{m^{\ast}}\frac{1}{1 + j \O \tau}
+  \label{eq:conductivity}
+\end{equation}
+%
+and the wavenumber along the z-direction is given by $k_{zi} = \sqrt{\left(\frac{\O}{c}\right)^2 \E_i(\O) -  k_x^2}$.
+
+Near the plasma frequency of Gallium Arsenide (GaAs), the
+
+
+
+
+Suppose we somehow achieve the standing wave pattern required to achieve all the physical phenomena, the field expressions look like:
+
+
+\section{Fluorescence of the sample}
+
+The idea behind using this techniques is that the molecules in a biological sample fluoresce at frequencies that lie as low as the far infrared frequency range. In order to be visible under the microscope the samples must fluoresce. With the technique of the ungated 2DEG, the idea is that the sample can be excited by the 2DEG plasma waves that form a standing wave pattern in the channel. The field emitted by the plasma wave doesn't need to be very strong since all we need as a nice regular periodic pattern. This is achieved in our work as shown by the simulations done in COMSOL. The standing wave pattern can be vertically shifted through the use of an external plane wave source.
+
+Getting back to the fluroscence issue, if we can excite the electrons in the sample to higher energy levels and once they fluoresce, it can be detected by the microscopy. The idea here that the plasma wavelength is around 2 orders of magnitude smaller than the free-space wavelength provides is pivotal to (read and cite the idea of plasmonic imaging used by the guys in san dieogo - chinese guys).
+
+It is seen that the imaginary part of the wavenumber is really small in the case of 2deg plasma wave propagation. This means that there will be very small attenuation of the wave.
+
+While simulating it was noticed that the dielectric function had a very small imaginary part and it had a negative real part which is necessary for surface wave propagation.
+
+\section{Fourier Transformation of the image}
+
+While the working principle of the SIM is predominantly understood in the frequency domain, th image acquired is in the spatial domain. In order to get a deeper understanding of how it works, we look at the fourier transform:
+
+write the fourier transform expression
+\begin{equation}
+  I(k_x, k_y) = \iint \limit_{\inf}^{\inf} i(x,y) e^{j (k_x x + k_y y)} \diff x \diff y
+  \label{eq:FT}
+\end{equation}
+When the image is reconstructed in the spatial domain, we take the inversee fourier transform:
+\begin{equation}
+  i(x, y) = \iint \limit_{\inf}^{\inf} I(k_x,k_y) e^{j (k_x x + k_y y)} \diff x \diff y
+  \label{eq:IFT}
+\end{equation}
+
+talk about how we need an infinite spectrum to recover the complete original image.
+
+\section{Theory of Structured Illumination Microscopy}
+
+In conventional microscopic techniques, the sample under observation is illuminated with a uniform distribution of light and the resulting fluorescence is detected by the photodetector. Since all the sample area is illuminated and excited simultaneously, a very large unfocused region is also detected which reduces the overall contrast of the acquired image. The most common method to enhance the contrast between the sample and background is the confocal microscopy in which the sample is illuminated by a non-uniform distribution by introducing a pin-hole that eliminates the unfocused light. The pin-hole illuminates provides a pointed illumination which in turn excites only a small portion of the sample. The resulting fluorescence is highly localized which when acquired through the photodetector of the microscope, provides a high contrast image. Moreover, due to localized illumination, only a small region is focused. Collecting a series of images by moving the illuminated region through mechanical means, a high resolution image is obtained.
+
+Although, resolution enhancement can be obtained through confocal microscopy, a large amount of light is wasted due to the pinhole. As a result, the method is very inefficient in terms of signal-to-noise ratio and long exposure times are required to achieve meaningful contrast between the sample and background.
+
+In Structured Illumination Microscopy, all of the sample is illuminated with a laterally modulated, patterned light and observed through wide-field microscope. (cite Heintzmann and Gustaffsson) The patterned light increases the spatial frequency content of the acquired light, in effect, enhancing the resolution without any wastage of light through the use pin-hole structures. The obtainable resolution through this linear technique surpasses the classical diffraction limit of 2.
+
+Moiré effect
+
+Two similar patterns when multiplicatively super-posed, generate an interference pattern that has frequency content much lower than its constituents which is clearly observable under the microscope that is bandlimited. If the constituting illumination pattern is known a-priori, the sample structure information can be extracted from the moiré fringes using spatial frequency Fourier analyses. As spatial frequency content much higher than what can is observable through conventional microscopic methods is possible through this technique.
+
+Insert Fourier analysis equations from Lancozs 1967 to show the mathematical background of the technique.
+
+Standing wave pattern in plasma wave  devices
+\end{document}

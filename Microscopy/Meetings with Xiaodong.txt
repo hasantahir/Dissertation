@@ -1,0 +1,28 @@
+Summary of meeting with Xiaodong 2-22-2017
+
+In the previous meetings, the idea of using plasma waves to generate standing wave pattern for structured illumination microscopy didn't seem attractive to Xiaodong since he thought there are a lot of problems in order to have a good standing wave pattern in the 2DEG. The existence of the grating structure was a particularly concercning issue since there would be different standing waves generated in the 2DEG and would radiate only from the edges. 
+
+Today I explained to him the principle of Shur-Dyakanov instability that we don't need any external wave to generate plasma waves in the 2DEG; all we need is a proper DC biasing across the source and drain terminals of the transistor. This idea and its subsequent uses sounded very attractive to him as it is innovative. 
+
+The main issue to be resolved is to create different phase of the standing wave in the 2DEG. 
+
+I need to write up all the pertinent details of an ungated plasma wave structure possibly out oif GaN/AlGaN or GaAs/AlGaAs HEMT and send it to him. 
+
+We also discussed having only two gratings at the top that would excite plasma waves in the 2DEG close to source and drain terminals. This way the phase of the standing wave pattern can be easily varied by just changing the direction of the incoming waves.
+
+How about we induce phase variations by making a circularly polarized wave incident on the 2DEG 
+
+
+Summary of meeting with Xiaodong 3-2-2017
+
+We discussed the plots that I had sent to Xiaodong earlier. The dispersion relation for the structure produces the curves that we would ideally need; small loss (small imaginary k) and large propagation constant.
+
+I need to plot the standing wave pattern for the structure; try using comsol or look at Popov's paper with method of moments scheme.
+
+We talked about why we need a standing wave pattern. Since the scheme generates an incoherent image at the observation side where all the sources are observed collectively in the form of intensity, the resolution is consequently poor. This happens when the atoms at the source side are exicted by a uniform signal. However, when the atoms are excited by a standing wave pattern, they generate different intensities ; a change in phase of the intensity will result in strengthening of one source while reducing the other. This keeps on happening. Therefore, a series of phase changes in the source side will result in different intensities at the observation side. With further post processing, increase in resolution can be obtained with this method.
+
+Keep in mind that thhis method is LINEAR as we are looking at spontaneous emissions of the atoms.
+
+We discussed that understanding of Eq. 3 is of paramount importance in the context of the structured illumination microscopy.
+
+I had some questions noted down from Dr Zubairy's book and past papers about the physical aspects of the scheme. The guy said it doesn't relate to this work.

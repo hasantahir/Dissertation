@@ -1,0 +1,25 @@
+Outline for the plasmonic SIM chapter
+
+1. SIM basics
+	Moire Pattern
+	Fourier Transform
+	Comparisons with other technique
+	
+2. Plasma waves in the 2DEG
+	Physics behind the formation of 2DEG
+	Generation of plasma waves in the 2DEG region
+	Standing wave pattern ungated
+	GaN/AlGaN heterostructure physics
+		Vanishing dielectric function near the plasma frequency
+		Plasma frequency of semiconductor heterostructure lying in terahertz frequency region
+		Role of the conductivity, mobility, imaginary part of the epsilon, temperature, scattering rate
+		Resonance
+	Dispersion relation
+		The plasma frequency of ungated region is higher than the gated region. For this reason, ungated plasma waves resonate at around  		
+		Subwavelength
+		Derivation
+		
+3. Image processing results seeking help from Xiaodong
+
+	
+	E0*sqrt(w0/w(y))*exp(-(x/w(y))^2)*exp(j*k*x^2/(2*R(y)))*exp(j*(k*y-0.5*atan(y/z0)))

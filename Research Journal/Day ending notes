@@ -1,0 +1,54 @@
+*****************NOTES
+3/3/2017
+Today I tried to model the 2DEG structure in COMSOL to simulate the standing wave pattern using the Transient Analysis. However, due to very fine mesh, the simulation was taking a long time and had to stop it.
+
+I can move on from here and see if I can add some initial conditions to the model that will simulate a pulse applied at one of the terminals. This is done to see if the Dyakonov-Shur instability can be simulated or not.
+
+Also I downloaded Lumerical to try as a pure FDTD tool.
+
+
+*****************NOTES
+5/3/2017
+
+Today's agenda is to start writing a few paragarphs about the SIM paper and come up with a simulation regarding the standing wave pattern. First try comsol, if it doesnt work out, try lumerical.
+
+*****************NOTES
+7/3/2017
+
+With perfectly conducting boundaries on the spacer and channel layers applied, the field was applied through a surface current density.
+
+*****************NOTES
+7/3/2017
+
+The effect of mobility on the dielectric constant
+
+Mobility -> Scattering time -> Conductivity -> Dielectric constant
+
+In the basence of an extrenal elextric field, the electrons in a mterial move randomly with the result that the there is no average flow of electrons overall. However, when the electrons are subjected to an external electric field which may form due to a voltage applied, the electrons start to drift in a particular direction governed by the electric field polarity. Due to collisions with the negihbouring particles, the electrons achieve an equilibrium speed called the drift velocity. The property of a material to respond to an external electric field is called the drift velocity.
+
+
+8/3/2017
+
+It is very hard to find a resonant frequency that will correspond to an eigenmode of the 2DEG strip.
+
+
+13/3/2017
+
+Back to work after wrist sprain and the expected sluggishness from the weeknend.
+
+14/3/2017
+
+Been trying to shift the standing wave pattern in comsol. Haven't found a way yet but.
+
+At the plasma frequency the real part of the dielectric function vanishes to zero and oscillations can appear in the electron gas, even without an external excitation. For metals the plasma frequency is located in the optical or ultra-violet region, for doped
+semiconductors the plasma frequency can be found in the THz range.
+
+18/3/2017
+
+The imaginary part of the dielectric function should be close to zero in order to obtain a standing wave pattern in the 2DEG. I tried various values to see, the wave is damped due to presence of even a small value of imaginarty  part of the dielectric. The value should be in the range of the few thousandth of the decimals. This can be done through increasing the mobility of the 2DEG by decreasing the temperature. It all falls to the fact that these devices can only be operated at cryognic  temperatures. At room temperature, the mobility will drop substantially which will increase the imaginary part of the dielecric function.
+
+20/3/2017
+
+The scattering time in order to achieve the mobility of 10^6 is 114 ps which is 100 times larger than at  temperature of 77 K. This corresponds to the mobility of GaN/AlGan heterostructure at 3 K. The mobility of the heterostructure is related to the temperature by:
+
+\mu \proportional \frac{1}{T^{3/2}}
