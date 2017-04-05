@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+
+% Insert style guide
+\usepackage{my_thesis}
+
+
+\begin{document}
+\title{\textsc{Plasma based Structured Illumination Microscopy}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+\section{Introduction}
+
+
+The resolution of a conventional fluorescent microscope is governed by the Abbe diffraction limit, restricting it to half the wavelength of the source used for illumination \cite{0521639212}. There are techniques that yield resolution beyond the limit among them confocal microscopy is the most well-known which uses pinholes to generate a focused point illumination and subsequently, a high resolution image of the fluorescent sample. Despite the improved resolution, the pinhole discards a portion of the emitted light due to which the signal level may become unusable, particularly for weakly fluorescent biological samples. Moreover, because the point source illuminates a small size of the sample, it has to be mechanically moved to scan the whole sample resulting in a slow imaging process.
+
+Structured Illumination microscopy (SIM) is a fast and wide-field non-confocal microscopic technique in which the sample is illuminated by a non-uniform, modulated and spatially structured pattern revealing the high resolution information of a sample in the form of Moiré fringes \cite{Gustafsson_2000,Heintzmann1999a}. In order to yield a high resolution result, post-processing of a series of such images is done to extract the high frequency contents.
+
+Illuminating a sample using
+?? Talk here about the Nassenstein's paper that how he proposed the idea of using surface waves to form a standing wave illuminating pattern which in turn has a much smaller wavelength as compared to plane wave illumination signal in free space.
+
+\section{Working Principle}
+
+The objective lens of a microscope can be considered as a low-pass filter due to diffraction. The impulse response of the filter, i.e., the image of a point source, is a blurred spot termed as the \emph{point spread function}(PSF). When a sample that can be represented by $f(x,y)$ is illuminated by a signal $i(x,y)$, the output image, $m(x,y)$ of the microscope can be written in the spatial domain as:
+%
+\begin{equation}
+  m(x,y) = \left[ f(x,y) \cdot i(x,y) \right] \ast h(x,y)
+  \label{eq:microscope}
+\end{equation}
+%
+where $h$ is the PSF, $\cdot$ is multiplication and $\ast$ denotes convolution operation.
+
+The image can be expressed in the spatial frequency domain by taking the Fourier transform:
+%
+\begin{equation}
+  \begin{split}
+    M(k_x, k_y) &= \int \limits_{-\inf}^{\inf} \int \limits_{-\inf}^{\inf}   m(x,y) e^{-j(k_x x + k_y y)} \diff{x}\diff{y} \\
+    &=  \left[ F(k_x,k_y) \ast I(k_x,k_y) \right] \cdot H(k_x,k_y)
+  \end{split}
+  \label{eq:FT}
+\end{equation}
+%
+
+
+
+
+
+
+
+\clearpage % Force Bibliography to the end of document on a new page
+\bibliography{zubairy}
+\bibliographystyle{ieeetr}
+
+\end{document}
