@@ -624,13 +624,4 @@
   publisher     = {Oxford University Press ({OUP})},
 }
 
-@Book{0521639212,
-  title     = {Principles of Optics: Electromagnetic Theory of Propagation, Interference and Diffraction of Light},
-  publisher = {Cambridge University Press},
-  year      = {1997},
-  author    = {Max Born and Emil Wolf},
-  isbn      = {0-521-63921-2},
-  url       = {https://www.amazon.com/Principles-Optics-Electromagnetic-Propagation-Interference/dp/0521639212?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0521639212},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}
