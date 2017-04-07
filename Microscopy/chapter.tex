@@ -2,7 +2,8 @@
 
 % Insert style guide
 \usepackage{my_thesis}
-
+% Specifiy the location of images to be used
+\graphicspath{{figures/}}
 
 \begin{document}
 \title{\textsc{Plasma based Structured Illumination Microscopy}\\}
@@ -68,12 +69,36 @@ For simplicity, we consider the excitation pattern to be sinusoidal written as \
 
 Two-dimensional electron gas (2DEG) is a tightly confined sheet of free electrons formed at the interface of semiconductor hetero-junctions in transistor-like structures. By virtue of the high electron concentration and unusually high mobility, the 2DEG exhibits extraordinary electromagnetic properties and physical phenomena \cite{Andress_2012,Tsui_1982,Reyren_2007}.
 
-In high electron mobility transistors (HEMTs), the 2DEG acts as the principle device channel and it has been shown that a voltage bias across the 2DEG generates plasma waves under certain boundary conditions \cite{Dyakonov_1993}. When the channel length is short enough such that the electron transit time $\tau_{tr}$ is shorter than the momentum relaxation time $\tau_{p}$ of the 2DEG, the channel response to a perturbation in the form of a voltage bias is  oscillatory. Considering a Gallium Arsenide / Indium Gallium Arsenide (GaAs/InGaAs) heterostructure as an example, a surface electron density ($N_s$) of $10^{11} cm^{-2}$ in the 2DEG results in $\tau{p} \approx 10^{-10} s$ at $4 K$, while at $300 K$ it is $\sim 10^{-10} s$. Assuming the 2DEG channel length of $1 \u m$ and electron drift velocity ($v_d \sim 10^5 m/s$) due to voltage bias across the channel, at $4 K$ we get $\tau_{tr} \approx 10^{-11} s$, which is shorter than the relaxation time. Under asymmetric boundary conditions across the channel such that the voltage at the source end is constant and the current at the drain end is constant, the channel forms a cavity where the reflected plasma waves are amplified constituting a growing standing wave pattern along the channel. The unstable steady state response leads to radiation of plasma waves whose wavelength terahertz region.
+In high electron mobility transistors (HEMTs), the 2DEG acts as the principle device channel and it has been shown that a voltage bias across the 2DEG generates plasma waves under certain boundary conditions \cite{Dyakonov_1993}. When the channel length is short enough such that the electron transit time $\tau_{tr}$ is shorter than the momentum relaxation time $\tau_{p}$ of the 2DEG, the channel response to a perturbation in the form of a voltage bias is  oscillatory. Considering a Gallium Arsenide / Indium Gallium Arsenide (GaAs/InGaAs) heterostructure as an example, a surface electron density ($N_s$) of $10^{11} cm^{-2}$ in the 2DEG results in $\tau{p} \approx 10^{-10} s$ at $4 K$, while at $300 K$ it is $\sim 10^{-10} s$. Assuming the 2DEG channel length of $1 \u m$ and electron drift velocity ($v_d \sim 10^5 m/s$) due to voltage bias across the channel, at $4 K$ we get $\tau_{tr} \approx 10^{-11} s$, which is shorter than the relaxation time. Under asymmetric boundary conditions across the channel such that the voltage at the source end is constant and the current at the drain end is constant, the channel forms a cavity where the reflected plasma waves are amplified constituting a growing standing wave pattern along the channel. The steady state response of the system is unstable that leads to radiation of plasma waves that lies in the terahertz frequency range. The wavelength of the plasma waves is much shorter compared to the free-space wavelength of light.
 
+\section{Dispersion relation}
 
+In a semiconductor heterostructure, the 2DEG can be modeled as infinitesimally thin sheet of charge described by a Drude-type surface conductivity $\sigma_s$:
+%
+\begin{equation}
+  \sigma_s(\O) = \frac{N_s e^2 \tau_{p}}{m^{\ast}}\frac{1}{1 + j \O \tau_{p}}
+  \label{eq:conductivity}
+\end{equation}
+%
+where $e$ is electron charge, $m^{\ast}$ is effective electron mass, $N_s$ is surface charge density and $\tau_p$ is the momentum relaxation time of the 2DEG. At low temperatures, the real part of the conductivity is three orders in magnitude smaller than the imaginary part, therefore, can be neglected.
+%
+\begin{figure}
+  \hspace*{-1cm}
+  % \vspace*{-2cm}
+  \def\svgwidth{1.2\linewidth}
+  \input{figures/2deg_tl.pdf_tex}
+  \caption{Transmission line equivalent for the heterostructure}
+\end{figure}
+%
+The dispersion relation solving for the propagation constant of the plasma wave is found by analyzing an equivalent transmission line (TL) analogue \cite{Michalski_2005} of the heterostructure shown in Fig. \ref{}. When there is a TM polarized wave incident on the structure, the dispersion relation is expressed in terms of the equivalent material admittances and solving for the transverse resonance (TR) condition \cite{G_mez_D_az_2012}:
+%
+\begin{equation}
+  Y_1 + Y_2 + Y_{2DEG} = 0
+\end{equation}
+%
+where $Y_i = k_{zi}/{\O \E_i}$ with $i = 1,2$
 
-
-
+is the TM wave admittance in the $i^{th}$ layer and $Y_{2DEG} = \sigma_s$ given by \ref{eq:conductivity}, and the transverse propagation constant $k_{zi}$ is expressed as $k_{zi} = \pm \sqrt{k_i^2 -  k_x^2}$. In order to find proper solutions of the dispersion relation, correct sign of the square-root function needs to be selected. When the 
 
 \clearpage % Force Bibliography to the end of document on a new page
 \bibliography{zubairy}

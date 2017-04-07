@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{0521639212}
 M.~Born and E.~Wolf, {\em Principles of Optics: Electromagnetic Theory of
@@ -41,5 +41,16 @@ N.~Reyren, S.~Thiel, A.~D. Caviglia, L.~F. Kourkoutis, G.~Hammerl, C.~Richter,
 M.~Dyakonov and M.~Shur, ``Shallow water analogy for a ballistic field effect
   transistor: New mechanism of plasma wave generation by dc current,'' {\em
   Physical Review Letters}, vol.~71, pp.~2465--2468, oct 1993.
+
+\bibitem{Michalski_2005}
+K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
+  in {\em Encyclopedia of {RF} and Microwave Engineering}, Hoboken, NJ, USA:
+  John Wiley \& Sons, Inc., apr 2005.
+
+\bibitem{G_mez_D_az_2012}
+J.~S. G{\'{o}}mez-D{\'{\i}}az and J.~Perruisseau-Carrier, ``Propagation of
+  hybrid transverse magnetic-transverse electric plasmons on magnetically
+  biased graphene sheets,'' {\em Journal of Applied Physics}, vol.~112,
+  p.~124906, dec 2012.
 
 \end{thebibliography}

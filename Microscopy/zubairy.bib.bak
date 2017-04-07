@@ -665,18 +665,17 @@
 }
 
 @Article{Tsui_1982,
-  author        = {D. C. Tsui and H. L. Stormer and A. C. Gossard},
-  title         = {Two-Dimensional Magnetotransport in the Extreme Quantum Limit},
-  journal       = {Physical Review Letters},
-  year          = {1982},
-  volume        = {48},
-  number        = {22},
-  pages         = {1559--1562},
-  month         = {may},
-  __markedentry = {[Phased:]},
-  doi           = {10.1103/physrevlett.48.1559},
-  keywords      = {doi:10.1103/PhysRevLett.48.1559 url:http://dx.doi.org/10.1103/PhysRevLett.48.1559},
-  publisher     = {American Physical Society ({APS})},
+  author    = {D. C. Tsui and H. L. Stormer and A. C. Gossard},
+  title     = {Two-Dimensional Magnetotransport in the Extreme Quantum Limit},
+  journal   = {Physical Review Letters},
+  year      = {1982},
+  volume    = {48},
+  number    = {22},
+  pages     = {1559--1562},
+  month     = {may},
+  doi       = {10.1103/physrevlett.48.1559},
+  keywords  = {doi:10.1103/PhysRevLett.48.1559 url:http://dx.doi.org/10.1103/PhysRevLett.48.1559},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Article{Reyren_2007,
@@ -688,9 +687,38 @@
   number        = {5842},
   pages         = {1196--1199},
   month         = {aug},
-  __markedentry = {[Phased:6]},
+  __markedentry = {[Phased:]},
   doi           = {10.1126/science.1146006},
   publisher     = {American Association for the Advancement of Science ({AAAS})},
+}
+�_��\T�v6�`G۳֖'ڟ7����_>),�\_�b�.(s�Yd
+�[�j�z4�-�l��I9����� ��L��e�ұ��/�$z"���券��2xfWr���?���m�R�8$�O�!!wK���٤�W��4�w�0�n7��}*�ӎg���O'~�������c}���ꉁ��eG���~�h��s���*ɝ��|�
+
+@Article{Andress_2012,
+  author        = {William F. Andress and Hosang Yoon and Kitty Y. M. Yeung and Ling Qin and Ken West and Loren Pfeiffer and Donhee Ham},
+  title         = {Ultra-Subwavelength Two-Dimensional Plasmonic Circuits},
+  journal       = {Nano Letters},
+  year          = {2012},
+  volume        = {12},
+  number        = {5},
+  pages         = {2272--2277},
+  month         = {may},
+  __markedentry = {[Phased:6]},
+  doi           = {10.1021/nl300046g},
+  publisher     = {American Chemical Society ({ACS})},
+}
+
+@InCollection{Michalski_2005,
+  author        = {Krzysztof Arkadiusz Michalski},
+  title         = {Electromagnetic Field Computation in Planar Multilayers},
+  booktitle     = {Encyclopedia of {RF} and Microwave Engineering},
+  publisher     = {John Wiley \& Sons, Inc.},
+  year          = {2005},
+  address       = {Hoboken, NJ, USA},
+  month         = {apr},
+  __markedentry = {[Phased:6]},
+  doi           = {10.1002/0471654507.eme554},
+  file          = {:D\:\\Users\\Mendeley Desktop\\CHAPTER - Michalski - EM Field Computation in Planar Multilayers.pdf:pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

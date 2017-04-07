@@ -679,17 +679,16 @@
 }
 
 @Article{Reyren_2007,
-  author        = {N. Reyren and S. Thiel and A. D. Caviglia and L. F. Kourkoutis and G. Hammerl and C. Richter and C. W. Schneider and T. Kopp and A.-S. Ruetschi and D. Jaccard and M. Gabay and D. A. Muller and J.-M. Triscone and J. Mannhart},
-  title         = {Superconducting Interfaces Between Insulating Oxides},
-  journal       = {Science},
-  year          = {2007},
-  volume        = {317},
-  number        = {5842},
-  pages         = {1196--1199},
-  month         = {aug},
-  __markedentry = {[Phased:]},
-  doi           = {10.1126/science.1146006},
-  publisher     = {American Association for the Advancement of Science ({AAAS})},
+  author    = {N. Reyren and S. Thiel and A. D. Caviglia and L. F. Kourkoutis and G. Hammerl and C. Richter and C. W. Schneider and T. Kopp and A.-S. Ruetschi and D. Jaccard and M. Gabay and D. A. Muller and J.-M. Triscone and J. Mannhart},
+  title     = {Superconducting Interfaces Between Insulating Oxides},
+  journal   = {Science},
+  year      = {2007},
+  volume    = {317},
+  number    = {5842},
+  pages     = {1196--1199},
+  month     = {aug},
+  doi       = {10.1126/science.1146006},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 �_��\T�v6�`G۳֖'ڟ7����_>),�\_�b�.(s�Yd
 �[�j�z4�-�l��I9����� ��L��e�ұ��/�$z"���券��2xfWr���?���m�R�8$�O�!!wK���٤�W��4�w�0�n7��}*�ӎg���O'~�������c}���ꉁ��eG���~�h��s���*ɝ��|�
@@ -703,9 +702,37 @@
   number        = {5},
   pages         = {2272--2277},
   month         = {may},
-  __markedentry = {[Phased:6]},
+  __markedentry = {[Phased:]},
   doi           = {10.1021/nl300046g},
   publisher     = {American Chemical Society ({ACS})},
+}
+
+@InCollection{Michalski_2005,
+  author        = {Krzysztof Arkadiusz Michalski},
+  title         = {Electromagnetic Field Computation in Planar Multilayers},
+  booktitle     = {Encyclopedia of {RF} and Microwave Engineering},
+  publisher     = {John Wiley \& Sons, Inc.},
+  year          = {2005},
+  address       = {Hoboken, NJ, USA},
+  month         = {apr},
+  __markedentry = {[Phased:]},
+  doi           = {10.1002/0471654507.eme554},
+  file          = {:D\:\\Users\\Mendeley Desktop\\CHAPTER - Michalski - EM Field Computation in Planar Multilayers.pdf:pdf},
+}
+�
+
+@Article{G_mez_D_az_2012,
+  author        = {J. S. G{\'{o}}mez-D{\'{\i}}az and J. Perruisseau-Carrier},
+  title         = {Propagation of hybrid transverse magnetic-transverse electric plasmons on magnetically biased graphene sheets},
+  journal       = {Journal of Applied Physics},
+  year          = {2012},
+  volume        = {112},
+  number        = {12},
+  pages         = {124906},
+  month         = {dec},
+  __markedentry = {[Phased:6]},
+  doi           = {10.1063/1.4769749},
+  publisher     = {{AIP} Publishing},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
