@@ -636,34 +636,76 @@
 &�h˃!��.\0\��1�eȹ�2�s0� �n\6�,��[�.B5Dt�I����E�|��L�2� ������DrB,(O�}{���Ў��C7�z���	d6A������ Х�]� N����lq_��>�����/_��]���#���G������:G�_�}� T�l���,}�A�1�2B�oP���k�
 
 @Misc{Nassenstein_1970,
-  author        = {H. Nassenstein},
-  title         = {Superresolution by diffraction of subwaves},
-  month         = {oct},
-  year          = {1970},
-  __markedentry = {[Phased:]},
-  doi           = {10.1016/0030-4018(70)90145-8},
-  journal       = {Optics Communications},
-  number        = {5},
-  pages         = {231--234},
-  publisher     = {Elsevier {BV}},
-  volume        = {2},
+  author    = {H. Nassenstein},
+  title     = {Superresolution by diffraction of subwaves},
+  month     = {oct},
+  year      = {1970},
+  doi       = {10.1016/0030-4018(70)90145-8},
+  journal   = {Optics Communications},
+  number    = {5},
+  pages     = {231--234},
+  publisher = {Elsevier {BV}},
+  volume    = {2},
 }
 
 @Article{Jost_2013,
-  author        = {Aur{\'{e}}lie Jost and Rainer Heintzmann},
-  title         = {Superresolution Multidimensional Imaging with Structured Illumination Microscopy},
-  journal       = {Annual Review of Materials Research},
-  year          = {2013},
-  volume        = {43},
-  number        = {1},
-  pages         = {261--282},
-  month         = {jul},
+  author    = {Aur{\'{e}}lie Jost and Rainer Heintzmann},
+  title     = {Superresolution Multidimensional Imaging with Structured Illumination Microscopy},
+  journal   = {Annual Review of Materials Research},
+  year      = {2013},
+  volume    = {43},
+  number    = {1},
+  pages     = {261--282},
+  month     = {jul},
+  abstract  = {Annu. Rev. Mater. Res. 2013.43:261-282},
+  doi       = {10.1146/annurev-matsci-071312-121648},
+  file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Zubairy Papers\\Heintzmann - detailed review of SIM.pdf:PDF},
+  keywords  = {Abbe limit,point spread function,PSF,optical transfer function,OTF,optical sectioning,moiré effect},
+  publisher = {Annual Reviews},
+}
+
+@Article{Tsui_1982,
+  author    = {D. C. Tsui and H. L. Stormer and A. C. Gossard},
+  title     = {Two-Dimensional Magnetotransport in the Extreme Quantum Limit},
+  journal   = {Physical Review Letters},
+  year      = {1982},
+  volume    = {48},
+  number    = {22},
+  pages     = {1559--1562},
+  month     = {may},
+  doi       = {10.1103/physrevlett.48.1559},
+  keywords  = {doi:10.1103/PhysRevLett.48.1559 url:http://dx.doi.org/10.1103/PhysRevLett.48.1559},
+  publisher = {American Physical Society ({APS})},
+}
+
+@Article{Reyren_2007,
+  author        = {N. Reyren and S. Thiel and A. D. Caviglia and L. F. Kourkoutis and G. Hammerl and C. Richter and C. W. Schneider and T. Kopp and A.-S. Ruetschi and D. Jaccard and M. Gabay and D. A. Muller and J.-M. Triscone and J. Mannhart},
+  title         = {Superconducting Interfaces Between Insulating Oxides},
+  journal       = {Science},
+  year          = {2007},
+  volume        = {317},
+  number        = {5842},
+  pages         = {1196--1199},
+  month         = {aug},
+  __markedentry = {[Phased:]},
+  doi           = {10.1126/science.1146006},
+  publisher     = {American Association for the Advancement of Science ({AAAS})},
+}
+�_��\T�v6�`G۳֖'ڟ7����_>),�\_�b�.(s�Yd
+�[�j�z4�-�l��I9����� ��L��e�ұ��/�$z"���券��2xfWr���?���m�R�8$�O�!!wK���٤�W��4�w�0�n7��}*�ӎg���O'~�������c}���ꉁ��eG���~�h��s���*ɝ��|�
+
+@Article{Andress_2012,
+  author        = {William F. Andress and Hosang Yoon and Kitty Y. M. Yeung and Ling Qin and Ken West and Loren Pfeiffer and Donhee Ham},
+  title         = {Ultra-Subwavelength Two-Dimensional Plasmonic Circuits},
+  journal       = {Nano Letters},
+  year          = {2012},
+  volume        = {12},
+  number        = {5},
+  pages         = {2272--2277},
+  month         = {may},
   __markedentry = {[Phased:6]},
-  abstract      = {Annu. Rev. Mater. Res. 2013.43:261-282},
-  doi           = {10.1146/annurev-matsci-071312-121648},
-  file          = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Zubairy Papers\\Heintzmann - detailed review of SIM.pdf:PDF},
-  keywords      = {Abbe limit,point spread function,PSF,optical transfer function,OTF,optical sectioning,moiré effect},
-  publisher     = {Annual Reviews},
+  doi           = {10.1021/nl300046g},
+  publisher     = {American Chemical Society ({ACS})},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

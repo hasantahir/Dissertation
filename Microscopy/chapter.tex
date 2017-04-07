@@ -21,7 +21,12 @@ Illuminating a sample using
 
 \section{Working Principle}
 
-The objective lens of a microscope can be considered as a low-pass filter due to diffraction. The impulse response of the filter, i.e., the image of a point source, is a blurred spot termed as the \emph{point spread function}(PSF) of the microscope. When a sample that can be represented by $f(x,y)$ is illuminated by a signal $i(x,y)$, the output image, $m(x,y)$ of the microscope can be written in the spatial domain as:
+The SIM technique can be split into two operations; one at the sample end and the other at the objective end. First, the sample is illuminated with a non-uniform, modulated pattern of sinusoidal shape. Only that portion of the sample that falls under the peak of the illumination signal is focused while the rest of the sample remains unfocused. Other portions are focused by laterally shifting the illumination pattern. A combination of a number of images acquired generate a focused  as \emph{optical sectioning}
+SIM does two things\
+1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.
+
+2. The other part of SIM deals with generation of Moiré effect that actually results in high resolution. The effect is created when the illumination signal is modulated by the sample signal
+The objective lens of a microscope can be considered as a low-pass filter due to diffraction. The impulse response of the filter, i.e., the image of a point source, is a blurred spot termed as the \emph{point spread function}(PSF) of the microscope. When a sample that can be represented by $f(x,y)$ is illuminated by a signal $i(x,y)$, the output image, $m(x,y)$ of the microscope can be written in the spatial domain as \cite{Jost_2013}:
 %
 \begin{equation}
   m(x,y) = \left[ f(x,y) \cdot i(x,y) \right] \ast h(x,y)
@@ -29,7 +34,7 @@ The objective lens of a microscope can be considered as a low-pass filter due to
 \end{equation}
 %
 where $h$ is the PSF, and $\ast$ denotes convolution.
-
+ % For conventional microscopy, the illumination signal is uniform (constant $i$) whereas in SIM, $i$ is usually a
 The image can be expressed in the spatial frequency domain by taking the Fourier transform:
 %
 \begin{equation}
@@ -40,7 +45,30 @@ The image can be expressed in the spatial frequency domain by taking the Fourier
   \label{eq:FT}
 \end{equation}
 %
-where the capital letters represent the Fourier transforms of the respective spatial domain functions and $H$ is called the \emph{optical transfer function}(OTF) of the microscope.
+where each capital letter represents the corresponding Fourier transforms of the spatial domain functions with $H$ in particular, is called the \emph{optical transfer function}(OTF) of the microscope.
+
+
+
+SIM does two things
+1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.
+
+2. The other part of SIM deals with generation of Moiré effect that actually results in high resolution. The effect is created when the illumination signal is modulated by the sample signal
+
+\section{Reconstruction}
+
+The Moiré fringe contains the high frequency information that lies inside the passband of the OTF as difference of frequencies of two signals. For the case of sinusoidal excitation pattern,
+
+For simplicity, we consider the excitation pattern to be sinusoidal written as \cite{Heintzmann1999a}:
+%
+\begin{equation}
+  i(x,y) = 1 + cos()
+\end{equation}
+%
+\section{Generation of the standing wave pattern}
+
+Two-dimensional electron gas (2DEG) is a tightly confined sheet of free electrons formed at the interface of semiconductor hetero-junctions in transistor-like structures. By virtue of the high electron concentration and unusually high mobility, the 2DEG exhibits extraordinary electromagnetic properties and physical phenomena \cite{Andress_2012,Tsui_1982,Reyren_2007}.
+
+In high electron mobility transistors (HEMTs), the 2DEG acts as the principle device channel and it has been shown that a voltage bias across the 2DEG generates plasma waves under certain boundary conditions \cite{Dyakonov_1993}. When the channel length is short enough such that the electron transit time $\tau_{tr}$ is shorter than the momentum relaxation time $\tau_{p}$ of the 2DEG, the channel response to a perturbation in the form of a voltage bias is  oscillatory. Considering a Gallium Arsenide / Indium Gallium Arsenide (GaAs/InGaAs) heterostructure as an example, a surface electron density ($N_s$) of $10^{11} cm^{-2}$ in the 2DEG results in $\tau{p} \approx 10^{-10} s$ at $4 K$, while at $300 K$ it is $\sim 10^{-10} s$. Assuming the 2DEG channel length of $1 \u m$ and electron drift velocity ($v_d \sim 10^5 m/s$) due to voltage bias across the channel, at $4 K$ we get $\tau_{tr} \approx 10^{-11} s$, which is shorter than the relaxation time. Under asymmetric boundary conditions across the channel such that the voltage at the source end is constant and the current at the drain end is constant, the channel forms a cavity where the reflected plasma waves are amplified constituting a growing standing wave pattern along the channel. The unstable steady state response leads to radiation of plasma waves whose wavelength terahertz region.
 
 
 
