@@ -13,16 +13,14 @@
 \section{Introduction}
 
 
-The resolution of a conventional fluorescent microscope is governed by the Abbe diffraction limit, restricting it to half the wavelength of the source used for illumination \cite{0521639212}. There are techniques that yield resolution beyond the limit among them confocal microscopy is the most well-known which uses pinholes to generate a focused point illumination and subsequently, a high resolution image of the fluorescent sample. Despite the improved resolution, the pinhole discards a portion of the emitted light due to which the signal level may become unusable, particularly for weakly fluorescent biological samples. Moreover, because the point source illuminates a small size of the sample, it has to be mechanically moved to scan the whole sample resulting in a slow imaging process.
-
-Structured Illumination microscopy (SIM) is a fast and wide-field non-confocal microscopic technique in which the sample is illuminated by a non-uniform, modulated and spatially structured pattern revealing the high resolution information of a sample in the form of Moiré fringes \cite{Gustafsson_2000,Heintzmann1999a}. In order to yield a high resolution result, post-processing of a series of such images is done to extract the high frequency contents.
+The resolution of a conventional fluorescent microscope is governed by the Abbe diffraction limit, restricting it to half the wavelength of the source used for illumination \cite{0521639212}. There are techniques that yield resolution beyond the diffraction limit, among them the most common is confocal microscopy, which uses pinholes to generate a focused point illumination and subsequently a high resolution image of the fluorescent sample. Despite improved resolution, the pinhole discards a portion of the emitted light due to which the signal level may become unusably low, particularly for weakly fluorescent biological samples. Moreover, because the point source illuminates only a small portion of the sample, it must be mechanically moved in order to scan the whole sample, therefore resulting in a slow imaging process. Structured Illumination microscopy (SIM) is a fast and wide-field non-confocal microscopic technique in which the sample is illuminated by a non-uniform, modulated and spatially structured pattern revealing the high resolution information of a sample in the form of Moiré fringes \cite{Gustafsson_2000,Heintzmann1999a}. In order to yield a high resolution result, post-processing of a series of such images is performed to extract the high frequency content.
 
 Illuminating a sample using
 ?? Talk here about the Nassenstein's paper that how he proposed the idea of using surface waves to form a standing wave illuminating pattern which in turn has a much smaller wavelength as compared to plane wave illumination signal in free space.
 
 \section{Working Principle}
 
-The SIM technique can be split into two operations; one at the sample end and the other at the objective end. First, the sample is illuminated with a non-uniform, modulated pattern of sinusoidal shape. Only that portion of the sample that falls under the peak of the illumination signal is focused while the rest of the sample remains unfocused. Other portions are focused by laterally shifting the illumination pattern. A combination of a number of images acquired generate a focused  as \emph{optical sectioning}
+The SIM technique can be split into two operations; one at the sample end and the other at the objective end. First, the sample is illuminated with a non-uniform, modulated pattern of sinusoidal shape. Only the portion of the sample that falls under the peak of the illumination signal is focused while the rest of the sample remains unfocused. Other portions are focused by laterally shifting the illumination pattern. Combining a number of images acquired generate a focused  as \emph{optical sectioning}
 SIM does two things\
 1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.
 
@@ -98,7 +96,7 @@ The dispersion relation solving for the propagation constant of the plasma wave 
 %
 where $Y_i = k_{zi}/{\O \E_i}$ with $i = 1,2$
 
-is the TM wave admittance in the $i^{th}$ layer and $Y_{2DEG} = \sigma_s$ given by \ref{eq:conductivity}, and the transverse propagation constant $k_{zi}$ is expressed as $k_{zi} = \pm \sqrt{k_i^2 -  k_x^2}$. In order to find proper solutions of the dispersion relation, correct sign of the square-root function needs to be selected. When the 
+is the TM wave admittance in the $i^{th}$ layer and $Y_{2DEG} = \sigma_s$ given by \ref{eq:conductivity}, and the transverse propagation constant $k_{zi}$ is expressed as $k_{zi} = \pm \sqrt{k_i^2 -  k_x^2}$. In order to find proper solutions of the dispersion relation, correct sign of the square-root function needs to be selected. When the
 
 \clearpage % Force Bibliography to the end of document on a new page
 \bibliography{zubairy}
