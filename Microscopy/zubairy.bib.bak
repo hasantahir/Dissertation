@@ -361,7 +361,7 @@
   publisher = {American Chemical Society ({ACS})},
 }
 
-@Article{Popov_2008,
+@Article{Popov2008,
   author    = {V. V. Popov and A. N. Koudymov and M. Shur and O. V. Polischuk},
   title     = {Tuning of ungated plasmons by a gate in the field-effect transistor with two-dimensional electron channel},
   journal   = {Journal of Applied Physics},
@@ -632,7 +632,7 @@
   url       = {https://www.amazon.com/Principles-Optics-Electromagnetic-Propagation-Interference/dp/0521639212?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0521639212},
 }
 �
-�K��������A����� �endstreamendobj92 0 obj2863 endobj93 0 obj<< /Type /XObject /Subtype /Image /Name /im19 /Filter /CCITTFaxDecode /Width 2250 /Height 115 /BitsPerComponent 1 /Decode [ 1 0 ] /ColorSpace /DeviceGray /Length 92 0 R /DecodeParms << /K -1 /Columns 2250 >> >> stream
+�K��������A����� �endstreamendobj92 0 obj2863endobj93 0 obj<< /Type /XObject /Subtype /Image /Name /im19 /Filter /CCITTFaxDecode/Width 2250 /Height 115 /BitsPerComponent 1 /Decode [ 1 0 ] /ColorSpace /DeviceGray/Length 92 0 R /DecodeParms << /K -1 /Columns 2250 >> >>stream
 &�h˃!��.\0\��1�eȹ�2�s0� �n\6�,��[�.B5Dt�I����E�|��L�2� ������DrB,(O�}{���Ў��C7�z���	d6A������ Х�]� N����lq_��>�����/_��]���#���G������:G�_�}� T�l���,}�A�1�2B�oP���k�
 
 @Misc{Nassenstein_1970,
@@ -720,17 +720,16 @@
 �
 
 @Article{G_mez_D_az_2012,
-  author        = {J. S. G{\'{o}}mez-D{\'{\i}}az and J. Perruisseau-Carrier},
-  title         = {Propagation of hybrid transverse magnetic-transverse electric plasmons on magnetically biased graphene sheets},
-  journal       = {Journal of Applied Physics},
-  year          = {2012},
-  volume        = {112},
-  number        = {12},
-  pages         = {124906},
-  month         = {dec},
-  __markedentry = {[Phased:]},
-  doi           = {10.1063/1.4769749},
-  publisher     = {{AIP} Publishing},
+  author    = {J. S. G{\'{o}}mez-D{\'{\i}}az and J. Perruisseau-Carrier},
+  title     = {Propagation of hybrid transverse magnetic-transverse electric plasmons on magnetically biased graphene sheets},
+  journal   = {Journal of Applied Physics},
+  year      = {2012},
+  volume    = {112},
+  number    = {12},
+  pages     = {124906},
+  month     = {dec},
+  doi       = {10.1063/1.4769749},
+  publisher = {{AIP} Publishing},
 }
 
 @Article{Dyakonov_1996,
@@ -742,9 +741,36 @@
   number        = {3},
   pages         = {380--387},
   month         = {mar},
-  __markedentry = {[Phased:6]},
+  __markedentry = {[Phased:]},
   doi           = {10.1109/16.485650},
   publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Article{Burke_2000,
+  author        = {P. J. Burke and I. B. Spielman and J. P. Eisenstein and L. N. Pfeiffer and K. W. West},
+  title         = {High frequency conductivity of the high-mobility two-dimensional electron gas},
+  journal       = {Applied Physics Letters},
+  year          = {2000},
+  volume        = {76},
+  number        = {6},
+  pages         = {745--747},
+  month         = {feb},
+  __markedentry = {[Phased:6]},
+  doi           = {10.1063/1.125881},
+  publisher     = {{AIP} Publishing},
+}
+
+@Article{Jablan_2009,
+  author    = {Marinko Jablan and Hrvoje Buljan and Marin Marin Soljaci{\'c}},
+  title     = {Plasmonics in graphene at infrared frequencies},
+  journal   = {Physical Review B},
+  year      = {2009},
+  volume    = {80},
+  number    = {24},
+  month     = {dec},
+  doi       = {10.1103/physrevb.80.245435},
+  file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\2DEG Dispersion\\PhysRevB.80.245435.pdf:PDF},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

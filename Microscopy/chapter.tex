@@ -20,6 +20,30 @@ Illuminating a sample using
 
 \section{Working Principle}
 
+With a conventional microscope, the sample is illuminated with a uniform light and at the source end, the image resolution is entirely dependent on the wavelength $\lambda_0$ of illuminating light. According to Abbe's diffraction limit, under ideal circumstances (assuming a numerical aperture of 1), the attainable resolution is $\lambda_0/2$. In SIM, a non-uniform and periodic illumination signal termed as pattern excites the sample. Considering a one-dimensional example to illustrate the working of the technique, the observed image $m$ is expressed as:
+\begin{equation}
+  \begin{split}
+    m(x) &= f(x) \cdot i(x) \\
+  \end{split}
+  \label{eq:spatial_image}
+\end{equation}
+%
+where $f$ is fluorescence signal of the sample and $i = 1 + cos(k_p x + \Delta_x)$ is the illumination pattern with spatial frequency $k_p$ and phase $\Delta_x$. Transforming \eqref{eq:spatial_image} to the spatial frequency domain by taking the Fourier transform, we get:
+\begin{equation}
+  \begin{split}
+    M(k_x) &= \int \limits_{-\inf}^{\inf}   m(x) e^{-j(k_x x)} \diff{x} \\
+    &=   F(k_x) + F(k_x - k_p)e^{-\delta_x x} +  F(k_x + k_p)e^{ \delta_x x}
+  \end{split}
+  \label{eq:spatial_image}
+\end{equation}
+%
+where the second and third terms are the Fourier transforms of the sample shifted by spatial frequency $k_1$ along the $k_x$ axis in positive and negative direction respectively. The terms are determined by setting up a system of three linear equations by varying the phase term $\Delta_x$.
+
+
+
+
+
+
 The SIM technique can be split into two operations; one at the sample end and the other at the objective end. First, the sample is illuminated with a non-uniform, modulated pattern of sinusoidal shape. Only the portion of the sample that falls under the peak of the illumination signal is focused while the rest of the sample remains unfocused. Other portions are focused by laterally shifting the illumination pattern. Combining a number of images acquired generate a focused  as \emph{optical sectioning}
 SIM does two things\
 1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.

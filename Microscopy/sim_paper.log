@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.5)  12 APR 2017 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.5)  12 APR 2017 12:37
 entering extended mode
 **./sim_paper.tex
 (sim_paper.tex
@@ -2105,155 +2105,97 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-254.def"
 File: uni-254.def 2013/05/13 UCS: Unicode data U+FE00..U+FEFF
 )
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 20.
-
-
-LaTeX Warning: Citation `0521639212' on page 1 undefined on input line 20.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
-
-LaTeX Warning: Citation `Gustafsson_2000' on page 1 undefined on input line 20.
-
-
-
-LaTeX Warning: Citation `Heintzmann1999a' on page 1 undefined on input line 20.
-
-
-
-LaTeX Warning: Citation `Gustafsson_2005' on page 1 undefined on input line 20.
-
-
-[1
+) [1
 
 {C:/Users/Phased/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Citation `Nassenstein_1970' on page 2 undefined on input line 22
-.
-
-
-LaTeX Warning: Citation `Wei_2010' on page 2 undefined on input line 22.
-
-
-LaTeX Warning: Citation `Zeng_2014' on page 2 undefined on input line 22.
-
-
-LaTeX Warning: Citation `Dyakonov_1993' on page 2 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Dyakonov_1996' on page 2 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Popov_2008' on page 2 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Otsuji_2006' on page 2 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Muravjov_2010' on page 2 undefined on input line 24.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
-
-LaTeX Warning: Citation `Burke_2000' on page 2 undefined on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def"
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-)
-
-LaTeX Warning: Citation `Muravjov_2010' on page 2 undefined on input line 24.
-
-[2]
-
-LaTeX Warning: Citation `Nakayama_1974' on page 3 undefined on input line 41.
-
-[3]
-
-LaTeX Warning: Citation `Jost_2013' on page 4 undefined on input line 61.
-
-
-LaTeX Warning: Citation `Jost_2013' on page 4 undefined on input line 62.
-
-<figures/Microcopic_Structure.png, id=48, 574.0647pt x 281.97345pt>
+) [2] [3]
+<figures/Microcopic_Structure.png, id=95, 574.0647pt x 281.97345pt>
 File: figures/Microcopic_Structure.png Graphic file (type png)
 
 <use figures/Microcopic_Structure.png>
-Package pdftex.def Info: figures/Microcopic_Structure.png used on input line 70
+Package pdftex.def Info: figures/Microcopic_Structure.png used on input line 92
 .
 (pdftex.def)             Requested size: 287.03165pt x 140.98637pt.
 
-<figures/no_port.png, id=50, 421.575pt x 316.18124pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/no_port.png, id=97, 421.575pt x 316.18124pt>
 File: figures/no_port.png Graphic file (type png)
 
 <use figures/no_port.png>
-Package pdftex.def Info: figures/no_port.png used on input line 77.
+Package pdftex.def Info: figures/no_port.png used on input line 99.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/test.png, id=51, 421.575pt x 316.18124pt>
+<figures/test.png, id=98, 421.575pt x 316.18124pt>
 File: figures/test.png Graphic file (type png)
  <use figures/test.png>
-Package pdftex.def Info: figures/test.png used on input line 84.
+Package pdftex.def Info: figures/test.png used on input line 106.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/free_space_sim.png, id=52, 421.575pt x 316.18124pt>
+<figures/free_space_sim.png, id=99, 421.575pt x 316.18124pt>
 File: figures/free_space_sim.png Graphic file (type png)
 
 <use figures/free_space_sim.png>
-Package pdftex.def Info: figures/free_space_sim.png used on input line 91.
+Package pdftex.def Info: figures/free_space_sim.png used on input line 113.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/plasmonic_sim.png, id=53, 421.575pt x 316.18124pt>
+<figures/plasmonic_sim.png, id=100, 421.575pt x 316.18124pt>
 File: figures/plasmonic_sim.png Graphic file (type png)
 
 <use figures/plasmonic_sim.png>
-Package pdftex.def Info: figures/plasmonic_sim.png used on input line 98.
+Package pdftex.def Info: figures/plasmonic_sim.png used on input line 120.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./figures/Microcopic_Structure.png>] [5 <./figures/no_port.png (PNG copy)> 
-<./figures/test.png (PNG copy)>] [6 <./figures/free_space_sim.png (PNG copy)>]
-[7 <./figures/plasmonic_sim.png (PNG copy)>]
-No file sim_paper.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+[4] [5 <./figures/Microcopic_Structure.png> <./figures/no_port.png (PNG copy)>]
+[6 <./figures/test.png (PNG copy)>] [7 <./figures/free_space_sim.png (PNG copy)
+>] [8 <./figures/plasmonic_sim.png (PNG copy)>] (sim_paper.bbl [9
+
+]) [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
+
 (sim_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `sim_paper.out' has not changed.
 (rerunfilecheck)             Checksum: E7BD6DF330FF9235427F20136D3F80DC;212.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 45318 strings out of 495099
- 1057620 string characters out of 3178637
- 1297834 words of memory out of 10000000
- 47970 multiletter control sequences out of 15000+200000
- 60888 words of font info for 107 fonts, out of 3000000 for 9000
+ 45354 strings out of 495099
+ 1058147 string characters out of 3178637
+ 1301757 words of memory out of 10000000
+ 47981 multiletter control sequences out of 15000+200000
+ 58085 words of font info for 105 fonts, out of 3000000 for 9000
  81 hyphenation exceptions out of 8191
- 69i,7n,98p,10413b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,11n,98p,10413b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -2264,9 +2206,9 @@ sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on sim_paper.pdf (7 pages, 3932685 bytes).
+Output written on sim_paper.pdf (10 pages, 3953360 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
  70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
