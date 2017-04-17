@@ -726,17 +726,16 @@
 }
 
 @Article{Dyakonov1996,
-  author        = {M. Dyakonov and M. Shur},
-  title         = {Detection, mixing, and frequency multiplication of terahertz radiation by two-dimensional electronic fluid},
-  journal       = {{IEEE} Transactions on Electron Devices},
-  year          = {1996},
-  volume        = {43},
-  number        = {3},
-  pages         = {380--387},
-  month         = mar,
-  __markedentry = {[Phased:]},
-  doi           = {10.1109/16.485650},
-  publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  author    = {M. Dyakonov and M. Shur},
+  title     = {Detection, mixing, and frequency multiplication of terahertz radiation by two-dimensional electronic fluid},
+  journal   = {{IEEE} Transactions on Electron Devices},
+  year      = {1996},
+  volume    = {43},
+  number    = {3},
+  pages     = {380--387},
+  month     = mar,
+  doi       = {10.1109/16.485650},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
 @Article{Burke2000,
@@ -748,7 +747,7 @@
   number        = {6},
   pages         = {745--747},
   month         = feb,
-  __markedentry = {[Phased:6]},
+  __markedentry = {[Phased:]},
   doi           = {10.1063/1.125881},
   publisher     = {{AIP} Publishing},
 }
@@ -764,6 +763,19 @@
   doi       = {10.1103/physrevb.80.245435},
   file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\2DEG Dispersion\\PhysRevB.80.245435.pdf:PDF},
   publisher = {American Physical Society ({APS})},
+}
+
+@Article{Minsky_1988,
+  author        = {M. Minsky},
+  title         = {Memoir on inventing the confocal scanning microscope},
+  journal       = {Scanning},
+  year          = {1988},
+  volume        = {10},
+  number        = {4},
+  pages         = {128--138},
+  __markedentry = {[Phased:6]},
+  doi           = {10.1002/sca.4950100403},
+  publisher     = {Wiley-Blackwell},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

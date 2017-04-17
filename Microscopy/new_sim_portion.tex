@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+
+% Insert style guide
+\usepackage{my_thesis}
+% Specifiy the location of images to be used
+\graphicspath{{figures/}}
+
+\begin{document}
+\title{\textsc{Plasma based Structured Illumination Microscopy}}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+In conventional wide-field fluorescent microscopy, a sample to be imaged is uniformly illuminated by light and the subsequent fluorescence is observed in the far-field through the objective of the microscope. The uniform nature of the light source fundamentally restricts the resolution of the system to half the light source wavelength due to Abbe diffraction limit. In order to meet ever increasing need to obtain high resolution particularly in life sciences, modern microscopy techniques such as confocal and linear structured illumination microscopy use spatially non-uniform sources to illuminate the sample, resulting in achieving resolution beyond the diffraction limit by a factor of $2$ \cite{Minsky_1988,Gustafsson_2005}. In confocal microscopy, a focused beam generated through a pinhole illuminates a portion of the sample. which is raster scanned by laterally shifting the beam to generate an image of the whole sample. On the detector side of the microscope, the image passes through another pinhole. Although the use of pinholes increases the resolution, confocal microscopy is a slow imaging technique. Moreover, part of light is discarded by the pinhole which may leave the signal strength from weakly fluorescent samples undetectably low. Structured Illumination microscopy (SIM) is a wide-field technique in which a fine illumination pattern such as a sinusoidal standing wave is used to generate \emph{Moiré fringes} in the observed image. The high frequency content is mathematically reconstructed from a series of images acquired by shifting the pattern, yielding a high resolution image.
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+\section{Principle of Structured Illumination Microscopy}
+%
+Consider $I(\v r)$ as the sinusoidal illumination intensity:
+%
+\begin{equation}
+  I(\v r) = 1 + cos(\v k_{\p} \cdot \v r + \phi)
+  \label{eq:intensity}
+\end{equation}
+where $\v k_{\p} = k_x \v{\^{x}} + k_y \v{\^{y}}$ is the spatial frequency wavevector,  $\v r = x \v{\^{x}} +  y \v{\^{y}}$ is the two-dimensional positional vector and $\phi$ is the pattern phase. The observed image for a sample $F(r)$ through a microscope can be expressed as:
+%
+\begin{equation}
+  M(\v r) = \left[ F(\v r) \cdot I(\v r) \right] \otimes H(\v r)
+  \label{eq:m_spatial_image}
+\end{equation}
+%
+where $H(r)$ is the point spread function (PSF) of the microscope, and $\cdot, \otimes$ denote multiplication and convolution operations in the spatial domain respectively. A spatial frequency representation of the image by taking the Fourier transform is expressed as:
+%
+\begin{equation}
+  \begin{split}
+    \ti M(\v k) &= \left[ \ti F(\v k) \otimes \ti I(\v k) \right] \cdot \ti H(\v k) \\
+     &= \frac{1}{2} \left[ 2\ti F(\v k) + \ti F(\v k - \v k_{\p}) e^{- j \phi} + \ti F(\v k + \v k_{\p}) e^{j \phi} \right] \cdot \ti H(\v k)
+  \end{split}
+  \label{eq:m_ft}
+\end{equation}
+
+where $\sim$ over each term implies the Fourier transform and $\ti H(k)$ is the optical transfer function (OTF) of the microscope. As evident in \eqref{eq:m_ft}, the frequency domain observed image is a linear sum of the sample and two its shifted versions as shown in Fig. \ref{fig:sim}(b-d).  In order to reconstruct the sample, three different images need to be captured with different phase term $\phi$. The process can be expressed as a system of linear equations,
+%
+\begin{equation}
+  \begin{bmatrix}
+   \ti M_1(\v k) \\
+   \ti M_2(\v k) \\
+   \ti M_3(\v k)
+  \end{bmatrix}
+  = \ti H(\v k) \cdot
+  \begin{bmatrix}
+    2 & e^{-j \phi_1} & e^{+j \phi_1} \\
+    2 & e^{-j \phi_2} & e^{+j \phi_2} \\
+    2 & e^{-j \phi_3} & e^{+j \phi_3} \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    \ti F(\v k) \\
+    \ti F(\v k - \v k_{\p}) \\
+    \ti F(\v k + \v k_{\p})
+  \end{bmatrix}.
+  \label{eq:reconstruction_algo}
+\end{equation}
+%
+\begin{figure}[t!]
+  \def\svgwidth{\linewidth}
+  \input{figures/sim.pdf_tex}
+  \caption{Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain.  Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. The sample is rotated: (b) $0 \degree$, (c) $60 \degree$, (d) $120 \degree$. (e) Doubling of lateral resolution with effective coverage area twice the size of (a)}
+  \label{fig:sim}
+\end{figure}
+%
+Frequency content up to $k_{\p}$ is now observable through the Moiré effect. To achieve two-dimensional enhancement in resolution, the sample can be rotated about the optical axis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+\clearpage % Force Bibliography to the end of document on a new page
+\bibliography{zubairy}
+\bibliographystyle{ieeetr}
+
+\end{document}
