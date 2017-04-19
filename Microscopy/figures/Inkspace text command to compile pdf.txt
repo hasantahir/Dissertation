@@ -8,6 +8,7 @@ inkscape --file=seniors.svg --export-area-drawing --without-gui --export-latex -
 inkscape --file=equivalence.svg --export-area-drawing --without-gui --export-latex --export-pdf=equivalence.pdf
 inkscape --file=2deg_3d.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_3d.pdf
 inkscape --file=fulbright.svg --export-area-drawing --without-gui --export-latex --export-pdf=fulbright.pdf
+inkscape --file=mstruc_gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=mstruc_gated.pdf
 
 Tip to avoid multipage pdf generation headache:
 Ensure text is always top of eerything

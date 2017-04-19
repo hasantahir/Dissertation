@@ -25,10 +25,16 @@
 M.~Minsky, ``Memoir on inventing the confocal scanning microscope,''
   \emph{Scanning}, vol.~10, no.~4, pp. 128--138, 1988.
 
-\bibitem{Gustafsson2005}
-M.~G.~L. Gustafsson, ``{Nonlinear structured-illumination microscopy:
-  wide-field fluorescence imaging with theoretically unlimited resolution.}''
+\bibitem{Gustafsson_2005}
+M.~G.~L. Gustafsson, ``Nonlinear structured-illumination microscopy: Wide-field
+  fluorescence imaging with theoretically unlimited resolution,''
   \emph{Proceedings of the National Academy of Sciences}, vol. 102, no.~37, pp.
-  13\,081--13\,086, sep 2005.
+  13\,081--13\,086, Sep. 2005.
+
+\bibitem{Popov2008}
+V.~V. Popov, A.~N. Koudymov, M.~Shur, and O.~V. Polischuk, ``Tuning of ungated
+  plasmons by a gate in the field-effect transistor with two-dimensional
+  electron channel,'' \emph{Journal of Applied Physics}, vol. 104, no.~2, p.
+  024508, Jul. 2008.
 
 \end{thebibliography}

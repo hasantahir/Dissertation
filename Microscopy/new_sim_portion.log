@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.4.17)  18 APR 2017 18:41
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.4.17)  19 APR 2017 17:16
 entering extended mode
 **./new_sim_portion.tex
 (new_sim_portion.tex
@@ -1976,7 +1976,11 @@ Package caption Info: hyperref package is loaded.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 77.
 )
-(new_sim_portion.aux)
+(new_sim_portion.aux
+
+LaTeX Warning: Label `eq:tunability' multiply defined.
+
+)
 \openout1 = `new_sim_portion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -2106,28 +2110,36 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ] [2] (figures/sim.pdf_tex
 File: figures/sim.pdf Graphic file (type QTm)
- <use  "figures/sim.pdf"  page1>)
-Missing character: There is no – in font ec-lmr10!
- [3]
+ <use  "figures/sim.pdf"  page1>) [3]
 
-LaTeX Warning: Text page 4 contains only floats.
+LaTeX Warning: Citation `Popov2008' on page 4 undefined on input line 115.
 
-[4] (new_sim_portion.bbl) [5
+[4] (figures/mstruc_gated.pdf_tex
+File: figures/mstruc_gated.pdf Graphic file (type QTm)
+ <use  "figures/mstruc_gated.pdf"  page1>)
+[5] (new_sim_portion.bbl) [6
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (new_sim_portion.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 163.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 47375 strings out of 429711
- 1076094 string characters out of 3179696
+ 47385 strings out of 429711
+ 1076272 string characters out of 3179696
  1318380 words of memory out of 3000000
- 50578 multiletter control sequences out of 15000+200000
- 44959 words of font info for 64 fonts, out of 3000000 for 9000
+ 50584 multiletter control sequences out of 15000+200000
+ 47954 words of font info for 65 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
  74i,17n,104p,10462b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on new_sim_portion.pdf (5 pages).
+Output written on new_sim_portion.pdf (6 pages).
