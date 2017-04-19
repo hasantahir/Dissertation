@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Microcopic Structure.svg"
+   sodipodi:docname="Microcopic Structure_gated.svg"
    inkscape:export-filename="D:\Users\LATEX\Dissertation\Microscopy\figures\Microcopic_Structure.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
@@ -615,7 +615,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -692,6 +692,18 @@
            x="115.02863"
            y="383.6265"
            style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.11329651px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Bold Italic';fill:#fe0202;fill-opacity:1;stroke:#fff500;stroke-width:1.12362552px;stroke-opacity:1">S</tspan></text>
+      <text
+         sodipodi:linespacing="105.99999%"
+         id="text6550"
+         y="438.67978"
+         x="339.2825"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:19.66344643px;line-height:105.99999428%;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.11329651px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Bold Italic';fill:#fe0202;fill-opacity:1;stroke:#fff500;stroke-width:1.12362552px;stroke-opacity:1"
+           y="438.67978"
+           x="339.2825"
+           id="tspan6552"
+           sodipodi:role="line">G</tspan></text>
     </g>
     <g
        id="g5669"
