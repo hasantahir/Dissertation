@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.4.17)  26 APR 2017 11:56
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6210 64-bit) (preloaded format=xelatex 2017.4.17)  27 APR 2017 12:59
 entering extended mode
 **./new_sim_portion.tex
 (new_sim_portion.tex
@@ -1240,86 +1240,99 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count172
+\mult@box=\box45
+\multicol@leftmargin=\dimen162
+\c@unbalance=\count173
+\c@collectmore=\count174
+\doublecol@number=\count175
+\multicoltolerance=\count176
+\multicolpretolerance=\count177
+\full@width=\dimen163
+\page@free=\dimen164
+\premulticols=\dimen165
+\postmulticols=\dimen166
+\multicolsep=\skip57
+\multicolbaselineskip=\skip58
+\partial@page=\box46
+\last@line=\box47
+\maxbalancingoverflow=\dimen167
+\mult@rightbox=\box48
+\mult@grightbox=\box49
+\mult@gfirstbox=\box50
+\mult@firstbox=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\c@columnbadness=\count178
+\c@finalcolumnbadness=\count179
+\last@try=\dimen168
+\multicolovershoot=\dimen169
+\multicolundershoot=\dimen170
+\mult@nat@firstbox=\box69
+\colbreak@box=\box70
+\mc@col@check@num=\count180
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
-\cftparskip=\skip57
-\cftbeforetoctitleskip=\skip58
-\cftaftertoctitleskip=\skip59
-\cftbeforepartskip=\skip60
-\cftpartnumwidth=\skip61
-\cftpartindent=\skip62
-\cftbeforesecskip=\skip63
-\cftsecindent=\skip64
-\cftsecnumwidth=\skip65
-\cftbeforesubsecskip=\skip66
-\cftsubsecindent=\skip67
-\cftsubsecnumwidth=\skip68
-\cftbeforesubsubsecskip=\skip69
-\cftsubsubsecindent=\skip70
-\cftsubsubsecnumwidth=\skip71
-\cftbeforeparaskip=\skip72
-\cftparaindent=\skip73
-\cftparanumwidth=\skip74
-\cftbeforesubparaskip=\skip75
-\cftsubparaindent=\skip76
-\cftsubparanumwidth=\skip77
-\cftbeforeloftitleskip=\skip78
-\cftafterloftitleskip=\skip79
-\cftbeforefigskip=\skip80
-\cftfigindent=\skip81
-\cftfignumwidth=\skip82
-\c@lofdepth=\count172
-\c@lotdepth=\count173
-\cftbeforelottitleskip=\skip83
-\cftafterlottitleskip=\skip84
-\cftbeforetabskip=\skip85
-\cfttabindent=\skip86
-\cfttabnumwidth=\skip87
+\cftparskip=\skip59
+\cftbeforetoctitleskip=\skip60
+\cftaftertoctitleskip=\skip61
+\cftbeforepartskip=\skip62
+\cftpartnumwidth=\skip63
+\cftpartindent=\skip64
+\cftbeforesecskip=\skip65
+\cftsecindent=\skip66
+\cftsecnumwidth=\skip67
+\cftbeforesubsecskip=\skip68
+\cftsubsecindent=\skip69
+\cftsubsecnumwidth=\skip70
+\cftbeforesubsubsecskip=\skip71
+\cftsubsubsecindent=\skip72
+\cftsubsubsecnumwidth=\skip73
+\cftbeforeparaskip=\skip74
+\cftparaindent=\skip75
+\cftparanumwidth=\skip76
+\cftbeforesubparaskip=\skip77
+\cftsubparaindent=\skip78
+\cftsubparanumwidth=\skip79
+\cftbeforeloftitleskip=\skip80
+\cftafterloftitleskip=\skip81
+\cftbeforefigskip=\skip82
+\cftfigindent=\skip83
+\cftfignumwidth=\skip84
+\c@lofdepth=\count181
+\c@lotdepth=\count182
+\cftbeforelottitleskip=\skip85
+\cftafterlottitleskip=\skip86
+\cftbeforetabskip=\skip87
+\cfttabindent=\skip88
+\cfttabnumwidth=\skip89
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocvsec2\tocvsec2.sty"
 Package: tocvsec2 2014/03/10 v1.3a variable ToC section entries
-\c@max@tocdepth=\count174
-\c@max@secnumdepth=\count175
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup6
-\symitalic=\mathgroup7
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
+\c@max@tocdepth=\count183
+\c@max@secnumdepth=\count184
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -1373,14 +1386,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen162
-\Hy@linkcounter=\count176
-\Hy@pagecounter=\count177
+\@linkdim=\dimen171
+\Hy@linkcounter=\count185
+\Hy@pagecounter=\count186
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count178
+\Hy@SavedSpaceFactor=\count187
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1392,17 +1405,17 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count179
+\c@Hy@tempcnt=\count188
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen163
-\Fld@menulength=\count180
-\Field@Width=\dimen164
-\Fld@charsize=\dimen165
+\XeTeXLinkMargin=\dimen172
+\Fld@menulength=\count189
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -1412,9 +1425,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count181
-\c@Item=\count182
-\c@Hfootnote=\count183
+\Hy@abspage=\count190
+\c@Item=\count191
+\c@Hfootnote=\count192
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -1429,11 +1442,11 @@ File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box45
-\c@Hy@AnnotLevel=\count184
-\HyField@AnnotCount=\count185
-\Fld@listcount=\count186
-\c@bookmark@seq@number=\count187
+\pdfm@box=\box71
+\c@Hy@AnnotLevel=\count193
+\HyField@AnnotCount=\count194
+\Fld@listcount=\count195
+\c@bookmark@seq@number=\count196
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1444,11 +1457,7 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip88
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
-Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
-\symupright=\mathgroup8
+\Hy@SectionHShift=\skip90
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -1468,8 +1477,8 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
 JK)
 ))
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex")
@@ -1480,12 +1489,12 @@ Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks28
-\pgfutil@tempdima=\dimen168
-\pgfutil@tempdimb=\dimen169
+\pgfutil@tempdima=\dimen177
+\pgfutil@tempdimb=\dimen178
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
 x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box46
+\pgfutil@abb=\box72
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1507,20 +1516,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 x"
 \pgfkeys@tmptoks=\toks31
 ))
-\pgf@x=\dimen170
-\pgf@y=\dimen171
-\pgf@xa=\dimen172
-\pgf@ya=\dimen173
-\pgf@xb=\dimen174
-\pgf@yb=\dimen175
-\pgf@xc=\dimen176
-\pgf@yc=\dimen177
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count188
-\c@pgf@countb=\count189
-\c@pgf@countc=\count190
-\c@pgf@countd=\count191
+\c@pgf@counta=\count197
+\c@pgf@countb=\count198
+\c@pgf@countc=\count199
+\c@pgf@countd=\count266
 \t@pgf@toka=\toks32
 \t@pgf@tokb=\toks33
 \t@pgf@tokc=\toks34
@@ -1539,13 +1548,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 "
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count192
+\pgfsys@objnum=\count267
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count193
-\pgfsyssoftpath@bigbuffer@items=\count194
+\pgfsyssoftpath@smallbuffer@items=\count268
+\pgfsyssoftpath@bigbuffer@items=\count269
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -1573,9 +1582,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen178
-\pgfmath@count=\count195
-\pgfmath@box=\box47
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count270
+\pgfmath@box=\box73
 \pgfmath@toks=\toks35
 \pgfmath@stack@operand=\toks36
 \pgfmath@stack@operation=\toks37
@@ -1598,57 +1607,57 @@ ex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
 hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count196
+\c@pgfmathroundto@lastzeros=\count271
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen179
-\pgf@picmaxx=\dimen180
-\pgf@picminy=\dimen181
-\pgf@picmaxy=\dimen182
-\pgf@pathminx=\dimen183
-\pgf@pathmaxx=\dimen184
-\pgf@pathminy=\dimen185
-\pgf@pathmaxy=\dimen186
-\pgf@xx=\dimen187
-\pgf@xy=\dimen188
-\pgf@yx=\dimen189
-\pgf@yy=\dimen190
-\pgf@zx=\dimen191
-\pgf@zy=\dimen192
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen193
-\pgf@path@lasty=\dimen194
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen195
-\pgf@shorten@start@additional=\dimen196
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box48
-\pgf@hbox=\box49
-\pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count197
+\pgfpic=\box74
+\pgf@hbox=\box75
+\pgf@layerbox@main=\box76
+\pgf@picture@serial@count=\count272
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen197
+\pgflinewidth=\dimen262
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen198
-\pgf@pt@y=\dimen199
-\pgf@pt@temp=\dimen256
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1664,12 +1673,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen257
+\pgfarrowsep=\dimen266
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen258
-\pgf@sys@shading@range@num=\count198
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count273
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1677,7 +1686,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
 ex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box51
+\pgfexternal@startupbox=\box77
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
 "
@@ -1693,15 +1702,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box52
+\pgfnodeparttextbox=\box78
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen259
-\pgf@nodesepend=\dimen260
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -1715,8 +1724,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen261
-\pgffor@skip=\dimen262
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
 \pgffor@stack=\toks38
 \pgffor@toks=\toks39
 ))
@@ -1726,31 +1735,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count199
-\pgfplotmarksize=\dimen263
+\pgf@plot@mark@count=\count274
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen264
-\tikz@lasty=\dimen265
-\tikz@lastxsaved=\dimen266
-\tikz@lastysaved=\dimen267
-\tikzleveldistance=\dimen268
-\tikzsiblingdistance=\dimen269
-\tikz@figbox=\box53
-\tikz@figbox@bg=\box54
-\tikz@tempbox=\box55
-\tikz@tempbox@bg=\box56
-\tikztreelevel=\count266
-\tikznumberofchildren=\count267
-\tikznumberofcurrentchild=\count268
-\tikz@fig@count=\count269
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikzleveldistance=\dimen277
+\tikzsiblingdistance=\dimen278
+\tikz@figbox=\box79
+\tikz@figbox@bg=\box80
+\tikz@tempbox=\box81
+\tikz@tempbox@bg=\box82
+\tikztreelevel=\count275
+\tikznumberofchildren=\count276
+\tikznumberofcurrentchild=\count277
+\tikz@fig@count=\count278
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count270
-\pgfmatrixcurrentcolumn=\count271
-\pgf@matrix@numberofcolumns=\count272
+\pgfmatrixcurrentrow=\count279
+\pgfmatrixcurrentcolumn=\count280
+\pgf@matrix@numberofcolumns=\count281
 )
-\tikz@expandcount=\count273
+\tikz@expandcount=\count282
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -1761,9 +1770,9 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 \t@pgfplots@toka=\toks40
 \t@pgfplots@tokb=\toks41
 \t@pgfplots@tokc=\toks42
-\pgfplots@tmpa=\dimen270
-\c@pgfplots@coordindex=\count274
-\c@pgfplots@scanlineindex=\count275
+\pgfplots@tmpa=\dimen279
+\c@pgfplots@coordindex=\count283
+\c@pgfplots@scanlineindex=\count284
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.
 tex"))
@@ -1779,7 +1788,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 fsupp_pgflibraryfpu.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
 fsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count276
+\c@pgfmathroundto@lastzeros=\count285
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
@@ -1788,13 +1797,13 @@ ructure.code.tex")
 ructureext.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.
 code.tex"
-\c@pgfplotsarray@tmp=\count277
+\c@pgfplotsarray@tmp=\count286
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix
 .code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstableshared
 .code.tex"
-\c@pgfplotstable@counta=\count278
+\c@pgfplotstable@counta=\count287
 \t@pgfplotstable@a=\toks43
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.
@@ -1807,13 +1816,13 @@ e.tex"))
 tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surf
 shading.code.tex"
-\c@pgfplotslibrarysurf@no=\count279
+\c@pgfplotslibrarysurf@no=\count288
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
 hading.pgfsys-xetex.def"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
 hading.pgfsys-dvipdfmx.def"
-\c@pgfplotslibrarysurf@streamlen=\count280
+\c@pgfplotslibrarysurf@streamlen=\count289
 ))))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolormap.code.t
 ex"
@@ -1838,16 +1847,16 @@ ex")))
 librarydecorations.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code
 .tex"
-\pgfdecoratedcompleteddistance=\dimen271
-\pgfdecoratedremainingdistance=\dimen272
-\pgfdecoratedinputsegmentcompleteddistance=\dimen273
-\pgfdecoratedinputsegmentremainingdistance=\dimen274
-\pgf@decorate@distancetomove=\dimen275
-\pgf@decorate@repeatstate=\count281
-\pgfdecorationsegmentamplitude=\dimen276
-\pgfdecorationsegmentlength=\dimen277
+\pgfdecoratedcompleteddistance=\dimen280
+\pgfdecoratedremainingdistance=\dimen281
+\pgfdecoratedinputsegmentcompleteddistance=\dimen282
+\pgfdecoratedinputsegmentremainingdistance=\dimen283
+\pgf@decorate@distancetomove=\dimen284
+\pgf@decorate@repeatstate=\count290
+\pgfdecorationsegmentamplitude=\dimen285
+\pgfdecorationsegmentlength=\dimen286
 )
-\tikz@lib@dec@box=\box57
+\tikz@lib@dec@box=\box83
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarydecorations.pathmorphing.code.tex"
@@ -1857,13 +1866,13 @@ ecorations.pathmorphing.code.tex"))
 librarydecorations.pathreplacing.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
 ecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count282
-\pgfplots@xmin@reg=\dimen278
-\pgfplots@xmax@reg=\dimen279
-\pgfplots@ymin@reg=\dimen280
-\pgfplots@ymax@reg=\dimen281
-\pgfplots@zmin@reg=\dimen282
-\pgfplots@zmax@reg=\dimen283
+\pgfplots@numplots=\count291
+\pgfplots@xmin@reg=\dimen287
+\pgfplots@xmax@reg=\dimen288
+\pgfplots@ymin@reg=\dimen289
+\pgfplots@ymax@reg=\dimen290
+\pgfplots@zmin@reg=\dimen291
+\pgfplots@zmax@reg=\dimen292
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 libraryplotmarks.code.tex"
@@ -1883,7 +1892,7 @@ nt input file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\filehook\filehook.sty"
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
-\c@currfiledepth=\count283
+\c@currfiledepth=\count292
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\gincltex\gincltex.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\svn-prov\svn-prov.sty"
@@ -1903,34 +1912,34 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box58
+\collectedbox=\box84
 )
-\tc@llx=\dimen284
-\tc@lly=\dimen285
-\tc@urx=\dimen286
-\tc@ury=\dimen287
+\tc@llx=\dimen293
+\tc@lly=\dimen294
+\tc@urx=\dimen295
+\tc@ury=\dimen296
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-xetex.def"
 File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen288
-\adjbox@Height=\dimen289
-\adjbox@Depth=\dimen290
-\adjbox@Totalheight=\dimen291
+\adjbox@Width=\dimen297
+\adjbox@Height=\dimen298
+\adjbox@Depth=\dimen299
+\adjbox@Totalheight=\dimen300
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count284
+\c@checkoddpage=\count293
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box59
-\sift@deathcycles=\count285
-\@vwid@loff=\dimen292
-\@vwid@roff=\dimen293
+\@vwid@box=\box85
+\sift@deathcycles=\count294
+\@vwid@loff=\dimen301
+\@vwid@roff=\dimen302
 ))
-\gincltex@box=\box60
+\gincltex@box=\box86
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\circuitikz\circuitikz.sty"
 Package: circuitikz 2017/03/25{} The CircuiTikz circuit drawing package version
@@ -1943,18 +1952,18 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
 ex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen294
+\arrowsize=\dimen303
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\circuitikz\pgfcirc.defines.tex"
-\pgf@circ@res@up=\dimen295
-\pgf@circ@res@down=\dimen296
-\pgf@circ@res@zero=\dimen297
-\pgf@circ@res@left=\dimen298
-\pgf@circ@res@right=\dimen299
-\pgf@circ@res@other=\dimen300
-\pgf@circ@res@step=\dimen301
-\pgf@circ@res@temp=\dimen302
-\pgfstartlinewidth=\dimen303
-\pgf@circ@Rlen=\dimen304
+\pgf@circ@res@up=\dimen304
+\pgf@circ@res@down=\dimen305
+\pgf@circ@res@zero=\dimen306
+\pgf@circ@res@left=\dimen307
+\pgf@circ@res@right=\dimen308
+\pgf@circ@res@other=\dimen309
+\pgf@circ@res@step=\dimen310
+\pgf@circ@res@temp=\dimen311
+\pgfstartlinewidth=\dimen312
+\pgf@circ@Rlen=\dimen313
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\circuitikz\pgfcircutils.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\circuitikz\pgfcircshapes.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\circuitikz\pgfcircmonopoles.tex")
@@ -1976,7 +1985,7 @@ ecorations.markings.code.tex"))
 libraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 )
-\dimline@arrow@linewidth=\dimen305
+\dimline@arrow@linewidth=\dimen314
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypositioning.code.tex"
@@ -1991,36 +2000,32 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen306
-\captionmargin@=\dimen307
-\captionwidth=\dimen308
-\caption@tempdima=\dimen309
-\caption@indent=\dimen310
-\caption@parindent=\dimen311
-\caption@hangindent=\dimen312
+\captionmargin=\dimen315
+\captionmargin@=\dimen316
+\captionwidth=\dimen317
+\caption@tempdima=\dimen318
+\caption@indent=\dimen319
+\caption@parindent=\dimen320
+\caption@hangindent=\dimen321
 )
-\c@ContinuedFloat=\count286
+\c@ContinuedFloat=\count295
 Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count287
-\sf@farskip=\skip89
-\sf@captopadj=\dimen313
-\sf@capskip=\skip90
-\sf@nearskip=\skip91
-\c@subfigure=\count288
-\c@subfigure@save=\count289
-\c@subtable=\count290
-\c@subtable@save=\count291
-\sf@top=\skip92
-\sf@bottom=\skip93
+\c@KVtest=\count296
+\sf@farskip=\skip91
+\sf@captopadj=\dimen322
+\sf@capskip=\skip92
+\sf@nearskip=\skip93
+\c@subfigure=\count297
+\c@subfigure@save=\count298
+\c@subtable=\count299
+\c@subtable@save=\count300
+\sf@top=\skip94
+\sf@bottom=\skip95
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 77.
+Package hyperref Info: Option `colorlinks' set `true' on input line 78.
 )
-(new_sim_portion.aux
-
-LaTeX Warning: Label `eq:tunability' multiply defined.
-
-)
+(new_sim_portion.aux)
 \openout1 = `new_sim_portion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2041,10 +2046,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 11.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
 LaTeX Info: Redefining \celsius on input line 11.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 11.
 
@@ -2053,7 +2054,7 @@ Package gensymb Info: Faking symbols for \degree and \celsius on input line 11.
 Package gensymb Warning: Not defining \perthousand.
 
 LaTeX Info: Redefining \ohm on input line 11.
-Package gensymb Info: Using \upOmega for \ohm on input line 11.
+Package gensymb Info: Using \Omega for \ohm on input line 11.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -2090,7 +2091,7 @@ Package gensymb Warning: Not defining \micro.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box61
+\AtBeginShipoutBox=\box87
 Package hyperref Info: Link coloring ON on input line 11.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2098,7 +2099,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count292
+\c@section@level=\count301
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -2119,187 +2120,73 @@ your preamble.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 17.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 17.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 17.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 17.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 17.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 17.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 17.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 17.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 26.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 26.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 26.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 26.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 26.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
-
-
-LaTeX Warning: Citation `Gustafsson2000' on page 1 undefined on input line 26.
-
 [1
 
-]
-
-LaTeX Warning: Citation `Nassenstein_1970' on page 2 undefined on input line 28
-.
-
-
-LaTeX Warning: Citation `Wei_2010' on page 2 undefined on input line 28.
-
-
-LaTeX Warning: Citation `Zeng_2014' on page 2 undefined on input line 28.
-
-
-LaTeX Warning: Citation `Dyakonov_1993' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Dyakonov_1996' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Popov_2008' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Otsuji_2006' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Muravjov_2010' on page 2 undefined on input line 30.
-
-[2]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 57.
-
-
-LaTeX Warning: Citation `Kastner_1988' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Citation `Michalski2005' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 86.
-
-[3]
-Overfull \hbox (10.3703pt too wide) in paragraph at lines 106--109
-\T1/ppl/m/n/10.95 where $\OT1/zplm/b/n/10.95 k[] \OT1/zplm/m/n/10.95 = \OML/zpl
-m/m/it/10.95 k[][] \OT1/zplm/m/n/10.95 + \OML/zplm/m/it/10.95 k[][]$ \T1/ppl/m/
-n/10.95 is the spa-tial fre-quency wavevec-tor, $\OT1/zplm/b/n/10.95 r \OT1/zpl
-m/m/n/10.95 = \OML/zplm/m/it/10.95 x[] \OT1/zplm/m/n/10.95 + \OML/zplm/m/it/10.
-95 y[]$ \T1/ppl/m/n/10.95 is the two-dimensional
- []
-
-(figures/sim.pdf_tex
-File: figures/sim.pdf Graphic file (type QTm)
- <use  "figures/sim.pdf"  page1>) [4] [5]
-
-LaTeX Warning: Citation `Nakayama1974' on page 6 undefined on input line 204.
-
-(figures/mstruc_gated.pdf_tex
+] (figures/mstruc_gated.pdf_tex
 File: figures/mstruc_gated.pdf Graphic file (type QTm)
  <use  "figures/mstruc_gated.pdf"  page1>)
-[6] [7] (new_sim_portion.bbl) [8
+[2] [3] (figures/gated_disp.tex)
+File: figures/gated_disp.tex Graphic file (type tex)
+ [4] (figures/change_in_freq.tex)
+File: figures/change_in_freq.tex Graphic file (type tex)
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+(figures/lo_hi.tex)
+File: figures/lo_hi.tex Graphic file (type tex)
+ [5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7] (figures/sim.pdf_tex
+File: figures/sim.pdf Graphic file (type QTm)
+ <use  "figures/sim.pdf"  page1>) [8]
+(figures/shifted.tex)
+File: figures/shifted.tex Graphic file (type tex)
+ [9]
+File: figures/test.png Graphic file (type QTm)
+ <use  "figures/test.png" >
+File: figures/free_space_sim.png Graphic file (type QTm)
+
+<use  "figures/free_space_sim.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: figures/plasmonic_sim.png Graphic file (type QTm)
+<use  "figures/plasmonic_sim.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11] [12] (new_sim_portion.bbl [13
+
+]) [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (new_sim_portion.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 236.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 47605 strings out of 429711
- 1079168 string characters out of 3179696
- 1321655 words of memory out of 3000000
- 50805 multiletter control sequences out of 15000+200000
- 42544 words of font info for 95 fonts, out of 3000000 for 9000
+ 47957 strings out of 429711
+ 1090926 string characters out of 3179696
+ 1939306 words of memory out of 3000000
+ 51152 multiletter control sequences out of 15000+200000
+ 45162 words of font info for 54 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 74i,17n,104p,10437b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 74i,23n,104p,10437b,2333s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on new_sim_portion.pdf (8 pages).
+Output written on new_sim_portion.pdf (14 pages).

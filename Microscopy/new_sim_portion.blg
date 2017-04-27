@@ -1,8 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: new_sim_portion.aux
 The style file: ieeetran.bst
 Database file #1: zubairy.bib
+Warning--entry type for "comsol" isn't style-file defined
+--line 852 of file zubairy.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
+(There was 1 warning)

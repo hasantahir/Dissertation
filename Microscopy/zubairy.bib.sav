@@ -396,7 +396,6 @@
   journaltitle = {Semiconductors},
   keywords     = {absorption,field-effect transistors,fluid,gas,mobility transistors,modes,photoconductivity,plasma-waves,radiation,subterahertz},
   publisher    = {Pleiades Publishing Ltd},
-  url          = {<Go to ISI>://000227051200035},
 }
 
 @Article{Ager1991,
@@ -450,9 +449,12 @@
 @Article{Dyakonov1993,
   author       = {Michael Dyakonov and Michael Shur},
   title        = {Shallow water analogy for a ballistic field effect transistor: New mechanism of plasma wave generation by dc current},
+  journal      = {Physical Review Letters},
+  year         = {1993},
   volume       = {71},
   number       = {15},
   pages        = {2465--2468},
+  month        = oct,
   issn         = {0031-9007},
   date         = {1993-10},
   doi          = {10.1103/physrevlett.71.2465},
@@ -743,9 +745,12 @@
 @Article{Dyakonov1996,
   author       = {M. Dyakonov and M. Shur},
   title        = {Detection, mixing, and frequency multiplication of terahertz radiation by two-dimensional electronic fluid},
+  journal      = {{IEEE} Transactions on Electron Devices},
+  year         = {1996},
   volume       = {43},
   number       = {3},
   pages        = {380--387},
+  month        = mar,
   date         = {1996-03},
   doi          = {10.1109/16.485650},
   journaltitle = {{IEEE} Transactions on Electron Devices},
@@ -819,6 +824,25 @@
   __markedentry = {[Phased:6]},
   doi           = {10.1109/8.8596},
   publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Book{9780521880688,
+  title     = {Numerical Recipes},
+  publisher = {Cambridge University Pr.},
+  year      = {2007},
+  author    = {Press, William H. and Teukolsky, Saul A. and Vetterling, William T. and Flannery, Brian P.},
+  isbn      = {0521880688},
+  date      = {2007-09-06},
+  ean       = {9780521880688},
+  pagetotal = {1248},
+}
+
+@Software{comsol,
+  author  = {{COMSOL Multiphysics}},
+  title   = {COMSOL Multiphysics},
+  date    = {2017-04-27},
+  url     = {https://www.comsol.com},
+  version = {5.2},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
