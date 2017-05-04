@@ -51,7 +51,7 @@
 % \usepackage{tamuconfig}
 % \usepackage{rotating}
 % pdflatex -synctex=-1
-% \usepackage{mathptmx} % Times new Roman
+\usepackage{mathptmx} % Times new Roman
 \usepackage{hyperref}
 % \usepackage{mathpazo}
 
@@ -63,6 +63,9 @@
 \usepackage{pgfplots}
 \usepackage{standalone}
 \usepackage{tikz}
+\tikzset{
+  font={\fontsize{12pt}{12}\selectfont}}
+  \usepackage{tikzscale} % Scale the figure not the font
 \usepackage[americanresistors,americaninductors]{circuitikz}
 \usepackage{tikz-dimline} % For dimensional drawing
 \usetikzlibrary{positioning}

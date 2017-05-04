@@ -10,22 +10,16 @@
 \begin{tikzpicture}
 
 \begin{axis}[%
-width=4.521in,
-height=3.447in,
-at={(0.758in,0.6in)},
-scale only axis,
 xmin=0,
 xmax=10,
-xlabel style={font=\color{white!15!black}},
 xlabel={$V_g (\mathrm V)$},
 ymin=5,
 ymax=35,
-ylabel style={font=\color{white!15!black}},
 ylabel={$f_p (\mathrm{THz})$},
 axis background/.style={fill=white},
-legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, draw=white!15!black}
+legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left}
 ]
-\addplot [color=mycolor1, line width=1.4pt]
+\addplot [color=mycolor1, line width=1.0pt]
   table[row sep=crcr]{%
 0	8.80537856987621\\
 0.01001001001001	8.86287535809129\\
