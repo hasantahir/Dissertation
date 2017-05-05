@@ -17,7 +17,7 @@ ymin=5,
 ymax=35,
 ylabel={$f_p (\mathrm{THz})$},
 axis background/.style={fill=white},
-legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left}
+legend style={at={(1.1,1)},anchor=north},
 ]
 \addplot [color=mycolor1, line width=1.0pt]
   table[row sep=crcr]{%
