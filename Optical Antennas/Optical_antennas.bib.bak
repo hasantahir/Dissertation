@@ -15,7 +15,7 @@
 
 @Article{Archambault2009,
   author    = {A. Archambault and T. V. Teperik and F. Marquier and J. J. Greffet},
-  title     = {Surface plasmon Fourier optics},
+  title     = {Surface plasmon {Fourier} optics},
   journal   = {Physical Review B},
   year      = {2009},
   volume    = {79},
@@ -27,7 +27,7 @@
 
 @Article{Arduini2010,
   author    = {Fabiana Arduini and Aziz Amine and Danila Moscone and Giuseppe Palleschi},
-  title     = {Biosensors based on cholinesterase inhibition for insecticides, nerve agents and aflatoxin B1 detection (review)},
+  title     = {Biosensors based on cholinesterase inhibition for insecticides, nerve agents and aflatoxin {B}1 detection (review)},
   journal   = {Microchimica Acta},
   year      = {2010},
   volume    = {170},
@@ -140,7 +140,7 @@
   publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 
-@Article{Dorfmüller2011,
+@Article{Dorfmuller2011,
   author    = {Jens Dorfm{\"{u}}ller and Daniel Dregely and Moritz Esslinger and Worawut Khunsin and Ralf Vogelgesang and Klaus Kern and Harald Giessen},
   title     = {Near-Field Dynamics of Optical Yagi-Uda Nanoantennas},
   journal   = {Nano Letters},
@@ -168,7 +168,7 @@
 
 @Article{Felidj2003,
   author    = {N. F{\'{e}}lidj and J. Aubard and G. L{\'{e}}vi and J. R. Krenn and A. Hohenau and G. Schider and A. Leitner and F. R. Aussenegg},
-  title     = {Optimized surface-enhanced Raman scattering on gold nanoparticle arrays},
+  title     = {Optimized surface-enhanced {R}aman scattering on gold nanoparticle arrays},
   journal   = {Applied Physics Letters},
   year      = {2003},
   volume    = {82},
@@ -265,11 +265,10 @@
   date      = {2006-08-18},
   doi       = {10.1007/b100321},
   ean       = {9783540339199},
-  url       = {http://www.ebook.de/de/product/11432335/surface_plasmon_resonance_based_sensors.html},
 }
 
 @Article{Ishihara2006,
-  author    = {Kunihiko Ishihara and Keishi Ohashi and Tomofumi Ikari and Hiroaki Minamide and Hiroyuki Yokoyama and Jun-ichi Shikata and Hiromasa Ito},
+  author    = {Kunihiko Ishihara and Keishi Ohashi and Tomofumi Ikari and Hiroaki Minamide and Hiroyuki Yokoyama and Jun-{I}chi Shikata and Hiromasa Ito},
   title     = {Terahertz-wave near-field imaging with subwavelength resolution using surface-wave-assisted bow-tie aperture},
   journal   = {Applied Physics Letters},
   year      = {2006},
@@ -321,7 +320,7 @@
 
 @Article{Kneipp1997,
   author    = {Katrin Kneipp and Yang Wang and Harald Kneipp and Lev T. Perelman and Irving Itzkan and Ramachandra R. Dasari and Michael S. Feld},
-  title     = {Single Molecule Detection Using Surface-Enhanced Raman Scattering ({SERS})},
+  title     = {Single Molecule Detection Using Surface-Enhanced {R}aman Scattering ({SERS})},
   journal   = {Physical Review Letters},
   year      = {1997},
   volume    = {78},
@@ -448,7 +447,7 @@
 
 @Article{Nie1997,
   author    = {S. Nie},
-  title     = {Probing Single Molecules and Single Nanoparticles by Surface-Enhanced Raman Scattering},
+  title     = {Probing Single Molecules and Single Nanoparticles by Surface-Enhanced {R}aman Scattering},
   journal   = {Science},
   year      = {1997},
   volume    = {275},
@@ -587,7 +586,7 @@
 
 @Article{Song2005,
   author    = {Bong-Shik Song and Susumu Noda and Takashi Asano and Yoshihiro Akahane},
-  title     = {Ultra-high-Q photonic double-heterostructure nanocavity},
+  title     = {Ultra-high-{Q} photonic double-heterostructure nanocavity},
   journal   = {Nature Materials},
   year      = {2005},
   volume    = {4},
@@ -613,7 +612,7 @@
 
 @Article{Taminiau2007,
   author    = {Tim H. Taminiau and Robert J. Moerland and Frans B. Segerink and Laurens Kuipers and Niek F. van Hulst},
-  title     = {$\uplambda$/4 Resonance of an Optical Monopole Antenna Probed by Single Molecule Fluorescence},
+  title     = {$\lambda$/4 Resonance of an Optical Monopole Antenna Probed by Single Molecule Fluorescence},
   journal   = {Nano Letters},
   year      = {2007},
   volume    = {7},
@@ -682,7 +681,6 @@
   year      = {2000},
   author    = {Marvin J. Weber},
   isbn      = {9780849335099},
-  url       = {https://www.amazon.com/Handbook-Lasers-Optical-Science-Technology/dp/0849335094?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0849335094},
 }
 
 @Book{Raether1988,
@@ -738,17 +736,17 @@
   publisher = {American Chemical Society ({ACS})},
 }
 
-@PhdThesis{,
+@PhdThesis{farahani,
   author = {Javad Najafabadi Farahani},
   title  = {Single Emitters Coupled to Bow-Tie Nano-Antennas},
-  school = {Institut f¨ur Physik Universit¨at Basel},
+  school = {Institut f{\"{u}}r Physik Universit{\"{a}}t Basel},
   year   = {2006},
 }
 
-@PhdThesis{,
+@PhdThesis{curtothesis,
   author = {Alberto Gonz{\'{a}}lez Curto},
   title  = {Optical Antennas Control Light Emission},
-  school = {ICFO – Institut de Ciències Fotòniques Universitat Politècnica de Catalunya},
+  school = {ICFO -- Institut de Ci{\`{e}}ncies Fot{\`{o}}niques Universitat Polit{\`{e}}cnica de Catalunya},
   year   = {2013},
 }
 
@@ -760,7 +758,6 @@
   isbn      = {0521642221},
   date      = {2002-06-11},
   ean       = {9780521642224},
-  url       = {http://www.ebook.de/de/product/3242885/max_born_emil_wolf_principles_of_optics.html},
 }
 
 @Book{Bohren1998,
@@ -780,11 +777,10 @@
   date      = {2015-12-28},
   ean       = {9781119178996},
   pagetotal = {1096},
-  url       = {http://www.ebook.de/de/product/25674970/constantine_a_balanis_antenna_theory.html},
 }
 
 @Article{Alu2007,
-  author    = {Andrea Al{\'{u}} and Alessandro Salandrino and Nader Engheta},
+  author    = {Andrea Al{\`{u}} and Alessandro Salandrino and Nader Engheta},
   title     = {Coupling of optical lumped nanocircuit elements and effects of substrates},
   journal   = {Optics Express},
   year      = {2007},
@@ -804,7 +800,6 @@
   date      = {2013-01-03},
   ean       = {9781107014145},
   pagetotal = {480},
-  url       = {http://www.ebook.de/de/product/19797498/optical_antennas.html},
 }
 
 @Article{Fischer1986,
@@ -841,6 +836,18 @@
   year      = {2006},
   pages     = {3--44},
   doi       = {10.1007/5346_013},
+}
+
+@Article{Engheta2005,
+  author    = {Nader Engheta and Alessandro Salandrino and Andrea Al{\`{u}}},
+  title     = {Circuit Elements at Optical Frequencies: Nanoinductors, Nanocapacitors, and Nanoresistors},
+  journal   = {Physical Review Letters},
+  year      = {2005},
+  volume    = {95},
+  number    = {9},
+  month     = aug,
+  doi       = {10.1103/physrevlett.95.095504},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
