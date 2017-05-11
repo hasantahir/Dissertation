@@ -5,7 +5,7 @@
 
 
 % Specifiy the location of images to be used
-\graphicspath{{figures/}}
+\graphicspath{{figures/} }
 
 %
 \begin{document}
@@ -30,16 +30,23 @@ An overview of the field of optical plasmonic antennas is presented in this chap
 Optical nanoantennas are nano-sized objects that transmit or receive electromagnetic fields through their intrinsic plasmonic behavior in the optical or near infrared range. Optical antennas have become the object of great interest to engineers due to advancements in nano device construction technologies. In particular, commercial computer aided design (CAD) programs that allow the characterization of materials with a negative real part permittivity and the lower cost and advancements in electron beam (e-beam) etching machines permitting the creation of nano-circuits with line widths on the order of \SI{10}{\nano\metre} or smaller have made it possible for universities and research labs to not only numerically simulate, but also build models and measure the properties of optical antennas. The fact that practical research and development is now available to the academic and industrial community has led to several new applications and technologies including dramatically improved spectroscopy
 \cite{Ouyang1992,Nie1997, Kneipp1997}, disease and toxin sensors \cite{Arduini2010, Nevels2012}, wireless communication with nano circuitry \cite{Adato2011}, and the creation of nanocircuits using subwavelength lithography \cite{Torres2003, Ishihara2006}. The opportunities for antenna engineers in this vast new landscape are great, but much work remains to be done on analytical and numerical characterization as well as in developing an understanding as to how electromagnetic and quantum processes can be incorporated into a coherent mathematical theory that will allow ready design of such devices.
 
-Dimensions of optical antennas are in the nanometer (\SI{}{\nano\metre}) range of visible and near infrared light. Typical antenna element shapes include the dipole, bowtie, aperture, and sphere, as shown in Fig. 1. Fig. 1(d) illustrates the oscillating dipole like behavior produced by plasmonic action in a nanometer scale gold sphere illuminated at \SI{800}{\nano\metre} where gold has a dielectric constant
-$ \E_r = -20.277 - \j 2.07$.
-Optical antennas are always fabricated out of noble metals, most commonly gold and silver and less commonly with aluminum, chromium, and copper. Unfortunately, there are some negative aspects of these materials that make them difficult to work with in engineering applications. In an ambient environment silver can form a silver sulfide layer that inhibits the propagation of plasmon waves \cite{Nevels2014} and as such is not always a good candidate for an optical antenna. Aluminum has a higher dielectric function imaginary part than does gold, increasing from a small
+Dimensions of optical antennas are in the nanometer (\SI{}{\nano\metre}) range of visible and near infrared light. Typical antenna element shapes include the dipole, bowtie, aperture, and sphere, as shown in Fig. \ref{fig:antennas}. Optical antennas are always fabricated out of noble metals, most commonly gold and silver and less commonly with aluminum, chromium, and copper. Unfortunately, there are some negative aspects of these materials that make them difficult to work with in engineering applications. In an ambient environment silver can form a silver sulfide layer that inhibits the propagation of plasmon waves \cite{Nevels2014} and as such is not always a good candidate for an optical antenna. Aluminum has a higher dielectric function imaginary part than does gold, increasing from a small
 difference at \SI{550}{\nano\metre} to a significantly larger value at \SI{830}{\nano\metre} where it becomes exceptionally lossy. During the construction of a nanoantenna, ion beam bombardment can cause gold to melt making it hard to form a smooth metallic structure that is true to its intended design \cite{farahani}. Nevertheless, noble metals are necessary for the applications described in this chapter because their plasma frequency, a crucial element of the design, lies in the wavelength range of visible light.
-
+%
 % caption
-
+% Discuss loss in the scheme
+\begin{figure}[h!]
+  \subfloat[]{\includegraphics[width = 1.9in]{pill.pdf}
+  \label{fig:pill}} \hfil
+  \subfloat[]{\includegraphics[width = 1.9in]{bowtie.pdf}
+  \label{fig:bowtie}} \hfil
+  \subfloat[]{\includegraphics[width = 1.9in]{complementary_bowtie.pdf}
+  \label{fig:cbowtie}}
+  \caption{Common nanoantenna elements (a) dipole (b) bowtie and (c) aperture. The dipole, bowtie, and aperture antennas are typically etched on a low loss substrate such as silicon dioxide while spheres may be mounted at the tip of a cone shaped substrate or arranged in some fashion on a flat substrate.}
+  \label{fig:antennas}
+\end{figure}
+%
 % Fig. 1 Common nanoantenna elements (a) dipole (b) bowtie (c) aperture and (d) sphere. The dipole, bowtie, and aperture antennas are typically etched on a low loss substrate such as silicon dioxide while spheres may be mounted at the tip of a cone shaped substrate or arranged in some fashion on a flat substrate.
-
-
 The majority of current research papers center on free-space designs, but for most practical applications nanoantennas will be etched on a substrate. The type of substrate depends on the particular application, to some extent determined by the mechanism used to excite the antenna, but for many industrial applications cost and availability considerations have driven the move to silicon dioxide \ch{SiO2}, often described in technical papers simply as  `glass'. Typical signal generation is via off-board laser light or by an on-board transmission line. Unlike classical antenna signals which can be generated at virtually any microwave carrier frequency, there are a select few frequencies where low-cost optical sources are available, although specialized lasers can operate at frequencies throughout the optical spectrum. In optical terminology the signal has traditionally been specified in wavelengths rather than frequency, however here both terms will be used. Some common wavelengths where research is being carried out are in the neighborhood of
 \SI{550}, \SI{630}, and \SI{820}{\nano\metre}. A more complete list of various laser types along with their operating frequencies can be found \cite{Weber2000}.
 
@@ -60,7 +67,7 @@ subfield of nanophotonics \cite{Maier2005, Park2009}. In this section, some of t
 %
 \subsection{Single Boundary Structure}
 %
-Assuming a metal can have a complex permittivity at optical wavelengths, the propagation constants $k_{xi}$  and $k_{zi}$  at the planer interface between dielectric and metal half-spaces, $i = 1,2$ respectively, can be found starting with expressions for transverse magnetic (TM) plane waves in these two regions as shown in Fig. 2. The electromagnetic field expressions in region 1 where $z \ge 0$ are,
+Assuming a metal can have a complex permittivity at optical wavelengths, the propagation constants $k_{xi}$  and $k_{zi}$  at the planer interface between dielectric and metal half-spaces, $i = 1,2$ respectively, can be found starting with expressions for transverse magnetic (TM) plane waves in these two regions as shown in Fig. \ref{fig:half_space}. The electromagnetic field expressions in region 1 where $z \ge 0$ are,
 %
 \begin{subequations}
   \begin{align}
@@ -71,6 +78,14 @@ Assuming a metal can have a complex permittivity at optical wavelengths, the pro
   \end{align}
   \label{eq:field1}
 \end{subequations}
+%
+\begin{figure}[t!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/interface.pdf_tex}
+  \caption{Dielectric and metal half-spaces with a planar boundary.}
+  \label{fig:half_space}
+\end{figure}
 %
 % Fig. 2 Dielectric and metal half-spaces with a planar boundary.
 %
@@ -142,6 +157,15 @@ Similarly, from \eqref{eq:ks} and \eqref{eq:spp}, $k_{zi}$ becomes approximately
 %
 From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be drawn concerning the nature of the two half-space materials and the properties of nano surface waves on their intersecting boundary:
 %
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/spp.pdf_tex}
+  \caption{Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.}
+  \label{fig:spp}
+\end{figure}
+% Fig. 3 Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.
+%
 \begin{enumerate}
   %
   \item First, if loss is neglected $(\E_2'' \simeq 0)$, a valid assumption for noble metals over significant segments of the optical range, so that the permittivities of both regions are real, the equality in \eqref{eq:dispersion} will not hold if these permittivities are both positive or both negative. But, if the permittivity in the dielectric region $1$ is positive, $\E_1 > 0$, and the real part of the permittivity in the metal region $2$ is negative, $\E_2' < 0$, then it is possible to satisfy \eqref{eq:dispersion}.
@@ -155,7 +179,7 @@ From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be
   %
   then the term under the square root in \eqref{eq:spp} is positive and propagation of a wave at the boundary is assured. This condition \eqref{eq:conditions} causes the signs of the terms under the square roots in \eqref{eq:kz} to be negative, but \eqref{eq:dispersion} will still hold as long as same sign for $\sqrt{-1}$ is chosen for both square roots.
   %
-  \item	If the conditions in \eqref{eq:conditions} are met then from \eqref{eq:spp} $k_x > k_0$ and therefore $k_z$ in \eqref{eq:ks} must be complex. According to \eqref{eq:field1} and \eqref{eq:field2}, this results in exponential decay of the field away from the boundary in both the positive and negative z-directions as long as $\sqrt{-1} = -\j$ is chosen for the square root terms in \eqref{eq:kz}. Exponential decay of the plasmon surface wave into the dielectric and metal is illustrated in Fig. 3.
+  \item	If the conditions in \eqref{eq:conditions} are met then from \eqref{eq:spp} $k_x > k_0$ and therefore $k_z$ in \eqref{eq:ks} must be complex. According to \eqref{eq:field1} and \eqref{eq:field2}, this results in exponential decay of the field away from the boundary in both the positive and negative z-directions as long as $\sqrt{-1} = -\j$ is chosen for the square root terms in \eqref{eq:kz}. Exponential decay of the plasmon surface wave into the dielectric and metal is illustrated in Fig. \ref{fig:spp}.
   %
   \item	According to Snell's law, the component of the wavenumber $k_x$ tangential to the boundary is the same in both mediums. If medium 1 is air, the x-component of a plane wave incident upon the boundary at an angle $\theta$ from normal is $k_{x1} = k_0 \sin \theta$, which is less than $k_0$. However, according to \eqref{eq:spp} and \eqref{eq:conditions} surface plasmons cannot exist unless $k_x > k_0$. Therefore, surface plasmons cannot be excited by shining light on a flat metal surface.
   %
@@ -197,17 +221,19 @@ From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be
   \item	Power and energy relationships can be found by assuming a value for the magnetic field amplitude and by using Ampere's law to determine the electric field.
 \end{enumerate}
 %
-
 The conditions described in \eqref{eq:conditions} are met by noble metals in air for the optical and near-infrared ranges in the case of a TM polarized wave. A similar analysis will show that a transverse electric (TE) polarized wave cannot exist at a dielectric-metal boundary.
 
 In practical applications one should take care in the selection of the metal to be used in a nanoantenna design. Some metals, such as silver, tend to develop an oxidation layer, which can severely decrease propagation length and increase the antenna impedance. For a more detailed discussion concerning the effect of a silver sulfide oxidation layer on a silver substrate plasmon wave, the reader is referred to \cite{Nevels2014}.
 %
+Fig. \ref{fig:plength} shows the propagation length as a function of wavelength for three metals, gold, silver and aluminum \cite{9783540339199}. The practitioner is cautioned that although the propagation length of a surface plasmon does increase as frequency decreases, the analysis leading to this figure is based on an idealization of the physical problem. Here, a pure wave propagation condition was assumed in the formulation of equations \eqref{eq:field1} and \eqref{eq:field2}. In the practical case a source, such as the feed point of an antenna, must be included in the problem formulation. If the source is included, one sees that as the frequency decreases, less energy is transferred into the surface plasmon wave and more into the space wave; the field that is radiated directly into space from the source point. In the far infrared range, the surface plasmon essentially ceases to exist. Plasmon wave behavior is discussed in more detail in the section of this chapter concerning aperture antennas.
 %
-% Fig. 3 Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.
-%
-
-Fig. 4 shows the propagation length as a function of wavelength for three metals, gold, silver and aluminum \cite{9783540339199}. The practitioner is cautioned that although the propagation length of a surface plasmon does increase as frequency decreases, the analysis leading to this figure is based on an idealization of the physical problem. Here, a pure wave propagation condition was assumed in the formulation of equations \eqref{eq:field1} and \eqref{eq:field2}. In the practical case a source, such as the feed point of an antenna, must be included in the problem formulation. If the source is included, one sees that as the frequency decreases, less energy is transferred into the surface plasmon wave and more into the space wave; the field that is radiated directly into space from the source point. In the far infrared range, the surface plasmon essentially ceases to exist. Plasmon wave behavior is discussed in more detail in the section of this chapter concerning aperture antennas.
-%
+% \begin{figure}[t!]
+%   \centering
+%   {\includegraphics[width = .5\linewidth]{generate_fig4.tikz}
+%   \label{fig:test}}
+%   \caption{Propagation length of a surface plasmon propagating along the interface between a dielectric (refractive index 1.32) and a metal as a function of wavelength calculated for gold (Au), silver (Ag), and aluminum (Al).}
+%   \label{fig:plength}
+% \end{figure}
 % Fig. 4 Propagation length of a surface plasmon propagating along the interface between a dielectric (refractive index 1.32) and a metal as a function of wavelength calculated for gold (Au), silver (Ag), and aluminum (Al).
 %
 %%%%%%%%%%%%%%%
@@ -230,7 +256,7 @@ where $\nu = 1/\tau$ is the collision frequency, $\tau$ is the scattering time b
   \label{eq:plasma_f}
 \end{equation}
 %
-where $e$ and $m_e$ are the electron charge and mass respectively and $N$ is the concentration of free electrons. Plasma frequencies for metals are in the visible and ultraviolet ranges. Typical values of plasma and collision frequencies are $\O_p = 0.2321 \times 10^{16}~\mathrm{Hz}$ and
+where $e$ and $m_e$ are the electron charge and mass respectively and $N$ is the concentration of free electrons. Plasma frequencies for metals are in the visible and ultraviolet ranges. Typical values of plasma and collision frequencies are $\O_p = \SI{.2332e12}{\hertz}$ and
 $\nu = 5.513 \times 10^{12}~\mathrm{Hz}$ for gold and $\O_p = 0.2068 \times 10^{16}~\mathrm{Hz}$ and $\nu = 4.449 \times 10^{12}~\mathrm{Hz}$ for silver, however impurities and other factors can affect these numbers so the literature does not have a unique set of values for these parameters. A comprehensive list of plasma and collision frequencies published by a variety of researchers for gold, silver and other noble metals can be found at \cite{Moroz2010}.
 
 Collisions are primarily between electrons and relatively large lattice vibrations (phonons), so for most metals at room temperature  $\nu \ll \O_p $ \cite{Bohren1998}, which reduces \eqref{eq:drude} to approximately:
@@ -249,13 +275,29 @@ This important expression shows that when $\O < \O_p$ then $\E(\O) < 0$  which i
 %
 The Drude model in the form given in \eqref{eq:drude} is widely used in nanoantenna analytical and numerical calculations for determining the permittivity, and therefore the propagation constant, of the plasmon polariton of noble metals. However, this free electron model fails at frequencies higher than about $850~\mathrm{THz}$ \cite{Archambault2009}, due to bound charge effects, and must be modified by incorporating additional terms \cite{Bohren1998}. This becomes a tedious process but reasonable accuracy can be achieved. Another option, preferred by the authors, is to use measured data \cite{Lynch1997} with a partial fraction fit \cite{Michalski2013}. Fig. 5 shows the dielectric function for gold and silver over the frequency range from $0.5~\mathrm{eV}~(120~\mathrm{THz})$ to $6.5~\mathrm{eV}~(1.57~\mathrm{PHz})$ obtained from measured data via a partial fraction fit. The solid lines are the partial fraction fit for the real part $\E'$, and the dashed lines are for the imaginary part
 $\E''$, of the dielectric function.
-
+%
+\begin{figure}[t!]
+  \centering
+  \subfloat[]{\includegraphics[width = .5\linewidth]{ep_gold.tikz}
+  \label{fig:gold}} \\
+  \subfloat[]{\includegraphics[width = .5\linewidth]{ep_silver.tikz}
+  \label{fig:s_silver}}
+  \caption{Dielectric function for (a) Gold and (b) Silver as a function of  photon energy $E = hf$ where $f$ is frequency and $h = \SI{6.626068e34} {kg.m^{2}/s}$ is Planck's constant. The solid lines are the partial fraction fit for $\E'$ and the dashed line is for $\E''$. The circles and squares are from measured data originally listed in \cite{Johnson1972}}
+  \label{fig:permittivity}
+\end{figure}
 % Fig. 5 Dielectric function for (a) Silver and (b) Gold as a function of photon energy where f is frequency and   m2 kg/s is Planck's constant. The solid lines are the partial fraction fit for  and the dashed line is for   . The circles and squares are from measured data originally supplied by (Johnson and Christy 1972).
-
-The significance of the data in Fig. 5 becomes clearer in Fig. 6 where the surface plasmon dispersion curve for frequency versus the propagation $k_x'$, attenuation $k_x''$, and constants at an air-silver boundary are plotted. The lower part of the curve is the non-radiative surface plasmon region followed above by an anomalous dispersion region and above that a Brewster mode radiative region. The slanted dashed line is the free-space light line $k_0 = \O/c$.  The Brewster mode portion of the dispersion curve is in the fast wave region to the left of the light line. It is the locus of the values of $k_x$  of the plane wave incident on the boundary at the Brewster angle. These waves do not set up a surface wave, but rather carry their power directly into the metal without reflection.  Below the Brewster mode section is a region of anomalous dispersion, often described in the literature as  `backbending', which has a group velocity that is virtually zero, and is accompanied by high loss.
-
+%
+The significance of the data in Fig. \ref{fig:permittivity} becomes clearer in Fig. 6 where the surface plasmon dispersion curve for frequency versus the propagation $k_x'$, attenuation $k_x''$, and constants at an air-silver boundary are plotted. The lower part of the curve is the non-radiative surface plasmon region followed above by an anomalous dispersion region and above that a Brewster mode radiative region. The slanted dashed line is the free-space light line $k_0 = \O/c$.  The Brewster mode portion of the dispersion curve is in the fast wave region to the left of the light line. It is the locus of the values of $k_x$  of the plane wave incident on the boundary at the Brewster angle. These waves do not set up a surface wave, but rather carry their power directly into the metal without reflection.  Below the Brewster mode section is a region of anomalous dispersion, often described in the literature as  `backbending', which has a group velocity that is virtually zero, and is accompanied by high loss.
+%
+\begin{figure}[t!]
+  \centering
+  {\includegraphics[width = .5\linewidth]{disp_silver.tikz}
+  \label{fig:gold}}
+  \caption{SPP dispersion curve for $\O$ versus $\Re k_x$ and $\Im k_x$ for an glas-silver interface. The lower part of the curve is the non-radiative surface plasmon region which is capped by a high loss backbending region, and a Brewster mode radiative region above}
+  \label{fig:permittivity}
+\end{figure}
 % Fig. 6 SPP dispersion curve for   versus   and   for an air-silver interface. The lower part of the curve is the non-radiative surface plasmon region which is capped by a high loss backbending region, and a Brewster mode radiative region above.
-
+%
 The surface plasmon portion of the dispersion curve is of primary importance to nanoantenna design. The plasmon region lies to the right of the light line and therefore, it is a slow wave since the phase velocity here is less than the speed of light. Because surface plasmons have a shorter wavelength than light they are prevented from radiating from a flat planar surface. Of particular significance is the decreasing slope of the dispersion curve, tending toward horizontal near where it joins the anomalous dispersion segment. In the plasmon region the surface plasmon propagation constant increases dramatically with a small increase in frequency. The horizontal dashed line at $380~\mathrm{nm}$ intersects the light line at approximately $k_0 = 17~\mathrm{rad/{\u m}}$ while at the same wavelength $k_x' = 21~\mathrm{rad/{\u m}}$, which means the surface plasmon wavelength can be much less than the free-space wavelength. Therefore, a resonant half-wavelength nano-dipole antenna can be much smaller than a half-wavelength measured in air at the same frequency. As the plasmon wavelength decreases near the anomalous dispersion region, the propagation constant approaches a limiting value. The Drude model provides the estimate for this limiting frequency
 %
 \begin{equation}
@@ -271,6 +313,13 @@ Although several key aspects of wave propagation on nano-structures have been pr
 
 Surface plasmon polaritons on a metal film have properties that do not exist on an interface between metal-dielectric half spaces. To analyze the mode configuration on a metal strip of thickness $t$, consider the configuration shown in Fig. 7 where the dielectrics are assumed to extend from the surface of the metal to infinity and possess different permittivities, $\E_1$ and $\E_2$. The permittivity of the metal is $\E_m$ and all three regions have the permeability of free-space. The waves in each region are assumed to be TM polarized with a magnetic field component in the y-direction in each region given by:
 %
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/three_layer.pdf_tex}
+  \caption{Thin metallic film between two dielectric regions with different permittivities.}
+  \label{fig:3layer}
+\end{figure}
 % Fig. 7 Thin metallic film between two dielectric regions with different permittivities.
 %
 \begin{subequations}
@@ -384,9 +433,28 @@ The optical antenna, although not a traditional perfect conductor, cannot be ana
 \subsection{Dipole and Patch Antennas}
 
 Size and shape can affect the design frequency of an optical antenna in ways not typically expected in microwave frequency antenna engineering. For example a rectangular microstrip patch is expected to resonate when the incident field is polarized in the direction of the $\lambda/2$ dimension of the patch, while the transverse dimension is flexibly left to something greater or less than $\lambda/2$. However, as shown in Fig. 8 both the width and length of a metal plate must be considered in designing an optical antenna. A narrow nanodipole resonating at a particular frequency, as shown in figure 8(a), does not maintain resonance
-
+%
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/dipoles_nitin.pdf_tex}
+  \caption{A gold dipole residing over a glass substrate.}
+  \label{fig:nitin_dipole}
+\end{figure}
+%
+\begin{figure}[t!]
+  \centering
+  \subfloat[]{\includegraphics[height = 2.7in]{generate_fig8c.tikz}
+  \label{fig:sim_hi}}
+  \subfloat[]{\includegraphics[height = 1.9in]{fig8_a.png}
+  \label{fig:narrow}} \hfil
+  \subfloat[]{\includegraphics[height = 1.9in]{fig8_d.png}
+  \label{fig:wide}} \hfil
+  \caption{(a) Maximum enhancement of a gold nanodipole excited at 550 nm (b) narrow and (c) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.}
+  \label{fig:simulation}
+\end{figure}
 % Fig. 8 Maximum enhancement of a gold nanodipole excited at 550 nm (a) narrow and (b) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.
-
+%
 when widened. However, the first resonance can be regained by changing both the length and width of the dipole as shown in Fig. 8(b). The mechanism causing this phenomena has to do with the manner in which surface plasmons are excited. The incident wave with a free-space wavenumber transfers energy into the plasmon wave having a much larger wavenumber at locations where the interaction between the incident wave and the antenna produce the largest concentration of higher order modes, which will couple energy into the plasmon mode. This interaction is primarily seen on the corners of the dipole in Fig. 8(b). Similar to plane waves in a waveguide, plasmon waves fan out from the corners taking a circuitous route bouncing from the edges of the plate before phase matching produces a resonance condition. Further complicating the picture is the chemical potential and the `lighting rod' effect whereby opposite charges form a high concentration of the field across the antenna center gap. However, plasmons in the narrower dipole, Fig. 8(a), follow a shorter, more direct route to resonance than does the plasmon wave on the wider dipole Fig. 8(b) thereby experiencing less attenuation and ultimately creating a region of higher field enhancement in the gap than does the wide dipole. Fig. 8(c) shows that as the dipole widens the resonant frequency shifts and the enhancement decreases.  Enhancement is defined as the ratio of the total to the incident electric field in the gap region, although in some publications this ratio is squared and therefore, described as intensity enhancement.
 
 The behavior of the narrower dipole shown in Fig. 8(a) is more closely aligned with what one would expect at microwave frequencies whereby increasing the length of each nanorod in plasmon half-wavelength intervals will produce successive resonance and antiresonance in the gap input impedance. Notice that the total length of the dipole is a full plasmon wavelength $\lambda_p$ plus the gap separation distance, as opposed to the typical $\lambda_0/2$ dipole first resonance of a perfectly conducting microwave antenna with a negligible gap width. In terms of plasmon wavelengths, a first resonance does occur in an isolated $\lambda_p/2$ nanorod or a vertical $\lambda_p/4$ nanorod on a metal substrate \cite{Taminiau2007}.
@@ -402,9 +470,9 @@ where $\lambda$ is the wavelength of the external region, $\lambda_p$ is the met
 %
 \begin{subequations}
   \begin{align}
-    n_1 ={}& 2\, \pi\, R \left[ 13.74 - 0.12 \frac{\E_\inf + 141.04 \E_s}{\E_s} - 2\pi \right]
+    n_1 ={}& 2\, \pi\, R \left[ 13.74 - 0.12 \frac{\E_\inf + 141.04\, \E_s}{\E_s} - 2\pi \right]
     \label{eq:n1}\\
-    n_2 ={}& 0.24\, \pi\, R \frac{\sqrt{\E_\inf + 141.04 \E_s}}{\E_s}.
+    n_2 ={}& 0.24\, \pi\, R \frac{\sqrt{\E_\inf + 141.04 \, \E_s}}{\E_s}.
     \label{eq:n2}
   \end{align}
   \label{eq:ns}
@@ -430,12 +498,12 @@ where $n_{slow}$ is the real part of the mode index of surface plasmon polariton
 where $n_d$ and $n_m$ are the indices of refraction of the dielectric and metal and $k_0 = 2 \pi /\lambda$. The wavelength of the slow surface plasmon polariton is then given by $\lambda_{slow} = \lambda/ n_{slow}$.
 
 Analytical models are preferable because clear trends in antenna performance can be seen by adjusting mathematical parameters that represent physical quantities such as the antenna width or length and the excitation frequency. On the other hand, numerical techniques can provide both the accuracy and flexibility needed to model complex antenna structures. However, purely mathematical solutions can become clouded with long complex expressions and special functions while a purely numerical analysis provided by the powerful commercial codes that have become available these last few years, while furnishing useful visual data in terms of graphs and charts, do not always provide a way to understand the multifaceted interaction between the variables of an antenna system. Recently a compromise approach for optical antennas has been advanced, advocated primarily by Engheta and Alù \cite{Engheta2005,Alu2007,Zhao2011,9781107014145}, whereby the antenna and field excitation are replaced by an equivalent lumped circuit model based on numerical analysis data. The basic model, shown in Fig. 9, is centered on a Thévenin equivalent circuit for the antenna with a capacitance accounting for a non-negligible gap
-impedance $Z_g$ along with the intrinsic impedance $Z_a$ of the dipole. The parallel combination of these two impedances forms the input impedance of the circuit. The input impedance is calculated, by driving the antenna at the gap with an arbitrary source voltage $V_g$ and calculating, with full-wave simulations, the displacement current $I_g$ flowing across the arms at the terminals in the region of the gap $Z_in = V_g / I_g$.
+impedance $Z_g$ along with the intrinsic impedance $Z_a$ of the dipole. The parallel combination of these two impedances forms the input impedance of the circuit. The input impedance is calculated, by driving the antenna at the gap with an arbitrary source voltage $V_g$ and calculating, with full-wave simulations, the displacement current $I_g$ flowing across the arms at the terminals in the region of the gap $Z_{in} = V_g / I_g$.
 
 The intrinsic antenna impedance $Z_a$ is extracted from the input impedance by first taking the parallel combination of the gap and load impedances according to:
 %
 \begin{equation}
-  Z_{in} = \frac{1}{1 / Z_a + 1 / Z_g}, \quad  Z_g = \frac{1}{\j \O C}, \quad where C = \E_0 S/g
+  Z_{in} = \frac{1}{1 / Z_a + 1 / Z_g}, \quad  Z_g = \frac{1}{\j \O C}, \quad \text{where} C = \E_0 S/g
   \label{eq:alu_impedance}
 \end{equation}
 %
@@ -443,9 +511,9 @@ where $S$ and $g$ are respectively the gap cross-sectional area and gap height. 
 %
 \begin{subequations}
   \begin{align}
-    R_a ={}& \frac{R_0}{1 + \O C \left( 2 X_0 + \O C (R_0^2 + X_0^2) \right)}
+    R_a ={}& \frac{R_0}{1 + \O \, C \left( 2 X_0 + \O \,C (R_0^2 + X_0^2) \right)}
     \label{eq:intrinsic_resistance}\\
-    X_a ={}& \frac{X_0 + \O C (R_0^2 + X_0^2)} {1 + \O C\left( 2 X_0 + \O C (R_0^2 + X_0^2) \right)}
+    X_a ={}& \frac{X_0 + \O \, C (R_0^2 + X_0^2)} {1 + \O \, C\left( 2 X_0 + \O \, C (R_0^2 + X_0^2) \right)}
     \label{eq:intrinsic_admittance}
   \end{align}
   \label{eq:instrincis_impedance}
@@ -456,43 +524,58 @@ Since full-wave simulations have provided the $Z_{in}$ components $R_0$ and $X_0
 The antenna is resonant when the input reactance $X_0 = 0$ which from \eqref{eq:intrinsic_admittance} is:
 %
 \begin{equation}
-  \O_{0} = \frac{X_a}{C (R_a^2 + X_a^2)}
+  \O_{0} = \frac{X_a}{C  (R_a^2 + X_a^2)}
   \label{eq:resonant_frequency_impedance}
 \end{equation}
 %
 The `open circuit' or first resonance has been shown to have a very low value, whereas the `short circuit' or antiresonance has a high impedance, on the order of kilo-ohms. The feed line or other loading conditions will determine which operating frequency is selected. In the event of loading, the capacitance becomes $C = \E_L S /g$, the new resistance and reactance terms in the input impedance $Z_{in} = R_{in} + \j X_{in}$ are again found numerically and the equivalent dielectric constant $\E_L$ can be calculated from \eqref{eq:intrinsic_admittance}. Extra circuit elements can be added to account for the transmission feed line or a quantum radiator such as is the case in molecular spectroscopy, or a different circuit can be created for single quantum radiators without a gap \cite{9781107014145}.
-
+%
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/alu_impedance.pdf_tex}
+  \caption{Optical antenna with equivalent circuit model. The driving voltage could be an incident electromagnetic field, a transmission line connected to the antenna, or a quantum emitter.}
+  \label{fig:alu_circuit}
+\end{figure}
+%
 % Fig. 9 Optical antenna with equivalent circuit model. The driving voltage could be an incident electromagnetic field, a transmission line connected to the antenna, or a quantum emitter.
-
 Efficiency is an important measure used to characterize antenna performance. The overall antenna efficiency can be broken down into the product of several measures of efficiency, the most important of which are the radiation efficiency and the reflection efficiency, $\eta  = \eta_{rad}\eta_{ref}$,
 where the maximum value of each efficiency is one. The reflection efficiency determines how well the transmission feed line characteristic impedance is matched to the antenna input impedance. Its value, given in terms of the transmission line reflection coefficient $\Gamma$, is $\eta_{ref} = 1 - \left| \Gamma  \right|^2$ where $\left| \Gamma \right| \le 1$. The radiation efficiency is ratio of the total power radiated $P_{rad}$ to the power received $P_{in}$ by the antenna. The input power is assumed to be the sum of the radiated power and the power losses on the antenna. Provided the antenna is fed at the antenna maximum current point, which is most often the case with optical antennas operating at or below the lowest resonant frequency. At the first antiresonance, the radiation efficiency can be expressed in terms the radiation resistance $R_{rad}$ and the ohmic loss resistance $R_L$ experienced by the current flow in the antenna elements. The radiation efficiency is therefore:
 %
 \begin{equation}
-  \eta_{rad} = \frac{R_{rad}}{R_{rad} + R_{in} \sin^2(\pi L_{eff}/{\lambda _{eff})}}; \quad  R_{rad} = 2 P_{rad}/I_{max}^2.
+  \eta_{rad} = \frac{R_{rad}}{R_{rad} + R_{in} \sin^2(\pi \, L_{eff}/{\lambda _{eff})}}; \quad  R_{rad} = 2 P_{rad}/I_{max}^2.
   \label{eq:rad_efficiency}
 \end{equation}
 %
 The ohmic loss resistance $R_{in}$ is the real part of the input impedance. The optical dipole radiation resistance can be determined analytically by first hypothesizing the current at resonance. Taking into account the effective length and wavelength of an optical antenna, $L_{eff}$ and $\lambda_{eff}$  respectively which can be calculated using \eqref{eq:lambda_eff}, the standard microwave expression for a dipole current is modified to become \cite{Alu2007},
 %
 \begin{equation}
-  I(z) = \ddfrac{I_0 \sin \left [\pi \frac{L_{eff} - 2|z|}{\lambda _{eff}}\right]} {\sin \left( \frac {\pi L_{eff}}{\lambda_{eff}} \right)}
+  I(z) = \ddfrac{I_0 \sin \left [\pi \frac{L_{eff} - 2|z|}{\lambda _{eff}}\right]} {\sin \left( \frac {\pi \, L_{eff}}{\lambda_{eff}} \right)}
   \label{eq:current}
 \end{equation}
 %
 where $I_0$ is the numerical displacement current at the feed point $z = 0$. This current \eqref{eq:current} is used to find an analytical expression for the power radiated by the optical dipole $P_{rad}$ which is then substituted into \eqref{eq:rad_efficiency} to find the efficiency.
 
-Antenna directivity defined as $D_0 = (\text{time average power density maximized with angle})/(\text{average total power radiated through a sphere})$, can again be analytically calculated with the formulas above as can gain which is the product of the efficiency times the directivity, $G_0 = \eta_{rad} D_0$ . Keep in mind that this exercise has been a combination of numerical and analytical calculations, forming a hybrid approach that seems best suited for understanding complex interactions as well as for overall engineering optical antenna design.  Although the example of a dipole has been used here, many other structures have been successfully investigated using this equivalent technique \cite{Zhao2011,9781107014145}. For design data for the dipole based on measurements the reader is referred to references \cite{Schuck2005,Fischer2008,Muskens2007}.
+Antenna directivity defined as $D_0$ = (time average power density maximized with angle)/(average total power radiated through a sphere), can again be analytically calculated with the formulas above as can gain which is the product of the efficiency times the directivity, $G_0 = \eta_{rad} D_0$ . Keep in mind that this exercise has been a combination of numerical and analytical calculations, forming a hybrid approach that seems best suited for understanding complex interactions as well as for overall engineering optical antenna design.  Although the example of a dipole has been used here, many other structures have been successfully investigated using this equivalent technique \cite{Zhao2011,9781107014145}. For design data for the dipole based on measurements the reader is referred to references \cite{Schuck2005,Fischer2008,Muskens2007}.
 %%
 %%
 %%
 \subsection{Bowtie Antenna}
 %
-Compared to a dipole antenna, the bowtie antenna has the advantage of broadband operation yet it is a simple design. The feed point of a bowtie antenna is a gap at the vertex of two tip to tip apposal triangular electrically conducting arms. If extended to infinity while the angles of the triangle vertices remain unchanged, this antenna would be frequency independent. When the incident field polarization is perpendicular to the gap, the antenna can be driven into resonance. Fig.10 shows the intensity distribution for a $520~\text{nm}$ resonant bowtie design made out of gold on a $\text{SiO}_2$ substrate and excited by a normally incident plane wave. The numerical simulation in Fig. 10(a) shows that a high field intensity distribution occurs not only at corners and in the gap region but also along each of the sides, likely due to the sharp edge design. In Fig. 10(b) a plot of the electric field vectors immediately above the surface of antenna indicate the largest field components are just above the gap region but tend to decrease in amplitude as they spread out and terminate at the wider ends of the antenna arms where a much lower intensity is seen in Fig. 10(a). The intensity of the field in the bowtie gap has been shown
-to be strongly dependent upon the gap width \cite{Schuck2005}. For the design presented in \cite{Schuck2005}, starting on the order of $50~\text{nm}$ the resonant intensity climbs exponentially as the gap separation narrows, however as the gap separation widens the intensity tends to level out at around $100~\text{nm}$. Although very little work has been carried out concerning mathematical design criteria for the construction of on-surface optical antennas, optimal design dimensions can be obtained through published data gathered in experiments. For optical frequency design data based on measurements for the bowtie antenna the reader is referred to reference \cite{Fischer2008}. Studies have also been carried out to determine optimum bow angle, the outside angle formed by the edges of the two apposal arms of a bowtie antenna. It has been reported that the strongest enhancement can be obtained with a bow angle of $90 \degree$ \cite{Fischer2008}.
-
-
+Compared to a dipole antenna, the bowtie antenna has the advantage of broadband operation yet it is a simple design. The feed point of a bowtie antenna is a gap at the vertex of two tip to tip apposal triangular electrically conducting arms. If extended to infinity while the angles of the triangle vertices remain unchanged, this antenna would be frequency independent. When the incident field polarization is perpendicular to the gap, the antenna can be driven into resonance. Fig.10 shows the intensity distribution for a \SI{520}{\nano\metre} resonant bowtie design made out of gold on a $\text{SiO}_2$ substrate and excited by a normally incident plane wave. The numerical simulation in Fig. 10(a) shows that a high field intensity distribution occurs not only at corners and in the gap region but also along each of the sides, likely due to the sharp edge design. In Fig. 10(b) a plot of the electric field vectors immediately above the surface of antenna indicate the largest field components are just above the gap region but tend to decrease in amplitude as they spread out and terminate at the wider ends of the antenna arms where a much lower intensity is seen in Fig. 10(a). The intensity of the field in the bowtie gap has been shown
+to be strongly dependent upon the gap width \cite{Schuck2005}. For the design presented in \cite{Schuck2005}, starting on the order of \SI{50}{\nano\metre} the resonant intensity climbs exponentially as the gap separation narrows, however as the gap separation widens the intensity tends to level out at around \SI{100}{\nano\metre}. Although very little work has been carried out concerning mathematical design criteria for the construction of on-surface optical antennas, optimal design dimensions can be obtained through published data gathered in experiments. For optical frequency design data based on measurements for the bowtie antenna the reader is referred to reference \cite{Fischer2008}. Studies have also been carried out to determine optimum bow angle, the outside angle formed by the edges of the two apposal arms of a bowtie antenna. It has been reported that the strongest enhancement can be obtained with a bow angle of \SI{90}{\degree} \cite{Fischer2008}.
+%
+\begin{figure}[t!]
+  \centering
+  \subfloat[]{\includegraphics[height = 1.9in]{fig10_a.png}
+  \label{fig:narrow}} \hfil
+  \subfloat[]{\includegraphics[height = 1.9in]{fig10_b.png}
+  \label{fig:wide}} \hfil
+  \caption{Bowtie antenna with (a) highest field intensity shown in red around the edges and corners of the triangular arms and (b) electric field vectors where the largest amplitude field is displayed in red occurs in the gap between the two arms.}
+  \label{fig:bowite}
+\end{figure}
 % Fig. 10 Bowtie antenna with (a) highest field intensity shown in red around the edges and corners of the triangular arms and (b) electric field vectors where the largest amplitude field is displayed in red occurs in the gap between the two arms.
-
+%
 Unlike microstrip antennas printed on a thin substrate with a metal backing focusing radiation into the air region above, optical antennas are a single metal radiator lying on a dielectric-air interface. There can be no ground plane below because there are no perfect conductors at optical frequencies. Although radiation is in both directions, most of the energy radiated from an optical antenna tends to couple into the higher density substrate. In the microwave case a $\text{TM}_0$ mode surface wave can be launched into the substrate because this mode has no cutoff wavelength, but the fundamental mode in a typical microwave patch antenna is not conducive to launching TM modes. As long as the substrate is thin, a microwave patch antenna suffers little substrate induced loss. As the substrate thickens, energy from the microwave patch antenna is coupled into surface wave modes, which seriously degrades the efficiency of an antenna. However, an optical antenna radiates in both directions regardless of the substrate thickness, making it in any case less efficient than its microwave counterpart. One measurement study carried out in
 the infrared range \cite{Fischer2008} concluded that the dipole and bowtie efficiencies are respectively $20 \%$ and $ 30 \%$ whereas a typical microstrip patch antenna has an efficiency of $60 \%$. A similar conclusion was reached in a more recent study \cite{9781107014145} that included the optical dipole, bowtie, and dimer constructions. A dimer, which has two pancake shaped arms, has an efficiency level close to the bowtie design. Numerical investigations of the optical Yagi-Uda design show a strong emission into the substrate and a much smaller emission lobe into the air side of the surface \cite{Hofmann2007} \cite{Kosako2010}. Although most of the electromagnetic radiation is emitted into the critical angle below, the above surface emission still shows a strong directivity.
 %%
@@ -503,6 +586,13 @@ the infrared range \cite{Fischer2008} concluded that the dipole and bowtie effic
 The dipole and bowtie nanoantennas described above are most often used in applications where a wide beamwidth or broadband transmission is the primary objective. However as nanotechnology progresses, achieving highly directional beams in the optical regime will be necessary in order to, for instance, transmit signals from nanocircuits to a receiver above the surface with a minimum power load on the electronic system. Another significant application is the possibility of enhancing and directing the radiation from a nano-emitter, which will be discussed in the \emph{Applications} section below. At the microwave level the Yagi-Uda antenna shown in Fig. 11 has proven to be highly directional for radiation of radio waves yet simplistic in construction. One would expect that basically similar design principles can be used to obtain directionality with an optical Yagi-Uda design. Over the last few years, this has been shown to be the case primarily due to the fact that the elements of the Yagi antenna are nanorods, the properties of which have been the subject of extensive study by the optics community over the last thirty years.
 %
 %
+\begin{figure}[h!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/yagi.pdf_tex}
+  \caption{Yagi-Uda optical antenna constructed with nano rods.}
+  \label{fig:alu_circuit}
+\end{figure}
 % Fig. 11 Yagi-Uda optical antenna constructed with nano rods.
 %
 %
@@ -590,10 +680,18 @@ So far in this chapter on-surface optical antennas have been emphasized primaril
 \subsection{Optical aperture antenna theory}
 
 Although important nano-level aperture optics was carried out in the study of fluorescence molecules in the 1980's \cite{Fischer1986}, the report by \cite{Ebbesen1998} of dramatically enhanced transmission through sub-wavelength holes in metal films, was an event that spurred widespread interest in optical aperture antennas. Because this phenomena, now known as extraordinary optical transmission (EOT), seemed to fly in the face of the widely accepted classical electromagnetic analysis by \cite{Bethe1944} and \cite{Bouwkamp1950}, there has been considerable scientific interest in the subject reaching to the core of surface plasmon theory. According to the classical theory, the power transmitted through an aperture in an infinitely thin metallic screen scales as the inverse fourth power of the aperture size in terms of wavelengths. If the screen is made to be of finite thickness, then an additional reduction in the transmitted field strength will result, due the below-cutoff dimensions of the slot. However, it was discovered, first experimentally and then confirmed by numerical analysis, as shown in Fig. 13, that for metals at optical frequencies there are situations where remarkable
-
+%
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width = .75\linewidth]{fig_13.png}
+  \label{fig:narrow}}
+  \caption{Simulation showing a surface plasmon standing wave intensity ($|E|^2$) pattern on a thin silver plate with dielectric constant $\E= -18.242 + \j 1.195$ between two slots illuminated by a \SI{660}{\nano\metre} plane wave from below. The center plate has a length $5/2 \lambda_{spp}$ (\SI{1650}{\nano\metre}) and each aperture has a width and thickness of \SI{200}{\nano\metre}.}
+  \label{fig:cst_simulation}
+\end{figure}
 % Fig. 13 Numerical calculation (CST©) showing a surface plasmon standing wave   pattern on a thin silver plate with dielectric constant    between two slots illuminated by a 660 nm plane wave from below. The center plate has a length  (1650 nm) and each aperture has a width and thickness of  (200 nm).
 
-amounts of energy pass through sub-wavelength slits and holes. Fig. 13 illustrates a cross-sectional view of a metallic sheet made of silver with two slots passing through the sheet. This nanostructure is excited by a plane wave from below. The magnitude of the field intensity shows a complicated structure with significant field at the slot corners, an interaction resulting in strong standing waves in the horizontal direction below, some weak field transmission through the slots, and a standing wave pattern on top of the center plate.
+amounts of energy pass through sub-wavelength slits and holes. Fig. \ref{fig:cs
+} illustrates a cross-sectional view of a metallic sheet made of silver with two slots passing through the sheet. This nanostructure is excited by a plane wave from below. The magnitude of the field intensity shows a complicated structure with significant field at the slot corners, an interaction resulting in strong standing waves in the horizontal direction below, some weak field transmission through the slots, and a standing wave pattern on top of the center plate.
 Although \cite{Ebbesen1998} explained EOT in terms of surface plasmon polaritons, others \cite{Lezec2004,Gay2006} questioned the existence of surface plasmons and asserted that the observed phenomena could be explained by the existence of evanescent waves arising in a classical electromagnetics analysis not used by Bethe and Bouwkamp. However, a more detailed study that evolved through a series of technical papers confirmed the original EOT hypothesis \cite{Lalanne2006,Nevels2014}. In the following, a purely mathematical analysis is presented revealing the nature of transmission through sub-wavelength holes including the surface plasmon, a space wave in the vicinity of the aperture, and a lateral wave behavior on the metal surface at distances over $100$ surface plasmon wavelengths removed from the aperture. The importance of this analysis lies in the fact that surface plasmon radiation plays a more significant role in optical aperture radiation than does diffraction. Also because many applications require optical apertures with narrowly focused beams, it is important to know that significant energy is carried in surface plasmon polaritons on the surface of the metal on the side opposite the aperture excitation.
 
 A thin slot aperture is modeled by placing a 2-D magnetic line current on the air-metal interface along the y-axis perpendicular to the page, as shown in Fig. 1. This arrangement gives rise to a transverse magnetic (TM) field, which has three non-zero electromagnetic field components $H_y$, $E_x$ and $E_z$. A straightforward analysis yields the magnetic field along the air-metal boundary:
@@ -621,7 +719,14 @@ $k_{xp} = k_0 \sqrt{ \E_1 \E_2 /{(\E_1 + \E_2)}}$ as predicted by \eqref{eq:spp}
 %
 The spectral domain Green function $\ti G(k_x)$ has branch points at $k_1$ and  $k_2$, respectively the wavenumbers of air and the metal at optical frequencies. Air is lossless, so $k_1$ is real and therefore lies on the real axis, as shown in Fig. 14, whereas metal has significant loss, so $k_2$ is far removed from and below the real axis. The field can be obtained by integrating in the $k_x$-plane along the real axis, path $C_0$, from minus to
 %
-% Fig. 14 Complex plane integration path around branch cuts connecting the branch points   and  , the wavenumbers for air and metal respectively, and the SPP pole   .
+\begin{figure}[h!]
+  \centering
+  \def\svgwidth{.5\linewidth}
+  \input{figures/contour.pdf_tex}
+  \caption{Complex plane integration path around branch cuts connecting the branch points $k_1$ and $k_2$, the wavenumbers for air and metal respectively, and the SPP pole $k_{xp}$.}
+  \label{fig:alu_circuit}
+\end{figure}
+% Fig. 14 Complex plane integration path around branch cuts connecting the branch points $k_1$ and  , the wavenumbers for air and metal respectively, and the SPP pole   .
 %
 plus infinity by means of the definitions $\Im (k_{z1}) < 0$ and $\Im (k_{z2}) < 0$ on the top sheet of the complex plane for both branch cuts. Integration on the real axis can be improved upon by deforming the integration path vertically so that $C_0$ is replaced by $C_1$ and $C_2$, paths of steepest descent in the  $k_x$-plane. An important consequence of the optical properties of a noble metal is that the position of the pole $k_{xp}$ is such that it is captured by the vertical path deformation. Had the real part of the dielectric constant of metal been positive, the pole would reside to the left of the integration path below $k_1$ and therefore, it would not be captured by the integration path. It has been shown that poles captured by the steepest descent path are physical waves, in this case a surface plasmon wave, whereas poles not captured are not actual waves although they do influence the behavior of the field through their proximity to the integration path \cite{Collin2004}. The contribution from the
 integral $C_2$ around the branch point at $k_2$ is negligible because the branch point lies well below the real axis so exponential decay due to the imaginary part of $k_x$ is significant. The spatial domain Green function can now be expressed in terms of its pole and branch point components as,
@@ -648,10 +753,19 @@ A careful analytical study of the composite wave shows that subtracting the surf
 %
 At small or moderate distances from the aperture (magnetic line source) the magnetic field has a $x^{-1/2}$ behavior, the same as the small argument behavior of a Hankel function for a line source in free-space, is often referred to as the  `space wave'. At large distances, the $x^{-3/2}$ decay is typical of a lateral wave behavior.
 
-Numerical results displaying the composite wave (solid line) and surface plasmon polariton wave (dashed line) where the metal is silver and the line source is radiating at $633~\text{nm}$ and $2500~\text{nm}$ are shown in Fig. 15 below. As predicted the dominant behavior of the magnetic field near the aperture is the $x^{-1/2}$ space wave. However at greater distances the plasmon wave becomes dominant, and in Fig. 15(a) close to $500$ wavelengths where the plasmon wave tends to rapidly decay, the lateral wave behavior $x^{-3/2}$ dominates. Fig. 15(b) shows that at $2500~\text{nm}$, the surface wave amplitude is reduced due to losses that enter the numerical calculation through the dielectric function given in Fig. 5. Eventually, at frequencies below the near infrared range, the metal begins to behave more like a perfect conductor and the space wave completely dominates the behavior of the field.
-
+Numerical results displaying the composite wave (solid line) and surface plasmon polariton wave (dashed line) where the metal is silver and the line source is radiating at \SI{633}{\nano\metre} and \SI{2500}{\nano\metre} are shown in Fig. \ref{fig:sommerfeld} below. As predicted the dominant behavior of the magnetic field near the aperture is the $x^{-1/2}$ space wave. However at greater distances the plasmon wave becomes dominant, and in Fig. 15(a) close to $500$ wavelengths where the plasmon wave tends to rapidly decay, the lateral wave behavior $x^{-3/2}$ dominates. Fig. 15(b) shows that at \SI{2500}{\nano\metre}, the surface wave amplitude is reduced due to losses that enter the numerical calculation through the dielectric function given in Fig. 5. Eventually, at frequencies below the near infrared range, the metal begins to behave more like a perfect conductor and the space wave completely dominates the behavior of the field.
+%
+\begin{figure}[t!]
+  \center
+  \subfloat[]{\includegraphics[width = .5\linewidth]{generate_fig15a.tikz}
+  \label{fig:somm633}} \hfil
+  \subfloat[]{\includegraphics[width = .5\linewidth]{generate_fig15b.tikz}
+  \label{fig:somm2500}}
+  \caption{Logarithmic scale comparison of composite wave and surface plasmon polariton wave normalized amplitude for an air-silver interface as a function of distance from the source at (a) \SI{633}{\nano\metre} (b) \SI{2500}{\nano\metre}}
+  \label{fig:sommerfeld}
+\end{figure}
 % Fig. 15 Logarithmic scale comparison of composite wave and surface plasmon polariton wave normalized amplitude for an air-silver interface as a function of distance from the source at (a) 633 nm (b) 2500 nm.
-
+%
 This exercise confirms the existence of the plasmon wave and displays its relationship to other wave phenomena produced in the aperture of a sub-wavelength slot and on the air-metal interface. More important from an antenna engineering standpoint is that energy carried by the plasmon wave through the slot does radiate into the space wave above the slot. The question, ``Can a plasmon wave pass through a slot?'' is answered by the analysis at the beginning of this chapter and in an excellent review covering analytical methods used to determine the properties of subwavelength apertures \cite{Garcia-Vidal2010}. Because a surface plasmon wave is tightly bound to the metal surface, decaying to $1/e$ at distances far less than a wavelength above the metal walls, its expression in a waveguide is not governed by the typical waveguide boundary conditions. Plasmon waves in the two walls of the slot, although not entirely independent of one another, are not subjected to cutoff conditions, and can therefore carry much more energy than a waveguide evanescent mode or even an infinite sum of evanescent modes. The conclusion that can be drawn from this analysis is that at optical wavelengths, a significant amount of plasmon energy can be transported through a metallic slot with a sub-wavelength width. Because the slot is sub-wavelength in width, it is possible to form an array of plasmonic radiators to focus an intense beam to a sub-wavelength line or spot.
 %%
 %%
@@ -659,7 +773,7 @@ This exercise confirms the existence of the plasmon wave and displays its relati
 \subsection{Bowtie aperture antenna}
 %
 Many aperture antennas are a simple Babinet equivalent of their metal counterpart. The aperture bowtie, also known as the diabolo antenna, is one such design. The aperture bowtie shown in Fig. 2(c) differs from the well-known metal bowtie nanoantenna in that the opposing pair of aperture triangles are connected through an aperture extension of the facing triangular tips. Thus instead of a large charge density accumulating between the triangles across the air gap, a high optical current density develops within the gap but between the narrowly spaced metal sides of the gap.  A high intensity enhanced field component is achieved in the gap connecting the apposal triangular arms by polarizing the incident light parallel to the narrow gap connecting the arms. Polarizing the incident field across the narrow dimension of the gap will produce little or no field enhancement.  One of the interesting properties of the aperture bowtie is that the magnetic field rather than the electric field is enhanced in the gap. By analogy, the metal bowtie behaves more like an electric dipole and the aperture bowtie more like a magnetic dipole. Numerical
-simulations have shown a $2900$-fold enhancement of the magnetic field at a wavelength of $2540~\text{nm}$, confined to a $40-\text{by}-40~\text{nm}$ region near the center of the nanoantenna.
+simulations have shown a $2900$-fold enhancement of the magnetic field at a wavelength of \SI{2540}{\nano\metre}, confined to a $40\times40$\SI{}{\nano\metre^2} region near the center of the nanoantenna.
 
 Although in general aperture antenna enhancement is not as high as can be achieved with a similar metallic structure, apertures are easier to make and have the advantage of providing a visual objective. The aperture bowtie has been shown to have sufficient enhancement and confinement to be effective in nanolithography applications \cite{Wang2006}. The effectiveness of the aperture bowtie nanoantenna in nanolithographic applications is attributed to the fact that the magnetic field created in the aperture gap above the photoresist mask enters the mask in the perpendicular direction, easily penetrating into the metal, thereby leading to noticeable dissipation effects \cite{Grosjean2011}.
 
