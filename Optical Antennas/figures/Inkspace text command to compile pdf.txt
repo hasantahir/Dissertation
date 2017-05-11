@@ -12,6 +12,17 @@ inkscape --file=mstruc_gated.svg --export-area-drawing --without-gui --export-la
 inkscape --file=psim.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim.pdf
 inkscape --file=psim_a.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim_b.pdf
 
+inkscape --file=three_layer.svg --export-area-drawing --without-gui --export-latex --export-pdf=three_layer.pdf
+inkscape --file=alu_impedance.svg --export-area-drawing --without-gui --export-latex --export-pdf=alu_impedance.pdf
+inkscape --file=yagi.svg --export-area-drawing --without-gui --export-latex --export-pdf=yagi.pdf
+inkscape --file=contour.svg --export-area-drawing --without-gui --export-latex --export-pdf=contour.pdf
+inkscape --file=dipoles_nitin.svg --export-area-drawing --without-gui --export-latex --export-pdf=dipoles_nitin.pdf
+inkscape --file=somm_2500.svg --export-area-drawing --without-gui --export-latex --export-pdf=somm_2500.pdf
+inkscape --file=somm_633.svg --export-area-drawing --without-gui --export-latex --export-pdf=somm_633.pdf
+inkscape --file=spp.svg --export-area-drawing --without-gui --export-latex --export-pdf=spp.pdf
+inkscape --file=interface.svg --export-area-drawing --without-gui --export-latex --export-pdf=interface.pdf
+
+inkscape --file=c.svg --export-area-drawing --without-gui --export-latex --export-pdf=c.pdf
 Tip to avoid multipage pdf generation headache:
 Ensure text is always top of eerything
 select text and then Object -> Raise to top

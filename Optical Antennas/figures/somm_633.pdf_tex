@@ -20,7 +20,7 @@
 %%   \import{<path to file>}{<filename>.pdf_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
-%%
+%% 
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{175.77890015bp}%
+    \setlength{\unitlength}{163.81873817bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,8 +48,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.07074088)%
+  \begin{picture}(1,1.12100028)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{somm_633.pdf}}%
-    \put(0.04662117,0.07025869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\lambda_0 = 633 \text{nm}$}}}}%
   \end{picture}%
 \endgroup%
