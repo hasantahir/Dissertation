@@ -248,6 +248,25 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="scale(0.6,0.6)" />
     </marker>
+    <linearGradient
+       id="linearGradient3298">
+      <stop
+         style="stop-color:#dbc172;stop-opacity:1;"
+         offset="0"
+         id="stop3300" />
+      <stop
+         id="stop3302"
+         offset="0.35445812"
+         style="stop-color:#e8d8a8;stop-opacity:1;" />
+      <stop
+         style="stop-color:#dac070;stop-opacity:1;"
+         offset="0.69572294"
+         id="stop3304" />
+      <stop
+         id="stop3306"
+         offset="1"
+         style="stop-color:#d2b250;stop-opacity:1;" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"

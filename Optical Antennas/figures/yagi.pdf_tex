@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{379.73906999bp}%
+    \setlength{\unitlength}{375.08567936bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,16 +48,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.521685)%
+  \begin{picture}(1,0.51243371)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{yagi.pdf}}%
-    \put(0.95424957,0.23865847){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
-    \put(0.2738884,0.48824474){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
-    \put(0.24553293,0.00052141){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Feed}}}}%
-    \put(-0.00260705,0.19880981){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_r$}}}}%
-    \put(0.02497274,0.37219866){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Reflector}}}}%
-    \put(0.54797714,0.00052141){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Directors}}}}%
-    \put(0.86221057,0.16359597){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_d$}}}}%
-    \put(0.63102251,0.48463158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v E$}}}}%
-    \put(0.78451587,0.39983908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v k$}}}}%
+    \put(0.98639244,0.24141403){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
+    \put(0.29182978,0.49409672){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
+    \put(0.26783333,0.00032259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Feed}}}}%
+    \put(-0.00161296,0.201071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_r$}}}}%
+    \put(0.06285536,0.37661095){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Reflector}}}}%
+    \put(0.59311283,0.00032259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Directors}}}}%
+    \put(0.87393376,0.1770674){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_d$}}}}%
+    \put(0.67593213,0.49043873){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v E$}}}}%
+    \put(0.83348057,0.40459428){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v k$}}}}%
   \end{picture}%
 \endgroup%

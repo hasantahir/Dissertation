@@ -3,8 +3,8 @@
     set layers=standard,
     ymode = log,        % logarithmic y axis
     enlargelimits=false,
-    xlabel=Wavelength (\SI{}{\nano\metre}),
-    ylabel=Propagation Length, \emph{L} (\SI{}{\micro\metre}),
+    xlabel=Wavelength ($\mathrm{nm}$),
+    ylabel=Propagation Length $L (\mathrm{\u m})$,
     ]
     \addplot graphics [
     xmin=300,
