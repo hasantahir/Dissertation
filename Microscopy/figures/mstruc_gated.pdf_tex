@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{571.92377122bp}%
+    \setlength{\unitlength}{562.0415042bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,20 +48,20 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.49110098)%
+  \begin{picture}(1,0.47195394)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{mstruc_gated.pdf}}%
-    \put(0.81862203,0.43493721){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Barrier}}}}%
-    \put(0.81862203,0.36121697){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{2DEG}}}}%
-    \put(0.81862203,0.28960858){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Substrate}}}}%
-    \put(0.15871733,0.17427761){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{S}}}}%
-    \put(0.79895635,0.17548572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{D}}}}%
-    \put(0.47523353,0){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{L}}}}}%
-    \put(0.45613842,0.46891271){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Objective Lens}}}}%
-    \put(0.00474511,0.19879538){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{I}}}}}%
-    \put(0.88126687,0.1330351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{h}}}}}%
-    \put(0.09105158,0.37867681){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
-    \put(0.19941811,0.29898949){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
-    \put(0.4763963,0.06923641){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{G}}}}%
-    \put(0.04242932,0.11841365){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{d}}}}}%
+    \put(0.8330156,0.4318874){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Barrier}}}}%
+    \put(0.8330156,0.35724627){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{2DEG}}}}%
+    \put(0.8330156,0.28271279){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Substrate}}}}%
+    \put(0.16595164,0.16380889){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{S}}}}%
+    \put(0.81894502,0.16503828){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{D}}}}%
+    \put(0.49213327,0){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{L}}}}}%
+    \put(0.43668552,0.45815603){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Objective Lens}}}}%
+    \put(0.01645767,0.18754256){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{I}}}}}%
+    \put(0.88412922,0.12051271){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{h}}}}}%
+    \put(0.20979868,0.26999869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
+    \put(0.38305097,0.14860827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
+    \put(0.49110578,0.08842445){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{G}}}}%
+    \put(0.06941025,0.10954001){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{d}}}}}%
   \end{picture}%
 \endgroup%

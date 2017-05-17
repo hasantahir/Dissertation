@@ -630,19 +630,19 @@
 �K��������A����� �endstreamendobj92 0 obj2863 endobj93 0 obj<< /Type /XObject /Subtype /Image /Name /im19 /Filter /CCITTFaxDecode /Width 2250 /Height 115 /BitsPerComponent 1 /Decode [ 1 0 ] /ColorSpace /DeviceGray /Length 92 0 R /DecodeParms << /K -1 /Columns 2250 >> >> stream
 &�h˃!��.\0\��1�eȹ�2�s0� �n\6�,��[�.B5Dt�I����E�|��L�2� ������DrB,(O�}{���Ў��C7�z���	d6A������ Х�]� N����lq_��>�����/_��]���#���G������:G�_�}� T�l���,}�A�1�2B�oP���k�
 
-@Misc{Nassenstein1970,
+@Article{Nassenstein1970,
   author       = {H. Nassenstein},
   title        = {Superresolution by diffraction of subwaves},
-  month        = oct,
-  year         = {1970},
-  date         = {1970},
-  doi          = {10.1016/0030-4018(70)90145-8},
   journal      = {Optics Communications},
-  journaltitle = {Optics Communications},
+  year         = {1970},
+  volume       = {2},
   number       = {5},
   pages        = {231--234},
+  month        = oct,
+  date         = {1970},
+  doi          = {10.1016/0030-4018(70)90145-8},
+  journaltitle = {Optics Communications},
   publisher    = {Elsevier {BV}},
-  volume       = {2},
 }
 
 @Article{Jost2013,
@@ -1005,6 +1005,18 @@
   abstract  = {High spatial frequencies in the illuminating light of microscopes lead to a shift of the object spatial frequencies detectable through the objective lens. If a suitable procedure is found for evaluation of the measured data, a microscopic image with a higher resolution than under flat illumination can be obtained. A.  simple method for generation of a laterally modulated illumination pattern is discussed here. A.  specially constructed diffraction grating was inserted in the illumination beam path at the conjugate object plane (position of the adjustable aperture) and projected through the objective into the object. Microscopic beads were imaged with this method and evaluated with an algorithm based on the structure of the Fourier space. The results indicate an improvement of resolution.},
   doi       = {10.1117/12.336833},
   journal   = {Proc. SPIE},
+}
+
+@Book{9781489947871,
+  title     = {Theory of Plasma Instabilities},
+  publisher = {Springer},
+  year      = {2013},
+  author    = {Mikhailovskii, A. B.},
+  isbn      = {978-1-4899-4787-1},
+  date      = {2013-12-17},
+  ean       = {9781489947871},
+  pagetotal = {336},
+  url       = {http://www.ebook.de/de/product/22372581/a_b_mikhailovskii_theory_of_plasma_instabilities.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

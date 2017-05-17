@@ -9,6 +9,10 @@ inkscape --file=equivalence.svg --export-area-drawing --without-gui --export-lat
 inkscape --file=2deg_3d.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_3d.pdf
 inkscape --file=fulbright.svg --export-area-drawing --without-gui --export-latex --export-pdf=fulbright.pdf
 inkscape --file=mstruc_gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=mstruc_gated.pdf
+inkscape --file=psim.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim.pdf
+inkscape --file=psim_a.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim_b.pdf
+inkscape --file=energy_level_diagram.svg --export-area-drawing --without-gui --export-latex --export-pdf=energy_level_diagram.pdf
+inkscape --file=e_diag.svg --export-area-drawing --without-gui --export-latex --export-pdf=e_diag.pdf
 
 Tip to avoid multipage pdf generation headache:
 Ensure text is always top of eerything

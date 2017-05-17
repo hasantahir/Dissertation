@@ -6,9 +6,6 @@
 %%%%%%%%%%
 \usepackage[utf8x]{inputenc} % Use it to include other characters than ABC
 \usepackage[T1]{fontenc}
-
-
-
 %%%%%%%%%%
 %%%%%%%%%% MATH
 %%%%%%%%%%
@@ -19,9 +16,9 @@
 \usepackage{commath}
 \usepackage{physics} % For using the oridnary derivative nomenclature
 \usepackage{gensymb} % Insert degree symbol
+\usepackage{siunitx} % All the SI unit nomenclature
+  \sisetup{per=slash, load=abbr}
 % \usepackage{systeme} % For system of equations
-
-
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
 %%%%%%%%%%
@@ -33,8 +30,6 @@
 \setstretch{1.5}
 \usepackage{etoolbox}
 \usepackage{multicol} % For side-by-side equatiosn
-
-
 %% Nicely set the spacing between equations and text
 \AtBeginDocument{%
 \setlength\abovedisplayskip{4pt}
