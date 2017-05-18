@@ -1,0 +1,32 @@
+inkscape --file=2deg_bandgap.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_bandgap.pdf
+inkscape --file=scale.svg --export-area-drawing --without-gui --export-latex --export-pdf=scale.pdf
+inkscape --file=curto_resonator.svg --export-area-drawing --without-gui --export-latex --export-pdf=curto_resonator.pdf
+inkscape --file=curto.svg --export-area-drawing --without-gui --export-latex --export-pdf=curto.pdf
+inkscape --file=flute_2deg.svg --export-area-drawing --without-gui --export-latex --export-pdf=flute_2deg.pdf
+inkscape --file=tm_plate.svg --export-area-drawing --without-gui --export-latex --export-pdf=tm_plate.pdf
+inkscape --file=seniors.svg --export-area-drawing --without-gui --export-latex --export-pdf=seniors.pdf
+inkscape --file=equivalence.svg --export-area-drawing --without-gui --export-latex --export-pdf=equivalence.pdf
+inkscape --file=2deg_3d.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_3d.pdf
+inkscape --file=fulbright.svg --export-area-drawing --without-gui --export-latex --export-pdf=fulbright.pdf
+inkscape --file=mstruc_gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=mstruc_gated.pdf
+inkscape --file=psim.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim.pdf
+inkscape --file=psim_a.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim_b.pdf
+
+inkscape --file=three_layer.svg --export-area-drawing --without-gui --export-latex --export-pdf=three_layer.pdf
+inkscape --file=alu_impedance.svg --export-area-drawing --without-gui --export-latex --export-pdf=alu_impedance.pdf
+inkscape --file=yagi.svg --export-area-drawing --without-gui --export-latex --export-pdf=yagi.pdf
+inkscape --file=contour.svg --export-area-drawing --without-gui --export-latex --export-pdf=contour.pdf
+inkscape --file=dipoles_nitin.svg --export-area-drawing --without-gui --export-latex --export-pdf=dipoles_nitin.pdf
+inkscape --file=somm_2500.svg --export-area-drawing --without-gui --export-latex --export-pdf=somm_2500.pdf
+inkscape --file=somm_633.svg --export-area-drawing --without-gui --export-latex --export-pdf=somm_633.pdf
+inkscape --file=spp.svg --export-area-drawing --without-gui --export-latex --export-pdf=spp.pdf
+inkscape --file=interface.svg --export-area-drawing --without-gui --export-latex --export-pdf=interface.pdf
+
+inkscape --file=c.svg --export-area-drawing --without-gui --export-latex --export-pdf=c.pdf
+Tip to avoid multipage pdf generation headache:
+Ensure text is always top of eerything
+select text and then Object -> Raise to top
+All text objects can be selected from the find command enabling the 'select by type -> text' option.
+
+Open the pdf_tex file after compiling, and delete the lines that says \includegraphics for pages other than 1
+

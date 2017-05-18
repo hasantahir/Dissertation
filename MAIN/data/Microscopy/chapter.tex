@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+
+% Insert style guide
+\usepackage{my_thesis}
+% Specifiy the location of images to be used
+\graphicspath{{figures/}}
+
+\begin{document}
+\title{\textsc{Plasma based Structured Illumination Microscopy}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+\section{Introduction}
+
+
+Conventional wide-field fluorescent microscopy employs uniform lateral illumination of the sample to observe in the farfield through the objective lens. The uniform nature of the light source fundamentally restricts the resolution of the system to half the light source wavelength due to Abbe diffraction limit. In order to meet ever increasing need to obtain high resolution particularly in life sciences, modern microscopy techniques such as confocal and linear structured illumination microscopy use spatially non-uniform sources to illuminate the sample, resulting in achieving resolution beyond the diffraction limit by a factor of $2$ \cite{Minsky_1988,Gustafsson_2005}. In confocal microscopy, a focused beam generated through a pinhole illuminates a portion of the sample. which is raster scanned by laterally shifting the beam to generate an image of the whole sample. On the detector side of the microscope, the image passes through another pinhole. Although the use of pinholes increases the resolution, confocal microscopy is a slow imaging technique. Moreover, part of light is discarded by the pinhole which may leave the signal strength from weakly fluorescent samples undetectably low. Structured Illumination microscopy (SIM) is a wide-field technique in which a fine illumination pattern such as a sinusoidal standing wave is used to generate \emph{Moiré fringes} in the observed image. The high frequency content is mathematically reconstructed from a series of images acquired by shifting the pattern, yielding a high resolution image.
+
+Illuminating a sample using
+?? Talk here about the Nassenstein's paper that how he proposed the idea of using surface waves to form a standing wave illuminating pattern which in turn has a much smaller wavelength as compared to plane wave illumination signal in free space.
+
+\section{Working Principle}
+
+With a conventional microscope, the sample is illuminated with a uniform light and at the source end, the image resolution is entirely dependent on the wavelength $\lambda_0$ of illuminating light. According to Abbe's diffraction limit, under ideal circumstances (assuming a numerical aperture of 1), the attainable resolution is $\lambda_0/2$. In SIM, a non-uniform and periodic illumination signal termed as pattern excites the sample. Considering a one-dimensional example to illustrate the working of the technique, the observed image $m$ is expressed as:
+\begin{equation}
+  \begin{split}
+    m(x) &= f(x) \cdot i(x) \\
+  \end{split}
+  \label{eq:spatial_image}
+\end{equation}
+%
+where $f$ is fluorescence signal of the sample and $i = 1 + cos(k_p x + \Delta_x)$ is the illumination pattern with spatial frequency $k_p$ and phase $\Delta_x$. Transforming \eqref{eq:spatial_image} to the spatial frequency domain by taking the Fourier transform, we get:
+\begin{equation}
+  \begin{split}
+    M(k_x) &= \int \limits_{-\inf}^{\inf}   m(x) e^{-j(k_x x)} \diff{x} \\
+    &=   F(k_x) + F(k_x - k_p)e^{-\delta_x x} +  F(k_x + k_p)e^{ \delta_x x}
+  \end{split}
+  \label{eq:spatial_image}
+\end{equation}
+%
+where the second and third terms are the Fourier transforms of the sample shifted by spatial frequency $k_1$ along the $k_x$ axis in positive and negative direction respectively. The terms are determined by setting up a system of three linear equations by varying the phase term $\Delta_x$.
+
+
+
+
+
+
+The SIM technique can be split into two operations; one at the sample end and the other at the objective end. First, the sample is illuminated with a non-uniform, modulated pattern of sinusoidal shape. Only the portion of the sample that falls under the peak of the illumination signal is focused while the rest of the sample remains unfocused. Other portions are focused by laterally shifting the illumination pattern. Combining a number of images acquired generate a focused  as \emph{optical sectioning}
+SIM does two things\
+1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.
+
+2. The other part of SIM deals with generation of Moiré effect that actually results in high resolution. The effect is created when the illumination signal is modulated by the sample signal
+The objective lens of a microscope can be considered as a low-pass filter due to diffraction. The impulse response of the filter, i.e., the image of a point source, is a blurred spot termed as the \emph{point spread function}(PSF) of the microscope. When a sample that can be represented by $f(x,y)$ is illuminated by a signal $i(x,y)$, the output image, $m(x,y)$ of the microscope can be written in the spatial domain as \cite{Jost_2013}:
+%
+\begin{equation}
+  m(x,y) = \left[ f(x,y) \cdot i(x,y) \right] \ast h(x,y)
+  \label{eq:microscope}
+\end{equation}
+%
+where $h$ is the PSF, and $\ast$ denotes convolution.
+ % For conventional microscopy, the illumination signal is uniform (constant $i$) whereas in SIM, $i$ is usually a
+The image can be expressed in the spatial frequency domain by taking the Fourier transform:
+%
+\begin{equation}
+  \begin{split}
+    M(k_x, k_y) &= \int \limits_{-\inf}^{\inf} \int \limits_{-\inf}^{\inf}   m(x,y) e^{-j(k_x x + k_y y)} \diff{x}\diff{y} \\
+    &=  \left[ F(k_x,k_y) \ast I(k_x,k_y) \right] \cdot H(k_x,k_y)
+  \end{split}
+  \label{eq:FT}
+\end{equation}
+%
+where each capital letter represents the corresponding Fourier transforms of the spatial domain functions with $H$ in particular, is called the \emph{optical transfer function}(OTF) of the microscope.
+
+
+
+SIM does two things
+1. It creates optical sectioning that is excite different lateral portions of the sample by shifting of the pattern. The portion of the sample that is illuminated by the peak of the pattern is excited and it fluoresces while the rest of the sample is illuminated homogeneously by a uniform pattern. When the pattern is shifted, other portions of the sample are illuminated. This way the whole sample can be sequentially illuminated with high localized focused areas.
+
+2. The other part of SIM deals with generation of Moiré effect that actually results in high resolution. The effect is created when the illumination signal is modulated by the sample signal
+
+\section{Reconstruction}
+
+The Moiré fringe contains the high frequency information that lies inside the passband of the OTF as difference of frequencies of two signals. For the case of sinusoidal excitation pattern,
+
+For simplicity, we consider the excitation pattern to be sinusoidal written as \cite{Heintzmann1999a}:
+%
+\begin{equation}
+  i(x,y) = 1 + cos()
+\end{equation}
+%
+\section{Generation of the standing wave pattern}
+
+Two-dimensional electron gas (2DEG) is a tightly confined sheet of free electrons formed at the interface of semiconductor hetero-junctions in transistor-like structures. By virtue of the high electron concentration and unusually high mobility, the 2DEG exhibits extraordinary electromagnetic properties and physical phenomena \cite{Andress_2012,Tsui_1982,Reyren_2007}.
+
+In high electron mobility transistors (HEMTs), the 2DEG acts as the principle device channel and it has been shown that a voltage bias across the 2DEG generates plasma waves under certain boundary conditions \cite{Dyakonov_1993}. When the channel length is short enough such that the electron transit time $\tau_{tr}$ is shorter than the momentum relaxation time $\tau_{p}$ of the 2DEG, the channel response to a perturbation in the form of a voltage bias is  oscillatory. Considering a Gallium Arsenide / Indium Gallium Arsenide (GaAs/InGaAs) heterostructure as an example, a surface electron density ($N_s$) of $10^{11} cm^{-2}$ in the 2DEG results in $\tau{p} \approx 10^{-10} s$ at $4 K$, while at $300 K$ it is $\sim 10^{-10} s$. Assuming the 2DEG channel length of $1 \u m$ and electron drift velocity ($v_d \sim 10^5 m/s$) due to voltage bias across the channel, at $4 K$ we get $\tau_{tr} \approx 10^{-11} s$, which is shorter than the relaxation time. Under asymmetric boundary conditions across the channel such that the voltage at the source end is constant and the current at the drain end is constant, the channel forms a cavity where the reflected plasma waves are amplified constituting a growing standing wave pattern along the channel. The steady state response of the system is unstable that leads to radiation of plasma waves that lies in the terahertz frequency range. The wavelength of the plasma waves is much shorter compared to the free-space wavelength of light.
+
+\section{Dispersion relation}
+
+In a semiconductor heterostructure, the 2DEG can be modeled as infinitesimally thin sheet of charge described by a Drude-type surface conductivity $\sigma_s$:
+%
+\begin{equation}
+  \sigma_s(\O) = \frac{N_s e^2 \tau_{p}}{m^{\ast}}\frac{1}{1 + j \O \tau_{p}}
+  \label{eq:conductivity}
+\end{equation}
+%
+where $e$ is electron charge, $m^{\ast}$ is effective electron mass, $N_s$ is surface charge density and $\tau_p$ is the momentum relaxation time of the 2DEG. At low temperatures, the real part of the conductivity is three orders in magnitude smaller than the imaginary part, therefore, can be neglected.
+%
+\begin{figure}
+  \hspace*{-1cm}
+  % \vspace*{-2cm}
+  \def\svgwidth{1.2\linewidth}
+  \input{figures/2deg_tl.pdf_tex}
+  \caption{Transmission line equivalent for the heterostructure}
+\end{figure}
+%
+The dispersion relation solving for the propagation constant of the plasma wave is found by analyzing an equivalent transmission line (TL) analogue \cite{Michalski_2005} of the heterostructure shown in Fig. \ref{}. When there is a TM polarized wave incident on the structure, the dispersion relation is expressed in terms of the equivalent material admittances and solving for the transverse resonance (TR) condition \cite{G_mez_D_az_2012}:
+%
+\begin{equation}
+  Y_1 + Y_2 + Y_{2DEG} = 0
+\end{equation}
+%
+where $Y_i = k_{zi}/{\O \E_i}$ with $i = 1,2$
+
+is the TM wave admittance in the $i^{th}$ layer and $Y_{2DEG} = \sigma_s$ given by \ref{eq:conductivity}, and the transverse propagation constant $k_{zi}$ is expressed as $k_{zi} = \pm \sqrt{k_i^2 -  k_x^2}$. In order to find proper solutions of the dispersion relation, correct sign of the square-root function needs to be selected. When the

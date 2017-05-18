@@ -1,0 +1,60 @@
+Structured Illumination Microscopy is a technique in which high frequency content is can be extracted using Moiré images. After post-processing of the image , a high resolution image can be obtained using this technique.
+
+
+Plasma wave sin the 2EG
+ In a semiconductor heterostructure present in the most field effect transistors, the mismatch of the materials creates a highly charged concentrated layers of electrons at the interface in which the electrons are tightly confined in the one directions and free to move in the other directions. Upon applying an external electric field, current flow channel can be obtained in the region.
+
+ When an appropriate voltage bias is applied across the channel, electrons start to oscillate showing a plasma like behavior. since the boundary conditions to this channel are due the metal source and drain terminal assumed perfectly conducting, the channel forms a resonant cavity in which a standing wave pattern is created. The interesting feature of this standing wave pattern is that due to the interesting properties of the 2deg resulting in negative dielectric constant, the wavelength is much smaller than the corresponding free-space wavelength. This can be attributed to the plasmonic behavior of such waves. As a result of this method can be used to create super resolution imaging techniques,
+
+
+
+ Working of the @DEG and the standing wave pattern generation
+
+
+ In order to characterize he extreme wavelength properties of the 2DEG system, we first look at the dispersion relation in which the 2deG is characterized by a thin sheet of charge sandwiched between the two slightly dissimilar polar semiconductor materials. As an example, we look at the Gallium Nitride / Aluminum Gallium Nitride heterostructure that has been generating interest due to its advantages over devices made of Arsenide. For the system under test, the length of the device is assumed 1 \mu m, the thickness of each layer as 1 \mu m for the substrate layer and the 30 nm for the spacer layer. The 2DEG region is modeled as a thin sheet of thickness of 5 nm. We assume that the 2deg region formed has a free charge concentration of 7.5e 12 cm^-2 which is typically of GaN/AlGaN structures. The complex surface conductivity of the region is given by:
+
+ \begin{equation}
+ \sigma_s(\omega) = \frac{e^2 N_s \tau}{m^{\ast}(1 - j \omega \tau)}
+ \end{equation}
+
+ Here e is the free electron charge, \tau is the mean scattering time which determines how mobile the electrons are in the region, \omega is the angular frequency and m* is the effective electron mass which is .2 times the electron mass.
+
+ We observe a scenario in which a TM polarized is incident on the system from the top which will induce a surface current in the 2deg given by:
+
+ \begin{equation}
+ j_s = \sigma_s(\omega) E_x
+ \end{equation}
+
+ Expressing the fields and applying the boundary conditions (cite Nakayama's paper), :
+
+ \begin{equation}
+ E_x1 = E_x2
+ H_z1 - H_z2 = J_s
+ \end{equation}
+
+ Solving for the three layers, the dispersion relation is given by:
+
+ $$$$$ paste from somewhere that I have already written
+
+The dispersion relation of the 2deg region can be used to illustrate the subwavelength properties of the system. As shown in the figure, for a particular frequency the wavenumber in the 2DEG is much larger than the free-space wavenumber (light line). This can be reciprocated to an extremely small wavelength in the 2deg region. According to the figure,  the wavelength can be reduced by a factor as high as 250 without any appreciable loss in the system.
+
+ The permittivity of the 2deg region can be approximated by:
+
+ \begin{equation}
+ \E \approx \E_0 \E_r + j \frac{\sigms_s}{\omega \delta}
+ \end{equation}
+
+ where \E_r is the permittivity of the substrate layer and \delta is the thickness of the 2deg layer.
+
+
+ Standing wave patter generation
+
+
+ According to the Dyakanov-Shur theory (cite DS instability papers, gated and ungated), when the channel is biased with a dc voltage, the electrons in the channel start to oscillate (make this strong, it does not make sense). The source and drain terminals present conducting boundary conditions which result in the reflection of these waves. When the length of the channel is such that it corresponds to the eigenfrequency of the system, a standing waves pattern is obtained due to collective oscillations of the incident and reflected waves in the channel. If the voltage bias is further increased, the electrons are accelerated further resulting in a stronger oscillation. Ultimately, the waves get unstable due to the under-damping occurring in the channel. This instability results in radiation of waves whose frequency lies in the terahertz frequency range. This phenomenon was originally observed in traditional FET structures with a gate covering the 2deg layer. The presence of a metal gate is undesirable as it prevents the radiation from leaving the system. A similar phenomenon has also been observed in ungated regions of the transistor. The purpose of the gate terminal is to tune the electron concentration in the 2deg layer by varying the voltage bias. However, the electron concentration is found even without the presence of the gate terminal because of the formation of the 2DEG.
+<<<<<<< HEAD:Microscopy/sketch
+
+ What I realized yesterday was that the 2DEG can be modeled by approximating the conductivity of the layer by a 
+
+ \end{document}
+=======
+>>>>>>> ca172a395781f4f4e5e4150f82b822fea27f7ff8:Microscopy/dr.text

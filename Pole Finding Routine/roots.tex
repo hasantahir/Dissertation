@@ -97,7 +97,11 @@ urlcolor={blue!80!black}
 %
 %
 %
-We seek to solve \eqref{eq:def} in the complex plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For the multilayer problem, $f$ represents the dispersion relation which is the characteristic equation of the Transmission Line Green's Functions (TLGF). Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$ correspond to the surface wave poles of the TLGF.
+\section{Introduction}
+%
+In order to obtain accurate closed-form representations of the microstrip Green’s functions, it is often necessary to find the locations of the proper and improper surface-wave poles. In this paper, we present an efficient and robust iterative algorithm based on contraction mapping, which can locate all the proper and improper solutions of the characteristics equations of the grounded dielectric slab. The dielectric may also be lossy.
+
+We seek to solve \eqref{eq:def} in the complex plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem, $f$ represents the dispersion relation which is the characteristic equation of the Transmission Line Green's Functions (TLGF). Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$ correspond to the surface wave poles of the TLGF.
 \begin{equation}
   f(z_k) = 0
   \label{eq:def}

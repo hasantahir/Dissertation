@@ -1,0 +1,40 @@
+  \begin{tikzpicture}
+    % origin point
+    \draw [color=black, fill=black] (0, 0) circle (0.1);
+    \draw [color=black, fill=none] (0, 0) circle (0.2);
+    % x-axis
+    \draw [line width=0.25mm] (0, 0) -- (5, 0);
+    % y-axis
+    % x-axis label
+    \node at (4.5, 0.5) {$k_x$};
+    % y-axis label
+    \node at (0.5, 4.5) {$k_y$};
+    \draw [line width=0.25mm] (0, 0) -- (0, 5);
+    % unit x-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (2, 0);
+    % unit y-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (0, 2);
+    % origin label
+    \node at (-0.5, -0.5) {$\v{\^z}$};
+    % Unit x-axis label
+    \node at (1.5, -0.5) {$\v{\^x}$};
+    % Unit y-axis label
+    \node at (-0.5, 1.5) {$\v{\^y}$};
+
+    % Draw coordinate system
+    % Source and label (use arrows command to insert arrow of choice)
+    \draw [color=black, fill=black] (2, 2) circle (0.1);
+    \draw [color=black, fill=none] (2, 2) circle (0.2);
+    \node at (2.5, 2.5) {${\ti{J}_z}$};
+    % Draw the equivalent TL
+    % Insert Source
+    % \draw[line width=0.25mm] (7,0) -- (7,5);
+    \draw[line width=0.25mm] (12,0) -- (12,5);
+    \draw[line width=0.25mm]
+    (7,0) to[american voltage source, l_=$v^{TM}{=}\frac{k_{\p}}{\O \E}\ti{J}_z$] (7,5);
+    % Add nodes to represent TL section
+    \draw [color=black, fill=white,line width=0.25mm] (7, 5) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (7, 0) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (12, 5) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (12, 0) circle (0.1);
+  \end{tikzpicture}

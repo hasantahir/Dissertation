@@ -20,7 +20,7 @@
 %%   \import{<path to file>}{<filename>.pdf_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
-%% 
+%%
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
@@ -54,7 +54,7 @@
     \put(0.36288149,0.34530737){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|e\right\rangle$}}}}%
     \put(0.59189847,0.06789913){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|c\right\rangle$}}}}%
     \put(0.72779612,0.00720972){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|g\right\rangle$}}}}%
-    \put(0.50372363,0.26058414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{ac}$}}}}%
+    \put(0.50372363,0.26058414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{ac} = \Omega_{\kappa}$}}}}%
     \put(0.11237247,0.2206586){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{\upsilon}$}}}}%
     \put(0.14404108,0.43416629){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{\nu}$}}}}%
   \end{picture}%

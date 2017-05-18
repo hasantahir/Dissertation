@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+  \begin{axis} [
+    set layers=standard,
+    enlargelimits=false,
+    xlabel=Length ($\si{\nano \metre}$),
+    ylabel=Enhancement $|E_{max}/E_0|^2$,
+    ]
+    \addplot graphics [
+    xmin=0,
+    xmax=200,
+    ymin=-20,
+    ymax=140,
+    ] {fig8_c};
+  \end{axis}
+\end{tikzpicture}

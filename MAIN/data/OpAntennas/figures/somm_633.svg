@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="175.7789pt"
+   height="188.21365pt"
+   viewBox="0 0 219.72363 235.26707"
+   id="svg7601"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="somm_633.svg">
+  <defs
+     id="defs7603" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="375"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="-0.8"
+     fit-margin-left="-0.8"
+     fit-margin-right="-1.4"
+     fit-margin-bottom="-1.4"
+     units="pt" />
+  <metadata
+     id="metadata7606">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-403.54075,-373.53156)">
+    <g
+       transform="matrix(1.25,0,0,-1.25,624.565,609.95218)"
+       id="g4903"
+       style="stroke:#e41a1c;stroke-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4905"
+         style="fill:none;stroke:#e41a1c;stroke-width:0.71899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 0,0 -177.233,0 0,189.577 L 0,189.577 0,0 Z" />
+      <g
+         transform="translate(-177.528,182.817)"
+         id="g4907"
+         style="stroke:#e41a1c;stroke-opacity:1">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4909"
+           style="fill:none;stroke:#e41a1c;stroke-width:0.71899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 0,0 c 0,0 57.02,-14.99 96.993,-76.713 39.973,-61.723 66.425,-106.398 66.425,-106.398" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4911"
+       style="fill:none;stroke:#377eb8;stroke-width:1.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.75, 1.75;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 402.655,403.47593 c 0,0 108.015,-2.5725 124.5475,8.45 16.5325,11.02125 36.54625,30.9975 45.74,142.1125 1.99625,17.18625 5.59375,55.9575 5.59375,55.9575" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:22.5px;line-height:105.99999428%;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="413.78452"
+       y="593.36115"
+       id="text8436"
+       sodipodi:linespacing="105.99999%"><tspan
+         sodipodi:role="line"
+         id="tspan8438"
+         x="413.78452"
+         y="593.36115"
+         style="font-size:13.75px">$\lambda_0 = 633 \text{nm}$</tspan></text>
+  </g>
+</svg>

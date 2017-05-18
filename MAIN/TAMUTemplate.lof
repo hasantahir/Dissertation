@@ -1,0 +1,44 @@
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the imaging scheme where sample is excited by plasma wave pattern generated underneath by a current-driven instability\relax }}{4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces (a) Plasma wave Dispersion diagram for the transistor structure supporting a 2DEG channel. (b) Effect of gate voltage on resonant frequency\relax }}{7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain. Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. Sample illuminated at different plasma frequencies: (b)-(d). (e) Effective resolution enhancement of $k_{\rho 1} + \upsilon $ in two dimensions can be obtained after rotating the sample with respect to the optical axis\relax }}{10}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Full-wave simulation results: (a) Phase shift achieved by exciting the structure with an external plane wave at an angle. (b) Tuning of the standing wave structure by applying gate bias\relax }}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces (a) Sample distribution. Simulation of the reconstructed sample image at: (b) $\Re k_{\rho } = 39.5$ (c) $\Re k_{\rho } = 80$\relax }}{12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{12}
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Common nanoantenna elements (a) dipole (b) bowtie and (c) aperture. The dipole, bowtie, and aperture antennas are typically etched on a low-loss substrate such as silicon dioxide.\relax }}{15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Dielectric and metal half-spaces with a planar boundary.\relax }}{18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.\relax }}{20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Propagation length of a surface plasmon propagating along the interface between a dielectric (refractive index 1.32) and a metal as a function of wavelength calculated for gold (Au), silver (Ag), and aluminum (Al).\relax }}{23}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dielectric function for (a) Gold and (b) Silver as a function of photon energy $E = hf$ where $f$ is frequency and $h = \SI {6.626e34} {kg.m^{2}/s}$ is Planck's constant. The solid lines are the partial fraction fit for $\varepsilon '$ and the dashed line is for $\varepsilon ''$. The circles and squares are from measured data originally listed in \cite {Johnson1972}\relax }}{26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces SPP dispersion curve for $\omega $ versus $\Re (k_x)$ and $\Im (k_x)$ for an glass-silver interface. The lower part of the curve is the non-radiative surface plasmon region which is capped by a high-loss backbending region, and a Brewster mode radiative region above\relax }}{27}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Thin metallic film between two dielectric regions with different permittivities.\relax }}{29}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces A gold dipole residing over a glass substrate.\relax }}{36}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces (a) Maximum enhancement of a gold nanodipole excited at \SI {550}{\nm } (b) narrow and (c) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.\relax }}{37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{37}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Optical antenna with equivalent circuit model. The driving voltage could be an incident electromagnetic field, a transmission line connected to the antenna, or a quantum emitter.\relax }}{41}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Bowtie antenna with (a) highest field intensity shown in red around the edges and corners of the triangular arms and (b) electric field vectors where the largest amplitude field is displayed in red occurs in the gap between the two arms.\relax }}{44}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Yagi-Uda optical antenna constructed with nanorods.\relax }}{46}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Simulation showing a surface plasmon standing wave intensity ($|E|^2$) pattern on a thin silver plate with dielectric constant $\varepsilon = -18.242 + j\mkern 1mu1.195$ between two slots illuminated by a \SI {660}{\nm } plane wave from below. The center plate has a length $5/2 \lambda _{spp}$ (\SI {1650}{\nm }) and each aperture has a width and thickness of \SI {200}{\nm }.\relax }}{52}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Complex plane integration path around branch cuts connecting the branch points $k_1$ and $k_2$, the wavenumbers for air and metal respectively, and the SPP pole $k_{xp}$.\relax }}{54}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Logarithmic scale comparison of composite wave and surface plasmon polariton wave normalized amplitude for an air-silver interface as a function of distance from the source at (a) \SI {633}{\nm } (b) \SI {2500}{\nm }\relax }}{57}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}

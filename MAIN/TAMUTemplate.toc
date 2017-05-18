@@ -1,0 +1,45 @@
+
+\renewcommand {\cftchapleader } {\cftdotfill {4.5}}
+\contentsline {chapter}{ABSTRACT}{ii}
+\contentsline {chapter}{DEDICATION}{iii}
+\contentsline {chapter}{ACKNOWLEDGMENTS}{iv}
+\contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{v}
+\contentsline {chapter}{NOMENCLATURE}{vi}
+\contentsline {chapter}{TABLE OF CONTENTS}{viii}
+\contentsline {chapter}{LIST OF FIGURES}{x}
+\contentsline {chapter}{LIST OF TABLES}{xii}
+\contentsline {chapter}{\numberline {1}\uppercase {Nanoscopy using a semiconductor heterostructure as the sample stage}}{1}
+\vskip +10pt
+\contentsline {section}{\numberline {1.1}Abstract}{1}
+\contentsline {section}{\numberline {1.2}Introduction}{1}
+\contentsline {section}{\numberline {1.3}Theory}{3}
+\contentsline {subsection}{\numberline {1.3.1}Dispersion relation}{3}
+\contentsline {subsection}{\numberline {1.3.2}Image Reconstruction}{8}
+\contentsline {section}{\numberline {1.4}Simulated Results}{11}
+\contentsline {section}{\numberline {1.5}Conclusion}{12}
+\contentsline {chapter}{\numberline {2}\uppercase {Optical nanoantennas*}}{13}
+\vskip +10pt
+\contentsline {section}{\numberline {2.1}Abstract}{13}
+\contentsline {section}{\numberline {2.2}Introduction}{13}
+\contentsline {section}{\numberline {2.3}Electromagnetic Theory of Surface Plasmon Polaritons}{16}
+\contentsline {subsection}{\numberline {2.3.1}Single Boundary Structure}{17}
+\contentsline {section}{\numberline {2.4}Quantum effects}{23}
+\contentsline {section}{\numberline {2.5}Two Boundary Structures}{29}
+\contentsline {section}{\numberline {2.6}Design of Optical Antennas}{34}
+\contentsline {subsection}{\numberline {2.6.1}Dipole and Patch Antennas}{35}
+\contentsline {subsection}{\numberline {2.6.2}Bowtie Antenna}{43}
+\contentsline {subsection}{\numberline {2.6.3}Yagi-Uda Antenna}{45}
+\contentsline {subsection}{\numberline {2.6.4}Log-Periodic Antenna}{47}
+\contentsline {subsection}{\numberline {2.6.5}Purcell factor}{49}
+\contentsline {subsection}{\numberline {2.6.6}Aperture Antennas}{50}
+\contentsline {subsection}{\numberline {2.6.7}Optical aperture antenna theory}{51}
+\contentsline {subsection}{\numberline {2.6.8}Bowtie aperture antenna}{56}
+\contentsline {subsection}{\numberline {2.6.9}Concentric Rings}{59}
+\contentsline {subsection}{\numberline {2.6.10}Arrays}{60}
+\contentsline {section}{\numberline {2.7}Applications of Optical Antenna}{61}
+\contentsline {subsection}{\numberline {2.7.1}SNOM}{61}
+\contentsline {subsection}{\numberline {2.7.2}Photon emitters and optical fluorescence}{61}
+\contentsline {subsection}{\numberline {2.7.3}Raman Spectroscopy}{62}
+\contentsline {subsection}{\numberline {2.7.4}Communication with nanocircuitry}{62}
+\contentsline {section}{\numberline {2.8}Conclusion}{63}
+\contentsline {chapter}{REFERENCES}{64}
