@@ -6,7 +6,8 @@
 % Specifiy the location of images to be used
 \graphicspath{{figures/}}
 
-%
+
+
 \begin{document}
 \title{\textsc{Nanoscopy using a semiconductor heterostructure as the sample stage}}
 % \date{\footnote{Last Modified: \currenttime, \today.}}
@@ -137,7 +138,7 @@ where $\E$ is the average permittivity of the surrounding media. Using \eqref{eq
 %
 \subsection{Image Reconstruction}
 %
-As seen in Fig. 3, the plasma wave illumination pattern $I(\v r)$ can be assumed sinusoidal and expressed as:
+As seen in Fig. \ref{fig:shift}, the plasma wave illumination pattern $I(\v r)$ can be assumed sinusoidal and expressed as:
 %
 \begin{equation}
   I(\v r) = 1 + \cos(\v k_{\p} \cdot \v r + \phi)
@@ -160,9 +161,9 @@ where $H(\v r)$ is the point spread function (PSF) of the microscope, and $\cdot
   \label{eq:m_ft}
 \end{equation}
 %
-where $\sim$ over the letters indicates a frequency domain term and $\ti H(k)$ is the optical transfer function (OTF) of the microscope. A spatial frequency representation of the scheme is illustrated in Fig. \ref{fig:sim}. Assuming a numerical aperture of (NA) of unity, the OTF can be described by a circular disc as shown in Fig. \ref{fig:sim}(a) where the passband is bounded by $\sqrt{k_x^2 + k_y^2} = 2k_{0}=\nu$. Since the plasmon frequency falls in the mid-infrared region, a relatively small $k_0$ implies that we need to image the sample a large number of times, which results in a slow imaging process. The process can be expedited by using an additional illumination such as a laser with frequency $\O_{\upsilon}$ in the visible region. As shown in Fig. 1(b), the molecules in the sample are first excited from the ground state, $|g\rangle$ to the energy level $|e\rangle$ by using a laser of frequency $\O_{\upsilon}$. A plasmonic pattern then excites the molecules to an
-additional level, $|a\rangle$. Utilizing the spontaneous decay of the molecules from $|a\rangle$, we image the sample with photons of frequency $\O_{ac} = \O_{a}-\O_{c}$. Here, $\O_{a}$ and $\O_{c}$ are the respective frequencies of energy levels $|a\rangle$ and $|c\rangle$. A frequency-selective photonic crystal is placed behind the objective lens to filter the photons of different frequencies. As a consequence of the preceding discussion, the resulting passband in the spatial frequency is now bounded by $\sqrt{k_x^2 + k_y^2} = 2k_{ac} = 2\O_{ac}/c = \upsilon$, which is the larger circle illustrated in Fig. \ref{fig:sim}. Since the frequency $\O_{ac}$ is much larger than $\O_p$, high resolution can be realized by imaging the sample a few times.
-
+where $\sim$ over the letters indicates a frequency domain term and $\ti H(k)$ is the optical transfer function (OTF) of the microscope. A spatial frequency representation of the scheme is illustrated in Fig. \ref{fig:sim}. Assuming a numerical aperture of (NA) of unity, the OTF can be described by a circular disc as shown in Fig. \ref{fig:sim}(a) where the passband is bounded by $\sqrt{k_x^2 + k_y^2} = 2 k_{0} = \nu$. Since the plasmon frequency falls in the mid-infrared region, a relatively small $k_0$ implies that we need to image the sample a large number of times, which results in a slow imaging process. The process can be expedited by using an additional illumination such as a laser with frequency $\Omega_{\upsilon}$ in the visible region. As shown in Fig. \ref{fig:e_diag}, the molecules in the sample are first excited from the ground state, $|g\rangle$ to the energy level $|e\rangle$ by using a laser of frequency $\Omega_{\upsilon}$. The plasmonic pattern then excites the molecules to an
+additional level, $|a\rangle$. Utilizing the spontaneous decay of the molecules from $|a\rangle$, we image the sample with photons of frequency $\Omega_{ac} = \Omega_{a}-\Omega_{c}$. Here, $\Omega_{a}$ and $\Omega_{c}$ are the respective frequencies of energy levels $|a\rangle$ and $|c\rangle$. A frequency-selective photonic crystal is placed behind the objective lens to filter the photons of different frequencies. As a consequence of the preceding discussion, the resulting passband in the spatial frequency is now bounded by $\sqrt{k_x^2 + k_y^2} = 2k_{ac} = 2 \Omega_{ac}/c = \upsilon$, which is the larger circle illustrated in Fig. \ref{fig:sim}. Since the frequency $\Omega_{ac}$ is much larger than $\O_{\nu}$, high resolution can be realized by imaging the sample a few times.
+%
 As evident in \eqref{eq:m_ft}, a sinusoidal illumination pattern has three frequency components which generates an image that is a linear combination of the sample along with two shifted versions as shown in Fig. \ref{fig:sim}(b). To reconstruct the sample, three different images need to be captured with each possessing a different phase term $\phi$. The process can be expressed as a system of linear equations,
 %
 \begin{equation}
@@ -196,7 +197,16 @@ As evident in \eqref{eq:m_ft}, a sinusoidal illumination pattern has three frequ
 %
 The phase shifts in \eqref{eq:reconstruction_algo} are known beforehand. Frequency content of the sample up to $k_{\p}$ can, therefore be observed due the Moiré effect which transports the high frequency information in to the observation region. To achieve two-dimensional enhancement in resolution, either the sample must be rotated about the optical axis of the microscope or the angular distribution of the illumination needs to be varied.
 %
-In order to solve the three components of the spatial frequency as shown in above equation, we need to shift the plasmonic patterns. Our simulation results show that an additional incident plane wave can shift the pattern efficiently and the amount of shift is controlled by varying the angle of incidence with respect to the optical axis. Figure \ref{fig:shift} shows the lateral shift of the normalized plasma wave intensity at $z = h$ by changing the incident angle between \SI{-45}{\degree} and \SI{45}{\degree}. Because the plasmonic wavelength is much smaller than the channel length $L$, only a small portion of the channel is shown to illustrate the effect simulated using a full-wave commercial electromagnetic software \cite{comsol}.
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{.5\linewidth}
+  \input{figures/e_diag.pdf_tex}
+  \caption{Sample excited to additional energy levels to enhance the spontaneous decay, $\Omega_{ac}$.}
+  \label{fig:e_diag}
+\end{figure}
+%
+In order to solve the three components of the spatial frequency as shown in above equation, we need to shift the plasmonic patterns. Our simulation results show that an additional incident plane wave can shift the pattern efficiently and the amount of shift is controlled by varying the angle of incidence with respect to the optical axis. Figure \ref{fig:shift} shows a plot of normalized intensities. The first curve is the standing wave pattern obtained at the top surface which is only due to the surface current in the channel below. The remaining curves show the shifting of the standing wave, achieved by an additional plane wave incident from the top of the structure, whose intensity is greater than that of the plasma wave in the channel. By changing the angle of incidence slightly, different phase variations are acquired that are needed to solve the spatial frequency in \eqref{eq:reconstruction_algo}. In Figs. \ref{fig:shift} and \ref{fig:tuning}, only a small portion of the channel is
+shown to illustrate the effect using a full-wave simulator (COMSOL), because the plasmonic wavelength is much smaller than the channel length $L$, .
 
 %
 % In this scheme, an external plane wave is used to shift the plasma wave pattern laterally in the sample stage. The electric field of a TM polarized plane wave is expressed as, $\v E_{ext} = \v{\^x} \, a  +  \v{\^z} \, b $. The total field at the surface is the sum of the plasmonic field and external plane wave. The total intensity is then expressed as:
@@ -209,9 +219,18 @@ In order to solve the three components of the spatial frequency as shown in abov
 % %   \label{eq:shift}
 % % \end{equation}
 %
-% where $k_{\p}$ is the spatial frequency of plasma wave, $\chi = \sqrt{a^2 + b^2}$ and $\psi = \atan (b/a)$. The field components $a$ and $b$ are controlled by changing the incident angle of the plane wave. Using a commercial full-wave electromagnetic simulation tool \cite{comsol}, lateral shifting of the pattern is shown in Fig. \ref{fig:shift}. Since the wavelength is much smaller than the channel length, only a small portion is shown.  is As discussed earlier, the standing wave pattern can be tuned to different frequencies through gate voltage control.
-Simulated standing wave patterns tuned to different frequencies by varying the gate voltage are shown in Fig. \ref{fig:s_waves}. The resulting change in electron density modifies the surface conductivity \eqref{eq:Y2deg} of the 2DEG and the dielectric function $\E(\O) = 1 - \j \sigma_s /(\O \Delta \E_r)$ where $\Delta$ is the 2DEG thickness and $\E_r$ is the permittivity of the surrounding media. Due to the resonance effects of the two boundaries, i.e., drain and source terminals, $k_{p}$ can not be varied in a continuous fashion to cover all spatial frequencies. However, due to the circle of larger radius which was discussed earlier, all the spatial frequencies up to the  plasmon wavenumber can be recovered. As an example, we set the length of the heterostructure and the resulting 2DEG channel to \SI{2}{\micm} in our simulation, which means that the separation between two resonance plasmonic wave number is approximated $d_{f}=2\pi/2*10^{-6}$. The previous discussion
-shows that the radius of the circle is about $\nu=4*pi/6*10^{-7}$ if we set the visible laser wavelength to be $600nm$. We can see $d_{f}\ll \nu$. This means all the spatial frequency can be obtained by tuning the gate voltage several times.
+% where $k_{\p}$ is the spatial frequency of plasma wave, $\chi = \sqrt{a^2 + b^2}$ and $\psi = \atan (b/a)$. The field components $a$ and $b$ are controlled by changing the incident angle of the plane wave. Using a commercial full-wave electromagnetic simulation tool \cite{}, lateral shifting of the pattern is shown in Fig. \ref{fig:shift}. Since the wavelength is much smaller than the channel length, only a small portion is shown.  is As discussed earlier, the standing wave pattern can be tuned to different frequencies through gate voltage control.
+Simulated standing wave patterns tuned to different frequencies by varying the gate voltage are shown in Fig. \ref{fig:s_waves}. The resulting change in electron density modifies the surface conductivity \eqref{eq:Y2deg} of the 2DEG and the dielectric function $\E(\O) = 1 - \j \sigma_s /(\O \Delta \E_r)$ \cite{Ando1982} where $\Delta$ is the 2DEG thickness and $\E_r$ is the permittivity of the surrounding media.
+
+The 2DEG channel essentially behaves as a cavity due to the resonance effects introduced by the two conducting boundaries, i.e., drain and source terminals. Therefore, the plasmon wavenumber, $k_{\p}$ can not be varied in a continuous fashion to cover all spatial frequencies. As an example, we set the length of the heterostructure and the resulting 2DEG channel to \SI{2}{\micm} in the simulation. Like any resonating structure, the plasmonic modes of the 2DEG channel are well-defined \cite{POPOV2007,Popov2008,Muravjov2010}. In terms of the wavenumber, the mode separation is approximately, $\Delta_k = \SI{2 \pi/2 e-6}{\rad \per \m}$. Thus, full coverage of all the spatial frequencies, just by tuning the plasma wave, cannot be accomplished. However, as discussed earlier, through the larger circle shown in Fig. \ref{fig:sim}, all the spatial frequencies up to the plasmon wavenumber can be recovered. For a laser having a wavelength of \SI{600}{\nm}, the circle radius is
+$\upsilon = \SI{4\pi/6e-7}{\rad \per \m}$. We note that $\Delta_k \ll \upsilon$, meaning that fewer images of the sample are required to realize super-resolution.
+%%%%%%%%%%%%%%%%%%%%%%%%%
+        %  ^
+        %  |
+        %  |
+        %  |
+        %  ^
+        %  ^
 %
 \begin{figure}[t!]
   \subfloat[]{\includegraphics[height=2.8in]{figures/shifted1.tikz}
@@ -259,12 +278,12 @@ Such as in Fig. 5c, the total image we need is about 20, which will very fast an
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
-In the previous simulations, we didn't consider the loss of the 2DEG, which can introduce irregularities in the field pattern and subsequently induce imaging distortion, due to erroneous solution of the three frequency components in \eqref{eq:reconstruction_algo} which correspond to the circular regions shown in Fig. \ref{fig:sim}b. However, with ever improving nanofabrication processing techniques, the loss along the 2DEG channel can be very small especially at low temperature, which subsequently means a large $\Re(k_{\p})/\Im(k_{\p})$ ratio. If the sample size is much smaller than the plasma wave propagation length, $1/Im(k_{p})$, the irregularities resulting from the loss can be neglected.
+In the previous simulations, we didn't consider the loss of the 2DEG, which can introduce irregularities in the field pattern and subsequently induce imaging distortion, due to erroneous solution of the three frequency components in \eqref{eq:reconstruction_algo} which correspond to the circular regions shown in Fig. \ref{fig:sim}b. However, with ever improving nanofabrication processing techniques, the loss along the 2DEG channel can be very small especially at low temperature, which subsequently means a large $\Re(k_{\p})/\Im(k_{\p})$ ratio. If the sample size is much smaller than the plasma wave propagation length, $1/\Im(k_{\p})$, the irregularities resulting from the loss can be neglected.
 
 %%%%%%%%%%%%%%%
 \section{Conclusion}
 %
-We propose a super-resolution nanoscopy scheme based on the subwavelength surface electromagnetic fields found in a semiconductor heterostructure. This method is useful in particular for light-sensitive samples as it requires a weak field intensity for illumination. In comparison with the metal based SIM where the plasmonic pattern is fixed by a determined structure, we can control the period of the plasmonic pattern by varying the gate voltage. Moreover, in contrast to graphene based SIM, our scheme uses surface current to excite the plasmons, which does not require any wavevector matching mechanism like gratings. The image reconstruction algorithm is as efficient as in conventional linear SIM, yet the high wavenumber along with the tunability of the plasma waves allows it to achieve subdiffraction resolution of up to 80 times in the mid-infrared range.
+We propose a super-resolution nanoscopy scheme based on the subwavelength surface electromagnetic fields found in a semiconductor heterostructure. This method is useful in particular for light-sensitive samples as it requires a weak field intensity for illumination. In comparison with the metal based SIM where the plasmonic pattern is fixed by a determined structure, we can control the period of the plasmonic pattern by varying the gate voltage. Moreover, in contrast to graphene based SIM, our scheme uses surface current to excite the plasmons, which does not require any wavenumber matching mechanism like gratings. The image reconstruction algorithm is as efficient as in conventional linear SIM, yet the high wavenumber along with the tunability of the plasma waves allows it to achieve subdiffraction resolution of up to 80 times in the mid-infrared range.
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%

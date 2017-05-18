@@ -91,7 +91,6 @@
   journaltitle = {{IEEE} Journal of Selected Topics in Quantum Electronics},
   keywords     = {Image reconstruction,Lighting,Microscopy,Optical imaging,Optical microscopy,SIM,Spatial resolution,Structured illumination,optical transfer function,super-resolution},
   publisher    = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  url          = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7400963},
 }
 
 @Article{Vedernikov2001,
@@ -235,7 +234,6 @@
   keywords     = {Autofluorescence,Interferometer,Microscopy,Retinal pigment epithelium,Structured illumination},
   pmid         = {20926302},
   publisher    = {Elsevier {BV}},
-  url          = {http://linkinghub.elsevier.com/retrieve/pii/S096843281000212X},
 }
 
 @Article{Calderon-Munoz2009,
@@ -267,7 +265,6 @@
   file         = {:D\:\\Users\\Mendeley Desktop\\Lucosz - Seminal Paper - josa-56-11-1463.pdf:pdf},
   journaltitle = {Journal of the Optical Society of America},
   publisher    = {The Optical Society},
-  url          = {https://www.osapublishing.org/abstract.cfm?URI=josa-56-11-1463},
 }
 
 @Article{Nakayama1974,
@@ -463,7 +460,6 @@
   keywords     = {Animals,Humans,Microscopy, Fluorescence,Microscopy, Fluorescence: methods,Sensitivity and Specificity},
   pmid         = {10840057},
   publisher    = {Proceedings of the National Academy of Sciences},
-  url          = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=16528&tool=pmcentrez&rendertype=abstract},
 }
 
 @Article{Krishnamurthi1996,
@@ -484,7 +480,6 @@
   isbn         = {0819420298},
   journaltitle = {SPIE 2655, Three-Dimensional Microscopy: Image Acquisition and Processing III},
   publisher    = {{SPIE}-Intl Soc Optical Eng},
-  url          = {https://www.amazon.com/Three-dimensional-microscopy-acquisition-SPIE-International/dp/0819420298?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0819420298},
 }
 
 @Article{Ma2013,
@@ -541,7 +536,6 @@
   journaltitle = {Optica},
   keywords     = {Fluorescence microscopy,Plasmonics,Superresolution,Three,dimensional image acquisition},
   publisher    = {The Optical Society},
-  url          = {https://www.osapublishing.org/abstract.cfm?URI=optica-3-6-667},
 }
 
 @Article{Wei2010,
@@ -582,7 +576,6 @@
   isbn         = {0030-3941},
   journaltitle = {Journal of the Optical Society of America},
   publisher    = {The Optical Society},
-  url          = {https://www.osapublishing.org/abstract.cfm?URI=josa-67-4-438},
 }
 
 @Article{Zeng2015,
@@ -624,7 +617,6 @@
   author    = {Max Born and Emil Wolf},
   isbn      = {0-521-63921-2},
   date      = {1997},
-  url       = {https://www.amazon.com/Principles-Optics-Electromagnetic-Propagation-Interference/dp/0521639212?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0521639212},
 }
 �
 �K��������A����� �endstreamendobj92 0 obj2863 endobj93 0 obj<< /Type /XObject /Subtype /Image /Name /im19 /Filter /CCITTFaxDecode /Width 2250 /Height 115 /BitsPerComponent 1 /Decode [ 1 0 ] /ColorSpace /DeviceGray /Length 92 0 R /DecodeParms << /K -1 /Columns 2250 >> >> stream
@@ -831,7 +823,6 @@
   author  = {{COMSOL} Multiphysics},
   title   = {{COMSOL} Multiphysics},
   date    = {2017-04-27},
-  url     = {https://www.comsol.com},
   version = {5.2},
 }
 
@@ -1004,7 +995,7 @@
   publisher = {{SPIE}},
   abstract  = {High spatial frequencies in the illuminating light of microscopes lead to a shift of the object spatial frequencies detectable through the objective lens. If a suitable procedure is found for evaluation of the measured data, a microscopic image with a higher resolution than under flat illumination can be obtained. A.  simple method for generation of a laterally modulated illumination pattern is discussed here. A.  specially constructed diffraction grating was inserted in the illumination beam path at the conjugate object plane (position of the adjustable aperture) and projected through the objective into the object. Microscopic beads were imaged with this method and evaluated with an algorithm based on the structure of the Fourier space. The results indicate an improvement of resolution.},
   doi       = {10.1117/12.336833},
-  journal   = {Proc. SPIE},
+  journal   = {Proc. Spie},
 }
 
 @Book{9781489947871,
@@ -1016,7 +1007,19 @@
   date      = {2013-12-17},
   ean       = {9781489947871},
   pagetotal = {336},
-  url       = {http://www.ebook.de/de/product/22372581/a_b_mikhailovskii_theory_of_plasma_instabilities.html},
+}
+
+@Article{Ando1982,
+  author    = {Tsuneya Ando and Alan B. Fowler and Frank Stern},
+  title     = {Electronic properties of two-dimensional systems},
+  journal   = {Reviews of Modern Physics},
+  year      = {1982},
+  volume    = {54},
+  number    = {2},
+  pages     = {437--672},
+  month     = apr,
+  doi       = {10.1103/revmodphys.54.437},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

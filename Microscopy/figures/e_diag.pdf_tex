@@ -20,7 +20,7 @@
 %%   \import{<path to file>}{<filename>.pdf_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
-%%
+%% 
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{363.99199873bp}%
+    \setlength{\unitlength}{379.90400637bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.49723882)%
+  \begin{picture}(1,0.47641233)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{e_diag.pdf}}%
-    \put(0.46496917,0.47457349){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|b\right\rangle$}}}}%
-    \put(0.33812148,0.19755244){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|a\right\rangle$}}}}%
-    \put(0.5740582,0.07086736){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|c\right\rangle$}}}}%
-    \put(0.71589666,0.00752489){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|g\right\rangle$}}}}%
-    \put(0.46496917,0.2911454){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Gamma_{0}$}}}}%
-    \put(0.34150408,0.33696442){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Gamma_{ba}$}}}}%
+    \put(0.48737856,0.45469632){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|a\right\rangle$}}}}%
+    \put(0.36288149,0.34530737){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|e\right\rangle$}}}}%
+    \put(0.59189847,0.06789913){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|c\right\rangle$}}}}%
+    \put(0.72779612,0.00720972){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|g\right\rangle$}}}}%
+    \put(0.50372363,0.26058414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{ac}$}}}}%
+    \put(0.11237247,0.2206586){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{\upsilon}$}}}}%
+    \put(0.14404108,0.43416629){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Omega_{\nu}$}}}}%
   \end{picture}%
 \endgroup%
