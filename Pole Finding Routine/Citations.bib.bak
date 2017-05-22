@@ -1,59 +1,43 @@
 % Encoding: UTF-8
 
 % Nevels - Michalski Paper
-@article{nevels2014behavior,
-title={On the behavior of surface plasmons at a metallo-dielectric interface},
-author={Nevels, Robert D and Michalski, Krzysztof A},
-journal={Journal of Lightwave Technology},
-volume={32},
-number={19},
-pages={3299--3305},
-year={2014},
-publisher={IEEE}
+
+@Article{nevels2014behavior,
+  author    = {Robert D. Nevels and Krzysztof A. Michalski},
+  title     = {On the Behavior of Surface Plasmons at a Metallo-dielectric Interface},
+  journal   = {Journal of Lightwave Technology},
+  year      = {2014},
+  volume    = {32},
+  number    = {19},
+  pages     = {3299--3305},
+  month     = {oct},
+  doi       = {10.1109/JLT.2014.2343018},
+  publisher = {IEEE},
 }
 
 % Sommerfeld 1909 paper
 @article {Sommerfeld,
 author = {Sommerfeld, A.},
-title = {\{"U}ber die Ausbreitung der Wellen in der drahtlosen Telegraphie},
-journal = {Annalen der Physik},
-volume = {333},
-number = {4},
-publisher = {WILEY-VCH Verlag},
-issn = {1521-3889},
-url = {http://dx.doi.org/10.1002/andp.19093330402},
-doi = {10.1002/andp.19093330402},
-pages = {665--736},
-year = {1909},
-}
-
-% Article With Terahertz absorption by the atmosphere
-@article{danylov2006thz,
-title={{T}{H}z laboratory measurements of atmospheric absorption between 6\% and 52\% relative humidity},
-author={Danylov, Andriy},
-journal={Submillimeter-Wave Technology Laboratory University of Massachusetts Lowell},
-volume={175},
-year={2006}
-}
-
+title = {\{"U}ber die Ausbreitung der Wellen in der drahtlosen Telegraphie}
 % Michalski Paper with Greens function Dyadic representation
-@article{michalski1985mixed,
-  title={The mixed-potential electric field integral equation for objects in layered media},
-  author={Michalski, Krzysztof A},
-  journal={Archiv f{\"u}r elektronik und {\"u}bertragungstechnik},
-  volume={39},
-  pages={317--322},
-  year={1985}
+
+@Article{michalski1985mixed,
+  author  = {Michalski, Krzysztof A},
+  title   = {The Mixed-potential Electric Field Integral Equation for Objects in Layered Media},
+  journal = {Archiv F{\"u}r Elektronik Und {\"u}bertragungstechnik},
+  year    = {1985},
+  volume  = {39},
+  pages   = {317--322},
 }
 
 @Article{Kekatpure2009,
-  author    = {Kekatpure, Rohan D and Hryciw, Aaron C and Barnard, Edward S and Brongersma, Mark L},
+  author    = {Rohan D. Kekatpure and Aaron C. Hryciw and Edward S. Barnard and Mark L. Brongersma},
   title     = {{Solving dielectric and plasmonic waveguide dispersion relations on a pocket calculator}},
   journal   = {Optics Express},
   year      = {2009},
   volume    = {17},
   number    = {26},
-  pages     = {508--511},
+  pages     = {24112},
   month     = dec,
   doi       = {10.1364/OE.17.024112},
   file      = {:C\:\\Users\\Phased\\Downloads\\Plasma Waveguide\\Kekatpure - Solving dielectric and plasmonic waveguide dispersion relations on a pocket calculator.pdf:pdf},
@@ -61,7 +45,7 @@ year={2006}
 }
 
 @Article{Driscoll2014,
-  author   = {Driscoll, Tobin A and Hale, Nicholas and Trefethen, Lloyd N},
+  author   = {Driscoll, Tobin a and Hale, Nicholas and Trefethen, Lloyd N},
   title    = {{Chebfun Guide}},
   year     = {2014},
   abstract = {Chebyfun tool},
@@ -69,7 +53,7 @@ year={2006}
 }
 
 @Article{Choi2006,
-  author    = {Choi, Young-Kyu},
+  author    = {Young-Kyu Choi},
   title     = {{A Proposal of Simplified Eigenvalue Equation for an Analysis of Dielectric Slab Waveguide}},
   journal   = {Journal of Electrical Engineering and Technology},
   year      = {2006},
@@ -117,7 +101,7 @@ year={2006}
 }
 
 @Article{Koufogiannis2015c,
-  author    = {Koufogiannis, Ioannis D. and Mattes, Michael and Mosig, Juan R.},
+  author    = {Ioannis D. Koufogiannis and Michael Mattes and Juan R. Mosig},
   title     = {{On the development and evaluation of spatial-domain Green's functions for multilayered structures with conductive sheets}},
   journal   = {{IEEE} Transactions on Microwave Theory and Techniques},
   year      = {2015},
@@ -152,7 +136,7 @@ year={2006}
 }
 
 @Article{Dellnitz2002c,
-  author    = {Dellnitz, Michael and Sch{\"{u}}tze, Oliver and Zheng, Qinghua},
+  author    = {Michael Dellnitz and Oliver Schütze and Qinghua Zheng},
   title     = {{Locating all the zeros of an analytic function in one complex variable}},
   journal   = {Journal of Computational and Applied Mathematics},
   year      = {2002},
@@ -169,7 +153,7 @@ year={2006}
 }
 
 @Article{Song2010c,
-  author    = {Song, Zhe and Zhou, HouXing and Hu, Jun and Li, WeiDong and Hong, Wei},
+  author    = {Zhe Song and HouXing Zhou and Jun Hu and WeiDong Li and Wei Hong},
   title     = {{Accurate location of all surface wave modes for Green's functions of a layered medium by consecutive perturbations}},
   journal   = {Science China Information Sciences},
   year      = {2010},
@@ -184,7 +168,7 @@ year={2006}
 }
 
 @Article{Carpentier1982c,
-  author    = {M.P. Carpentier and A.F. dos Santos},
+  author    = {M.P. Carpentier and A.F. Dos Santos},
   title     = {{Solution of equations involving analytic functions}},
   journal   = {Journal of Computational Physics},
   year      = {1982},
@@ -200,12 +184,12 @@ year={2006}
 }
 
 @Article{Teo2003b,
-  author    = {Teo, Swee Ann and Chew, Siou Teck and Leong, Mook Seng},
+  author    = {Swee-Ann Teo and Siou-Teck Chew and Mook-Seng Leong},
   title     = {{Error analysis of the discrete complex image method and pole extraction}},
-  journal   = {IEEE Transactions on Microwave Theory and Techniques},
+  journal   = {{IEEE} Transactions on Microwave Theory and Techniques},
   year      = {2003},
   volume    = {51},
-  number    = {2 I},
+  number    = {2},
   pages     = {406--413},
   month     = feb,
   issn      = {00189480},
@@ -217,23 +201,25 @@ year={2006}
 }
 
 @Article{Pan2015c,
-  author   = {Pan, Siming and Fan, Jun},
-  title    = {{An efficient method to extract surface-wave poles of Green's functions near branch cut in lossy layered media}},
-  journal  = {IEEE Transactions on Antennas and Propagation},
-  year     = {2015},
-  volume   = {63},
-  number   = {1},
-  pages    = {439--442},
-  issn     = {0018926X},
-  doi      = {10.1109/TAP.2014.2367545},
-  file     = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Pole Location showing contours.pdf:pdf},
-  keywords = {Discrete complex image method (DCIM),Sommerfeld integral,Surface-wave poles,lossy layered media,pole extraction,spectral-domain Green's functions},
+  author    = {Siming Pan and Jun Fan},
+  title     = {{An efficient method to extract surface-wave poles of Green's functions near branch cut in lossy layered media}},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
+  year      = {2015},
+  volume    = {63},
+  number    = {1},
+  pages     = {439--442},
+  month     = {jan},
+  issn      = {0018926X},
+  doi       = {10.1109/TAP.2014.2367545},
+  file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Pole Location showing contours.pdf:pdf},
+  keywords  = {Discrete complex image method (DCIM),Sommerfeld integral,Surface-wave poles,lossy layered media,pole extraction,spectral-domain Green's functions},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
 @Article{Wang2010c,
-  author    = {Wang, Dao Xiang and Yung, Edward Kai Ning and Chen, Ru Shan and Bao, Jian},
-  title     = {{A new method for locating the poles of green's functions in a lossless or lossy multilayered medium}},
-  journal   = {IEEE Transactions on Antennas and Propagation},
+  author    = {Dao-Xiang Wang and Edward Kai-Ning Yung and Ru-Shan Chen and Jian Bao},
+  title     = {{A new method for locating the poles of Green's functions in a lossless or lossy multilayered medium}},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
   year      = {2010},
   volume    = {58},
   number    = {7},
@@ -249,32 +235,35 @@ year={2006}
 }
 
 @Article{Ling2000c,
-  author   = {Ling, Feng and Jin, JM},
-  title    = {{Discrete complex image method for Green's functions of general multilayer media}},
-  journal  = {Microwave and Guided Wave Letters, IEEE},
-  year     = {2000},
-  volume   = {10},
-  number   = {10},
-  pages    = {400--402},
-  issn     = {1051-8207},
-  abstract = {The discrete complex image method is extended to efficiently and accurately evaluate the Green's functions of multilayer media for the method of moments analysis. The difficulty associated with the surface-wave extraction for muitilayer media is solved by evaluating a contour integral recursively in the complex kp-plane, With this scheme, the discrete complex image method works in both the near- and far-field regions for general multilayer media, whether open or shielded and lossy or lossless},
-  doi      = {10.1109/75.877225},
-  file     = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Ling - Surface Waves.pdf:pdf},
+  author    = {Feng Ling and Jian-Ming Jin},
+  title     = {{Discrete complex image method for Green's functions of general multilayer media}},
+  journal   = {{IEEE} Microwave and Guided Wave Letters},
+  year      = {2000},
+  volume    = {10},
+  number    = {10},
+  pages     = {400--402},
+  issn      = {1051-8207},
+  abstract  = {The discrete complex image method is extended to efficiently and accurately evaluate the Green's functions of multilayer media for the method of moments analysis. The difficulty associated with the surface-wave extraction for muitilayer media is solved by evaluating a contour integral recursively in the complex kp-plane, With this scheme, the discrete complex image method works in both the near- and far-field regions for general multilayer media, whether open or shielded and lossy or lossless},
+  doi       = {10.1109/75.877225},
+  file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Ling - Surface Waves.pdf:pdf},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
 @Article{Kravanja2000c,
-  author   = {Kravanja, P. and {Van Barel}, M. and Ragos, O. and Vrahatis, M. N. and Zafiropoulos, F. A.},
-  title    = {{ZEAL: a mathematical software package for computing zeros of analytic functions}},
-  journal  = {Computer Physics Communications},
-  year     = {2000},
-  volume   = {124},
-  number   = {2-3},
-  pages    = {212--232},
-  issn     = {00104655},
-  abstract = {We present a reliable and portable software package for computing zeros of analytic functions. The package is named ZEAL (ZEros of AnaLytic functions). Given a rectangular region W in the complex plane and a function f: W ??? C that is analytic in W and does not have zeros on the boundary of W, ZEAL localizes and computes all the zeros of f that lie inside W, together with their respective multiplicities. ZEAL is based on the theory of formal orthogonal polynomials. It proceeds by evaluating numerically certain integrals along the boundary of W involving the logarithmic derivative f???/f and by solving generalized eigenvalue problems. The multiplicities are computed by solving a linear system of equations that has Vandermonde structure. ZEAL is written in Fortran 90.},
-  doi      = {10.1016/S0010-4655(99)00429-4},
-  file     = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Kravanja-ZEAL.pdf:pdf},
-  keywords = {analytic functions,computation of,formal orthogonal polynomials,isolation of zeros,multiplicities,quadrature method,zeros},
+  author    = {P. Kravanja and M. Van Barel and O. Ragos and M.N. Vrahatis and F.A. Zafiropoulos},
+  title     = {{ZEAL}: A Mathematical Software Package for Computing Zeros of Analytic Functions},
+  journal   = {Computer Physics Communications},
+  year      = {2000},
+  volume    = {124},
+  number    = {2-3},
+  pages     = {212--232},
+  month     = {feb},
+  issn      = {00104655},
+  abstract  = {We present a reliable and portable software package for computing zeros of analytic functions. The package is named ZEAL (ZEros of AnaLytic functions). Given a rectangular region W in the complex plane and a function f: W ??? C that is analytic in W and does not have zeros on the boundary of W, ZEAL localizes and computes all the zeros of f that lie inside W, together with their respective multiplicities. ZEAL is based on the theory of formal orthogonal polynomials. It proceeds by evaluating numerically certain integrals along the boundary of W involving the logarithmic derivative f???/f and by solving generalized eigenvalue problems. The multiplicities are computed by solving a linear system of equations that has Vandermonde structure. ZEAL is written in Fortran 90.},
+  doi       = {10.1016/S0010-4655(99)00429-4},
+  file      = {:C\:\\Users\\Phased\\Downloads\\Sommerfeld Research\\Pole Extraction\\Kravanja-ZEAL.pdf:pdf},
+  keywords  = {analytic functions,computation of,formal orthogonal polynomials,isolation of zeros,multiplicities,quadrature method,zeros},
+  publisher = {Elsevier {BV}},
 }
 
 @PhdThesis{Kravanja1999thesis,
@@ -288,8 +277,8 @@ year={2006}
 }
 
 @Article{Valerio2010c,
-  author    = {Valerio, Guido and Jackson, David R and Galli, Alessandro},
-  title     = {{Valerio, Guido; Jackson, David R; Galli, Alessandro -- Formulas .pdf}},
+  author    = {Guido Valerio and David R Jackson and Alessandro Galli},
+  title     = {Formulas for the Number of Surface Waves on Layered Structures},
   journal   = {{IEEE} Transactions on Microwave Theory and Techniques},
   year      = {2010},
   volume    = {58},
@@ -301,10 +290,10 @@ year={2006}
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
-@Article{Polimeridis2007c,
-  author    = {Polimeridis, A. G. and Yioultsis, T. V. and Tsiboukis, T. D.},
+@Article{Polimeridis_2007,
+  author    = {A. G. Polimeridis and T. V. Yioultsis and T. D. Tsiboukis},
   title     = {{An efficient pole extraction technique for the computation of Green's functions in stratified media using a sine transformation}},
-  journal   = {IEEE Transactions on Antennas and Propagation},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
   year      = {2007},
   volume    = {55},
   number    = {1},
@@ -335,7 +324,7 @@ year={2006}
 @InBook{Krantz1999,
   pages     = {69--78},
   title     = {The Argument Principle},
-  publisher = {Birkh{\"a}user Boston},
+  publisher = {Birkhäuser Boston},
   year      = {1999},
   author    = {Steven G. Krantz},
   address   = {Boston, MA},
@@ -356,7 +345,7 @@ year={2006}
 
 @Article{Botten1983,
   author    = {L.C. Botten and M.S. Craig and R.C. McPhedran},
-  title     = {Complex zeros of analytic functions},
+  title     = {Complex Zeros of Analytic Functions},
   journal   = {Computer Physics Communications},
   year      = {1983},
   volume    = {29},
@@ -371,7 +360,7 @@ year={2006}
 @Article{Kravanja1999,
   author    = {P. Kravanja and T. Sakurai and M. Van Barel},
   title     = {On Locating Clusters of Zeros of Analytic Functions},
-  journal   = {BIT Numerical Mathematics},
+  journal   = {Bit Numerical Mathematics},
   year      = {1999},
   volume    = {39},
   number    = {4},
@@ -382,7 +371,7 @@ year={2006}
 }
 
 @Book{stinson1976intermediate,
-  title     = {Intermediate mathematics of electromagnetics},
+  title     = {Intermediate Mathematics of Electromagnetics (electrical Engineering)},
   publisher = {Prentice Hall},
   year      = {1976},
   author    = {Donald C. Stinson},
@@ -391,19 +380,8 @@ year={2006}
   lccn      = {75034206},
 }
 
-@Article{Shannon1949,
-  author    = {Shannon, Claude E},
-  title     = {Communication in the presence of noise},
-  journal   = {Proceedings of the IRE},
-  year      = {1949},
-  volume    = {37},
-  number    = {1},
-  pages     = {10--21},
-  publisher = {IEEE},
-}
-
 @Book{Wu2008,
-  title     = {Generalized Transmission Line Method to Study the Far-zone Radiation of Antennas Under a Multilayer Structure},
+  title     = {Generalized Transmission Line Method to Study the Far-zone Radiation of Antennas under a Multilayer Structure},
   publisher = {Morgan \& Claypool Publishers},
   year      = {2008},
   author    = {Wu, Xuan Hui and Kishk, Ahmed and Glisson, Allen},
@@ -416,7 +394,7 @@ year={2006}
 
 @Article{:/content/aip/journal/jap/107/2/10.1063/1.3284956,
   author    = {Katsuki Takeuchi and Sadao Adachi and Kohji Ohtsuka},
-  title     = {Optical properties of {A}l_x{G}a_{1$-$x}{N} alloy},
+  title     = {Optical Properties of {A}l_x{G}a_{1$-$x}{N} Alloy},
   journal   = {Journal of Applied Physics},
   year      = {2010},
   volume    = {107},
@@ -450,8 +428,8 @@ year={2006}
 
 @Article{michalski1997multilayered,
   author    = {K.A. Michalski and J.R. Mosig},
-  title     = {Multilayered media {G}reen's functions in integral equation formulations},
-  journal   = {IEEE Transactions on Antennas and Propagation},
+  title     = {Multilayered Media {G}reen's Functions in Integral Equation Formulations},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
   year      = {1997},
   volume    = {45},
   number    = {3},
@@ -464,7 +442,7 @@ year={2006}
 @Article{Itoh1980,
   author    = {T. Itoh},
   title     = {Spectral Domain Immitance Approach for Dispersion Characteristics of Generalized Printed Transmission Lines},
-  journal   = {{IEEE} {T}ransactions on {M}icrowave {T}heory and {T}echniques},
+  journal   = {{IEEE} Transactions on Microwave Theory and Techniques},
   year      = {1980},
   volume    = {28},
   number    = {7},
@@ -481,7 +459,7 @@ year={2006}
   year          = {2017},
   volume        = {214},
   number        = {2},
-  pages         = {24},
+  pages         = {105--116},
   month         = may,
   abstract      = {We implement a robust, globally convergent root search method for transcendental equations guaranteed to locate all complex roots within a specified search domain, based on Cauchy's residue theorem. Although several implementations of the argument principle already exist ours has several advantages: it allows singularities within the search domain and branch points are not fatal to the method. Furthermore, our implementation is simple and is written in MATLAB, fulfilling the need for an easily integrated implementation which can be readily modified to accommodate the many variations of the argument principle method, each of which is suited to a different application. We apply the method to the step index fiber dispersion relation which has become topical due to the recent proliferation of high index contrast fibers. We also find modes with permittivity as the eigenvalue catering to recent numerical methods that expand the radiation of sources by eigenmodes.},
   archiveprefix = {arXiv},
@@ -497,7 +475,7 @@ year={2006}
 }
 
 @Book{Fang2010,
-  title     = {Antenna theory and microstrip antennas},
+  title     = {Antenna Theory and Microstrip Antennas},
   publisher = {CRC PR INC},
   year      = {2010},
   author    = {Fang, D. G.},
@@ -515,13 +493,13 @@ year={2006}
   year      = {2005},
   month     = apr,
   doi       = {10.1002/0471654507.eme554},
-  journal   = {Encyclopedia of RF and microwave engineering},
+  journal   = {Encyclopedia of Rf and Microwave Engineering},
 }
 
 @Article{Kastner1988,
   author    = {R. Kastner and E. Heyman and A. Sabban},
-  title     = {Spectral domain iterative analysis of single- and double-layered microstrip antennas using the conjugate gradient algorithm},
-  journal   = {{IEEE} {T}ransactions on {A}ntennas and {P}ropagation},
+  title     = {Spectral Domain Iterative Analysis of Single- and Double-layered Microstrip Antennas Using the Conjugate Gradient Algorithm},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
   year      = {1988},
   volume    = {36},
   number    = {9},
@@ -540,7 +518,7 @@ year={2006}
 
 @Article{Shampine2008,
   author    = {L.F. Shampine},
-  title     = {Vectorized adaptive quadrature in {MATLAB}},
+  title     = {Vectorized Adaptive Quadrature in {MATLAB}},
   journal   = {Journal of Computational and Applied Mathematics},
   year      = {2008},
   volume    = {211},
@@ -549,6 +527,28 @@ year={2006}
   month     = feb,
   doi       = {10.1016/j.cam.2006.11.021},
   publisher = {Elsevier {BV}},
+}
+
+@InCollection{Gentle1998,
+  author    = {James E. Gentle},
+  title     = {Computation of Eigenvectors and Eigenvalues and the Singular Value Decomposition},
+  booktitle = {Statistics and Computing},
+  publisher = {Springer New York},
+  year      = {1998},
+  pages     = {123--135},
+  doi       = {10.1007/978-1-4612-0623-1_4},
+}
+
+@Article{Kocabas2009,
+  author    = {{\c{S}}ükrü Ekin Kocaba{\c{s}} and Georgios Veronis and David A. B. Miller and Shanhui Fan},
+  title     = {Modal analysis and coupling in metal-insulator-metal waveguides},
+  journal   = {Physical Review B},
+  year      = {2009},
+  volume    = {79},
+  number    = {3},
+  month     = jan,
+  doi       = {10.1103/physrevb.79.035120},
+  publisher = {American Physical Society ({APS})},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

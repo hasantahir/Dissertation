@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.3)  17 MAY 2017 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.3)  21 MAY 2017 19:28
 entering extended mode
 **./multilayered_roots.tex
 (multilayered_roots.tex
@@ -6,8 +6,8 @@ LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 7 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -2402,7 +2402,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 76.
 )
 \tikzscale@accuracy=\skip102
 
-(multilayered_roots.aux)
+No file multilayered_roots.aux.
 \openout1 = `multilayered_roots.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2420,9 +2420,10 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 11.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 LaTeX Info: Redefining \celsius on input line 11.
@@ -3615,12 +3616,12 @@ File: siunitx-abbreviations.cfg 2017/03/23 v2.7f siunitx: Abbreviated units
 * \topmargin=-18.9325pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -3714,18 +3715,18 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 11.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 \c__siunitx_mathtt_int=\count330
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
 
 
@@ -3735,23 +3736,136 @@ LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
- [1
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 30.
 
-{C:/Users/Phased/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (figur
-es/xsystem.tikz)
+
+LaTeX Warning: Citation `michalski1997multilayered' on page 1 undefined on inpu
+t line 30.
+
+
+LaTeX Warning: Citation `michalski2005' on page 1 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:TL_equivalent' on page 1 undefined on input line 
+30.
+
+
+LaTeX Warning: Citation `felsen1994' on page 1 undefined on input line 41.
+
+[1
+
+{C:/Users/Phased/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: Reference `eq:Fourier' on page 2 undefined on input line 49.
+
+
+LaTeX Warning: Reference `eq:Fourier' on page 2 undefined on input line 58.
+
+
+LaTeX Warning: Reference `eq:MaxE' on page 2 undefined on input line 58.
+
+
+LaTeX Warning: Reference `eq:FT_E' on page 2 undefined on input line 71.
+
+
+LaTeX Warning: Citation `fang2010' on page 2 undefined on input line 86.
+
+
+LaTeX Warning: Reference `eq:vec' on page 2 undefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:FT_LH' on page 2 undefined on input line 93.
+
+[2]
+
+LaTeX Warning: Reference `eq:FT_TH' on page 3 undefined on input line 109.
+
+
+LaTeX Warning: Reference `eq:FT_H' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Reference `eq:sLE' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eq:dFT_ET' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eq:sLH' on page 3 undefined on input line 150.
+
+
+LaTeX Warning: Reference `eq:dFT_HT' on page 3 undefined on input line 150.
+
+
+LaTeX Warning: Reference `eq:Et' on page 3 undefined on input line 159.
+
+
+LaTeX Warning: Reference `eq:Ht' on page 3 undefined on input line 159.
+
+
+LaTeX Warning: Reference `eq:Et' on page 3 undefined on input line 161.
+
+
+LaTeX Warning: Reference `eq:Ht' on page 3 undefined on input line 161.
+
+
+LaTeX Warning: Reference `fig:SpCS' on page 3 undefined on input line 161.
+
+
+LaTeX Warning: Citation `itoh1980' on page 3 undefined on input line 161.
+
+[3]
+
+LaTeX Warning: Citation `kastner1988' on page 4 undefined on input line 180.
+
+
+LaTeX Warning: Citation `michalski1997multilayered' on page 4 undefined on inpu
+t line 180.
+
 (figures/xsystem.tikz) (figures/xsystem.tikz) (figures/xsystem.tikz)
-(figures/xsystem.tikz) (figures/xsystem.tikz) (figures/xsystem.tikz) [3]
-[4] (figures/jx.tikz) (figures/jx.tikz) (figures/jx.tikz) (figures/jx.tikz)
+(figures/xsystem.tikz) (figures/xsystem.tikz) (figures/xsystem.tikz)
+(figures/xsystem.tikz)
+
+LaTeX Warning: Reference `eq:EHVI' on page 4 undefined on input line 207.
+
+
+LaTeX Warning: Reference `eq:Et' on page 4 undefined on input line 207.
+
+
+LaTeX Warning: Reference `eq:EHVI' on page 4 undefined on input line 228.
+
+
+LaTeX Warning: Reference `eq:Ht' on page 4 undefined on input line 228.
+
+[4]
+
+LaTeX Warning: Reference `eq:TL_Vs' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Reference `eq:TL_Is' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Citation `michalski2005' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Reference `fig:J_sources' on page 5 undefined on input line 273.
+
+
+(figures/jx.tikz) (figures/jx.tikz) (figures/jx.tikz) (figures/jx.tikz)
 (figures/jx.tikz) (figures/jx.tikz) (figures/jx.tikz) (figures/jy.tikz)
 (figures/jy.tikz) (figures/jy.tikz) (figures/jy.tikz) (figures/jy.tikz)
 (figures/jy.tikz) (figures/jy.tikz) (figures/jz.tikz) (figures/jz.tikz)
@@ -3760,73 +3874,429 @@ es/xsystem.tikz)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 299.
+[5]
 
-LaTeX Warning: Citation `Burke2000' on page 5 undefined on input line 299.
+LaTeX Warning: Reference `fig:TL_equivalent' on page 6 undefined on input line 
+297.
 
-[5] (figures/multilayers.pdf_tex
-<figures/multilayers.pdf, id=153, page=1, 551.50745pt x 369.58888pt>
+[6]
+
+LaTeX Warning: Citation `Burke2000' on page 7 undefined on input line 299.
+
+
+LaTeX Warning: Reference `fig:TL_equivalent' on page 7 undefined on input line 
+308.
+
+
+LaTeX Warning: Reference `fig:jx_source' on page 7 undefined on input line 308.
+
+
+
+LaTeX Warning: Reference `fig:TL_equivalent' on page 7 undefined on input line 
+308.
+
+(figures/multilayers.pdf_tex
+<figures/multilayers.pdf, id=85, page=1, 551.50745pt x 369.58888pt>
 File: figures/multilayers.pdf Graphic file (type pdf)
 
 <use figures/multilayers.pdf, page 1>
 Package pdftex.def Info: figures/multilayers.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 430.0074pt x 288.16536pt.
-) [6]
+)
 
 LaTeX Warning: Citation `Gomez-Diaz2012' on page 7 undefined on input line 319.
 
 
-[7 <./figures/multilayers.pdf>] (figures/zplane.pdf_tex
-<figures/zplane.pdf, id=544, page=1, 338.09892pt x 271.29588pt>
+[7]
+
+LaTeX Warning: Reference `eq:sigma_s' on page 8 undefined on input line 326.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 8 undefined on input line 328.
+
+
+
+LaTeX Warning: Reference `eq:def' on page 8 undefined on input line 336.
+
+
+LaTeX Warning: Reference `fig:TL_equivalent' on page 8 undefined on input line 
+336.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 8 undefined on input line 336.
+
+
+[8 <./figures/multilayers.pdf>]
+
+LaTeX Warning: Reference `fig:basins' on page 9 undefined on input line 343.
+
+
+LaTeX Warning: Reference `fig:newton' on page 9 undefined on input line 343.
+
+
+LaTeX Warning: Reference `fig:halley' on page 9 undefined on input line 344.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 9 undefined on input line 346.
+
+
+
+LaTeX Warning: Citation `Delves1967c' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Carpentier1982c' on page 9 undefined on input line 348
+.
+
+
+LaTeX Warning: Citation `Botten1983' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Kravanja2000c' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Dellnitz2002c' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Gillan2006c' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Chen2017' on page 9 undefined on input line 348.
+
+
+LaTeX Warning: Reference `fig:zplane' on page 9 undefined on input line 348.
+
+(figures/basin_fig.tikz <figures/basin.png, id=471, 316.33182pt x 316.18124pt>
+File: figures/basin.png Graphic file (type png)
+
+<use figures/basin.png>
+Package pdftex.def Info: figures/basin.png used on input line 15.
+(pdftex.def)             Requested size: 195.12454pt x 195.12814pt.
+) (figures/basin_fig.tikz
+File: figures/basin.png Graphic file (type png)
+ <use figures/basin.png>
+Package pdftex.def Info: figures/basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+)
+(figures/basin_fig.tikz
+File: figures/basin.png Graphic file (type png)
+ <use figures/basin.png>
+Package pdftex.def Info: figures/basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+) (figures/basin_fig.tikz
+File: figures/basin.png Graphic file (type png)
+
+<use figures/basin.png>
+Package pdftex.def Info: figures/basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+) (figures/hbasin_fig.tikz
+<figures/halley_basin.png, id=472, 316.33182pt x 316.18124pt>
+File: figures/halley_basin.png Graphic file (type png)
+
+<use figures/halley_basin.png>
+Package pdftex.def Info: figures/halley_basin.png used on input line 15.
+(pdftex.def)             Requested size: 195.12454pt x 195.12814pt.
+) (figures/hbasin_fig.tikz
+File: figures/halley_basin.png Graphic file (type png)
+
+<use figures/halley_basin.png>
+Package pdftex.def Info: figures/halley_basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+) (figures/hbasin_fig.tikz
+File: figures/halley_basin.png Graphic file (type png)
+
+<use figures/halley_basin.png>
+Package pdftex.def Info: figures/halley_basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+) (figures/hbasin_fig.tikz
+File: figures/halley_basin.png Graphic file (type png)
+
+<use figures/halley_basin.png>
+Package pdftex.def Info: figures/halley_basin.png used on input line 15.
+(pdftex.def)             Requested size: 158.56613pt x 158.57268pt.
+) (figures/zplane.pdf_tex
+<figures/zplane.pdf, id=473, page=1, 212.42943pt x 204.64687pt>
 File: figures/zplane.pdf Graphic file (type pdf)
 
 <use figures/zplane.pdf, page 1>
 Package pdftex.def Info: figures/zplane.pdf, page1 used on input line 52.
-(pdftex.def)             Requested size: 215.0037pt x 172.52348pt.
-) [8]
+(pdftex.def)             Requested size: 215.0037pt x 207.13197pt.
+) [9]
 
-LaTeX Warning: Citation `Shampine2008' on page 9 undefined on input line 383.
+LaTeX Warning: Citation `Krantz1999' on page 10 undefined on input line 373.
 
-[9 <./figures/zplane.pdf>] [10] [11] [12] (multilayered_roots.bbl [13
 
-])
+LaTeX Warning: Citation `Delves1967c' on page 10 undefined on input line 373.
+
+[10 <./figures/basin.png (PNG copy)> <./figures/halley_basin.png (PNG copy)> <.
+/figures/zplane.pdf>]
+
+LaTeX Warning: Reference `eq:dispersion' on page 11 undefined on input line 380
+.
+
+
+LaTeX Warning: Citation `press2007numerical' on page 11 undefined on input line
+ 387.
+
+
+LaTeX Warning: Reference `eq:cauchyth' on page 11 undefined on input line 389.
+
+
+LaTeX Warning: Citation `Carpentier1982c' on page 11 undefined on input line 38
+9.
+
+
+LaTeX Warning: Citation `Gillan2006c' on page 11 undefined on input line 389.
+
+
+LaTeX Warning: Reference `eq:cauchyth' on page 11 undefined on input line 396.
+
+
+LaTeX Warning: Reference `eq:numzeros' on page 11 undefined on input line 396.
+
+
+LaTeX Warning: Reference `eq:cauchyth' on page 11 undefined on input line 396.
+
+
+LaTeX Warning: Reference `eq:numzeros' on page 11 undefined on input line 396.
+
+
+LaTeX Warning: Citation `Shampine2008' on page 11 undefined on input line 396.
+
+
+LaTeX Warning: Reference `eq:numzeros' on page 11 undefined on input line 403.
+
+[11]
+
+LaTeX Warning: Citation `Kravanja1999' on page 12 undefined on input line 415.
+
+
+LaTeX Warning: Citation `Gillan2006c' on page 12 undefined on input line 415.
+
+[12]
+
+LaTeX Warning: Reference `eq:poly' on page 13 undefined on input line 457.
+
+
+LaTeX Warning: Reference `eq:blinear' on page 13 undefined on input line 464.
+
+
+LaTeX Warning: Citation `Kravanja1999' on page 13 undefined on input line 464.
+
+
+LaTeX Warning: Reference `eq:poly' on page 13 undefined on input line 467.
+
+
+LaTeX Warning: Citation `Gentle1998' on page 13 undefined on input line 481.
+
+
+LaTeX Warning: Reference `eq:xticeq' on page 13 undefined on input line 488.
+
+[13]
+
+LaTeX Warning: Reference `eq:Hmat' on page 14 undefined on input line 500.
+
+
+LaTeX Warning: Reference `eq:Hmat<' on page 14 undefined on input line 500.
+
+
+LaTeX Warning: Reference `eq:newtid' on page 14 undefined on input line 500.
+
+
+LaTeX Warning: Citation `Gillan2006c' on page 14 undefined on input line 500.
+
+
+LaTeX Warning: Reference `eq:evp' on page 14 undefined on input line 507.
+
+
+LaTeX Warning: Reference `eq:evp' on page 14 undefined on input line 515.
+
+
+LaTeX Warning: Citation `press2007numerical' on page 14 undefined on input line
+ 515.
+
+
+LaTeX Warning: Reference `eq:FD' on page 14 undefined on input line 522.
+
+
+LaTeX Warning: Reference `eq:newton' on page 14 undefined on input line 522.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 14 undefined on input line 529
+.
+
+
+LaTeX Warning: Reference `eq:k_z' on page 14 undefined on input line 529.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 14 undefined on input line 529
+.
+
+
+LaTeX Warning: Citation `felsen1994' on page 14 undefined on input line 529.
+
 [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
- (multilayered_roots.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
-Package rerunfilecheck Info: File `multilayered_roots.out' has not changed.
-(rerunfilecheck)             Checksum: 253E0525B17D6A8572853632B2E6D6BE;578.
 
+LaTeX Warning: Citation `Michalski2006' on page 15 undefined on input line 531.
+
+
+
+LaTeX Warning: Citation `Polimeridis_2007' on page 15 undefined on input line 5
+31.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 15 undefined on input line 541
+.
+
+
+LaTeX Warning: Reference `eq:dispersion' on page 15 undefined on input line 545
+.
+
+
+LaTeX Warning: Citation `Kocabas2009' on page 15 undefined on input line 560.
+
+[15]
+
+LaTeX Warning: Reference `eq:mim' on page 16 undefined on input line 567.
+
+
+LaTeX Warning: Reference `fig:mim_lossless' on page 16 undefined on input line 
+567.
+
+
+LaTeX Warning: Citation `Kocabas2009' on page 16 undefined on input line 567.
+
+
+LaTeX Warning: Reference `tab:kocabas_lossless' on page 16 undefined on input l
+ine 567.
+
+
+LaTeX Warning: Reference `eq:mim' on page 16 undefined on input line 573.
+
+
+LaTeX Warning: Citation `Kocabas2009' on page 16 undefined on input line 573.
+
+
+LaTeX Warning: Reference `fig:mim_lossless' on page 16 undefined on input line 
+592.
+
+
+LaTeX Warning: Reference `tab:kocabas_lossy' on page 16 undefined on input line
+ 592.
+
+
+LaTeX Warning: Reference `eq:mim' on page 16 undefined on input line 598.
+
+
+LaTeX Warning: Citation `Kocabas2009' on page 16 undefined on input line 598.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 616.
+
+(figures/kocabas_lossless.tikz) (figures/kocabas_lossless.tikz)
+(figures/kocabas_lossless.tikz) (figures/kocabas_lossless.tikz)
+(figures/kocabas_lossy.tikz) (figures/kocabas_lossy.tikz)
+(figures/kocabas_lossy.tikz) (figures/kocabas_lossy.tikz)
+Overfull \hbox (61.41182pt too wide) in paragraph at lines 592--626
+[]\T1/ptm/m/n/12 Next, we con-sider the lossy case where the per-mit-tiv-ity of
+ metal lay-ers is $\OML/ztmcm/m/it/12 "[] \OT1/ztmcm/m/n/12 = []$
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16]
+
+LaTeX Warning: Reference `fig:2deg_structure_types' on page 17 undefined on inp
+ut line 637.
+
+(figures/gated.pdf_tex
+<figures/gated.pdf, id=538, page=1, 274.7803pt x 160.411pt>
+File: figures/gated.pdf Graphic file (type pdf)
+
+<use figures/gated.pdf, page 1>
+Package pdftex.def Info: figures/gated.pdf, page1 used on input line 52.
+(pdftex.def)             Requested size: 129.00352pt x 75.3124pt.
+) (figures/ungated.pdf_tex
+<figures/ungated.pdf, id=539, page=1, 274.7803pt x 160.411pt>
+File: figures/ungated.pdf Graphic file (type pdf)
+
+<use figures/ungated.pdf, page 1>
+Package pdftex.def Info: figures/ungated.pdf, page1 used on input line 52.
+(pdftex.def)             Requested size: 129.00352pt x 75.3124pt.
+) (figures/backgated.pdf_tex
+<figures/backgated.pdf, id=540, page=1, 274.7803pt x 163.35805pt>
+File: figures/backgated.pdf Graphic file (type pdf)
+
+<use figures/backgated.pdf, page 1>
+Package pdftex.def Info: figures/backgated.pdf, page1 used on input line 52.
+(pdftex.def)             Requested size: 129.00352pt x 76.69603pt.
+)
+
+LaTeX Warning: Reference `fig:2deg_structure_types' on page 17 undefined on inp
+ut line 654.
+
+
+LaTeX Warning: Reference `eq:sigma_s' on page 17 undefined on input line 654.
+
+[17] [18 <./figures/gated.pdf> <./figures/ungated.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/ungated.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./figures/backgated.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/backgated.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] (multilayered_roots.bbl [19
+
+]
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [20]) [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
+
+(multilayered_roots.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 666.
+
+
+Package rerunfilecheck Warning: File `multilayered_roots.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `multilayered_roots.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  56CEDBCBB90FA6B1E1867315562CFEF3;773.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 50069 strings out of 495099
- 1180894 string characters out of 3178637
- 1424690 words of memory out of 10000000
- 52472 multiletter control sequences out of 15000+200000
- 82610 words of font info for 144 fonts, out of 3000000 for 9000
+ 51191 strings out of 495099
+ 1201594 string characters out of 3178637
+ 1677103 words of memory out of 10000000
+ 53498 multiletter control sequences out of 15000+200000
+ 88838 words of font info for 163 fonts, out of 3000000 for 9000
  81 hyphenation exceptions out of 8191
- 74i,18n,104p,10440b,1388s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 79i,18n,132p,10440b,2735s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on multilayered_roots.pdf (14 pages, 257666 bytes).
+nts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on multilayered_roots.pdf (21 pages, 6000991 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

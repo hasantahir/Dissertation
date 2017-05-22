@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 %
 % % Insert style guide
 \usepackage{my_thesis}
@@ -254,7 +254,7 @@ Equations \eqref{eq:TL_Vs}-\eqref{eq:TL_Is} can be conveniently written in a com
 where the propagation constant in the transverse direction is,
 %
 \begin{equation}
-  k_z = \sqrt{k^2 - k_{\p}^2}
+  k_z = \pm \sqrt{k^2 - k_{\p}^2}
   \label{eq:k_z}
 \end{equation}
 %
@@ -340,18 +340,31 @@ We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k
   \label{eq:def}
 \end{equation}
 %
-Although the problem may at first appear to be a relatively simple root-search in which readily available and popular iterative algorithms like the Newton or Halley method can be applied, complication arises due to presence of complex-valued roots. Furthermore, the convergence of the aforementioned methods is highly subject to an initial guess that must lie close to the actual root. For a dispersion relation like in \eqref{eq:dispersion} that are defined as a transcendental equation, presence of singularities like poles and branch points particularly in the vicinity of an actual solution may leave an iterative method completely divergent or yet churn out a bogus and unreliable answer.
+Although the problem may at first appear to be a relatively simple root-search in which readily available and popular iterative algorithms like the Newton or Halley method can be applied, complication arises due to presence of complex-valued roots. Furthermore, the convergence of the aforementioned methods is highly subject to an initial guess that must lie close to the actual root. In Fig. \ref{fig:basins}, basins of attraction are shown for Newton's and Halley's methods which are two of the most popular iterative root finding methods. The actuals roots of a polynmial, $z^{10}-1$ are depicted by circle marks. The regions are color coded for each root and large area of a particular solid color means that if the initial guess is located there, convergence to the respective root will be achieved quickly. On the other hand, if the initial guess lies in the fractal region, the convergence is very slow. It can also be observed from Fig. \ref{fig:newton} that the basin of attraction of Newton's method has a denser fractal region due to its quadratic complexity of convergence, whereas the Halley's method which is cubic, the fractals are
+comparatively sparse as shown in Fig. \ref{fig:halley}.
+
+For a dispersion relation \eqref{eq:dispersion}, which is defined by a transcendental equation, presence of singularities, particularly in the vicinity of an actual solution may leave an iterative method completely divergent or yet churn out a bogus and unreliable answer.
 
 Argument principle method (APM) is a robust, complex root-finding algorithm in which convergence is guaranteed within a specified region without supplying any initial guess \cite{Delves1967c,Carpentier1982c,Botten1983,Kravanja2000c,Dellnitz2002c,Gillan2006c,Chen2017}. It requires the function to be analytic in the specified search region. A pictorial representation of this technique is shown in Fig. \ref{fig:zplane} where the roots inside a specified region $\Gamma$ in the complex plane are computed by approximating the given function with a polynomial. The number of zeros inside $\Gamma$ must not exceed a preallocated value $N_r$, otherwise the search region is reduced. Moreover, the function $f$ must be non-zero at the boundary of $\Gamma$. The following sections briefly describe each step of the method.
 %
-\begin{figure}[b!]
+\begin{figure}[t!]
+  \centering
+  \subfloat[]{\includegraphics[height = 2.7in]{basin_fig.tikz}
+  \label{fig:newton}} \hfil
+  \subfloat[]{\includegraphics[height = 2.7in]{hbasin_fig.tikz}
+  \label{fig:halley}}
+  \caption{Complex plane basin of attraction while solving $z^{10} - 1 =0$ using: (a) Newton's method (c) Halley's method}
+  \label{fig:basins}
+\end{figure}
+%
+%%
+\begin{figure}[t!]
   \centering
   \def\svgwidth{.5\linewidth}
   \input{figures/zplane.pdf_tex}
-  \caption{An illustration of a search region in the form of a rectangular controur $\Gamma$. If the zeros inside exceed a pre-allocated value, $\Gamma$ is split into smaller rectangles}
+  \caption{Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular controur $\Gamma$}
   \label{fig:zplane}
 \end{figure}
-%%
 %%
 %%
 %%
@@ -380,81 +393,46 @@ In addition to \eqref{eq:cauchyth}, a derivative-free form of the argument princ
  \label{eq:numzeros}
 \end{equation}
 %
-The value of both the integrals, i.e., \eqref{eq:cauchyth} and \eqref{eq:numzeros} is an integer which means that whenever a zero is encountered while performing the contour integration, the resulting integral is incremented by a factor of $2 \pi$. The contour integration in \eqref{eq:cauchyth} and \eqref{eq:numzeros} is computed in a counter-clockwise manner, using an adaptive Gauss-Konrod quadrature ({MATLAB}'s \emph{quadgk} routine) \cite{Shampine2008}. The contour can be conveniently set up using the `waypoints' parameter of the routine.
+The value of both the integrals, i.e., \eqref{eq:cauchyth} and \eqref{eq:numzeros} is an integer which means that whenever a zero is encountered that appears as a pole in the integrand, the resulting integral is incremented by a factor of $2 \pi$ by Caucy's residue theorem. The contour integration in \eqref{eq:cauchyth} and \eqref{eq:numzeros} is computed in a counter-clockwise manner, using an adaptive Gauss-Konrod quadrature ({MATLAB}'s \emph{quadgk} routine) \cite{Shampine2008}. The contour can be conveniently set up using the `waypoints' parameter of the routine.
 %%
 %%
 %%
 %%
 \subsection{Locating the zeros}
 %
-After predicting the number of zeros through \eqref{eq:numzeros} or \eqref{eq:cauchyth}, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
+In this chapter, we use the derivative-free approach from here on. After predicting the number of zeros through \eqref{eq:numzeros}, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
 
 The polynomial $\mathcal P$ can be represented in a Lagrange form:
 %
 \begin{equation}
   \begin{split}
     \mathcal{P}_N(z) ={}& \prod \limits_{k = 1}^N \left(z - z_k \right) \\
-    ={}& z^N + \sigma_1 \, z^{N-1} + \sigma_2 \, z^{N-2} + \dots + \sigma_N.
+    ={}& z^N + \sigma_{N-1} \, z^{N-1} + \dots + \sigma_{1} \, z + \sigma_0.
   \end{split}
   \label{eq:poly}%
 \end{equation}
 %
-To find the coefficients, \sigma_k, we consider a set of integrals that are termed as the \emph{Newton moments},
+To find the coefficients, $\sigma_k$ we first define a symmetric bilinear operator similar to a dot product \cite{Kravanja1999,Gillan2006c},
 %
 \begin{equation}
-  s_k = \frac{1}{2 \pi \j} \oint \limits_{\Gamma} z^k frac{f'(z)}{f(z)} \diff{z}, \quad \text{where} \, k = 0,1,\dots, N
-  \label{eq:s_k}
+  \left \langle \phi, \psi \right \rangle = \frac{1}{2 \pi \j} \oint \limits_{\Gamma} \phi(z) \, \psi(z) \frac{1}{f(z)} \diff{z}
+  \label{eq:blinear}
 \end{equation}
 %
-
-
-
-
-
-
-For orthogonality, we require the inner product,
+where $\phi$ and $\psi$ are polynomials of $z$. Next, we consider a set of integrals that are termed as the \emph{Newton moments},
 %
 \begin{equation}
-  \langle z^k{,} \mathcal{P}_N(z)\rangle = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \mathcal{P}_N(z) \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,...,N-1
-  \label{eq:fop}
+  s_p = \left \langle 1, z^p \right \rangle \frac{1}{2 \pi \j} \oint \limits_{\Gamma} z^p \frac{1}{f(z)} \diff{z}.
+  \label{eq:s_p}
 \end{equation}
 %
-to be zero \cite{Kravanja2000c}. The polynomial approximation of the original function reduces the complexity of the problem as techniques for finding polynomial roots are robust and well-established. Before we proceed, for the sake of convenience in obtaining the required polynomial, we express $\mathcal{P}$ in an alternate summation notation:
-%
-\begin{equation}
-  \mathcal{P}_N(z) = \sum \limits_{k = 0}^N \alpha_k z^k
-  \label{eq:poly_sum}
-\end{equation}
-%
-For a \emph{monic polynomial}, $\alpha_N = 1$, and $\alpha_k$ are the sums of products of zeros, $Z_k$.
-
-Next we look at a sequence of integrals:
-%
-\begin{equation}
-  s_k = \frac{1}{2 \pi j} \oint \limits_{\Gamma} z^k \frac{f'(z)}{f(z)} \dif z, \quad \mathrm{with}\quad k = 0,1,2,...
-  \label{eq:sk}
-\end{equation}
-%
-where the $s_k$'s are the \emph{Newton moments} and related to the unknown coefficients $\alpha_k$'s through the \emph{Newton identities}:
-%
-\begin{equation}
-  \begin{aligned}
-    s_1 + \alpha_1 ={}& 0 \\
-    s_2 + s_1 \alpha_1 + 2 \alpha_2 ={}& 0 \\
-    {\vdots}\\
-    s_N + s_{N-1} \alpha_{1} + ... + s_1 \alpha_{N-1} + N \alpha_N ={}& 0
-    \label{eq:newtid}
-  \end{aligned}
-\end{equation}
-%
-After using the Newton's identities to construct the associated polynomial, we set up an eigenvalue problem in terms of two Hankel matrices, $\mathbf H$ and $\mathbf H^<$ which is derived from the Companion matrix of the polynomial \cite{Gillan2006c}:
+which are then used as elements to construct Hankel matrices of size $N$,
 %
 \begin{equation}
   \mathbf H =
   \begin{bmatrix}
     s_1 & s_2 & \cdots & s_k \\
     s_2 & s_3 & \cdots & s_{k+1} \\
-    s_3 & s_4 & \cdots & s_{k+2} \\
     \vdots & \vdots & \ddots & \vdots \\
     s_k & s_{k+1} & \cdots & s_{2k} \\
   \end{bmatrix}
@@ -468,44 +446,212 @@ and
   \begin{bmatrix}
     s_0 & s_1 & \cdots & s_{k-1} \\
     s_1 & s_2 & \cdots & s_{k} \\
-    s_2 & s_3 & \cdots & s_{k+1} \\
     \vdots & \vdots & \ddots & \vdots \\
     s_{k-1} & s_{k} & \cdots & s_{2k-2} \\
-  \end{bmatrix}
+  \end{bmatrix},
   \label{eq:Hmat<}
 \end{equation}
 %
-The roots of the polynomial $\mathcal P$ are the generalized eigenvalues, $\lambda$ of the matrix pencil:
+in which the secondary diagonal terms are the same.
+
+The polynomial $\mathcal P$ in \eqref{eq:poly} is orthogonalized by enforcing the condition,
 %
 \begin{equation}
-  \left( \mathbf H - \lambda \mathbf H^< \right) \mathbf x = 0
+  \left \langle z^k, \mathcal {P}_N(z) \right \rangle, \quad \text{where} \, k = 0,1,\dots,N-1.
+  \label{eq:orthogonalzie}
+\end{equation}
+%
+Because the operator $\left \langle \cdot, \cdot \right \rangle$ defined in \eqref{eq:blinear} is not a dot product in true sense, that is why the term \emph{formal} is included in the definition of the polynomial \cite{Kravanja1999}.
+%
+
+The polynomial in \eqref{eq:poly} can also be equivalently represented by a \emph{companion} matrix, $A$ as,
+%
+\begin{equation}
+  \mathbf A =
+  \begin{bmatrix}
+    0 & 1 & 0 & \cdots & 0 \\
+    0 & 0 & 1 & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & 0 & \cdots & 1 \\
+    -\sigma_0 & -\sigma_1 & -\sigma_1 & \cdots & \sigma_{N-1} \\
+  \end{bmatrix},
+  \label{eq:A}
+\end{equation}
+%
+and $\mathcal P_n(z)$ can be obtained by setting its characteristic equation \cite{Gentle1998},
+%
+\begin{equation}
+  \det( A - \sigma_k I) = P(z),
+  \label{eq:xticeq}
+\end{equation}
+%
+where the eigenvalues are given by $\sigma_k$ for the eigenvector $z$. The eigenvalue value problem of \eqref{eq:xticeq} can not be solved since the coefficients $\sigma_k$'s, where $k = 0, 1, 2, \dots, N-1 $, are not known yet. However, we can express $\sigma_k$'s in terms of the \emph{Newton moments}, $s_k$'s through the \emph{Newton identities}:
+%
+\begin{equation}
+  \begin{aligned}
+    & s_1 + \sigma_1 = 0 \\
+    &  s_2 + s_1 \sigma_1 + 2 \sigma_2 = 0 \\
+    &  {\vdots}\\
+    &  s_N + s_{N-1} \sigma_{1} + ... + s_1 \sigma_{N-1} + s_0 \sigma_N = 0.
+    \label{eq:newtid}
+  \end{aligned}
+\end{equation}
+%
+where we note that $s_0 = N$. We therefore, construct an equivalent eignevalue problem using \eqref{eq:Hmat}, \eqref{eq:Hmat<} and \eqref{eq:newtid} \cite{Gillan2006c},
+%
+\begin{equation}
+  \left( \mathbf H - \lambda_k \mathbf H^< \right) \mathbf z = 0
   \label{eq:evp}
 \end{equation}
 %
-where the column vector $\mathbf{x}$ is the eigenvector.
-%
+where the column vector $\mathbf{z}$ is an eigenvector and $\lambda_k$'s are the eigenvalues of the matrix pencil $(\mathbf H - \mathbf H^< )$, which correspond to the roots of $\mathcal P_n(z)$. In {MATLAB}, the routine \emph{eig} is used to solve \eqref{eq:evp}.
+%%
+%%
+%%
+%%
 \subsection{Refining the roots}
 %
-Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}. For problems pertinents to multilayer structures, a safe choice of $M$ is $3$.
-
-The accuracy of the roots obtained from the eigenvalues,$\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent inintial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Halley's} method having cubic convergence and the iteration formula:
+% Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}.
+The accuracy of the roots obtained from the eigenvalues, $\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent inintial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Newton} method \cite{press2007numerical} having quadratic convergence and the iteration formula:
 %
 \begin{equation}
-  x_{n+1} = x_n - \frac {2 f(x_n) f'(x_n)} {2 {[f'(x_n)]}^2 - f(x_n) f''(x_n)}
-  \label{eq:halley}
+  x_{n+1} = x_n - \frac {f(x_n)}{f'(x_n)}
+  \label{eq:newton}
 \end{equation}
 %
-with $f'(x)$ and $f''(x)$, the first and second order derivatives approximated by finite differences. In general the roots, $z_k$'s lie in the complex plane. The iteration \eqref{eq:halley} needs to be performed on both the real and imaginary parts simultaneously.
+with $f'(x)$ is the first order derivative approximated by a finite difference formula \eqref{eq:FD}. In general, the roots $z_k$'s are complex, therefore, the iteration \eqref{eq:newton} needs to be performed on both the real and imaginary parts simultaneously.
+%%
+%%
+%%
+%%
+\subsection{Avoiding singularities}
+%
+As mentioned earlier, the argument principle method requires the function to be analytic without any singularities. In this chapter, we explicitly deal with the dispersion relation \eqref{eq:dispersion} which in fact is the denominator of the transmission line Green function. Therefore, only branch point singularities occur due to the presence of multivalued square roots in the definition of the propagation constant, $k_{zi}$, where $i = 1,\dots, N$ \eqref{eq:k_z} in \eqref{eq:dispersion}. The branch points exist provided the top and bottom layers are unbounded. The dispersion relation shows an even dependence on $k_{zi}$ due to the layers that are bounded, hence they do not  contribute any branch points \cite[Section~5.3a]{felsen1994}. In the worst case where the top and bottom layers are open and different from each other, two branch points exist in the complex plane that must be either removed or avoided in order to make the function analytic in the search region. Additionally, branch cuts emerge out of the branch points and there must not be any intersection with the contour of the search region. In a multilayer structure, the presence of branch points yield a four-sheeted Riemann surface illustrated in Fig. \....{riemman surface}
 
-\subsection{Branch Cuts}
+In order to remove the branch point singularities, the complex z-plane is generally mapped to another plane $\zeta$, by a transformation that unfolds the Riemann surface. For example, a trigonometric transformation such as \cite{Michalski2006,Polimeridis_2007},
+%
+\begin{equation}
+  \begin{split}
+    z &\mapsto \zeta \\
+    \zeta &= \cos (z),
+  \end{split}
+  \label{eq:mapping}%
+\end{equation}
+%
+removes the branch point due to the multivalued propagation constant, $k_{zi}$, where $i = 1,N$ and makes the dispersion relation \eqref{eq:dispersion} analytic in the $\zeta$-plane.
+%
+%
 
-The TLGF for a multilayer possesses two types singularities in the complex plane. We are primarily interested in finding the pole singularities that correspond to guided modes. In addition, the branch point singularities correspond to the radiation modes. Branch points arise due to the propagation constant, $k_{zi}$ of the layers having semi-infinite dimensions. The dispersion relation shows an even dependence on $k_{zi}$ of the layers that have finite width, hence there is no corresponding branch point.   \cite[Section~5.3a]{felsen1994}. In order to satisfy Sommerfeld radiation condition that all fields must decay to zero at infinity, the proper sheet of the Riemann surface of the square-root function needs to be selected. This is accomplished by enforcing that the imaginary part of $k_{zi}$ that contributes a branch point, is negative everywhere.
+In this chapter, our goal is to find the surface waves from the dispersion relation. We only seek the \emph{proper modes}, which are the roots of \eqref{eq:dispersion} that lie to the right of the branch point corresponding to $\max(k_{z1},k_{zN})$. In order to satisfy the Sommerfeld radiation condition which requires all fields to decay to zero at infinity, the proper sheet of the Riemann surface of the square-root function needs to be selected. This is accomplished by enforcing that the imaginary part of $k_{zi}$ that contributes a branch point, is negative everywhere.
 %
 \begin{equation}
   \Im (k_{zi}) < 0
   \label{eq:proper}
 \end{equation}
 %
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+\section{Results}
+%
+\subsection{MIM waveguide}
+%
+%
+We first compute the modes of a metal-insulator-metal (MIM) waveguide described in \cite{Kocabas2009}. An air-filled region of thickness $d = \lambda/4$, where $\lambda = \SI{1550}{\nm}$ is sandwiched between two metal layers having permittivity $\E_m$. We first consider a lossless case in which $\E_m$ has a value of $-143.4967$, because of which the complex plane is essentially free from any branch-point singularities. For a TM case the dispersion relation is written as:
+%
+\begin{equation}
+  D =  1 - \left(\frac{Z_m - Z_2}{Z_m + Z_2}\right)^2 \x \e^{(-2\j  k_{z2} d)},
+  \label{eq:mim}
+\end{equation}
+%
+where $Z_m = k_{zm}/(\O \E_m \E_0)$ and $Z_2 = k_{z2}/{\O \E_0}$ are the modal impedances of the metal and air-filled layers respectively. The TM modes of \eqref{eq:mim} normalized to the free-space propagation constant are shown in Fig. \ref{fig:mim_lossless}. The values of the roots obtained are then compared with the solutions discussed in \cite{Kocabas2009}, in which only the even modes were computed. However, as listed in Table. \ref{tab:kocabas_lossless}, we compute first nine even and mode modes.
+%
+\begin{table}[h!]
+\begin{center}
+ \begin{tabular}{||c |c |c||}
+ \hline
+ Mode & This method \eqref{eq:mim} & Kocaba{\c{s}} et. al. \cite{Kocabas2009} \\ [0.5ex]
+ \hline\hline
+ $\text{TM}_0$ & \num{12.020580892546883 - j 0.004431747015808} & \num{12.02521374394057} \\
+ $\text{TM}_1$ & \num{11.853246184016845 - j 0.008865820349836} & \num{} \\
+ $\text{TM}_2$ & \num{11.336574483861385 - j 0.008867713656375} & \num{11.34454132059978} \\
+ $\text{TM}_3$ & \num{10.418519825598594 - j 0.008867285000744} & \num{} \\
+ $\text{TM}_4$ & \num{8.976849574973341 - j 0.008867077386298} & \num{8.98087712606770} \\
+ $\text{TM}_5$ & \num{6.680787568724169 - j 0.008866971189904} & \num{} \\
+ $\text{TM}_6$ & \num{0.832396034296521 - j 0.008866910825003} & \num{0.7136870643968289} \\
+ $\text{TM}_7$ & \num{0.000000000000000 - j 7.149095944697479} & \num{} \\
+ $\text{TM}_8$ & \num{0.000000000000000 - j 10.534126133587652} & \num{0.00887301858491 - j 10.55951095636977} \\
+ \hline
+ \end{tabular}
+  \end{center}
+ \caption{TM modes of a lossless MIM waveguide}
+ \label{tab:kocabas_lossless}
+\end{table}
+%
+
+Next, we consider the lossy case where the permittivity of metal layers is $\E_m = \num{-143.4967 - j 9.5173}$ and the compared results are shown in Fig. \ref{fig:mim_lossless} and listed in Table. \ref{tab:kocabas_lossy}.
+%
+\begin{table}[h!]
+\begin{center}
+ \begin{tabular}{||c |c |c||}
+ \hline
+ Mode & This method \eqref{eq:mim} & Kocaba{\c{s}} et. al. \cite{Kocabas2009} \\ [0.5ex]
+ \hline\hline
+ $\text{TM}_0$ & \num{12.027529836826002 - j 0.400073290979892} & \num{12.03170325421919 - j 0.39535643587620} \\
+ $\text{TM}_1$ & \num{11.860919992851576 - j 0.410048132657156} & \num{} \\
+ $\text{TM}_2$ & \num{11.345243844591128 - 0.428274354267573i} & \num{11.35226216175467 - i0.41892103144838} \\
+ $\text{TM}_3$ & \num{10.429478086718880 - 0.465101072534315i} & \num{} \\
+ $\text{TM}_4$ & \num{8.993535082138010 - 0.537950132567878i} & \num{8.99644754875734 - i0.52888321538511} \\
+ $\text{TM}_5$ & \num{6.719731462664607 - 0.716992164959356i} & \num{} \\
+ $\text{TM}_6$ & \num{2.266946388295501 - 2.107982239061171i} & \num{2.247924588647662 - i2.124681976891650} \\
+ $\text{TM}_7$ & \num{0.661173227981735 - 7.188483710355326i} & \num{} \\
+ $\text{TM}_8$ & \num{0.450360863091437 - 10.543804519180030i} & \num{0.45907739584359 - i 10.56851955358188} \\
+ \hline
+ \end{tabular}
+  \end{center}
+ \caption{TM modes of a lossy MIM waveguide}
+ \label{tab:kocabas_lossy}
+\end{table}
+%
+\begin{figure}[]
+  \subfloat[]{\includegraphics[height=2.5in]{kocabas_lossless.tikz}
+      \label{fig:mim_lossless}}
+      \hfil
+      \subfloat[]{\includegraphics[height=2.5in]{kocabas_lossy.tikz}
+          \label{fig:mim_lossy}}
+  \caption{TM modes of a MIM waveguide (a) Lossless case, $(\E_m = \num{-143.4967})$ (b) Lossy case, $(\E_m = \num{-143.4967 - j 9.5173})$}
+  \label{fig:mim}
+\end{figure}
+%
+\subsection{Embedded conductive sheets}
+%
+%
+Here we plot the dispersion curves of a 2DEG which is considered as a thin sheet embedded in a semiconductor heterostructure. We look at three types of structures,
+%
+\begin{enumerate}
+  \item Gated 2DEG
+  \item Ungated 2DEG
+  \item Backgated 2DEG,
+\end{enumerate}
+%
+classified based on the presence of a perfectly conducting covering layer either at the top or bottom. The three types are shown in Fig. \ref{fig:2deg_structure_types}.
+%
+\begin{figure}[t!]
+  \subfloat[]{\def\svgwidth{.3\linewidth}
+  \input{figures/gated.pdf_tex}
+  \label{fig:gated}} \hfil
+  \subfloat[]{\def\svgwidth{.3\linewidth}
+  \input{figures/ungated.pdf_tex}
+  \label{fig:ungated}} \hfil
+  \subfloat[]{\def\svgwidth{.3\linewidth}
+  \input{figures/backgated.pdf_tex}
+  \label{fig:backgated}} \hfil
+  \caption{2DEG embedded in a semiconductor heterostructure at $z=0$ (a) Gated  (b) Ungated (c) Backgated}
+  \label{fig:2deg_structure_types}
+\end{figure}
+%
+
+We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostructure with Al mole-fraction of $x = \SI{.2}{}$. With respect to Fig. \ref{fig:2deg_structure_types}, Layer 1 is composed of GaN which is the substrate, considered open in the gated and ungated cases, while it has a thickness of $d = \SI{50}{\nm}$ in the backgated case. AlGaN forms the layer marked 2, and in all the three cases, a thickness, $h = \SI{20}{\nm}$ is assumed. The permittivity of both the layers is $\E_r = 9.5$ owing to the small aluminum mole fraction \cite{}. The electron concentration of the 2DEG region is $N_s = \SI{5e13}{\cm^{-2}}$ and scattering time $\tau$ of \SI{114}{\ps} corresponding to a temperature of \SI{3}{\kelvin} is assumed. The surface conductivity is then computed using \eqref{eq:sigma_s}.    
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%

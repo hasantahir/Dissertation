@@ -1979,4 +1979,14 @@
   publisher     = {American Physical Society ({APS})},
 }
 
+@InCollection{Nevels2016,
+  author    = {Robert D. Nevels and Hasan Tahir Abbas},
+  title     = {Optical Nanoantennas},
+  booktitle = {Handbook of Antenna Technologies},
+  publisher = {Springer Singapore},
+  year      = {2016},
+  pages     = {527--566},
+  doi       = {10.1007/978-981-4560-44-3_43},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

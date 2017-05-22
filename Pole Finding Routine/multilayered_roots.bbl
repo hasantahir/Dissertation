@@ -23,7 +23,7 @@
 
 \bibitem{michalski1997multilayered}
 K.~Michalski and J.~Mosig, ``Multilayered media {G}reen's functions in integral
-  equation formulations,'' \emph{Ieee Transactions On Antennas And
+  equation formulations,'' \emph{{IEEE} Transactions on Antennas and
   Propagation}, vol.~45, no.~3, pp. 508--519, Mar. 1997.
 
 \bibitem{michalski2005}
@@ -43,48 +43,87 @@ D.~G. Fang, \emph{Antenna Theory and Microstrip Antennas}.\hskip 1em plus 0.5em
 
 \bibitem{itoh1980}
 T.~Itoh, ``Spectral domain immitance approach for dispersion characteristics of
-  generalized printed transmission lines,'' \emph{{IEEE} {T}ransactions On
-  {M}icrowave {T}heory And {T}echniques}, vol.~28, no.~7, pp. 733--736, Jul.
-  1980.
+  generalized printed transmission lines,'' \emph{{IEEE} Transactions on
+  Microwave Theory and Techniques}, vol.~28, no.~7, pp. 733--736, Jul. 1980.
 
 \bibitem{kastner1988}
 R.~Kastner, E.~Heyman, and A.~Sabban, ``Spectral domain iterative analysis of
   single- and double-layered microstrip antennas using the conjugate gradient
-  algorithm,'' \emph{{IEEE} {T}ransactions On {A}ntennas And {P}ropagation},
-  vol.~36, no.~9, pp. 1204--1212, 1988.
-
-\bibitem{Krantz1999}
-S.~G. Krantz, \emph{The Argument Principle}.\hskip 1em plus 0.5em minus
-  0.4em\relax Boston, MA: Birkh{\"a}user Boston, 1999, pp. 69--78.
+  algorithm,'' \emph{{IEEE} Transactions on Antennas and Propagation}, vol.~36,
+  no.~9, pp. 1204--1212, 1988.
 
 \bibitem{Delves1967c}
 L.~M. Delves and J.~N. Lyness, ``{A numerical method for locating the zeros of
-  an analytic function},'' \emph{Mathematics Of Computation}, vol.~21, no. 100,
+  an analytic function},'' \emph{Mathematics of Computation}, vol.~21, no. 100,
   pp. 543--543, 1967.
-
-\bibitem{press2007numerical}
-W.~H. Press, \emph{Numerical Recipes}, 3rd~ed.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: Cambridge University Press, 2007.
 
 \bibitem{Carpentier1982c}
 M.~Carpentier and A.~D. Santos, ``{Solution of equations involving analytic
-  functions},'' \emph{Journal Of Computational Physics}, vol.~45, no.~2, pp.
+  functions},'' \emph{Journal of Computational Physics}, vol.~45, no.~2, pp.
   210--220, Feb. 1982.
+
+\bibitem{Botten1983}
+L.~Botten, M.~Craig, and R.~McPhedran, ``Complex zeros of analytic functions,''
+  \emph{Computer Physics Communications}, vol.~29, no.~3, pp. 245--259, May
+  1983.
+
+\bibitem{Kravanja2000c}
+P.~Kravanja, M.~V. Barel, O.~Ragos, M.~Vrahatis, and F.~Zafiropoulos, ``{ZEAL}:
+  A mathematical software package for computing zeros of analytic functions,''
+  \emph{Computer Physics Communications}, vol. 124, no. 2-3, pp. 212--232, feb
+  2000.
+
+\bibitem{Dellnitz2002c}
+M.~Dellnitz, O.~Schütze, and Q.~Zheng, ``{Locating all the zeros of an
+  analytic function in one complex variable},'' \emph{Journal of Computational
+  and Applied Mathematics}, vol. 138, no.~2, pp. 325--333, Jan. 2002.
 
 \bibitem{Gillan2006c}
 C.~Gillan, A.~Schuchinsky, and I.~Spence, ``{Computing zeros of analytic
   functions in the complex plane without using derivatives},'' \emph{Computer
   Physics Communications}, vol. 175, no.~4, pp. 304--313, Aug. 2006.
 
+\bibitem{Chen2017}
+P.~Y. Chen and Y.~Sivan, ``{Robust Location of Optical Fiber Modes via the
+  Argument Principle Method},'' \emph{Computer Physics Communications}, vol.
+  214, no.~2, pp. 105--116, May 2017.
+
+\bibitem{Krantz1999}
+S.~G. Krantz, \emph{The Argument Principle}.\hskip 1em plus 0.5em minus
+  0.4em\relax Boston, MA: Birkhäuser Boston, 1999, pp. 69--78.
+
+\bibitem{press2007numerical}
+W.~H. Press, \emph{Numerical Recipes}, 3rd~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: Cambridge University Press, 2007.
+
 \bibitem{Shampine2008}
-L.~Shampine, ``Vectorized adaptive quadrature in {MATLAB},'' \emph{Journal Of
-  Computational And Applied Mathematics}, vol. 211, no.~2, pp. 131--140, Feb.
+L.~Shampine, ``Vectorized adaptive quadrature in {MATLAB},'' \emph{Journal of
+  Computational and Applied Mathematics}, vol. 211, no.~2, pp. 131--140, Feb.
   2008.
 
-\bibitem{Kravanja2000c}
-P.~Kravanja, M.~{Van Barel}, O.~Ragos, M.~N. Vrahatis, and F.~A. Zafiropoulos,
-  ``{ZEAL: a mathematical software package for computing zeros of analytic
-  functions},'' \emph{Computer Physics Communications}, vol. 124, no. 2-3, pp.
-  212--232, 2000.
+\bibitem{Kravanja1999}
+P.~Kravanja, T.~Sakurai, and M.~V. Barel, ``On locating clusters of zeros of
+  analytic functions,'' \emph{Bit Numerical Mathematics}, vol.~39, no.~4, pp.
+  646--682, 1999.
+
+\bibitem{Gentle1998}
+J.~E. Gentle, ``Computation of eigenvectors and eigenvalues and the singular
+  value decomposition,'' in \emph{Statistics and Computing}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer New York, 1998, pp. 123--135.
+
+\bibitem{Michalski2006}
+K.~A. Michalski, ``{Automatic, robust and efficient pole location for planar,
+  uniaxial multilayers},'' 2006.
+
+\bibitem{Polimeridis_2007}
+A.~G. Polimeridis, T.~V. Yioultsis, and T.~D. Tsiboukis, ``{An efficient pole
+  extraction technique for the computation of Green's functions in stratified
+  media using a sine transformation},'' \emph{{IEEE} Transactions on Antennas
+  and Propagation}, vol.~55, no.~1, pp. 227--229, Jan. 2007.
+
+\bibitem{Kocabas2009}
+{\c{S}}.~E. Kocaba{\c{s}}, G.~Veronis, D.~A.~B. Miller, and S.~Fan, ``Modal
+  analysis and coupling in metal-insulator-metal waveguides,'' \emph{Physical
+  Review B}, vol.~79, no.~3, Jan. 2009.
 
 \end{thebibliography}
