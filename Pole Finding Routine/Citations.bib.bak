@@ -19,8 +19,8 @@
 
 @Article{Sommerfeld,
   author    = {A. Sommerfeld},
-  title     = {Über die Ausbreitung der Wellen in der drahtlosen Telegraphie},
-  journal   = {Annalen der Physik},
+  title     = {{{\"{U}}}ber Die Ausbreitung Der Wellen in Der Drahtlosen Telegraphie},
+  journal   = {Annalen Der Physik},
   year      = {1909},
   volume    = {333},
   number    = {4},
@@ -550,7 +550,7 @@
 
 @Article{Kocabas2009,
   author    = {{\c{S}}ükrü Ekin Kocaba{\c{s}} and Georgios Veronis and David A. B. Miller and Shanhui Fan},
-  title     = {Modal analysis and coupling in metal-insulator-metal waveguides},
+  title     = {Modal Analysis and Coupling in Metal-insulator-metal Waveguides},
   journal   = {Physical Review B},
   year      = {2009},
   volume    = {79},
@@ -588,6 +588,63 @@
   doi          = {10.1063/1.4769749},
   journaltitle = {Journal of Applied Physics},
   publisher    = {{AIP} Publishing},
+}
+
+@Article{Muravjov2010,
+  author       = {A. V. Muravjov and D. B. Veksler and V. V. Popov and O. V. Polischuk and N. Pala and X. Hu and R. Gaska and H. Saxena and R. E. Peale and M. S. Shur},
+  title        = {Temperature Dependence of Plasmonic Terahertz Absorption in Grating-gate Gallium-nitride Transistor Structures},
+  journal      = {Applied Physics Letters},
+  year         = {2010},
+  volume       = {96},
+  number       = {4},
+  pages        = {042105},
+  month        = jan,
+  issn         = {00036951},
+  abstract     = {Strong plasmon resonances have been observed in the terahertz transmission spectra (1–5 THz) of large-area slit-grating-gate AlGaN/GaN-based high-electron-mobility transistor(HEMT) structures at temperatures from 10 to 170 K. The resonance frequencies correspond to the excitation of plasmons with wave vectors equal to the reciprocal lattice vectors of the metal grating, which serves both as a gate electrode for the H. E. M. T. and a coupler between plasmons and incident terahertz radiation. Wide tunability of the resonances by the applied gate voltage demonstrates potential of these devices for terahertz applications.},
+  date         = {2010-01},
+  doi          = {10.1063/1.3292019},
+  file         = {:D\:\\Users\\Mendeley Desktop\\GaN structure.pdf:pdf},
+  isbn         = {0003-6951},
+  journaltitle = {Applied Physics Letters},
+  publisher    = {{AIP} Publishing},
+}
+
+@Article{Sydoruk2015,
+  author    = {O. Sydoruk and J. B. Wu and A. Mayorov and C. D. Wood and D. K. Mistry and J. E. Cunningham},
+  title     = {Terahertz Plasmons in Coupled Two-dimensional Semiconductor Resonators},
+  journal   = {Physical Review B},
+  year      = {2015},
+  volume    = {92},
+  number    = {19},
+  month     = nov,
+  doi       = {10.1103/physrevb.92.195304},
+  publisher = {American Physical Society ({APS})},
+}
+
+@Article{Ando1982,
+  author    = {Tsuneya Ando and Alan B. Fowler and Frank Stern},
+  title     = {Electronic Properties of Two-dimensional Systems},
+  journal   = {Reviews of Modern Physics},
+  year      = {1982},
+  volume    = {54},
+  number    = {2},
+  pages     = {437--672},
+  month     = apr,
+  doi       = {10.1103/revmodphys.54.437},
+  publisher = {American Physical Society ({APS})},
+}
+
+@Article{Yoon2014,
+  author    = {H. Yoon and K. Y. M. Yeung and P. Kim and D. Ham},
+  title     = {Plasmonics with two-dimensional conductors},
+  journal   = {Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+  year      = {2014},
+  volume    = {372},
+  number    = {2012},
+  pages     = {20130104--20130104},
+  month     = feb,
+  doi       = {10.1098/rsta.2013.0104},
+  publisher = {The Royal Society},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
