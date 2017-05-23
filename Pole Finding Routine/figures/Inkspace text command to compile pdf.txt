@@ -1,19 +1,9 @@
-inkscape --file=2deg_bandgap.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_bandgap.pdf
-inkscape --file=scale.svg --export-area-drawing --without-gui --export-latex --export-pdf=scale.pdf
-inkscape --file=curto_resonator.svg --export-area-drawing --without-gui --export-latex --export-pdf=curto_resonator.pdf
-inkscape --file=curto.svg --export-area-drawing --without-gui --export-latex --export-pdf=curto.pdf
-inkscape --file=flute_2deg.svg --export-area-drawing --without-gui --export-latex --export-pdf=flute_2deg.pdf
-inkscape --file=tm_plate.svg --export-area-drawing --without-gui --export-latex --export-pdf=tm_plate.pdf
-inkscape --file=seniors.svg --export-area-drawing --without-gui --export-latex --export-pdf=seniors.pdf
-inkscape --file=equivalence.svg --export-area-drawing --without-gui --export-latex --export-pdf=equivalence.pdf
-inkscape --file=2deg_3d.svg --export-area-drawing --without-gui --export-latex --export-pdf=2deg_3d.pdf
-inkscape --file=fulbright.svg --export-area-drawing --without-gui --export-latex --export-pdf=fulbright.pdf
-inkscape --file=mstruc_gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=mstruc_gated.pdf
-inkscape --file=psim.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim.pdf
-inkscape --file=psim_a.svg --export-area-drawing --without-gui --export-latex --export-pdf=psim_b.pdf
-inkscape --file=energy_level_diagram.svg --export-area-drawing --without-gui --export-latex --export-pdf=energy_level_diagram.pdf
-inkscape --file=e_diag.svg --export-area-drawing --without-gui --export-latex --export-pdf=e_diag.pdf
 inkscape --file=multilayers.svg --export-area-drawing --without-gui --export-latex --export-pdf=multilayers.pdf
+inkscape --file=zplane.svg --export-area-drawing --without-gui --export-latex --export-pdf=zplane.pdf
+inkscape --file=gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=gated.pdf
+inkscape --file=ungated.svg --export-area-drawing --without-gui --export-latex --export-pdf=ungated.pdf
+inkscape --file=backgated.svg --export-area-drawing --without-gui --export-latex --export-pdf=backgated.pdf
+inkscape --file=xsystem.svg --export-area-drawing --without-gui --export-latex --export-pdf=xsystem.pdf
 
 Tip to avoid multipage pdf generation headache:
 Ensure text is always top of eerything

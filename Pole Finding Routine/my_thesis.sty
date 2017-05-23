@@ -17,7 +17,7 @@
 \usepackage{physics} % For using the oridnary derivative nomenclature
 \usepackage{gensymb} % Insert degree symbol
 \usepackage{siunitx} % All the SI unit nomenclature
-  \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=places,round-precision=4}
+  \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=figures,round-precision=4}
 % \usepackage{systeme} % For system of equations
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
@@ -30,6 +30,7 @@
 \setstretch{1.5}
 \usepackage{etoolbox}
 \usepackage{multicol} % For side-by-side equatiosn
+\usepackage{microtype} % Enfore borders
 %% Nicely set the spacing between equations and text
 \AtBeginDocument{%
 \setlength\abovedisplayskip{4pt}
@@ -57,6 +58,7 @@
 \usepackage{graphicx}
 \usepackage{pgfplots}
 \usepackage{standalone}
+\usepackage{caption}
 \usepackage{tikz}
 \tikzset{
   font={\fontsize{12pt}{12}\selectfont}}

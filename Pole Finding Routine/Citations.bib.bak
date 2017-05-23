@@ -16,9 +16,18 @@
 }
 
 % Sommerfeld 1909 paper
-@article {Sommerfeld,
-author = {Sommerfeld, A.},
-title = {\{"U}ber die Ausbreitung der Wellen in der drahtlosen Telegraphie}
+
+@Article{Sommerfeld,
+  author    = {A. Sommerfeld},
+  title     = {Über die Ausbreitung der Wellen in der drahtlosen Telegraphie},
+  journal   = {Annalen der Physik},
+  year      = {1909},
+  volume    = {333},
+  number    = {4},
+  pages     = {665--736},
+  doi       = {10.1002/andp.19093330402},
+  publisher = {Wiley-Blackwell},
+}
 % Michalski Paper with Greens function Dyadic representation
 
 @Article{michalski1985mixed,
@@ -549,6 +558,36 @@ title = {\{"U}ber die Ausbreitung der Wellen in der drahtlosen Telegraphie}
   month     = jan,
   doi       = {10.1103/physrevb.79.035120},
   publisher = {American Physical Society ({APS})},
+}
+
+@Article{Burke2000,
+  author       = {P. J. Burke and I. B. Spielman and J. P. Eisenstein and L. N. Pfeiffer and K. W. West},
+  title        = {High Frequency Conductivity of the High-mobility Two-dimensional Electron Gas},
+  journal      = {Applied Physics Letters},
+  year         = {2000},
+  volume       = {76},
+  number       = {6},
+  pages        = {745--747},
+  month        = feb,
+  date         = {2000-02},
+  doi          = {10.1063/1.125881},
+  journaltitle = {Applied Physics Letters},
+  publisher    = {{AIP} Publishing},
+}
+
+@Article{Gomez-Diaz2012,
+  author       = {J. S. G{\'{o}}mez-d{\'{\i}}az and J. Perruisseau-carrier},
+  title        = {Propagation of Hybrid Transverse Magnetic-transverse Electric Plasmons on Magnetically Biased Graphene Sheets},
+  journal      = {Journal of Applied Physics},
+  year         = {2012},
+  volume       = {112},
+  number       = {12},
+  pages        = {124906},
+  month        = dec,
+  date         = {2012-12},
+  doi          = {10.1063/1.4769749},
+  journaltitle = {Journal of Applied Physics},
+  publisher    = {{AIP} Publishing},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

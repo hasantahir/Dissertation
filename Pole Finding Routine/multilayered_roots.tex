@@ -9,7 +9,7 @@
 %
 
 \begin{document}
-\title{\textsc{Surface waves extraction using transmission line Green functions in a multilayer environment with a 2D sheet}}
+\title{\textsc{Surface waves extraction of a conductive sheet embedded in a multilayer environment}}
 
 \date{\footnote{Last Modified: \currenttime, \today.}}
 
@@ -22,9 +22,11 @@
 
 % \section{Abstract}
 
-A semiconductor based multilayer structure in which an infinitesimally thin sheet representing a highly conductive two-dimensional electron gas (2DEG) is considered
+In this chapter, we compute the dispersion diagrams of an infinitesimally thin conductive that lies embedded in a stack of semiconductors. The possibility of wave propagation along the sheet is investigated by searching for poles of an equivalent transmission line Green function determined by the multilayer structure. A numerical root-finding routine is presented that permits complex-valued solutions and avoids singularities in the complex plane.
 
 \section{Theory}
+
+
 \subsection{Derivation of Transmission line Green Function}
 
 We follow the well-established approach of field computation for planar multilayered media \cite{michalski1997multilayered, michalski2005}, in which an equivalent transmission line network is set up for the structure. As shown in Fig. \ref{fig:TL_equivalent}a, it is assumed that the structure is unbounded in the lateral direction. The electric and magnetic fields are given by the Maxwell's equations,
@@ -38,7 +40,7 @@ We follow the well-established approach of field computation for planar multilay
   \label{eq:MaxE}%
 \end{subequations}
 %
-For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $\dv{}{z}$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994}. By taking the Fourier transform,
+For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $d/dz$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994}. By taking the Fourier transform,
 %
 \begin{equation}
     \mathcal{F}[f(\v{r})] \equiv \ti{f}(\v{k_{\p}},z) = \infint \infint
@@ -46,16 +48,16 @@ For boundary-value problems displaying symmetry along the $z$ direction, it is d
     \label{eq:Fourier}
 \end{equation}
 %
-the field computation is simplified by switching to the spectral frequency domain $\v {k_{\p}}$, which reduces the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + \v{\^{z}}\dv{}{z}$. In \eqref{eq:Fourier}, the cylindrical coordinates are expressed as,
+the field computation is simplified by switching to the spectral frequency domain $\v {k_{\p}}$, which reduces the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + d/dz\, \v{\^{z}}$. In \eqref{eq:Fourier}, the cylindrical coordinates are expressed as,
 %
 \begin{equation}
   \v{\p} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
   \v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
 \end{equation}
 %
-and the notation $~$ above the terms indicates the Fourier transform with respect to the transverse coordinates and from here on, will be used to denote spectral quantities.
+and the notation $\sim$ above the terms indicates the Fourier transform with respect to the transverse coordinates and from here on, will be used to denote the spectral domain quantities.
 
-As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates since, as we shall shortly, the longitudinal part of the field can be completely expressed in terms of the transverse component. Appling the Fourier transform \eqref{eq:Fourier} on the Maxwell's equations \eqref{eq:MaxE}, we obtain:
+As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates since, as we shall shortly see, the longitudinal part of the field can be completely expressed in terms of the transverse component. Appling the Fourier transform \eqref{eq:Fourier} on the Maxwell's equations \eqref{eq:MaxE}, we obtain:
 %
 \begin{subequations}
   \begin{align}
@@ -106,7 +108,7 @@ which can be written in the scalar form,
   \label{eq:sLH}
 \end{equation}
 %
-Now taking the vector cross product with unit vector $\v{\^{z}}$ on both sides of \eqref{eq:FT_TH}, the transverse electric field component is expressed as:
+Now taking the vector product with unit vector $\v{\^{z}}$ on both sides of \eqref{eq:FT_TH}, the transverse electric field component is expressed as:
 %
 \begin{equation}
   \begin{split}
@@ -117,9 +119,9 @@ Now taking the vector cross product with unit vector $\v{\^{z}}$ on both sides o
   \label{eq:dFT_ET}%
 \end{equation}
 %
-where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} = \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been applied.
+where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} \equiv \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been applied.
 
-Following a similar procedure starting from (\ref{eq:FT_H}), we obtain the transverse magnetic field, and scalar longitudinal component of the electric field:
+Following a similar procedure starting from (\ref{eq:FT_H}), we obtain the transverse component of magnetic field, along with the scalar longitudinal component of electric field:
 %
 \begin{equation}
   \begin{split}
@@ -139,7 +141,7 @@ and,
   \label{eq:sLE}
 \end{equation}
 %
-Substituting \eqref{eq:sLE} in \eqref{eq:dFT_ET} gives us the transverse electric field component,
+By substituting \eqref{eq:sLE} in \eqref{eq:dFT_ET}, we get the transverse component of electric field,
 %
 \begin{equation}
   \dv{\v{\ti{E}_t}}{z} =
@@ -147,7 +149,7 @@ Substituting \eqref{eq:sLE} in \eqref{eq:dFT_ET} gives us the transverse electri
   \label{eq:Et}
 \end{equation}
 %
-Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, we obtain the transverse magnetic field,
+Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, the transverse component of magnetic field,
 %
 \begin{equation}
   \dv{\v{\ti{H}_t}}{z} =
@@ -158,7 +160,7 @@ Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, we obtain the transverse m
 %
 where $k = \O \sqrt{\u \E}$ in \eqref{eq:Et} and \eqref{eq:Ht} is the medium wavenumber.
 
-The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k_{\p}}, \v{\^z} \x \v{k_{\p}}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent such that the TE and TM mode analysis can be performed separately. The coordinate transformation can be expressed as:
+The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k_{\p}}, \v{\^z} \x \v{k_{\p}}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent, which allows the TE and TM mode analysis to be made separately. The coordinate transformation can be expressed as:
 %
 \begin{equation}
   \begin{bmatrix}
@@ -198,7 +200,8 @@ where $\phi$ is the angle between $\v{k_{\p}}$ and the positive x-axis. A transm
 %
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=.55\textwidth]{figures/xsystem.tikz}
+  \def\svgwidth{.5\linewidth}
+  \input{figures/xsystem.pdf_tex}
   \caption{Coordinate System transformation in the spectral domain}
   \label{fig:SpCS}
 \end{figure}
@@ -283,7 +286,7 @@ Assuming only electric sources existing in space, the corresponding TL sources, 
   \subfloat[]{\centering
   \includegraphics[width=.55\textwidth]{figures/jz.tikz}
   \label{fig:jz_source}} \newline
-  \caption{Electric Source Representation in a transmission line network}
+  \caption{Electric Source representation in a transmission line network}
   \label{fig:J_sources}
 \end{figure}
 %%%
@@ -294,7 +297,7 @@ Assuming only electric sources existing in space, the corresponding TL sources, 
 %
 In modern semiconductor devices such as a field-effect transistor, multiple layers of materials with slightly different dielectric properties and band-gap energies are epitaxially grown over each other. Of particular interest are the group III-V materials in which extra-ordinary electromagnetic interfacial phenomena is observed, mainly due to formation of a two-dimensional electron gas (2DEG) at the interface. To develop an understanding of the unusual properties of what are commonly called semiconductor heterostructures, we construct an equivalent transmission model of the layered structure using the theory discussed in the previous section.
 
-An illustration of a multilayer setup with a heterostructure near the top of the transistor substrate, through which modern devices like the high electron mobility transistor operate, is shown in is shown in Fig. \ref{fig:TL_equivalent}a. Although a number of others layers exist underneath the heterostructure that are essential to the fabrication process in order to strengthen the epitaxial structure, only the top layers are conducive to an electric field. Moreover, since the widths of the layers in the heterostructure are much smaller than the rest of the layers in the substrate stack, we assume that the heterostructure is unbounded from the bottom.
+An illustration of a multilayer setup with a heterostructure near the top of the transistor substrate, through which modern devices like the high electron mobility transistor operate, is shown in Fig. \ref{fig:TL_equivalent}a. Although a number of other material layers lie underneath the heterostructure that are essential to the fabrication process, primarily to strengthen the epitaxial structure, only the top layers are conducive to an electric field. Moreover, since the widths of the layers in the heterostructure are much smaller than the rest of the layers in the substrate stack, we assume that the heterostructure is unbounded from the bottom.
 
 The 2DEG which is only a few atoms wide in thickness, is a highly conductive region with an abundance of free electrons, which can be expresses in terms of a surface conductivity \cite{Burke2000},
 %
@@ -303,9 +306,9 @@ The 2DEG which is only a few atoms wide in thickness, is a highly conductive reg
   \label{eq:sigma_s}
 \end{equation}
 %
-where $N_s$ is the free electron concentration at the interface, $e$ is the electron charge, $m^{\ast}$ is the effective electron mass in the heterostructure, $\tau$ is the scattering time of electrons, and $\O$ is the angular frequency. For a wave propagating along the interface, the electron scattering time which is highly temperature dependent, determines the attenuation factor. At room temperature, the thermal vibrations of electrons result in a very small value of $\tau$ which is of the order of \SI{}{\ps} leading to a high-loss scenario. On the other hand, when the heterostructure is cooled to temperatures close to the boiling point of helium (\SI{4.2}{\kelvin}), thermal vibrations are effectively removed and the losses are consequently minimized.
+where $N_s$ is the free electron concentration at the interface, $e$ is the electron charge, $m^{\ast}$ is the effective electron mass in the heterostructure, $\tau$ is the scattering time of electrons, and $\O$ is the angular frequency. For a wave propagating along the interface, the electron scattering time which is highly temperature dependent, determines the attenuation factor. At room temperature, the thermal vibrations of electrons result in a very small value of $\tau$ which is of the order of femtoseconds (\SI{1e-15}{\s}), leading to a high-loss scenario. On the other hand, when the heterostructure is cooled to temperatures close to the boiling point of helium (\SI[round-precision=2]{4.2}{\kelvin}), thermal vibrations are effectively removed and the losses are consequently minimized.
 
-In a transmission line analogue, a conductive sheet such as a 2DEG is represented by a shunt admittance as shown in Fig. \ref{fig:TL_equivalent}b In a high electron mobility transistor, when a voltage bias is applied across the source and drain terminals, a current starts to flow in the lateral direction in the 2DEG. Such a current source configuration corresponds to Fig. \ref{fig:jx_source}. Hence a TM-mode transmission line with a current source. The presence of a gate terminal above or below the interface allows the electron concentration to be modified with gate voltage control. Therefore, instead of an independent current source in the equivalent transmission line network, a voltage controlled source is used as shown in Fig. \ref{fig:TL_equivalent}.
+In a transmission line analogue, the equivalent representation of a conductive sheet such as a 2DEG is a shunt admittance as shown in Fig. \ref{fig:TL_equivalent}b. In a high electron mobility transistor, when a voltage bias is applied across the source and drain terminals, a current starts to flow laterally, inside the 2DEG. Such a current source, configured horizontally corresponds to Fig. \ref{fig:jx_source}, which translates to a TM-mode transmission line excited by a current source. The presence of a gate terminal above or below the interface allows the electron concentration to be modified by the gate voltage. Therefore, instead of an independent current source in the equivalent transmission line network, a voltage-controlled current source is placed as indicated in Fig. \ref{fig:TL_equivalent}.
 %
 \begin{figure}[t!]
   \centering
@@ -333,19 +336,19 @@ A nontrivial solution of \eqref{eq:dispersion} in terms of the propagation const
 %%%%%%%%%%
 \section{Surface waves extraction technique}
 %
-We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem such as the one shown in Fig. \ref{fig:TL_equivalent}a, $f$ represents the dispersion relation \eqref{eq:dispersion} obtained from the characteristic equation of a Transmission Line Green function (TLGF), and $k_{\p}$ is replaced by $z$ for notational simplicity. Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$'s correspond to the surface wave modes as well as the poles of the TLGF.
+We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem such as the one shown in Fig. \ref{fig:TL_equivalent}a, $f$ represents the dispersion relation \eqref{eq:dispersion} which, in fact is the denominator of the  transmission line Green function (TLGF). From hereon, $k_{\p}$ is replaced by $z$ for notational simplicity. Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$'s can be termed as the surface wave modes of the multilayer or synonymously, poles of the TLGF.
 %
 \begin{equation}
   f(k_{\p}) = 0
   \label{eq:def}
 \end{equation}
 %
-Although the problem may at first appear to be a relatively simple root-search in which readily available and popular iterative algorithms like the Newton or Halley method can be applied, complication arises due to presence of complex-valued roots. Furthermore, the convergence of the aforementioned methods is highly subject to an initial guess that must lie close to the actual root. In Fig. \ref{fig:basins}, basins of attraction are shown for Newton's and Halley's methods which are two of the most popular iterative root finding methods. The actuals roots of a polynmial, $z^{10}-1$ are depicted by circle marks. The regions are color coded for each root and large area of a particular solid color means that if the initial guess is located there, convergence to the respective root will be achieved quickly. On the other hand, if the initial guess lies in the fractal region, the convergence is very slow. It can also be observed from Fig. \ref{fig:newton} that the basin of attraction of Newton's method has a denser fractal region due to its quadratic complexity of convergence, whereas the Halley's method which is cubic, the fractals are
-comparatively sparse as shown in Fig. \ref{fig:halley}.
+Although the problem at first, may appear to be a relatively simple root-search in which readily available and popular iterative algorithms like the Newton or Halley's method can be applied, complication arises due to the presence of complex-valued roots. Furthermore, the convergence of the aforementioned methods is highly subject to an initial guess that must lie close to the actual root. As an example, basins of attraction, which illustrate the convergence rate of an initial guess, are shown in Fig. \ref{fig:basins} for Newton's and Halley's methods which are two of the most popular iterative root-finding methods. In Fig. \ref{fig:basins}, the actual roots of a polynmial, $z^{10}-1$ are depicted by circle marks. The regions are color-coded for each root where a large area of a particular color indicates that if the initial guess is located in that region, convergence to the respective root will be achieved quickly. On the other hand, if the initial guess lies in the fractal region, the convergence is very slow. Another observation through which Newton and Halley's methods can be compared is that the basins of attraction of Newton's method,
+shown in Fig. \ref{fig:newton} have a denser fractal region due to its quadratic complexity of convergence. On the contrary, the Halley's method, which is cubic, the fractals are comparatively sparse as shown in Fig. \ref{fig:halley}.
 
 For a dispersion relation \eqref{eq:dispersion}, which is defined by a transcendental equation, presence of singularities, particularly in the vicinity of an actual solution may leave an iterative method completely divergent or yet churn out a bogus and unreliable answer.
 
-Argument principle method (APM) is a robust, complex root-finding algorithm in which convergence is guaranteed within a specified region without supplying any initial guess \cite{Delves1967c,Carpentier1982c,Botten1983,Kravanja2000c,Dellnitz2002c,Gillan2006c,Chen2017}. It requires the function to be analytic in the specified search region. A pictorial representation of this technique is shown in Fig. \ref{fig:zplane} where the roots inside a specified region $\Gamma$ in the complex plane are computed by approximating the given function with a polynomial. The number of zeros inside $\Gamma$ must not exceed a preallocated value $N_r$, otherwise the search region is reduced. Moreover, the function $f$ must be non-zero at the boundary of $\Gamma$. The following sections briefly describe each step of the method.
+Argument principle method (APM) is a robust, complex root-finding algorithm in which convergence is guaranteed within a specified region without supplying any initial guess \cite{Delves1967c,Carpentier1982c,Botten1983,Kravanja2000c,Dellnitz2002c,Gillan2006c,Chen2017}. It requires the function to be analytic in the specified search region. A pictorial representation of this technique is shown in Fig. \ref{fig:zplane} where the roots inside a specified region $\Gamma$ in the complex plane are computed by approximating the given function with a polynomial. In case, the number of zeros inside $\Gamma$ exceed a pre-allocated value $N_r$, the search region is subdivided into smaller regions. Moreover, the function $f$ must be non-zero at the boundary of $\Gamma$. The following sections briefly describe each step of the method.
 %
 \begin{figure}[t!]
   \centering
@@ -370,7 +373,7 @@ Argument principle method (APM) is a robust, complex root-finding algorithm in w
 %%
 \subsection{Counting the zeros}
 %
-To develop an efficient method of locating the zeros, we assume that the function $f$ is analytic, implying it is differentiable and free from any singularities. It is also required that $f$ is non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. The search region is set as rectangular, mainly because of ease in programming it. The number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found using the Cauchy's integral theorem \cite[pg. 71]{Krantz1999,Delves1967c},
+To develop an efficient method of locating the zeros, we assume that the function $f$ is analytic, which implies that it is differentiable and free from any singularities. It is also required that $f$ is non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. The search region is set as rectangular, mainly because of ease in programming it. The number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found using the Cauchy's integral theorem \cite[pg. 71]{Krantz1999,Delves1967c},
 %
 \begin{equation}
   N = \frac{1}{2 \pi \j} \oint \limits_{\Gamma} \frac{f'(z)}{f(z)} \diff{z}
@@ -400,7 +403,7 @@ The value of both the integrals, i.e., \eqref{eq:cauchyth} and \eqref{eq:numzero
 %%
 \subsection{Locating the zeros}
 %
-In this chapter, we use the derivative-free approach from here on. After predicting the number of zeros through \eqref{eq:numzeros}, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
+In this chapter, we use the derivative-free approach \eqref{eq:numzeros} to compute the number of zeros and further on. After predicting the number of zeros, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
 
 The polynomial $\mathcal P$ can be represented in a Lagrange form:
 %
@@ -512,7 +515,7 @@ where the column vector $\mathbf{z}$ is an eigenvector and $\lambda_k$'s are the
 \subsection{Refining the roots}
 %
 % Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}.
-The accuracy of the roots obtained from the eigenvalues, $\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent inintial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Newton} method \cite{press2007numerical} having quadratic convergence and the iteration formula:
+The accuracy of the roots obtained from the eigenvalues, $\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent initial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Newton} method \cite{press2007numerical} having quadratic convergence and the iteration formula:
 %
 \begin{equation}
   x_{n+1} = x_n - \frac {f(x_n)}{f'(x_n)}
@@ -526,7 +529,7 @@ with $f'(x)$ is the first order derivative approximated by a finite difference f
 %%
 \subsection{Avoiding singularities}
 %
-As mentioned earlier, the argument principle method requires the function to be analytic without any singularities. In this chapter, we explicitly deal with the dispersion relation \eqref{eq:dispersion} which in fact is the denominator of the transmission line Green function. Therefore, only branch point singularities occur due to the presence of multivalued square roots in the definition of the propagation constant, $k_{zi}$, where $i = 1,\dots, N$ \eqref{eq:k_z} in \eqref{eq:dispersion}. The branch points exist provided the top and bottom layers are unbounded. The dispersion relation shows an even dependence on $k_{zi}$ due to the layers that are bounded, hence they do not  contribute any branch points \cite[Section~5.3a]{felsen1994}. In the worst case where the top and bottom layers are open and different from each other, two branch points exist in the complex plane that must be either removed or avoided in order to make the function analytic in the search region. Additionally, branch cuts emerge out of the branch points and there must not be any intersection with the contour of the search region. In a multilayer structure, the presence of branch points yield a four-sheeted Riemann surface illustrated in Fig. \....{riemman surface}
+As mentioned earlier, the argument principle method requires the function to be analytic without any singularities. In this chapter, we explicitly deal with the dispersion relation \eqref{eq:dispersion} which is the denominator expression of the transmission line Green function. Therefore, branch point singularities only occur due to the presence of multivalued square roots that appear in the definition of the propagation constant, $k_{z,i}$ \eqref{eq:k_z} with $i =1,\dots, N$ and, $N$ being the number of layers. The branch points exist provided the top and bottom layers are unbounded. The dispersion relation shows an even dependence on $k_{zi}$ due to the layers that are bounded, hence they do not  contribute any branch points \cite[Section~5.3a]{felsen1994}. In the worst case where the top and bottom layers are open and different from each other, two branch points exist in the complex plane that must be either removed or avoided in order to make the function analytic in the search region. Additionally, branch cuts emerge out of the branch points and there must not be any intersection with the contour of the search region.
 
 In order to remove the branch point singularities, the complex z-plane is generally mapped to another plane $\zeta$, by a transformation that unfolds the Riemann surface. For example, a trigonometric transformation such as \cite{Michalski2006,Polimeridis_2007},
 %
@@ -564,9 +567,9 @@ We first compute the modes of a metal-insulator-metal (MIM) waveguide described 
   \label{eq:mim}
 \end{equation}
 %
-where $Z_m = k_{zm}/(\O \E_m \E_0)$ and $Z_2 = k_{z2}/{\O \E_0}$ are the modal impedances of the metal and air-filled layers respectively. The TM modes of \eqref{eq:mim} normalized to the free-space propagation constant are shown in Fig. \ref{fig:mim_lossless}. The values of the roots obtained are then compared with the solutions discussed in \cite{Kocabas2009}, in which only the even modes were computed. However, as listed in Table. \ref{tab:kocabas_lossless}, we compute first nine even and mode modes.
+where $Z_m = k_{zm}/(\O \E_m \E_0)$ and $Z_2 = k_{z2}/{\O \E_0}$ are the modal impedances of the metal and air-filled layers respectively. The TM modes of \eqref{eq:mim} normalized to the free-space propagation constant are shown in Fig. \ref{fig:mim_lossless}. The values of the roots obtained are then compared with the solutions discussed in \cite{Kocabas2009}, in which only the even modes were computed. However, as listed in Table. \ref{tab:kocabas_lossless}, we compute first nine even and odd modes.
 %
-\begin{table}[h!]
+\begin{table}[!htbp]
 \begin{center}
  \begin{tabular}{||c |c |c||}
  \hline
@@ -589,9 +592,9 @@ where $Z_m = k_{zm}/(\O \E_m \E_0)$ and $Z_2 = k_{z2}/{\O \E_0}$ are the modal i
 \end{table}
 %
 
-Next, we consider the lossy case where the permittivity of metal layers is $\E_m = \num{-143.4967 - j 9.5173}$ and the compared results are shown in Fig. \ref{fig:mim_lossless} and listed in Table. \ref{tab:kocabas_lossy}.
+Next, we consider the lossy case where the permittivity of metal layers is $\E_m = \num{-143.4967 + j 9.5173}$ and the compared results are shown in Fig. \ref{fig:mim_lossless} and listed in Table. \ref{tab:kocabas_lossy}.
 %
-\begin{table}[h!]
+\begin{table}[!htbp]
 \begin{center}
  \begin{tabular}{||c |c |c||}
  \hline
@@ -613,13 +616,13 @@ Next, we consider the lossy case where the permittivity of metal layers is $\E_m
  \label{tab:kocabas_lossy}
 \end{table}
 %
-\begin{figure}[]
+\begin{figure}[!htbp]
   \subfloat[]{\includegraphics[height=2.5in]{kocabas_lossless.tikz}
       \label{fig:mim_lossless}}
       \hfil
       \subfloat[]{\includegraphics[height=2.5in]{kocabas_lossy.tikz}
           \label{fig:mim_lossy}}
-  \caption{TM modes of a MIM waveguide (a) Lossless case, $(\E_m = \num{-143.4967})$ (b) Lossy case, $(\E_m = \num{-143.4967 - j 9.5173})$}
+  \caption{TM modes of a MIM waveguide (a) Lossless case, $(\E_m = \num{-143.4967})$ (b) Lossy case, $(\E_m = \num{-143.4967 + j 9.5173})$}
   \label{fig:mim}
 \end{figure}
 %
@@ -634,9 +637,9 @@ Here we plot the dispersion curves of a 2DEG which is considered as a thin sheet
   \item Backgated 2DEG,
 \end{enumerate}
 %
-classified based on the presence of a perfectly conducting covering layer either at the top or bottom. The three types are shown in Fig. \ref{fig:2deg_structure_types}.
+that are classified, based on the presence of a perfectly conducting covering layer either at the top or bottom. The three types are shown in Fig. \ref{fig:2deg_structure_types}.
 %
-\begin{figure}[t!]
+\begin{figure}[!htbp]
   \subfloat[]{\def\svgwidth{.3\linewidth}
   \input{figures/gated.pdf_tex}
   \label{fig:gated}} \hfil
@@ -651,7 +654,85 @@ classified based on the presence of a perfectly conducting covering layer either
 \end{figure}
 %
 
-We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostructure with Al mole-fraction of $x = \SI{.2}{}$. With respect to Fig. \ref{fig:2deg_structure_types}, Layer 1 is composed of GaN which is the substrate, considered open in the gated and ungated cases, while it has a thickness of $d = \SI{50}{\nm}$ in the backgated case. AlGaN forms the layer marked 2, and in all the three cases, a thickness, $h = \SI{20}{\nm}$ is assumed. The permittivity of both the layers is $\E_r = 9.5$ owing to the small aluminum mole fraction \cite{}. The electron concentration of the 2DEG region is $N_s = \SI{5e13}{\cm^{-2}}$ and scattering time $\tau$ of \SI{114}{\ps} corresponding to a temperature of \SI{3}{\kelvin} is assumed. The surface conductivity is then computed using \eqref{eq:sigma_s}.    
+We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostructure with Al mole-fraction of $x = \num[round-precision=1]{0.2}$. With respect to Fig. \ref{fig:2deg_structure_types}, Layer 1 is composed of GaN which is the substrate, considered open in the gated and ungated cases, while it has a thickness of $d = \SI{50}{\nm}$ in the backgated case. AlGaN forms the layer marked 2, and in all the three cases, a thickness, $h = \SI{20}{\nm}$ is assumed. The permittivity of both the layers is $\E_r = 9.5$ owing to the small aluminum mole fraction \cite{Muravjov2010}. The electron concentration of the 2DEG region is $N_s = \SI{5e13}{\cm^{-2}}$ and scattering time $\tau$ of \SI{114}{\ps} corresponding to a temperature of \SI{3}{\kelvin} is assumed. The surface conductivity is then computed using \eqref{eq:sigma_s}. When solving for the dispersion relation \eqref{eq:dispersion}, we use the respective expressions listed in Table. \ref{tab:equations} for each case.
+%
+\begin{table}[!htbp]
+\begin{center}
+ \begin{tabular}{||c |c |c||}
+ \hline
+ Gated & Backgated  & Ungated \\ [0.5ex]
+ \hline\hline
+ $Y^{\uparrow} = - Y_{2} \coth (k_{z2} h)$ & $Y^{\uparrow} = Y_{2} \frac{1 - \Gamma^{\uparrow}}{1 + \Gamma^{\uparrow}}$ & $Y^{\uparrow} = Y_{2} \frac{1 - \Gamma^{\uparrow}}{1 + \Gamma^{\uparrow}}$ \\  & & \\ [2ex]
+\num{} & $\Gamma^{\uparrow} = \frac{Y_2 - Y_1}{Y_2 + Y_1} \e^{-2\j k_{z2}\, h}$ & $\Gamma^{\uparrow} = \frac{Y_2 - Y_1}{Y_2 + Y_1} \e^{-2\j k_{z2}\, h}$ \\  & &  \\ [2ex]
+ $Y^{\downarrow} = Y_{3}$ & $Y^{\downarrow} = - Y_{3} \coth (k_{z3} d)$ &  $Y^{\downarrow} = Y_{3}$ \\
+ \hline
+ \end{tabular}
+  \end{center}
+ \caption{Equivalent upward- and down-looking admittances}
+ \label{tab:equations}
+\end{table}
+%
+
+The dispersion curves for each structure type at varying temperatures and electron concentrations are plotted in Fig. \ref{fig:dispersion_hif_lowT}.
+%
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[height = 2.4in]{gated_disp.tikz}
+  \label{fig:gated_hf_lt}}
+  \subfloat[]{\includegraphics[height = 2.4in]{backgated_disp.tikz}
+  \label{fig:backgated_hf_lt}} \\
+  \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp.tikz}
+  \label{fig:ungated_hf_lt}}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \label{fig:dispersion_hif_lowT}
+\end{figure}
+%
+
+To observe the effect of temperature, we now plot the dispersion curves at room temperature ($T = \SI{295}{\kelvin}$) which corresponds to a scattering time, $\tau$ of $\SI{114}{\fs}$.
+% %
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[height = 2.4in]{gated_disp_lossy.tikz}
+  \label{fig:gated_hf_ht}}
+  \subfloat[]{\includegraphics[height = 2.4in]{backgated_disp_lossy.tikz}
+  \label{fig:backgated_hf_ht}} \\
+  \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp_lossy.tikz}
+  \label{fig:ungated_hf_ht}}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \label{fig:dispersion_hif_hiT}
+\end{figure}
+%
+
+The conducting layer in the gated and back-gated cases depicts the gate terminal which is voltage biased in a normal transistor operation. By varying the voltage, we can subsequently modify the electron density in the 2DEG channel. In Figs. \ref{fig:dispersion_lof_lowT} and \ref{fig:dispersion_lof_hiT}, the dispersion curves of gated and backgated structures are plotted for $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{} and \SI{295}{\kelvin} respectively.
+% % %
+\begin{figure}[!htbp]
+  \begin{center}
+  \subfloat[]{\includegraphics[height=2.8in]{gated_disp_low.tikz}
+      \label{fig:gated_lf_lt}}
+      \hfil
+  \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_low.tikz}
+  \label{fig:backgated_lf_lt}}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated}
+  \label{fig:dispersion_lof_lowT}
+  \end{center}
+\end{figure}
+%
+
+\begin{figure}[!htbp]
+  \begin{center}
+  \subfloat[]{\includegraphics[height=2.8in]{gated_disp_lossy_low.tikz}
+      \label{fig:gated_lf_ht}}
+      \hfil
+  \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_lossy_low.tikz}
+  \label{fig:backgated_lf_ht}}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated}
+  \label{fig:dispersion_lof_hiT}
+  \end{center}
+\end{figure}
+
+
+
+
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
