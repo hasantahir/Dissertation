@@ -1,0 +1,425 @@
+\documentclass[12pt]{article}
+%
+% % Insert style guide
+\usepackage{my_thesis}
+
+% Specifiy the location of images to be used
+\graphicspath{{figures/}}
+
+% Acronyms
+% \newacronym{}
+
+\begin{document}
+\title{\textsc{Computation of fields in multilayered strcutures}}
+
+\date{\footnote{Last Modified: \currenttime, \today.}}
+
+% Create title page
+\maketitle
+
+Multilayered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields \cite{something in here}. Most commonly, the fields are found in terms of the dyadic Green functions (DGF's) of the environment, which can be defines the vector field distriution due to a vector point source \cite{van Bladdel} \cite{}. Due to a current $\v J$ distributed in a region defined by a surface, $S'$, the surface fields are expressed as in terms of an inner product,
+%
+\begin{subequations}
+\begin{align}
+\v E ={}& \int\limits_{S'} \tnsr{\v{G}}_\mathrm{EJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{S'},
+\label{eq:dyadic_E}\\
+\v H ={}& \int\limits_{S'} \tnsr{\v{G}}_\mathrm{HJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{S'}.
+\label{eq:dyadic_H}
+\end{align}
+\label{eq:dyadic}%
+\end{subequations}
+% \begin{equation}
+%   \v E = \int\limits_{S'} \tnsr{G}_{EJ}(\v r, \v {r'}) \v {J}(\v{r'}) \diff{dS'}
+% \end{equation}
+where, $\tnsr{\v{G}}_\mathrm\mathrm{EJ}$ and $\tnsr{\v{G}}_\mathrm{HJ}$ are the spatial domain DGF's due to an electric current source located at $r'$, that define the electric and magnetic fields at a point $r$ respectively. In the presence of magnetic sources, \eqref{eq:dyadic_E} and \eqref{eq:dyadic_H} can be augmented using the superpostion principle, by adding an inner product containing magnetic DGF's, $\tnsr{\v{G}}_\mathrm\mathrm{EM}$ and
+$\tnsr{\v{G}}_\mathrm{HM}$.
+%%5%%%%
+%%%%%%%
+%%%%%%%
+\section{Theory}
+%
+We follow the well-established approach of field computation for planar multilayered media \cite{michalski1997multilayered, michalski2005}, in which, first an equivalent transmission line network is set up for the structure, and then transmission line Green function are computed.
+%%
+%%
+%%
+\subsection{Transmission line representation of Maxwell's equations}
+%
+As shown in Fig. \ref{fig:TL_equivalent}a, it is assumed that the structure is unbounded in the lateral direction, and excited by electric sources only. The electric and magnetic fields are given by the Maxwell's equations in frequency-domain,
+%
+\begin{subequations}
+\begin{align}
+\del \x{\v E} ={}& -j \O \u \v{H},
+\label{eq:E}\\
+\del \x{\v H} ={}& j \O \E \v{E} + \v{J}.
+\label{eq:H}
+\end{align}
+\label{eq:MaxE}%
+\end{subequations}
+%
+For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $d/dz$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994}. By taking the Fourier transform,
+%
+\begin{equation}
+\mathcal{F}[f(\v{\p},z)] \equiv \ti{F}(\v{k}_{\p},z) = \infint \infint
+f(\v{\p},z) \e^{-\j \v{k}_{\p} \cdot \v{\p}} \diff{x} \diff{y}
+\label{eq:Fourier}
+\end{equation}
+%
+the field computation is considerably simplified by switching to the spectral frequency domain $\v {k_{\p}}$, which reduces the complexity of the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + d/dz\, \v{\^{z}}$, which contains a derivative term only in z-direction. In \eqref{eq:Fourier}, the cylindrical coordinates are expressed as,
+%
+\begin{equation}
+\v{\p} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
+\v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
+\label{eq:rect2cylindrical}
+\end{equation}
+%
+and the notation $\sim$ above the capital-letter terms indicates the Fourier transform with respect to the transverse coordinates and from here on, will be used to denote the spectral domain quantities.
+
+As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates because, as we shall see shortly, the longitudinal part of the field can be completely expressed in terms of the transverse component. Applying the Fourier transform \eqref{eq:Fourier} on the Maxwell's equations \eqref{eq:MaxE}, we obtain:
+%
+\begin{subequations}
+\begin{align}
+\left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{E}}_t + \v{\ti{E}}_z)  ={}& -\j \O \u (\v{\ti{H}}_t + \v{\ti{H}}_z),
+\label{eq:FT_E}\\
+\left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{H}}_t + \v{\ti{H}}_z)  ={}& \j \O \E (\v{\ti{E}}_t + \v{\ti{E}}_z) -
+(\v{\ti{J}}_t + \v{\ti{J}}_z).
+\label{eq:FT_H}
+\end{align}
+\label{eq:FT_EH}%
+\end{subequations}
+%
+The transverse and longitudinal components of the magnetic field can be separately expressed in \eqref{eq:FT_E} as,
+%
+\begin{subequations}
+\begin{align}
+-\j \v{k}_{\p} \x \v{\ti{E}}_z +
+\dv{}{z}\v{\^{z}} \x \v{\ti{E}}_t ={}&
+-\j \O \u \v{\ti{H}}_t,
+\label{eq:FT_TH}\\
+-\j \v{k}_{\p} \x \v{\ti{E}}_t ={}&
+-\j \O \u \v{\ti{H}}_z.
+\label{eq:FT_LH}
+\end{align}
+\label{eq:FT_TLH}%
+\end{subequations}
+%
+Using the vector product property \cite[p. 117]{fang2010},
+%
+\begin{equation}
+\v{A} \x \v{B} =\v{A} \cdot (\v{B} \x \v{\^{n}}) \, \v{\^{n}},
+\label{eq:vec}
+\end{equation}
+%
+where the unit vector $\v{\^{n}}$ is normal to the plane containing vectors $\v{A}$ and $\v{B}$. A scalar form of the longitudinal component of the electric field is obtained by applying \eqref{eq:vec} on \eqref{eq:FT_LH},
+%
+\begin{equation}
+- \j \v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}) \, \v{\^{z}} =
+- \j \O \u \v{\ti{H}}_z
+\label{eq:FT_LH}
+\end{equation}
+%
+which can be written in the scalar form,
+%
+\begin{equation}
+- \j \ti{H}_z = \frac{- \j}{\O \u}
+\v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}).
+\label{eq:sLH}
+\end{equation}
+%
+Now taking the vector product with unit vector $\v{\^{z}}$ on both sides of \eqref{eq:FT_TH}, the transverse electric field component is expressed as:
+%
+\begin{equation}
+\begin{split}
+\dv{\v{\ti{E}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{E}}_z) \x \v{\^{z}}
+-\j \O \u \v{\ti{H}}_t \x \v{\^{z}}\\
+={}& -\j \v{k}_{\p} \ti{{E}}_z -\j \O \u \v{\ti{H}}_t \x \v{\^{z}}
+\end{split}
+\label{eq:dFT_ET}%
+\end{equation}
+%
+where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} \equiv \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been applied.
+
+Following a similar procedure starting from (\ref{eq:FT_H}), we obtain the transverse component of magnetic field, along with the scalar longitudinal component of electric field:
+%
+\begin{equation}
+\begin{split}
+\dv{\v{\ti{H}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{H}}_z) \x \v{\^{z}}
++ \j \O \E \v{\ti{E}}_t \x \v{\^{z}} +
+\v{\ti{J}}_t \x \v{\^{z}} \\
+={}& -\j \v{k}_{\p} \ti{{H}_z} + \j \O \E \v{\ti{E}}_t \x \v{\^{z}}  +
+\v{\ti{J}}_t \x \v{\^{z}},
+\end{split}
+\label{eq:dFT_HT}%
+\end{equation}
+%
+and,
+\begin{equation}
+-\j \O \E \ti{E}_z =
+\j \v{k}_{\p} \cdot (\v{\ti{H}}_t \x \v{\^{z}}) + \ti{J}_z.
+\label{eq:FT_LE}
+\end{equation}
+%
+By substituting \eqref{eq:sLE} in \eqref{eq:dFT_ET}, we get the transverse component of electric field,
+%
+\begin{equation}
+\dv{\v{\ti{E}}_t}{z} =
+\frac{1}{\j \O \E} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\ti{H}}_t \x \v{\^{z}}) + \v{k}_{\p} \frac{\ti{J}_z}{\O \E}.
+\label{eq:Et}
+\end{equation}
+%
+Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, the transverse component of magnetic field,
+%
+\begin{equation}
+\dv{\v{\ti{H}}_t}{z} =
+\frac{1}{\j \O \u} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\^{z}} \x \v{\ti{E}}_t) + \v{\ti{J}}_t
+\x \v{\^{z}}
+\label{eq:Ht}
+\end{equation}
+%
+where $k = \O \sqrt{\u \E}$ in \eqref{eq:Et} and \eqref{eq:Ht} is the medium wavenumber.
+
+The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k}_{\p}, \v{\^z} \x \v{k}_{\p}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent, which allows the TE and TM mode analysis to be made separately. The coordinate transformation can be expressed as:
+%
+\begin{equation}
+\begin{bmatrix}
+\v{\^u} \\
+\v{\^v}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos \phi & \sin \phi \\
+-\sin \phi & \cos \phi
+\end{bmatrix}
+\begin{bmatrix}
+\v{\^x} \\
+\v{\^y}
+\end{bmatrix}
+\label{eq:transformation}
+\end{equation}
+%
+where $\phi$ is the angle between $\v{k_{\p}}$ and the positive x-axis. A transmission line analogue for the spectral fields, expressed in terms of modal voltages and currents can therefore, be written as \cite{kastner1988, michalski1997multilayered},
+%
+\begin{equation}
+  \begin{bmatrix}
+    \v{\ti{E}}_t \\
+    \v{\ti{H}}_t
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    V^{\mathrm{TM}} & V^{\mathrm{TE}} \\
+    -I^{\mathrm{\mathrm{TE}}} & I^{\mathrm{TM}}
+  \end{bmatrix}
+  \begin{bmatrix}
+    \v{\^u} \\
+    \v{\^v}
+  \end{bmatrix}
+  \label{eq:EHVI}.
+\end{equation}
+%
+\begin{figure}[t!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/xsystem.pdf_tex}
+  \caption{Coordinate System transformation in the spectral domain}
+  \label{fig:SpCS}
+\end{figure}
+
+%
+Using the results of \eqref{eq:EHVI} in \eqref{eq:Et} and noting that $\v{\^u} = \v{k}_{\p}/k_{\p}$, we get,
+%
+\begin{equation}
+  \dv{\left(\v{\^u} \, V^{\mathrm{TM}} + \v{\^v} \,V^{\mathrm{TE}} \right)}{z} = \frac{1}{\j \O \E}\left( k^2 - \v{k}_{\p} \,\v{k}_{\p}
+  \,\cdot \right) (\v{\^u}\, I^{\mathrm{TM}} +
+  \v{\^v} \, I^{\mathrm{TE}}) + \v{\^u} \, \frac{k_{\p}}{\O \E} \ti{J}_z
+  \label{eq:Vinuv}
+\end{equation}
+%
+By separating the $\v{\^u}$ and $\v{\^v}$ components, we obtain the TM and TE equivalent voltage equations respectively,
+%
+\begin{subequations}
+  \begin{align}
+    \dv{V^{\mathrm{TM}}}{z} ={}&
+    \frac{1}{\j \O \E}\left( k^2 - k_{\p}^2 \right)I^{\mathrm{TM}} + \frac{k_{\p}}{\O \E} \ti{J}_z,
+    \label{eq:V_TM}\\
+    \dv{V^{\mathrm{TE}}}{z} ={}&
+    \frac{k^2}{\j \O \E} I^{\mathrm{TE}}.
+    \label{eq:V_TE}
+  \end{align}
+  \label{eq:TL_Vs}%
+\end{subequations}
+%
+Similarly, from \eqref{eq:EHVI} and \eqref{eq:Ht}, the equivalent current equations can be written as:
+%
+\begin{subequations}
+  \begin{align}
+    \dv{I^{\mathrm{TM}}}{z} ={}&
+    \frac{k^2}{\j \O \u} V^{\mathrm{TM}} - \ti{J}_u,
+    \label{eq:I_TM}\\
+    \dv{I^{\mathrm{TE}}}{z} ={}&
+    \frac{-1}{\j \O \u}\left( k^2 - k_{\p}^2 \right)V^{\mathrm{TE}} + \ti{J}_v.
+    \label{eq:I_TE}
+  \end{align}
+  \label{eq:TL_Is}%
+\end{subequations}
+%
+Equations \eqref{eq:TL_Vs}-\eqref{eq:TL_Is} can be conveniently written in a compact form as a set of Telegrapher's equations \cite[p. 190]{felson}:
+%
+\begin{subequations}
+  \begin{align}
+    \dv{V^{\alpha}}{z} ={}& -\j k_z Z^{\alpha}I^{\alpha} + v^{\alpha}
+    \label{eq:TL_V}\\
+    \dv{I^{\alpha}}{z} ={}& -\j k_z Y^{\alpha}V^{\alpha} + i^{\alpha}
+    \label{eq:TL_I}
+  \end{align}
+  \label{eq:TLE}%
+\end{subequations}
+%
+where $\alpha$ is either TE or TM, the propagation constant in the transverse direction is $k_z = \pm \sqrt{k^2 - k_{\p}^2}$, for which the sign must be chosen in such a way the fields decay away from the source. The modal impedances in \eqref{eq:TLE} are,
+%
+\begin{subequations}
+  \begin{align}
+    Z^{\mathrm{TM}} = \frac{1}{Y^{\mathrm{TM}}} = \frac{k_z}{\O \E},
+    \label{eq:z_TM}\\
+    Z^{\mathrm{TE}} = \frac{1}{Y^{\mathrm{TE}}} = \frac{\O \u}{k_z}.
+    \label{eq:z_TE}
+  \end{align}
+  \label{eq:Z}%
+\end{subequations}
+%
+
+Using the expressions that relate the transverse electric and mangnetic to the equivalent transmission line currents and voltages \eqref{eq:EHVI}, and combining with the longitudinal field expressions \eqref{eq:FT_LH} and \eqref{eq:FT_LE}, we obtain the total fields in the spectral domain,
+%
+%
+\begin{equation}
+  \begin{bmatrix}
+    \v{\ti{E}}(\v{k}_{\p},z) \\
+    \v{\ti{H}}(\v{k}_{\p},z)
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    V^{\mathrm{TM}} & V^{\mathrm{TE}} & -\frac{k_{\p}}{\O \E(z)}   I^{\mathrm{TM}}(z) \\
+    -I^{\mathrm{TE}} & I^{\mathrm{TM}} & \frac{k_{\p}}{\O \u}   V^{\mathrm{TE}}(z)
+  \end{bmatrix}
+  \begin{bmatrix}
+    \v{\^u} \\
+    \v{\^v} \\
+    \v{\^z} \\
+  \end{bmatrix} + \v{\^z}
+  \begin{bmatrix}
+    \frac{\j}{\O \E(z)}     \v{\ti{J}}_z(\v{k}_{\p},z) \\
+    0
+    \end{bmatrix},
+    \label{eq:EHVI}
+\end{equation}
+%
+where $\E(z)$ may vary from one layer to another.
+%%
+%%
+%%
+\subsection{Green functions for the TL equations}
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The corresponding fields in the spatial domain are therefore, obtained by taking the inverse Fourier transform,
+%
+\begin{equation}
+  \mathcal{F}^{-1}[\ti{F}(\v{k}_{\p},z)] \equiv f(\v{\p},z) = \frac{1}{(2 \pi )^2}\infint \infint
+  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot \v{\p}} \diff{k_x} \diff{k_y}.
+  \label{eq:invFourier}
+\end{equation}
+%
+
+In case of rotational symmetry which implies that $\ti{F}$ only depends on one spectral co-ordinate $k_{\p}$, the double integral in \eqref{eq:invFourier} can be simplified to an integral of only one variable. Using  \eqref{eq:rect2cylindrical} and the coordinate transformation shown in Fig. \ref{fig:SpCS} where,
+%
+\begin{subequations}
+  \begin{align}
+    k_x ={}& k_{\p} \cos \psi \qquad \text{and}
+    \label{eq:kx2kp}\\
+    k_y ={}& k_{\p} \sin \psi,
+    \label{eq:ky2kp}
+  \end{align}
+  \label{eq:cylindricaltransformation}%
+\end{subequations}
+%\ef
+we rewrite \eqref{eq:invFourier} in cylindrical coordinates,
+%
+\begin{equation}
+  \mathcal{F}^{-1} [\ti{F}(\v{k}_{\p},z)] \equiv f(\v{\p},z) = \frac{1}{(2\pi)^2} \int\limits_0^{\inf} \int\limits_0^{2\pi}
+  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot \v{\p}} k_{\p} \diff{k_{\p}} \diff{\psi}.
+  \label{eq:invFourier_cylindrical}
+\end{equation}
+%
+Applying the Fourier-Bessel transform (FBT) to \eqref{eq:invFourier_cylindrical} which states that,
+\begin{equation}
+  \frac{1}{2\pi}\int\limits_0^{2\pi}
+  \e^{\j \v{k}_{\p} \cdot \v{\p}} \diff{\psi} = J_0(k_{\p}\p),
+  \label{eq:hankel_transofrm}
+\end{equation}
+%
+where $J_0(\cdot)$ is the Bessel function of zero order
+we obtain the Sommerfeld integral (SI), $S_0\{\cdot\}$:
+%
+\begin{equation}
+  f(\p) = S_0\{\ti{F}\} \equiv \frac{1}{2\pi}\int\limits_0^{\inf} J_0(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}.
+  \label{eq:sommerfeld_integral}
+\end{equation}
+%
+In some cases, the Bessel function may be up to an order of 2, therefore, generalized expression for SI is,
+%
+\begin{equation}
+  \begin{split}
+    S_n\{\ti{F}\} \equiv{}& \frac{1}{2\pi}\int\limits_0^{\inf} J_n(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}\\
+    ={}& \frac{1}{4\pi}\int\limits_{-\inf}^{\inf} H_n(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}
+  \end{split}
+  \label{eq:dFT_ET}%
+\end{equation}
+%
+\begin{equation}
+  S_n\{\ti{F}\} \equiv \int\limits_0^{\inf} J_0(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}, \qquad \text{where} \, n = 0,1,2.
+  \label{eq:generalized_SI}
+\end{equation}
+%
+Assuming only electric sources existing in space, the corresponding TL sources, $v^{\alpha}$ and $i^{\alpha}$, where $\alpha$ is either TE or TM, are illustrated in \ref{fig:J_sources}. A horizontally oriented (x-directed) electric dipole is represented by a current source in an equivalent TM transmission line network. Likewise, the equivalent configuration of a vertical (y-directed) electric dipole is a TE network with a current source. A z-directed dipole corresponds to voltage source in a TM transmission line. For an arbitrarily directed source, the equivalent TL model consists of a superposition of the three representations.
+%
+% \begin{figure}[h]
+%   \centering
+%   \subfloat[]{\centering
+%   \includegraphics[width=.55\textwidth]{figures/jx.tikz}
+%   \label{fig:jx_source}}  \newline
+%   \subfloat[]{ \centering
+%   \includegraphics[width=.55\textwidth]{figures/jy.tikz}
+%   \label{fig:jy_source}}  \newline \centering
+%   \subfloat[]{\centering
+%   \includegraphics[width=.55\textwidth]{figures/jz.tikz}
+%   \label{fig:jz_source}} \newline
+%   \caption{Electric Source representation in a transmission line network}
+%   \label{fig:J_sources}
+% \end{figure}
+
+
+
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+\clearpage % Force Bibliography to the end of document on a new page.
+% If using biber
+% \printbibliography
+% \addbibresource{zubairy}
+% else bibtex
+\bibliography{citations}
+\bibliographystyle{ieeetran}
+
+\end{document}

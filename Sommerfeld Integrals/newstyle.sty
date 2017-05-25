@@ -1,0 +1,570 @@
+%!TEX root = thesis.tex
+\ProvidesPackage{thesis-preamble}
+
+
+\RequirePackage{printlen}
+\uselengthunit{pt}
+
+%%% SHORTCUTS
+
+% \RequirePackage[english]{shortwrite}
+
+\newcommand\code[1]{\texttt{#1}}
+\newcommand\note[1]{\unskip\footnote{#1}}
+\feetbelowfloat
+\setlength{\footmarkwidth}{1.5em}
+\setlength{\footmarksep}{0em}
+\setlength{\footparindent}{0em}
+\footmarkstyle{#1.~}
+
+\DeclareRobustCommand\dash{%
+  \unskip\nobreak\thinspace\textemdash\allowbreak\thinspace\ignorespaces}
+
+\newcommand\acro[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand\newacro[1]{\@namedef{#1}{\acro{#1}}}
+
+\newacro{FFT}
+\newacro{PDF}
+\newacro{PID}
+
+\DeclareRobustCommand\maggrade[1]{%
+  \edef\@tempa{\rmdefault}%
+  \ifx\f@family\@tempa
+    \textsc{n#1}%
+  \else
+    N#1%
+  \fi
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\newmacro[2]{\def#1/{#2}}
+
+\newcommand\price[2][\$]{#1#2}
+\newcommand\usdollar{\textsc{u.s.}\$}
+
+\newmacro \ANSYS {\textsc{ansys}}
+\newmacro \Matlab {Matlab}
+\newmacro \maglev {maglev}
+\newmacro \dof    {degree of freedom}
+\newmacro \dofs    {degrees of freedom}
+\newmacro \BnK {Br\"uel~\& Kj\ae r}
+\newmacro \magnetorh {magnetorheological}
+\newmacro \vibneut {vibration neutraliser}
+\newmacro \Vibneut {Vibration neutraliser}
+\newmacro \emf {electromotive force}
+\newmacro \backemf {back--\emf/}
+\newmacro \coordinate {coordinate}
+\newmacro \sic {[\textit{sic}]}
+
+\newmacro \KJMagnetics {%
+  K\,\&\,J~Magnetics \cite{kjmagnetics}%
+}
+
+\newmacro \threeD {three dimensional}
+\newmacro \twoD {two dimensional}
+
+\newmacro \AC {time varying}
+\newmacro \PhD {Ph.\,D\sw@ensuresingleperiod}
+\newmacro \qzs {quasi--zero stiffness}
+\newmacro \QZS {Quasi--zero stiffness}
+\newmacro \RMS {root-mean-square}
+\newmacro \RSS {root-sum-square}
+
+% COMPOUND WORDS
+\newcommand \compound [2] {#1\-#2}
+
+
+
+
+\edef\thesisjobname{\jobname}
+\newcommand\chapterinclude[1]{%
+  \def\jobname{#1}
+  \include{#1}
+  \let\jobname\thesisjobname
+}
+
+\newcommand\referpaper[1]{\begin{quote}\textit{#1}\end{quote}}
+
+\g@addto@macro\quote{\itshape}
+
+%%% PACKAGES
+
+\RequirePackage[T1]{fontenc} % sane font encoding
+\RequirePackage{textcomp} % provide lots of new symbols
+\RequirePackage{lmodern}
+\RequirePackage[sc,osf]{mathpazo}% for math
+
+\usepackage[scaled=0.86]{berasans}
+
+\RequirePackage{microtype}
+\RequirePackage{morefloats}
+\RequirePackage{pifont}
+\newcommand\diameter{\Pisymbol{psy}{'306}}
+\linespread{1.1} % Palatino needs more leading
+\frenchspacing
+\normalfont
+
+\RequirePackage[
+  process=auto,
+  crop=pdfcrop,
+  ps2pdf-options={-dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress},
+  cleanup={.tex,.dvi,.ps,.pdf,.log,-blx.bib,%
+           .nav,.out,.out.ps,.pfg,.snm,.toc,.mp}
+  ]{pstool}
+
+\newcommand\pregen[1]{#1}
+
+\RequirePackage[utf8]{inputenc}% sane input encoding
+\DeclareUnicodeCharacter{2014}{\dash}
+\DeclareUnicodeCharacter{2022}{\item}
+
+\RequirePackage{siunitx}
+\protected\def\sipi{\mbox{\ensuremath{\pi}}}
+\sisetup{numaddn=\sipi}
+
+\RequirePackage{
+  calc,
+  colortbl,
+  graphicx,
+  epstopdf,
+  etex,
+  import,
+  minibox,
+  multicol,
+  psfrag,
+  refstyle,
+  soul,
+  suffix,
+  varioref,
+  xcolor,
+  zref,
+}
+
+\let\setstretch\setSpacing % memoir is stupid
+\RequirePackage[format=plain,indent=\parindent,labelfont={sc,small},textfont={rm,small,stretch=1.15}]{caption}
+\captionsetup[table]{position=top}
+\subcaptionlabelfont{\normalfont}
+\subcaptionfont{\normalfont}
+
+%%% NOMEN
+
+\usepackage[section,sanitize]{glossaries}
+\usepackage{glossary-longragged}
+
+\newglossarystyle{wspr}{%
+  \renewenvironment{theglossary}%
+    {\begin{longtable}{@{}l@{\,}>{\raggedright}p{\glsdescwidth}%
+       >{\raggedright}p{\glspagelistwidth}@{}}}%
+    {\end{longtable}}%
+  \renewcommand*{\glossaryheader}{%
+    \bfseries\entryname~&\bfseries\descriptionname&
+    \bfseries\pagelistname\tabularnewline\endhead}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \glsentryitem{##1}\glstarget{##1}{##2} & ##3 & ##5\tabularnewline}%
+  \renewcommand*{\glossarysubentryfield}[6]{%
+     &
+     \glssubentryitem{##2}%
+     \glstarget{##2}{\strut}##4 & ##6\tabularnewline}%
+  \renewcommand*{\glsgroupskip}{ & &\tabularnewline}%
+}
+
+\glossarystyle{wspr}
+\glsdisablehyper
+
+\makeglossaries
+\renewcommand\glossaryname{Nomenclature}
+\renewcommand\entryname{Symbol}
+\renewcommand\pagelistname{Page}
+%\addtolength\glsdescwidth{1cm}
+\addtolength\glspagelistwidth{1.8cm}
+
+
+\usepackage{docmute}
+
+%%%%%%%%%%%%%%%%%%%%
+
+%% MATHS
+\RequirePackage{amsmath,amssymb,bm,cool,mathtools,fngp}
+\let\PI\relax
+\newacro{PI}
+
+\RequirePackage{mlist}
+\RequirePackage{thesis-maths}
+\@ifpackageloaded{mathpazo}{\PassOptionsToPackage{mathpazo}{flexisym}}{}
+\RequirePackage{breqn}
+\setkeys{breqn}{labelprefix=eq:}
+
+%%%%%%%%%%%
+
+\EndPreamble
+
+
+\RequirePackage[style=british]{csquotes}
+\MakeOuterQuote{"}
+
+%% Hyperref
+\RequirePackage[breaklinks,plainpages=false,pdfpagelabels]{hyperref}
+\pdfstringdefDisableCommands{\def\dash{ - }}
+
+\definecolor{darkred}{rgb}{0.4,0,0}
+\definecolor{darkgreen}{rgb}{0,0.4,0}
+\definecolor{darkblue}{rgb}{0,0,0.4}
+%\hypersetup{linkcolor=darkred, citecolor=darkblue, filecolor=black, urlcolor=black}
+\hypersetup{linkcolor=black  , citecolor=black   , filecolor=black, urlcolor=black}
+\AtBeginDocument{\hypersetup{pdfauthor={\@author},pdftitle={\@title}}}
+
+\RequirePackage[open,openlevel=4]{bookmark}
+\RequirePackage{hypcap}
+
+%% biblatex
+\RequirePackage[
+    hyperref,backref,
+    sortcites,
+    date=short,
+    bibencoding=inputenc,
+    maxcitenames=2,
+    mincitenames=1,
+    maxbibnames=10,
+    minbibnames=10,
+    firstinits=true,
+    sorting=nyt,
+    bibstyle=numeric,
+    citestyle=numeric-comp,
+    backref,
+    block=ragged,
+    isbn=false,
+%    biburlnumpenalty=9000,
+%    biburlucpenalty=9000,
+%    biburllcpenalty=9000,
+  ]{biblatex}
+\def\bibfont{\small}
+\bibliography{journals,phd,ARK}
+\renewbibmacro*{in:}{}% remove "In: " before the journal title
+\AtBeginDocument{\renewcommand\bibname{References}}
+
+% bibtex default to apply SENTENCE CASE to bib titles
+\DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}}
+
+\renewbibmacro*{title}{%
+  \ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
+    {}
+    {\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}%
+      \OR\ifentrytype{incollection}\OR\ifentrytype{inproceedings}%
+      \OR\ifentrytype{inreference}}
+      {\printtext[title]{%
+        \printfield[sentencecase]{title}%
+        \setunit{\subtitlepunct}%
+        \printfield[sentencecase]{subtitle}}}%
+      {\printtext[title]{%
+        \printfield[sentencecase]{title}%
+        \setunit{\subtitlepunct}%
+        \printfield[sentencecase]{subtitle}}}%
+     \newunit}%
+  \printfield{titleaddon}}
+
+
+\def\nobreakbefore{%
+  \relax\ifvmode\else
+    \ifhmode
+      \ifdim \lastskip > 0pt\relax
+        \unskip\nobreakspace
+      \fi
+    \fi
+  \fi
+}
+\let\oldcite\cite
+\renewcommand\cite{\nobreakbefore\oldcite}
+\let\oldcite\parencite
+\renewcommand\parencite{\nobreakbefore\oldcite}
+
+\ifpdf
+\setkeys{Gin}{quiet}
+\fi
+
+\ifpdf % otherwise pstool screws up
+\RequirePackage[inline]{asymptote}
+\renewcommand\asydir{asy}
+\fi
+
+%% HUH?!?!
+
+\def\asy@input@graphic{%
+    \IfFileExists{"\AsyFile.tex"}{%
+      \catcode`:=12\relax
+      \let\TMPII\jobname
+      \let\jobname\Jobname
+      \@@input"\AsyFile.tex"\relax
+      \let\jobname\TMPII
+    }{%
+      \PackageWarning{asymptote}{file `\AsyFile.tex' not found}%
+    }%
+}
+
+%%%%%%%%%%%%%%%%%
+%%% FIGURES
+
+\RequirePackage{pgfplots}
+
+\let\subfloat\subbottom
+
+\def\phdpath{PhD/}
+\def\coilpath{\phdpath Coil/fig/}
+
+\newcommand\grf[2][]{\includegraphics[#1]{\phdpath #2}}
+
+\newcommand\ImportIfFileExists[4]{%
+  \IfFileExists{#1#2}
+    {\import{#1}{#2}#3}
+    {#4}}
+
+% Symmetric ragged commands
+\newcommand\IfOddPage{%
+  \checkoddpage
+  \ifoddpage\expandafter\@firstoftwo
+  \else\expandafter\@secondoftwo\fi}
+\newcommand\raggedout{\IfOddPage\raggedright\raggedleft}
+\newcommand\raggedin{\IfOddPage\raggedleft\raggedright}
+
+% Subfigures
+\newsubfloat{figure}
+\newenvironment{subfigure}[1][0.4]{%
+  \begin{minipage}[t]{#1\linewidth}
+    \centering
+    \let\caption\subcaption
+}{%
+  \end{minipage}%
+}
+\newenvironment{sidefigure}[1][0.4]{%
+  \begin{minipage}[t]{#1\linewidth}
+    \centering
+}{%
+  \end{minipage}%
+}
+
+% wide:
+\newenvironment{wide}{%
+  \begin{adjustwidth*}{0pt}{-\marginparsep-\marginparwidth}
+    \raggedout
+}{%
+  \end{adjustwidth*}%
+}
+
+%% Force font sizes in MathPSfrag & matlabfrag:
+\def\PFGstyle{\footnotesize}
+\def\matlabtextA{\footnotesize}
+\def\matlabtextB{\footnotesize}
+\def\matlabtextC{\footnotesize}
+
+%%
+\newcommand\gridIV[5][1em]{%
+  #2\hspace{#1}#3\\
+  [#1]#4\hspace{#1}#5}
+\newcommand\gridVI[7][0.5em]{%
+  #2\hspace{#1}#3\hspace{#1}#4\\[#1]
+  #5\hspace{#1}#6\hspace{#1}#7}
+
+\strictpagecheck
+
+% Make maths use lining numbers: (old-style look bad most-times)
+\DeclareMathSymbol{0}{0}{letters}{'060}
+\DeclareMathSymbol{1}{0}{letters}{'061}
+\DeclareMathSymbol{2}{0}{letters}{'062}
+\DeclareMathSymbol{3}{0}{letters}{'063}
+\DeclareMathSymbol{4}{0}{letters}{'064}
+\DeclareMathSymbol{5}{0}{letters}{'065}
+\DeclareMathSymbol{6}{0}{letters}{'066}
+\DeclareMathSymbol{7}{0}{letters}{'067}
+\DeclareMathSymbol{8}{0}{letters}{'070}
+\DeclareMathSymbol{9}{0}{letters}{'071}
+
+%%%%%%%%%%%%%
+%! FLOATS
+\renewcommand{\topfraction}{.8}
+\renewcommand{\bottomfraction}{.3}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+\renewenvironment{figure}[1][\fps@figure]
+                 {\edef\@tempa{\noexpand\@float{figure}[#1]}
+                  \@tempa\capstart\centering}
+                 {\end@float}
+\renewenvironment{table}[1][\fps@table]
+                 {\edef\@tempa{\noexpand\@float{table}[#1]}
+                  \@tempa\capstart\centering}
+                 {\end@float}
+
+
+%% Floats & captions
+\captionnamefont{\scshape}
+%\setlength\captionwidth{0.9\linewidth}
+%\changecaptionwidth
+
+\newcommand\lofcaption[2]{\caption[#1]{#1#2}}
+\DeclareRobustCommand\periodifnocomma{\@ifnextchar,{}{.}}
+
+%%%%%%%%%%%%
+% These are the varioref definitions:
+% \newcommand{\varioprefix}{See~}
+% \newcommand{\myvariohook}[1]{\marginpar{\small\centering \varioprefix #1}}
+% \def\reftextcurrent{}
+% \def\reftextfaceafter{}
+% \def\reftextfacebefore{}
+% \def\reftextafter{~on the \reftextvario{following}{next} page}
+% \def\reftextbefore{~on the \reftextvario{previous page}{preceding page}}
+% \def\reftextafter{}
+% \def\reftextbefore{}
+% \def\reftextfaraway#1{\myvariohook{p.\,\pageref{#1}}}
+% \def\reftextpagerange#1#2{\myvariohook{pp.\,\pageref{#1}--\pageref{#2}}}
+
+%%%%%%%%%%%%%%%%%%%%%
+%! MEMOIR CUSTOMISE
+
+\maxsecnumdepth{subsection} % number  subsections
+\maxtocdepth{subsection}    % include subsections in ToC
+
+\renewcommand{\cftchapterpagefont}{}
+\renewcommand{\cftchapterfont}{}     % no bold!
+\renewcommand\cftdotsep{999} % no dots
+
+% for page numbers:
+\newcommand\thesispage{\normalfont \thepage}
+
+%%% CHAPTERS
+\makechapterstyle{wspr}{%
+  \setlength\beforechapskip{0pt}
+  \setlength\midchapskip{0pt}
+  \setlength\afterchapskip{40pt}
+  \renewcommand\chapnamefont{%
+    \normalfont\centering\large\scshape\MakeLowercase}
+  \renewcommand\chapnumfont{%
+    \normalfont\centering\fontsize{60pt}{0pt}\selectfont}
+  \renewcommand\chaptitlefont{%
+    \normalfont\HUGE\bfseries\centering}
+  \renewcommand\printchaptername{%
+    \marginpar{\chapnamefont{\@chapapp}}}
+  \renewcommand\chapternamenum{}
+  \renewcommand\printchapternum{%
+    \marginpar{\chapnumfont\thechapter}}
+    \makeoddfoot{plain}{}{\thesispage}{}
+}
+\chapterstyle{wspr}
+
+
+%%% SECTIONS
+\newcommand\marginnum[2]{%
+  \noindent
+  \let\@tempa\relax
+  \savebox\@tempboxa{#2}%
+  %\null\marginpar{#1\@tempa}%
+  #1\@tempa\quad#2}
+
+\def\secstyle{\centering\scshape}
+\def\subsecstyle{\centering\itshape}
+\def\subsubsecstyle{\centering\small\itshape}
+
+\setsecheadstyle{\marginnum\secstyle}
+\setsubsecheadstyle{\marginnum\subsecstyle}
+\setsubsubsecheadstyle{\marginnum\subsubsecstyle}
+
+\setsecnumformat{\unexpanded{%
+  \protected@xdef\@tempa{{\upshape\S\csname the#1\endcsname}}}}
+
+%%%%%
+
+\renewcommand\contentsname{Table of Contents}
+\nouppercaseheads
+
+\def\printtoctitle#1{\section*{#1}}
+\def\printloftitle#1{\section*{#1}}
+\def\printlottitle#1{\section*{#1}}
+
+%%%%%
+
+%% Page headers
+\setlength{\headheight}{\baselineskip}
+\setlength{\headwidth}{\textwidth+\marginparsep+0.5\marginparwidth}
+\makepagestyle{wspr}
+\makepsmarks{wspr}{%
+  \let\@mkboth\markboth%
+  \def\chaptermark##1{%
+    \markboth{%
+      \if@mainmatter
+        \textsc{Chapter \thechapter:} %
+      \fi
+      ##1}{##1}}%
+  \def\sectionmark##1{%
+    \markright{%
+      \if@mainmatter
+        \textsc{\S\thesection:} %
+      \fi
+      ##1}}}
+\makerunningwidth{wspr}{\headwidth}
+\makeheadposition{wspr}{flushright}{flushleft}{}{}
+\makeevenhead{wspr}{\thesispage} {} {\small\leftmark}
+\makeoddhead{wspr} {\small\rightmark}              {} {\thesispage}
+\pagestyle{wspr}
+
+\makeheadrule{wspr}{\dimexpr\textwidth+0.5\marginparwidth+\marginparsep\relax}{0.4pt}
+
+%%% LISTS
+\renewcommand*{\descriptionlabel}[1]{\hspace\labelsep\normalfont\itshape #1}
+\firmlists*
+\renewcommand\labelitemi{\textbf{--}}
+
+\addtolength\cftbeforechapterskip{-1pt}
+
+\renewcommand \cftchapterfont   {\scshape}
+\renewcommand \cftsectionfont   {\normalfont}
+\renewcommand \cftsubsectionfont     {\itshape\small}
+\renewcommand \cftsubsectionpagefont {\upshape\small}
+
+\renewcommand \cftfigurefont   {\small}
+\renewcommand \cfttablefont   {\small}
+
+%%%
+
+\raggedbottom
+\renewcommand{\insertchapterspace}{%
+      \addcontentsline{lof}{chapter}{%
+        \protect\chapternumberline{\thechapter}\f@rtoc}%
+      \addcontentsline{lot}{chapter}{%
+        \protect\chapternumberline{\thechapter}\f@rtoc}%
+}
+
+%%% epigraphs
+
+\setlength\epigraphwidth{0.6\textwidth}
+\epigraphfontsize{\footnotesize\em}
+
+
+
+
+
+%%% trick asy
+
+\def\ASYprefix{}
+\newbox\ASYbox
+\newdimen\ASYdimen
+\long\def\ASYbase#1#2{\leavevmode\setbox\ASYbox=\hbox{#1}\ASYdimen=\ht\ASYbox%
+\setbox\ASYbox=\hbox{#2}\lower\ASYdimen\box\ASYbox}
+\long\def\ASYaligned(#1,#2)(#3,#4)#5#6#7{\leavevmode%
+\setbox\ASYbox=\hbox{#7}%
+\setbox\ASYbox\hbox{\ASYdimen=\ht\ASYbox%
+\advance\ASYdimen by\dp\ASYbox\kern#3\wd\ASYbox\raise#4\ASYdimen\box\ASYbox}%
+\put(#1,#2){#5\wd\ASYbox 0pt\dp\ASYbox 0pt\ht\ASYbox 0pt\box\ASYbox#6}}%
+\long\def\ASYalignT(#1,#2)(#3,#4)#5#6{%
+\ASYaligned(#1,#2)(#3,#4){%
+\special{pdf:q #5 0 0 cm}%
+}{%
+\special{pdf:Q}%
+}{#6}}
+\long\def\ASYalign(#1,#2)(#3,#4)#5{\ASYaligned(#1,#2)(#3,#4){}{}{#5}}
+\def\ASYraw#1{#1}
