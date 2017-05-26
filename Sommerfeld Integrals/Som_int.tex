@@ -17,22 +17,22 @@
 % Create title page
 \maketitle
 
-Multilayered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields \cite{something in here}. Most commonly, the fields are found in terms of the dyadic Green functions (DGF's) of the environment, which can be defines the vector field distriution due to a vector point source \cite{van Bladdel} \cite{}. Due to a current $\v J$ distributed in a region defined by a surface, $S'$, the surface fields are expressed as in terms of an inner product,
+Multilayered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields \cite{something in here}. Most commonly, the fields are found in terms of the dyadic Green functions (DGF's) of the environment, which can be defines the vector field distriution due to a vector point source \cite{van Bladdel} \cite{}. Due to a current $\v J$ distributed in a region defined by a surface, $r'$, the surface fields are expressed as in terms of an inner product,
 %
 \begin{subequations}
-\begin{align}
-\v E ={}& \int\limits_{S'} \tnsr{\v{G}}_\mathrm{EJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{S'},
-\label{eq:dyadic_E}\\
-\v H ={}& \int\limits_{S'} \tnsr{\v{G}}_\mathrm{HJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{S'}.
-\label{eq:dyadic_H}
-\end{align}
-\label{eq:dyadic}%
+  \begin{align}
+    \v E ={}& \int\limits_{r'} \tnsr{\v{G}}^\mathrm{EJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{r'},
+    \label{eq:dyadic_E}\\
+    \v H ={}& \int\limits_{r'} \tnsr{\v{G}}^\mathrm{HJ}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{r'}.
+    \label{eq:dyadic_H}
+  \end{align}
+  \label{eq:dyadic}%
 \end{subequations}
 % \begin{equation}
 %   \v E = \int\limits_{S'} \tnsr{G}_{EJ}(\v r, \v {r'}) \v {J}(\v{r'}) \diff{dS'}
 % \end{equation}
-where, $\tnsr{\v{G}}_\mathrm\mathrm{EJ}$ and $\tnsr{\v{G}}_\mathrm{HJ}$ are the spatial domain DGF's due to an electric current source located at $r'$, that define the electric and magnetic fields at a point $r$ respectively. In the presence of magnetic sources, \eqref{eq:dyadic_E} and \eqref{eq:dyadic_H} can be augmented using the superpostion principle, by adding an inner product containing magnetic DGF's, $\tnsr{\v{G}}_\mathrm\mathrm{EM}$ and
-$\tnsr{\v{G}}_\mathrm{HM}$.
+where, $\tnsr{\v{G}}^\mathrm{EJ}$ and $\tnsr{\v{G}}^\mathrm{HJ}$ are the spatial domain DGF's due to an electric current source located at $r'$, that define the electric and magnetic fields at a point $r$ respectively. In the presence of magnetic sources, \eqref{eq:dyadic_E} and \eqref{eq:dyadic_H} can be augmented using the superpostion principle, by adding an inner product containing magnetic DGF's, $\tnsr{\v{G}}^\mathrm{EM}$ and
+$\tnsr{\v{G}}^\mathrm{HM}$.
 %%5%%%%
 %%%%%%%
 %%%%%%%
@@ -47,29 +47,29 @@ We follow the well-established approach of field computation for planar multilay
 As shown in Fig. \ref{fig:TL_equivalent}a, it is assumed that the structure is unbounded in the lateral direction, and excited by electric sources only. The electric and magnetic fields are given by the Maxwell's equations in frequency-domain,
 %
 \begin{subequations}
-\begin{align}
-\del \x{\v E} ={}& -j \O \u \v{H},
-\label{eq:E}\\
-\del \x{\v H} ={}& j \O \E \v{E} + \v{J}.
-\label{eq:H}
-\end{align}
-\label{eq:MaxE}%
+  \begin{align}
+    \del \x{\v E} ={}& -j \O \u \v{H},
+    \label{eq:E}\\
+    \del \x{\v H} ={}& j \O \E \v{E} + \v{J}.
+    \label{eq:H}
+  \end{align}
+  \label{eq:MaxE}%
 \end{subequations}
 %
 For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $d/dz$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{felsen1994}. By taking the Fourier transform,
 %
 \begin{equation}
-\mathcal{F}[f(\v{\p},z)] \equiv \ti{F}(\v{k}_{\p},z) = \infint \infint
-f(\v{\p},z) \e^{-\j \v{k}_{\p} \cdot \v{\p}} \diff{x} \diff{y}
-\label{eq:Fourier}
+  \mathcal{F}[f(\v{\p},z)] \equiv \ti{F}(\v{k}_{\p},z) = \infint \infint
+  f(\v{\p},z) \e^{-\j \v{k}_{\p} \cdot \v{\p}} \diff{x} \diff{y}
+  \label{eq:Fourier}
 \end{equation}
 %
 the field computation is considerably simplified by switching to the spectral frequency domain $\v {k_{\p}}$, which reduces the complexity of the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + d/dz\, \v{\^{z}}$, which contains a derivative term only in z-direction. In \eqref{eq:Fourier}, the cylindrical coordinates are expressed as,
 %
 \begin{equation}
-\v{\p} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
-\v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
-\label{eq:rect2cylindrical}
+  \v{\p} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
+  \v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
+  \label{eq:rect2cylindrical}
 \end{equation}
 %
 and the notation $\sim$ above the capital-letter terms indicates the Fourier transform with respect to the transverse coordinates and from here on, will be used to denote the spectral domain quantities.
@@ -77,63 +77,63 @@ and the notation $\sim$ above the capital-letter terms indicates the Fourier tra
 As stated earlier, it is advantageous to separate the fields in transverse and longitudinal coordinates because, as we shall see shortly, the longitudinal part of the field can be completely expressed in terms of the transverse component. Applying the Fourier transform \eqref{eq:Fourier} on the Maxwell's equations \eqref{eq:MaxE}, we obtain:
 %
 \begin{subequations}
-\begin{align}
-\left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{E}}_t + \v{\ti{E}}_z)  ={}& -\j \O \u (\v{\ti{H}}_t + \v{\ti{H}}_z),
-\label{eq:FT_E}\\
-\left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{H}}_t + \v{\ti{H}}_z)  ={}& \j \O \E (\v{\ti{E}}_t + \v{\ti{E}}_z) -
-(\v{\ti{J}}_t + \v{\ti{J}}_z).
-\label{eq:FT_H}
-\end{align}
-\label{eq:FT_EH}%
+  \begin{align}
+    \left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{E}}_t + \v{\ti{E}}_z)  ={}& -\j \O \u (\v{\ti{H}}_t + \v{\ti{H}}_z),
+    \label{eq:FT_E}\\
+    \left(-\j \v{k}_{\p} + \v{\^{z}} \dv{}{z} \right)\x (\v{\ti{H}}_t + \v{\ti{H}}_z)  ={}& \j \O \E (\v{\ti{E}}_t + \v{\ti{E}}_z) -
+    (\v{\ti{J}}_t + \v{\ti{J}}_z).
+    \label{eq:FT_H}
+  \end{align}
+  \label{eq:FT_EH}%
 \end{subequations}
 %
 The transverse and longitudinal components of the magnetic field can be separately expressed in \eqref{eq:FT_E} as,
 %
 \begin{subequations}
-\begin{align}
--\j \v{k}_{\p} \x \v{\ti{E}}_z +
-\dv{}{z}\v{\^{z}} \x \v{\ti{E}}_t ={}&
--\j \O \u \v{\ti{H}}_t,
-\label{eq:FT_TH}\\
--\j \v{k}_{\p} \x \v{\ti{E}}_t ={}&
--\j \O \u \v{\ti{H}}_z.
-\label{eq:FT_LH}
-\end{align}
-\label{eq:FT_TLH}%
+  \begin{align}
+    -\j \v{k}_{\p} \x \v{\ti{E}}_z +
+    \dv{}{z}\v{\^{z}} \x \v{\ti{E}}_t ={}&
+    -\j \O \u \v{\ti{H}}_t,
+    \label{eq:FT_TH}\\
+    -\j \v{k}_{\p} \x \v{\ti{E}}_t ={}&
+    -\j \O \u \v{\ti{H}}_z.
+    \label{eq:FT_LH}
+  \end{align}
+  \label{eq:FT_TLH}%
 \end{subequations}
 %
 Using the vector product property \cite[p. 117]{fang2010},
 %
 \begin{equation}
-\v{A} \x \v{B} =\v{A} \cdot (\v{B} \x \v{\^{n}}) \, \v{\^{n}},
-\label{eq:vec}
+  \v{A} \x \v{B} =\v{A} \cdot (\v{B} \x \v{\^{n}}) \, \v{\^{n}},
+  \label{eq:vec}
 \end{equation}
 %
 where the unit vector $\v{\^{n}}$ is normal to the plane containing vectors $\v{A}$ and $\v{B}$. A scalar form of the longitudinal component of the electric field is obtained by applying \eqref{eq:vec} on \eqref{eq:FT_LH},
 %
 \begin{equation}
-- \j \v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}) \, \v{\^{z}} =
-- \j \O \u \v{\ti{H}}_z
-\label{eq:FT_LH}
+  - \j \v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}) \, \v{\^{z}} =
+  - \j \O \u \v{\ti{H}}_z
+  \label{eq:FT_LH}
 \end{equation}
 %
 which can be written in the scalar form,
 %
 \begin{equation}
-- \j \ti{H}_z = \frac{- \j}{\O \u}
-\v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}).
-\label{eq:sLH}
+  - \j \ti{H}_z = \frac{- \j}{\O \u}
+  \v{k}_{\p} \cdot (\v{\ti{E}}_t \x \v{\^{z}}).
+  \label{eq:sLH}
 \end{equation}
 %
 Now taking the vector product with unit vector $\v{\^{z}}$ on both sides of \eqref{eq:FT_TH}, the transverse electric field component is expressed as:
 %
 \begin{equation}
-\begin{split}
-\dv{\v{\ti{E}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{E}}_z) \x \v{\^{z}}
--\j \O \u \v{\ti{H}}_t \x \v{\^{z}}\\
-={}& -\j \v{k}_{\p} \ti{{E}}_z -\j \O \u \v{\ti{H}}_t \x \v{\^{z}}
-\end{split}
-\label{eq:dFT_ET}%
+  \begin{split}
+    \dv{\v{\ti{E}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{E}}_z) \x \v{\^{z}}
+    -\j \O \u \v{\ti{H}}_t \x \v{\^{z}}\\
+    ={}& -\j \v{k}_{\p} \ti{{E}}_z -\j \O \u \v{\ti{H}}_t \x \v{\^{z}}
+  \end{split}
+  \label{eq:dFT_ET}%
 \end{equation}
 %
 where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} \equiv \v{B}(\v{A} \cdot \v{C}) - \v{C}(\v{A} \cdot \v{B})$ has been applied.
@@ -141,38 +141,38 @@ where the BAC-CAB vector triple product identity, $(\v{A} \x \v{B})\x\v{C} \equi
 Following a similar procedure starting from (\ref{eq:FT_H}), we obtain the transverse component of magnetic field, along with the scalar longitudinal component of electric field:
 %
 \begin{equation}
-\begin{split}
-\dv{\v{\ti{H}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{H}}_z) \x \v{\^{z}}
-+ \j \O \E \v{\ti{E}}_t \x \v{\^{z}} +
-\v{\ti{J}}_t \x \v{\^{z}} \\
-={}& -\j \v{k}_{\p} \ti{{H}_z} + \j \O \E \v{\ti{E}}_t \x \v{\^{z}}  +
-\v{\ti{J}}_t \x \v{\^{z}},
-\end{split}
-\label{eq:dFT_HT}%
+  \begin{split}
+    \dv{\v{\ti{H}}_t}{z} ={}& -\j (\v{k}_{\p} \x \v{\ti{H}}_z) \x \v{\^{z}}
+    + \j \O \E \v{\ti{E}}_t \x \v{\^{z}} +
+    \v{\ti{J}}_t \x \v{\^{z}} \\
+    ={}& -\j \v{k}_{\p} \ti{{H}_z} + \j \O \E \v{\ti{E}}_t \x \v{\^{z}}  +
+    \v{\ti{J}}_t \x \v{\^{z}},
+  \end{split}
+  \label{eq:dFT_HT}%
 \end{equation}
 %
 and,
 \begin{equation}
--\j \O \E \ti{E}_z =
-\j \v{k}_{\p} \cdot (\v{\ti{H}}_t \x \v{\^{z}}) + \ti{J}_z.
-\label{eq:FT_LE}
+  -\j \O \E \ti{E}_z =
+  \j \v{k}_{\p} \cdot (\v{\ti{H}}_t \x \v{\^{z}}) + \ti{J}_z.
+  \label{eq:FT_LE}
 \end{equation}
 %
 By substituting \eqref{eq:sLE} in \eqref{eq:dFT_ET}, we get the transverse component of electric field,
 %
 \begin{equation}
-\dv{\v{\ti{E}}_t}{z} =
-\frac{1}{\j \O \E} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\ti{H}}_t \x \v{\^{z}}) + \v{k}_{\p} \frac{\ti{J}_z}{\O \E}.
-\label{eq:Et}
+  \dv{\v{\ti{E}}_t}{z} =
+  \frac{1}{\j \O \E} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\ti{H}}_t \x \v{\^{z}}) + \v{k}_{\p} \frac{\ti{J}_z}{\O \E}.
+  \label{eq:Et}
 \end{equation}
 %
 Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, the transverse component of magnetic field,
 %
 \begin{equation}
-\dv{\v{\ti{H}}_t}{z} =
-\frac{1}{\j \O \u} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\^{z}} \x \v{\ti{E}}_t) + \v{\ti{J}}_t
-\x \v{\^{z}}
-\label{eq:Ht}
+  \dv{\v{\ti{H}}_t}{z} =
+  \frac{1}{\j \O \u} \left( k^2 - \v{k}_{\p}\v{k}_{\p} \cdot \right) (\v{\^{z}} \x \v{\ti{E}}_t) + \v{\ti{J}}_t
+  \x \v{\^{z}}
+  \label{eq:Ht}
 \end{equation}
 %
 where $k = \O \sqrt{\u \E}$ in \eqref{eq:Et} and \eqref{eq:Ht} is the medium wavenumber.
@@ -180,20 +180,20 @@ where $k = \O \sqrt{\u \E}$ in \eqref{eq:Et} and \eqref{eq:Ht} is the medium wav
 The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k}_{\p}, \v{\^z} \x \v{k}_{\p}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent, which allows the TE and TM mode analysis to be made separately. The coordinate transformation can be expressed as:
 %
 \begin{equation}
-\begin{bmatrix}
-\v{\^u} \\
-\v{\^v}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\cos \phi & \sin \phi \\
--\sin \phi & \cos \phi
-\end{bmatrix}
-\begin{bmatrix}
-\v{\^x} \\
-\v{\^y}
-\end{bmatrix}
-\label{eq:transformation}
+  \begin{bmatrix}
+    \v{\^u} \\
+    \v{\^v}
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    \cos \phi & \sin \phi \\
+    -\sin \phi & \cos \phi
+  \end{bmatrix}
+  \begin{bmatrix}
+    \v{\^x} \\
+    \v{\^y}
+  \end{bmatrix}
+  \label{eq:transformation}
 \end{equation}
 %
 where $\phi$ is the angle between $\v{k_{\p}}$ and the positive x-axis. A transmission line analogue for the spectral fields, expressed in terms of modal voltages and currents can therefore, be written as \cite{kastner1988, michalski1997multilayered},
@@ -270,7 +270,7 @@ Equations \eqref{eq:TL_Vs}-\eqref{eq:TL_Is} can be conveniently written in a com
     \dv{I^{\alpha}}{z} ={}& -\j k_z Y^{\alpha}V^{\alpha} + i^{\alpha}
     \label{eq:TL_I}
   \end{align}
-  \label{eq:TLE}%
+  \label{eq:telegraphers}%
 \end{subequations}
 %
 where $\alpha$ is either TE or TM, the propagation constant in the transverse direction is $k_z = \pm \sqrt{k^2 - k_{\p}^2}$, for which the sign must be chosen in such a way the fields decay away from the source. The modal impedances in \eqref{eq:TLE} are,
@@ -307,8 +307,8 @@ Using the expressions that relate the transverse electric and mangnetic to the e
   \begin{bmatrix}
     \frac{\j}{\O \E(z)}     \v{\ti{J}}_z(\v{k}_{\p},z) \\
     0
-    \end{bmatrix},
-    \label{eq:EHVI}
+  \end{bmatrix}
+  \label{eq:totalEHVI},
 \end{equation}
 %
 where $\E(z)$ may vary from one layer to another.
@@ -317,18 +317,79 @@ where $\E(z)$ may vary from one layer to another.
 %%
 \subsection{Green functions for the TL equations}
 %
-
-
-
-
-
-
-
-
-
-
-
-
+To obtain the transmission-line voltages and currents that define the spectral fields in \eqref{eq:totalEHVI}, we introduce the one-dimensioanal transmission-line Green functions (TLGF's) that are analogous to the spatial domain DGF's in \eqref{eq:dyadic}. Following \cite{felsen,michalskichapter}, we define $V_i(z,z')$ and $I_i(z,z')$ as the voltage and current respectively, at a point $z$ along the transmission line due to a unit-strength current source located at $z'$. Similarly, $V_v(z,z')$ and $I_v(z,z')$ are the respective voltage and current due to a unit-strength voltage source. Analogous to \eqref{eq:dyadic} which is augmented by magnetic sources, we write:
+%
+\begin{subequations}
+  \begin{align}
+    V(z) ={}& \int\limits_{z'} \left[ V_i(z,z') i(z') + V_v(z,z') v(z') \right] \diff{z'},
+    \label{eq:TL_V}\\
+    I(z) ={}& \int\limits_{z'} \left[ I_i(z,z') i(z') + I_v(z,z') v(z') \right] \diff{z'}.
+    \label{eq:TL_V}
+  \end{align}
+  \label{eq:TLGF_analogy}%
+\end{subequations}
+%
+The telegrapher's equations \eqref{eq:telelgraphers}, are rewritten for a voltage excited line as:
+%
+\begin{subequations}
+  \begin{align}
+    \dv{V_v}{z} ={}& -\j k_z Z_v I_v + \delta(z - z')
+    \label{eq:TLGF_V_v}\\
+    \dv{I_v}{z} ={}& -\j k_z Y_v V_v,
+    \label{eq:TLGF_I_v}
+  \end{align}
+  \label{eq:TLGF_v_telelgraphers}%
+\end{subequations}
+%
+and for a current excited line, we obtain:
+%
+\begin{subequations}
+  \begin{align}
+    \dv{V_i}{z} ={}& -\j k_z Z_i I_i
+    \label{eq:TLGF_V_i}\\
+    \dv{I_i}{z} ={}& -\j k_z Y_i V_i + \delta(z - z')
+    \label{eq:TLGF_I_i}
+  \end{align}
+  \label{eq:TLGF_i_telelgraphers}%
+\end{subequations}
+%
+%%
+%%
+%%
+\subsection{Spectral Domain Dyadic Green Functions}
+%
+By substituting \eqref{eq:TLGF_v_telelgraphers} and \eqref{eq:TLGF_i_telelgraphers} into \eqref{eq:totalEHVI} and referring to Fig.
+\ref{fig:J_sources}, we obtain the spectral-domain versions of DGFs \cite{michalski}:
+%
+\begin{subequations}
+  \begin{align}
+    \ti{\tnsr{\v {G}}^\mathrm{EJ}}(\v k_{\p}, z | z') ={}& - \v{\^u} \v{\^u} V_i^{\mathrm{TM}} - \v{\^v} \v{\^v} V_i^{\mathrm{TE}}  + \v{\^z} \v{\^u}
+    \frac{k_{\p}}{\O \E(z)} I_i^{\mathrm{TM}}  \nonumber \\
+    & + \v{\^u} \v{\^z}
+    \frac{k_{\p}}{\O \E(z')} V_v^{\mathrm{TM}} + \v{\^z} \v{\^z}
+    \frac{1}{\j \O \E(z')} \left[\frac{k_{\p}^2}{\j \O \E(z)} I_v^{\mathrm{TM}} - \delta(z - z') \right],
+    \label{eq:spectralDGF_EJ}\\
+    \ti{\tnsr{\v {G}}}^\mathrm{HJ}(\v k_{\p}, z | z') ={}& \v{\^u} \v{\^v} I_i^{\mathrm{TE}} - \v{\^v} \v{\^u} I_i^{\mathrm{TE}}  - \v{\^z} \v{\^v}
+    \frac{k_{\p}}{\O \u} V_i^{\mathrm{TE}} + \v{\^v} \v{\^z}
+    \frac{k_{\p}}{\O \E(z')} I_v^{\mathrm{TM}}.
+    \label{eq:spectralDGF_HJ}
+  \end{align}
+  \label{eq:spectralDGF}%
+\end{subequations}
+%
+\begin{figure}[h!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/sources.pdf_tex}
+  \caption{Electric Source representation in a transmission line network}
+  \label{fig:J_sources}
+\end{figure}
+%%
+%%
+%%
+%%
+\subsection{Spatial Domain Dyadic Green Functions}
+%
 
 
 
@@ -343,15 +404,11 @@ The corresponding fields in the spatial domain are therefore, obtained by taking
 
 In case of rotational symmetry which implies that $\ti{F}$ only depends on one spectral co-ordinate $k_{\p}$, the double integral in \eqref{eq:invFourier} can be simplified to an integral of only one variable. Using  \eqref{eq:rect2cylindrical} and the coordinate transformation shown in Fig. \ref{fig:SpCS} where,
 %
-\begin{subequations}
-  \begin{align}
-    k_x ={}& k_{\p} \cos \psi \qquad \text{and}
-    \label{eq:kx2kp}\\
-    k_y ={}& k_{\p} \sin \psi,
-    \label{eq:ky2kp}
-  \end{align}
+\begin{equation}
+    k_x = k_{\p} \cos \psi \qquad \text{and} \qquad
+    k_y = k_{\p} \sin \psi,
   \label{eq:cylindricaltransformation}%
-\end{subequations}
+\end{equation}
 %\ef
 we rewrite \eqref{eq:invFourier} in cylindrical coordinates,
 %
@@ -393,20 +450,8 @@ In some cases, the Bessel function may be up to an order of 2, therefore, genera
 %
 Assuming only electric sources existing in space, the corresponding TL sources, $v^{\alpha}$ and $i^{\alpha}$, where $\alpha$ is either TE or TM, are illustrated in \ref{fig:J_sources}. A horizontally oriented (x-directed) electric dipole is represented by a current source in an equivalent TM transmission line network. Likewise, the equivalent configuration of a vertical (y-directed) electric dipole is a TE network with a current source. A z-directed dipole corresponds to voltage source in a TM transmission line. For an arbitrarily directed source, the equivalent TL model consists of a superposition of the three representations.
 %
-% \begin{figure}[h]
-%   \centering
-%   \subfloat[]{\centering
-%   \includegraphics[width=.55\textwidth]{figures/jx.tikz}
-%   \label{fig:jx_source}}  \newline
-%   \subfloat[]{ \centering
-%   \includegraphics[width=.55\textwidth]{figures/jy.tikz}
-%   \label{fig:jy_source}}  \newline \centering
-%   \subfloat[]{\centering
-%   \includegraphics[width=.55\textwidth]{figures/jz.tikz}
-%   \label{fig:jz_source}} \newline
-%   \caption{Electric Source representation in a transmission line network}
-%   \label{fig:J_sources}
-% \end{figure}
+
+
 
 
 

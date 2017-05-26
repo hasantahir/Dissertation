@@ -4,6 +4,7 @@ inkscape --file=gated.svg --export-area-drawing --without-gui --export-latex --e
 inkscape --file=ungated.svg --export-area-drawing --without-gui --export-latex --export-pdf=ungated.pdf
 inkscape --file=backgated.svg --export-area-drawing --without-gui --export-latex --export-pdf=backgated.pdf
 inkscape --file=xsystem.svg --export-area-drawing --without-gui --export-latex --export-pdf=xsystem.pdf
+inkscape --file=sources.svg --export-area-drawing --without-gui --export-latex --export-pdf=sources.pdf
 
 Tip to avoid multipage pdf generation headache:
 Ensure text is always top of eerything

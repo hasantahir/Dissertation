@@ -7,7 +7,8 @@
 \usepackage[utf8x]{inputenc} % Use it to include other characters than ABC
 \usepackage[T1]{fontenc}
 % \usepackage{textcomp} % provide lots of new symbols
-\usepackage{lmodern}
+% \usepackage{lmodern}
+% \usepackage[bold-style=ISO]{unicode-math}
 
 
 %%%%%%%%%%
@@ -16,6 +17,7 @@
 \usepackage[cmex10]{amsmath}
 \usepackage{calc}
 \usepackage{amsfonts} % to load math symbols
+\usepackage{bm}
 \usepackage{mdwmath}
 \usepackage{commath}
 \usepackage{physics} % For using the oridnary derivative nomenclature
@@ -89,8 +91,10 @@ urlcolor={blue!80!black}
 % \usepackage{times}
 % \usepackage{mathptmx} % Times new Roman
 % \usepackage{kerkis}
-\usepackage{newtxtext}% for math
-\usepackage{newtxmath}% for math
+% \usepackage{newtxtext}% for math
+% \usepackage{newtxmath}% for math
+% \setmainfont{XITS}
+% \setmathfont{XITS Math}
 
 %%%%%%%%%%
 %%%%%%%%%% TIPS and TRICKS
@@ -128,13 +132,14 @@ urlcolor={blue!80!black}
 % Operators
 \renewcommand{\v}[1]{\mathbf{#1}} % vectors
 \newcommand{\ti}[1]{\tilde{#1}} % spectral representation
-\newcommand{\tnsr}[1]{\overline{\overline{#1}}}
+\newcommand{\tnsr}[1]{\underline{\underline{#1}}}
 
 % Symbols
 \renewcommand{\O}{\omega}  % omega
 \newcommand{\E}{\varepsilon}  % epsilon
 \renewcommand{\u}{\mu}  % mu
 \newcommand{\p}{\rho}  % rho
+\newcommand{\vp}{\boldsymbol \p}  % rho
 \newcommand{\x}{\times}  % times
 \renewcommand{\inf}{\infty}  % infinity
 \newcommand{\infint}{\int\limits_{-\inf}^\inf} % integral by R
