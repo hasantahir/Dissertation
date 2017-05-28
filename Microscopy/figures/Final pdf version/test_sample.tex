@@ -1,0 +1,101 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8x]{inputenc} % Use it to include other characters than ABC
+\usepackage[T1]{fontenc}
+%%%%%%%%%%
+%%%%%%%%%% MATH
+%%%%%%%%%%
+\usepackage[cmex10]{amsmath}
+\usepackage{calc}
+\usepackage{amsfonts} % to load math symbols
+\usepackage{mdwmath}
+\usepackage{commath}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{gensymb} % Insert degree symbol
+\usepackage{siunitx} % All the SI unit nomenclature
+  \sisetup{per=slash, load=abbr}
+% \usepackage{systeme} % For system of equations
+%%%%%%%%%%
+%%%%%%%%%% TABLES and FORMATTING
+%%%%%%%%%%
+\usepackage{mdwtab}
+\usepackage{datetime} % Insert date and time
+% \usepackage[letterpaper]{geometry}
+% \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
+% \usepackage[nodisplayskipstretch,doublespacing]{setspace}
+% \setstretch{1.5}
+\usepackage{etoolbox}
+% \usepackage{multicol} % For side-by-side equatiosn
+%% Nicely set the spacing between equations and text
+% \AtBeginDocument{%
+% \setlength\abovedisplayskip{4pt}
+% \setlength\belowdisplayskip{4pt}
+% \setlength\abovedisplayshortskip{4pt}
+% \setlength\belowdisplayshortskip{4pt}
+% }
+% \usepackage{tocloft}
+% % \usepackage[rm, tiny, center, compact]{titlesec}
+% \usepackage{indentfirst}
+% \usepackage{tocvsec2}
+% \usepackage[titletoc]{appendix}
+% \usepackage{appendix}
+% \usepackage{tamuconfig}
+% \usepackage{rotating}
+% pdflatex -synctex=-1
+\usepackage{mathptmx} % Times new Roman
+\usepackage{hyperref}
+% \usepackage{mathpazo}
+
+%%%%%%%%%%
+%%%%%%%%%% GRAPHICS
+%%%%%%%%%%
+% \usepackage[letterpaper]{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{standalone}
+\usepackage{tikz}
+\tikzset{
+  font={\fontsize{10pt}{10}\selectfont}}
+  \usepackage{tikzscale} % Scale the figure not the font
+\usepackage[americanresistors,americaninductors]{circuitikz}
+\usepackage{tikz-dimline} % For dimensional drawing
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{subfig}
+% The following is done to hide ugly color boxes around the links and colorize the links
+\usepackage{xcolor}
+\hypersetup{
+colorlinks,
+linkcolor={red!50!black},
+citecolor={blue!50!black},
+urlcolor={blue!80!black}
+}
+
+\newcommand{\E}{\varepsilon}  % epsilon
+%\PreviewEnvironment{tikzpicture}
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis} [
+    set layers=standard,
+    xmajorgrids=true,
+    ymajorgrids=true,
+    xminorgrids=true,
+    yminorgrids=true,
+    enlargelimits=false,
+    axis equal image,
+    grid=both,
+    minor tick num=2,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    minor grid style={line width=.1pt,draw=gray!30},
+    xlabel=$x~(\SI{}{\nm})$,
+    ylabel=$y~(\SI{}{\nm})$,
+    ]
+    \addplot graphics [
+    xmin=0,
+    xmax=500,
+    ymin=0,
+    ymax=500,
+    ] {test_sample_new.pdf};
+  \end{axis}
+\end{tikzpicture}
+\end{document}

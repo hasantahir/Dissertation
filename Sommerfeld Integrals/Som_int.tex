@@ -177,7 +177,7 @@ Similarly, from \eqref{eq:sLH} and \eqref{eq:dFT_HT}, the transverse component o
 %
 where $k = \O \sqrt{\u \E}$ in \eqref{eq:Et} and \eqref{eq:Ht} is the medium wavenumber.
 
-The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k}_{\p}, \v{\^z} \x \v{k}_{\p}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent, which allows the TE and TM mode analysis to be made separately. The coordinate transformation can be expressed as:
+The fields in \eqref{eq:Et} and  \eqref{eq:Ht} for arbitrarily aligned sources lie in the plane of a spectral coordinate system as illustrated in Fig. \ref{fig:SpCS}, where the arrowheads in color correspond to spectral-domain quantities. A rotational transformation of the coordinate system such that the axes align with the vectors $\v{k}_{\p}, \v{\^z} \x \v{k}_{\p}$ \cite{itoh1980}, simplifies the procedure of finding the transmission line equivalent, which allows the TE and TM mode analysis to be made separately. The coordinate transformation can be expressed as:
 %
 \begin{equation}
   \begin{bmatrix}
@@ -312,6 +312,17 @@ Using the expressions that relate the transverse electric and mangnetic to the e
 \end{equation}
 %
 where $\E(z)$ may vary from one layer to another.
+
+Assuming only electric sources existing in space, the corresponding TL sources, $v^{\alpha}$ and $i^{\alpha}$, defined in \eqref{eq:telegraphers}, are illustrated in \ref{fig:J_sources}. A horizontally oriented (x-directed) electric dipole is represented by a current source in an equivalent TM transmission line network. Likewise, the equivalent configuration of a vertical (y-directed) electric dipole is a TE network with a current source. A z-directed dipole corresponds to voltage source in a TM transmission line. For an arbitrarily directed source, the equivalent TL model consists of a superposition of the three representations.
+%
+\begin{figure}[h!]
+  \centering
+  \def\svgwidth{.75\linewidth}
+  \input{figures/sources.pdf_tex}
+  \caption{Electric Source representation in a transmission line network}
+  \label{fig:J_sources}
+\end{figure}
+%
 %%
 %%
 %%
@@ -377,23 +388,13 @@ By substituting \eqref{eq:TLGF_v_telelgraphers} and \eqref{eq:TLGF_i_telelgraphe
   \label{eq:spectralDGF}%
 \end{subequations}
 %
-\begin{figure}[h!]
-  \centering
-  \def\svgwidth{.75\linewidth}
-  \input{figures/sources.pdf_tex}
-  \caption{Electric Source representation in a transmission line network}
-  \label{fig:J_sources}
-\end{figure}
 %%
 %%
 %%
 %%
 \subsection{Spatial Domain Dyadic Green Functions}
 %
-
-
-
-The corresponding fields in the spatial domain are therefore, obtained by taking the inverse Fourier transform,
+By taking an inverse Fourier transform \eqref{eq:invFourier},
 %
 \begin{equation}
   \mathcal{F}^{-1}[\ti{F}(\v{k}_{\p},z)] \equiv f(\v{\p},z) = \frac{1}{(2 \pi )^2}\infint \infint
@@ -401,8 +402,7 @@ The corresponding fields in the spatial domain are therefore, obtained by taking
   \label{eq:invFourier}
 \end{equation}
 %
-
-In case of rotational symmetry which implies that $\ti{F}$ only depends on one spectral co-ordinate $k_{\p}$, the double integral in \eqref{eq:invFourier} can be simplified to an integral of only one variable. Using  \eqref{eq:rect2cylindrical} and the coordinate transformation shown in Fig. \ref{fig:SpCS} where,
+we find the spatial domain analogues of the spectral domain DGFs, which are  defined in \eqref{eq:spectralDGF}. In case of rotational symmetry which implies that $\ti{F}$ only depends on one spectral co-ordinate $k_{\p}$, the double integral in \eqref{eq:invFourier} can be simplified to an integral of only one variable. Using  \eqref{eq:rect2cylindrical} and the coordinate transformation shown in Fig. \ref{fig:SpCS} where,
 %
 \begin{equation}
     k_x = k_{\p} \cos \psi \qquad \text{and} \qquad
@@ -426,32 +426,212 @@ Applying the Fourier-Bessel transform (FBT) to \eqref{eq:invFourier_cylindrical}
 \end{equation}
 %
 where $J_0(\cdot)$ is the Bessel function of zero order
-we obtain the Sommerfeld integral (SI), $S_0\{\cdot\}$:
+we obtain the Sommerfeld integral (SI), $\mathcal{S}_0\{\cdot\}$:
 %
 \begin{equation}
-  f(\p) = S_0\{\ti{F}\} \equiv \frac{1}{2\pi}\int\limits_0^{\inf} J_0(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}.
+  f(\p) = \mathcal{S}_0\{\ti{F}\} \equiv \frac{1}{2\pi}\int\limits_0^{\inf} J_0(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}.
   \label{eq:sommerfeld_integral}
 \end{equation}
 %
 In some cases, the Bessel function may be up to an order of 2, therefore, generalized expression for SI is,
 %
 \begin{equation}
-  \begin{split}
-    S_n\{\ti{F}\} \equiv{}& \frac{1}{2\pi}\int\limits_0^{\inf} J_n(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}\\
-    ={}& \frac{1}{4\pi}\int\limits_{-\inf}^{\inf} H_n(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}
-  \end{split}
-  \label{eq:dFT_ET}%
+    \mathcal{S}_n\{\ti{F}\} \equiv \frac{1}{2\pi}\int\limits_0^{\inf} J_n(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}.
+  \label{eq:generalized_SI}%
 \end{equation}
+%
+Following the above procedure, we write the spatial domain DGFs as:
 %
 \begin{equation}
-  S_n\{\ti{F}\} \equiv \int\limits_0^{\inf} J_0(k_{\p}\p)  \ti{F}(k_{\p}) k_{\p} \diff{k_{\p}}, \qquad \text{where} \, n = 0,1,2.
-  \label{eq:generalized_SI}
+    {\tnsr{\v {G}}^\mathrm{\kappa}}(\v {\p}, z | z') = \mathcal{F}^{-1} \left[ \ti{\tnsr{\v {G}}}^\mathrm{\kappa}(\v k_{\p}, z | z') \right]
+    \equiv \mathcal{S}_n\{\ti{\tnsr{\v {G}}}^\mathrm{\kappa}(\v k_{\p}, z | z')\}
+  \label{eq:spatialDGF_generalized}%
 \end{equation}
 %
-Assuming only electric sources existing in space, the corresponding TL sources, $v^{\alpha}$ and $i^{\alpha}$, where $\alpha$ is either TE or TM, are illustrated in \ref{fig:J_sources}. A horizontally oriented (x-directed) electric dipole is represented by a current source in an equivalent TM transmission line network. Likewise, the equivalent configuration of a vertical (y-directed) electric dipole is a TE network with a current source. A z-directed dipole corresponds to voltage source in a TM transmission line. For an arbitrarily directed source, the equivalent TL model consists of a superposition of the three representations.
+where the superscript $\kappa$ denotes either EJ or HJ.
+
+Starting with \eqref{eq:spectralDGF}, we now discuss each step in detail to obtain the spatial domain versions of the DGFs. First, the spectral domain dyads are converted to their spatial domain counterparts using the relations listed in Table \ref{tab:dyad_conversion} which are obained from Fig. \ref{fig:SpCS}.
+%
+\begin{table}[!h]
+  \begin{center}
+    \begin{tabular}{|| c | c ||}
+      \hline
+      Spectral domain dyad & Spatial domain dyad \\ [0.5ex]
+      \hline\hline
+      $\v{\^u} \v{\^u}$ & $ \displaystyle \v{\^x} \v{\^x} \cos^2 \psi + \v{\^x} \v{\^y} \cos \psi \, \sin \psi + \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ \\ [2.5ex]
+      $\v{\^v} \v{\^v}$ & $ \displaystyle \v{\^x} \v{\^x} \sin^2 \psi - \v{\^x} \v{\^y} \cos \psi \, \sin \psi - \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ \\ [2.5ex]
+      $\v{\^u} \v{\^v}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi + \v{\^x} \v{\^y} \cos^2 \psi - \v{\^y} \v{\^x} \sin^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ \\ [2.5ex]
+      $\v{\^v} \v{\^u}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi - \v{\^x} \v{\^y} \sin^2 \psi + \v{\^y} \v{\^x} \cos^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ \\ [2.5ex]
+      $\v{\^z} \v{\^u}$ & $ \displaystyle \v{\^z} \v{\^x} \cos \psi + \v{\^z} \v{\^y} \sin \psi$ \\ [2.5ex]
+      $\v{\^u} \v{\^z}$ & $ \displaystyle \v{\^x} \v{\^z} \cos \psi + \v{\^y} \v{\^z} \sin \psi$ \\ [2.5ex]
+      $\v{\^z} \v{\^v}$ & $ \displaystyle -\v{\^z} \v{\^x} \sin \psi + \v{\^z} \v{\^y} \cos \psi$ \\ [2.5ex]
+      $\v{\^v} \v{\^z}$ & $ \displaystyle -\v{\^x} \v{\^z} \sin \psi + \v{\^y} \v{\^z} \cos \psi$ \\ [2.5ex]
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Conversion of spectral domain dyad to spatial domain}
+  \label{tab:dyad_conversion}
+\end{table}
+%
+In general, a spatial domain DGF can be expressed in a matrix form:
+%
+\begin{equation}
+  \tnsr{\v {G}}^\mathrm{\kappa} =
+  \begin{bmatrix}
+    G_{xx}^\mathrm{\kappa} & G_{xy}^\mathrm{\kappa} & G_{xz}^\mathrm{\kappa} \\
+    G_{yx}^\mathrm{\kappa} & G_{yy}^\mathrm{\kappa} & G_{yz}^\mathrm{\kappa} \\
+    G_{zx}^\mathrm{\kappa} & G_{zy}^\mathrm{\kappa} & G_{zz}^\mathrm{\kappa} \\
+  \end{bmatrix}
+  \label{eq:matrix_dyadicG},
+\end{equation}
+%
+As an example, we consider the spatial domain component, $G_{xx}^\mathrm{EJ}$ of the DGF, which can be expressed as:
+%
+\begin{equation}
+  \begin{split}
+    G_{xx}^\mathrm{EJ} ={}& \mathcal{F}^{-1} \{ - \cos^2 \psi V_i^\mathrm{TM} - \sin^2 \psi V_i^\mathrm{TE} \} \\
+    ={}& - \mathcal{F}^{-1} \{\frac{1 + \cos 2\psi}{2} V_i^\mathrm{TM} + \frac{1 - \cos 2\psi}{2} V_i^\mathrm{TE} \} \\
+    ={}& - \frac{1}{2} \mathcal{S}_0 \{ V_i^\mathrm{TM} + V_i^\mathrm{TE} \} - \mathcal{F}^{-1} \{ \frac{\cos 2\psi}{2} V_i^\mathrm{TM} -  V_i^\mathrm{TE} \} \\
+  \end{split}
+  \label{eq:Gxx_1st_details}%
+\end{equation}
+%
+Using the formula \cite{michalski_chapter},
+%
+\begin{equation}
+  \mathcal{F}^{-1} \{ \cos 2 \psi \, \ti{F} \} = - \cos 2 \phi \, \mathcal{S}_2 \{\ti{F} \}
+  \label{eq:trig_property}
+\end{equation}
+%
+and the recurrence relation for Bessel-type functions \cite{Abramowitz},
+%
+\begin{equation}
+  J_{n+1}(z) = \frac{2n}{z} J_{n}(z) - J_{n-1}(z)
+  \label{eq:recurrence}
+\end{equation}
+%
+\eqref{eq:Gxx_1st_details} is simplified to: 
+%
+\begin{equation}
+  \begin{split}
+    G_{xx}^\mathrm{EJ} ={}& - \frac{1}{2} \mathcal{S}_0 \{ V_i^\mathrm{TM} \} - \frac{1}{2} \mathcal{S}_0 \{ V_i^\mathrm{TE} \} + \frac{\cos 2 \phi}{2} \mathcal{S}_2 \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE} \} \\
+    ={}& - \frac{1}{2} \mathcal{S}_0 \{ V_i^\mathrm{TM} \} - \frac{1}{2} \mathcal{S}_0 \{ V_i^\mathrm{TE} \} + \frac{\cos 2 \phi}{2} \left[\frac{2}{\p} \mathcal{S}_1 \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \} - \mathcal{S}_0 \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \} \right]. \\
+  \end{split}
+  \label{eq:Gxx_2nd_equation}
+\end{equation}
+%
+After some algebraic manipulation and knowing the fact that sommerfeld integrals obey the linearity principle, we obtain the final expression:
+%
+\begin{equation}
+  \begin{split}
+    G_{xx}^\mathrm{EJ} ={}& - \cos^2 \phi \, \mathcal{S}_0 \{ V_i^\mathrm{TM} \}  - \sin^2 \phi \, \mathcal{S}_0 \{ V_i^\mathrm{TE} \} + \frac{\cos 2 \phi}{2} \mathcal{S}_2 \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE} \}
+  \end{split}.
+  \label{eq:Gxx_2nd_equation}
+\end{equation}
 %
 
+Following similar procedure, the remaining components of both electric and magnetic fields DGFs in the spatial domain can be obtained, which are listed in Table. \ref{tab:EJ} \cite{mich_chapter}.
+%
+\begin{table}[!h]
+  \begin{center}
+    \begin{tabular}{|| c | c ||}
+      \hline
+      GF & $\mathrm{\kappa} = \mathrm{EJ}$ \\ [0.5ex]
+      \hline\hline
+      $G_{xx}$ & $ \displaystyle - \cos^2 \psi \, \mathcal{S}_0 \{ V_i^\mathrm{TM} \} - \sin^2 \psi \, \mathcal{S}_0 \{ V_i^\mathrm{TE} \} + \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{xy}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{xz}$ & $ \displaystyle \frac{\eta_0}{\j k_0 \E(z')} \cos \psi \,  \mathcal{S}_1 \{ {k_{\p} V_v^\mathrm{TM}} \}$ \\ [2.5ex]
+      $G_{yx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \}$  \\ [2.5ex]
+      $G_{yy}$ & $ \displaystyle - \sin^2 \psi \, \mathcal{S}_0 \{ V_i^\mathrm{TM} \} - \cos^2 \psi \, \mathcal{S}_0 \{ V_i^\mathrm{TE} \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \{ {k_{\p} V_v^\mathrm{TM}} \}$  \\ [2.5ex]
+      $G_{zx}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \cos \psi \,  \mathcal{S}_1 \{ {k_{\p} I_i^\mathrm{TM}} \}$    \\ [2.5ex]
+      $G_{zy}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \{ {k_{\p} I_i^\mathrm{TM}} \}$   \\ [2.5ex]
+      $G_{zz}$ & $\displaystyle -\frac{\eta_0^2}{\j k_0^2 \E(z) \E(z')} \mathcal{S}_0 \{ {k^2_{\p} I_v^\mathrm{TM}} \} - \frac{\eta_0}{\j k_0 \E(z)} \delta(\v{\p}) \delta(z -z')$  \\ [2.5ex]
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Scalar Green functions for computation of electric field due to an electric current source \cite{michalskichapter}}
+  \label{tab:EJ}
+\end{table}
+%
+%
+%
+\begin{table}[!h]
+  \begin{center}
+    \begin{tabular}{|| c | c ||}
+      \hline
+      GF & $\mathrm{\kappa} = \mathrm{HJ}$ \\ [0.5ex]
+      \hline\hline
+      $G_{xx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{xy}$ & $ \displaystyle  \cos^2 \psi \, \mathcal{S}_0 \{ I_i^\mathrm{TE} \} + \sin^2 \psi \, \mathcal{S}_0 \{ I_i^\mathrm{TM} \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{xz}$ & $\displaystyle -\frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \{ {k_{\p} I_v^\mathrm{TM}} \}$ \\ [2.5ex]
+      $G_{yx}$ & $ \displaystyle  -\sin^2 \psi \, \mathcal{S}_0 \{ I_i^\mathrm{TE} \} - \cos^2 \psi \, \mathcal{S}_0 \{ I_i^\mathrm{TM} \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \}$  \\ [2.5ex]
+      $G_{yy}$ & $ \displaystyle  \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \} - \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \}$ \\ [2.5ex]
+      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \{ {k_{\p} I_v^\mathrm{TM}} \}$  \\ [2.5ex]
+      $G_{zx}$ & $\displaystyle \frac{1}{\j k_0 \eta_0 \u} \sin \psi \,  \mathcal{S}_1 \{ {k_{\p} V_i^\mathrm{TE}} \}$    \\ [2.5ex]
+      $G_{zy}$ & $\displaystyle -\frac{1}{\j k_0 \eta_0 \u} \cos \psi \,  \mathcal{S}_1 \{ {k_{\p} V_i^\mathrm{TE}} \}$   \\ [2.5ex]
+      $G_{zz}$ & $\displaystyle \cdot $  \\ [2.5ex]
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Scalar Green functions for computation of magnetic field due to an electric current source \cite{michalskichapter}}
+  \label{tab:HJ}
+\end{table}
+%%
+%%
+%%
+\subsection{Introducing Potential functions}
+%
+As evident in Tables \ref{tab:EJ} and \ref{tab:HJ}, the spatial domain DGFs that directly describe fields are tedious. The complexity can be reduced by expressing the fields in terms of vector potentials. Knowing that
+%
+\begin{equation}
+  \del \cdot  \mu \v H = 0,
+  \label{eq:divergencless}
+\end{equation}
+%
+and $\del \cdot (\del \x \v A) \equiv 0$, we define the magnetic vector potential, $A$ such that:
+%
+\begin{equation}
+ \v H = \frac{1}{\mu} \del \x \v A.
+ \label{eq:defA}
+\end{equation}
+%
+Using \eqref{eq:E} and \eqref{eq:defA}, we write:
+%
+\begin{equation}
+  \del \x (\v E + \j \O \v A) = 0,
+  \label{eq:EandA}
+\end{equation}
+%
+and knowing the vector identity, $\del \x (-\del \phi) \equiv 0$, the electric field is expressed as:
+%
+\begin{equation}
+  \v E = \j \O \v A - \del \phi.
+  \label{eq:def_E_potential}
+\end{equation}
+%
+Using the Lorenz gauge, the potentials are related as:
+%
+\begin{equation}
+  \del \cdot \v A = -\j \O \u \E \phi,
+\end{equation}
+%
+and the electric field in \eqref{eq:def_E_potential} is reduced to only a function of $\v A$,
+%
+\begin{equation}
+  \v E = \frac{\j \O}{k^2}\left( k^2 + \del \del \cdot \right) \v A.
+  \label{eq:EinA}
+\end{equation}
+%
 
+For a current distribution $\v J$, the vector potential $\v A$ can also be described by a DGF in a similar fashion to \eqref{eq:dyadic}:
+%
+\begin{equation}
+\v A = \int\limits_{r'} \tnsr{\v{G}}^\mathrm{A}(\v r | \v{r'}) \v{J}(\v{r'}) \diff{r'},
+\label{eq:G^A}
+\end{equation}
+%
+where $\tnsr{\v{G}}^\mathrm{A}$ is the vector potential DGF.
 
 
 

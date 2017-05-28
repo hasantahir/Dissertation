@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  25 MAY 2017 20:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  28 MAY 2017 15:49
 entering extended mode
 **./Som_int.tex
 (Som_int.tex
@@ -2641,10 +2641,12 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@bottom=\skip116
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 86.
-)
-\tikzscale@accuracy=\skip117
 
-(Som_int.aux
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+))
+\tikzscale@accuracy=\skip117
+ (Som_int.aux
 
 LaTeX Warning: Label `eq:FT_LH' multiply defined.
 
@@ -2655,7 +2657,7 @@ LaTeX Warning: Label `eq:TL_V' multiply defined.
 LaTeX Warning: Label `eq:TL_V' multiply defined.
 
 
-LaTeX Warning: Label `eq:dFT_ET' multiply defined.
+LaTeX Warning: Label `eq:Gxx_2nd_equation' multiply defined.
 
 )
 \openout1 = `Som_int.aux'.
@@ -4024,35 +4026,77 @@ LaTeX Warning: Citation `felson' on page 5 undefined on input line 264.
 
 LaTeX Warning: Reference `eq:TLE' on page 5 undefined on input line 276.
 
-[5]
-
-LaTeX Warning: Citation `felsen' on page 6 undefined on input line 320.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 6 undefined on input line 32
-0.
-
-
-LaTeX Warning: Reference `eq:telelgraphers' on page 6 undefined on input line 3
-32.
-
-[6]
-
-LaTeX Warning: Citation `michalski' on page 7 undefined on input line 362.
-
-(figures/sources.pdf_tex
+[5] (figures/sources.pdf_tex
 File: figures/sources.pdf Graphic file (type QTm)
  <use  "figures/sources.pdf"  page1>)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8] [9]
+
+LaTeX Warning: Citation `felsen' on page 6 undefined on input line 331.
+
+
+LaTeX Warning: Citation `michalskichapter' on page 6 undefined on input line 33
+1.
+
+[6] [7]
+
+LaTeX Warning: Reference `eq:telelgraphers' on page 8 undefined on input line 3
+43.
+
+
+LaTeX Warning: Citation `michalski' on page 8 undefined on input line 373.
+
+[8]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+
+LaTeX Warning: Citation `michalski_chapter' on page 10 undefined on input line 
+499.
+
+
+LaTeX Warning: Citation `Abramowitz' on page 10 undefined on input line 506.
+
+
+Overfull \hbox (4.77673pt too wide) in paragraph at lines 521--521
+[] 
+ []
+
+[10]
+
+LaTeX Warning: Citation `mich_chapter' on page 11 undefined on input line 531.
+
+
+LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
+51.
+
+
+LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
+51.
+
+
+LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
+75.
+
+
+LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
+75.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11] [12] [13]
 No file Som_int.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 470.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 470.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
 (Som_int.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 470.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 470.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 648.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 648.
 
 
 LaTeX Warning: There were undefined references.
@@ -4062,12 +4106,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 58412 strings out of 427834
- 1308637 string characters out of 3152470
- 1623722 words of memory out of 3000000
- 61594 multiletter control sequences out of 15000+200000
+ 58445 strings out of 427834
+ 1309144 string characters out of 3152470
+ 1630992 words of memory out of 3000000
+ 61624 multiletter control sequences out of 15000+200000
  58024 words of font info for 97 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,18n,98p,10429b,911s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,18n,98p,10429b,913s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Som_int.pdf (9 pages).
+Output written on Som_int.pdf (13 pages).
