@@ -5,5 +5,6 @@
 \BOOKMARK [2][-]{subsection.1.4}{Spatial\040Domain\040Dyadic\040Green\040Functions}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.5}{Introducing\040Potential\040functions}{section.1}% 6
 \BOOKMARK [2][-]{subsection.1.6}{Spatial\040domain\040DGFs}{section.1}% 7
-\BOOKMARK [2][-]{subsection.1.7}{Computation\040of\040Transmission\040line\040Green\040functions}{section.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.7.1}{Half-space}{subsection.1.7}% 9
+\BOOKMARK [1][-]{section.2}{Computation\040of\040Transmission\040line\040Green\040functions}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Lossy\040Half-space}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Thin\040Sheet}{section.2}% 10

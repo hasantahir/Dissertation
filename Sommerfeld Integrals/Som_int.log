@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  29 MAY 2017 17:13
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  30 MAY 2017 15:09
 entering extended mode
 **./Som_int.tex
 (Som_int.tex
@@ -3990,32 +3990,35 @@ Overfull \hbox (2.4243pt too wide) in paragraph at lines 659--659
 [14] (figures/multilayers.pdf_tex
 File: figures/multilayers.pdf Graphic file (type QTm)
  <use  "figures/multilayers.pdf"  page1>)
+[15] [16] [17] (figures/Gxx_25.tikz) (figures/Gxx_25.tikz) (figures/Gxx_25.tikz
+) (figures/Gxx_25.tikz) (figures/Gzx_25.tikz) (figures/Gzx_25.tikz)
+(figures/Gzx_25.tikz) (figures/Gzx_25.tikz) (figures/cond_gan.tikz)
+(figures/cond_gan.tikz) (figures/cond_gan.tikz) (figures/cond_gan.tikz)
+(figures/eps_2deg_gan.tikz) (figures/eps_2deg_gan.tikz)
+(figures/eps_2deg_gan.tikz) (figures/eps_2deg_gan.tikz) [18] [19] (Som_int.bbl
+[20
 
-LaTeX Warning: Citation `Stern1967' on page 15 undefined on input line 738.
-
-
-LaTeX Warning: Citation `Allen1977' on page 15 undefined on input line 738.
-
-[15] [16] [17] (Som_int.bbl [18
-
-]) [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 782.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 782.
+]) [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
  (Som_int.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 782.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 782.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 841.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 841.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 58478 strings out of 427834
- 1309774 string characters out of 3152470
- 1633574 words of memory out of 3000000
- 61651 multiletter control sequences out of 15000+200000
- 62286 words of font info for 98 fonts, out of 3000000 for 9000
+ 59191 strings out of 427834
+ 1327315 string characters out of 3152470
+ 1789744 words of memory out of 3000000
+ 62285 multiletter control sequences out of 15000+200000
+ 65267 words of font info for 99 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,19n,98p,10429b,983s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 74i,22n,103p,10429b,3072s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Som_int.pdf (19 pages).
+Output written on Som_int.pdf (21 pages).
