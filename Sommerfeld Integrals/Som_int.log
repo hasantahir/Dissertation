@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  28 MAY 2017 15:49
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  29 MAY 2017 17:13
 entering extended mode
 **./Som_int.tex
 (Som_int.tex
@@ -2646,20 +2646,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 86.
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 ))
 \tikzscale@accuracy=\skip117
- (Som_int.aux
-
-LaTeX Warning: Label `eq:FT_LH' multiply defined.
-
-
-LaTeX Warning: Label `eq:TL_V' multiply defined.
-
-
-LaTeX Warning: Label `eq:TL_V' multiply defined.
-
-
-LaTeX Warning: Label `eq:Gxx_2nd_equation' multiply defined.
-
-)
+ (Som_int.aux)
 \openout1 = `Som_int.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -3972,146 +3959,63 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <7> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 19.
 
 
-LaTeX Warning: Citation `something in here' on page 1 undefined on input line 2
-0.
+LaTeX Warning: Citation `somethinginhere' on page 1 undefined on input line 20.
 
-
-LaTeX Warning: Citation `van Bladdel' on page 1 undefined on input line 20.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-
-LaTeX Warning: Citation `michalski1997multilayered' on page 1 undefined on inpu
-t line 41.
-
-
-LaTeX Warning: Citation `michalski2005' on page 1 undefined on input line 41.
-
 [1
 
-]
-
-LaTeX Warning: Reference `fig:TL_equivalent' on page 2 undefined on input line 
-47.
-
-
-LaTeX Warning: Citation `felsen1994' on page 2 undefined on input line 59.
-
-[2]
-
-LaTeX Warning: Citation `fang2010' on page 3 undefined on input line 105.
-
-[3]
-
-LaTeX Warning: Reference `eq:sLE' on page 4 undefined on input line 161.
-
-
-LaTeX Warning: Citation `itoh1980' on page 4 undefined on input line 180.
-
-
-LaTeX Warning: Citation `kastner1988' on page 4 undefined on input line 199.
-
-
-LaTeX Warning: Citation `michalski1997multilayered' on page 4 undefined on inpu
-t line 199.
-
-(figures/xsystem.pdf_tex
+] [2] [3] (figures/xsystem.pdf_tex
 File: figures/xsystem.pdf Graphic file (type QTm)
- <use  "figures/xsystem.pdf"  page1>) [4]
-
-LaTeX Warning: Citation `felson' on page 5 undefined on input line 264.
-
-
-LaTeX Warning: Reference `eq:TLE' on page 5 undefined on input line 276.
-
-[5] (figures/sources.pdf_tex
+ <use  "figures/xsystem.pdf"  page1>)
+[4] [5] (figures/sources.pdf_tex
 File: figures/sources.pdf Graphic file (type QTm)
  <use  "figures/sources.pdf"  page1>)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `felsen' on page 6 undefined on input line 331.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 6 undefined on input line 33
-1.
-
-[6] [7]
-
-LaTeX Warning: Reference `eq:telelgraphers' on page 8 undefined on input line 3
-43.
-
-
-LaTeX Warning: Citation `michalski' on page 8 undefined on input line 373.
-
-[8]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
-
-LaTeX Warning: Citation `michalski_chapter' on page 10 undefined on input line 
-499.
-
-
-LaTeX Warning: Citation `Abramowitz' on page 10 undefined on input line 506.
-
-
-Overfull \hbox (4.77673pt too wide) in paragraph at lines 521--521
+[6] [7] [8] [9] [10]
+Overfull \hbox (28.77661pt too wide) in paragraph at lines 521--521
 [] 
  []
 
-[10]
-
-LaTeX Warning: Citation `mich_chapter' on page 11 undefined on input line 531.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
-51.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
-51.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
-75.
-
-
-LaTeX Warning: Citation `michalskichapter' on page 11 undefined on input line 5
-75.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [11] [12] [13]
-No file Som_int.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
-(Som_int.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 648.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 648.
+Overfull \hbox (2.4243pt too wide) in paragraph at lines 659--659
+[] 
+ []
+
+[14] (figures/multilayers.pdf_tex
+File: figures/multilayers.pdf Graphic file (type QTm)
+ <use  "figures/multilayers.pdf"  page1>)
+
+LaTeX Warning: Citation `Stern1967' on page 15 undefined on input line 738.
+
+
+LaTeX Warning: Citation `Allen1977' on page 15 undefined on input line 738.
+
+[15] [16] [17] (Som_int.bbl [18
+
+]) [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 782.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 782.
+ (Som_int.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 782.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 782.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 58445 strings out of 427834
- 1309144 string characters out of 3152470
- 1630992 words of memory out of 3000000
- 61624 multiletter control sequences out of 15000+200000
- 58024 words of font info for 97 fonts, out of 3000000 for 9000
+ 58478 strings out of 427834
+ 1309774 string characters out of 3152470
+ 1633574 words of memory out of 3000000
+ 61651 multiletter control sequences out of 15000+200000
+ 62286 words of font info for 98 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,18n,98p,10429b,913s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,19n,98p,10429b,983s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Som_int.pdf (13 pages).
+Output written on Som_int.pdf (19 pages).
