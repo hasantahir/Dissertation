@@ -28,7 +28,7 @@
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
 %%%%%%%%%%
-\usepackage{mdwtab}
+% \usepackage{mdwtab}
 \usepackage{datetime} % Insert date and time
 \usepackage[letterpaper]{geometry}
 \geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
@@ -37,13 +37,19 @@
 \usepackage{etoolbox}
 \usepackage{multicol} % For side-by-side equatiosn
 \usepackage{microtype} % Enfore borders
-%% Nicely set the spacing between equations and text
-\AtBeginDocument{%
-\setlength\abovedisplayskip{4pt}
-\setlength\belowdisplayskip{4pt}
-\setlength\abovedisplayshortskip{4pt}
-\setlength\belowdisplayshortskip{4pt}
-}
+% %% Nicely set the spacing between equations and text
+% \AtBeginDocument{%
+% \setlength\abovedisplayskip{4pt}
+% \setlength\belowdisplayskip{4pt}
+% \setlength\abovedisplayshortskip{4pt}
+% \setlength\belowdisplayshortskip{4pt}
+% }
+\usepackage{array}
+\setlength\extrarowheight{2.5pt}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{D}[1]{>{\centering\arraybackslash}p{#1}}
+
+
 \usepackage{tocloft}
 % \usepackage[rm, tiny, center, compact]{titlesec}
 \usepackage{indentfirst}
@@ -65,6 +71,7 @@
 \usepackage[letterpaper]{geometry}
 \usepackage{graphicx}
 \usepackage{pgfplots}
+\pgfplotsset{tick scale binop=\times}
 \usepackage{standalone}
 \usepackage{caption}
 \usepackage{tikz}

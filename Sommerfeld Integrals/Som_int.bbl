@@ -77,4 +77,20 @@ S.~J. Allen, D.~C. Tsui, and R.~A. Logan, ``{Observation of the Two-Dimensional
   Plasmon in Silicon Inversion Layers},'' \emph{Physical Review Letters},
   vol.~38, no.~17, pp. 980--983, Apr. 1977.
 
+\bibitem{Hanson2008}
+G.~W. Hanson, ``{Dyadic Green's functions and guided surface waves for a
+  surface conductivity model of graphene},'' \emph{Journal of Applied Physics},
+  vol. 103, no.~6, p. 064302, Mar. 2008.
+
+\bibitem{Lovat2012}
+G.~Lovat, ``Equivalent circuit for electromagnetic interaction and transmission
+  through graphene sheets,'' \emph{{IEEE} Transactions on Electromagnetic
+  Compatibility}, vol.~54, no.~1, pp. 101--109, Feb. 2012.
+
+\bibitem{Gomez-Diaz2013}
+J.~S. Gomez-Diaz, J.~R. Mosig, and J.~Perruisseau-Carrier, ``Effect of spatial
+  dispersion on surface waves propagating along graphene sheets,'' \emph{{IEEE}
+  Transactions on Antennas and Propagation}, vol.~61, no.~7, pp. 3589--3596,
+  Jul. 2013.
+
 \end{thebibliography}

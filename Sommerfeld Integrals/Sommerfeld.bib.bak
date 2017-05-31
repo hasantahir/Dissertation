@@ -406,14 +406,14 @@
 }
 
 @Article{Hohenester2012,
-  author    = {Ulrich Hohenester and Andreas Trügler},
+  author    = {Ulrich Hohenester and Andreas Tr{\"{u}}gler},
   title     = {{MNPBEM} {\textendash} A Matlab toolbox for the simulation of plasmonic nanoparticles},
   journal   = {Computer Physics Communications},
   year      = {2012},
   volume    = {183},
   number    = {2},
   pages     = {370--381},
-  month     = {feb},
+  month     = feb,
   issn      = {0010-4655},
   doi       = {10.1016/j.cpc.2011.09.009},
   file      = {:D\:\\Users\\Mendeley Desktop\\TUTORIAL - MNPBEM Matlab Photonic toolbox.pdf:pdf},
@@ -1931,7 +1931,7 @@
   volume    = {30},
   number    = {1},
   pages     = {1--42},
-  month     = {dec},
+  month     = dec,
   issn      = {0920-5071},
   abstract  = {The classical Sommerfeld half-space problem is revisited, with generalizations to multilayer and plasmonic media and focus on the surface field computation. A new ab initio solution is presented for an arbitrarily oriented Hertzian dipole radiating in the presence of a material half-space with arbitrary horizontal stratification. The solution method combines the vector potential approach and the spectral domain transmission line analog of the medium, which results in the most compact formulation and facilitates the inclusion of any number of layers in the analysis. Following Sommerfeld, the solution is first expressed in terms of the Fourier–Bessel transforms, also known as Sommerfeld integrals. Analytical properties of the integrands in the complex plane are then investigated, including the location of the Sommerfeld pole, which gives rise to the Zenneck wave (ZW) or surface plasmon polariton (SPP), and alternative field representations are developed by a deformation of the integration path and analytic continuation of the integrand functions, using hyperbolic and vertical branch cuts. Closed-form expressions for the asymptotic surface fields are also derived and the r{\^{o}}le of the ZWand SPP is elucidated. Numerical examples are included to illustrate the theory, from radio frequencies to visible light.},
   doi       = {10.1080/09205071.2015.1093964},
@@ -4025,12 +4025,12 @@
 
 @Article{Michalski2016b,
   author   = {Krzysztof A. Michalski and Juan R. Mosig},
-  title    = {Efficient computation of Sommerfeld integral tails – methods and algorithms},
+  title    = {Efficient computation of Sommerfeld integral tails -- methods and algorithms},
   journal  = {Journal of Electromagnetic Waves and Applications},
   year     = {2016},
   volume   = {30},
   number   = {3},
-  pages    = {281-317},
+  pages    = {281--317},
   abstract = {Areview is presented of the most effectivemethods for the computation of Sommerfeld integral tails. Such integrals, which are often oscillatory, singular and divergent, com- monly arise in layeredmedia Green functions. The mathematical foundations of various pertinentmethods are discussed in detail and their performance is illustrated by relevant numerical examples. The associated algorithms are given in pseudocode for their easy computer implementation.},
   doi      = {10.1080/09205071.2015.1129915},
   file     = {:D\:\\Users\\Mendeley Desktop\\Michalski - SI algorithms review.pdf:pdf},
@@ -4045,7 +4045,7 @@
 }
 
 @Article{Li2015,
-  author        = {Li, Chao and Zhang, Teng Wei and Wang, Huai Yu and Wang, Xue Hua},
+  author        = {Chao Li and Teng Wei Zhang and Huai Yu Wang and Xue Hua Wang},
   title         = {{A universal expression of near-filed/far-field boundary in stratified structures}},
   year          = {2015},
   pages         = {1--14},
@@ -4053,8 +4053,12 @@
   abstract      = {The division of the near-field and far-field zones for electromagnetic waves is important for simplifying theoretical calculations and applying far-field results. In this paper, we have studied the far-field asymptotic behaviors of dipole radiations in stratified backgrounds and obtained a universal empirical expression of near-field/far-field (NFFF) boundary. The boundary is mainly affected by lateral waves, which corresponds to branch point contributions in Sommerfeld integrals. In a semispace with a higher refractive index, the NFFF boundary is determined by a dimensional parameter and usually larger than the operating wavelength by at least two orders of magnitude. In a semispace with the lowest refractive index in the structure (usually air), the NFFF boundary is about ten wavelengths. Moreover, different treatments in the asymptotic method are discussed and numerically compared. An equivalence between the field expressions obtained from the asymptotic method and those from reciprocal theorem is demonstrated. Our determination of the NFFF boundary will be useful in the fields such as antenna design, remote sensing, and underwater communication.},
   archiveprefix = {arXiv},
   arxivid       = {1504.08135},
+  date          = {2015-04-30},
   eprint        = {1504.08135},
+  eprintclass   = {physics.optics},
+  eprinttype    = {arXiv},
   file          = {:D\:\\Users\\Mendeley Desktop\\Chinese Paper.pdf:pdf},
+  keywords      = {physics.optics},
 }
 
 @PhdThesis{Nevels1979,

@@ -5,6 +5,8 @@
 
 % Specifiy the location of images to be used
 \graphicspath{{figures/}}
+% \setlength{\tabcolsep}{0.5em}
+% \renewcommand{\arraystretch}{1.8}
 
 % Acronyms
 % \newacronym{}
@@ -38,7 +40,7 @@ $\tnsr{\v{G}}^\mathrm{HM}$.
 %%%%%%%
 \section{Theory}
 %
-We follow the well-established approach of field computation for planar multi-layered media \cite{Michalski2005,Michalski1997}, in which, first an equivalent transmission line network is set up for the structure, and then transmission line Green function are computed.
+We follow the well-established approach of field computation for planar multi-layered media \cite{Michalski2005,Michalski1997}, in which, an equivalent transmission line (TL) network is first set up for the structure, and then TL based GFs are computed.
 %%
 %%
 %%
@@ -273,7 +275,7 @@ Equations \eqref{eq:TL_Vs}-\eqref{eq:TL_Is} can be conveniently written in a com
   \label{eq:telegraphers}%
 \end{subequations}
 %
-where $\alpha$ is either TE or TM, the propagation constant in the transverse direction is $k_z = \pm \sqrt{k^2 - k_{\p}^2}$, for which the sign must be chosen in such a way the fields decay away from the source. The modal impedances in \eqref{eq:telegraphers} are,
+where $\alpha$ is either TE or TM, the propagation constant in the transverse direction is $k_z = \pm \sqrt{k^2 - k_{\p}^2}$, for which the sign must be chosen so that the fields decay away from the source. The modal impedances in \eqref{eq:telegraphers} are,
 %
 \begin{subequations}
   \begin{align}
@@ -286,7 +288,7 @@ where $\alpha$ is either TE or TM, the propagation constant in the transverse di
 \end{subequations}
 %
 
-Using the expressions that relate the transverse electric and mangnetic to the equivalent transmission line currents and voltages \eqref{eq:EHVI}, and combining with the longitudinal field expressions \eqref{eq:FT_LongitudinalH} and \eqref{eq:FT_LE}, we obtain the total fields in the spectral domain,
+Using the expressions that relate the transverse electric and magnetic to the equivalent transmission line currents and voltages \eqref{eq:EHVI}, and combining with the longitudinal field expressions \eqref{eq:FT_LongitudinalH} and \eqref{eq:FT_LE}, we obtain the total fields in the spectral domain,
 %
 %
 \begin{equation}
@@ -328,7 +330,7 @@ Assuming only electric sources existing in space, the corresponding TL sources, 
 %%
 \subsection{Green functions for the TL equations}
 %
-To obtain the transmission-line voltages and currents that define the spectral fields in \eqref{eq:totalEHVI}, we introduce the one-dimensional transmission-line Green functions (TLGFs) that are analogous to the spatial domain DGFs in \eqref{eq:dyadic}. Following \cite{Felsen1994,Michalski2005}, we define $V_i(z,z')$ and $I_i(z,z')$ as the voltage and current respectively, at a point $z$ along the transmission line due to a unit-strength current source located at $z'$. Similarly, $V_v(z,z')$ and $I_v(z,z')$ are the respective voltage and current due to a unit-strength voltage source. Analogous to \eqref{eq:dyadic} which is augmented by magnetic sources, we write:
+To obtain the transmission line voltages and currents that define the spectral fields in \eqref{eq:totalEHVI}, we introduce the one-dimensional transmission line Green functions (TLGFs) that are analogous to the spatial domain DGFs in \eqref{eq:dyadic}. Following \cite{Felsen1994,Michalski2005}, we define $V_i(z,z')$ and $I_i(z,z')$ as the voltage and current respectively, at a point $z$ along the transmission line due to a unit-strength current source located at $z'$. Similarly, $V_v(z,z')$ and $I_v(z,z')$ are the respective voltage and current due to a unit-strength voltage source. Analogous to \eqref{eq:dyadic} which is augmented by magnetic sources, we write:
 %
 \begin{subequations}
   \begin{align}
@@ -448,25 +450,25 @@ Following the above procedure, we write the spatial domain DGFs as:
   \label{eq:spatialDGF_generalized}%
 \end{equation}
 %
-where the superscript $\kappa$ denotes either EJ or HJ.
+where the superscript $\kappa$ denotes either `EJ' or `HJ'.
 
 Starting with \eqref{eq:spectralDGF}, we now discuss each step in detail to obtain the spatial domain versions of the DGFs. First, the spectral domain dyads are converted to their spatial domain counterparts using the relations listed in Table \ref{tab:dyad_conversion} which are obtained from Fig. \ref{fig:SpCS} and \eqref{eq:transformation}.
 %
 \begin{table}[!ht]
   \begin{center}
-    \begin{tabular}{|| c | c ||}
+    \begin{tabular}{| C{3cm} | C{10cm} |  @{}m{0pt}@{}}
       \hline
       Spectral domain dyad & Spatial domain dyad \\ [0.5ex]
       \hline\hline
-      $\v{\^u} \v{\^u}$ & $ \displaystyle \v{\^x} \v{\^x} \cos^2 \psi + \v{\^x} \v{\^y} \cos \psi \, \sin \psi + \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ \\ [2.5ex]
-      $\v{\^v} \v{\^v}$ & $ \displaystyle \v{\^x} \v{\^x} \sin^2 \psi - \v{\^x} \v{\^y} \cos \psi \, \sin \psi - \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ \\ [2.5ex]
-      $\v{\^u} \v{\^v}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi + \v{\^x} \v{\^y} \cos^2 \psi - \v{\^y} \v{\^x} \sin^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ \\ [2.5ex]
-      $\v{\^v} \v{\^u}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi - \v{\^x} \v{\^y} \sin^2 \psi + \v{\^y} \v{\^x} \cos^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ \\ [2.5ex]
-      $\v{\^z} \v{\^u}$ & $ \displaystyle \v{\^z} \v{\^x} \cos \psi + \v{\^z} \v{\^y} \sin \psi$ \\ [2.5ex]
-      $\v{\^u} \v{\^z}$ & $ \displaystyle \v{\^x} \v{\^z} \cos \psi + \v{\^y} \v{\^z} \sin \psi$ \\ [2.5ex]
-      $\v{\^z} \v{\^v}$ & $ \displaystyle -\v{\^z} \v{\^x} \sin \psi + \v{\^z} \v{\^y} \cos \psi$ \\ [2.5ex]
-      $\v{\^v} \v{\^z}$ & $ \displaystyle -\v{\^x} \v{\^z} \sin \psi + \v{\^y} \v{\^z} \cos \psi$ \\ [2.5ex]
-      \hline
+      $\v{\^u} \v{\^u}$ & $ \displaystyle \v{\^x} \v{\^x} \cos^2 \psi + \v{\^x} \v{\^y} \cos \psi \, \sin \psi + \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ &\\ [2.5ex] \hline
+      $\v{\^v} \v{\^v}$ & $ \displaystyle \v{\^x} \v{\^x} \sin^2 \psi - \v{\^x} \v{\^y} \cos \psi \, \sin \psi - \v{\^y} \v{\^x} \cos \psi \, \sin \psi + \v{\^y} \v{\^y} \sin^2 \psi$ &\\ [2.5ex] \hline
+      $\v{\^u} \v{\^v}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi + \v{\^x} \v{\^y} \cos^2 \psi - \v{\^y} \v{\^x} \sin^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ &\\ [2.5ex] \hline
+      $\v{\^v} \v{\^u}$ & $ \displaystyle -\v{\^x} \v{\^x} \cos \psi \, \sin \psi - \v{\^x} \v{\^y} \sin^2 \psi + \v{\^y} \v{\^x} \cos^2 \psi + \v{\^y} \v{\^y} \cos \psi \, \sin \psi$ &\\ [2.5ex] \hline
+      $\v{\^z} \v{\^u}$ & $ \displaystyle \v{\^z} \v{\^x} \cos \psi + \v{\^z} \v{\^y} \sin \psi$ &\\ [2.5ex] \hline
+      $\v{\^u} \v{\^z}$ & $ \displaystyle \v{\^x} \v{\^z} \cos \psi + \v{\^y} \v{\^z} \sin \psi$ &\\ [2.5ex] \hline
+      $\v{\^z} \v{\^v}$ & $ \displaystyle -\v{\^z} \v{\^x} \sin \psi + \v{\^z} \v{\^y} \cos \psi$ &\\ [2.5ex] \hline
+      $\v{\^v} \v{\^z}$ & $ \displaystyle -\v{\^x} \v{\^z} \sin \psi + \v{\^y} \v{\^z} \cos \psi$ &\\ [2.5ex]
+      \hline \hline
     \end{tabular}
   \end{center}
   \caption{Conversion of spectral domain dyad to spatial domain}
@@ -530,24 +532,24 @@ After some algebraic manipulation and knowing the fact that Sommerfeld integrals
 \end{equation}
 %
 
-Following similar procedure, the remaining components of both electric and magnetic fields DGFs in the spatial domain can be obtained, which are listed in Table. \ref{tab:EJ} \cite{Michalski2005}.
+Following similar procedure, the remaining components of both electric and magnetic fields DGFs in the spatial domain can be obtained, which are listed in Table \ref{tab:EJ} \cite{Michalski2005}.
 %
 \begin{table}[!ht]
   \begin{center}
-    \begin{tabular}{|| c | c ||}
+    \begin{tabular}{| C{1cm} | C{12cm} |  @{}m{0pt}@{}}
       \hline
-      GF & $\mathrm{\kappa} = \mathrm{EJ}$ \\ [0.5ex]
+      GF & $\mathrm{\kappa} = \mathrm{EJ}$ &\\ [1.5ex]
       \hline\hline
-      $G_{xx}$ & $ \displaystyle - \cos^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \sin^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{xy}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{xz}$ & $ \displaystyle \frac{\eta_0}{\j k_0 \E(z')} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_v^\mathrm{TM}} \right \}$ \\ [2.5ex]
-      $G_{yx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$  \\ [2.5ex]
-      $G_{yy}$ & $ \displaystyle - \sin^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \cos^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_v^\mathrm{TM}} \right \}$  \\ [2.5ex]
-      $G_{zx}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$    \\ [2.5ex]
-      $G_{zy}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$   \\ [2.5ex]
-      $G_{zz}$ & $\displaystyle -\frac{\eta_0^2}{\j k_0^2 \E(z) \E(z')} \mathcal{S}_0 \left \{ {k^2_{\p} I_v^\mathrm{TM}} \right \} - \frac{\eta_0}{\j k_0 \E(z)} \delta(\v{\p}) \delta(z -z')$  \\ [2.5ex]
-      \hline
+      $G_{xx}$ & $ \displaystyle - \cos^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \sin^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{xy}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{xz}$ & $ \displaystyle \frac{\eta_0}{\j k_0 \E(z')} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_v^\mathrm{TM}} \right \}$ &\\ [3.5ex]
+      $G_{yx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$  &\\ [3.5ex]
+      $G_{yy}$ & $ \displaystyle - \sin^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \cos^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_v^\mathrm{TM}} \right \}$  &\\ [3.5ex]
+      $G_{zx}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$    &\\ [3.5ex]
+      $G_{zy}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$   &\\ [3.5ex]
+      $G_{zz}$ & $\displaystyle -\frac{\eta_0^2}{\j k_0^2 \E(z) \E(z')} \mathcal{S}_0 \left \{ {k^2_{\p} I_v^\mathrm{TM}} \right \} - \frac{\eta_0}{\j k_0 \E(z)} \delta(\v{\p}) \delta(z -z')$  &\\ [3.5ex]
+      \hline \hline
     \end{tabular}
   \end{center}
   \caption{Scalar Green functions for computation of electric field due to an electric current source \cite{Michalski2005}}
@@ -558,20 +560,20 @@ Following similar procedure, the remaining components of both electric and magne
 %
 \begin{table}[!ht]
   \begin{center}
-    \begin{tabular}{|| c | c ||}
+    \begin{tabular}{| C{1cm} | C{12cm} |  @{}m{0pt}@{}}
       \hline
-      GF & $\mathrm{\kappa} = \mathrm{HJ}$ \\ [0.5ex]
+      GF & $\mathrm{\kappa} = \mathrm{HJ}$ &\\ [1.5ex]
       \hline\hline
-      $G_{xx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{xy}$ & $ \displaystyle  \cos^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TE} \right \} + \sin^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TM} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{xz}$ & $\displaystyle -\frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_v^\mathrm{TM}} \right \}$ \\ [2.5ex]
-      $G_{yx}$ & $ \displaystyle  -\sin^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TE} \right \} - \cos^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TM} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$  \\ [2.5ex]
-      $G_{yy}$ & $ \displaystyle  \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \right \} - \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ \\ [2.5ex]
-      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_v^\mathrm{TM}} \right \}$  \\ [2.5ex]
-      $G_{zx}$ & $\displaystyle \frac{1}{\j k_0 \eta_0 \u} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_i^\mathrm{TE}} \right \}$    \\ [2.5ex]
-      $G_{zy}$ & $\displaystyle -\frac{1}{\j k_0 \eta_0 \u} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_i^\mathrm{TE}} \right \}$   \\ [2.5ex]
-      $G_{zz}$ & $\displaystyle \cdot $  \\ [2.5ex]
-      \hline
+      $G_{xx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{xy}$ & $ \displaystyle  \cos^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TE} \right \} + \sin^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TM} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{xz}$ & $\displaystyle -\frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_v^\mathrm{TM}} \right \}$ &\\ [3.5ex]
+      $G_{yx}$ & $ \displaystyle  -\sin^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TE} \right \} - \cos^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TM} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$  &\\ [3.5ex]
+      $G_{yy}$ & $ \displaystyle  \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \right \} - \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ &\\ [3.5ex]
+      $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_v^\mathrm{TM}} \right \}$  &\\ [3.5ex]
+      $G_{zx}$ & $\displaystyle \frac{1}{\j k_0 \eta_0 \u} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_i^\mathrm{TE}} \right \}$    &\\ [3.5ex]
+      $G_{zy}$ & $\displaystyle -\frac{1}{\j k_0 \eta_0 \u} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_i^\mathrm{TE}} \right \}$   &\\ [3.5ex]
+      $G_{zz}$ & $\displaystyle \cdot $  &\\ [3.5ex]
+      \hline \hline
     \end{tabular}
   \end{center}
   \caption{Scalar Green functions for computation of magnetic field due to an electric current source \cite{Michalski2005}}
@@ -647,7 +649,7 @@ The vector potential DGF is related to its fields counterpart through the magnet
   \label{eq:G_HJ_G_A}
 \end{equation}
 %
-where isotropic permeability is assumed. To find the components of $\tnsr{\ti {\v{G}}}^\mathrm{A}$, we first note that the `del' operator used in the curl operation, which was initially defined in rectangular coordinates, is re-written in the spectral domain form as $\ti{\del} = -\j k_{\p} \v{\^u} + \v{\^z} d/{dz}$. Therefore, \eqref{eq:G_HJ_G_A} becomes,
+where isotropic permeability is assumed. To find the components of $\tnsr{\ti {\v{G}}}^\mathrm{A}$, we first note that the $\del$ operator used in the curl operation, which was initially defined in rectangular coordinates, is re-written in the spectral domain form as $\ti{\del} = -\j k_{\p} \v{\^u} + \v{\^z} d/{dz}$. Therefore, \eqref{eq:G_HJ_G_A} becomes,
 %
 \begin{equation}
   \begin{split}
@@ -701,17 +703,18 @@ The spectral domain vector potentials defined in \eqref{eq:G^A_general_form} can
   \label{eq:G_A_matrix_form}.
 \end{equation}
 %
-A Fourier inversion following a similar procedure used to convert fields DGFs \eqref{eq:Gxx_1st_details}-\eqref{eq:Gxx_final_equation} yields the spatial domain potential DGFs expressed in terms of TLGFs, which are listed in Table. \ref{tab:G_scalar_list}.
+A Fourier inversion following a similar procedure used to convert fields DGFs \eqref{eq:Gxx_1st_details}-\eqref{eq:Gxx_final_equation} yields the spatial domain potential DGFs expressed in terms of TLGFs, which are listed in Table \ref{tab:G_scalar_list}.
 %
+
 \begin{table}[!ht]
   \begin{center}
-    \begin{tabular}{|| c | c ||}
+    \begin{tabular}{| C{2cm} | C{5cm} |  @{}m{0pt}@{}}
       \hline
-      $G^\mathrm{A}_{xx} = G^\mathrm{A}_{yy}$ & $ \displaystyle \frac{1}{\j \O}\mathcal{S}_0 \left \{ V_i^{\mathrm{TE}} \right \} $ \\ [2.5ex] \hline
-      $G^\mathrm{A}_{zx}$ & $ \displaystyle \j \mu  \cos \phi \, \mathcal{S}_1 \left \{  \frac {I_i^{\mathrm{TE}} - I_i^{\mathrm{TM}}}{k_{\p}}  \right \} $ \\ [2.5ex] \hline
-      $G^\mathrm{A}_{zy}$ & $ \displaystyle \j \mu  \sin \phi \, \mathcal{S}_1 \left \{  \frac {I_i^{\mathrm{TE}} - I_i^{\mathrm{TM}}}{k_{\p}}  \right \} $ \\ [2.5ex] \hline
-      $G^\mathrm{A}_{zz}$ & $ \displaystyle \frac{1}{\j \O \u \E(z')} \mathcal{S}_0 \left \{ I_v^{\mathrm{TM}} \right \} $ \\ [2.5ex]
-      \hline
+      $G^\mathrm{A}_{xx} = G^\mathrm{A}_{yy}$ & $ \displaystyle \frac{1}{\j \O}\mathcal{S}_0 \left \{ V_i^{\mathrm{TE}} \right \} $ &\\ [3.5ex]
+      $G^\mathrm{A}_{zx}$ & $ \displaystyle \j \mu  \cos \phi \, \mathcal{S}_1 \left \{  \frac {I_i^{\mathrm{TE}} - I_i^{\mathrm{TM}}}{k_{\p}}  \right \} $ &\\ [4.5ex]
+      $G^\mathrm{A}_{zy}$ & $ \displaystyle \j \mu  \sin \phi \, \mathcal{S}_1 \left \{  \frac {I_i^{\mathrm{TE}} - I_i^{\mathrm{TM}}}{k_{\p}}  \right \} $ &\\ [3.5ex]
+      $G^\mathrm{A}_{zz}$ & $ \displaystyle \frac{1}{\j \O \u \E(z')} \mathcal{S}_0 \left \{ I_v^{\mathrm{TM}} \right \} $ &\\ [3.5ex]
+      \hline \hline
     \end{tabular}
   \end{center}
   \caption{Scalar potential Green functions expressed in terms of TLGFs \cite{Michalski_2015}}
@@ -735,7 +738,7 @@ Following network analysis techniques, the voltage and current at any point in a
   \label{fig:TL_equivalent}
 \end{figure}
 %
-The layers numbered $2$ and $3$ in Fig. \ref{fig:TL_equivalent}a are commonly made up of group III-V materials such as gallium nitride (GaN) and their subsequent alloys such aluminum gallium nitride (AlGaN). Based on the device type, the top layer labeled $1$, can represent either free-space or a perfectly conducting material. The thin layer which is sandwiched between the semiconductor layers is known as a two-dimensional electron gas (2DEG) which can be visualized as a highly conductive sheet of electrons that is known to exhibit extraordinary electromagnetic properties such as highly confined surface waves \cite{Stern1967,Allen1977}. In this section, we formulate the TLGFs for various configuration of the 2DEG and compute the respective potential Green functions.
+The layers numbered $2$ and $3$ in Fig. \ref{fig:TL_equivalent}a are commonly made up of group III-V materials such as gallium arsenide (GaAs) and their subsequent alloys such aluminum gallium arsenide (AlGaAs). Based on the device type, the top layer labeled $1$, can represent either freespace or a perfectly conducting material. The thin layer which is sandwiched between the semiconductor layers is known as a two-dimensional electron gas (2DEG) which can be visualized as a highly conductive sheet of electrons that is known to exhibit extraordinary electromagnetic properties such as highly confined surface waves \cite{Stern1967,Allen1977}. In this section, we formulate the TLGFs for various configuration of the 2DEG and compute the respective potential Green functions.
 %%
 %%
 %%
@@ -748,7 +751,7 @@ We start with a case in which the 2DEG occupies the whole lower half-space. Such
   \label{eq:Vi_halfspace}
 \end{equation}
 %
-where $\Gamma^{\downarrow, \mathrm{TE}} = (Z_{\mathrm{2DEG}}^{\mathrm{TE}} -  Z_1^{\mathrm{TE}})/(Z_{\mathrm{2DEG}}^{\mathrm{TE}} +  Z_1^{\mathrm{TE}})$,   $Z_{\mathrm{2DEG}}^{\mathrm{TE}}$ and $Z_1^{\mathrm{TE}}$ are the TE mode impedances of the 2DEG and free-space regions respectively, given by \eqref{eq:z_TE}. The scalar potential GF, $G_{xx}^\mathrm{A}$ is then expressed as:
+where $\Gamma^{\downarrow, \mathrm{TE}} = (Z_{\mathrm{2DEG}}^{\mathrm{TE}} -  Z_1^{\mathrm{TE}})/(Z_{\mathrm{2DEG}}^{\mathrm{TE}} +  Z_1^{\mathrm{TE}})$,   $Z_{\mathrm{2DEG}}^{\mathrm{TE}}$ and $Z_1^{\mathrm{TE}}$ are the TE mode impedances of the 2DEG and freespace regions respectively, given by \eqref{eq:z_TE}. The scalar potential GF, $G_{xx}^\mathrm{A}$ is then expressed as:
 %
 \begin{equation}
   G_{xx}^\mathrm{A} = \mathcal{S}_0 \left \{ \frac{\e^{-\j k_{z1} |z - z'|}}{2 \j k_{z1}} \right \} + \mathcal{S}_0 \left \{ \frac{\Gamma^{\downarrow, \mathrm{TE}} \, \e^{-\j k_{z1} (z + z')}}{2 \j k_{z1}} \right \}.
@@ -769,7 +772,7 @@ and,
   \label{eq:somm_Gzx}
 \end{equation}
 %
-The first term in \eqref{eq:somm_Gxx} and \eqref{eq:somm_Gzz} is the Sommerfeld identity which can be written as the free-space Green function of a point source,
+The first term in \eqref{eq:somm_Gxx} and \eqref{eq:somm_Gzz} is the Sommerfeld identity which can be written as the freespace Green function of a point source,
 %
 \begin{equation}
    4 \pi \mathcal{S}_0 \left \{ \frac{\e^{-\j k_{z1} |z - z'|}}{2 \j k_{z1}} = \frac{\e^{-\j k_1 R}}{4 \pi R} \right \}.
@@ -777,16 +780,15 @@ The first term in \eqref{eq:somm_Gxx} and \eqref{eq:somm_Gzz} is the Sommerfeld 
 \end{equation}
 %
 
-The plasma frequency $\O_p$ of the 2DEG lies in the terahertz frequency at which the dielectric function vanishes to zero. At frequencies lower than $\O_p$, the real part is negative and the imaginary part, which expresses loss is highly dependent on temperature. Here, we assume a dielectric constant of $ -0.3113 + \j 0.0005$ for a GaN/AlGaN heterostructure at \SI{25}{\THz} a temperature of \SI[round-precision=2]{4.2}{\kelvin}.
+The plasma frequency $\O_p$ of the 2DEG lies in the terahertz frequency at which the dielectric function vanishes to zero. At frequencies lower than $\O_p$, the real part is negative and the imaginary part, which expresses loss is highly dependent on temperature. Here, we assume a dielectric constant of $ -8.114 - \j 8.159$ for a GaAs/AlGaAs heterostructure at \SI{.8}{\THz}, and observed at room temperature (\SI{295}{\kelvin}).
 
-For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{xx}^\mathrm{A}$ \eqref{eq:somm_Gxx}, $G_{zx}^\mathrm{A}$ \eqref{eq:somm_Gzx} exist, and are plotted in Fig. \ref{fig:G^A_components_halfspace} by excluding the free-space GF part.
+For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{xx}^\mathrm{A}$ \eqref{eq:somm_Gxx}, $G_{zx}^\mathrm{A}$ \eqref{eq:somm_Gzx} exist, and are plotted in Fig. \ref{fig:G^A_components_halfspace} by excluding the freespace GF part.
 %
 \begin{figure}[!htbp]
   \centering
-  \subfloat[]{\includegraphics[width=2.5in]{Gxx_25.tikz}
+  \subfloat[]{\includegraphics[width=3in]{Gxx_25.tikz}
   \label{fig:Gxx_halfpsace}}
-  \hfil
-  \subfloat[]{\includegraphics[width=2.5in]{Gzx_25.tikz}
+  \subfloat[]{\includegraphics[width=3in]{Gzx_25.tikz}
   \label{fig:Gzz_halfpsace}}
   \\
   \caption{Components of potential DGF for a 2DEG half-space (a) $G_{xx}^\mathrm{A}$ \eqref{eq:somm_Gxx}, (b) $G_{zx}^\mathrm{A}$ \eqref{eq:somm_Gzx} }
@@ -797,7 +799,15 @@ For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{
 %%
 \subsection{Thin Sheet}
 %
-Next we consider the case of an infinitesimally thin sheet of 2DEG located on the x-y plane and surrounded by free-space. A horizontal electric dipole is placed at a height $h$ above the sheet. The surface conductivity of the thin sheet is expressed in terms of a Drude-type model:
+\begin{figure}[t!]
+  \centering
+  \def\svgwidth{.5\linewidth}
+  \input{figures/2deg_sheet.pdf_tex}
+  \caption{(a) 2DEG sheet in surrounded by freespace, (b) Equivalent transmission line circuit consisting of a shunt impedance}
+  \label{fig:2deg_TL_equivalent}
+\end{figure}
+%
+Next we consider the case of an infinitesimally thin sheet of 2DEG located on the x-y plane and surrounded by freespace. A horizontal electric dipole is placed at a height $h$ above the sheet. The surface conductivity of the thin sheet is expressed in terms of a Drude-type model:
 %
 \begin{equation}
   \sigma_s = \frac{N_s e^2 \tau}{m^{\ast}}\frac{1}{1 + \j \O \tau},
@@ -811,20 +821,83 @@ where $N_s$ is the free electron concentration at the interface, $e$ is the elec
   \label{eq:epsilon_2deg}
 \end{equation}
 %
-in which $\Delta$ is the thickness of the 2DEG region, $\E_r$ is the dielectric constant of the GaN layer which acts as a substrate and $\E_0$ is the free-space permittivity. For a $\SI{5}{\nm}$ thick GaN/AlGaN based 2DEG, where $N_s = \SI[round-precision=2]{7.5e12}{\cm^{-2}}$ and $\E_r = 9.5$, the surface conductivity and dielectric function are plotted in Fig. \ref{fig:Electric_properties_2DEG} at room temperature.
+in which $\Delta$ is the thickness of the 2DEG region, $\E_r$ is the dielectric constant of the GaAs layer which acts as a substrate and $\E_0$ is the freespace permittivity. For a $\SI{5}{\nm}$ thick GaAs/AlGaAs based 2DEG, where $N_s = \SI[round-precision=2]{2e11}{\cm^{-2}}$ and $\E_r = 11$ \cite{Burke2000}, the surface conductivity and dielectric function are plotted in Fig. \ref{fig:Electric_properties_2DEG} at room temperature.
 %
 \begin{figure}[!htbp]
   \centering
-  \subfloat[]{\includegraphics[width=2.7in]{cond_gan.tikz}
-      \label{fig:conductivity_gan}}
-      \hfil
-      \subfloat[]{\includegraphics[width=2.7in]{eps_2deg_gan.tikz}
-          \label{fig:epsilon_gan}}
-  \caption{Electrical properties of GaN/AlGaN based 2DEG at room temperature (a) Surface conductivity \eqref{eq:sigma_s} (b) Dielectric function \eqref{eq:epsilon_2deg}}
+  \subfloat[]{\includegraphics[width=3in]{cond_2deg_gas.tikz}
+      \label{fig:conductivity_gaas}}
+      \subfloat[]{\includegraphics[width=3in]{eps_2deg_gaas.tikz}
+          \label{fig:epsilon_gaas}}
+  \caption{Electrical properties of GaAs/AlGaAs based 2DEG at room temperature (a) Surface conductivity \eqref{eq:sigma_s} (b) Dielectric function \eqref{eq:epsilon_2deg}}
   \label{fig:Electric_properties_2DEG}
 \end{figure}
 %
+The equivalent transmission line network used to calculate the reflection coefficients consists of a simple circuit of two parallel impedances \cite{Hanson2008,Lovat2012,Gomez-Diaz2013} which is shown in Fig. \ref{fig:2deg_TL_equivalent}.
+
+Assuming the source lies on the top of the 2DEG, the down-looking impedance of the shunt configuration circuit is,
 %
+\begin{equation}
+  Z^{\downarrow}(z_0^+) = \frac{Z^{\downarrow}(z_0^-)}{ 1 + \sigma_s \, Z^{\downarrow}(z_0^-)}
+  \label{eq:2deg_downlooking_imp_from_top}
+\end{equation}
+%
+where it is noted that $\sigma_s$ has the dimensions of admittance, and $Z^{\downarrow}(z_0^-)$ is the down-looking effective impedance as seen from the bottom of the sheet. In the case considered, $Z^{\downarrow}(z_0^-) = Z_0$ where $Z_0$ is the freespace intrinsic impedance. The reflections needed in \eqref{eq:somm_Gxx}-\eqref{eq:somm_Gzx} are listed in Table \ref{tab:Gamma_2deg_freespace}.
+%
+\begin{table}[ht!]
+  \begin{center}
+    \begin{tabular}{| C{5cm} | C{5cm} |  @{}m{0pt}@{}}
+      \hline
+      $\Gamma^{\downarrow, \mathrm{TE}}$ & $\Gamma^{\downarrow, \mathrm{TM}}$ &\\ [1.5ex]      \hline
+      $\displaystyle \frac{k_{z1} - \O \u_1 \sigma_s }{k_{z1} + \O \u_1 \sigma_s}$  & $\displaystyle \frac{ \O \E_1 -\sigma_s k_{z1} }{\O \E_1 + \sigma_s k_{z1}}$ &\\ [3.5ex] \hline      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Reflection coefficients for 2DEG sheet in freespace}
+  \label{tab:Gamma_2deg_freespace}
+\end{table}
+%
+\subsubsection{Location of poles}
+%
+The integrands of the SIs in \eqref{eq:somm_Gxx}-\eqref{eq:somm_Gzx} contain poles that are associated with the zeros of the integrand denominator. For a thin sheet in free-space, the poles can be analytically found by applying using the transverse resonance (TR) condition \cite[Sec. 2.4]{Felsen1994}, which requires that the total impedance at any point ($z =0$ in this case) must be zero. Using the TM parameters given in Table \ref{tab:Gamma_2deg_freespace} and \eqref{eq:2deg_downlooking_imp_from_top}, we write:
+%
+\begin{subequations}
+  \begin{align}
+    Z^{\downarrow} + Z^{\uparrow} ={}& 0,
+    \label{eq:TRM1}\\
+    Z_1 + Z_1 (Z_1 \sigma_s + 1 ) ={}& 0.
+    \label{eq:TRM2}
+  \end{align}
+  \label{eq:TRM}%
+\end{subequations}
+%
+The expression is obtained by substituting \eqref{eq:z_TM} into \eqref{eq:TRM2} \cite{Koufogiannis2015},
+%
+\begin{equation}
+    k^{\mathrm{TM}}_{\mathrm P} = k_1 \sqrt{1 - \left(\frac{2}{\eta_0 \sigma_s}\right)^2}
+  \label{eq:TM_pole}%
+\end{equation}
+%
+
+Similarly the TE-mode pole is expressed as,
+%
+\begin{equation}
+    k^{\mathrm{TE}}_{\mathrm P} = k_1 \sqrt{1 - \left(\frac{\eta_0 \sigma_s}{2}\right)^2}
+  \label{eq:TE_pole}%
+\end{equation}
+%
+%
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[width=3in]{TM_poles_plot_gaas.tikz}
+      \label{fig:tm_poles}}
+      \subfloat[]{\includegraphics[width=3in]{TE_poles_plot_gas.tikz}
+          \label{fig:te_poles}}
+  \caption{Distribution of analytically calculated poles in the complex plane (a) TM mode \eqref{eq:TM_pole} (b) TE mode \eqref{eq:TE_pole}}
+  \label{fig:Complex_poles}
+\end{figure}
+%
+
+A mode is termed as proper only when the pole lies in the fourth quadrant of the complex plane. As evident from Figs. \ref{fig:Electric_properties_2DEG} and \ref{fig:tm_poles}, proper TM modes only exist when the real part of dielectric function of the 2DEG is negative which also corresponds to a negative imaginary part of the conductivity. On the other hand, a proper TE mode exists when the real part of dielectric function is positive which is shown in Fig. \ref{fig:te_poles}.
 
 
 %%%%%%%%%%%%%%%

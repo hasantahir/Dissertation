@@ -53,8 +53,8 @@
     \put(0.6667657,0.59914313){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{z1}$}}}}%
     \put(0.23870156,0.46373207){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
     \put(0.41301308,0.33082305){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
-    \put(0.51415382,0.32135535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\uparrow}(z_0)$}}}}%
-    \put(0.51415382,0.25475986){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\downarrow}(z_0)$}}}}%
+    \put(0.51415382,0.32535535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\uparrow}(z_0)$}}}}%
+    \put(0.51415382,0.25675986){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\downarrow}(z_0)$}}}}%
     \put(0.72928257,0.40052888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_s = \sigma_s$}}}}%
     \put(0.6667657,0.62754371){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_1$}}}}%
     \put(0.6667657,0.47435181){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{z2}$}}}}%
