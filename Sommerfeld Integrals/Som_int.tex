@@ -796,8 +796,8 @@ For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{
 \end{figure}
 %%
 %%
-To compute the SIs, real-axis integration using a combination of \emph{tanh-sinh} quadrature \cite{Koufogiannis2015,bbbbbbbbbbbb} and partition extrapolation \cite{Michalski1998} for the tail part is used by implementing the algorithms in \cite{Michalski2016}.
-%%
+To compute the SIs, real-axis integration using a combination of \emph{tanh-sinh} quadrature \cite{1974721,Golubovic2012,Koufogiannis2015} and partition extrapolation \cite{Michalski1998}. Algorithmic pseudo-code for both techniques is discussed in \cite{Michalski2016}, following which the integrals are computed here.
+%
 \subsection{Thin Sheet}
 %
 \begin{figure}[t!]
@@ -887,7 +887,7 @@ Similarly the TE-mode pole is expressed as,
 \end{equation}
 %
 %
-\begin{figure}[!htbp]
+\begin{figure}[t!]
   \centering
   \subfloat[]{\includegraphics[width=3in]{TM_poles_plot_gan.tikz}
       \label{fig:tm_poles}}
@@ -898,9 +898,31 @@ Similarly the TE-mode pole is expressed as,
 \end{figure}
 %
 
-A mode is termed as proper only when the pole lies in the fourth quadrant of the complex plane. As evident from Figs. \ref{fig:Electric_properties_2DEG} and \ref{fig:tm_poles}, proper TM modes only exist when the real part of dielectric function of the 2DEG is negative which also corresponds to a negative imaginary part of the conductivity. On the other hand, a proper TE mode exists when the real part of dielectric function is positive which is shown in Fig. \ref{fig:te_poles}.
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[width=3.2in]{Gxx_gan_sheet_56_rt.tikz}
+  \label{fig:Gxx_gan_sheet}} \hfil
+  \subfloat[]{\includegraphics[width=3.2in]{Gzx_gan_sheet_56_rt.tikz}
+  \label{fig:Gzx_gan_sheet}}
+  \caption{Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The surface conductivity of the sheet is $\sigma_s = \num[round-precision=2]{7.6e-5} - \num[round-precision=3]{j 2.98e-3}\, \SI{}{\siemens}$ corresponding to $\SI[round-precision=2]{5.6}{\THz}$ at room temperature ($\SI{295}{\K}$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$}
+  \label{fig:G^A_Gan_sheet_RT}
+\end{figure}
 
-Figure \ref{} shows the three components of the potential Green
+A mode is termed as proper only when the pole lies in the fourth quadrant of the complex plane. As evident from Figs. \ref{fig:Electric_properties_2DEG} and \ref{fig:tm_poles}, proper TM modes only exist when the real part of dielectric function of the 2DEG is negative which also corresponds to a negative imaginary part of the conductivity. On the other hand, a proper TE mode exists when the real part of dielectric function is positive which is shown in Fig. \ref{fig:te_poles}.
+%
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[width=3.2in]{Gxx_gan_sheet_56_3k.tikz}
+  \label{fig:Gxx_gan_sheet}} \hfil
+  \subfloat[]{\includegraphics[width=3.2in]{Gzx_gan_sheet_56_3k.tikz}
+  \label{fig:Gzx_gan_sheet}}
+  \caption{Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The cryogenic surface conductivity of the sheet is $\sigma_s = \num[round-precision=2]{7.6e-8} - \num[round-precision=3]{j 2.98e-3}\, \SI{}{\siemens}$ corresponding to $\SI[round-precision=2]{5.6}{\THz}$ at a temperature ($\SI{3}{\K}$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$}
+  \label{fig:G^A_Gan_sheet_3k}
+\end{figure}
+
+Figure \ref{} shows the three components of the potential GF, $G^{\mathrm A}$, which are compared with the freespace GF.
+
+
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
