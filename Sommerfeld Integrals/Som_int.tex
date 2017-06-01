@@ -738,7 +738,7 @@ Following network analysis techniques, the voltage and current at any point in a
   \label{fig:TL_equivalent}
 \end{figure}
 %
-The layers numbered $2$ and $3$ in Fig. \ref{fig:TL_equivalent}a are commonly made up of group III-V materials such as gallium arsenide (GaAs) and their subsequent alloys such aluminum gallium arsenide (AlGaAs). Based on the device type, the top layer labeled $1$, can represent either freespace or a perfectly conducting material. The thin layer which is sandwiched between the semiconductor layers is known as a two-dimensional electron gas (2DEG) which can be visualized as a highly conductive sheet of electrons that is known to exhibit extraordinary electromagnetic properties such as highly confined surface waves \cite{Stern1967,Allen1977}. In this section, we formulate the TLGFs for various configuration of the 2DEG and compute the respective potential Green functions.
+The layers numbered $2$ and $3$ in Fig. \ref{fig:TL_equivalent}a are commonly made up of group III-V materials such as gallium nitride (GaN) and their subsequent alloys such aluminum gallium nitride (AlGaN). Based on the device type, the top layer labeled $1$, can represent either freespace or a perfectly conducting material. The thin layer which is sandwiched between the semiconductor layers is known as a two-dimensional electron gas (2DEG) which can be visualized as a highly conductive sheet of electrons that is known to exhibit extraordinary electromagnetic properties such as highly confined surface waves \cite{Stern1967,Allen1977}. In this section, we formulate the TLGFs for various configuration of the 2DEG and compute the respective potential Green functions.
 %%
 %%
 %%
@@ -780,7 +780,7 @@ The first term in \eqref{eq:somm_Gxx} and \eqref{eq:somm_Gzz} is the Sommerfeld 
 \end{equation}
 %
 
-The plasma frequency $\O_p$ of the 2DEG lies in the terahertz frequency at which the dielectric function vanishes to zero. At frequencies lower than $\O_p$, the real part is negative and the imaginary part, which expresses loss is highly dependent on temperature. Here, we assume a dielectric constant of $ -8.114 - \j 8.159$ for a GaAs/AlGaAs heterostructure at \SI{.8}{\THz}, and observed at room temperature (\SI{295}{\kelvin}).
+The plasma frequency $\O_p$ of the 2DEG lies in the terahertz frequency at which the dielectric function vanishes to zero. At frequencies lower than $\O_p$, the real part is negative and the imaginary part, which expresses loss is highly dependent on temperature. Here, we assume a dielectric constant of $ -8.114 - \j 8.159$ for a GaN/AlGaN heterostructure at \SI{5.6}{\THz}, and observed at room temperature (\SI{295}{\kelvin}).
 
 For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{xx}^\mathrm{A}$ \eqref{eq:somm_Gxx}, $G_{zx}^\mathrm{A}$ \eqref{eq:somm_Gzx} exist, and are plotted in Fig. \ref{fig:G^A_components_halfspace} by excluding the freespace GF part.
 %
@@ -796,6 +796,7 @@ For a horizontally oriented electric dipole, only the spatial domain GFs in $G_{
 \end{figure}
 %%
 %%
+To compute the SIs, real-axis integration using a combination of \emph{tanh-sinh} quadrature \cite{Koufogiannis2015,bbbbbbbbbbbb} and partition extrapolation \cite{Michalski1998} for the tail part is used by implementing the algorithms in \cite{Michalski2016}.
 %%
 \subsection{Thin Sheet}
 %
@@ -821,15 +822,15 @@ where $N_s$ is the free electron concentration at the interface, $e$ is the elec
   \label{eq:epsilon_2deg}
 \end{equation}
 %
-in which $\Delta$ is the thickness of the 2DEG region, $\E_r$ is the dielectric constant of the GaAs layer which acts as a substrate and $\E_0$ is the freespace permittivity. For a $\SI{5}{\nm}$ thick GaAs/AlGaAs based 2DEG, where $N_s = \SI[round-precision=2]{2e11}{\cm^{-2}}$ and $\E_r = 11$ \cite{Burke2000}, the surface conductivity and dielectric function are plotted in Fig. \ref{fig:Electric_properties_2DEG} at room temperature.
+in which $\Delta$ is the thickness of the 2DEG region, $\E_r$ is the dielectric constant of the GaN layer which acts as a substrate and $\E_0$ is the freespace permittivity. For a $\SI{5}{\nm}$ thick GaN/AlGaN based 2DEG, where $N_s = \SI[round-precision=2]{7.5e12}{\cm^{-2}}$ and $\E_r = 9.6$ \cite{Muravjov2010}, the surface conductivity and dielectric function are plotted in Fig. \ref{fig:Electric_properties_2DEG} at room temperature.
 %
 \begin{figure}[!htbp]
   \centering
-  \subfloat[]{\includegraphics[width=3in]{cond_2deg_gas.tikz}
-      \label{fig:conductivity_gaas}}
-      \subfloat[]{\includegraphics[width=3in]{eps_2deg_gaas.tikz}
-          \label{fig:epsilon_gaas}}
-  \caption{Electrical properties of GaAs/AlGaAs based 2DEG at room temperature (a) Surface conductivity \eqref{eq:sigma_s} (b) Dielectric function \eqref{eq:epsilon_2deg}}
+  \subfloat[]{\includegraphics[width=3in]{cond_2deg_gan.tikz}
+      \label{fig:conductivity_gan}}
+      \subfloat[]{\includegraphics[width=3in]{eps_2deg_gan.tikz}
+          \label{fig:epsilon_gan}}
+  \caption{Electrical properties of GaN/AlGaN based 2DEG at room temperature (a) Surface conductivity \eqref{eq:sigma_s} (b) Dielectric function \eqref{eq:epsilon_2deg}}
   \label{fig:Electric_properties_2DEG}
 \end{figure}
 %
@@ -888,9 +889,9 @@ Similarly the TE-mode pole is expressed as,
 %
 \begin{figure}[!htbp]
   \centering
-  \subfloat[]{\includegraphics[width=3in]{TM_poles_plot_gaas.tikz}
+  \subfloat[]{\includegraphics[width=3in]{TM_poles_plot_gan.tikz}
       \label{fig:tm_poles}}
-      \subfloat[]{\includegraphics[width=3in]{TE_poles_plot_gas.tikz}
+      \subfloat[]{\includegraphics[width=3in]{TE_poles_plot_gan.tikz}
           \label{fig:te_poles}}
   \caption{Distribution of analytically calculated poles in the complex plane (a) TM mode \eqref{eq:TM_pole} (b) TE mode \eqref{eq:TE_pole}}
   \label{fig:Complex_poles}
@@ -899,6 +900,17 @@ Similarly the TE-mode pole is expressed as,
 
 A mode is termed as proper only when the pole lies in the fourth quadrant of the complex plane. As evident from Figs. \ref{fig:Electric_properties_2DEG} and \ref{fig:tm_poles}, proper TM modes only exist when the real part of dielectric function of the 2DEG is negative which also corresponds to a negative imaginary part of the conductivity. On the other hand, a proper TE mode exists when the real part of dielectric function is positive which is shown in Fig. \ref{fig:te_poles}.
 
+Figure \ref{} shows the three components of the potential Green
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+
+
+% \section{Conclusion}
+%%
+%%
+%%
+In this chapter, a transmission line network based technique is discussed through which spectral and subsequently spatial domain potential GFs have been derived for a multilayer structure. Of particular interest is an infinitesimally thin sheet of free-charges known as a 2DEG, for which components of the potential GFs are computed. Existence of surface waves supported by the 2DEG is explored. Based on the location of poles that are analytically calculated, it is concluded that such structure do support plasmonic behavior in the terahertz frequency region.
 
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
