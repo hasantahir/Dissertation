@@ -19,7 +19,7 @@
 % Create title page
 \maketitle
 
-Multi-layered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields \cite{somethinginhere}. Most commonly, the fields are found in terms of the dyadic Green functions (DGFs) of the environment, which defines the vector field distribution due to a vector point source \cite{van2007electromagnetic}. Due to a current $\v J$ distributed in a region defined by a surface, $r'$, the surface fields are expressed as in terms of an inner product,
+Multi-layered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields. Most commonly, the fields are found in terms of the dyadic Green functions (DGFs) of the environment, which defines the vector field distribution due to a vector point source \cite{van2007electromagnetic}. Due to a current $\v J$ distributed in a region defined by a surface, $r'$, the surface fields are expressed as in terms of an inner product,
 %
 \begin{subequations}
   \begin{align}
@@ -744,7 +744,7 @@ The layers numbered $2$ and $3$ in Fig. \ref{fig:TL_equivalent}a are commonly ma
 %%
 \subsection{Lossy Half-space}
 %
-We start with a case in which the 2DEG occupies the whole lower half-space. Such a case is an example of the classical Sommerfeld half-space problem that has been actively researched in the past century. \cite{Wait1961,Michalski1985,}  An electric dipole of arbitrary orientation is placed in air at a height $z'$ from the interface where the origin is also centered. The observation point, at first also lies in air. To find the component $G_{xx}^\mathrm{A}$, we require TE-mode voltage of an equivalent, current excited TL network which is expressed using \eqref{eq:TLGF_V_i} and \eqref{eq:TLGF_I_i} \cite[Sec. 2.4]{Felsen1994} \cite{Michalski1997},
+We start with a case in which the 2DEG occupies the whole lower half-space. Such a case is an example of the classical Sommerfeld half-space problem that has been actively researched in the past century \cite{Wait1961,Michalski1985}.  An electric dipole of arbitrary orientation is placed in air at a height $z'$ from the interface where the origin is also centered. The observation point, at first also lies in air. To find the component $G_{xx}^\mathrm{A}$, we require TE-mode voltage of an equivalent, current excited TL network which is expressed using \eqref{eq:TLGF_V_i} and \eqref{eq:TLGF_I_i} \cite[Sec. 2.4]{Felsen1994} \cite{Michalski1997},
 %
 \begin{equation}
   V_i^{\mathrm{TE}}(z,z') = \frac{Z_1^{\mathrm{TE}}}{2} \left [ \e^{-\j k_{z1} |z - z'|} + \Gamma^{\downarrow, \mathrm{TE}} \, \e^{-\j k_{z1} (z + z')} \right],
@@ -913,14 +913,16 @@ A mode is termed as proper only when the pole lies in the fourth quadrant of the
 \begin{figure}[!htbp]
   \centering
   \subfloat[]{\includegraphics[width=3.2in]{Gxx_gan_sheet_56_3k.tikz}
-  \label{fig:Gxx_gan_sheet}} \hfil
+  \label{fig:Gxx_gan_sheet_3k}} \hfil
   \subfloat[]{\includegraphics[width=3.2in]{Gzx_gan_sheet_56_3k.tikz}
-  \label{fig:Gzx_gan_sheet}}
+  \label{fig:Gzx_gan_sheet_3k}}
   \caption{Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The cryogenic surface conductivity of the sheet is $\sigma_s = \num[round-precision=2]{7.6e-8} - \num[round-precision=3]{j 2.98e-3}\, \SI{}{\siemens}$ corresponding to $\SI[round-precision=2]{5.6}{\THz}$ at a temperature ($\SI{3}{\K}$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$}
   \label{fig:G^A_Gan_sheet_3k}
 \end{figure}
 
-Figure \ref{} shows the three components of the potential GF, $G^{\mathrm A}$, which are compared with the freespace GF.
+Figure \ref{fig:G^A_Gan_sheet_3k} shows the three components of the potential GF, $G^{\mathrm A}$, which are compared with the freespace GF.
+
+
 
 
 %%%%%%%%%%%%%%%

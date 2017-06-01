@@ -3744,11 +3744,6 @@
   pages  = {248},
 }
 
-@Misc{,
-  title = {{Transmission Line Analysis}},
-  file  = {:D\:\\Users\\Mendeley Desktop\\Transmission Line Analysis of Multilayer structures.PDF:PDF},
-}
-
 @TechReport{Krylov1979,
   author      = {Krylov, G N and Makarov, G I},
   title       = {{Structure of the Electromagnetic field of a vertical electric dipole and of vertical antennas in the space above a plane earth}},
@@ -3798,12 +3793,6 @@
   doi       = {10.1017/CBO9780511546815},
   file      = {:D\:\\Users\\Mendeley Desktop\\BOOK - Sidi - Practical Extrapolation Methods.pdf:pdf},
   pages     = {543},
-}
-
-@Book{,
-  title = {{Theory and computation of}},
-  isbn  = {9781119108047},
-  file  = {:D\:\\Users\\Mendeley Desktop\\BOOK -Theory and computation of electromagnetic fields - MING.pdf:pdf},
 }
 
 @Article{Monteiro2017,
@@ -4107,11 +4096,6 @@
   pages    = {1--52},
 }
 
-@TechReport{,
-  title = {{REPORT - Fortran Codes.pdf}},
-  file  = {:D\:\\Users\\Mendeley Desktop\\REPORT - Fortran Codes.pdf:pdf},
-}
-
 @InCollection{Krantz1999a,
   author = {Krantz, Steven G.},
   title  = {{Argument Principle Method}},
@@ -4365,20 +4349,6 @@
   pages  = {365--377},
   doi    = {jresv59n6p365},
   file   = {:D\:\\Users\\Mendeley Desktop\\Wait - Excitation of Surface waves.pdf:pdf},
-}
-
-@Article{Wait1961,
-  author  = {Wait, James R.},
-  title   = {{THE ELECTROMAGNETIC FIELDS OF A HORIZONTAL DIPOLE IN THE PRESENCE OF A CONDUCTING HALF-SPACE}},
-  journal = {Canadian Journal of Physics},
-  year    = {1961},
-  volume  = {39},
-  number  = {7},
-  pages   = {1017--1028},
-  month   = jul,
-  issn    = {0008-4204},
-  doi     = {10.1139/p61-111},
-  file    = {:D\:\\Users\\Mendeley Desktop\\Horizontal Dipole above ground.pdf:pdf},
 }
 
 @Article{Wang2006,
@@ -4772,12 +4742,6 @@
   pages     = {632},
 }
 
-@Misc{,
-  title = {{Lippold - MATHCAD CODE.pdf}},
-  file  = {:D\:\\Users\\Mendeley Desktop\\Computer Simulation of a buried loop.pdf:pdf},
-  issn  = {1361-4800},
-}
-
 @Book{Li2009,
   title     = {{Electromagnetic Fields in Stratified Media}},
   publisher = {Springer Berlin Heidelberg},
@@ -4788,11 +4752,6 @@
   isbn      = {978-3-540-95963-2},
   doi       = {10.1007/978-3-540-95964-9},
   file      = {:D\:\\Users\\Mendeley Desktop\\BOOK - EM Fields in Stratified Media.pdf:pdf},
-}
-
-@Misc{,
-  title = {{BUTTLER NOTESsomm integral.pdf}},
-  file  = {:D\:\\Users\\Mendeley Desktop\\BUTTLER NOTESsomm integral.pdf:pdf},
 }
 
 @PhdThesis{Esfahani2014,
@@ -4845,14 +4804,6 @@ title = {{High Speed Photodetectors}}
   year   = {2009},
   file   = {:D\:\\Users\\Mendeley Desktop\\THESIS - with matlab codes on Dipole embedded.pdf:pdf},
   number = {February},
-}
-
-@Article{1985,
-  title  = {{Institute of Semiconductor Physics , Siberian Division , Academy of Sciences of the USSR , Novosibirsk ,}},
-  year   = {1985},
-  volume = {5},
-  pages  = {289--335},
-  file   = {:D\:\\Users\\Mendeley Desktop\\Chaplik - Plasma oscillations in 2deg.pdf:pdf;:D\:\\Users\\Mendeley Desktop\\Chaplik - Plasma oscillations in 2deg.pdf:pdf},
 }
 
 @Article{Willis2013,
@@ -4972,11 +4923,37 @@ title = {{High Speed Photodetectors}}
   year     = {2011},
   volume   = {59},
   number   = {2},
-  pages    = {694-699},
-  month    = {Feb},
+  pages    = {694--699},
+  month    = feb,
   issn     = {0018-926X},
   doi      = {10.1109/TAP.2010.2096187},
   keywords = {Green's function methods;computational complexity;extrapolation;integral equations;Sommerfeld integral tails;computational time;direct integration algorithm;double exponential-type quadrature formulas;error controllable nature;mixed potential integral equation formulation;multilayered Green functions;partition-extrapolation methods;Mixed potential integral equations;Sommerfeld integrals;multilayered Green's functions},
+}
+
+@Article{1974721,
+  author  = {Hidetosi Takahasi and Masatake Mori},
+  title   = {Double Exponential Formulas for Numerical Integration},
+  journal = {Publications of the Research Institute for Mathematical Sciences},
+  year    = {1974},
+  volume  = {9},
+  number  = {3},
+  pages   = {721--741},
+  doi     = {10.2977/prims/1195192451},
+}
+
+@Article{Wait1961,
+  author  = {Wait, James R.},
+  title   = {The Electromagnetic Fields of a Horizontal Dipole in the Presence of a Conducting Half-space},
+  journal = {Canadian Journal of Physics},
+  year    = {1961},
+  volume  = {39},
+  number  = {7},
+  pages   = {1017--1028},
+  month   = jul,
+  issn    = {0008-4204},
+  doi     = {10.1139/p61-111},
+  eprint  = {http://dx.doi.org/10.1139/p61-111},
+  file    = {:D\:\\Users\\Mendeley Desktop\\Horizontal Dipole above ground.pdf:pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -37,7 +37,7 @@ K.~Michalski and J.~Mosig, ``{Multilayered media Green's functions in integral
   Propagation}, vol.~45, no.~3, pp. 508--519, Mar. 1997.
 
 \bibitem{Felsen1994}
-L.~B. Felsen and N.~Marcuvitz, \emph{Radiation and Scattering of Waves (IEEE
+L.~B. Felsen and N.~Marcuvitz, \emph{Radiation and Scattering of Waves (ieee
   Press Series on Electromagnetic Wave Theory)}, ser. IEEE Press Series on
   Electromagnetic Wave Theory.\hskip 1em plus 0.5em minus 0.4em\relax
   Wiley-IEEE Press, 1994.
@@ -63,8 +63,8 @@ M.~Abramowitz and I.~A. Stegun, \emph{Handbook of Mathematical
   Publications, 2012.
 
 \bibitem{Michalski_2015}
-K.~Michalski and J.~Mosig, ``The sommerfeld half-space problem revisited: from
-  radio frequencies and zenneck waves to visible light and fano modes,''
+K.~Michalski and J.~Mosig, ``{The Sommerfeld half-space problem revisited: from
+  radio frequencies and Zenneck waves to visible light and Fano modes},''
   \emph{Journal of Electromagnetic Waves and Applications}, vol.~30, no.~1, pp.
   1--42, Dec. 2015.
 
@@ -76,6 +76,49 @@ F.~Stern, ``{Polarizability of a Two-Dimensional Electron Gas},''
 S.~J. Allen, D.~C. Tsui, and R.~A. Logan, ``{Observation of the Two-Dimensional
   Plasmon in Silicon Inversion Layers},'' \emph{Physical Review Letters},
   vol.~38, no.~17, pp. 980--983, Apr. 1977.
+
+\bibitem{Wait1961}
+J.~R. Wait, ``The electromagnetic fields of a horizontal dipole in the presence
+  of a conducting half-space,'' \emph{Canadian Journal of Physics}, vol.~39,
+  no.~7, pp. 1017--1028, Jul. 1961.
+
+\bibitem{Michalski1985}
+K.~Michalski, ``{On the efficient evaluation of integral arising in the
+  Sommerfeld halfspace problem},'' \emph{IEE Proceedings H Microwaves, Antennas
+  and Propagation}, vol. 132, no.~5, p. 312, 1985.
+
+\bibitem{1974721}
+H.~Takahasi and M.~Mori, ``Double exponential formulas for numerical
+  integration,'' \emph{Publications of the Research Institute for Mathematical
+  Sciences}, vol.~9, no.~3, pp. 721--741, 1974.
+
+\bibitem{Golubovic2012}
+R.~Golubovic, A.~G. Polimeridis, and J.~R. Mosig, ``{Efficient algorithms for
+  computing Sommerfeld integral tails},'' \emph{IEEE Transactions on Antennas
+  and Propagation}, vol.~60, no.~5, pp. 2409--2417, 2012.
+
+\bibitem{Koufogiannis2015}
+I.~D. Koufogiannis, M.~Mattes, and J.~R. Mosig, ``{On the Development and
+  Evaluation of Spatial-Domain Green's Functions for Multilayered Structures
+  With Conductive Sheets},'' \emph{{IEEE} Transactions on Microwave Theory and
+  Techniques}, vol.~63, no.~1, pp. 20--29, Jan. 2015.
+
+\bibitem{Michalski1998}
+K.~Michalski, ``{Extrapolation methods for Sommerfeld integral tails},''
+  \emph{IEEE Transactions on Antennas and Propagation}, vol.~46, no.~10, pp.
+  1405--1418, 1998.
+
+\bibitem{Michalski2016}
+K.~A. Michalski and J.~R. Mosig, ``{Efficient computation of Sommerfeld
+  integral tails--methods and algorithms},'' \emph{Journal of Electromagnetic
+  Waves and Applications}, vol.~30, no.~3, pp. 281--317, 2016.
+
+\bibitem{Muravjov2010}
+A.~V. Muravjov, D.~B. Veksler, V.~V. Popov, O.~V. Polischuk, N.~Pala, X.~Hu,
+  R.~Gaska, H.~Saxena, R.~E. Peale, and M.~S. Shur, ``{Temperature dependence
+  of plasmonic terahertz absorption in grating-gate gallium-nitride transistor
+  structures},'' \emph{Applied Physics Letters}, vol.~96, no.~4, pp. 1--4,
+  2010.
 
 \bibitem{Hanson2008}
 G.~W. Hanson, ``{Dyadic Green's functions and guided surface waves for a
