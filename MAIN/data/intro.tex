@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  New template code for TAMU Theses and Dissertations starting Fall 2016.
+%
+%  Author: Sean Zachary Roberson
+%	 Version 3.17.01
+%  Last updated 1/10/2017
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                           SECTION I
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagestyle{plain} % No headers, just page numbers
+\pagenumbering{arabic} % Arabic numerals
+\setcounter{page}{1}
+
+
+\chapter{\uppercase {Introduction}}
+
+In present times, the ubiquity of telecommunication gadgetry in our lives has necessitated the need for device miniaturization without any compromise on the performance. We are witnessing an age in which microwave frequency based communication systems, that have been at the forefront of the wireless revolution for the past three decades, are reaching their saturation in terms of performance. Currently, millimeter wave devices are the driving force of the so-called \emph{5G movement}. Following the trend, it is predicted that terahertz frequency based communication systems will soon take over.
+
+Until recently, terahertz (THz) frequency systems had been overlooked compared to optical and microwave counterparts, mainly due to lack of availability of suitable materials. With the technological advancement in the semiconductor fabrication, the terahertz field has grown exponentially. It is now possible to engineer terahertz radiators as well as detectors from devices that are derived from conventional field-effect transistors \cite{Kempa1991,Dyakonov1993,Dyakonov2001}. By epitaxially growing layers of group III-V semiconductors, THz quantum-cascade lasers have been realized \cite{Williams2003}. Terahertz emitters that can be tuned are fabricated utilizing the instability in an electrically-driven plasma \cite{Krasheninnikov1980} that exists in the form of thin sheet of free charges known as a two-dimensional electron gas (2DEG). Prediction of spontaneous emission in the terahertz frequency was made \cite{Kempa1991}, when a current passes through the 2DEG. The plasma wave propagation mechanism due to the current driven instabilities in the 2DEG bears resemblance to surface plasmon polariton (SPP), which is a type of surface wave existing at a metal-dielectric interface primarily at optical frequencies. Lately, there has been an immense interest in graphene material and its prospects in the terahertz frequency sources and detectors. While, the electronic properties of graphene can not be matched, its integration into systems has proved very difficult so far. On the other hand, 2DEG based devices that are engineered out of a III-V semiconductor heterostructure can be easily integrated with silicon based electronic devices.
+
+Electromagnetic analysis plays a pivotal role in designing energy efficient and high performance communication systems to which antennas serve as the front-end that are backed by transmission line (TL) networks. The design process of microwave systems involves an extensive use of commercial simulation tools that are mostly based on finite element method (FEM) or finite difference time domain (FDTD) technique. Unfortunately, those tools turn out to be extremely inefficient when the thickness of the simulated object is much smaller than the wavelength of interest. Integral equation (IE) techniques employing method of moments (MoM) are the most suitable approach to analyze thin objects. Essential to any IE/MoM based technique is the formulation and subsequently, the computation of Green functions (GFs) associated to a structure. For a 2DEG based terahertz system involving multiple layers, the GFs can be formulated following a TL network approach \cite{Michalski1997}. The fields can be derived from the GFs through the Sommerfeld Integral (SI) analysis.
+
+The existence of an infinitesimally thin plasma region can be considered a realization of 2D materials that display many interesting physical properties chief among them is the surface wave or subwavelength propagation. As a result, the physical dimensions at which a structure resonates, becomes much smaller than corresponding freespace wavelength. Currently, antennas incorporated on a semiconductor chip occupy a large amount space. With plasma based subwavelength antennas, on-chip integration is achievable.
+%%
+%%
+%%
+%%
+\section*{Outline}
+%
+In this section, the structure of this dissertation is briefly summarized.
+
+Surface wave propagation was first observed in the optical frequency region where surface plasmon polaritons propagate along the interface of a metal such as gold, and a dielectric. Chapter II reviews in detail the physical conditions required for wave generation in light of the material properties of metals. Applications of the subwavelength properties are discussed by studying various nanostructures as well as their design criteria that form the basis of the optical antennas.
+
+Chapter III presents the derivation procedures of spectral domain GFs using the TL-GF approach \cite{Michalski1997,Michalski2005} and extends it to incorporate infinitesimally thin sheets. The spatial domain GFs for vector potentials are obtained through the Sommerfeld integrals using the mixed potential integral equations (MPIE).
+
+The dispersion relation and the resulting diagram characterize the subwavelength properties of the 2D plasma waves. In Chapter III, the dispersion diagrams of semiconductor heterostructures with 2DEG embedded, are numerically calculated computed using a complex-valued root search algorithm known as the derivate-free argument principle method (APM).
+
+A super-resolution, nanoscale imaging scheme is presented in Chapter IV that demonstrates the subwavelength capabilities of a 2DEG based system in the terahertz frequency region.
+
+Chapter V provides concluding remarks and recommends future research on the subject.

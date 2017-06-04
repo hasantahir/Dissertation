@@ -70,7 +70,7 @@
 %This is from the mdwtools package; it fixes some
 %footnote commands and allows you to have footnotes in
 %tables via the savenotes environment.
-\usepackage{mdwtab}
+% \usepackage{mdwtab}
 \usepackage{footnote}
 
 %If you have a table that spans multiple pages, this
@@ -110,22 +110,18 @@
 \usepackage{gensymb} % Insert degree symbol
 \usepackage{chemformula} % chemical formulas
 \usepackage{siunitx} % All the SI unit nomenclature
-\sisetup{per=slash, load=abbr}
+  \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=figures,round-precision=4}
 % \usepackage{systeme} % For system of equations
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
 %%%%%%%%%%
-\usepackage{mdwtab}
-\usepackage{datetime} % Insert date and time
+% \usepackage{mdwtab}
+% \usepackage{datetime} % Insert date and time
 \usepackage{multicol} % For side-by-side equatiosn
+\usepackage{microtype} % Enfore borders
 
-%% Nicely set the spacing between equations and text
-% \AtBeginDocument{%
-% \setlength\abovedisplayskip{4pt}
-% \setlength\belowdisplayskip{4pt}
-% \setlength\abovedisplayshortskip{4pt}
-% \setlength\belowdisplayshortskip{4pt}
-% }
+
+
 % \usepackage{rotating}
 % pdflatex -synctex=-1
 % \usepackage{hyperref}
@@ -133,6 +129,7 @@
 %%%%%%%%%% GRAPHICS
 %%%%%%%%%%
 \usepackage{pgfplots}
+\pgfplotsset{tick scale binop=\times}
 \usepackage{standalone}
 \usepackage{tikz}
 \tikzset{
@@ -152,16 +149,6 @@ font={\fontsize{12pt}{12}\selectfont}}
   \endgroup
 }
 
-
-
-% The following is done to hide ugly color boxes around the links and colorize the links
-% \usepackage{xcolor}
-% \hypersetup{
-% colorlinks,
-% linkcolor={red!50!black},
-% citecolor={blue!50!black},
-% urlcolor={blue!80!black}
-% }
 %%%%%%%%%%
 %%%%%%%%%% TIPS and TRICKS
 %%%%%%%%%%
@@ -200,12 +187,14 @@ font={\fontsize{12pt}{12}\selectfont}}
 % Operators
 \renewcommand{\v}[1]{\mathbf{#1}} % vectors
 \newcommand{\ti}[1]{\tilde{#1}} % spectral representation
+	\newcommand{\tnsr}[1]{\underline{\underline{#1}}}
 
 % Symbols
 \renewcommand{\O}{\omega}  % omega
 \newcommand{\E}{\varepsilon}  % epsilon
 \renewcommand{\u}{\mu}  % mu
 \newcommand{\p}{\rho}  % rho
+\newcommand{\vp}{\boldsymbol \p}  % rho
 \newcommand{\x}{\times}  % times
 \renewcommand{\inf}{\infty}  % infinity
 \newcommand{\infint}{\int\limits_{-\inf}^\inf} % integral by R
@@ -213,7 +202,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 \renewcommand{\^}{\hat}  % unit vector
 \newcommand*\diff{\mathop{}\!\mathrm{d}} % Define differential operator
 \newcommand{\e}{\mathrm{e}} % Straight-up exponential
-\renewcommand{\j}{j\mkern1mu} % Straight-up iotas
+\renewcommand{\j}{\mathrm{j}\mkern1mu} % Straight-up exponential
 \newcommand{\iu}{\mathrm{i}\mkern1mu}
 
 %  For crowded equations with fractions
@@ -264,7 +253,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 %{\protext\numberline{\thesection. \thealgorithm}#1}\par}
 
 % Define all graphics paths over here
-\graphicspath{{data/microscopy/figures/}{data/opantennas/figures/}}
+\graphicspath{{data/microscopy/figures/}{data/opantennas/figures/}{data/sommint/figures/}{data/poles/figures/}}
 
 
 \begin{document}
@@ -303,14 +292,17 @@ font={\fontsize{12pt}{12}\selectfont}}
 \include{data/dedication}
 \include{data/acknowledgements}
 \include{data/contributors}
-\include{data/nomenclature}
+% \include{data/nomenclature}
 %
 \include{data/lists}  % This is simply a file that formats and adds your toc, lof, and lot, please do not edit this unless you have a specific need.
 
 
-% \include{data/section1}
+\include{data/intro}
+\include{data/OpAntennas/bchapter}
+\include{data/SommInt/som_int}
 \input{data/microscopy/new_sim_portion}
-\include{data/opantennas/bchapter}
+\input{data/poles/multilayered_roots}
+
 % \include{data/section3}
 % \include{data/section4}
 %The next line is the format for inserting new sections.
@@ -329,7 +321,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 %hosted by the University of Vienna, shows several
 %bibliography styles and examples of in-text citation
 %and a references page.
-\bibliographystyle{ieeetr}
+\bibliographystyle{ieeetran}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{REFERENCES}
@@ -339,7 +331,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 %This file is a .bib database that contains the sources.
 %This removes the dependency on the previous file
 %bibliography.tex.
-\bibliography{references/zubairy,references/Optical_Antennas}
+\bibliography{references/combined}
 
 
 

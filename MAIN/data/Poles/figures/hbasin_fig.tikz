@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+    \begin{axis} [
+        enlargelimits=false,
+        axis equal image,
+        axis on top,
+        xlabel=$x$,
+        ylabel=$y$,
+    ]
+        \addplot graphics [
+            xmin=-2,
+            xmax=2,
+            ymin=-2,
+            ymax=2,
+        ] {halley_basin};
+    \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,50 @@
+\documentclass[14pt]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+
+\begin{document}
+  \begin{tikzpicture}
+    % Draw coordinate system
+    \draw [color=black, fill=black] (0, 0) circle (0.1);
+    \draw [color=black, fill=none] (0, 0) circle (0.2);
+    % x-axis
+    \draw [line width=0.25mm] (0, 0) -- (5, 0);
+    % y-axis
+    \draw [line width=0.25mm] (0, 0) -- (0, 5);
+    % x-axis label
+    \node at (4.5, 0.25) {$k_x$};
+    % y-axis label
+    \node at (0.25, 4.5) {$k_y$};
+
+    % unit x-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (2, 0);
+    % unit y-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (0, 2);
+    % origin label
+    \node at (-0.25, -0.25) {$\mathbf{\hat z}$};
+    % Unit x-axis label
+    \node at (1.5, -0.2) {$\mathbf{\hat x}$};
+    % Unit y-axis label
+    \node at (-0.2, 1.5) {$\mathbf{\hat y}$};
+
+    % Rotated Coordinates
+    % k_p
+    \draw [line width=0.25mm,arrows={-latex}] (0, 0) -- (4, 4);
+    % k_p-axis label
+    \node at (4.25, 4.25) {$k_{\rho}$};
+    % unit u-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (1.412, 1.412);
+    % unit v-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (-1.412, 1.412);
+    % Unit u-axis label
+    \node at (1.412, 1) {$\mathbf{\hat u}$};
+    % k_p perpendicular
+    \draw [line width=0.25mm,arrows={-latex}] (0, 0) -- (-4, 4);
+    % Unit v-axis label
+    \node at (-1.412, 1) {$\mathbf{\hat v}$};
+    % k_p-axis perpendicular label
+    \node at (-4.25, 4.25) {$|\mathbf{\hat z} \times \mathbf{k_{\rho}}|$};
+  \end{tikzpicture}
+\end{document}

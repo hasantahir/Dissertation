@@ -1,0 +1,48 @@
+\documentclass[14pt]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+
+\begin{document}
+  \begin{tikzpicture}
+    % origin point
+    \draw [color=black, fill=black] (0, 0) circle (0.1);
+    \draw [color=black, fill=none] (0, 0) circle (0.2);
+    % x-axis
+    \draw [line width=0.25mm] (0, 0) -- (5, 0);
+    % y-axis
+    % x-axis label
+    \node at (4.5, 0.25) {$k_x$};
+    % y-axis label
+    \node at (0.25, 4.5) {$k_y$};
+    \draw [line width=0.25mm] (0, 0) -- (0, 5);
+    % unit x-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (2, 0);
+    % unit y-axis
+    \draw [line width=0.45mm,->] (0, 0) -- (0, 2);
+    % origin label
+    \node at (-0.25, -0.25) {$\mathbf{\hat z}$};
+    % Unit x-axis label
+    \node at (1.5, -0.2) {$\mathbf{\hat x}$};
+    % Unit y-axis label
+    \node at (-0.2, 1.5) {$\mathbf{\hat y}$};
+
+    % Draw coordinate system
+    % Source and label (use arrows command to insert arrow of choice)
+    % Source and label (use arrows command to insert arrow of choice)
+    \draw [line width=0.5mm,arrows={-latex}] (2, 2) -- (2.7, 2);
+    \draw [line width=0.5mm,arrows={-latex}] (2.4, 2) -- (3, 2);
+    \node at (2.5, 2.5) {${\tilde{M}_x}$};
+    % Draw the equivalent TL
+    % Insert Source
+    \draw[line width=0.25mm] (12,0) -- (12,5);
+    \draw[line width=0.25mm]
+    (7,0) to[american voltage source,l_=$v^{TE}{=}\tilde{M}_x$] (7,5);
+    % Add nodes to represent TL section
+    \draw [color=black, fill=white,line width=0.25mm] (7, 5) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (7, 0) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (12, 5) circle (0.1);
+    \draw [color=black, fill=white,line width=0.25mm] (12, 0) circle (0.1);
+  \end{tikzpicture}
+\end{document}

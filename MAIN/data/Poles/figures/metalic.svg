@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50.119999"
+   height="9.3900003"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="metalic.svg"
+   sodipodi:docbase="/home/yemanja/Desktop/SVG"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   inkscape:export-filename="/home/yemanja/Desktop/SVG/metalic.png"
+   inkscape:export-xdpi="748.19"
+   inkscape:export-ydpi="748.19">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3162">
+      <stop
+         style="stop-color:#333331;stop-opacity:1;"
+         offset="0"
+         id="stop3164" />
+      <stop
+         style="stop-color:#c1c1bf;stop-opacity:1;"
+         offset="1"
+         id="stop3166" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4103">
+      <stop
+         style="stop-color:#1a1b1f;stop-opacity:1;"
+         offset="0"
+         id="stop4105" />
+      <stop
+         id="stop2163"
+         offset="0.27772233"
+         style="stop-color:#7e7e81;stop-opacity:1;" />
+      <stop
+         style="stop-color:#c7c9cb;stop-opacity:1;"
+         offset="0.52451456"
+         id="stop2165" />
+      <stop
+         id="stop2167"
+         offset="0.66530502"
+         style="stop-color:#f2f2f2;stop-opacity:1;" />
+      <stop
+         style="stop-color:#555758;stop-opacity:1;"
+         offset="0.71358037"
+         id="stop2169" />
+      <stop
+         id="stop2171"
+         offset="0.87631881"
+         style="stop-color:#bbb9b5;stop-opacity:1;" />
+      <stop
+         style="stop-color:#949696;stop-opacity:1;"
+         offset="1"
+         id="stop4107" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4103"
+       id="linearGradient4109"
+       x1="155.84109"
+       y1="773.96515"
+       x2="155.97424"
+       y2="784.40912"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3162"
+       id="linearGradient3168"
+       x1="161.82043"
+       y1="782.69415"
+       x2="161.55414"
+       y2="776.90253"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4103"
+       id="linearGradient2182"
+       x1="144.32443"
+       y1="770.07074"
+       x2="151.31432"
+       y2="770.07074"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.2190476,0,0,1,-320.26278,0)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4103"
+       id="linearGradient2188"
+       x1="166.35921"
+       y1="791.67285"
+       x2="166.42578"
+       y2="798.26331"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-8.521,14.512328)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4103"
+       id="linearGradient3167"
+       x1="165.34485"
+       y1="791.84479"
+       x2="165.21388"
+       y2="794.77386"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       gradientTransform="translate(-8.521,14.512328)" />
+    <filter
+       inkscape:collect="always"
+       id="filter3189">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.33912313"
+         id="feGaussianBlur3191" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="23.78337"
+     inkscape:cx="24.058117"
+     inkscape:cy="4.697132"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1596"
+     inkscape:window-height="1133"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     width="50.12px"
+     height="9.39px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-136.68619,-805.68345)">
+    <text
+       id="text3169"
+       y="814.77271"
+       x="136.33601"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#555753;fill-opacity:1;stroke:#555753;stroke-width:0.30000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3189);font-family:Arial Black"
+       xml:space="preserve"><tspan
+         style="fill:#555753;fill-opacity:1;stroke:#555753;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none"
+         y="814.77271"
+         x="136.33601"
+         id="tspan3171"
+         sodipodi:role="line">Metalic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:url(#linearGradient2188);fill-opacity:1;stroke:url(#linearGradient3167);stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Arial Black"
+       x="135.93658"
+       y="814.37329"
+       id="text2184"><tspan
+         sodipodi:role="line"
+         id="tspan2186"
+         x="135.93658"
+         y="814.37329"
+         style="fill:url(#linearGradient2188);fill-opacity:1;stroke:url(#linearGradient3167);stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none">Metalic</tspan></text>
+  </g>
+</svg>

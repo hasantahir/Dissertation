@@ -1,44 +1,95 @@
 \addvspace {10\p@ }
-\vskip -10pt
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of the imaging scheme where sample is excited by plasma wave pattern generated underneath by a current-driven instability\relax }}{4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces (a) Plasma wave Dispersion diagram for the transistor structure supporting a 2DEG channel. (b) Effect of gate voltage on resonant frequency\relax }}{7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain. Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. Sample illuminated at different plasma frequencies: (b)-(d). (e) Effective resolution enhancement of $k_{\rho 1} + \upsilon $ in two dimensions can be obtained after rotating the sample with respect to the optical axis\relax }}{10}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Full-wave simulation results: (a) Phase shift achieved by exciting the structure with an external plane wave at an angle. (b) Tuning of the standing wave structure by applying gate bias\relax }}{11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces (a) Sample distribution. Simulation of the reconstructed sample image at: (b) $\Re k_{\rho } = 39.5$ (c) $\Re k_{\rho } = 80$\relax }}{12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{12}
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Common nanoantenna elements (a) dipole (b) bowtie and (c) aperture. The dipole, bowtie, and aperture antennas are typically etched on a low-loss substrate such as silicon dioxide.\relax }}{15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{15}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Dielectric and metal half-spaces with a planar boundary.\relax }}{18}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.\relax }}{20}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Propagation length of a surface plasmon propagating along the interface between a dielectric (refractive index 1.32) and a metal as a function of wavelength calculated for gold (Au), silver (Ag), and aluminum (Al).\relax }}{23}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Dielectric function for (a) Gold and (b) Silver as a function of photon energy $E = hf$ where $f$ is frequency and $h = \SI {6.626e34} {kg.m^{2}/s}$ is Planck's constant. The solid lines are the partial fraction fit for $\varepsilon '$ and the dashed line is for $\varepsilon ''$. The circles and squares are from measured data originally listed in \cite {Johnson1972}\relax }}{26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{26}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces SPP dispersion curve for $\omega $ versus $\Re (k_x)$ and $\Im (k_x)$ for an glass-silver interface. The lower part of the curve is the non-radiative surface plasmon region which is capped by a high-loss backbending region, and a Brewster mode radiative region above\relax }}{27}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Thin metallic film between two dielectric regions with different permittivities.\relax }}{29}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces A gold dipole residing over a glass substrate.\relax }}{36}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces (a) Maximum enhancement of a gold nanodipole excited at \SI {550}{\nm } (b) narrow and (c) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.\relax }}{37}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{37}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Optical antenna with equivalent circuit model. The driving voltage could be an incident electromagnetic field, a transmission line connected to the antenna, or a quantum emitter.\relax }}{41}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Bowtie antenna with (a) highest field intensity shown in red around the edges and corners of the triangular arms and (b) electric field vectors where the largest amplitude field is displayed in red occurs in the gap between the two arms.\relax }}{44}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Yagi-Uda optical antenna constructed with nanorods.\relax }}{46}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Simulation showing a surface plasmon standing wave intensity ($|E|^2$) pattern on a thin silver plate with dielectric constant $\varepsilon = -18.242 + j\mkern 1mu1.195$ between two slots illuminated by a \SI {660}{\nm } plane wave from below. The center plate has a length $5/2 \lambda _{spp}$ (\SI {1650}{\nm }) and each aperture has a width and thickness of \SI {200}{\nm }.\relax }}{52}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Complex plane integration path around branch cuts connecting the branch points $k_1$ and $k_2$, the wavenumbers for air and metal respectively, and the SPP pole $k_{xp}$.\relax }}{54}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Logarithmic scale comparison of composite wave and surface plasmon polariton wave normalized amplitude for an air-silver interface as a function of distance from the source at (a) \SI {633}{\nm } (b) \SI {2500}{\nm }\relax }}{57}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Common nanoantenna elements (a) dipole (b) bowtie and (c) aperture. The dipole, bowtie, and aperture antennas are typically etched on a low-loss substrate such as silicon dioxide.\relax }}{6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Dielectric and metal half-spaces with a planar boundary.\relax }}{9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Surface plasmon propagation along a dielectric-metal boundary and exponential decay perpendicular to the boundary.\relax }}{11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Propagation length of a surface plasmon propagating along the interface between a dielectric (refractive index 1.32) and a metal as a function of wavelength calculated for gold (Au), silver (Ag), and aluminum (Al).\relax }}{14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dielectric function for (a) Gold and (b) Silver as a function of photon energy $E = hf$ where $f$ is frequency and $h = \SI {6.626e34} {kg.m^{2}/s}$ is Planck's constant. The solid lines are the partial fraction fit for $\varepsilon '$ and the dashed line is for $\varepsilon ''$. The circles and squares are from measured data originally listed in \cite {Johnson1972}\relax }}{17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{17}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces SPP dispersion curve for $\omega $ versus $\Re (k_x)$ and $\Im (k_x)$ for an glass-silver interface. The lower part of the curve is the non-radiative surface plasmon region which is capped by a high-loss backbending region, and a Brewster mode radiative region above\relax }}{18}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Thin metallic film between two dielectric regions with different permittivities.\relax }}{20}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces A gold dipole residing over a glass substrate.\relax }}{26}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces (a) Maximum enhancement of a gold nanodipole excited at \SI {550}{\nm } (b) narrow and (c) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.\relax }}{27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{27}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Optical antenna with equivalent circuit model. The driving voltage could be an incident electromagnetic field, a transmission line connected to the antenna, or a quantum emitter.\relax }}{32}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Bowtie antenna with (a) highest field intensity shown in red around the edges and corners of the triangular arms and (b) electric field vectors where the largest amplitude field is displayed in red occurs in the gap between the two arms.\relax }}{35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Yagi-Uda optical antenna constructed with nanorods.\relax }}{37}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Simulation showing a surface plasmon standing wave intensity ($|E|^2$) pattern on a thin silver plate with dielectric constant $\varepsilon = -18.242 + \mathrm {j}\mkern 1mu1.195$ between two slots illuminated by a \SI {660}{\nm } plane wave from below. The center plate has a length $5/2 \lambda _{spp}$ (\SI {1650}{\nm }) and each aperture has a width and thickness of \SI {200}{\nm }.\relax }}{43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Complex plane integration path around branch cuts connecting the branch points $k_1$ and $k_2$, the wavenumbers for air and metal respectively, and the SPP pole $k_{xp}$.\relax }}{45}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Logarithmic scale comparison of composite wave and surface plasmon polariton wave normalized amplitude for an air-silver interface as a function of distance from the source at (a) \SI {633}{\nm } (b) \SI {2500}{\nm }\relax }}{47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{47}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Coordinate System transformation in the spectral domain\relax }}{59}
+\vskip -10pt
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Electric Source representation in a transmission line network\relax }}{62}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces (a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network\relax }}{73}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Components of potential DGF for a 2DEG half-space (a) $G_{xx}^\mathrm {A}$ \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 2.54\hbox {}\unskip \@@italiccorr )}}, (b) $G_{zx}^\mathrm {A}$ \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 2.56\hbox {}\unskip \@@italiccorr )}} \relax }}{75}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{75}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{75}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces (a) 2DEG sheet in surrounded by freespace, (b) Equivalent transmission line circuit consisting of a shunt impedance\relax }}{76}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Electrical properties of GaN/AlGaN based 2DEG at room temperature (a) Surface conductivity \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 4.1\hbox {}\unskip \@@italiccorr )}} (b) Dielectric function \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 2.59\hbox {}\unskip \@@italiccorr )}}\relax }}{77}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{77}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{77}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Distribution of analytically calculated poles in the complex plane (a) TM mode \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 2.62\hbox {}\unskip \@@italiccorr )}} (b) TE mode \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces 2.63\hbox {}\unskip \@@italiccorr )}}\relax }}{79}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The surface conductivity of the sheet is $\sigma _s = \num [round-precision=2]{7.6e-5} - \num [round-precision=3]{j 2.98e-3}\tmspace +\thinmuskip {.1667em} \SI {}{\siemens }$ corresponding to $\SI [round-precision=2]{5.6}{\THz }$ at room temperature ($\SI {295}{\K }$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$\relax }}{80}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{80}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{80}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The cryogenic surface conductivity of the sheet is $\sigma _s = \num [round-precision=2]{7.6e-8} - \num [round-precision=3]{j 2.98e-3}\tmspace +\thinmuskip {.1667em} \SI {}{\siemens }$ corresponding to $\SI [round-precision=2]{5.6}{\THz }$ at a temperature ($\SI {3}{\K }$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$\relax }}{81}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{81}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{81}
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the imaging scheme where sample is excited by plasma wave pattern generated underneath by a current-driven instability\relax }}{86}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces (a) Plasma wave Dispersion diagram for a transistor structure supporting a 2DEG channel. (b) Effect of gate voltage on resonant frequency\relax }}{89}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{89}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{89}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain. Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. Sample illuminated at different plasma frequencies: (b)-(d). (e) Effective resolution enhancement of $k_{\rho 1} + \kappa $ in two dimensions can be obtained after rotating the sample with respect to the optical axis\relax }}{92}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sample excited to additional energy levels to enhance the spontaneous decay, $\omega _{\kappa }$.\relax }}{93}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Full-wave simulation results: (a) Phase shift achieved by exciting the structure with an additional illumination at an angle. (b) Tuning of the standing wave structure by applying gate bias\relax }}{95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{95}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{95}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces (a) Sample distribution. Simulation of the reconstructed sample image at: (b) $\Re k_{\rho } = 39.5$ (c) $\Re k_{\rho } = 80$\relax }}{96}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{96}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{96}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{96}
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {figure}{\numberline {5.1}{\ignorespaces (a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network\relax }}{100}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Complex plane basin of attraction while solving $z^{10} - 1 =0$ using: (a) Newton's method (c) Halley's method\relax }}{103}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{103}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{103}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular controur $\Gamma $\relax }}{103}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces TM modes of a MIM waveguide (a) Lossless case, $(\varepsilon _m = \num {-143.4967})$ (b) Lossy case, $(\varepsilon _m = \num {-143.4967 + j 9.5173})$\relax }}{111}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{111}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{111}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 2DEG embedded in a semiconductor heterostructure at $z=0$ (a) Gated (b) Ungated (c) Backgated\relax }}{111}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{111}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{111}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{111}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{113}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{113}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{113}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{113}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{114}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{114}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{114}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{114}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated\relax }}{115}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{115}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{115}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated\relax }}{115}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{115}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{115}

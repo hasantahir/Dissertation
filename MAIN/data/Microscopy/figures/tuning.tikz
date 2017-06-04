@@ -22,7 +22,7 @@ ylabel={$|E/E_{max}|^2 $},
 axis background/.style={fill=white},
 legend style={legend cell align=left, align=left, draw=white!15!black}
 ]
-\addplot [color=mycolor1, dashdotted, line width=1.4pt]
+\addplot [color=mycolor1, line width=1.4pt]
   table[row sep=crcr]{%
 0.499593654	0.853698218977972\\
 0.503433695	0.818709406387038\\
@@ -397,9 +397,9 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 1.491763216	0.795165075981323\\
 1.500402166	0.702876658288194\\
 };
-\addlegendentry{$\E_{r1} = -.064$}
+\addlegendentry{$\E_{r1} = \SI{-.064}{}$}
 
-\addplot [color=mycolor2, dotted, line width=1.4pt]
+\addplot [color=mycolor2,line width=1.4pt]
   table[row sep=crcr]{%
 0.499593654	0.929562803465827\\
 0.50199368	0.946320760942988\\
@@ -880,7 +880,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 1.499442283	0.108534541790588\\
 1.500402166	0.109677525162547\\
 };
-\addlegendentry{$\E_{r2} = -.131$}
+\addlegendentry{$\E_{r2} = \SI{-.131}{}$}
 
 \addplot [color=mycolor3, line width=1.4pt]
   table[row sep=crcr]{%
@@ -1630,7 +1630,7 @@ legend style={legend cell align=left, align=left, draw=white!15!black}
 1.499922224	0.995415691476109\\
 1.500402166	0.993728603951364\\
 };
-\addlegendentry{$\E_{r3} = -.310$}
+\addlegendentry{$\E_{r3} = \SI{-.310}{}$}
 
 \end{axis}
 \end{tikzpicture}%

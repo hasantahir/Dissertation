@@ -1,0 +1,14 @@
+inkscape --file=multilayers.svg --export-area-drawing --without-gui --export-latex --export-pdf=multilayers.pdf
+inkscape --file=zplane.svg --export-area-drawing --without-gui --export-latex --export-pdf=zplane.pdf
+inkscape --file=gated.svg --export-area-drawing --without-gui --export-latex --export-pdf=gated.pdf
+inkscape --file=ungated.svg --export-area-drawing --without-gui --export-latex --export-pdf=ungated.pdf
+inkscape --file=backgated.svg --export-area-drawing --without-gui --export-latex --export-pdf=backgated.pdf
+inkscape --file=xsystem.svg --export-area-drawing --without-gui --export-latex --export-pdf=xsystem.pdf
+
+Tip to avoid multipage pdf generation headache:
+Ensure text is always top of eerything
+select text and then Object -> Raise to top
+All text objects can be selected from the find command enabling the 'select by type -> text' option.
+
+Open the pdf_tex file after compiling, and delete the lines that says \includegraphics for pages other than 1
+
