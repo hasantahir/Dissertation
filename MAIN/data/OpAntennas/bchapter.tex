@@ -107,7 +107,7 @@ where $\E_{1,2}$ are the permittivities of the dielectric and metal regions resp
 %
 \begin{equation}
   \frac{k_{z1}}{\E_1} + \frac{k_{z2}}{\E_2} = 0.
-  \label{eq:dispersion}
+  \label{eq:dispersion_opt}
 \end{equation}
 %
 Helmholtz equation, $\del^2 \v E + k_i^2 \v E = 0$, where $i = 1,2$, and assuming the permeabilities of all regions are that of air, lead to the dispersion equations for the two regions,
@@ -117,7 +117,7 @@ Helmholtz equation, $\del^2 \v E + k_i^2 \v E = 0$, where $i = 1,2$, and assumin
   \label{eq:ks}
 \end{equation}
 %
-where $c$ is the speed of light in air. Equations \eqref{eq:dispersion} and \eqref{eq:ks} are combined to produce the SPP propagation constant:
+where $c$ is the speed of light in air. Equations \eqref{eq:dispersion_opt} and \eqref{eq:ks} are combined to produce the SPP propagation constant:
 %
 \begin{equation}
   k_x = k_0 \sqrt{\frac{\E_{r1} \E_{r2}}{\E_{r1} + \E_{r2}}}
@@ -143,7 +143,7 @@ Similarly, from \eqref{eq:ks} and \eqref{eq:spp}, $k_{zi}$ becomes approximately
   \label{eq:kz}%
 \end{subequations}
 %
-From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be drawn regarding the nature of the two half-space materials and the properties of nano surface waves on their intersecting boundary:
+From \eqref{eq:dispersion_opt}-\eqref{eq:kz}, some very important conclusions can be drawn regarding the nature of the two half-space materials and the properties of nano surface waves on their intersecting boundary:
 %
 \begin{figure}[b!]
   \centering
@@ -156,7 +156,7 @@ From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be
 %
 \begin{enumerate}
   %
-  \item First, if loss is neglected $(\E_2'' \simeq 0)$, a valid assumption for noble metals over significant segments of the optical range so that the permittivities of both regions are real, the equality in \eqref{eq:dispersion} will not hold if these permittivities are both positive or both negative. But, if the permittivity in the dielectric region $1$ is positive, $\E_1 > 0$, and the real part of the permittivity in the metal region $2$ is negative, $\E_2' < 0$, then it is possible to satisfy \eqref{eq:dispersion}.
+  \item First, if loss is neglected $(\E_2'' \simeq 0)$, a valid assumption for noble metals over significant segments of the optical range so that the permittivities of both regions are real, the equality in \eqref{eq:dispersion_opt} will not hold if these permittivities are both positive or both negative. But, if the permittivity in the dielectric region $1$ is positive, $\E_1 > 0$, and the real part of the permittivity in the metal region $2$ is negative, $\E_2' < 0$, then it is possible to satisfy \eqref{eq:dispersion_opt}.
   %
   \item	Nevertheless, a wave still cannot exist if the term under the square root in \eqref{eq:spp} is negative because this would lead to a totally complex $k_x$, which would mean the fields in \eqref{eq:field1} and \eqref{eq:field2} will exponentially grow or decay rather than propagate along the boundary. However, if
   %
@@ -165,7 +165,7 @@ From \eqref{eq:dispersion}-\eqref{eq:kz}, some very important conclusions can be
     \label{eq:conditions}
   \end{equation}
   %
-  then the term under the square root in \eqref{eq:spp} is positive and propagation of a wave at the boundary is assured. This condition \eqref{eq:conditions} causes the signs of the terms under the square roots in \eqref{eq:kz} to be negative, but \eqref{eq:dispersion} will still hold as long as same sign for $\sqrt{-1}$ is chosen for both square roots.
+  then the term under the square root in \eqref{eq:spp} is positive and propagation of a wave at the boundary is assured. This condition \eqref{eq:conditions} causes the signs of the terms under the square roots in \eqref{eq:kz} to be negative, but \eqref{eq:dispersion_opt} will still hold as long as same sign for $\sqrt{-1}$ is chosen for both square roots.
   %
   \item	If the conditions in \eqref{eq:conditions} are met then from \eqref{eq:spp}, $k_x > k_0$ and therefore $k_z$ in \eqref{eq:ks} must be complex. According to \eqref{eq:field1} and \eqref{eq:field2}, this results in exponential decay of the field away from the boundary in both the positive and negative z-directions as long as $\sqrt{-1} = -\j$ is chosen for the square root terms in \eqref{eq:kz}. Exponential decay of the plasmon surface wave into the dielectric and metal is illustrated in Fig. \ref{fig:spp}.
   %
@@ -379,7 +379,7 @@ for the metal layer sandwiched between two different dielectrics. Equation \eqre
   \label{eq:simplified_3layer_to2layer}%
 \end{subequations}
 %
-recognized from \eqref{eq:dispersion} to be the dispersion relations for surface plasmon polaritons at the boundaries between two individual dielectric-metal half-spaces.
+recognized from \eqref{eq:dispersion_opt} to be the dispersion relations for surface plasmon polaritons at the boundaries between two individual dielectric-metal half-spaces.
 
 If $\E_1$ and $\E_2$ are positive and $\E_m < 0$, the right hand side of \eqref{eq:3layer_dispersion} is positive, which means the left hand side must also be positive. This is possible if,
 $\left( \frac{\E_m \,\A_{z1}}{\E_1 \,\A_{zm}} + 1 \right)$ and
@@ -426,7 +426,7 @@ The optical antenna, although not a traditional perfect conductor, cannot be ana
 %%%
 \subsection{Dipole and Patch Antennas}
 %
-Size and shape can affect the design frequency of an optical antenna in ways not typically expected in microwave frequency antenna engineering. For example a rectangular microstrip patch is expected to resonate when the incident field is polarized in the direction of the $\lambda/2$ dimension of the patch, while the transverse dimension is flexibly left to something greater or less than $\lambda/2$. However, as shown in Fig. \ref{fig:simulation} both the width and length of a metal plate must be considered in designing an optical antenna. A narrow nanodipole resonating at a particular frequency, as shown in Fig. \ref{fig:nitin_dipole}, does not maintain resonance
+Size and shape can affect the design frequency of an optical antenna in ways not typically expected in microwave frequency antenna engineering. For example a rectangular microstrip patch is expected to resonate when the incident field is polarized in the direction of the $\lambda/2$ dimension of the patch, while the transverse dimension is flexibly left to something greater or less than $\lambda/2$. However, as shown in Fig. \ref{fig:simulationop} both the width and length of a metal plate must be considered in designing an optical antenna. A narrow nanodipole resonating at a particular frequency, as shown in Fig. \ref{fig:nitin_dipole}, does not maintain resonance
 %
 \begin{figure}[b!]
   \centering
@@ -439,19 +439,19 @@ Size and shape can affect the design frequency of an optical antenna in ways not
 \begin{figure}[t!]
   \centering
   \subfloat[]{\includegraphics[height = 2.7in]{generate_fig8c.tikz}
-  \label{fig:sim_hi}}\\
+  \label{fig:sim_his}}\\
   \centering
   \subfloat[]{\includegraphics[height = 1.9in]{fig8_a.png}
   \label{fig:narrow}} \hfil
   \subfloat[]{\includegraphics[height = 1.9in]{fig8_d.png}
   \label{fig:wide}} \hfil
   \caption{(a) Maximum enhancement of a gold nanodipole excited at \SI{550}{\nm} (b) narrow and (c) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.}
-  \label{fig:simulation}
+  \label{fig:simulationop}
 \end{figure}
 % Fig. 8 Maximum enhancement of a gold nanodipole excited at 550 nm (a) narrow and (b) wide profile. A narrow structure does not maintain resonance when widened without also changing its length.
 %
 when widened. However, the first resonance can be regained by changing both the length and width of the dipole as shown in Fig. \ref{fig:wide}. The mechanism causing this phenomena has to do with the manner in which surface plasmons are excited. The incident wave with a free-space wavenumber transfers energy into the plasmon wave having a much larger wavenumber at locations where the interaction between the incident wave and the antenna produce the largest concentration of higher order modes, which will couple energy into the plasmon mode. This interaction is primarily seen on the corners of the dipole in Fig. \ref{fig:wide}. Similar to plane waves in a waveguide, plasmon waves fan out from the corners taking a circuitous route bouncing from the edges of the plate before phase matching produces a resonance condition. Further complicating the picture is the chemical potential and the `lighting rod' effect whereby opposite charges form a high concentration of the field across the antenna
-center gap. However, plasmons in the narrower dipole, Fig. \ref{fig:narrow}, follow a shorter, more direct route to resonance than does the plasmon wave on the wider dipole Fig. \ref{fig:wide} thereby experiencing less attenuation and ultimately creating a region of higher field enhancement in the gap than does the wide dipole. Fig. \ref{fig:sim_hi} shows that as the dipole widens the resonant frequency shifts and the enhancement decreases.  Enhancement is defined as the ratio of the total to the incident electric field in the gap region, although in some publications this ratio is squared and therefore, described as intensity enhancement.
+center gap. However, plasmons in the narrower dipole, Fig. \ref{fig:narrow}, follow a shorter, more direct route to resonance than does the plasmon wave on the wider dipole Fig. \ref{fig:wide} thereby experiencing less attenuation and ultimately creating a region of higher field enhancement in the gap than does the wide dipole. Fig. \ref{fig:sim_his} shows that as the dipole widens the resonant frequency shifts and the enhancement decreases.  Enhancement is defined as the ratio of the total to the incident electric field in the gap region, although in some publications this ratio is squared and therefore, described as intensity enhancement.
 
 The behavior of the narrower dipole shown in Fig. \ref{fig:narrow} is more closely aligned with what one would expect at microwave frequencies whereby increasing the length of each nanorod in plasmon half-wavelength intervals will produce successive resonance and antiresonance in the gap input impedance. Notice that the total length of the dipole is a full plasmon wavelength $\lambda_p$ plus the gap separation distance, as opposed to the typical $\lambda_0/2$ dipole first resonance of a perfectly conducting microwave antenna with a negligible gap width. In terms of plasmon wavelengths, a first resonance does occur in an isolated $\lambda_p/2$ nanorod or a vertical $\lambda_p/4$ nanorod on a metal substrate \cite{Taminiau2007}.
 

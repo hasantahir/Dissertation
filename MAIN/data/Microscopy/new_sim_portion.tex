@@ -55,7 +55,7 @@ where $N_s$ is the surface electron density in the channel, $e$ is the electron 
 %
 \begin{equation}
   Y^{\uparrow}(z_0) + Y^{\downarrow}(z_0) + Y_{\sigma} = 0.
-  \label{eq:dispersion}
+  \label{eq:dispersions}
 \end{equation}
 %
 Here, $Y^{\uparrow}(z_0)$ and $Y^{\downarrow}(z_0)$ are the up- and down-looking TL admittances from the 2DEG located at $z = 0$, and expressed as:
@@ -85,7 +85,7 @@ where $\E_i$ is the relative permittivity of $i^{\text{th}}$ layer and $k_x$ is 
 \end{equation}
 %
 % Structure details of GaN/ AlGaN
-A closed-form expression for the longitudinal propagation constant $k_x$ determined by solving \eqref{eq:dispersion} is tedious, therefore numerical root-finding techniques such as the Newton method \cite{Press2007} have to be employed. As an example, the dispersion diagram of a AlGaN/GaN heterostructure is shown in Fig. \ref{fig:dispersion} with no gate bias applied along with a light line whose slope is multiplied by a factor of 90 for illustration. The real part corresponds to propagation and imaginary part accounts for decay of the wave. The result is similar to the dispersion curve of gated 2DEG plasmons in which the gate terminal is located at the top \cite{Nakayama1974, Eguiluz1975}. At \SI{25}{\THz}, the plasmon wavenumber is approximately 80 times greater than the free-space propagation constant for a plane wave. Furthermore, the loss which is related to the imaginary part of the plasmon wavenumber is also negligible. A sample observed through such a highly subwavelength illumination makes
+A closed-form expression for the longitudinal propagation constant $k_x$ determined by solving \eqref{eq:dispersions} is tedious, therefore numerical root-finding techniques such as the Newton method \cite{Press2007} have to be employed. As an example, the dispersion diagram of a AlGaN/GaN heterostructure is shown in Fig. \ref{fig:dispersions} with no gate bias applied along with a light line whose slope is multiplied by a factor of 90 for illustration. The real part corresponds to propagation and imaginary part accounts for decay of the wave. The result is similar to the dispersion curve of gated 2DEG plasmons in which the gate terminal is located at the top \cite{Nakayama1974, Eguiluz1975}. At \SI{25}{\THz}, the plasmon wavenumber is approximately 80 times greater than the free-space propagation constant for a plane wave. Furthermore, the loss which is related to the imaginary part of the plasmon wavenumber is also negligible. A sample observed through such a highly subwavelength illumination makes
 super-resolution possible. In Fig. \ref{fig:tuning}, control of the resonant frequency by varying the gate voltage is shown, using \eqref{eq:tunability} and \eqref{eq:plasma_frq}. As expected, reducing the length of the channel will increase the resonant frequency, similar to what is observed for a dipole antenna. The structure parameters used to compute the
 dispersion relation via \eqref{eq:Y2deg}-\eqref{eq:Gamma} are now briefly discussed.
 
@@ -94,7 +94,7 @@ The permittivity of both semiconductor layers is approximated to the static valu
 %
 \begin{figure}[t!]
   \subfloat[]{\includegraphics[height=2.5in]{gated_disp.tikz}
-      \label{fig:dispersion}}
+      \label{fig:dispersions}}
       \hfil
       \subfloat[]{\includegraphics[height=2.5in]{gate_swing.tikz}
           \label{fig:tuning}}

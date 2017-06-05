@@ -11,25 +11,25 @@ In this chapter, we compute the dispersion diagrams of an infinitesimally thin c
 %
 Modern field-effect transistors are engineered by epitaxially growing multiple layers of semiconducting materials with slightly different dielectric properties and band-gap energies. Of particular interest to the microwave and radiofrequency (RF) community are the group III-V materials in which extra-ordinary electromagnetic interfacial phenomena is observed in the terahertz frequency domain, mainly due to formation of a two-dimensional electron gas (2DEG) at the interface. To develop an understanding of the unusual electromagnetic properties of what are commonly known as semiconductor heterostructures, we construct an equivalent transmission model of the layered structure using the theory discussed in the previous chapter.
 
-An illustration of a multilayer setup with a heterostructure near the top of the transistor substrate, through which modern devices like the high electron mobility transistor operate, is shown in Fig. \ref{fig:TL_equivalent}a. Although a number of other material layers lie underneath the heterostructure that are essential to the fabrication process, primarily to strengthen the epitaxial structure, only the top layers are conducive to an electric field. Moreover, since the widths of the layers in the heterostructure are much smaller than the rest of the layers in the substrate stack, we assume that the heterostructure is unbounded from the bottom.
+An illustration of a multilayer setup with a heterostructure near the top of the transistor substrate, through which modern devices like the high electron mobility transistor operate, is shown in Fig. \ref{fig:TL_equivalent_poles}a. Although a number of other material layers lie underneath the heterostructure that are essential to the fabrication process, primarily to strengthen the epitaxial structure, only the top layers are conducive to an electric field. Moreover, since the widths of the layers in the heterostructure are much smaller than the rest of the layers in the substrate stack, we assume that the heterostructure is unbounded from the bottom.
 
 The 2DEG which is only a few atoms wide in thickness, is a highly conductive region with an abundance of free electrons, which can be expressed in terms of a surface conductivity \cite{Burke2000},
 %
 \begin{equation}
   \sigma_s = \frac{N_s e^2 \tau}{m^{\ast}}\frac{1}{1 + \j \O \tau},
-  \tag{\ref{eq:label} revisited} \label{eq:sigma_s}
+  \label{eq:sigma_ss}
 \end{equation}
 %
 where $N_s$ is the free electron concentration at the interface, $e$ is the electron charge, $m^{\ast}$ is the effective electron mass in the heterostructure, $\tau$ is the scattering time of electrons, and $\O$ is the angular frequency. For a wave propagating along the interface, the electron scattering time varies greatly with temperature, and it determines the attenuation factor. At room temperature, the thermal vibrations of electrons result in a very small value of $\tau$ which is of the order of femtoseconds (\SI{1e-15}{\s}), leading to a high-loss scenario. On the other hand, when the heterostructure is cooled to temperatures close to the boiling point of helium (\SI[round-precision=2]{4.2}{\kelvin}), thermal vibrations are effectively removed and the losses are consequently minimized.
 
-In a transmission line analogue, the equivalent representation of a conductive sheet such as a 2DEG is a shunt admittance as shown in Fig. \ref{fig:TL_equivalent}b. When a voltage bias is applied across the source and drain terminals of the transistor, a current starts to flow laterally, inside the 2DEG. The presence of a gate terminal above or below the interface allows the electron concentration to be modified by the gate voltage. Therefore, instead of an independent current source in the equivalent transmission line network, a voltage-controlled current source is placed as indicated in Fig. \ref{fig:TL_equivalent}.
+In a transmission line analogue, the equivalent representation of a conductive sheet such as a 2DEG is a shunt admittance as shown in Fig. \ref{fig:TL_equivalent_poles}b. When a voltage bias is applied across the source and drain terminals of the transistor, a current starts to flow laterally, inside the 2DEG. The presence of a gate terminal above or below the interface allows the electron concentration to be modified by the gate voltage. Therefore, instead of an independent current source in the equivalent transmission line network, a voltage-controlled current source is placed as indicated in Fig. \ref{fig:TL_equivalent_poles}.
 %
 \begin{figure}[t!]
   \centering
   \def\svgwidth{\linewidth}
   \input{data/poles/figures/multilayers.pdf_tex}
   \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network}
-  \label{fig:TL_equivalent}
+  \label{fig:TL_equivalent_poles}
 \end{figure}
 %
 
@@ -40,7 +40,7 @@ We determine the dispersion relation in a 2DEG region which lies embedded in a s
   \label{eq:dispersion}
 \end{equation}
 %
-Here, $Y^{\uparrow}(z_0)$ and $Y^{\downarrow}(z_0)$ are the up- and down-looking TL admittances from the 2DEG located at $z = 0$ and $Y_{\sigma} = \sigma_s$ from \eqref{eq:sigma_s}.
+Here, $Y^{\uparrow}(z_0)$ and $Y^{\downarrow}(z_0)$ are the up- and down-looking TL admittances from the 2DEG located at $z = 0$ and $Y_{\sigma} = \sigma_s$ from \eqref{eq:sigma_ss}.
 
 A nontrivial solution of \eqref{eq:dispersion} in terms of the propagation constant $k_{\p}$ yields the surface wave modes of the structure in the complex k-plane.
 %%%%%%%%%%
@@ -50,7 +50,7 @@ A nontrivial solution of \eqref{eq:dispersion} in terms of the propagation const
 %%%%%%%%%%
 \section{Surface waves extraction technique}
 %
-We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem such as the one shown in Fig. \ref{fig:TL_equivalent}a, $f$ represents the dispersion relation \eqref{eq:dispersion} which, in fact is the denominator of the  transmission line Green function (TLGF). From hereon, $k_{\p}$ is replaced by $z$ for notational simplicity. Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$'s can be termed as the surface wave modes of the multilayer or synonymously, poles of the TLGF.
+We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem such as the one shown in Fig. \ref{fig:TL_equivalent_poles}a, $f$ represents the dispersion relation \eqref{eq:dispersion} which, in fact is the denominator of the  transmission line Green function (TLGF). From hereon, $k_{\p}$ is replaced by $z$ for notational simplicity. Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$'s can be termed as the surface wave modes of the multilayer or synonymously, poles of the TLGF.
 %
 \begin{equation}
   f(k_{\p}) = 0
@@ -368,7 +368,7 @@ that are classified, based on the presence of a perfectly conducting covering la
 \end{figure}
 %
 
-We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostructure with Al mole-fraction of $x = \num[round-precision=1]{0.2}$. With respect to Fig. \ref{fig:2deg_structure_types}, Layer 1 is composed of GaN which is the substrate, considered open in the gated and ungated cases, while it has a thickness of $d = \SI{50}{\nm}$ in the backgated case. AlGaN forms the layer marked 2, and in all the three cases, a thickness, $h = \SI{20}{\nm}$ is assumed. The permittivity of both the layers is $\E_r = 9.5$ owing to the small aluminum mole fraction \cite{Muravjov2010}. The electron concentration of the 2DEG region is $N_s = \SI{5e13}{\cm^{-2}}$ and scattering time $\tau$ of \SI{114}{\ps} corresponding to a temperature of \SI{3}{\kelvin} is assumed. The surface conductivity is then computed using \eqref{eq:sigma_s}. When solving for the dispersion relation \eqref{eq:dispersion}, we use the respective expressions listed in Table. \ref{tab:equations} for each case.
+We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostructure with Al mole-fraction of $x = \num[round-precision=1]{0.2}$. With respect to Fig. \ref{fig:2deg_structure_types}, Layer 1 is composed of GaN which is the substrate, considered open in the gated and ungated cases, while it has a thickness of $d = \SI{50}{\nm}$ in the backgated case. AlGaN forms the layer marked 2, and in all the three cases, a thickness, $h = \SI{20}{\nm}$ is assumed. The permittivity of both the layers is $\E_r = 9.5$ owing to the small aluminum mole fraction \cite{Muravjov2010}. The electron concentration of the 2DEG region is $N_s = \SI{5e13}{\cm^{-2}}$ and scattering time $\tau$ of \SI{114}{\ps} corresponding to a temperature of \SI{3}{\kelvin} is assumed. The surface conductivity is then computed using \eqref{eq:sigma_ss}. When solving for the dispersion relation \eqref{eq:dispersion}, we use the respective expressions listed in Table. \ref{tab:equations} for each case.
 %
 \begin{table}[!htbp]
 \begin{center}
@@ -392,12 +392,12 @@ The dispersion curves for each structure type at varying temperatures and electr
 \begin{figure}[!htbp]
   \centering
   \subfloat[]{\includegraphics[height = 2.4in]{gated_disp.tikz}
-  \label{fig:gated_hf_lt}}
+  \label{fig:gated_hf_lt}} \hfil
   \subfloat[]{\includegraphics[height = 2.4in]{backgated_disp.tikz}
   \label{fig:backgated_hf_lt}}
   \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp.tikz}
   \label{fig:ungated_hf_lt}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
   \label{fig:dispersion_hif_lowT}
 \end{figure}
 %
@@ -412,7 +412,7 @@ To observe the effect of temperature, we now plot the dispersion curves at room 
   \label{fig:backgated_hf_ht}}
   \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp_lossy.tikz}
   \label{fig:ungated_hf_ht}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
   \label{fig:dispersion_hif_hiT}
 \end{figure}
 %
@@ -425,7 +425,7 @@ The conducting layer in the gated and back-gated cases depicts the gate terminal
       \label{fig:gated_lf_lt}}
   \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_low.tikz}
   \label{fig:backgated_lf_lt}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated}
   \label{fig:dispersion_lof_lowT}
   \end{center}
 \end{figure}
@@ -437,7 +437,7 @@ The conducting layer in the gated and back-gated cases depicts the gate terminal
       \label{fig:gated_lf_ht}}
   \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_lossy_low.tikz}
   \label{fig:backgated_lf_ht}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated}
   \label{fig:dispersion_lof_hiT}
   \end{center}
 \end{figure}

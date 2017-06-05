@@ -21,6 +21,42 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Kempa1991}
+K.~Kempa, P.~Bakshi, J.~Cen, and H.~Xie, ``Spontaneous generation of plasmons
+  by ballistic electrons,'' \emph{Physical Review B}, vol.~43, no.~11, pp.
+  9273--9274, Apr. 1991.
+
+\bibitem{Dyakonov1993}
+M.~Dyakonov and M.~Shur, ``Shallow water analogy for a ballistic field effect
+  transistor: {N}ew mechanism of plasma wave generation by dc current,''
+  \emph{Physical Review Letters}, vol.~71, no.~15, pp. 2465--2468, Oct. 1993.
+
+\bibitem{Dyakonov2001}
+M.~Dyakonov and M.~S. Shur, ``Plasma wave electronics for terahertz
+  applications,'' in \emph{Terahertz Sources and Systems}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Springer Nature, 2001, pp. 187--207.
+
+\bibitem{Williams2003}
+B.~S. Williams, S.~Kumar, H.~Callebaut, Q.~Hu, and J.~L. Reno, ``Terahertz
+  quantum-cascade laser at $\lambda$≈ 100 $\mu$ m using metal waveguide for
+  mode confinement,'' \emph{Applied Physics Letters}, vol.~83, no.~11, pp.
+  2124--2126, Sep. 2003.
+
+\bibitem{Krasheninnikov1980}
+M.~Krasheninnikov and A.~Chaplik, ``Instabilities of two-dimensional plasma
+  waves,'' \emph{Zhurnal Eksperimental'noi i Teoreticheskoi Fiziki}, vol.~79,
+  pp. 555--560, Aug. 1980.
+
+\bibitem{Michalski1997}
+K.~Michalski and J.~Mosig, ``{Multilayered media Green's functions in integral
+  equation formulations},'' \emph{{IEEE} Transactions on Antennas and
+  Propagation}, vol.~45, no.~3, pp. 508--519, Mar. 1997.
+
+\bibitem{Michalski2005}
+K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
+  in \emph{Encyclopedia of {RF} and Microwave Engineering}.\hskip 1em plus
+  0.5em minus 0.4em\relax John Wiley \& Sons, Inc., Apr. 2005.
+
 \bibitem{Ouyang1992}
 F.~Ouyang, P.~E. Batson, and M.~Isaacson, ``Quantum size effects in the
   surface-plasmon excitation of small metallic particles by
@@ -371,16 +407,6 @@ J.~G.~V. Bladel, \emph{Electromagnetic Fields}, ser. IEEE Press Series on
   Electromagnetic Wave Theory.\hskip 1em plus 0.5em minus 0.4em\relax John
   Wiley \& Sons, 2007.
 
-\bibitem{Michalski2005}
-K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
-  in \emph{Encyclopedia of {RF} and Microwave Engineering}.\hskip 1em plus
-  0.5em minus 0.4em\relax John Wiley \& Sons, Inc., Apr. 2005.
-
-\bibitem{Michalski1997}
-K.~Michalski and J.~Mosig, ``{Multilayered media Green's functions in integral
-  equation formulations},'' \emph{{IEEE} Transactions on Antennas and
-  Propagation}, vol.~45, no.~3, pp. 508--519, Mar. 1997.
-
 \bibitem{Felsen1994}
 L.~B. Felsen and N.~Marcuvitz, \emph{Radiation and Scattering of Waves (ieee
   Press Series on Electromagnetic Wave Theory)}, ser. IEEE Press Series on
@@ -481,6 +507,115 @@ J.~S. Gomez-Diaz, J.~R. Mosig, and J.~Perruisseau-Carrier, ``Effect of spatial
   Transactions on Antennas and Propagation}, vol.~61, no.~7, pp. 3589--3596,
   Jul. 2013.
 
+\bibitem{Burke2000}
+P.~J. Burke, I.~B. Spielman, J.~P. Eisenstein, L.~N. Pfeiffer, and K.~W. West,
+  ``High frequency conductivity of the high-mobility two-dimensional electron
+  gas,'' \emph{Applied Physics Letters}, vol.~76, no.~6, pp. 745--747, Feb.
+  2000.
+
+\bibitem{Gomez-Diaz2012}
+J.~S. G{\'{o}}mez-D{\'{\i}}az and J.~Perruisseau-Carrier, ``Propagation of
+  hybrid transverse magnetic-transverse electric plasmons on magnetically
+  biased graphene sheets,'' \emph{Journal of Applied Physics}, vol. 112,
+  no.~12, p. 124906, Dec. 2012.
+
+\bibitem{Delves1967c}
+L.~M. Delves and J.~N. Lyness, ``{A numerical method for locating the zeros of
+  an analytic function},'' \emph{Mathematics of Computation}, vol.~21, no. 100,
+  pp. 543--543, 1967.
+
+\bibitem{Carpentier1982c}
+M.~Carpentier and A.~D. Santos, ``{Solution of equations involving analytic
+  functions},'' \emph{Journal of Computational Physics}, vol.~45, no.~2, pp.
+  210--220, Feb. 1982.
+
+\bibitem{Botten1983}
+L.~Botten, M.~Craig, and R.~McPhedran, ``Complex zeros of analytic functions,''
+  \emph{Computer Physics Communications}, vol.~29, no.~3, pp. 245--259, May
+  1983.
+
+\bibitem{Kravanja2000c}
+P.~Kravanja, M.~V. Barel, O.~Ragos, M.~Vrahatis, and F.~Zafiropoulos, ``{ZEAL}:
+  A mathematical software package for computing zeros of analytic functions,''
+  \emph{Computer Physics Communications}, vol. 124, no. 2-3, pp. 212--232, Feb.
+  2000.
+
+\bibitem{Dellnitz2002c}
+M.~Dellnitz, O.~Schütze, and Q.~Zheng, ``{Locating all the zeros of an
+  analytic function in one complex variable},'' \emph{Journal of Computational
+  and Applied Mathematics}, vol. 138, no.~2, pp. 325--333, Jan. 2002.
+
+\bibitem{Gillan2006c}
+C.~Gillan, A.~Schuchinsky, and I.~Spence, ``{Computing zeros of analytic
+  functions in the complex plane without using derivatives},'' \emph{Computer
+  Physics Communications}, vol. 175, no.~4, pp. 304--313, Aug. 2006.
+
+\bibitem{Chen2017}
+P.~Y. Chen and Y.~Sivan, ``{Robust Location of Optical Fiber Modes via the
+  Argument Principle Method},'' \emph{Computer Physics Communications}, vol.
+  214, no.~2, pp. 105--116, May 2017.
+
+\bibitem{Krantz1999}
+S.~G. Krantz, \emph{The Argument Principle}.\hskip 1em plus 0.5em minus
+  0.4em\relax Boston, MA: Birkhäuser Boston, 1999, pp. 69--78.
+
+\bibitem{Press2007}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery,
+  \emph{Numerical {R}ecipes}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge
+  University Pr., 2007.
+
+\bibitem{Shampine2008}
+L.~Shampine, ``Vectorized adaptive quadrature in {MATLAB},'' \emph{Journal of
+  Computational and Applied Mathematics}, vol. 211, no.~2, pp. 131--140, Feb.
+  2008.
+
+\bibitem{Kravanja1999}
+P.~Kravanja, T.~Sakurai, and M.~V. Barel, ``On locating clusters of zeros of
+  analytic functions,'' \emph{Bit Numerical Mathematics}, vol.~39, no.~4, pp.
+  646--682, Dec. 1999.
+
+\bibitem{Gentle1998}
+J.~E. Gentle, ``Computation of eigenvectors and eigenvalues and the singular
+  value decomposition,'' in \emph{Statistics and Computing}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer New York, 1998, pp. 123--135.
+
+\bibitem{Michalski2006}
+K.~A. Michalski, ``{Automatic, robust and efficient pole location for planar,
+  uniaxial multilayers},'' 2006.
+
+\bibitem{Polimeridis_2007}
+A.~G. Polimeridis, T.~V. Yioultsis, and T.~D. Tsiboukis, ``{An efficient pole
+  extraction technique for the computation of Green's functions in stratified
+  media using a sine transformation},'' \emph{{IEEE} Transactions on Antennas
+  and Propagation}, vol.~55, no.~1, pp. 227--229, Jan. 2007.
+
+\bibitem{Kocabas2009}
+{\c{S}}.~E. Kocaba{\c{s}}, G.~Veronis, D.~A.~B. Miller, and S.~Fan, ``Modal
+  analysis and coupling in metal-insulator-metal waveguides,'' \emph{Physical
+  Review B}, vol.~79, no.~3, Jan. 2009.
+
+\bibitem{Sydoruk2015}
+O.~Sydoruk, J.~B. Wu, A.~Mayorov, C.~D. Wood, D.~K. Mistry, and J.~E.
+  Cunningham, ``Terahertz plasmons in coupled two-dimensional semiconductor
+  resonators,'' \emph{Physical Review B}, vol.~92, no.~19, Nov. 2015.
+
+\bibitem{Ando1982}
+T.~Ando, A.~B. Fowler, and F.~Stern, ``{Electronic properties of
+  two-dimensional systems},'' \emph{Reviews of Modern Physics}, vol.~54, no.~2,
+  pp. 437--672, Apr. 1982.
+
+\bibitem{Yoon2014}
+H.~Yoon, K.~Y.~M. Yeung, P.~Kim, and D.~Ham, ``Plasmonics with two-dimensional
+  conductors,'' \emph{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}, vol. 372, no. 2012, pp.
+  20\,130\,104--20\,130\,104, Feb. 2014.
+
+\bibitem{Sydoruk2015a}
+O.~Sydoruk, K.~Choonee, and G.~C. Dyer, ``Transmission and reflection of
+  terahertz plasmons in two-dimensional plasmonic devices,'' \emph{{IEEE}
+  Transactions on Terahertz Science and Technology}, vol.~5, no.~3, pp.
+  486--496, May 2015.
+
 \bibitem{Minsky1988}
 M.~Minsky, ``Memoir on inventing the confocal scanning microscope,''
   \emph{Scanning}, vol.~10, no.~4, pp. 128--138, 1988.
@@ -525,11 +660,6 @@ X.~Zeng, M.~Al-Amri, and M.~S. Zubairy, ``Nanometer-scale microscopy via
 A.~B. Mikhailovskii, \emph{Theory of Plasma Instabilities}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer, 2013.
 
-\bibitem{Kempa1991}
-K.~Kempa, P.~Bakshi, J.~Cen, and H.~Xie, ``Spontaneous generation of plasmons
-  by ballistic electrons,'' \emph{Physical Review B}, vol.~43, no.~11, pp.
-  9273--9274, Apr. 1991.
-
 \bibitem{Dyer2016}
 G.~C. Dyer, X.~Shi, B.~V. Olson, S.~D. Hawkins, J.~F. Klem, E.~A. Shaner, and
   W.~Pan, ``Far infrared edge photoresponse and persistent edge transport in an
@@ -543,15 +673,10 @@ J.~Wu, A.~S. Mayorov, C.~D. Wood, D.~Mistry, L.~Li, W.~Muchenje, M.~C.
   terahertz-frequency range plasmons in a two-dimensional electron system,''
   \emph{Scientific Reports}, vol.~5, p. 15420, Oct. 2015.
 
-\bibitem{Dyakonov1993}
-M.~Dyakonov and M.~Shur, ``Shallow water analogy for a ballistic field effect
-  transistor: {N}ew mechanism of plasma wave generation by dc current,''
-  \emph{Physical Review Letters}, vol.~71, no.~15, pp. 2465--2468, Oct. 1993.
-
 \bibitem{Dyakonov1996}
-------, ``Detection, mixing, and frequency multiplication of terahertz
-  radiation by two-dimensional electronic fluid,'' \emph{{IEEE} Transactions on
-  Electron Devices}, vol.~43, no.~3, pp. 380--387, Mar. 1996.
+M.~Dyakonov and M.~Shur, ``Detection, mixing, and frequency multiplication of
+  terahertz radiation by two-dimensional electronic fluid,'' \emph{{IEEE}
+  Transactions on Electron Devices}, vol.~43, no.~3, pp. 380--387, Mar. 1996.
 
 \bibitem{Popov2005}
 V.~V. Popov, ``The resonant terahertz response of a slot diode with a
@@ -587,23 +712,6 @@ S.~Rabbaa and J.~Stiens, ``Charge density and plasmon modes in a triangular
   \emph{Journal of Physics D: Applied Physics}, vol.~44, no.~32, p. 325103,
   Jul. 2011.
 
-\bibitem{Burke2000}
-P.~J. Burke, I.~B. Spielman, J.~P. Eisenstein, L.~N. Pfeiffer, and K.~W. West,
-  ``High frequency conductivity of the high-mobility two-dimensional electron
-  gas,'' \emph{Applied Physics Letters}, vol.~76, no.~6, pp. 745--747, Feb.
-  2000.
-
-\bibitem{Gomez-Diaz2012}
-J.~S. G{\'{o}}mez-D{\'{\i}}az and J.~Perruisseau-Carrier, ``Propagation of
-  hybrid transverse magnetic-transverse electric plasmons on magnetically
-  biased graphene sheets,'' \emph{Journal of Applied Physics}, vol. 112,
-  no.~12, p. 124906, Dec. 2012.
-
-\bibitem{Press2007}
-W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P. Flannery,
-  \emph{Numerical {R}ecipes}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge
-  University Pr., 2007.
-
 \bibitem{Nakayama1974}
 M.~Nakayama, ``Theory of surface waves coupled to surface carriers,''
   \emph{Journal of the Physical Society of Japan}, vol.~36, no.~2, pp.
@@ -620,102 +728,10 @@ V.~V. Popov, A.~N. Koudymov, M.~Shur, and O.~V. Polischuk, ``Tuning of ungated
   electron channel,'' \emph{Journal of Applied Physics}, vol. 104, no.~2, p.
   024508, Jul. 2008.
 
-\bibitem{Ando1982}
-T.~Ando, A.~B. Fowler, and F.~Stern, ``{Electronic properties of
-  two-dimensional systems},'' \emph{Reviews of Modern Physics}, vol.~54, no.~2,
-  pp. 437--672, Apr. 1982.
-
 \bibitem{POPOV2007}
 V.~V. Popov, M.~S. Shur, G.~M. Tsymbalov, and D.~V. Fateev, ``Higher-order
   plasmon reson in {GaN}-based field-effect transistor arrays,''
   \emph{International Journal of High Speed Electronics and Systems}, vol.~17,
   no.~03, pp. 557--566, Sep. 2007.
-
-\bibitem{Delves1967c}
-L.~M. Delves and J.~N. Lyness, ``{A numerical method for locating the zeros of
-  an analytic function},'' \emph{Mathematics of Computation}, vol.~21, no. 100,
-  pp. 543--543, 1967.
-
-\bibitem{Carpentier1982c}
-M.~Carpentier and A.~D. Santos, ``{Solution of equations involving analytic
-  functions},'' \emph{Journal of Computational Physics}, vol.~45, no.~2, pp.
-  210--220, Feb. 1982.
-
-\bibitem{Botten1983}
-L.~Botten, M.~Craig, and R.~McPhedran, ``Complex zeros of analytic functions,''
-  \emph{Computer Physics Communications}, vol.~29, no.~3, pp. 245--259, May
-  1983.
-
-\bibitem{Kravanja2000c}
-P.~Kravanja, M.~V. Barel, O.~Ragos, M.~Vrahatis, and F.~Zafiropoulos, ``{ZEAL}:
-  A mathematical software package for computing zeros of analytic functions,''
-  \emph{Computer Physics Communications}, vol. 124, no. 2-3, pp. 212--232, feb
-  2000.
-
-\bibitem{Dellnitz2002c}
-M.~Dellnitz, O.~Schütze, and Q.~Zheng, ``{Locating all the zeros of an
-  analytic function in one complex variable},'' \emph{Journal of Computational
-  and Applied Mathematics}, vol. 138, no.~2, pp. 325--333, Jan. 2002.
-
-\bibitem{Gillan2006c}
-C.~Gillan, A.~Schuchinsky, and I.~Spence, ``{Computing zeros of analytic
-  functions in the complex plane without using derivatives},'' \emph{Computer
-  Physics Communications}, vol. 175, no.~4, pp. 304--313, Aug. 2006.
-
-\bibitem{Chen2017}
-P.~Y. Chen and Y.~Sivan, ``{Robust Location of Optical Fiber Modes via the
-  Argument Principle Method},'' \emph{Computer Physics Communications}, vol.
-  214, no.~2, pp. 105--116, May 2017.
-
-\bibitem{Krantz1999}
-S.~G. Krantz, \emph{The Argument Principle}.\hskip 1em plus 0.5em minus
-  0.4em\relax Boston, MA: Birkhäuser Boston, 1999, pp. 69--78.
-
-\bibitem{Shampine2008}
-L.~Shampine, ``Vectorized adaptive quadrature in {MATLAB},'' \emph{Journal of
-  Computational and Applied Mathematics}, vol. 211, no.~2, pp. 131--140, Feb.
-  2008.
-
-\bibitem{Kravanja1999}
-P.~Kravanja, T.~Sakurai, and M.~V. Barel, ``On locating clusters of zeros of
-  analytic functions,'' \emph{Bit Numerical Mathematics}, vol.~39, no.~4, pp.
-  646--682, 1999.
-
-\bibitem{Gentle1998}
-J.~E. Gentle, ``Computation of eigenvectors and eigenvalues and the singular
-  value decomposition,'' in \emph{Statistics and Computing}.\hskip 1em plus
-  0.5em minus 0.4em\relax Springer New York, 1998, pp. 123--135.
-
-\bibitem{Michalski2006}
-K.~A. Michalski, ``{Automatic, robust and efficient pole location for planar,
-  uniaxial multilayers},'' 2006.
-
-\bibitem{Polimeridis_2007}
-A.~G. Polimeridis, T.~V. Yioultsis, and T.~D. Tsiboukis, ``{An efficient pole
-  extraction technique for the computation of Green's functions in stratified
-  media using a sine transformation},'' \emph{{IEEE} Transactions on Antennas
-  and Propagation}, vol.~55, no.~1, pp. 227--229, Jan. 2007.
-
-\bibitem{Kocabas2009}
-{\c{S}}.~E. Kocaba{\c{s}}, G.~Veronis, D.~A.~B. Miller, and S.~Fan, ``Modal
-  analysis and coupling in metal-insulator-metal waveguides,'' \emph{Physical
-  Review B}, vol.~79, no.~3, Jan. 2009.
-
-\bibitem{Sydoruk2015}
-O.~Sydoruk, J.~B. Wu, A.~Mayorov, C.~D. Wood, D.~K. Mistry, and J.~E.
-  Cunningham, ``Terahertz plasmons in coupled two-dimensional semiconductor
-  resonators,'' \emph{Physical Review B}, vol.~92, no.~19, Nov. 2015.
-
-\bibitem{Yoon2014}
-H.~Yoon, K.~Y.~M. Yeung, P.~Kim, and D.~Ham, ``Plasmonics with two-dimensional
-  conductors,'' \emph{Philosophical Transactions of the Royal Society A:
-  Mathematical, Physical and Engineering Sciences}, vol. 372, no. 2012, pp.
-  20\,130\,104--20\,130\,104, Feb. 2014.
-
-\bibitem{Sydoruk2015a}
-O.~Sydoruk, K.~Choonee, and G.~C. Dyer, ``Transmission and reflection of
-  terahertz plasmons in two-dimensional plasmonic devices,'' \emph{{IEEE}
-  Transactions on Terahertz Science and Technology}, vol.~5, no.~3, pp.
-  486--496, May 2015.
 
 \end{thebibliography}

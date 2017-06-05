@@ -1137,8 +1137,8 @@
   title        = {Plasma Wave Electronics for Terahertz Applications},
   booktitle    = {Terahertz Sources and Systems},
   publisher    = {Springer Nature},
+  year         = {2001},
   pages        = {187--207},
-  date         = {2001},
   doi          = {10.1007/978-94-010-0824-2_12},
   file         = {:D\:\\Users\\Mendeley Desktop\\chp%3A10.1007%2F978-94-010-0824-2_12.pdf:pdf},
   journaltitle = {Terahertz Sources And Systems},
@@ -2681,7 +2681,7 @@
   year    = {1980},
   volume  = {79},
   pages   = {555--560},
-  month   = Aug,
+  month   = aug,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

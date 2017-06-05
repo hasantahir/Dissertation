@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.6.3)  4 JUN 2017 15:44
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.6.3)  5 JUN 2017 01:15
 entering extended mode
 **./TAMUTemplate.tex
 (TAMUTemplate.tex
@@ -2780,33 +2780,8 @@ Package caption Info: rotating package is loaded.
 )
 \tikzscale@accuracy=\skip122
  (TAMUTemplate.aux (data/abstract.aux) (data/dedication.aux)
-(data/acknowledgements.aux) (data/contributors.aux) (data/nomenclature.aux)
-(data/lists.aux) (data/OpAntennas/bchapter.aux) (data/SommInt/som_int.aux)
-
-LaTeX Warning: Label `eq:dispersion' multiply defined.
-
-
-LaTeX Warning: Label `fig:dispersion' multiply defined.
-
-
-LaTeX Warning: Label `fig:sim_hi' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:sim_hi' multiply defined.
-
-
-LaTeX Warning: Label `fig:simulation' multiply defined.
-
-
-LaTeX Warning: Label `eq:sigma_s' multiply defined.
-
-
-LaTeX Warning: Label `fig:TL_equivalent' multiply defined.
-
-
-LaTeX Warning: Label `eq:dispersion' multiply defined.
-
-)
+(data/acknowledgements.aux) (data/contributors.aux) (data/lists.aux)
+(data/intro.aux) (data/OpAntennas/bchapter.aux) (data/SommInt/som_int.aux))
 \openout1 = `TAMUTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 259.
@@ -2826,7 +2801,8 @@ LaTeX Font Info:    ... okay on input line 259.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 259.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 259.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 259.
@@ -4116,39 +4092,29 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-Overfull \hbox (2.70076pt too wide) in paragraph at lines 47--47
+Overfull \hbox (2.70076pt too wide) in paragraph at lines 61--61
  [][] []\T1/lmr/m/n/12 NANOSCOPY US-ING A SEMI-CON-DUC-TOR HET-EROSTRUC-TURE AS
  
  []
 
-)
+[8])
 \tf@toc=\write5
 \openout5 = `TAMUTemplate.toc'.
 
- [8] (TAMUTemplate.lof [9] [10] [11])
+ [9] (TAMUTemplate.lof [10] [11] [12])
 \tf@lof=\write6
 \openout6 = `TAMUTemplate.lof'.
 
- [12] (TAMUTemplate.lot)
+ [13] (TAMUTemplate.lot)
 \tf@lot=\write7
 \openout7 = `TAMUTemplate.lot'.
 
- [13])
+ [14])
 \openout2 = `data/intro.aux'.
 
 
 (data/intro.tex
 Chapter 1.
-
-LaTeX Warning: Citation `Dyakonov2001' on page 1 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Williams2003' on page 1 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Krasheninnikov1980' on page 1 undefined on input line 
-25.
-
 [1
 
 
@@ -4474,108 +4440,15 @@ Overfull \hbox (11.4442pt too wide) in paragraph at lines 885--888
 (data/sommint/figures/Gzx_gan_sheet_56_3k.tikz)
 (data/sommint/figures/Gzx_gan_sheet_56_3k.tikz)
 (data/sommint/figures/Gzx_gan_sheet_56_3k.tikz) [78] [79] [80] [81]) [82]
-(data/microscopy/new_sim_portion.tex
+(data/poles/multilayered_roots.tex
 Chapter 4.
 [83
 
 
-] [84] (data/microscopy/figures/mstruc_gated.pdf_tex
-File: data/microscopy/figures/mstruc_gated.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/mstruc_gated.pdf"  page1>) [85] [86] [87]
-(data/microscopy/figures/gated_disp.tikz)
-(data/microscopy/figures/gated_disp.tikz)
-(data/microscopy/figures/gated_disp.tikz)
-(data/microscopy/figures/gated_disp.tikz)
-(data/microscopy/figures/gate_swing.tikz)
-(data/microscopy/figures/gate_swing.tikz)
-(data/microscopy/figures/gate_swing.tikz)
-(data/microscopy/figures/gate_swing.tikz)
-(data/microscopy/figures/gate_swing.tikz) [88] [89] [90]
-(data/microscopy/figures/psim.pdf_tex
-File: data/microscopy/figures/psim.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/psim.pdf"  page1>)
-(data/microscopy/figures/e_diag.pdf_tex
-File: data/microscopy/figures/e_diag.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/e_diag.pdf"  page1>) [91] [92] [93]
-(data/microscopy/figures/shifted1.tikz) (data/microscopy/figures/shifted1.tikz)
-(data/microscopy/figures/shifted1.tikz) (data/microscopy/figures/shifted1.tikz)
-(data/microscopy/figures/tuning.tikz) (data/microscopy/figures/tuning.tikz)
-(data/microscopy/figures/tuning.tikz) (data/microscopy/figures/tuning.tikz)
-[94] [95] (data/microscopy/figures/test_sample.tikz
-Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
-id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
-foreground'...
-File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/test_sample_new.pdf" >)
-(data/microscopy/figures/test_sample.tikz
-Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
-id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
-foreground'...
-File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/test_sample_new.pdf" >)
-(data/microscopy/figures/test_sample.tikz
-Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
-id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
-foreground'...
-File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/test_sample_new.pdf" >)
-(data/microscopy/figures/test_sample.tikz
-Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
-id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
-foreground'...
-File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
-
-<use  "data/microscopy/figures/test_sample_new.pdf" >)
-(data/microscopy/figures/plsim_153.tikz
-File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim153.png" >)
-(data/microscopy/figures/plsim_153.tikz
-File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim153.png" >)
-(data/microscopy/figures/plsim_153.tikz
-File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim153.png" >)
-(data/microscopy/figures/plsim_153.tikz
-File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim153.png" >)
-(data/microscopy/figures/plsim_75.tikz
-File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim75.png" >)
-(data/microscopy/figures/plsim_75.tikz
-File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim75.png" >)
-(data/microscopy/figures/plsim_75.tikz
-File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim75.png" >)
-(data/microscopy/figures/plsim_75.tikz
-File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
-
-<use  "data/microscopy/figures/Plsim75.png" >))
-(data/poles/multilayered_roots.tex [96] [97]
-Chapter 5.
-[98
-
-]
-
-LaTeX Warning: Reference `eq:label' on page 99 undefined on input line 21.
-
-(data/poles/figures/multilayers.pdf_tex
+] (data/poles/figures/multilayers.pdf_tex
 File: data/poles/figures/multilayers.pdf Graphic file (type QTm)
 
-<use  "data/poles/figures/multilayers.pdf"  page1>) [99] [100] [101]
+<use  "data/poles/figures/multilayers.pdf"  page1>) [84] [85] [86]
 (data/poles/figures/basin_fig.tikz
 File: data/poles/figures/basin.png Graphic file (type QTm)
  <use  "data/poles/figures/basin.png" >)
@@ -4607,17 +4480,17 @@ File: data/poles/figures/halley_basin.png Graphic file (type QTm)
 (data/poles/figures/zplane.pdf_tex
 File: data/poles/figures/zplane.pdf Graphic file (type QTm)
 
-<use  "data/poles/figures/zplane.pdf"  page1>) [102]
+<use  "data/poles/figures/zplane.pdf"  page1>) [87]
 
-LaTeX Warning: Text page 103 contains only floats.
+LaTeX Warning: Text page 88 contains only floats.
 
-[103] [104] [105] [106] [107] [108] (data/poles/figures/kocabas_lossless.tikz)
+[88] [89] [90] [91] [92] [93] (data/poles/figures/kocabas_lossless.tikz)
 (data/poles/figures/kocabas_lossless.tikz)
 (data/poles/figures/kocabas_lossless.tikz)
 (data/poles/figures/kocabas_lossless.tikz)
 (data/poles/figures/kocabas_lossy.tikz) (data/poles/figures/kocabas_lossy.tikz)
 (data/poles/figures/kocabas_lossy.tikz) (data/poles/figures/kocabas_lossy.tikz)
-[109] [110] (data/poles/figures/gated.pdf_tex
+[94] [95] (data/poles/figures/gated.pdf_tex
 File: data/poles/figures/gated.pdf Graphic file (type QTm)
 
 <use  "data/poles/figures/gated.pdf"  page1>)
@@ -4634,7 +4507,7 @@ Overfull \hbox (4.73428pt too wide) in paragraph at lines 371--389
  ni-tride) het-erostruc-
  []
 
-[111] (data/microscopy/figures/gated_disp.tikz)
+[96] (data/microscopy/figures/gated_disp.tikz)
 (data/microscopy/figures/gated_disp.tikz)
 (data/microscopy/figures/gated_disp.tikz)
 (data/microscopy/figures/gated_disp.tikz)
@@ -4644,10 +4517,6 @@ Overfull \hbox (4.73428pt too wide) in paragraph at lines 371--389
 (data/poles/figures/backgated_disp.tikz) (data/poles/figures/ungated_disp.tikz)
 (data/poles/figures/ungated_disp.tikz) (data/poles/figures/ungated_disp.tikz)
 (data/poles/figures/ungated_disp.tikz)
-Overfull \hbox (163.78986pt too wide) in paragraph at lines 395--400
- [][][][] 
- []
-
 (data/poles/figures/gated_disp_lossy.tikz)
 (data/poles/figures/gated_disp_lossy.tikz)
 (data/poles/figures/gated_disp_lossy.tikz)
@@ -4672,7 +4541,7 @@ Overfull \hbox (1.59447pt too wide) in paragraph at lines 425--428
  [][] 
  []
 
-[112] (data/poles/figures/gated_disp_lossy_low.tikz)
+[97] [98] [99] (data/poles/figures/gated_disp_lossy_low.tikz)
 (data/poles/figures/gated_disp_lossy_low.tikz)
 (data/poles/figures/gated_disp_lossy_low.tikz)
 (data/poles/figures/gated_disp_lossy_low.tikz)
@@ -4684,27 +4553,119 @@ Overfull \hbox (1.59447pt too wide) in paragraph at lines 437--440
  [][] 
  []
 
-[113] [114] [115]) (TAMUTemplate.bbl [116] [117
+[100] [101]) (data/microscopy/new_sim_portion.tex [102]
+Chapter 5.
+[103
 
-] [118] [119] [120] [121]
-[122] [123] [124] [125] [126] [127] [128] [129] [130] [131] [132]) [133]
-(TAMUTemplate.aux (data/abstract.aux) (data/dedication.aux)
-(data/acknowledgements.aux) (data/contributors.aux) (data/lists.aux)
-(data/intro.aux) (data/OpAntennas/bchapter.aux) (data/SommInt/som_int.aux))
+] [104] (data/microscopy/figures/mstruc_gated.pdf_tex
+File: data/microscopy/figures/mstruc_gated.pdf Graphic file (type QTm)
 
-LaTeX Warning: There were undefined references.
+<use  "data/microscopy/figures/mstruc_gated.pdf"  page1>) [105] [106] [107]
+(data/microscopy/figures/gated_disp.tikz)
+(data/microscopy/figures/gated_disp.tikz)
+(data/microscopy/figures/gated_disp.tikz)
+(data/microscopy/figures/gated_disp.tikz)
+(data/microscopy/figures/gate_swing.tikz)
+(data/microscopy/figures/gate_swing.tikz)
+(data/microscopy/figures/gate_swing.tikz)
+(data/microscopy/figures/gate_swing.tikz)
+(data/microscopy/figures/gate_swing.tikz) [108] [109] [110]
+(data/microscopy/figures/psim.pdf_tex
+File: data/microscopy/figures/psim.pdf Graphic file (type QTm)
 
+<use  "data/microscopy/figures/psim.pdf"  page1>)
+(data/microscopy/figures/e_diag.pdf_tex
+File: data/microscopy/figures/e_diag.pdf Graphic file (type QTm)
 
-LaTeX Warning: There were multiply-defined labels.
+<use  "data/microscopy/figures/e_diag.pdf"  page1>) [111] [112] [113]
+(data/microscopy/figures/shifted1.tikz) (data/microscopy/figures/shifted1.tikz)
+(data/microscopy/figures/shifted1.tikz) (data/microscopy/figures/shifted1.tikz)
+(data/microscopy/figures/tuning.tikz) (data/microscopy/figures/tuning.tikz)
+(data/microscopy/figures/tuning.tikz) (data/microscopy/figures/tuning.tikz)
+[114] [115] (data/microscopy/figures/test_sample.tikz
+Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
+id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
+foreground'...
+File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
+
+<use  "data/microscopy/figures/test_sample_new.pdf" >)
+(data/microscopy/figures/test_sample.tikz
+Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
+id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
+foreground'...
+File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
+
+<use  "data/microscopy/figures/test_sample_new.pdf" >)
+(data/microscopy/figures/test_sample.tikz
+Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
+id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
+foreground'...
+File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
+
+<use  "data/microscopy/figures/test_sample_new.pdf" >)
+(data/microscopy/figures/test_sample.tikz
+Package pgfplots info on input line 17: Setting layers 'axis background,axis gr
+id,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis 
+foreground'...
+File: data/microscopy/figures/test_sample_new.pdf Graphic file (type QTm)
+
+<use  "data/microscopy/figures/test_sample_new.pdf" >)
+(data/microscopy/figures/plsim_153.tikz
+File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim153.png" >)
+(data/microscopy/figures/plsim_153.tikz
+File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim153.png" >)
+(data/microscopy/figures/plsim_153.tikz
+File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim153.png" >)
+(data/microscopy/figures/plsim_153.tikz
+File: data/microscopy/figures/Plsim153.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim153.png" >)
+(data/microscopy/figures/plsim_75.tikz
+File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim75.png" >)
+(data/microscopy/figures/plsim_75.tikz
+File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim75.png" >)
+(data/microscopy/figures/plsim_75.tikz
+File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim75.png" >)
+(data/microscopy/figures/plsim_75.tikz
+File: data/microscopy/figures/Plsim75.png Graphic file (type QTm)
+
+<use  "data/microscopy/figures/Plsim75.png" >)) (data/conclusion.tex [116]
+[117]
+Chapter 6.
+[118
+
+]) (TAMUTemplate.bbl [119]
+Missing character: There is no ≈ in font ec-lmr12!
+ [120
+
+] [121] [122] [123] [124] [125] [126]
+[127] [128] [129] [130] [131] [132] [133] [134] [135]) [136] (TAMUTemplate.aux
+(data/abstract.aux) (data/dedication.aux) (data/acknowledgements.aux)
+(data/contributors.aux) (data/lists.aux) (data/intro.aux)
+(data/OpAntennas/bchapter.aux) (data/SommInt/som_int.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 52299 strings out of 427834
- 1262574 string characters out of 3152471
- 2535460 words of memory out of 3000000
- 55032 multiletter control sequences out of 15000+200000
+ 52310 strings out of 427834
+ 1262777 string characters out of 3152471
+ 2529943 words of memory out of 3000000
+ 55041 multiletter control sequences out of 15000+200000
  578377 words of font info for 82 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  91i,27n,136p,10433b,3103s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on TAMUTemplate.pdf (146 pages).
+Output written on TAMUTemplate.pdf (150 pages).
