@@ -1,40 +1,30 @@
 \chapter{\uppercase {Conclusion and Future recommendation}}
 
-Although surface wave propagation has been actively studied for the past four decades in the form of surface plasmon polaritons and plasma waves in the optical and terahertz frequency regimes respectively, the engineered devices that make use of the interesting properties are still in their infancy. Lately, there has been a huge interest in  
+In this work, structures that support surface wave propagation were studied in the terahertz as well as the  optical frequency domain. The designs that were discussed provide an ideal outlet for realization of miniaturized communication devices. A concrete theory was presented regards to the understanding of the working principles of optical nanoantennas. The essential requirement for surface plasmons to exist is the negative real part of the dielectric function of metals in the optical frequency range. In the terahertz frequency region, this necessary condition is satisfied by a thin plasma region formed at the interface of a semiconductor heterostructure.
 
-ngineered
-Planar stratified media serve as the basic structure for a plethora of RF, microwave and
-recently THz components. One of the most suitable and efficient numerical methods for
-their EM analysis is the Integral Equation method combined with the Method of Moments
-discretization technique. Among the different Integral Equation formulations, Mixed Potential
-Integral Equations (MPIE) serve as one of the most competitive due to the lower order
-singularities that appear in the kernels of the integrals.
-The target of this thesis was to provide a general framework for developing the appropriate
-Green Functions (GFs) for each multilayered structure. Although this is a classical CEM
-problem where many researchers have already faced most of the difficulties, new designs that
-include very thin conductive sheets have to be accommodated. Recent technological advances
-in the area of thin conductive sheets, like the fabrication of the one atom thick graphene,
-have provided a platform for new EM devices, especially in the area of THz. Properties like
-plasmon propagation at the THz range or field amplification enhance the scientific interest.
-The extremely small thickness, up to molecular scale for the case of graphene, deteriorates
-the performance of the current methods. For this reason, a general method based on the
-propagator matrix technique, enhanced so as to include the conductive sheets, is provided
-in Chapter 4. Even arbitrary tensorial conductivity, a very challenging situation that comes
-under the simultaneous electric and magnetic bias of graphene, can be taken into account
-with this approach. GFs in the spectral domain for the EM fields and the scalar and vector
-potentials have been obtained for cases with high scientific and technological interest. The
-validity of the results, especially the position of the TM and TE poles, that can be derived with
-alternative techniques, has been verified for the cases a literature reference exists. Finally, the
-spectral domain mixed potential GFs serve as the first necessary step in order to employ the
-efficient MPIE method in such problems.
-The spatial domain counterparts of these GFs have to be calculated efficiently and in
-an error-controllable manner through the Sommerfeld integrals. Novel techniques based on
-specialized Double Exponential (DE) quadrature rules and the Weighted Averages (WA)
-algorithm have been presented in Chapter 6. The DE rule has been revisited in order to
-account for adaptivity and efficient error estimation as discussed in Chapters 5 and 6. The
-algorithm outperforms in terms of speed the reference method, that is the detour of the
-integration path of the Sommerfeld integral. It manages to provide accurate results up to the
-predefined accuracy level. If average accuracy is enough for certain applications, a very fast
-result can be provided, while at the cost of relatively increased computational resources, even
-numerically exact results can be available. It should always be mentioned that the proposed
-method does not require a detour of the integration path into the complex plane to recover
+The difficulties of electromagnetic analysis of extremely thin layers using commercial software were discussed. An integral equation based technique was presented that computes the fields via transmission line Green functions of the structure by which even infinitesimally thin sheets of a lossy material, defined by a complex valued surface conductivity, can be conveniently solved for using simple circuit and transmission line techniques. The mixed potentials formulation was adopted due to weaker singularities that show up in the integral kernels.
+
+The dispersion curves were plotted both for surface plasmons and 2D plasma waves. In the former case, analytical solutions of the dispersion relation were available while in the latter case, sophisticated complex-root finding methods were invoked. The results illustrated the subwavelength properties of both waves in their respective domains of frequencies. In this regard, a nanoscopy  imaging scheme was proposed that utilized the 2D plasma waves to illuminate a sample and yield super-resolution.
+
+\section*{Recommendations for future work}
+%
+%
+The research in the terahertz frequency region is currently witnessing an exponential level of interest, primarily due to lack of efficient sources and sensors. Plasma based semiconductor structures have been declared to be the leading candidates to fill this void. However, with current availability of materials and semiconductor technology, reasonable levels of efficiencies are only attainable at low temperatures. Extensive efforts are currently been made to explore materials such as perovskites and dichalcogenides that show promise for device operability at higher temperatures.
+
+Throughout this dissertation, there are various aspects that can be greatly improved. The surface conductivity was assumed as a scalar quantity, although in a true sense, especially in the presence of external electric or magnetic fields, it should be represented by a tensor. The discovery of quantum Hall effect that led to two Nobel prizes in physics, was made possible through the observation of a 2DEG upon which an external magnetic field was applied.
+
+In Chapter III, the Green functions were computed only for a 2DEG plasma sheet suspended in freespace. The procedure can easily be extended to incorporate the transistor structure consisting of a semiconductor heterostructure and a gate terminal.
+
+The root-finding technique discussed in Chapter IV currently involves a lot of guess work in determining the 
+
+ chapters of this thesis, there are several obvious issues that need to be
+addressed further or improved. One of the most important is the efficient location of the
+surface plasmon pole, required in Chapter 6. It is not any more bounded as it used to be in
+the classical multilayered structures, and consequently the pole extraction algorithms already
+developed have to be revisited.
+
+
+
+Different materials perovskites, dichalcogenides etc.
+Explore high temperature devices
+Effect of externala magnetic field
