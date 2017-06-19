@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.5.25)  27 MAY 2017 15:49
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300 64-bit) (preloaded format=xelatex 2017.6.5)  14 JUN 2017 13:19
 entering extended mode
 **./SIM_paper_formatted.tex
 (SIM_paper_formatted.tex
@@ -39,7 +39,7 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
@@ -89,12 +89,12 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxtext.sty
-Package: newtxtext 2017/03/11 v1.521
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxtext.sty
+Package: newtxtext 2017/05/28 v1.523
 
-`newtxtext' v1.521, 2017/03/11 Text macros taking advantage of TeX-Gyre Termes 
+`newtxtext' v1.523, 2017/05/28 Text macros taking advantage of TeX-Gyre Termes 
 fonts (msharpe)
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\fontaxes\fontaxes.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\fontaxes\fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -102,8 +102,7 @@ LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
 \ntx@fs=\dimen109
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
@@ -114,11 +113,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count90
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count91
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
@@ -208,10 +206,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxmath.sty
-Package: newtxmath 2017/02/12 v1.518
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxmath.sty
+Package: newtxmath 2017/05/31 v1.524
 
-`newtxmath' v1.518, 2017/02/12 Math macros based on txfonts (msharpe)
+`newtxmath' v1.524, 2017/05/31 Math macros based on txfonts (msharpe)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
@@ -277,7 +275,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\generic\binhex\binhex.tex)
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\generic\binhex\binhex.tex)
 \tx@Isdigit=\count104
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 153.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -380,9 +378,8 @@ LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 533.
 LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 534.
 LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 535.
 LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 536.
-LaTeX Info: Redefining \not on input line 2099.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
+LaTeX Info: Redefining \not on input line 2100.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
@@ -391,7 +388,8 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.s
+ty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks23
 \MT@count=\count105
@@ -400,16 +398,17 @@ LaTeX Info: Redefining \textls on input line 774.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count106
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-xetex
-.def
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-x
+etex.def
 File: microtype-xetex.def 2016/05/14 v2.6a Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 255.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.c
+fg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
-)) (C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
+)) (C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks24
 \SOUL@lasttoken=\toks25
@@ -421,7 +420,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen121
 \SOUL@ulht=\dimen122
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -502,7 +501,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4757.
 \c@Hy@tempcnt=\count110
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -554,10 +553,10 @@ tly
 )
 \Hy@SectionHShift=\skip47
 ))
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen127
@@ -583,10 +582,8 @@ Package caption Info: Unknown document class (or package),
 \c@lotdepth=\count125
 \sf@top=\skip51
 \sf@bottom=\skip52
-)
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+) (C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
 
 Package caption Warning: Unsupported document class (or package) detected,
 (caption)                usage of the caption package is not recommended.
@@ -598,26 +595,29 @@ tionskip \sbox \@tempboxa {#1. #2}\ifdim \wd \@tempboxa >\@MaxCapWidth \hskip 2
 l \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip \normalsize .
 \c@ContinuedFloat=\count126
 Package caption Info: hyperref package is loaded.
-) (C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\physics\physics.sty
+) (C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\physics\physics.sty
 Package: physics 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.
-sty (C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
-Package: expl3 2017/05/13 L3 programming layer (loader) 
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xpa
+rse.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+Package: expl3 2017/05/29 L3 programming layer (loader) 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
-Package: expl3 2017/05/13 L3 programming layer (code)
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.t
+ex
+Package: expl3 2017/05/29 L3 programming layer (code)
 \c_max_int=\count127
 \l_tmpa_int=\count128
 \l_tmpb_int=\count129
 \g_tmpa_int=\count130
 \g_tmpb_int=\count131
-\g__prg_map_int=\count132
-\c_log_iow=\count133
-\l_iow_line_count_int=\count134
-\l__iow_line_target_int=\count135
-\l__iow_one_indent_int=\count136
-\l__iow_indent_int=\count137
+\g__intarray_font_int=\count132
+\g__prg_map_int=\count133
+\c_log_iow=\count134
+\l_iow_line_count_int=\count135
+\l__iow_line_target_int=\count136
+\l__iow_one_indent_int=\count137
+\l__iow_indent_int=\count138
 \c_zero_dim=\dimen135
 \c_max_dim=\dimen136
 \l_tmpa_dim=\dimen137
@@ -636,27 +636,71 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count138
-\c__fp_leading_shift_int=\count139
-\c__fp_middle_shift_int=\count140
-\c__fp_trailing_shift_int=\count141
-\c__fp_big_leading_shift_int=\count142
-\c__fp_big_middle_shift_int=\count143
-\c__fp_big_trailing_shift_int=\count144
-\c__fp_Bigg_leading_shift_int=\count145
-\c__fp_Bigg_middle_shift_int=\count146
-\c__fp_Bigg_trailing_shift_int=\count147
-\l__sort_length_int=\count148
-\l__sort_min_int=\count149
-\l__sort_top_int=\count150
-\l__sort_max_int=\count151
-\l__sort_true_max_int=\count152
-\l__sort_block_int=\count153
-\l__sort_begin_int=\count154
-\l__sort_end_int=\count155
-\l__sort_A_int=\count156
-\l__sort_B_int=\count157
-\l__sort_C_int=\count158
+\l_keys_choice_int=\count139
+\c__fp_leading_shift_int=\count140
+\c__fp_middle_shift_int=\count141
+\c__fp_trailing_shift_int=\count142
+\c__fp_big_leading_shift_int=\count143
+\c__fp_big_middle_shift_int=\count144
+\c__fp_big_trailing_shift_int=\count145
+\c__fp_Bigg_leading_shift_int=\count146
+\c__fp_Bigg_middle_shift_int=\count147
+\c__fp_Bigg_trailing_shift_int=\count148
+\l__sort_length_int=\count149
+\l__sort_min_int=\count150
+\l__sort_top_int=\count151
+\l__sort_max_int=\count152
+\l__sort_true_max_int=\count153
+\l__sort_block_int=\count154
+\l__sort_begin_int=\count155
+\l__sort_end_int=\count156
+\l__sort_A_int=\count157
+\l__sort_B_int=\count158
+\l__sort_C_int=\count159
+\l__tl_build_start_index_int=\count160
+\l__tl_build_index_int=\count161
+\l__tl_analysis_normal_int=\count162
+\l__tl_analysis_index_int=\count163
+\l__tl_analysis_nesting_int=\count164
+\l__tl_analysis_type_int=\count165
+\l__regex_internal_a_int=\count166
+\l__regex_internal_b_int=\count167
+\l__regex_internal_c_int=\count168
+\l__regex_balance_int=\count169
+\l__regex_group_level_int=\count170
+\l__regex_mode_int=\count171
+\c__regex_cs_in_class_mode_int=\count172
+\c__regex_cs_mode_int=\count173
+\l__regex_catcodes_int=\count174
+\l__regex_default_catcodes_int=\count175
+\c__regex_catcode_L_int=\count176
+\c__regex_catcode_O_int=\count177
+\c__regex_catcode_A_int=\count178
+\c__regex_all_catcodes_int=\count179
+\l__regex_show_lines_int=\count180
+\l__regex_min_state_int=\count181
+\l__regex_max_state_int=\count182
+\l__regex_left_state_int=\count183
+\l__regex_right_state_int=\count184
+\l__regex_capturing_group_int=\count185
+\l__regex_min_pos_int=\count186
+\l__regex_max_pos_int=\count187
+\l__regex_current_pos_int=\count188
+\l__regex_start_pos_int=\count189
+\l__regex_success_pos_int=\count190
+\l__regex_current_char_int=\count191
+\l__regex_current_catcode_int=\count192
+\l__regex_last_char_int=\count193
+\l__regex_case_changed_char_int=\count194
+\l__regex_current_state_int=\count195
+\l__regex_step_int=\count196
+\l__regex_min_active_int=\count197
+\l__regex_max_active_int=\count198
+\l__regex_replacement_csnames_int=\count199
+\l__regex_match_count_int=\count266
+\l__regex_min_submatch_int=\count267
+\l__regex_submatch_int=\count268
+\l__regex_zeroth_submatch_int=\count269
 \c_empty_box=\box29
 \l_tmpa_box=\box30
 \l_tmpb_box=\box31
@@ -698,16 +742,18 @@ Package: expl3 2017/05/13 L3 programming layer (code)
 \l__coffin_scaled_total_height_dim=\dimen164
 \l__coffin_scaled_width_dim=\dimen165
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3xdvipdfmx.def
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3xdvipdfmx.
+def
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count270
 \l__driver_tmp_box=\box44
 ))
-Package: xparse 2017/05/13 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count159
-\g__xparse_grabber_int=\count160
-\l__xparse_m_args_int=\count161
-\l__xparse_mandatory_args_int=\count162
-\l__xparse_v_nesting_int=\count163
+Package: xparse 2017/05/29 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count271
+\g__xparse_grabber_int=\count272
+\l__xparse_m_args_int=\count273
+\l__xparse_mandatory_args_int=\count274
+\l__xparse_v_nesting_int=\count275
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1586,7 +1632,8 @@ Package: xparse 2017/05/13 L3 Experimental document command parser
 . 
 . Defining command \homework with sig. '' on line 764.
 .................................................
-) (C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
+)
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
 Package: siunitx 2017/05/19 v2.7g A comprehensive (SI) units package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
@@ -1597,33 +1644,33 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip59
 \backup@length=\skip60
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3key
-s2e.sty
-Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l
+3keys2e.sty
+Package: l3keys2e 2017/05/29 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box45
 \l__siunitx_tmp_dim=\dimen168
-\l__siunitx_tmp_int=\count164
-\l__siunitx_number_mantissa_length_int=\count165
-\l__siunitx_number_uncert_length_int=\count166
-\l__siunitx_round_int=\count167
-\l__siunitx_process_decimal_int=\count168
-\l__siunitx_process_uncertainty_int=\count169
-\l__siunitx_process_fixed_int=\count170
-\l__siunitx_process_integer_min_int=\count171
-\l__siunitx_process_precision_int=\count172
-\l__siunitx_group_min_int=\count173
+\l__siunitx_tmp_int=\count276
+\l__siunitx_number_mantissa_length_int=\count277
+\l__siunitx_number_uncert_length_int=\count278
+\l__siunitx_round_int=\count279
+\l__siunitx_process_decimal_int=\count280
+\l__siunitx_process_uncertainty_int=\count281
+\l__siunitx_process_fixed_int=\count282
+\l__siunitx_process_integer_min_int=\count283
+\l__siunitx_process_precision_int=\count284
+\l__siunitx_group_min_int=\count285
 \l__siunitx_angle_marker_box=\box46
 \l__siunitx_angle_unit_box=\box47
 \l__siunitx_angle_marker_dim=\dimen169
 \l__siunitx_angle_unit_dim=\dimen170
-\l__siunitx_unit_int=\count174
-\l__siunitx_unit_denominator_int=\count175
-\l__siunitx_unit_numerator_int=\count176
-\l__siunitx_unit_prefix_int=\count177
-\l__siunitx_unit_prefix_base_int=\count178
-\l__siunitx_unit_prefix_gram_int=\count179
-\l__siunitx_number_product_int=\count180
+\l__siunitx_unit_int=\count286
+\l__siunitx_unit_denominator_int=\count287
+\l__siunitx_unit_numerator_int=\count288
+\l__siunitx_unit_prefix_int=\count289
+\l__siunitx_unit_prefix_base_int=\count290
+\l__siunitx_unit_prefix_gram_int=\count291
+\l__siunitx_number_product_int=\count292
 \c__siunitx_one_fill_skip=\skip61
 \l__siunitx_table_unit_align_skip=\skip62
 \l__siunitx_table_exponent_dim=\dimen171
@@ -1758,20 +1805,20 @@ Package: l3keys2e 2017/05/13 LaTeX2e option processing using LaTeX3 keys
 .................................................
 \g__file_internal_ior=\read1
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\transla
-tor.sty
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\tra
+nslator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\transla
-tor-language-mappings.tex)))
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\tra
+nslator-language-mappings.tex)))
 *************************************************
 * siunitx warning: "version-1-option"
 * 
 * Version 1 option 'per' detected.
 *************************************************
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-version-1
-.cfg
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-versi
+on-1.cfg
 File: siunitx-version-1.cfg 2017/05/19 v2.7g siunitx: Version 1 settings
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1816,7 +1863,8 @@ File: siunitx-version-1.cfg 2017/05/19 v2.7g siunitx: Version 1 settings
 )
 LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 41
 .
- (C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtlf.fd
+
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -1829,7 +1877,7 @@ LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 41.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 41
 .
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 41.
@@ -1847,7 +1895,7 @@ LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 41.
 LaTeX Font Info:    Try loading font information for U+ntxexa on input line 41.
 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 41.
@@ -1862,7 +1910,7 @@ LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 41.
 LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 41
 .
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 41.
@@ -1870,7 +1918,7 @@ LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 41.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 4
 1.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 41.
@@ -1917,8 +1965,8 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-\c@mv@tabular=\count181
-\c@mv@boldtabular=\count182
+\c@mv@tabular=\count293
+\c@mv@boldtabular=\count294
 LaTeX Info: Redefining \microtypecontext on input line 41.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1938,7 +1986,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count183
+\c@section@level=\count295
 )
 LaTeX Info: Redefining \ref on input line 41.
 LaTeX Info: Redefining \pageref on input line 41.
@@ -1947,12 +1995,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\dicts\t
-ranslator-basic-dictionary\translator-basic-dictionary-English.dict
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\translator\dic
+ts\translator-basic-dictionary\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviat
-ions.cfg
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbre
+viations.cfg
 File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 )
 .................................................
@@ -3110,11 +3158,11 @@ File: siunitx-abbreviations.cfg 2017/05/19 v2.7g siunitx: Abbreviated units
 . 
 . Defining command \ms with sig. '' on line 41.
 .................................................
-\c__siunitx_mathsf_int=\count184
+\c__siunitx_mathsf_int=\count296
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 4
 1.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ot1ntxtlf.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -3130,24 +3178,24 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Try loading font information for U+ntxmia on input line 41.
 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Try loading font information for U+ntxsym on input line 41.
 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 41.
 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Try loading font information for T1+qhv on input line 41.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qhv.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
@@ -3160,11 +3208,11 @@ LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 6.56995pt on input line 41.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 4.94997pt on input line 41.
-\c__siunitx_mathtt_int=\count185
+\c__siunitx_mathtt_int=\count297
 LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 41.
 
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtt.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
@@ -3203,55 +3251,55 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <8.8> not available
 (Font)              Font shape `T1/phv/b/sc' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 51.
+(Font)              scaled to size 9.0pt on input line 52.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 9.0pt on input line 51.
+(Font)              scaled to size 9.0pt on input line 52.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 51.
+(Font)              scaled to size 9.0pt on input line 52.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 51.
+(Font)              scaled to size 8.09995pt on input line 52.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 9.0pt on input line 51.
+(Font)              scaled to size 9.0pt on input line 52.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 7.3pt on input line 51.
+(Font)              scaled to size 7.3pt on input line 52.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 53.
+(Font)              scaled to size 8.0pt on input line 54.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 53.
+(Font)              scaled to size 8.0pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 53.
+(Font)              scaled to size 8.0pt on input line 54.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 53.
+(Font)              scaled to size 6.2pt on input line 54.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 53.
+(Font)              scaled to size 7.19995pt on input line 54.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 53.
+(Font)              scaled to size 5.57996pt on input line 54.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 53.
+(Font)              scaled to size 8.0pt on input line 54.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 6.2pt on input line 53.
+(Font)              scaled to size 6.2pt on input line 54.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 6.2pt on input line 53.
+(Font)              scaled to size 6.2pt on input line 54.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 60.
+(Font)              scaled to size 10.0pt on input line 61.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 6
-2.
+3.
 
-(C:\Users\Nevels\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ts1ntxtlf.fd
+(C:\Users\hasantahir\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 62.
+(Font)              scaled to size 9.0pt on input line 63.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `ntxtlf' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 8.0pt on input line 66.
 
 (SIM_paper_formatted.bbl
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
@@ -3262,33 +3310,33 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ])
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 91.
+(Font)              scaled to size 10.0pt on input line 92.
  [2]
-File: figures/mstruc_gated.pdf Graphic file (type QTm)
- <use  "figures/mstruc_gated.pdf" >
+File: figures/mstruc_gated1.pdf Graphic file (type QTm)
+ <use  "figures/mstruc_gated1.pdf" >
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 112.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 113.
  [3]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 149.
+(Font)              scaled to size 7.3pt on input line 150.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 149.
+(Font)              scaled to size 5.5pt on input line 150.
  [4]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 4.01501pt on input line 161.
+(Font)              scaled to size 4.01501pt on input line 162.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 161.
+(Font)              scaled to size 10.0pt on input line 162.
 File: figures/gate_disp.pdf Graphic file (type QTm)
 
 <use  "figures/gate_disp.pdf" >
 File: figures/gate_swing.pdf Graphic file (type QTm)
  <use  "figures/gate_swing.pdf" >
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 197.
+(Font)              scaled to size 10.0pt on input line 198.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 197.
+(Font)              scaled to size 7.3pt on input line 198.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 197.
+(Font)              scaled to size 5.5pt on input line 198.
  [5]
 File: figures/psim.pdf Graphic file (type QTm)
 
@@ -3308,20 +3356,20 @@ File: figures/plsim150.pdf Graphic file (type QTm)
 File: figures/plsim75.pdf Graphic file (type QTm)
 
 <use  "figures/plsim75.pdf" >
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
  (SIM_paper_formatted.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 352.
  ) 
 Here is how much of TeX's memory you used:
- 26487 strings out of 427834
- 460001 string characters out of 3152470
- 561251 words of memory out of 3000000
- 30160 multiletter control sequences out of 15000+200000
- 193450 words of font info for 227 fonts, out of 3000000 for 9000
+ 27117 strings out of 427834
+ 475949 string characters out of 3152471
+ 580037 words of memory out of 3000000
+ 30790 multiletter control sequences out of 15000+200000
+ 720100 words of font info for 235 fonts, out of 3000000 for 9000
  1388 hyphenation exceptions out of 8191
- 53i,19n,92p,10448b,1022s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,19n,92p,10448b,1021s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on SIM_paper_formatted.pdf (9 pages).

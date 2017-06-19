@@ -98,6 +98,16 @@
 %%%%%%%%%% ENCODING
 %%%%%%%%%%
 \usepackage[utf8x]{inputenc} % Use it to include other characters than ABC
+\usepackage[T1]{fontenc} % sane font encoding
+\usepackage{textcomp} % provide lots of new symbols
+\usepackage{lmodern}
+\usepackage[sc,osf]{mathpazo}% for math
+
+
+\usepackage[scaled=0.86]{berasans}
+\usepackage{morefloats}
+\usepackage{pifont}
+\newcommand\diameter{\Pisymbol{psy}{'306}}
 %%%%%%%%%%
 %%%%%%%%%% MATH
 %%%%%%%%%%
@@ -106,19 +116,21 @@
 % \usepackage{amsfonts} % to load math symbols
 % \usepackage{mdwmath}
 % \usepackage{commath}
-\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{physics} % For using the ordinary derivative nomenclature
 \usepackage{gensymb} % Insert degree symbol
 \usepackage{chemformula} % chemical formulas
 \usepackage{siunitx} % All the SI unit nomenclature
   \sisetup{per=slash, load=abbr, output-complex-root = j, complex-root-position = before-number, round-mode=figures,round-precision=4}
+  \protected\def\numpi{\text{\ensuremath{\pi}}}
+  \sisetup{input-symbols = \numpi}
 % \usepackage{systeme} % For system of equations
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
 %%%%%%%%%%
 % \usepackage{mdwtab}
 % \usepackage{datetime} % Insert date and time
-\usepackage{multicol} % For side-by-side equatiosn
-\usepackage{microtype} % Enfore borders
+\usepackage{multicol} % For side-by-side equations
+\usepackage{microtype} % Enforce borders
 
 
 
@@ -140,6 +152,14 @@ font={\fontsize{12pt}{12}\selectfont}}
 \usetikzlibrary{positioning}
 \usetikzlibrary{arrows}
 \usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+colorlinks,
+linkcolor={black},
+citecolor={black},
+urlcolor={black}
+}
 
 % Used to create footers for permission
 \newcommand\blfootnote[1]{%
@@ -202,7 +222,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 \renewcommand{\^}{\hat}  % unit vector
 \newcommand*\diff{\mathop{}\!\mathrm{d}} % Define differential operator
 \newcommand{\e}{\mathrm{e}} % Straight-up exponential
-\renewcommand{\j}{\mathrm{j}\mkern1mu} % Straight-up exponential
+\renewcommand{\j}{{j}\mkern1mu} % Straight-up exponential
 \newcommand{\iu}{\mathrm{i}\mkern1mu}
 
 %  For crowded equations with fractions
@@ -277,7 +297,7 @@ font={\fontsize{12pt}{12}\selectfont}}
 % Uncomment out the next line if you have co-chairs.  You will also need to edit the titlepage.tex file.
 %\newcommand{\tamuchairtwo}{Additional Chair Name}
 \renewcommand{\tamumemberone}{Krzysztof A. Michalski}
-\newcommand{\tamumembertwo}{Chin Bing Su}
+\newcommand{\tamumembertwo}{Chin B. Su}
 \newcommand{\tamumemberthree}{M. Suhail Zubairy}
 \renewcommand{\tamudepthead}{Miroslav M. Begovic}
 

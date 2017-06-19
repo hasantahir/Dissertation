@@ -21,6 +21,21 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Johnson1972}
+P.~B. Johnson and R.~W. Christy, ``Optical constants of the noble metals,''
+  \emph{Physical Review B}, vol.~6, no.~12, pp. 4370--4379, Dec. 1972.
+
+\bibitem{Michalski2005}
+K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
+  in \emph{Encyclopedia of {RF} and Microwave Engineering}.\hskip 1em plus
+  0.5em minus 0.4em\relax John Wiley \& Sons, Inc., Apr. 2005.
+
+\bibitem{Michalski2015}
+K.~Michalski and J.~Mosig, ``{The Sommerfeld half-space problem revisited: from
+  radio frequencies and Zenneck waves to visible light and Fano modes},''
+  \emph{Journal of Electromagnetic Waves and Applications}, vol.~30, no.~1, pp.
+  1--42, Dec. 2015.
+
 \bibitem{Kempa1991}
 K.~Kempa, P.~Bakshi, J.~Cen, and H.~Xie, ``Spontaneous generation of plasmons
   by ballistic electrons,'' \emph{Physical Review B}, vol.~43, no.~11, pp.
@@ -51,11 +66,6 @@ M.~Krasheninnikov and A.~Chaplik, ``Instabilities of two-dimensional plasma
 K.~Michalski and J.~Mosig, ``{Multilayered media Green's functions in integral
   equation formulations},'' \emph{{IEEE} Transactions on Antennas and
   Propagation}, vol.~45, no.~3, pp. 508--519, Mar. 1997.
-
-\bibitem{Michalski2005}
-K.~A. Michalski, ``Electromagnetic field computation in planar multilayers,''
-  in \emph{Encyclopedia of {RF} and Microwave Engineering}.\hskip 1em plus
-  0.5em minus 0.4em\relax John Wiley \& Sons, Inc., Apr. 2005.
 
 \bibitem{Ouyang1992}
 F.~Ouyang, P.~E. Batson, and M.~Isaacson, ``Quantum size effects in the
@@ -178,10 +188,6 @@ D.~W. Lynch and W.~Hunter, ``Comments on the optical constants of metals and an
 K.~A. Michalski, ``On the low-order partial-fraction fitting of dielectric
   functions at optical wavelengths,'' \emph{{IEEE} Transactions on Antennas and
   Propagation}, vol.~61, no.~12, pp. 6128--6135, Dec. 2013.
-
-\bibitem{Johnson1972}
-P.~B. Johnson and R.~W. Christy, ``Optical constants of the noble metals,''
-  \emph{Physical Review B}, vol.~6, no.~12, pp. 4370--4379, Dec. 1972.
 
 \bibitem{Durach2007}
 M.~Durach, A.~Rusina, M.~I. Stockman, and K.~Nelson, ``Toward full
@@ -432,12 +438,6 @@ R.~Kastner, E.~Heyman, and A.~Sabban, ``Spectral domain iterative analysis of
 M.~Abramowitz and I.~A. Stegun, \emph{Handbook of Mathematical
   Functions}.\hskip 1em plus 0.5em minus 0.4em\relax New York: Guilford
   Publications, 2012.
-
-\bibitem{Michalski2015}
-K.~Michalski and J.~Mosig, ``{The Sommerfeld half-space problem revisited: from
-  radio frequencies and Zenneck waves to visible light and Fano modes},''
-  \emph{Journal of Electromagnetic Waves and Applications}, vol.~30, no.~1, pp.
-  1--42, Dec. 2015.
 
 \bibitem{Stern1967}
 F.~Stern, ``Polarizability of a two-dimensional electron gas,'' \emph{Physical
