@@ -20,7 +20,7 @@
 %%   \import{<path to file>}{<filename>.pdf_tex}
 %% Alternatively, one can specify
 %%   \graphicspath{{<path to file>/}}
-%% 
+%%
 %% For more information, please see info/svg-inkscape on CTAN:
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
@@ -50,15 +50,15 @@
   \makeatother%
   \begin{picture}(1,0.51086804)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{xsystem.pdf}}%
-    \put(0.38897421,0.4786025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$k_y$}}}}%
-    \put(0.78981324,0.4571028){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$k_{\p}$}}}}%
-    \put(0.87323082,0.07824723){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$k_x$}}}}%
-    \put(0.54400933,0.16579644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\v{\^u} $}}}}%
-    \put(0.57410435,0.07095144){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\v{\^x} $}}}}%
-    \put(0.35158337,0.00802544){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\v{\^z} $}}}}%
-    \put(0.26768206,0.19862739){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\v{\^v} $}}}}%
-    \put(0.41268543,0.23145835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\v{\^y} $}}}}%
-    \put(-0.00317332,0.40290894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$|\v{\^z}\x \v{k_{\p}}| $}}}}%
-    \put(0.51242238,0.11286694){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{$\psi $}}}}%
+    \put(0.38897421,0.4786025){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_y$}}}}%
+    \put(0.78981324,0.4571028){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{\p}$}}}}%
+    \put(0.87323082,0.07824723){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_x$}}}}%
+    \put(0.54400933,0.16579644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^u} $}}}}%
+    \put(0.57410435,0.07095144){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^x} $}}}}%
+    \put(0.35158337,0.00802544){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^z} $}}}}%
+    \put(0.26768206,0.19862739){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^v} $}}}}%
+    \put(0.41268543,0.23145835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^y} $}}}}%
+    \put(-0.00317332,0.40290894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$|\v{\^z}\x \v{k}_{\p}| $}}}}%
+    \put(0.51242238,0.11286694){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\psi $}}}}%
   \end{picture}%
 \endgroup%

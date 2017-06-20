@@ -9,6 +9,7 @@
 \contentsline {chapter}{LIST OF TABLES}{xvi}{section*.7}
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
 \vskip +10pt
+\contentsline {section}{\numberline {1.1}Outline}{3}{section.1.1}
 \contentsline {chapter}{\numberline {2}\uppercase {Optical nanoantennas*}}{5}{chapter.2}
 \vskip +10pt
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
@@ -32,7 +33,7 @@
 \contentsline {subsection}{\numberline {2.6.2}Photon emitters and optical fluorescence}{54}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Raman Spectroscopy}{55}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Communication with nanocircuitry}{56}{subsection.2.6.4}
-\contentsline {chapter}{\numberline {3}\uppercase {Computation of fields in multi-layered structures}}{59}{chapter.3}
+\contentsline {chapter}{\numberline {3}\uppercase {Computation of fields in multilayer structures}}{59}{chapter.3}
 \vskip +10pt
 \contentsline {section}{\numberline {3.1}Theory}{59}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Transmission line representation of Maxwell's equations}{60}{subsection.3.1.1}
@@ -60,12 +61,11 @@
 \contentsline {section}{\numberline {4.4}Conclusion}{107}{section.4.4}
 \contentsline {chapter}{\numberline {5}\uppercase {Nanoscopy using a semiconductor heterostructure as the sample stage}}{108}{chapter.5}
 \vskip +10pt
-\contentsline {section}{\numberline {5.1}Abstract}{108}{section.5.1}
-\contentsline {section}{\numberline {5.2}Introduction}{108}{section.5.2}
-\contentsline {section}{\numberline {5.3}Theory}{111}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Dispersion relation}{111}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Image Reconstruction}{115}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Simulated Results}{120}{section.5.4}
+\contentsline {section}{\numberline {5.1}Introduction}{108}{section.5.1}
+\contentsline {section}{\numberline {5.2}Theory}{111}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Dispersion relation}{111}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Image Reconstruction}{115}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Simulated Results}{120}{section.5.3}
 \contentsline {chapter}{\numberline {6}\uppercase {Conclusion and Future recommendations}}{123}{chapter.6}
 \vskip +10pt
-\contentsline {chapter}{REFERENCES}{124}{section*.55}
+\contentsline {chapter}{REFERENCES}{125}{section*.55}

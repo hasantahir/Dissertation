@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'yagi.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{375.08567936bp}%
+    \setlength{\unitlength}{352.19353607bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,16 +48,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.51243371)%
+  \begin{picture}(1,0.51232545)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{yagi.pdf}}%
-    \put(0.98639244,0.24141403){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
-    \put(0.29182978,0.49409672){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
-    \put(0.26783333,0.00032259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Feed}}}}%
-    \put(-0.00161296,0.201071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_r$}}}}%
-    \put(0.06285536,0.37661095){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Reflector}}}}%
-    \put(0.59311283,0.00032259){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Directors}}}}%
-    \put(0.87393376,0.1770674){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_d$}}}}%
-    \put(0.67593213,0.49043873){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v E$}}}}%
-    \put(0.83348057,0.40459428){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v k$}}}}%
+    \put(0.98424443,0.24115766){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
+    \put(0.29076783,0.49344524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
+    \put(0.26680889,0.00044321){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Feed}}}}%
+    \put(-0.00221607,0.20087772){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_r$}}}}%
+    \put(0.05274058,0.43048615){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Reflector}}}}%
+    \put(0.59157977,0.00044321){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Directors}}}}%
+    \put(0.87196159,0.17691165){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$L_d$}}}}%
+    \put(0.67426956,0.48979298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v E$}}}}%
+    \put(0.83157166,0.40408276){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v k$}}}}%
   \end{picture}%
 \endgroup%

@@ -14,12 +14,12 @@
 xmin=0,
 xmax=80,
 xlabel style={font=\color{white!15!black}},
-xlabel={$k_x (\mathrm{rad~\mu m}^{-1})$},
+xlabel={$k_x (\SI{}{\radian \per \m})$},
 ymin=5,
 ymax=40,
 ylabel style={font=\color{white!15!black}},
 axis background/.style={fill=white},
-legend style={at={(1.1,0.5)}, anchor=north, legend cell align=left,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left,
 align=left, draw=white!15!black}
 ]
 \addplot [color=mycolor1, line width=1.4pt]
@@ -76,7 +76,6 @@ align=left, draw=white!15!black}
 78.1799548420869	40\\
 };
 
-
 \addplot [color=mycolor2, dotted, line width=2.0pt]
   table[row sep=crcr]{%
 1.5	5\\
@@ -131,7 +130,6 @@ align=left, draw=white!15!black}
 12	40\\
 };
 
-
 \addplot [color=mycolor3, dashdotted, line width=1.4pt]
   table[row sep=crcr]{%
 0.735224094629267	5\\
@@ -184,7 +182,6 @@ align=left, draw=white!15!black}
 10.1815235863233	39.2857142857143\\
 10.2145141585983	40\\
 };
-
 
 \end{axis}
 \end{tikzpicture}%

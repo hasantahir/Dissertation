@@ -1,7 +1,7 @@
-\chapter{\uppercase{Computation of fields in multi-layered structures}}
+\chapter{\uppercase{Computation of fields in multilayer structures}}
 %
 
-Multi-layered structures are the basis of modern semiconductor based integrated circuits, and they have been a subject of considerable interest in theoretical studies to gain an understanding of electromagnetic fields. Most commonly, the fields are found in terms of the dyadic Green functions (DGFs) of the environment, which defines the vector field distribution due to a vector point source \cite{Bladel2007}. Due to a current $\v J$ distributed in a region defined by a surface, $r'$, the surface fields are expressed as in terms of an inner product,
+Layered media are the basis of modern semiconductor integrated circuits that have been the subject of numerous theoretical studies designed to gain an understanding of how the electromagnetic fields behave in an environment in which the source or receiver is embedded in layers with different thicknesses and material properties. Most commonly, the fields are found in terms of the dyadic Green functions (DGFs) of the environment, which defines the vector field distribution due to a vector point source \cite{Bladel2007}. The surface fields are expressed in terms of a current $\v J$ distributed in a region defined by a surface, $r'$, by the inner product,
 %
 \begin{subequations}
   \begin{align}
@@ -22,7 +22,7 @@ $\tnsr{\v{G}}^\mathrm{HM}$.
 %%%%%%%
 \section{Theory}
 %
-We follow the well-established approach of field computation for planar multi-layered media \cite{Michalski2005,Michalski1997}, in which, an equivalent transmission line (TL) network is first set up for the structure, and then TL based GFs are computed.
+Here we follow the well-established approach of field computation for planar, layered media \cite{Michalski2005,Michalski1997}, in which, an equivalent transmission line (TL) network is first set up for the structure, and then TL based GFs are computed.
 %%
 %%
 %%
@@ -40,19 +40,19 @@ As shown in Fig. \ref{fig:TL_equivalent}a, it is assumed that the structure is u
   \label{eq:MaxE}%
 \end{subequations}
 %
-For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one $d/dz$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{Felsen1994}. By taking the Fourier transform,
+For boundary-value problems displaying symmetry along the $z$ direction, it is desirable to decompose the $\v{\del}$ operator into two components, one longitudinal $d/dz$ and the other a transverse (to z) operator, $\v{\del_t}$ \cite[p. 64]{Felsen1994}. By taking the Fourier transform,
 %
 \begin{equation}
-  \mathcal{F}[f(\v{\p},z)] \equiv \ti{F}(\v{k}_{\p},z) = \infint \infint
-  f(\v{\p},z) \e^{-\j \v{k}_{\p} \cdot \v{\p}} \diff{x} \diff{y}
+  \mathcal{F}[f(\v{k}_{\p},z)] \equiv \ti{F}(\v{k}_{\p},z) = \infint \infint
+  f({\vp},z) \e^{-\j \v{k}_{\p} \cdot {\vp}} \diff{x} \diff{y}
   \label{eq:Fourier}
 \end{equation}
 %
-the field computation is considerably simplified by switching to the spectral frequency domain $\v {k_{\p}}$, which reduces the complexity of the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + d/dz\, \v{\^{z}}$, which contains a derivative term only in z-direction. In \eqref{eq:Fourier}, the cylindrical coordinates are expressed as,
+the field computation is considerably simplified by switching to the spectral frequency domain $\v{k}_{\p}$, which reduces the complexity of the vector differential operator, $\v{\del}$ to $-\j k_x \v{\^{x}} - \j k_y \v{\^{y}} + d/dz\, \v{\^{z}}$, which contains a derivative term only in z-direction. In \eqref{eq:Fourier}, the cylindrical coordinate vectors are expressed as,
 %
 \begin{equation}
-  \v{\p} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
-  \v{k_{\p}} = k_x\v{\^{x}} + k_y\v{\^{y}},
+  {\vp} = x\v{\^{x}} + y\v{\^{y}}, \quad \text{and} \quad
+  \v{k_{\vp}} = k_x\v{\^{x}} + k_y\v{\^{y}},
   \label{eq:rect2cylindrical}
 \end{equation}
 %
@@ -358,7 +358,7 @@ By substituting \eqref{eq:TLGF_v_telelgraphers} and \eqref{eq:TLGF_i_telelgraphe
 %
 \begin{subequations}
   \begin{align}
-    \ti{\tnsr{\v {G}}^\mathrm{EJ}}(\v k_{\p}, z | z') ={}& - \v{\^u} \v{\^u} V_i^{\mathrm{TM}} - \v{\^v} \v{\^v} V_i^{\mathrm{TE}}  + \v{\^z} \v{\^u}
+    \ti{\tnsr{\v {G}}}^\mathrm{EJ}(\v k_{\p}, z | z') ={}& - \v{\^u} \v{\^u} V_i^{\mathrm{TM}} - \v{\^v} \v{\^v} V_i^{\mathrm{TE}}  + \v{\^z} \v{\^u}
     \frac{k_{\p}}{\O \E(z)} I_i^{\mathrm{TM}}  \nonumber \\
     & + \v{\^u} \v{\^z}
     \frac{k_{\p}}{\O \E(z')} V_v^{\mathrm{TM}} + \v{\^z} \v{\^z}
@@ -381,8 +381,8 @@ By substituting \eqref{eq:TLGF_v_telelgraphers} and \eqref{eq:TLGF_i_telelgraphe
 By taking an inverse Fourier transform \eqref{eq:invFourier},
 %
 \begin{equation}
-  \mathcal{F}^{-1}[\ti{F}(\v{k}_{\p},z)] \equiv f(\v{\p},z) = \frac{1}{(2 \pi )^2}\infint \infint
-  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot \v{\p}} \diff{k_x} \diff{k_y}.
+  \mathcal{F}^{-1}[\ti{F}(\v{k}_{\p},z)] \equiv f({\vp},z) = \frac{1}{(2 \pi )^2}\infint \infint
+  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot {\vp}} \diff{k_x} \diff{k_y}.
   \label{eq:invFourier}
 \end{equation}
 %
@@ -397,15 +397,15 @@ we find the spatial domain analogues of the spectral domain DGFs, which are  def
 we rewrite \eqref{eq:invFourier} in cylindrical coordinates,
 %
 \begin{equation}
-  \mathcal{F}^{-1} [\ti{F}(\v{k}_{\p},z)] \equiv f(\v{\p},z) = \frac{1}{(2\pi)^2} \int\limits_0^{\inf} \int\limits_0^{2\pi}
-  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot \v{\p}} k_{\p} \diff{k_{\p}} \diff{\psi}.
+  \mathcal{F}^{-1} [\ti{F}(\v{k}_{\p},z)] \equiv f({\vp},z) = \frac{1}{(2\pi)^2} \int\limits_0^{\inf} \int\limits_0^{2\pi}
+  \ti{F}(\v{k}_{\p},z) \e^{\j \v{k}_{\p} \cdot {\vp}} k_{\p} \diff{k_{\p}} \diff{\psi}.
   \label{eq:invFourier_cylindrical}
 \end{equation}
 %
 Applying the Fourier-Bessel transform (FBT) to \eqref{eq:invFourier_cylindrical} which states that,
 \begin{equation}
   \frac{1}{2\pi}\int\limits_0^{2\pi}
-  \e^{\j \v{k}_{\p} \cdot \v{\p}} \diff{\psi} = J_0(k_{\p}\p),
+  \e^{\j \v{k}_{\p} \cdot {\vp}} \diff{\psi} = J_0(k_{\p}\p),
   \label{eq:hankel_transofrm}
 \end{equation}
 %
@@ -427,8 +427,8 @@ In some cases, the Bessel function may be up to an order of 2, therefore, genera
 Following the above procedure, we write the spatial domain DGFs as:
 %
 \begin{equation}
-    {\tnsr{\v {G}}^\mathrm{\kappa}}(\v {\p}, z | z') = \mathcal{F}^{-1} \left[ \ti{\tnsr{\v {G}}}^\mathrm{\kappa}(\v k_{\p}, z | z') \right]
-    \equiv \mathcal{S}_n\left \{\ti{\tnsr{\v {G}}}^\mathrm{\kappa}(\v k_{\p}, z | z')\right \}
+    {\tnsr{\v {G}}^\upkappa}({\vp}, z | z') = \mathcal{F}^{-1} \left[ \ti{\tnsr{\v {G}}}^\upkappa(\v k_{\p}, z | z') \right]
+    \equiv \mathcal{S}_n\left \{\ti{\tnsr{\v {G}}}^\upkappa(\v k_{\p}, z | z')\right \}
   \label{eq:spatialDGF_generalized}%
 \end{equation}
 %
@@ -462,11 +462,11 @@ Starting with \eqref{eq:spectralDGF}, we now discuss each step in detail to obta
 In general, a spatial domain DGF can be expressed in a matrix form:
 %
 \begin{equation}
-  \tnsr{\v {G}}^\mathrm{\kappa} =
+  \tnsr{\v {G}}^\upkappa =
   \begin{bmatrix}
-    G_{xx}^\mathrm{\kappa} & G_{xy}^\mathrm{\kappa} & G_{xz}^\mathrm{\kappa} \\
-    G_{yx}^\mathrm{\kappa} & G_{yy}^\mathrm{\kappa} & G_{yz}^\mathrm{\kappa} \\
-    G_{zx}^\mathrm{\kappa} & G_{zy}^\mathrm{\kappa} & G_{zz}^\mathrm{\kappa} \\
+    G_{xx}^\upkappa & G_{xy}^\upkappa & G_{xz}^\upkappa \\
+    G_{yx}^\upkappa & G_{yy}^\upkappa & G_{yz}^\upkappa \\
+    G_{zx}^\upkappa & G_{zy}^\upkappa & G_{zz}^\upkappa \\
   \end{bmatrix}
   \label{eq:matrix_dyadicG},
 \end{equation}
@@ -501,7 +501,8 @@ and the recurrence relation for Bessel-type functions \cite{abramowitz2012},
 \begin{equation}
   \begin{split}
     G_{xx}^\mathrm{EJ} ={}& - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \frac{\cos 2 \phi}{2} \mathcal{S}_2 \left \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE} \right \} \\
-    ={}& - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \frac{\cos 2 \phi}{2} \left[\frac{2}{\p} \mathcal{S}_1 \left \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \right \} - \mathcal{S}_0 \left \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \right \} \right]. \\
+    ={}& - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \frac{1}{2} \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \\
+    {}& \frac{\cos 2 \phi}{2} \left[\frac{2}{\p} \mathcal{S}_1 \left \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \right \} - \mathcal{S}_0 \left \{  V_i^\mathrm{TM} -  V_i^\mathrm{TE}  \right \} \right]. \\
   \end{split}
   \label{eq:Gxx_2nd_equation}
 \end{equation}
@@ -524,7 +525,7 @@ Following similar procedure, the remaining components of both electric and magne
   \begin{center}
     \begin{tabular}{| C{1cm} | C{12cm} |  @{}m{0pt}@{}}
       \hline
-      GF & $\mathrm{\kappa} = \mathrm{EJ}$ &\\ [1.5ex]
+      GF & $\upkappa = \mathrm{EJ}$ &\\ [1.5ex]
       \hline\hline
       $G_{xx}$ & $ \displaystyle - \cos^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TM} \right \} - \sin^2 \psi \, \mathcal{S}_0 \left \{ V_i^\mathrm{TE} \right \} + \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ &\\ [3.5ex]
       $G_{xy}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {V_i^\mathrm{TM} - V_i^\mathrm{TE}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{V_i^\mathrm{TM} - V_i^\mathrm{TE}}{k_{\p}} \right \}$ &\\ [3.5ex]
@@ -534,7 +535,7 @@ Following similar procedure, the remaining components of both electric and magne
       $G_{yz}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z')} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} V_v^\mathrm{TM}} \right \}$  &\\ [3.5ex]
       $G_{zx}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \cos \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$    &\\ [3.5ex]
       $G_{zy}$ & $\displaystyle \frac{\eta_0}{\j k_0 \E(z)} \sin \psi \,  \mathcal{S}_1 \left \{ {k_{\p} I_i^\mathrm{TM}} \right \}$   &\\ [3.5ex]
-      $G_{zz}$ & $\displaystyle -\frac{\eta_0^2}{\j k_0^2 \E(z) \E(z')} \mathcal{S}_0 \left \{ {k^2_{\p} I_v^\mathrm{TM}} \right \} - \frac{\eta_0}{\j k_0 \E(z)} \delta(\v{\p}) \delta(z -z')$  &\\ [3.5ex]
+      $G_{zz}$ & $\displaystyle -\frac{\eta_0^2}{\j k_0^2 \E(z) \E(z')} \mathcal{S}_0 \left \{ {k^2_{\p} I_v^\mathrm{TM}} \right \} - \frac{\eta_0}{\j k_0 \E(z)} \delta({\vp}) \delta(z -z')$  &\\ [3.5ex]
       \hline \hline
     \end{tabular}
   \end{center}
@@ -550,7 +551,7 @@ Following similar procedure, the remaining components of both electric and magne
   \begin{center}
     \begin{tabular}{| C{1cm} | C{12cm} |  @{}m{0pt}@{}}
       \hline
-      GF & $\mathrm{\kappa} = \mathrm{HJ}$ &\\ [1.5ex]
+      GF & $\upkappa = \mathrm{HJ}$ &\\ [1.5ex]
       \hline\hline
       $G_{xx}$ & $ \displaystyle - \frac{\sin (2 \psi)}{2} \mathcal{S}_0 \left \{ {I_i^\mathrm{TE} - I_i^\mathrm{TM}} \right \} + \frac{\sin (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ &\\ [3.5ex]
       $G_{xy}$ & $ \displaystyle  \cos^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TE} \right \} + \sin^2 \psi \, \mathcal{S}_0 \left \{ I_i^\mathrm{TM} \right \} - \frac{ \cos (2 \psi)}{\p} \mathcal{S}_1 \left \{ \frac{I_i^\mathrm{TE} - I_i^\mathrm{TM}}{k_{\p}} \right \}$ &\\ [3.5ex]
@@ -712,18 +713,18 @@ A Fourier inversion following a similar procedure used to convert fields DGFs \e
 \end{table}
 %
 
-The above formulation is applicable to only multi-layered structure in which the layers are stacked along the x-y plane. The formulation allows insertion of arbitrarily oriented electric current source that can be placed anywhere in the structure. Once the magnetic vector potential, $\v A$, is computed using \eqref{eq:G^A}, the corresponding electric and magnetic fields can be found through \eqref{eq:EinA} and \eqref{eq:defA} respectively.
+The above formulation is applicable to only multilayer structures in which the layers are stacked along the x-y plane. The formulation allows insertion of arbitrarily oriented electric current source that can be placed anywhere in the structure. Once the magnetic vector potential, $\v A$, is computed using \eqref{eq:G^A}, the corresponding electric and magnetic fields can be found through \eqref{eq:EinA} and \eqref{eq:defA} respectively.
 %%
 %%
 %%
 \section{Computation of Transmission line Green functions}
 %
-Following network analysis techniques, the voltage and current at any point in a transmission line can be obtained \cite{Felsen1994}. Each layer in the multi-layered structure is represented by a section in the transmission line which is specified by its characteristic impedance $Z$ and the propagation constant $k_z$. As an example, an equivalent TL network for a semiconductor heterostructure that forms the substrate of the modern transistors is shown in Fig. \ref{fig:TL_equivalent}.
+The voltage and current at any point in a transmission line can be obtained \cite{Felsen1994} using simple network analysis techniques. Each layer in the multilayer structure is represented by a section in the transmission line which is specified by its characteristic impedance $Z$ and the propagation constant $k_z$. As an example, an equivalent TL network for a semiconductor heterostructure that forms the substrate of the modern transistors is shown in Fig. \ref{fig:TL_equivalent}.
 %
 \begin{figure}[t!]
   \centering
-  \def\svgwidth{\linewidth}
-  \input{data/sommint/figures/multilayers.pdf_tex}
+  \def\svgwidth{.75\linewidth}
+  \input{data/sommint/figures/mlayers.pdf_tex}
   \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network}
   \label{fig:TL_equivalent}
 \end{figure}

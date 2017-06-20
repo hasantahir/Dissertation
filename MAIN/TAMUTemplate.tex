@@ -1,3 +1,7 @@
+% arara: xelatex
+% arara: bibtex
+% arara: xelatex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  New template code for TAMU Theses and Dissertations starting Fall 2016.
@@ -102,6 +106,7 @@
 \usepackage{textcomp} % provide lots of new symbols
 \usepackage{lmodern}
 \usepackage[sc,osf]{mathpazo}% for math
+\usepackage[open,openlevel=4]{bookmark}
 
 
 \usepackage[scaled=0.86]{berasans}
@@ -124,6 +129,9 @@
   \protected\def\numpi{\text{\ensuremath{\pi}}}
   \sisetup{input-symbols = \numpi}
 % \usepackage{systeme} % For system of equations
+\usepackage{upgreek}
+
+
 %%%%%%%%%%
 %%%%%%%%%% TABLES and FORMATTING
 %%%%%%%%%%
@@ -134,7 +142,7 @@
 
 
 
-% \usepackage{rotating}
+\usepackage{rotating}
 % pdflatex -synctex=-1
 % \usepackage{hyperref}
 %%%%%%%%%%
@@ -168,6 +176,43 @@ urlcolor={black}
   \addtocounter{footnote}{-1}%
   \endgroup
 }
+
+%%%%%%%%%%
+%%%%%%%%%% Glossaries
+%%%%%%%%%%
+\usepackage[section,sanitize]{glossaries}
+\usepackage{glossary-longragged}
+
+\newglossarystyle{wspr}{%
+  \renewenvironment{theglossary}%
+    {\begin{longtable}{@{}l@{\,}>{\raggedright}p{\glsdescwidth}%
+       >{\raggedright}p{\glspagelistwidth}@{}}}%
+    {\end{longtable}}%
+  \renewcommand*{\glossaryheader}{%
+    \bfseries\entryname~&\bfseries\descriptionname&
+    \bfseries\pagelistname\tabularnewline\endhead}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \glsentryitem{##1}\glstarget{##1}{##2} & ##3 & ##5\tabularnewline}%
+  \renewcommand*{\glossarysubentryfield}[6]{%
+     &
+     \glssubentryitem{##2}%
+     \glstarget{##2}{\strut}##4 & ##6\tabularnewline}%
+  \renewcommand*{\glsgroupskip}{ & &\tabularnewline}%
+}
+
+\glossarystyle{wspr}
+\glsdisablehyper
+
+\makeglossaries
+\renewcommand\glossaryname{Nomenclature}
+\renewcommand\entryname{Symbol}
+\renewcommand\pagelistname{Page}
+%\addtolength\glsdescwidth{1cm}
+\addtolength\glspagelistwidth{1.8cm}
+
+
+\usepackage{docmute}
 
 %%%%%%%%%%
 %%%%%%%%%% TIPS and TRICKS
@@ -312,6 +357,21 @@ urlcolor={black}
 \include{data/dedication}
 \include{data/acknowledgements}
 \include{data/contributors}
+
+
+\renewcommand\glossarypreamble{%
+  \addcontentsline{toc}{chapter}{Nomenclature}
+  \thispagestyle{chapter}
+  Most mathematical symbols used in this document are listed herein with page number cross-referencing.
+  Page numbers listed will not include where these symbols are used in graphs or some figures.
+  There are some cases where the same symbol has been used for multiple purposes; these should be unambiguous based on the context of the work.
+
+  In mathematical contexts, care has been take to be consistent in the use of parentheses for function arguments (such as $f(x)=x^2$) and square brackets for both grouping ($A\times\gp{B\times C}$) and vector/matrix notation ($\vect F = \inlinevect{F_x,F_y,F_z}$).
+  \par\bigskip
+}
+\small\printglossary[title=\glossaryname,toctitle=\glossaryname]\normalsize
+
+
 % \include{data/nomenclature}
 %
 \include{data/lists}  % This is simply a file that formats and adds your toc, lof, and lot, please do not edit this unless you have a specific need.
@@ -347,7 +407,7 @@ urlcolor={black}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{REFERENCES}
-
+\bookmark[dest=REFERENCES]{References}
 \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
 
 %This file is a .bib database that contains the sources.

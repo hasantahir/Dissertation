@@ -53,9 +53,9 @@ M.~Dyakonov and M.~S. Shur, ``Plasma wave electronics for terahertz
 
 \bibitem{Williams2003}
 B.~S. Williams, S.~Kumar, H.~Callebaut, Q.~Hu, and J.~L. Reno, ``Terahertz
-  quantum-cascade laser at $\lambda$≈ 100 $\mu$ m using metal waveguide for
-  mode confinement,'' \emph{Applied Physics Letters}, vol.~83, no.~11, pp.
-  2124--2126, Sep. 2003.
+  quantum-cascade laser at $\lambda \approx 100 \si{\micm}$ using metal
+  waveguide for mode confinement,'' \emph{Applied Physics Letters}, vol.~83,
+  no.~11, pp. 2124--2126, Sep. 2003.
 
 \bibitem{Krasheninnikov1980}
 M.~Krasheninnikov and A.~Chaplik, ``Instabilities of two-dimensional plasma
@@ -541,7 +541,7 @@ P.~Kravanja, M.~V. Barel, O.~Ragos, M.~Vrahatis, and F.~Zafiropoulos, ``{ZEAL}:
   2000.
 
 \bibitem{Dellnitz2002c}
-M.~Dellnitz, O.~Schütze, and Q.~Zheng, ``{Locating all the zeros of an
+M.~Dellnitz, O.~Sch{\"{u}}tze, and Q.~Zheng, ``{Locating all the zeros of an
   analytic function in one complex variable},'' \emph{Journal of Computational
   and Applied Mathematics}, vol. 138, no.~2, pp. 325--333, Jan. 2002.
 
@@ -733,5 +733,15 @@ V.~V. Popov, M.~S. Shur, G.~M. Tsymbalov, and D.~V. Fateev, ``Higher-order
   plasmon reson in {GaN}-based field-effect transistor arrays,''
   \emph{International Journal of High Speed Electronics and Systems}, vol.~17,
   no.~03, pp. 557--566, Sep. 2007.
+
+\bibitem{Zhao_2011}
+Y.~Zhao, N.~Engheta, and A.~Al{\`{u}}, ``Homogenization of plasmonic
+  metasurfaces modeled as transmission-line loads,'' \emph{Metamaterials},
+  vol.~5, no. 2-3, pp. 90--96, Jun. 2011.
+
+\bibitem{Pors_2013}
+A.~Pors and S.~I. Bozhevolnyi, ``Plasmonic metasurfaces for efficient phase
+  control in reflection,'' \emph{Optics Express}, vol.~21, no.~22, p. 27438,
+  Nov. 2013.
 
 \end{thebibliography}

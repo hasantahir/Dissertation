@@ -14,7 +14,7 @@
 xmin=0,
 xmax=80,
 xlabel style={font=\color{white!15!black}},
-xlabel={$k_x (\mathrm{rad~\mu m}^{-1})$},
+xlabel={$k_x (\SI{}{\radian \per \m})$},
 ymin=5,
 ymax=40,
 ylabel style={font=\color{white!15!black}},

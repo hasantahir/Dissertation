@@ -190,7 +190,7 @@ The polynomial in \eqref{eq:poly} can also be equivalently represented by a \emp
     0 & 0 & 1 & \cdots & 0 \\
     \vdots & \vdots & \ddots & \vdots \\
     0 & 0 & 0 & \cdots & 1 \\
-    -\sigma_0 & -\sigma_1 & -\sigma_1 & \cdots & \sigma_{N-1} \\
+    -\sigma_0 & -\sigma_1 & -\sigma_2 & \cdots & \sigma_{N-1} \\
   \end{bmatrix},
   \label{eq:A}
 \end{equation}
@@ -389,32 +389,32 @@ We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostruct
 
 The dispersion curves for each structure type at varying temperatures and electron concentrations are plotted in Fig. \ref{fig:dispersion_hif_lowT}.
 %
-\begin{figure}[!htbp]
+\begin{sidewaysfigure}
   \centering
-  \subfloat[]{\includegraphics[height = 2.4in]{gated_disp.tikz}
-  \label{fig:gated_hf_lt}} \hfil
-  \subfloat[]{\includegraphics[height = 2.4in]{backgated_disp.tikz}
+  \subfloat[]{\includegraphics[height = 2.8in]{gated_disp1.tikz}
+  \label{fig:gated_hf_lt}}
+  \subfloat[]{\includegraphics[height = 2.8in]{backgated_disp.tikz}
   \label{fig:backgated_hf_lt}}
-  \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp.tikz}
+  \subfloat[]{\includegraphics[height = 2.8in]{ungated_disp.tikz}
   \label{fig:ungated_hf_lt}}
-  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
   \label{fig:dispersion_hif_lowT}
-\end{figure}
+\end{sidewaysfigure}
 %
 
 To observe the effect of temperature, we now plot the dispersion curves at room temperature ($T = \SI{295}{\kelvin}$) which corresponds to a scattering time, $\tau$ of $\SI{114}{\fs}$.
 % %
-\begin{figure}[!htbp]
+\begin{sidewaysfigure}
   \centering
-  \subfloat[]{\includegraphics[height = 2.4in]{gated_disp_lossy.tikz}
-  \label{fig:gated_hf_ht}} \hfil
-  \subfloat[]{\includegraphics[height = 2.4in]{backgated_disp_lossy.tikz}
+  \subfloat[]{\includegraphics[height = 2.8in]{gated_disp_lossy.tikz}
+  \label{fig:gated_hf_ht}}
+  \subfloat[]{\includegraphics[height = 2.8in]{backgated_disp_lossy.tikz}
   \label{fig:backgated_hf_ht}}
-  \subfloat[]{\includegraphics[height = 2.4in]{ungated_disp_lossy.tikz}
+  \subfloat[]{\includegraphics[height = 2.8in]{ungated_disp_lossy.tikz}
   \label{fig:ungated_hf_ht}}
-  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
   \label{fig:dispersion_hif_hiT}
-\end{figure}
+\end{sidewaysfigure}
 %
 
 The conducting layer in the gated and back-gated cases depicts the gate terminal which is voltage biased in a normal transistor operation. By varying the voltage, we can subsequently modify the electron density in the 2DEG channel. In Figs. \ref{fig:dispersion_lof_lowT} and \ref{fig:dispersion_lof_hiT}, the dispersion curves of gated and backgated structures are plotted for $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{} and \SI{295}{\kelvin} respectively.

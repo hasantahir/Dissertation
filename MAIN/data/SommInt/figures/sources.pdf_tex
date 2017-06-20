@@ -70,9 +70,8 @@
     \put(0.29433677,1.22260759){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\ti{J}_x $}}}}%
     \put(0.76434429,1.11986014){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$i^{\mathrm{TM}}=-\ti{J}_x $}}}}%
     \put(0.76434429,0.6224051){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$i^{\mathrm{TE}}=-\ti{J}_y $}}}}%
-    \put(0.2623293,0.69174327){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\ti{J}_x $}}}}%
+    \put(0.2623293,0.69174327){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\ti{J}_y $}}}}%
     \put(0.74233918,0.19560577){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$v^{\mathrm{TM}}=\frac{k_{\p}}{\O \E}\ti{J}_z $}}}}%
-    \put(1.38745727,0.29250681){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
     \put(0.2722311,0.21276336){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\ti{J}_z $}}}}%
     \put(0.05027962,0.21689945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\v{\^y} $}}}}%
   \end{picture}%

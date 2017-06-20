@@ -1,18 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  New template code for TAMU Theses and Dissertations starting Fall 2016.
-%
-%  Author: Sean Zachary Roberson
-%	 Version 3.17.01
-%  Last updated 1/10/2017
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                           SECTION I
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \pagestyle{plain} % No headers, just page numbers
 \pagenumbering{arabic} % Arabic numerals
 \setcounter{page}{1}
@@ -20,30 +5,31 @@
 
 \chapter{\uppercase {Introduction}}
 
-In present times, the ubiquity of telecommunication gadgetry in our lives has necessitated the need for device miniaturization without any compromise on the performance. We are witnessing an age in which microwave frequency based communication systems, that have been at the forefront of the wireless revolution for the past three decades, are reaching their saturation in terms of performance. Currently, millimeter wave devices are emerging that are the driving force of the so-called \emph{5G movement}. Following the trends of telecommunication, it is predicted that terahertz frequency based communication systems will soon be the most prominent in the near future.
+In present times, the omni-presence of telecommunication gadgetry in our lives has necessitated the need for device miniaturization without any compromise on the performance. We are witnessing an age in which microwave frequency based communication systems, that have been at the forefront of the wireless revolution for the past three decades, are reaching their saturation in terms of performance. Currently, millimeter wave devices are emerging that are the driving force of the so-called \emph{5G movement}. Following the trends of telecommunication, it is predicted that terahertz frequency based communication systems will be ubiquitous in the near future.
 
-Until recently, terahertz (THz) frequency systems had been overlooked compared to optical and microwave counterparts, mainly due to lack of availability of suitable materials. Today, with the technological advancement in the semiconductor fabrication, the terahertz field has grown exponentially. It is now possible to engineer terahertz radiators as well as detectors from devices that are derived from conventional field-effect transistors \cite{Kempa1991,Dyakonov1993,Dyakonov2001}. By epitaxially growing a few nanometers thick layers of group III-V semiconductors, THz quantum-cascade lasers have been realized \cite{Williams2003}. Terahertz emitters that can be tuned are fabricated utilizing the instability in an electrically-driven plasma \cite{Krasheninnikov1980} that exists in the form of a thin sheet of free charges known as a two-dimensional electron gas (2DEG). Prediction of spontaneous emission in the terahertz frequency was made \cite{Kempa1991}, in light of a current passing through the 2DEG.
+Until recently, terahertz (THz) frequency systems had been overlooked compared to optical and microwave counterparts, mainly due to a lack of compact terahertz sources with sufficient power for wireless applications. Today, with the technological advancement in the semiconductor fabrication, the terahertz field has grown exponentially. It is now possible to engineer terahertz sources as well as detectors from devices that are derived from conventional field-effect transistors \cite{Kempa1991,Dyakonov1993,Dyakonov2001}. By epitaxially growing a few nanometers thick layers of group III-V semiconductors, THz quantum-cascade lasers have been realized \cite{Williams2003}. Terahertz emitters that can be tuned are fabricated utilizing the instability in an electrically-driven plasma \cite{Krasheninnikov1980} that exists in the form of a thin sheet of free charges known as a two-dimensional electron gas (2DEG). Prediction of spontaneous emission in the terahertz frequency regime was made
+\cite{Kempa1991}, in light of a current passing through the 2DEG.
 
-The plasma wave propagation mechanism due to the current driven instabilities in the 2DEG is analogous to surface plasmon polariton (SPP), which is a type of surface wave existing at a metal-dielectric interface at optical frequencies. Lately, there has been an immense interest in graphene material and its prospects in the terahertz frequency sources and detectors. While, the electronic properties of graphene are unparalleled, its integration into systems has proved to be very difficult thus far. On the other hand, 2DEG based devices that are fabricated out of a III-V semiconductor heterostructure can be easily integrated with silicon based electronic devices.
+The plasma wave propagation mechanism due to the current driven instabilities in the 2DEG is analogous to surface plasmon polariton (SPP), which is a type of surface wave existing at a metal-dielectric interface at optical frequencies. Lately, there has been an immense interest in graphene material and its prospects in the development of terahertz frequency sources and detectors. While, the electronic properties of graphene are unparalleled, its integration into electronic systems has proved to be very difficult thus far. On the other hand, 2DEG based devices that are fabricated out of a III-V semiconductor heterostructure can be easily integrated with silicon based electronic devices.
 
-Electromagnetic analysis plays a pivotal role in designing energy efficient and high performance communication systems to which antennas serve as the front-end which are backed by a particular kind of transmission line (TL) networks. The design process of microwave systems involves an extensive use of commercial simulation tools that are mostly based on finite element method (FEM) or finite difference time domain (FDTD) technique. Unfortunately, such tools turn out to be extremely inefficient when the thickness of the simulated object is much smaller than the wavelength of interest. Integral equation (IE) techniques employing method of moments (MoM) are ideally suited to analyze thin objects. Essential to any IE/MoM based technique is the formulation and subsequently, the computation of Green functions (GFs) associated with the observed structure. A 2DEG based terahertz system involves multiple layers in which an infinitesimally thin sheet described by surface conductivity is embedded. The GFs for such a system can be formulated following a TL network approach
-\cite{Michalski1997}. The fields are then extracted from the GFs via the Sommerfeld Integrals (SI) analysis.
+Electromagnetic analysis plays a pivotal role in designing energy efficient and high performance communication systems to which antennas, backed by particular types of transmission line (TL) networks, serve as the front-end of transmitting and receiving modules. The design process of microwave systems involves an extensive use of commercial simulation tools that are mostly based on finite element method (FEM) or finite difference time domain (FDTD) techniques. Unfortunately, such tools turn out to be extremely inefficient when the thickness of the simulated object is much smaller than the wavelength of interest. Integral equation (IE) techniques employing method of moments (MoM) are ideally suited to analyze infinitesimally thin objects. Essential to any IE/MoM based technique is the formulation and the subsequent computation of Green functions (GFs) associated with the structure under observation. A 2DEG based terahertz system involves multiple layers in which an infinitesimally thin sheet described by surface conductivity is embedded. The GFs for a transistor structure in which an infinitesimally thin 2DEG layer is embedded, can be formulated following a TL network approach
+\cite{Michalski1997}. The fields are then extracted from the GFs via Sommerfeld Integral (SI) analysis.
 
-The existence of an infinitesimally thin plasma region can be considered as a realization of 2D materials that display many interesting physical properties chief among them is the subwavelength surface wave propagation. As a result, the physical dimensions at which a structure resonates, becomes much smaller than the corresponding freespace wavelength. Currently, antennas incorporated on a semiconductor chip occupy a large amount of space. With the plasma based technology which is discussed, miniaturized antennas that can be integrated on to the semiconductor chip can be actualized.
+The existence of an infinitesimally thin plasma region can be considered as a realization of 2D materials that display many interesting physical properties, chief among them is the subwavelength surface wave propagation. As a result, the physical dimensions at which a structure resonates, becomes much smaller than the corresponding freespace wavelength. Currently, antennas incorporated on a semiconductor chip occupy a large amount of space. With the plasma based technology which is discussed, miniaturized antennas that can be integrated on to the semiconductor chip can be actualized.
 %%
 %%
 %%
 %%
-\section*{Outline}
+\section{Outline}
 %
 In this section, the structure of this dissertation is briefly summarized.
 
-Surface wave propagation was first observed in the optical frequency region where surface plasmon polaritons (SPPs) propagate along the interface of a metal such as gold, and a dielectric. Chapter 2 reviews in detail the physical conditions required for exciting SPPs on the interface, in light of the material properties of metals. Applications of the subwavelength properties are discussed by studying various nanostructures as well as their design criteria that form the basis of the optical antennas.
+Surface wave propagation was first observed in the optical frequency region where surface plasmon polaritons (SPPs) propagate along the interface of a metal, such as gold, and a dielectric. Chapter 2 reviews in detail the physical conditions required for exciting SPPs on the interface in light of the material properties of metals. Applications of the subwavelength properties of SPPs are discussed by studying various nanostructures as well as the design criteria that form the basis of optical antennas.
 
-Chapter 3 presents the derivation procedures of spectral domain GFs using the TL-GF approach \cite{Michalski1997,Michalski2005} and extends it to incorporate infinitesimally thin sheets. The spatial domain GFs for vector potentials are obtained through the Sommerfeld integrals using the mixed potential integral equations (MPIE).
+Chapter 3 presents the derivation procedures of spectral domain GFs using the TL-GF approach \cite{Michalski1997,Michalski2005} and extends it to incorporate infinitesimally thin sheets. The spatial domain GFs for vector potentials are obtained through the Sommerfeld integrals using the mixed potential integral equation (MPIE) method.
 
-The dispersion relation and its visual representation in the form of a dispersion diagram characterize the subwavelength properties of the 2D plasma waves. In Chapter 4, the dispersion diagrams of semiconductor heterostructures with 2DEG embedded, are numerically calculated computed using a complex-valued root search algorithm known as the derivate-free argument principle method (APM).
+The dispersion relation and its visual representation in the form of a dispersion diagram characterize the subwavelength properties of the 2D plasma waves. In Chapter 4, the dispersion diagrams of semiconductor heterostructures with 2DEG embedded, are numerically computed using a complex-valued root search algorithm known as the derivate-free argument principle method (APM).
 
-A super-resolution, nanoscale imaging scheme is presented in Chapter 5 that demonstrates the subwavelength capabilities of a 2DEG based system in the terahertz frequency region.
+A super-resolution, nanoscale imaging scheme is presented in Chapter 5 that demonstrates the subwavelength imaging capabilities of a 2DEG based system in the terahertz frequency region.
 
-Chapter 6 provides concluding remarks and recommends future research on the subject.
+Chapter 6 provides concluding remarks and recommends future research on the subjects of plasmonic structures in the optical and terahertz frequency domains.

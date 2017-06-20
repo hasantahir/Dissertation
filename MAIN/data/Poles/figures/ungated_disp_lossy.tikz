@@ -14,13 +14,13 @@
 xmin=0,
 xmax=200,
 xlabel style={font=\color{white!15!black}},
-xlabel={$k_x (\mathrm{rad~\mu m}^{-1})$},
+xlabel={$k_x (\SI{}{\radian \per \m})$},
 ymin=5,
 ymax=40,
 ylabel style={font=\color{white!15!black}},
-ylabel={$f (\mathrm{THz})$},
 axis background/.style={fill=white},
-legend style={at={(1.1,0.5)}, anchor=north, legend cell align=left, align=left, draw=white!15!black}
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left,
+align=left, draw=white!15!black}
 ]
 \addplot [color=mycolor1, line width=1.4pt]
   table[row sep=crcr]{%
