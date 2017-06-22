@@ -290,7 +290,7 @@ J.~Dorfm{\"{u}}ller, D.~Dregely, M.~Esslinger, W.~Khunsin, R.~Vogelgesang,
 
 \bibitem{Balanis2015}
 C.~A. Balanis, \emph{Antenna Theory}.\hskip 1em plus 0.5em minus 0.4em\relax
-  John Wiley \& Sons, 2015.
+  John Wiley \& Sons, 2016.
 
 \bibitem{Pavlov2012}
 R.~S. Pavlov, A.~G. Curto, and N.~F. van Hulst, ``Log-periodic optical antennas
@@ -434,10 +434,11 @@ R.~Kastner, E.~Heyman, and A.~Sabban, ``Spectral domain iterative analysis of
   algorithm,'' \emph{{IEEE} Transactions on Antennas and Propagation}, vol.~36,
   no.~9, pp. 1204--1212, Sep. 1988.
 
-\bibitem{abramowitz2012}
-M.~Abramowitz and I.~A. Stegun, \emph{Handbook of Mathematical
-  Functions}.\hskip 1em plus 0.5em minus 0.4em\relax New York: Guilford
-  Publications, 2012.
+\bibitem{Abramowitz2012}
+M.~Abramowitz and I.~Stegun, \emph{Handbook of Mathematical Functions: With
+  Formulas, Graphs, and Mathematical Tables}, ser. Applied Mathematics Series.
+  National Bureau of Standards.\hskip 1em plus 0.5em minus 0.4em\relax New
+  York: Dover, 1968.
 
 \bibitem{Stern1967}
 F.~Stern, ``Polarizability of a two-dimensional electron gas,'' \emph{Physical
@@ -507,11 +508,46 @@ J.~S. Gomez-Diaz, J.~R. Mosig, and J.~Perruisseau-Carrier, ``Effect of spatial
   Transactions on Antennas and Propagation}, vol.~61, no.~7, pp. 3589--3596,
   Jul. 2013.
 
+\bibitem{Senior1995}
+T.~Senior and J.~L. Volakis, \emph{Approximate Boundary Conditions in
+  Electromagnetics ({IEEE} Electromagnetic Waves Series)}.\hskip 1em plus 0.5em
+  minus 0.4em\relax The Institution of Engineering and Technology, 1995.
+
+\bibitem{Hoppe1995}
+D.~J. Hoppe, \emph{Impedance Boundary Conditions In Electromagnetics}.\hskip
+  1em plus 0.5em minus 0.4em\relax CRC Press, 1995.
+
+\bibitem{Stutzman2012}
+G.~A.~T. Warren L.~Stutzman, \emph{Antenna Theory and Design}.\hskip 1em plus
+  0.5em minus 0.4em\relax John Wiley \& Sons INC, 2012.
+
+\bibitem{Harrington1993}
+R.~F. Harrington, \emph{Field Computation Moment Methods}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE COMPUTER SOC PR, 1993.
+
 \bibitem{Burke2000}
 P.~J. Burke, I.~B. Spielman, J.~P. Eisenstein, L.~N. Pfeiffer, and K.~W. West,
   ``High frequency conductivity of the high-mobility two-dimensional electron
   gas,'' \emph{Applied Physics Letters}, vol.~76, no.~6, pp. 745--747, Feb.
   2000.
+
+\bibitem{herranz2012high}
+G.~Herranz, F.~S{\'{a}}nchez, N.~Dix, M.~Scigaj, and J.~Fontcuberta, ``High
+  mobility conduction at (110) and (111) $\mathrm{LaAlO_3/SrTiO_3}$
+  interfaces,'' \emph{Scientific Reports}, vol.~2, p. 758, Oct. 2012.
+
+\bibitem{senior1979backscattering}
+T.~Senior, ``Backscattering from resistive strips,'' \emph{IEEE Transactions on
+  Antennas and Propagation}, vol.~27, no.~6, pp. 808--813, 1979.
+
+\bibitem{Richmond1965}
+J.~Richmond, ``Scattering by a dielectric cylinder of arbitrary cross section
+  shape,'' \emph{{IEEE} Transactions on Antennas and Propagation}, vol.~13,
+  no.~3, pp. 334--341, May 1965.
+
+\bibitem{Senior_1987}
+T.~B.~A. Senior and J.~L. Volakis, ``Sheet simulation of a thin dielectric
+  layer,'' \emph{Radio Science}, vol.~22, no.~7, pp. 1261--1272, Dec. 1987.
 
 \bibitem{Gomez-Diaz2012}
 J.~S. G{\'{o}}mez-D{\'{\i}}az and J.~Perruisseau-Carrier, ``Propagation of
@@ -655,6 +691,10 @@ F.~Wei and Z.~Liu, ``Plasmonic structured illumination microscopy,'' \emph{Nano
 X.~Zeng, M.~Al-Amri, and M.~S. Zubairy, ``Nanometer-scale microscopy via
   graphene plasmons,'' \emph{Physical Review B}, vol.~90, no.~23, pp. 2--6,
   Dec. 2014.
+
+\bibitem{Zeng2017}
+X.~Zeng, L.~Fan, and M.~S. Zubairy, ``Deep-subwavelength lithography via
+  graphene plasmons,'' \emph{Phys. Rev. A}, vol.~95, no.~5, May 2017.
 
 \bibitem{Mikhailovskii2013}
 A.~B. Mikhailovskii, \emph{Theory of Plasma Instabilities}.\hskip 1em plus

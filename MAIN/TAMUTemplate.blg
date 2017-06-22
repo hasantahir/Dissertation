@@ -7,6 +7,7 @@ A level-1 auxiliary file: data/lists.aux
 A level-1 auxiliary file: data/intro.aux
 A level-1 auxiliary file: data/OpAntennas/bchapter.aux
 A level-1 auxiliary file: data/SommInt/som_int.aux
+A level-1 auxiliary file: data/Thin_Sheets/thinsheets.aux
 The style file: ieeetran.bst
 Database file #1: references/combined.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.

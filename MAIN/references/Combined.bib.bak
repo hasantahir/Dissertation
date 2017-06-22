@@ -876,9 +876,12 @@
 @Book{Balanis2015,
   title     = {Antenna Theory},
   publisher = {John Wiley \& Sons},
-  year      = {2015},
+  year      = {2016},
   author    = {Balanis, Constantine A.},
+  isbn      = {9781118642061},
+  date      = {2016-03-18},
   ean       = {9781119178996},
+  pagetotal = {1072},
 }
 
 @Article{Alu2007,
@@ -1039,19 +1042,6 @@
   year      = {1997},
   author    = {Max Born and Emil Wolf},
   isbn      = {0-521-63921-2},
-}
-
-@Article{Burke2000,
-  author    = {P. J. Burke and I. B. Spielman and J. P. Eisenstein and L. N. Pfeiffer and K. W. West},
-  title     = {High frequency conductivity of the high-mobility two-dimensional electron gas},
-  journal   = {Applied Physics Letters},
-  year      = {2000},
-  volume    = {76},
-  number    = {6},
-  pages     = {745--747},
-  month     = feb,
-  doi       = {10.1063/1.125881},
-  publisher = {{AIP} Publishing},
 }
 
 @Article{Calderon-Munoz2009,
@@ -1736,18 +1726,6 @@
   publisher = {American Physical Society ({APS})},
 }
 
-@Book{Abramowitz2012,
-  title         = {Handbook of Mathematical Functions},
-  publisher     = {Guilford Publications},
-  year          = {2012},
-  author        = {Abramowitz, Milton and Stegun, Irene A.},
-  address       = {New York},
-  isbn          = {9780486158242},
-  __markedentry = {[hasantahir:]},
-  ean           = {9780486612720},
-  keywords      = {Handbook},
-}
-
 @Book{Fang2010,
   title         = {Antenna Theory and Microstrip Antennas},
   publisher     = {CRC PR INC},
@@ -1919,20 +1897,6 @@
   abstract      = {A review is presented of the extrapolation methods for accelerating the convergence of Sommerfeld-type integrals (i.e. semi-infinite range integrals with Bessel function kernels), which arise in problems involving antennas or scatterers embedded in planar multilayered media. Attention is limited to partition-extrapolation procedures in which the Sommerfeld integral is evaluated as a sum of a series of partial integrals over finite subintervals and is accelerated by an extrapolation method applied over the real-axis tail segment ($\alpha$,∞) of the integration path, where $\alpha$>0 is selected to ensure that the integrand is well behaved. An analytical form of the asymptotic truncation error (or the remainder), which characterizes the convergence properties of the sequence of partial sums and serves as a basis for some of the most efficient extrapolation methods, is derived. Several extrapolation algorithms deemed to be the most suitable for the Sommerfeld integrals are described and their performance is compared. It is demonstrated that the performance of these methods is strongly affected by the horizontal displacement of the source and field points $\rho$ and by the choice of the subinterval break points. Furthermore, it is found that some well-known extrapolation techniques may fail for a number of values of $\rho$ and ways to remedy this are suggested. Finally, the most effective extrapolation methods for accelerating Sommerfeld integral tails are recommended},
   doi           = {10.1109/8.725271},
   keywords      = {Electromagnetic radiation,Electromagnetic scattering,Nonhomogeneous media,Numerical analysis},
-}
-
-@Article{Michalski2016,
-  author        = {Michalski, Krzysztof A and Mosig, Juan R},
-  title         = {{Efficient computation of Sommerfeld integral tails--methods and algorithms}},
-  journal       = {Journal of Electromagnetic Waves and Applications},
-  year          = {2016},
-  volume        = {30},
-  number        = {3},
-  pages         = {281--317},
-  issn          = {15693937},
-  __markedentry = {[hasantahir:]},
-  doi           = {10.1080/09205071.2015.1129915},
-  isbn          = {0920-5071},
 }
 
 @Book{Bladel2007,
@@ -2488,7 +2452,7 @@
 
 @Article{Williams2003,
   author    = {Benjamin S. Williams and Sushil Kumar and Hans Callebaut and Qing Hu and John L. Reno},
-  title     = {Terahertz quantum-cascade laser at $\lambda\approx$100{\hspace{0.167em}}$\upmu$m using metal waveguide for mode confinement},
+  title     = {Terahertz quantum-cascade laser at $\lambda \approx 100 \SI{\micm}$ using metal waveguide for mode confinement},
   journal   = {Applied Physics Letters},
   year      = {2003},
   volume    = {83},
@@ -2536,6 +2500,218 @@
   doi       = {10.1016/j.metmat.2011.05.001},
   publisher = {Elsevier {BV}},
   timestamp = {2017-06-20},
+}
+
+@Article{amari1995efficient,
+  author    = {S. Amari and J. Bornemann},
+  title     = {Efficient numerical computation of singular integrals with applications to electromagnetics},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
+  year      = {1995},
+  volume    = {43},
+  number    = {11},
+  pages     = {1343--1348},
+  month     = nov,
+  doi       = {10.1109/8.475113},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  timestamp = {2017-06-22},
+}
+
+@Article{boucherit2013extreme,
+  author    = {Boucherit, M and Shoron, OF and Cain, TA and Jackson, CA and Stemmer, S and Rajan, S},
+  title     = {Extreme charge density SrTiO3/GdTiO3 heterostructure field effect transistors},
+  journal   = {Applied Physics Letters},
+  year      = {2013},
+  volume    = {102},
+  number    = {24},
+  pages     = {242909},
+  publisher = {AIP Publishing},
+}
+
+@Article{herranz2012high,
+  author    = {G. Herranz and F. S{\'{a}}nchez and N. Dix and M. Scigaj and J. Fontcuberta},
+  title     = {High mobility conduction at (110) and (111) $\mathrm{LaAlO_3/SrTiO_3}$ interfaces},
+  journal   = {Scientific Reports},
+  year      = {2012},
+  volume    = {2},
+  pages     = {758},
+  month     = oct,
+  doi       = {10.1038/srep00758},
+  publisher = {Springer Nature},
+}
+
+@Article{santoyo1993plasmons,
+  author    = {Santoyo, B. M. and del Castillo-Mussot, M.},
+  title     = {Plasmons in three, two and one dimension},
+  journal   = {Revista Mexicana de Fisica},
+  year      = {1993},
+  volume    = {39},
+  number    = {4},
+  pages     = {640--652},
+  publisher = {Sociedad Mexicana de Fisica Apartado postal 70-348, Coyoacan 04511, Mexico},
+}
+
+@Article{senior1979backscattering,
+  author    = {Senior, T},
+  title     = {Backscattering from resistive strips},
+  journal   = {IEEE Transactions on Antennas and Propagation},
+  year      = {1979},
+  volume    = {27},
+  number    = {6},
+  pages     = {808--813},
+  publisher = {IEEE},
+}
+
+@Article{Senior_1987,
+  author    = {Thomas B. A. Senior and John L. Volakis},
+  title     = {Sheet simulation of a thin dielectric layer},
+  journal   = {Radio Science},
+  year      = {1987},
+  volume    = {22},
+  number    = {7},
+  pages     = {1261--1272},
+  month     = dec,
+  doi       = {10.1029/rs022i007p01261},
+  publisher = {Wiley-Blackwell},
+}
+
+@Article{Michalski2016,
+  author    = {Michalski, Krzysztof A and Mosig, Juan R},
+  title     = {{Efficient computation of Sommerfeld integral tails--methods and algorithms}},
+  journal   = {Journal of Electromagnetic Waves and Applications},
+  year      = {2016},
+  volume    = {30},
+  number    = {3},
+  pages     = {281--317},
+  issn      = {15693937},
+  doi       = {10.1080/09205071.2015.1129915},
+  isbn      = {0920-5071},
+  publisher = {Taylor \& Francis},
+}
+
+@Book{Abramowitz2012,
+  title     = {Handbook of Mathematical Functions: With Formulas, Graphs, and Mathematical Tables},
+  publisher = {Dover},
+  year      = {1968},
+  author    = {Abramowitz, M. and Stegun, I.A.},
+  series    = {Applied Mathematics Series. National Bureau of Standards},
+  address   = {New York},
+  isbn      = {9780486158242},
+  ean       = {9780486612720},
+  keywords  = {Handbook},
+  timestamp = {2017-06-21},
+}
+
+@Book{Balanis2012,
+  title     = {Advanced Engineering Electromagnetics, 2nd Edition},
+  publisher = {Wiley},
+  year      = {2012},
+  author    = {Constantine A. Balanis},
+  isbn      = {9781118213483},
+}
+
+@Book{Hoppe1995,
+  title     = {Impedance Boundary Conditions In Electromagnetics},
+  publisher = {CRC Press},
+  year      = {1995},
+  author    = {Daniel J. Hoppe},
+  isbn      = {9781560323853},
+  timestamp = {2017-06-21},
+}
+
+@Article{leontovich1948approximate,
+  author  = {Leontovich, MA},
+  title   = {Approximate boundary conditions for the electromagnetic field on the surface of a good conductor},
+  journal = {Investigations on radiowave propagation},
+  year    = {1948},
+  volume  = {2},
+  pages   = {5--12},
+}
+
+@Book{Senior1995,
+  title     = {Approximate Boundary Conditions in Electromagnetics ({IEEE} Electromagnetic Waves Series)},
+  publisher = {The Institution of Engineering and Technology},
+  year      = {1995},
+  author    = {T.B.A. Senior and John L. Volakis},
+  isbn      = {9780852968499},
+  timestamp = {2017-06-21},
+}
+
+@Article{Burke2000,
+  author    = {P. J. Burke and I. B. Spielman and J. P. Eisenstein and L. N. Pfeiffer and K. W. West},
+  title     = {High frequency conductivity of the high-mobility two-dimensional electron gas},
+  journal   = {Applied Physics Letters},
+  year      = {2000},
+  volume    = {76},
+  number    = {6},
+  pages     = {745--747},
+  month     = feb,
+  doi       = {10.1063/1.125881},
+  publisher = {{AIP} Publishing},
+}
+
+@Book{Harrington1993,
+  title     = {Field Computation Moment Methods},
+  publisher = {IEEE COMPUTER SOC PR},
+  year      = {1993},
+  author    = {Harrington, Roger F.},
+  isbn      = {0780310144},
+  date      = {1993-05-11},
+  ean       = {9780780310148},
+  pagetotal = {240},
+  timestamp = {2017-06-22},
+}
+
+@Article{Richmond1966,
+  author    = {J. Richmond},
+  title     = {{TE}-wave scattering by a dielectric cylinder of arbitrary cross-section shape},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
+  year      = {1966},
+  volume    = {14},
+  number    = {4},
+  pages     = {460--464},
+  month     = jul,
+  doi       = {10.1109/tap.1966.1138730},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  timestamp = {2017-06-22},
+}
+
+@Article{Richmond1965,
+  author    = {J. Richmond},
+  title     = {Scattering by a dielectric cylinder of arbitrary cross section shape},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
+  year      = {1965},
+  volume    = {13},
+  number    = {3},
+  pages     = {334--341},
+  month     = may,
+  doi       = {10.1109/tap.1965.1138427},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Article{Senior1979,
+  author    = {T. Senior},
+  title     = {Backscattering from resistive strips},
+  journal   = {{IEEE} Transactions on Antennas and Propagation},
+  year      = {1979},
+  volume    = {27},
+  number    = {6},
+  pages     = {808--813},
+  month     = nov,
+  doi       = {10.1109/tap.1979.1142189},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  timestamp = {2017-06-22},
+}
+
+@Book{Stutzman2012,
+  title     = {Antenna Theory and Design},
+  publisher = {John Wiley \& Sons INC},
+  year      = {2012},
+  author    = {Warren L. Stutzman, Gary A. Thiele},
+  isbn      = {0470576642},
+  date      = {2012-06-15},
+  ean       = {9780470576649},
+  pagetotal = {822},
+  timestamp = {2017-06-22},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

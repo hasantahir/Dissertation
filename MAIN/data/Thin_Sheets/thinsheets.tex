@@ -1,0 +1,407 @@
+\chapter{\uppercase{An Integral Equation Scheme for Thin planar Sheets}}
+
+
+
+% \section{Abstract}
+
+An integral equation formulation for a thin dielectric sheet is presented that is derived using the surface equivalence theorem. Unlike other schemes that involve some sort of approximation to compute fields for thin objects, our method provides an exact solution when the thickness is infinitesimal. Numerical results are presented to illustrate the scattering properties of a thin sheet and compared with other schemes.
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\section{Background}
+
+The emergence of high-precision nanoscale fabrication techniques has led to an increased interest in two-dimensional (2D) materials and electronic systems of late, especially in the terahertz frequency regime. One particular intriguing example is a two-dimensional electron gas (2DEG) found in the multilayer stack of semiconductor structures like high-electron mobility transistors (HEMTs), that exhibits remarkable electrical properties such as high electron mobility along with very high with free electron densities. The 2DEG is extremely thin as compared to other layer thicknesses in the stack and therefore, its scattering properties can be found by modeling it as a two-dimensional plasma. An interaction between an external electromagnetic radiation and plasma results in 2D plasmons (surface waves). Historically, wave analysis of thin objects that are not perfectly conductors has involved approximation methods such as the Leontovich boundary condition \cite{Senior1995,Hoppe1995} that relates the tangential electric and magnetic fields on the object surface:
+%
+\begin{equation}
+  \v E_{tan} = Z \, \^{\v{n}} \x \v H,
+  \label{eq:LBC}
+\end{equation}
+%
+where $Z$ is the surface impedance and $\v{\^{n}}$ is the outward unit vector, normal to the surface. The accuracy of the boundary condition in \eqref{eq:LBC} is determined by the complexity and material of the object.
+
+
+
+
+Here, we formulate the scattering response of an infinitesimally thin flat layer of plasma surrounded by free-space using the surface equivalence theorem.
+
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\section{Theory}
+%
+\subsection{Surface Equivalence Theorem}
+%
+The field computation due to sources present in an inhomogeneous environment can be simplified using the surface equivalence theorem in which the actual sources are replaced by a set of fictitious, yet equivalent sources illustrated in Fig. \ref{fig:surfeq}. The solution can be divided into two homogeneous spaces, one internal and the other exterior. Considering the configuration of Fig. \ref{fig:surfeq}a, the external equivalent is a homogeneous space composed of the external material. The total fields in the external region due to equivalent electric and magnetic surface currents, $\v J_s$ and $\v M_s$ respectively, for the case when the object is collapsed to a flat sheet can be expressed as:
+%
+\begin{equation}
+  \begin{split}
+    \v E_1 &= \v E^i + \v E_1^{scat} \\
+    &=  -\frac{\O}{4 k_1^2} \left( k_1^2 + \del \del \cdot \right) \int\limits_{C} \v J_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'} \\
+    &- \frac{1}{4 \E \j} \del \x \int\limits_{l} \v M_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'} + \v E^i
+  \end{split}
+  \label{eq:E1sc}
+\end{equation}
+%
+\begin{equation}
+  \begin{split}
+    \v H_1 &= \v H^i + \v H_1^{scat} \\
+    &= \frac{1}{4 \j} \del \x \int\limits_{l} \v J_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'} \\
+    &-\frac{\O}{4 k_1^2} \left( k_1^2 + \del \del \cdot \right) \int\limits_{l} \v M_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'} + \v H^i
+  \end{split}
+  \label{eq:H1sc}
+\end{equation}
+%
+where $\v E^i$ and $\v H^i$ are the incident electric and magnetic fields that are known, $k_1$ is the free-space propagation constant, $\vp$ and $\vp'$ are the position vectors of any point from the origin and source respectively, and $H_0^2(\cdot)$ is the zero order Hankel function of the second kind.  Similarly, fields for the interior region that only contain the scattered part are,
+%
+\begin{equation}
+  \begin{split}
+    \v E_2 &= \v E_2^{scat} \\
+    &=  -\frac{\O}{4 k_2^2} \left( k_2^2 + \del \del \cdot \right) \int\limits_{C} \left(-\v J_s(\vp')\right) H_0^{(2)}(k_2 |\vp - \vp'|) \diff{l'} \\
+    &- \frac{1}{4 \j} \del \x \int\limits_{l} \left(-\v M_s(\vp')\right) H_0^{(2)}(k_2 |\vp - \vp'|) \diff{l'}
+  \end{split}
+  \label{eq:E2scatt}
+\end{equation}
+%
+\begin{equation}
+  \begin{split}
+    \v H_2 &= \v H_1^{scat} \\
+    &= \frac{1}{4 \j} \del \x \int\limits_{l} \left(-\v J_s(\vp')\right) H_0^{(2)}(k_2 |\vp - \vp'|) \diff{l'} \\
+    &-\frac{\O}{4 k_2^2} \left( k_2^2 + \del \del \cdot \right) \int\limits_{l} \left(-\v M_s(\vp')\right) H_0^{(2)}(k_2 |\vp - \vp'|) \diff{l'}
+  \end{split}
+  \label{eq:H2scatt}
+\end{equation}
+%
+where $k_2$ is the propagation constant in the interior region.
+%
+\begin{figure}[b!]
+  \centering
+  \def\svgwidth{1\linewidth}
+  \input{data/Thin_sheets/figures/equivalence.pdf_tex}
+  \caption{(a). Actual and its equivalent models for the (b) external and, (c) Internal region}
+  \label{fig:surfeq}
+\end{figure}
+
+\subsection{Surface Integral Equation}
+%
+\subsubsection{$\mathbf{TM_z}$ polarization}
+%
+Next we consider a $\mathrm{TM_z}$ excited planar dielectric sheet lying along the x-axis and apply the surface equivalence theorem to find the electric and magnetic currents on the sheet. A plane wave propagating along the direction $\v{k}$ with electric field $\v{E}$ polarized along the z direction as shown in Fig. \ref{fig:tm_plate} is incident on the dielectric surface at an angle $\phi_i$.
+%
+\begin{figure}[b!]
+  \centering
+  \subfloat[]{\includegraphics[width=3.3in]{tm_plate.tikz}
+      \label{fig:tm_plate}} \hfil
+      \subfloat[]{\includegraphics[width=3.3in]{te_plate.tikz}
+          \label{fig:te_plate}}
+  \caption{Thin Plasma sheet with under (a) $\mathrm{TM_z}$ and (b) $\mathrm{TE_z}$ polarizations}
+  \label{fig:thinsheets}
+\end{figure}
+%
+\begin{subequations}
+  \begin{align}
+    \v J_s &=  \hat{\v{n}} \x \v{H} = \hat {\v{z}} \, \mathrm{J(\xi)},
+    \label{eq:J_s}\\
+    \v M_s &=  -\hat{\v{n}} \x \v{E} = \hat {\v{x}} \, \mathrm{M(\xi)}
+    \label{eq:M_s}
+  \end{align}
+  \label{eq:eq_currents}%
+\end{subequations}%
+%
+where the normal unit vector $\hat{\v{n}}$ is in the y direction and $\xi$ depends on $x$ and $y$ coordinates. To find the surface currents, we set up an homogeneous equivalent problem first for the region outside the dielectric sheet due to an incident field,
+%
+\begin{equation}
+  \v E^i = \hat{\v z} \; E_0  \e^{-\j k_1 (x \cos \phi_i - y \sin \phi_i)}
+  \label{eq:E_i}
+\end{equation}
+%
+with $E_0$ the amplitude of the incoming plane wave. We now express the scattered fields in terms of potentials as
+%
+\begin{subequations}
+  \begin{align}
+    \v E_1^{scat} &=  -\frac{\j \O}{k_1^2}\left( k_1^2 + \del \del \cdot \right) \v A,
+    \label{eq:E1scat}\\
+    \v H_1^{scat} &=  -\frac{\j \O}{k_1^2}\left( k_1^2 + \del \del \cdot \right) \v F,
+    \label{eq:H1scat}
+  \end{align}
+  \label{eq:1scat_pot}%
+\end{subequations}%
+%
+where $\v A$ and $\v F$ are the magnetic and electric vector potentials respectively, given by:
+%
+\begin{subequations}
+  \begin{align}
+    \v A &=  \frac{\u}{4 \j} \int\limits_{l} \v J_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'},
+    \label{eq:A_thin}\\
+    \v F &=  \frac{\E}{4 \j} \int\limits_{l} \v M_s(\vp') H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'},
+    \label{eq:Fig}
+  \end{align}
+  \label{eq:potentials_2d}%
+\end{subequations}%
+%
+The scattered electric field off a flat plate oriented along the x-axis can be simply written in a scalar form due to a $z$-directed incident wave,
+%
+\begin{equation}
+  \begin{split}
+    E_1^{scat} &= -\j \O \mathrm A_z \\
+    &= - \frac{\O \u}{4 j} \int\limits_{l} J_z(x')  H_0^{(2)}(k_1 |\vp - \vp'|) \diff{l'}
+    \label{eq:E1sc_scalar}
+  \end{split}
+\end{equation}
+%
+Likewise, the magnetic field that is tangential to the plate is,
+%
+\begin{equation}
+  \begin{split}
+    H_{1,x}^{scat} &= -\frac{\j \O}{k_1^2}\left(k_0^2 +  \pdv[2]{}{x} \right) \mathrm F_x \\
+    &= -\frac{\j \O}{k_1^2}\left(k_1^2 +  \pdv[2]{}{x} \right) \int\limits_{l} M_x(x') H_0^{(2)}(k_1 |x - x'|) \diff{l'}.
+  \end{split}
+  \label{eq:H1sc_scalar}
+\end{equation}
+%
+Using a similar procedure, we set up an interior equivalent with the currents reversing the signs. The total fields for the interior region only contain the scattered fields.
+%
+\begin{subequations}
+  \begin{align}
+    E_2^{scat} &= -\frac{\O \u}{4 \j} \int\limits_{l} -J_z(x')  H_0^{(2)}(k_2 |x - x'|) \diff{l'}
+    \label{eq:E2sc}\\
+    H_{2,x}^{scat} &= - \frac{\j \O}{k_2^2}\left(k_2^2 +  \pdv[2]{}{x} \right) \int\limits_{l} -M_x(x') H_0^{(2)}(k_2 |x - x'|) \diff{l'}
+    \label{eq:H2sc}
+  \end{align}
+  \label{eq:2sc}%
+\end{subequations}%
+
+In order to find the electric and magnetic currents, we apply the boundary conditions at the interface ensuring the continuity of tangential component of the fields. At the interface:
+%
+\begin{subequations}
+  \begin{align}
+    \^{\v n} \x (\v E_1 - \v E_2) ={}& \v 0
+    \label{eq:BC_thin_E}\\
+    \^{\v n} \x (\v H_1 - \v H_2) ={}& \v 0
+    \label{eq:BC_thin_H}
+  \end{align}
+  \label{eq:BC_thin}%
+\end{subequations}%
+%
+Using \eqref{eq:BC_thin_E}, \eqref{eq:E1sc_scalar} and \eqref{eq:H2sc} we obtain:
+%
+\begin{align}
+  E_i &= \frac{\O \u}{4} \int\limits_c J_z(x') \left[ H_0^{(2)}(k_1 |x - x'|) + H_0^{(2)}(k_2 |x - x'|)\right] \diff{l'}.
+  \label{eq:scalarE}
+\end{align}
+%
+Similarly, the magnetic field can be written as:
+%
+\begin{align}
+  H_i^{tan} &=  -\frac{\j \O}{k_1^2}\left(k_1^2 +  \pdv[2]{}{x} \right) \int\limits_{l} M_x(x') H_0^{(2)}(k_1 |x - x'|) \diff{l'} \notag\\
+  & - \frac{\j \O}{k_2^2}\left(k_2^2 +  \pdv[2]{}{x} \right) \int\limits_{l} M_x(x') H_0^{(2)}(k_2 |x - x'|) \diff{l'}
+  \label{eq:scalarH}
+\end{align}
+%
+where the superscript $tan$ indicates the tangential component of the incident magnetic field in the x-direction. Equation \eqref{eq:scalarH} represents an integro-differential equation in which the differential and integral operators on the right hand side may be interchanged, thereby obtaining:
+%
+\begin{align}
+  H_i^{tan} &=  -\frac{\j \O}{k_0^2} \int\limits_{l} M_x(x') \left(k_1^2 +  \pdv[2]{}{x} \right) H_0^{(2)}(k_1 |x - x'|) \diff{l'} \notag\\
+  & - \frac{\j \O}{k_2^2} \int\limits_{l} M_x(x') \left(k_2^2 +  \pdv[2]{}{x} \right) H_0^{(2)}(k_2 |x - x'|) \diff{l'}.
+  \label{eq:scalarH_pock}
+\end{align}
+%
+Operators with the order as in \eqref{eq:scalarH_pock} represent \emph{Pocklington's} integro-differential equation \cite{Stutzman2012}. The second order derivative can be removed by expressing in terms of other Hankel functions through the recurrence relations \cite[p. 361]{Abramowitz2012}.
+%
+\begin{subequations}
+  \begin{align}
+    \dv{H_0^{(2)}(x)}{x} &= -H_{1}^{(2)}(x) + \frac{1}{x} H_0^{(2)}(x)
+    \label{eq:Hankel_ID1}\\
+    H_{1}^{(2)}(x)  &= \frac{x}{2} \left[H_{0}^{(2)}(x) + H_{2}^{(2)}(x)\right]
+    \label{eq:Hankel_ID2}
+  \end{align}
+  \label{eq:Hankel_ID}%
+\end{subequations}%
+%
+Furthermore, a Hankel function with an argument $ k_i r = k_i|x - x'|$, where $i = 1,2$ can be differentiated by the chain-rule:
+%
+\begin{equation}
+  \begin{split}
+    \pdv{H_0^{(2)}(k_i r)}{x} &= \dv{H_0^{(2)}(k_i r)}{(k_i r)} \pdv{(k_i r)}{x} \\
+    &= \dv{H_0^{(2)}(k_i r)}{(k_i r)} \x \frac{k_i (x - x')}{r}
+  \end{split}
+  \label{eq:Han}
+\end{equation}
+%
+By differentiating \eqref{eq:Han} again, we obtain:
+%
+\begin{align}
+  \pdv[2]{H_0^{(2)}(k_i r)}{x} &= \frac{k_i}{r} \left[H_2^{(2)}(k_i r) \frac{k_i (x - x')^2}{r} - H_1^{(2)}(k_i r) \right].
+  \label{eq:difHan}
+\end{align}
+%
+The differential operator in \eqref{eq:scalarH_pock} can now removed by applying the recurrence relations \eqref{eq:Hankel_ID} and the expression is rewritten as:
+%
+\begin{equation}
+  \begin{split}
+    \left(k_i^2 + \pdv[2]{}{x} \right) H_0^{(2)}(k_i r) &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \left[ \frac{(x-x')^2}{r^2} - \frac{1}{2} \right] H_2^{(2)}(k_i r) \\
+    &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \left( \cos^2 \chi - \frac{1}{2} \right) H_2^{(2)}(k_i r) \\
+    &= \frac{k_i^2}{2} H_0^{(2)}(k_i r) + k_i^2 \cos {(2\chi)} H_2^{(2)}(k_i r)
+  \end{split}
+  \label{eq:Hankel_final}
+\end{equation}
+%
+where $\cos \chi = {(x-x')/r}$. The magnetic field in \eqref{eq:scalarH_pock} can be re-expressed as:
+%
+\begin{align}
+  H_i^{tan} &=  \frac{-\j \O}{2} \int\limits_{l} M_x(x') \left[ H_0^{(2)}(k_1 r) + \cos {(2 \chi)} H_2^{(2)}(k_1 r) \right. \notag\\
+  & \left. {} + H_0^{(2)}(k_2 r) + \cos {(2\chi)} H_2^{(2)}(k_2 r)\right]\diff{l'}
+  \label{eq:H_final}
+\end{align}
+%
+%
+%
+\subsubsection{$\mathbf{TE_z}$ polarization}
+%
+The field configuration for $\mathrm{TE_z}$ polarization is shown in Fig. \ref{fig:te_plate}. Following a similar procedure and using duality principle, the field expressions in terms of currents are:
+%
+\begin{align}
+  E_0 \sin \phi_i  \e^{\j k_1 x \cos \phi_i} &=  \frac{-\j \O}{2} \int\limits_{l} J_x(x') \left[ H_0^{(2)}(k_1 r) + \cos {(2 \psi)} H_2^{(2)}(k_1 r) \right. \notag\\
+  & \left. {} + H_0^{(2)}(k_2 r) + \cos {(2\psi)} H_2^{(2)}(k_2 r)\right]\diff{l'}.
+  \label{eq:J_final}
+\end{align}
+%
+\begin{align}
+  \frac{E_0}{\eta_1} \e^{\j k_1 x \cos \phi_i} &=  \frac{\O}{4} \int\limits_{l} \E_1 M_z(x') H_0^{(2)}(k_1 |x - x'|)  +  \E_2 M_z(x') H_0^{(2)}(k_2 |x - x'|) \diff{l'}
+  \label{eq:scalarH_final}
+\end{align}
+%
+where $\eta_1$ is the characteristic impedance of external region.
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+\section{Numerical Results}
+%
+A method of moments (MoM) solution to compute the currents is implemented using pulse basis functions with point matching method \cite{Harrington1993} that converts the integral equations into a linear system of equations,
+%
+\begin{equation}
+\begin{bmatrix}
+  Z_{mn}   & 0 \\
+  0        & Y_{mn}
+\end{bmatrix}
+\begin{bmatrix}
+  J_n \\
+  M_n
+\end{bmatrix}
+=
+\begin{bmatrix}
+  E_m^i \\
+  H_m^i
+\end{bmatrix}
+\label{eq:MOM}
+\end{equation}
+%
+where $Z_mn$ and $Y_mn$ are the impedance and admittance terms respectively. For a $\mathrm{TM_z}$ polarization, they are given by:
+%
+\begin{subequations}
+  \begin{align}
+    Z_{mn} &= \frac{\O \u}{4} \int \limits_{x_n}^{x_{n+1}}  \left[ H_0^{(2)}(k_1 |x_m - x_n|) +  H_0^{(2)}(k_2 |x_m - x_n|) \right]\diff{x'}
+    \label{eq:Z_thin_J}\\
+    Y_{mn} &= \frac{\O}{8} \int \limits_{x_n}^{x_{n+1}}  \left[ \E_1 H_0^{(2)}(k_1 |x_m - x_n|) +  \E_2 H_0^{(2)}(k_2 |x_m - x_n|) +  \right.\notag\\
+    & \qquad \left. \E_1 H_2^{(2)}(k_2 |x_m - x_n|) + \E_2 H_2^{(2)}(k_2 |x_m - x_n|) \right]\diff{x'}.
+    \label{eq:Y_M}
+  \end{align}
+  \label{eq:Z_thin}%
+\end{subequations}%
+%
+The integrals in \eqref{eq:Z_thin} become singular for ($m = n$) for which small argument approximations of the Hankel function are used to estimate the integral,
+%
+\begin{subequations}
+  \begin{align}
+    Z_{nn} &=  -\frac{\O \u \Delta}{8} \left\{
+    2 -\frac{\j}{\pi} \left[ 6 + 2 \ln \left(\frac{\e^{\gamma} k_1 \Delta}{4 e}\right) + \frac{16}{(k_1 \Delta)^2} + 2 \ln \left(\frac{ \e^{\gamma} k_2 \Delta}{4 e}\right) + \frac{16}{(k_1 \Delta)^2} \right]   \right\}
+    \label{eq:Z_thin_self}\\
+    Y_{nn} &= -\frac{\O \u \Delta}{4} \left\{ 2 -\frac{2 \j}{\pi}\ln \left(\frac{\e^{\gamma} k_1 \Delta}{4 e}\right) -
+    \frac{2 \j}{\pi}\ln \left(\frac{\e^{\gamma} k_2 \Delta}{4 e}
+    \right)
+    \right\}
+    \label{eq:Y_self}
+  \end{align}
+  \label{eq:Z_thinself}%
+\end{subequations}%
+%
+\subsection{Current Distribution}
+%
+Figure. \ref{fig:edgeon} shows the absolute value of the tangential surface electric current on a $\mathrm{TM_z}$ polarized plate of length $3 \lambda$ at edge-on ($\phi_i = \pi$). Gallium Arsenide ($\mathrm{GaAs}$) and Strontium Titanate ($\mathrm{SrTiO_3}$) sheets are considered at terahertz frequencies where material data has been taken from measurements in \cite{Burke2000} and \cite{herranz2012high} respectively, and the results are compared with a PEC plate of same length \cite{senior1979backscattering}.
+%
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[width=3in]{figures/currents_edgeon_3.tex}
+      \label{fig:edgeon}}
+      \subfloat[]{\includegraphics[width=3in]{figures/farfield_1255.tex}
+          \label{fig:rcs}}
+  \caption{(a)Current Distributions on a $3\lambda$ plate at edge-on incidence, (b) Backscattered fields from different sheets of length $1.25\lambda$}
+  \label{fig:Electric_properties_2DEG_thin}
+\end{figure}
+%
+\subsection{Far-field}
+%
+The scattered electric field in the far-zone can be expressed by normalizing the large argument approximation of Hankel functions as:
+%
+\begin{equation}
+  \lim_{k_1|\vp - \vp'|\to\inf} E_z(\vp) \simeq \int \limits_{0}^{L} J_z(x') \e^{\j k_1 x' \cos(\phi_i)} \diff{x'}
+  \label{eq:far-field}
+\end{equation}
+%
+where $\phi_i$ is the angle of incidence. The results are shown in Fig. \ref{fig:rcs}.
+%
+\subsubsection{Comparison with other techniques}
+%
+Here we compare results our scheme with other techniques that have been used in the context of thin sheets. First, the far-field patterns of $\mathrm{TM_z}$ polarized dielectric sheet of permittivity $\E = 4$ are compared with results in \cite{Richmond1965} computed using a volume integral equation (VIE) technique collapsed to a surface. The length of the dielectric rod is taken as $2.5 \lambda$ and the radar cross-sections (RCS) are shown in Fig. \ref{fig:TM_rcs}.
+%
+\begin{figure}[!htbp]
+  \centering
+  \subfloat[]{\includegraphics[height=3in]{figures/richmond_tm.tikz}
+      \label{fig:TM_rcs}}
+      \subfloat[]{\includegraphics[height=3in]{figures/richmond_te.tikz}
+            \label{fig:TE_rcs}}
+  \caption{Computed RCS of a $2.5 \lambda$ dielectric rod of permittivity $\E=4$ (a) $\mathrm{TM_z}$, (b) $\mathrm{TE_z}$}
+  \label{fig:RCS_richmodn}
+\end{figure}
+%
+For the same dielectric structure, the RCS for $\mathrm{TE_z}$ is plotted in Fig. \ref{fig:TE_rcs}. The disparity in the results near edge-on incident angles is attributed to the fact that we consider an infinitesimally thin sheet whereas in the reference values, a finite dielectric rod thickness of $0.05 \lambda$ was assumed.
+
+Next we consider a $\mathrm{TE_z}$ polarized dielectric rod of length $2 \lambda$ and compare our results with the ones presented in \cite{Senior_1987} that were computed using a resistive sheet model which is derived from the impedance boundary conditions (IBC) through the expression:
+%
+\begin{equation}
+  \begin{split}
+    E^i &= Z \, J_s(x') \\
+    & + \frac{\O \u}{4}  \int\limits_{l} J_s(x')  H_0^{(2)}(k_2 |x - x'|) \diff{x'}.
+  \end{split}
+  \label{eq:IBC_senior}
+\end{equation}
+%
+The results are shown in Fig. \ref{fig:senior_rcs}. Again, the diverging results away from normal incidence are due to the difference in sheet thickness where it was taken as $0.1 \lambda$ in the reference and zero in our computations.
+%
+\begin{figure}
+  \centering
+  \includegraphics[width=3in]{figures/farfield.tikz}
+  \caption{Comparsion of RCS of a $2 \lambda$ dielectric sheet having $\E=4$ with a resistive sheet model}
+  \label{fig:senior_rcs}
+\end{figure}
+%
+%
+%
+We present a new class of surface integral equations for infinitesimally thin dielectric sheets based on surface equivalence theorem. The electromagnetic response to external radiation is investigated. Results are shown for the current induced and far-zone response, and compared with other techniques that are used to simulate thin sheets.
+
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+% \clearpage % Force Bibliography to the end of document on a new page.
+% % If using biber
+% % \printbibliography
+% % \addbibresource{zubairy}
+% % else bibtex
+% \bibliography{Combined}
+% \bibliographystyle{ieeetran}
+%
+% \end{document}

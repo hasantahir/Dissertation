@@ -51,46 +51,59 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{86}{subfigure.9.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{86}{subfigure.9.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network\relax }}{90}{figure.caption.37}
 \vskip -10pt
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Complex plane basin of attraction while solving $z^{10} - 1 =0$ using: (a) Newton's method (c) Halley's method\relax }}{93}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{93}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{93}{subfigure.2.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular controur $\Gamma $\relax }}{93}{figure.caption.39}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces TM modes of a MIM waveguide (a) Lossless case, $(\varepsilon _m = \num {-143.4967})$ (b) Lossy case, $(\varepsilon _m = \num {-143.4967 + j 9.5173})$\relax }}{101}{figure.caption.42}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{101}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{101}{subfigure.4.2}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 2DEG embedded in a semiconductor heterostructure at $z=0$ (a) Gated (b) Ungated (c) Backgated\relax }}{102}{figure.caption.43}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{102}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{102}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{102}{subfigure.5.3}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{104}{figure.caption.45}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{104}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{104}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{104}{subfigure.6.3}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{105}{figure.caption.46}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{105}{subfigure.7.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{105}{subfigure.7.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{105}{subfigure.7.3}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated\relax }}{106}{figure.caption.47}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{106}{subfigure.8.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{106}{subfigure.8.2}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated\relax }}{106}{figure.caption.48}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{106}{subfigure.9.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{106}{subfigure.9.2}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a). Actual and its equivalent models for the (b) external and, (c) Internal region\relax }}{91}{figure.caption.37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Thin Plasma sheet with under (a) $\mathrm {TM_z}$ and (b) $\mathrm {TE_z}$ polarizations\relax }}{92}{figure.caption.38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{92}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{92}{subfigure.2.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces (a)Current Distributions on a $3\lambda $ plate at edge-on incidence, (b) Backscattered fields from different sheets of length $1.25\lambda $\relax }}{98}{figure.caption.39}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{98}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{98}{subfigure.3.2}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Computed RCS of a $2.5 \lambda $ dielectric rod of permittivity $\varepsilon =4$ (a) $\mathrm {TM_z}$, (b) $\mathrm {TE_z}$\relax }}{99}{figure.caption.40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{99}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{99}{subfigure.4.2}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparsion of RCS of a $2 \lambda $ dielectric sheet having $\varepsilon =4$ with a resistive sheet model\relax }}{100}{figure.caption.41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces (a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network\relax }}{104}{figure.caption.42}
+\vskip -10pt
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Complex plane basin of attraction while solving $z^{10} - 1 =0$ using: (a) Newton's method (c) Halley's method\relax }}{107}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{107}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{107}{subfigure.2.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular controur $\Gamma $\relax }}{107}{figure.caption.44}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces TM modes of a MIM waveguide (a) Lossless case, $(\varepsilon _m = \num {-143.4967})$ (b) Lossy case, $(\varepsilon _m = \num {-143.4967 + j 9.5173})$\relax }}{115}{figure.caption.47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{115}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{115}{subfigure.4.2}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 2DEG embedded in a semiconductor heterostructure at $z=0$ (a) Gated (b) Ungated (c) Backgated\relax }}{116}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{116}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{116}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{116}{subfigure.5.3}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{118}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{118}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{118}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{118}{subfigure.6.3}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {5e13}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated (c) Ungated\relax }}{119}{figure.caption.51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{119}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{119}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{119}{subfigure.7.3}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {3}{\kelvin } (a) Gated (b) Backgated\relax }}{120}{figure.caption.52}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{120}{subfigure.8.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{120}{subfigure.8.2}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI {1e12}{\cm ^{-2}}$ at \SI {295}{\kelvin } (a) Gated (b) Backgated\relax }}{120}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{120}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{120}{subfigure.9.2}
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustration of the imaging scheme where sample is excited by plasma wave pattern generated underneath by a current-driven instability\relax }}{111}{figure.caption.49}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces (a) Plasma wave Dispersion diagram for a transistor structure supporting a 2DEG channel. (b) Effect of gate voltage on resonant frequency\relax }}{114}{figure.caption.50}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{114}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{114}{subfigure.2.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain. Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. Sample illuminated at different plasma frequencies: (b)-(d). (e) Effective resolution enhancement of $k_{\rho 1} + \kappa $ in two dimensions can be obtained after rotating the sample with respect to the optical axis\relax }}{118}{figure.caption.51}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Sample excited to additional energy levels to enhance the spontaneous decay, $\omega _{\kappa }$.\relax }}{119}{figure.caption.52}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Full-wave simulation results: (a) Phase shift achieved by exciting the structure with an additional illumination at an angle. (b) Tuning of the standing wave structure by applying gate bias\relax }}{120}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{120}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{120}{subfigure.5.2}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces (a) Sample distribution. Simulation of the reconstructed sample image at: (b) $\Re k_{\rho } = 39.5$ (c) $\Re k_{\rho } = 80$\relax }}{122}{figure.caption.54}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{122}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{122}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{122}{subfigure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Illustration of the imaging scheme where sample is excited by plasmonic standing wave pattern generated by a current-driven instability in the channel\relax }}{125}{figure.caption.54}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces (a) Plasma wave Dispersion diagram for a transistor structure supporting a 2DEG channel. (b) Effect of gate voltage on resonant frequency\relax }}{128}{figure.caption.55}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{128}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{128}{subfigure.2.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resolution enhancement through SIM: (a) Diffraction limited observable region in frequency domain. Moiré effect using a sinusoidal illumination pattern bringing high frequency content under the observable region. Sample illuminated at different plasma frequencies: (b)-(d). (e) Effective resolution enhancement of $k_{\rho 1} + \kappa $ in two dimensions can be obtained after rotating the sample with respect to the optical axis\relax }}{132}{figure.caption.56}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Sample excited to additional energy levels to enhance the spontaneous decay, $\omega _{\kappa }$.\relax }}{133}{figure.caption.57}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Full-wave simulation results: (a) Phase shift achieved by exciting the structure with an additional illumination at an angle. (b) Tuning of the standing wave structure by applying gate bias\relax }}{134}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{134}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{134}{subfigure.5.2}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces (a) Sample distribution. Simulation of the reconstructed sample image at: (b) $\Re k_{\rho } = 39.5$ (c) $\Re k_{\rho } = 80$\relax }}{136}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{136}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{136}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{136}{subfigure.6.3}
 \addvspace {10\p@ }
