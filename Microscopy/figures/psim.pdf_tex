@@ -58,7 +58,7 @@
     \put(0.70703345,0.83628942){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{(b)}}}}%
     \put(0.83926951,0.86649792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{\p 1}$}}}}%
     \put(0.56102252,0.86649792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$-k_{\p 1}$}}}}%
-    \put(0.72500885,0.95785836){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\kappa$}}}}%
+    \put(0.72500885,0.95785836){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\upsilon$}}}}%
     \put(0.70641406,0.50828869){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{(d)}}}}%
     \put(0.91415071,0.61679304){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_x$}}}}%
     \put(0.72497484,0.78049472){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_y$}}}}%
@@ -72,7 +72,7 @@
     \put(0.67634397,0.23321051){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_x$}}}}%
     \put(0.43092009,0.4434281){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_y$}}}}%
     \put(0.41370025,0.00602229){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{(e)}}}}%
-    \put(0.59273119,0.18657741){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{\p 1} + \kappa$}}}}%
+    \put(0.59273119,0.18657741){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{\p 1} + \upsilon$}}}}%
     \put(0.15574404,0.89707346){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\nu$}}}}%
     \put(0.15238714,0.84462273){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
   \end{picture}%
