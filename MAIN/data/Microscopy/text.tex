@@ -1,0 +1,178 @@
+\documentclass[11pt]{article}
+% Horizontal Magnetic Dipole over a lossy half-space
+\usepackage[utf8]{inputenc} % Use it to include other characters than ABC
+\usepackage[T1]{fontenc}
+\usepackage[cmex10]{amsmath}
+\usepackage{calc}
+% \usepackage{systeme} % For system of equations
+\usepackage{amsfonts} % to load math symbols
+\usepackage{mdwmath}
+\usepackage{commath}
+\usepackage{mdwtab}
+\usepackage{hyperref}
+\usepackage{physics} % For using the oridnary derivative nomenclature
+\usepackage{datetime} % Insert date and time
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.4in,rmargin=1.15in}
+\usepackage[nodisplayskipstretch,doublespacing]{setspace}
+\setstretch{1.5}
+\usepackage{etoolbox}
+%% Nicely set the spacing between equations and text
+\AtBeginDocument{%
+\setlength\abovedisplayskip{4pt}
+\setlength\belowdisplayskip{4pt}
+\setlength\abovedisplayshortskip{4pt}
+\setlength\belowdisplayshortskip{4pt}
+}
+% \abovedisplayskip=12pt
+% \belowdisplayskip=12pt
+% \abovedisplayshortskip=0pt
+% \belowdisplayshortskip=7pt
+% \appto{\normalsize}{\zerodisplayskips}
+% \appto{\small}{\zerodisplayskips}0pt
+% \appto{\footnotesize}{\zerodisplayskips}
+\usepackage{tocloft}
+% \usepackage[rm, tiny, center, compact]{titlesec}
+\usepackage{indentfirst}
+\usepackage{tocvsec2}
+% \usepackage[titletoc]{appendix}
+% \usepackage{appendix}
+% \usepackage{tamuconfig}
+%
+% \usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{standalone}
+\usepackage[americanresistors,americaninductors]{circuitikz}
+\usepackage{tikz-dimline} % For dimensional drawing
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{subfig}
+% The following is done to hide ugly color boxes around the links
+\usepackage{xcolor}
+\hypersetup{
+colorlinks,
+linkcolor={red!50!black},
+citecolor={blue!50!black},
+urlcolor={blue!80!black}
+}
+% pdflatex -synctex=-1
+% \usepackage{mathptmx} % Times new Roman
+% \usepackage{lmroman}
+%
+% ------------------------------- Useful Tricks Learnt
+% Use ={}& to align subequations to the left
+
+% Use = for single equations
+
+% Use &= for split equations
+
+% Use commath package to properly write differential operators and derivatives.
+
+% Use \int\limits to nicely put integral limits
+
+% For long equations, use align environment with \notag\\ as a linebreak.
+
+% To hide section numbers, place an asterisk after the section, e.g., \section*{}
+
+% Put comments % in between the lines in order to avoid forming a new paragraph.
+
+% To enter special characters into Inkspace figures, use Ctrl+U and then enter       the unicode. e.g., for \times symbol, the unicode is U+0D7. So the key entry would be Ctrl+U U+0d7 and then press enter.
+
+% Put \eqref instead or \ref to reference equations. This will automatically put parantheses around the eq. number. amsmath package required.
+%
+% ----------------- To compile with references use the following order in Shell"
+% 1. pdflatex filename.tex
+% 2. bibtex filename (no extension)
+% 3. bibtex filename (no extension)
+% 4. pdflatex filename.tex
+% -----------------
+
+% Personal definitions
+% Operators
+\renewcommand{\v}[1]{\mathbf{#1}} % vectors
+\newcommand{\ti}[1]{\tilde{#1}} % spectral representation
+
+% Symbols
+\renewcommand{\O}{\omega}  % omega
+\newcommand{\E}{\varepsilon}  % epsilon
+\renewcommand{\u}{\mu}  % mu
+\newcommand{\p}{\rho}  % rho
+\newcommand{\x}{\times}  % times
+\renewcommand{\inf}{\infty}  % infinity
+\newcommand{\infint}{\int\limits_{-\inf}^\inf} % integral by R
+\renewcommand{\del}{\nabla}  % nabla operator
+\renewcommand{\^}{\hat}  % unit vector
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % Define differential operator
+
+
+
+\begin{document}
+
+
+\title{\textsc{Current on a planar Dieletric plate}\\}
+\date{\footnote{Last Modified: \currenttime, \today.}}
+\maketitle
+
+\section*{Introduction}
+
+The attainable resolution from conventional microscopic techniques is restricted to half of the wavelength of light by Abbe diffraction limit. With ever increasing demands of fast and accurate observation of objects close to the nanoscale, especially in the biological sciences, higher resolution techniques going beyond the diffraction limit are of pivotal significance in today's world. Various non-linear processes exist that enhance the obtained resolution, however, they are generally lossy meaning that some of the light captured by the device is discarded. With structured illumination microscopy, sub-wavelength resolution is obtained while capturing all the light emitted by the sample in which high resolution information is also captured in the form of Moir\'e patterns. Processing a series of such captured patterns reconstructs a highly resolved image of the object under observation.
+
+Speaking in terms of two dimensional (2D) spatial frequency domain, the observable region through a microscope is governed by a circular region where the radius corresponds to the diffraction limit. The spatial fr
+
+In SIM, the sample is observed with a non-uniform signal unlike the conventional microscopy where a uniform illumination is used. With slightly different signals are multiplicatively superposed to create what are commonly known as Moir\'e patterns that contain much lower frequency content than the original signals observable through the microscope. The high frequency content can be extracted using computational techniques yielding a highly resolved image after the processing. As an example, the source signal contains spatial frequency of $k_1$ and the sample fluoresces at $k_2$. The Moir\'e patterns are generated at $k_1 - k_2$ that can be detected by the microscope.
+
+
+To illustrate the working of the technique, consider a microscope with a circular observable spatial frequency space of radius $k_0$. The illumination source signal with spatial frequency $k_1$ is multiplicatively superposed to the sample frequency of $k$ to generate a Moir\'e pattern having frequency $k_1 - k$. If the resulting pattern falls under the observable space, i.e. $| k_1 - k_2| < k_0$, the high frequency information is indirectly observed. The frequency space increases from $k_0$ to $k_0 + k_1$, hence increasing the resolution. Idealistically, it would be desirable to have a very high value of $k_1$. However, just as the diffraction limit restricts the microscopic resolution, the maximum spatial frequency attainable through the illumination source signal is limited and the maximum resolution that can be possibly obtained is by a factor of 2.
+
+To achieve enhanced resolution in a two-dimensional sense, the above process is repeated with different phases to obtain a series of images that are then used for reconstruction. An illustration of the whole process is shown in \ref Fig. 1 where each phase shift contributes three images.
+
+\section*{Generation of Standing waves}
+
+The reason to generate a standing wave pattern just underneath the specimen is that we need to
+
+Standing wave pattern is necessary in order to achieve position dependent trapped state.
+
+Lasing without inversion
+
+The dispersion relation for plasmons in a 2DEG heterostructure excited by TM wave is given by:
+\begin{equation}
+  \frac{\E_2(\O)}{k_{z2}} = -\frac{\sigma_s(\O)}{\O}}
+  \label{eq:disp_TM_two}
+\end{equation}
+
+where the surface conductivity, $\sigma_s$ is given by:
+\begin{equation}
+  \sigma_s(\O) = \frac{N_s e^2 \tau}{m^{\ast}}\frac{1}{1 + j \O \tau}
+  \label{eq:conductivity}
+\end{equation}
+%
+and the wavenumber along the z-direction is given by $k_{zi} = \sqrt{\left(\frac{\O}{c}\right)^2 \E_i(\O) -  k_x^2}$.
+
+Near the plasma frequency of Gallium Arsenide (GaAs), the
+
+
+
+
+Suppose we somehow achieve the standing wave pattern required to achieve all the physical phenomena, the field expressions look like:
+
+\begin{equation}
+
+\end{equation}
+
+\section{Theory of Structured Illumination Microscopy}
+
+In conventional microscopic techniques, the sample under observation is illuminated with a uniform distribution of light and the resulting fluorescence is detected by the photodetector. Since all the sample area is illuminated and excited simultaneously, a very large unfocused region is also detected which reduces the overall contrast of the acquired image. The most common method to enhance the contrast between the sample and background is the confocal microscopy in which the sample is illuminated by a non-uniform distribution by introducing a pin-hole that eliminates the unfocused light. The pin-hole illuminates provides a pointed illumination which in turn excites only a small portion of the sample. The resulting fluorescence is highly localized which when acquired through the photodetector of the microscope, provides a high contrast image. Moreover, due to localized illumination, only a small region is focused. Collecting a series of images by moving the illuminated region through mechanical means, a high resolution image is obtained.
+
+Although, resolution enhancement can be obtained through confocal microscopy, a large amount of light is wasted due to the pinhole. As a result, the method is very inefficient in terms of signal-to-noise ratio and long exposure times are required to achieve meaningful contrast between the sample and background.
+
+In Structured Illumination Microscopy, all of the sample is illuminated with a laterally modulated, patterned light and observed through wide-field microscope. (cite Heintzmann and Gustaffsson) The patterned light increases the spatial frequency content of the acquired light, in effect, enhancing the resolution without any wastage of light through the use pin-hole structures. The obtainable resolution through this linear technique surpasses the classical diffraction limit of 2.
+
+Moiré effect
+
+Two similar patterns when multiplicatively super-posed, generate an interference pattern that has frequency content much lower than its constituents which is clearly observable under the microscope that is bandlimited. If the constituting illumination pattern is known a-priori, the sample structure information can be extracted from the moiré fringes using spatial frequency Fourier analyses. As spatial frequency content much higher than what can is observable through conventional microscopic methods is possible through this technique.
+
+Insert Fourier analysis equations from Lancozs 1967 to show the mathematical background of the technique.
+
+Standing wave pattern in plasma wave  devices

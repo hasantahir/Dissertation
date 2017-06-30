@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+  \begin{axis} [
+    set layers=standard,
+    ymode = log,        % logarithmic y axis
+    xmode = log,        % logarithmic y axis
+    enlargelimits=false,
+    xlabel= $x / {\lambda_0}$,
+    ylabel={$\text{|Creeping wave|(line)}, \text{|Plasmon wave|(dash)}$},
+    ]
+    \addplot graphics [
+    xmin=.01,
+    xmax=10000,
+    ymin=.000001,
+    ymax=10,
+    ] {somm_633.pdf};
+    \node[right] at (axis cs:.1,.00001){$\lambda = 633 \si{\nano \metre}$};
+  \end{axis}
+\end{tikzpicture}

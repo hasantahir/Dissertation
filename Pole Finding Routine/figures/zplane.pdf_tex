@@ -1,0 +1,62 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'zplane.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{211.63578807bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.96336407)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{zplane.pdf}}%
+    \put(0.82272013,0.61323298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Re z$}}}}%
+    \put(0.09518089,0.92438201){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Im z$}}}}%
+    \put(0.31196239,0.79257448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$z -\text{plane}$}}}}%
+    \put(0.50677045,0.39012423){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\Gamma$}}}}%
+    \put(0.09445833,0.15466642){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{{Branch cut}}}}}%
+    \put(0.56958404,0.15624383){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Proper mode}}}}%
+    \put(0.56958404,0.10011252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Improper mode}}}}%
+    \put(0.56958404,0.04398121){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{Branch point}}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+  \pgfplotsset{
+    xmin=0.6,
+    xmax=6.5
+}
+\begin{axis}[
+    axis y line*=left,
+    xmin=0.6, xmax=6.5,
+    ymin=-230, ymax=20,
+    xlabel=Photon Energy ($\si{\eV}$),
+    ylabel=$\E'(\square)$,
+    ]
+    \addplot graphics [
+    xmin=.6,
+    xmax=6.5,
+    ymin=-230,
+    ymax=20,
+    ] {silver_picture};
+     \end{axis}
+     \pgfplotsset{every axis y label/.append style={rotate=-180,yshift=7.1cm}}
+      \begin{axis}[
+        axis y line*=right,
+        axis x line=none,
+        ymin=-0.5, ymax=26,
+        ylabel=$\E''(\circ)$]
+        \node[right] at (axis cs:4,2){Ag-JC N=6};
+       \end{axis}
+\end{tikzpicture}

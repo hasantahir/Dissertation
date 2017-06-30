@@ -1,0 +1,25 @@
+Agenda of the presentation
+
+Formation of 2DEG
+Generation of plasma waves
+
+
+Dielectric function of a material is a three dimensional characteristic which defines the effect under the influence of an incident elecrtic field that disturbs the electron distribution. Stern' paper discusses it in detail. 
+
+Th dielectric function decribes the linear response of a material to a weak external elecric field. When the term weak is used, non-linear effects can be neglected. Although the dielectric function may be measurable within small pieces of ranges of freqencies and wavenumber, extrapolatory models are required to describe it over all frequencies.
+
+A dielectric function does not encompass any magnetic forces for which there is permeability function. 
+
+Since the plasma wavelength in the 2DEG is much shorter than free-space and the device length is also at least an order of magnitude smaller than the free-space wavelength, it is safe to assumee the long-wavelength limit everywhere for all the physical properties.
+
+Our approximation that the dielectric function is just an approximate version to its volumetric counterpart is very crude. A lot has been done for the case of Graphene in which the dielectric properties are derived on the same  principles as described by Stern.
+
+What is the difference between an oscillation and a wave; plasma wave and plasmon
+
+The electron transport properties of a terahertz device based on a 2DEG heterostructure is highly dependent on the  dielectric environment. Although the dielectric mismatch creates the 2DEG in the first place, a large contrast would result,
+
+WE discuss the significance of the dielectric function of the 2DEG that governs the mobility and conductivity and therefore the overall performance of the device.
+
+From the dielectric constant of the GaAs/AlGaAs heterostructure, it is seen that tht  real part becomes zero twice. For the first one, the imaginary part represents a maximum. This however is bad since it will introduce too much damping in the system. A second peak, follows where the imaginary part is small. We need to operate the device at this frequency. Each zero crossing in the dielectric function represents a plasmon mode that supports plasma waves.
+
+The conductivity of the 2DEG has to be modeled as a tensor since it is going to be anisotropic. Under voltage bias across the drain and source, the produces the off-diagonal elemeents of the tensor. In the absence of any bias, we can assume it to be isotropic.

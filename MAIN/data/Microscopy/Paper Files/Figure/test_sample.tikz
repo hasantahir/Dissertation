@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+  \begin{axis} [
+    set layers=standard,
+    xmajorgrids=true,
+    ymajorgrids=true,
+    xminorgrids=true,
+    yminorgrids=true,
+    enlargelimits=false,
+    axis equal image,
+    grid=both,
+    minor tick num=2,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    minor grid style={line width=.1pt,draw=gray!30},
+    xlabel=$x~(\mathrm{nm})$,
+    ylabel=$y~(\mathrm{nm})$,
+    ]
+    \addplot graphics [
+    xmin=0,
+    xmax=500,
+    ymin=0,
+    ymax=500,
+    ] {test_sample_new.pdf};
+  \end{axis}
+\end{tikzpicture}

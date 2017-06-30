@@ -1,0 +1,67 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{571.92377122bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.49110098)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{.pdf}}%
+    \put(0.81862203,0.43493721){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{Barrier}}}}%
+    \put(0.81862203,0.36121697){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2DEG}}}}%
+    \put(0.81862203,0.28960858){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{Substrate}}}}%
+    \put(0.15871733,0.17427761){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{S}}}}%
+    \put(0.79895635,0.17548572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{D}}}}%
+    \put(0.47523353,0){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{L}}}}}%
+    \put(0.39613842,0.46891271){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{Objective Lens}}}}%
+    \put(0.00474511,0.19879538){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{I}}}}}%
+    \put(0.88126687,0.1330351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{h}}}}}%
+    \put(0.09105158,0.37867681){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{z}}}}}%
+    \put(0.19941811,0.29898949){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{x}}}}}%
+    \put(0.4763963,0.06923641){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{G}}}}%
+    \put(0.04242932,0.11841365){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{\textit{d}}}}}%
+  \end{picture}%
+\endgroup%

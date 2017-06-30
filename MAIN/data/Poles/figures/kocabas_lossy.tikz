@@ -1,0 +1,307 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.89412,0.10196,0.10980}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+xmin=-15,
+xmax=15,
+xlabel style={font=\color{white!15!black}},
+xlabel={$\Re\textrm{k}_{\p}/k_2$},
+ymin=-40,
+ymax=40,
+ylabel style={font=\color{white!15!black}},
+ylabel={$\Im\textrm{k}_{\p}/k_2$},
+axis background/.style={fill=white}
+]
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+2.25340602685871	-2.10411103963996\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-2.25340602685871	2.10411103963996\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+2.2578439243645	-2.09940827881517\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-2.2578439243645	2.09940827881517\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+6.70940913098901	-0.708906153635337\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-6.70940913098901	0.708906153635337\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+6.7180710045184	-0.707409147152218\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-6.7180710045184	0.707409147152218\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.653175514896072	-7.18828562221569\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.653175514896072	7.18828562221569\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.653155275578239	-7.18908592058202\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.653155275578239	7.18908592058202\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+8.98361680679342	-0.529770173541957\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-8.98361680679342	0.529770173541957\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+8.99237022322522	-0.528670731010134\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-8.99237022322522	0.528670731010134\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-10.4197028035561	0.45689706345107\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+10.4197028035561	-0.45689706345107\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+10.4284731136527	-0.455929200797023\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-10.4284731136527	0.455929200797023\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.442109279609507	-10.552843642838\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.442109279609507	10.552843642838\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.442118124856028	10.5532138722696\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.442118124856028	-10.5532138722696\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+11.3355606645364	-0.42005681382909\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-11.3355606645364	0.42005681382909\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+11.344323275893	-0.419149811882914\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+11.8514379926865	-0.401805589261919\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-11.8514379926865	0.401805589261919\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+11.8601184802917	-0.400934983985803\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+12.0228686578359	-0.39594263179373\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.346655253406968	-13.3864832249435\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.346655253406968	13.3864832249435\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.346664422978389	-13.3867120814473\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.346664422978389	13.3867120814473\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.289135932728566	15.9706257673825\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.289135932728566	-15.9706257673825\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.289143605772814	15.9707857379779\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.289143605772454	-15.9707857379782\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.249654912042455	-18.4099992690424\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.249654912042455	18.4099992690424\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.249661211024382	-18.4101190753167\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.249661211024382	18.4101190753167\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.220444449810135	20.7555243799133\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.220449662708276	-20.7556182021381\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.220449662708276	20.7556182021381\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.19774899984693	23.0358151448725\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.197753369585051	-23.0358909694228\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.197753369585051	23.0358909694228\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.17949611871196	-25.268506481803\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.179499828716448	-25.2685692215027\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.179499828716448	25.2685692215027\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.164433801766162	-27.4651930170459\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.164433801766162	27.4651930170459\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.164436988371087	-27.465245891983\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.164436988371087	27.465245891983\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.151756822727641	29.6339190441069\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.151756822727641	-29.6339190441069\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.140908515411894	-31.780277544412\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.14091093685483	-31.7803166990926\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.14091093685483	31.7803166990926\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.131509942551055	-33.908631656623\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.13151207986369	-33.9086659048915\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.13151207986369	33.9086659048915\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.123275978907586	-36.0221336143479\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.123275978907586	36.0221336143479\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.123277878778879	36.0221638338823\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.123277878778879	-36.0221638338823\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.115995210703055	-38.1232522879679\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.115995210703055	38.1232522879679\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+-0.115996910142236	38.1232791549637\\
+};
+\addplot [color=black, line width=.5pt, draw=none, mark size=2.5pt, mark=*, mark options={solid, fill=mycolor1}, forget plot]
+  table[row sep=crcr]{%
+0.115996910142236	-38.1232791549637\\
+};
+\end{axis}
+\end{tikzpicture}%

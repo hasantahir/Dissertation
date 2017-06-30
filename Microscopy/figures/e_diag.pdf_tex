@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'e_diag.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{379.90400637bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.47641233)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{e_diag.pdf}}%
+    \put(0.48737856,0.45469632){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|a\right\rangle$}}}}%
+    \put(0.36288149,0.34530737){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|e\right\rangle$}}}}%
+    \put(0.59189847,0.06789913){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|c\right\rangle$}}}}%
+    \put(0.72779612,0.00720972){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\left|g\right\rangle$}}}}%
+    \put(0.50372363,0.26058414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\O_{ac} = \O_{\kappa}$}}}}%
+    \put(0.11237247,0.2206586){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\O_{\upsilon}$}}}}%
+    \put(0.14404108,0.43416629){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\O_{\nu}$}}}}%
+  \end{picture}%
+\endgroup%

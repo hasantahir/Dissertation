@@ -1,0 +1,83 @@
+
+\renewcommand {\cftchapleader } {\cftdotfill {4.5}}
+\contentsline {chapter}{ABSTRACT}{ii}{chapter*.1}
+\contentsline {chapter}{DEDICATION}{iv}{chapter*.2}
+\contentsline {chapter}{ACKNOWLEDGMENTS}{v}{chapter*.3}
+\contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{vii}{chapter*.4}
+\contentsline {chapter}{TABLE OF CONTENTS}{viii}{section*.5}
+\contentsline {chapter}{LIST OF FIGURES}{xi}{section*.6}
+\contentsline {chapter}{LIST OF TABLES}{xv}{section*.7}
+\contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
+\vskip +10pt
+\contentsline {section}{\numberline {1.1}Outline}{3}{section.1.1}
+\contentsline {chapter}{\numberline {2}\uppercase {Optical nanoantennas*}}{5}{chapter.2}
+\vskip +10pt
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Electromagnetic Theory of Surface Plasmon Polaritons}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Single Boundary Structure}{9}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Quantum effects}{15}{section.2.3}
+\contentsline {section}{\numberline {2.4}Two Boundary Structures}{21}{section.2.4}
+\contentsline {section}{\numberline {2.5}Design of Optical Antennas}{27}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Dipole and Patch Antennas}{28}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Bowtie Antenna}{36}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Yagi-Uda Antenna}{38}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Log-Periodic Antenna}{40}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Purcell factor}{42}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Aperture Antennas}{44}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.7}Optical aperture antenna theory}{44}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.8}Bowtie aperture antenna}{50}{subsection.2.5.8}
+\contentsline {subsection}{\numberline {2.5.9}Concentric Rings}{52}{subsection.2.5.9}
+\contentsline {subsection}{\numberline {2.5.10}Arrays}{53}{subsection.2.5.10}
+\contentsline {section}{\numberline {2.6}Applications of Optical Antenna}{54}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}SNOM}{54}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Photon emitters and optical fluorescence}{54}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Raman Spectroscopy}{55}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Communication with nanocircuitry}{56}{subsection.2.6.4}
+\contentsline {chapter}{\numberline {3}\uppercase {Computation of fields in multilayer structures}}{59}{chapter.3}
+\vskip +10pt
+\contentsline {section}{\numberline {3.1}Theory}{59}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Transmission line representation of Maxwell's equations}{60}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Green functions for the TL equations}{66}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Spectral Domain Dyadic Green Functions}{68}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Spatial Domain Dyadic Green Functions}{68}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Introducing Potential functions}{73}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Spatial domain DGFs}{76}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Computation of Transmission line Green functions}{77}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Lossy Half-space}{78}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Thin Sheet}{80}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Location of poles}{83}{subsubsection.3.2.2.1}
+\contentsline {chapter}{\numberline {4}\uppercase {An Integral Equation Scheme for Thin planar Sheets}}{88}{chapter.4}
+\vskip +10pt
+\contentsline {section}{\numberline {4.1}Background}{88}{section.4.1}
+\contentsline {section}{\numberline {4.2}Theory}{89}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Surface Equivalence Theorem}{89}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Surface Integral Equation}{90}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}$\mathbf {TM_z}$ polarization}{90}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\mathbf {TE_z}$ polarization}{96}{subsubsection.4.2.2.2}
+\contentsline {section}{\numberline {4.3}Numerical Results}{96}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Current Distribution}{97}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Far-field}{98}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Comparison with other techniques}{99}{subsubsection.4.3.2.1}
+\contentsline {chapter}{\numberline {5}\uppercase {Surface waves extraction of a conductive sheet embedded in a multilayer environment}}{102}{chapter.5}
+\vskip +10pt
+\contentsline {section}{\numberline {5.1}Theory}{102}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Equivalent TL network of semiconductor heterostructures}{102}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Surface waves extraction technique}{105}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Counting the zeros}{108}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Locating the zeros}{109}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Refining the roots}{112}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Avoiding singularities}{112}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Results}{113}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}MIM waveguide}{113}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Embedded conductive sheets}{116}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Conclusion}{121}{section.5.4}
+\contentsline {chapter}{\numberline {6}\uppercase {Nanoscopy using a semiconductor heterostructure as the sample stage}}{122}{chapter.6}
+\vskip +10pt
+\contentsline {section}{\numberline {6.1}Introduction}{122}{section.6.1}
+\contentsline {section}{\numberline {6.2}Theory}{125}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Dispersion relation}{125}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Image Reconstruction}{129}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Simulated Results}{134}{section.6.3}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusion and Future recommendations}}{137}{chapter.7}
+\vskip +10pt
+\contentsline {chapter}{REFERENCES}{139}{section*.60}

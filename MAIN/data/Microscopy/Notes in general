@@ -1,0 +1,44 @@
+Talk about dispersion relation of 2deg. As a result the wavenumber in 2DEG is much larger than the free-space.
+
+Structured Illumination Microscopy: a way to enhance the resolution by a factor of 2 by expanding the observable spatial frequency space using Moir\'e fringes.
+
+Generation of standing wave pattern is key in the implementing the technique. In the structure under observation, it is inherently done due to reflection of plasma waves from the perfectly conducting boundaries in the lateral direction in the form of source and drain terminals.
+
+However, due to very high wavenumber of the plasma waves, the resulting x- and z- components of the electric field end up with the same amplitude. As a consequence, the total field intensity in the 2DEG, which is the sum of square of x- and z- components becomes uniform.
+
+This can be simply treated by applying an external TM polarized plane wave. It adds to the x- component of the electric field, therefore, the total electric field exhibits a sinusoidal, standing wave pattern.
+
+The need standing wave pattern can be justified or rather explained by looking at the physics behind the achieving of ' trapped states', a term defined in Zubairy's book, Quantum Optics.
+
+The spatial information of the specimen can be obtained by taking a 2d Fourier transform.
+
+/////////expression
+
+
+The resolution of the recovered image depends upon the maximum spatial frequency that can be observed. While the microscope is frequency limited by its spatial frequency function that appears as a circle, higher frequency information can be extracted from the image in the form of Moir\'e fringes.
+
+Whenever two signals of slightly different phases are multiplied, high frequency ranging to the sum of the frequencies of the two signals is generated. Whereas, if the difference of the two frequencies lies in the observable range of the instrument, higher frequency information can be extracted through post-processing yielding a higher resolution image.
+
+//////// expression showing the sum and difference
+
+
+Here we can also talk about how the plasma waves are generated in the heterostructure in light of Dyakonov-Shur instability under suitable boundary conditions.
+
+Although the wavenumber of resulting plasma waves is at least two orders greater than free-space, the presence of loss will inhibit the performance of the system. Fortunately, near the plasma frequency, the loss is minimal.
+
+Although, the scheme proposed works mainly in one dimension, 2d resolution enhancement can be realized with a mechanism in which the specimen has the ability to be rotated.
+
+5/3/2017
+
+
+
+The voltage bias at source and drain terminals breaks the symmetery of the resonant cavity leading to electromagnetic wave generation.
+
+
+6/3/2017 + 7/3/2017
+
+Continue with the simulation in the
+
+8/3/2017
+
+Schedule a meeting with Xiadong for today and discuss the COMSOL results that have been obtained. Start writing; seriously it is getting too frustrating and nervously close.

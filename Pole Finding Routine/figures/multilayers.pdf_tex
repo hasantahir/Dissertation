@@ -1,0 +1,83 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'multilayers.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{549.44701998bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.67014302)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{multilayers.pdf}}%
+    \put(0.6667657,0.59914313){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{z1}$}}}}%
+    \put(0.23870156,0.46373207){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{z}}}}}%
+    \put(0.41301308,0.33082305){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\textit{x}}}}}%
+    \put(0.51415382,0.32135535){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\uparrow}(z_0)$}}}}%
+    \put(0.51415382,0.25475986){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y^{\downarrow}(z_0)$}}}}%
+    \put(0.72928257,0.40052888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_s = \sigma_s$}}}}%
+    \put(0.6667657,0.62754371){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_1$}}}}%
+    \put(0.6667657,0.47435181){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{z2}$}}}}%
+    \put(0.6667657,0.50275239){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_2$}}}}%
+    \put(0.6667657,0.15086359){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$k_{z3}$}}}}%
+    \put(0.6667657,0.17926417){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$Y_3$}}}}%
+    \put(0.83570144,0.63364577){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{1}}}}%
+    \put(0.8357784,0.50770094){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{2}}}}%
+    \put(0.83573574,0.17305906){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{3}}}}%
+    \put(0.44476295,0.46620468){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{1}}}}%
+    \put(0.44483991,0.41014832){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{2}}}}%
+    \put(0.44479725,0.28517178){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{3}}}}%
+    \put(0.06680951,0.46716414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\E_1$}}}}%
+    \put(0.06680951,0.41014832){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\E_2$}}}}%
+    \put(0.06680951,0.28517178){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$\E_3$}}}}%
+    \put(0.69682611,0.29884488){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$i^{TM} = v^{TM}\sigma_s$}}}}%
+    \put(0.88945754,0.19994516){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$z = 0-$}}}}%
+    \put(0.88945754,0.43068481){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$z = 0+$}}}}%
+    \put(0.55513412,0.65010809){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{(b)}}}}%
+    \put(0.23166599,0.53067983){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{(a)}}}}%
+    \put(0.88945754,0.53340967){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$z = h$}}}}%
+    \put(0.88945754,0.11234435){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$z = -d$}}}}%
+    \put(-0.00120121,0.37352094){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$h$}}}}%
+    \put(-0.00120121,0.24794014){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{$d$}}}}%
+  \end{picture}%
+\endgroup%

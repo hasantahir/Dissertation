@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+  \begin{axis} [
+    set layers=standard,
+    ymode = log,        % logarithmic y axis
+    enlargelimits=false,
+    xlabel=Wavelength ($\mathrm{nm}$),
+    ylabel=Propagation Length $L (\mathrm{\u m})$,
+    ]
+    \addplot graphics [
+    xmin=300,
+    xmax=1000,
+    ymin=.2,
+    ymax=80,
+    ] {fig_4.pdf};
+    \node[right] at (axis cs:500,65){Au};
+    \node[right] at (axis cs:500,42){Ag};
+    \node[right] at (axis cs:500,28){Al};
+  \end{axis}
+\end{tikzpicture}
