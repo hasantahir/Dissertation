@@ -1,9 +1,28 @@
-# Dissertation
-Dissertation Material
+# My PhD Dissertation (2012-2016)
 
-Horizontal Magnetic Dipole over a lossy half-space
 
-We consider a two-dimensional problem of a magnetic dipole placed along the interface of free-space and lossy dielectric. The Green's function of the problem illustrated in \ref{fig:problem} can be formulated by first expressing the magnetic current as:
+## Plasmonic devices in the terahertz and optical frequency domains
 
-\begin{equation}
-J\_m = \delta(z)
+
+
+### Abstract
+
+We are living in an age where the evolution of semiconductor devices and components is contingent upon their miniaturization and seamless integration  with the rest of the circuitry. Unfortunately, it is anticipated that electronic systems will soon approach the theoretical design limits of size and bandwidth and it poses to be a serious concern for the development of high-speed information technologies. Replacement of electronic pulses that act as communication signals with electromagnetic surface waves offers a very promising solution particularly in terms of device miniaturization and the heart of this optimism are the plasmonic waves arising due to collective electron oscillations at the surface of a conductor.
+
+Surface plasmon polaritons propagating along a metal-dielectric interface at optical frequencies have lately been a subject of immense research interest mainly due to their reduced wavelength at least by an order of magnitude. Hence, miniaturized wave devices can be created at optical frequencies. Terahertz plasma waves, on the other hand, exist in infinitesimally thin plasma regions formed inside a transistor substrate, and are observed at much lower frequencies in the far-infrared regime. Due to essentially a two-dimensional nature of the plasma region, a much higher wavelength reduction factor that can exceed well beyond 100 is achievable. Furthermore, the boundary conditions due to the transistor terminals along with electric biasing create unstable resonance conditions that eventually lead to radiation in the terahertz frequency range. Such phenomena provides bright prospects for creating highly miniaturized terahertz devices.
+
+A reliable and efficient electromagnetic (EM) analysis for multilayer geometries has gained further significance due to the emergence of plasmonic structures in the optical as well as terahertz frequency domains. In this regard, integral equation (IE) techniques are ideally suited due to their efficient handling of multilayer structures. Although the presence of thin layers poses a challenge to any EM analysis technique, here the procedure is simplified due to the infinitesimally thin nature of the plasma region, which can be analyzed as a conducting sheet, with the same current flowing on either side of the sheet. Essential to any IE technique is an efficient and systematic formulation of Green functions (GFs) and their subsequent computation. In this dissertation, a transmission-line network based approach is adopted to derive spectral domain GFs for an infinitesimally thin sheet in a layered medium. The associated spatial domain counterparts are then computed through the Sommerfeld integrals (SIs).
+
+The extraordinary electromagnetic properties of plasmonic devices are demonstrated by a presentation of the properties of plasmonic antennas and a super-resolution imaging scheme which is able to resolve objects separated only by a few nanometers.
+
+
+### Steps for Compilation
+The manuscript follows the TAMU `LaTeX` template. The main file is `TAMUTemplate.tex` which is compiled using `Arara` through the following set of commands:
+
+```
+% arara: xelatex
+% arara: bibtex
+% arara: xelatex
+```
+
+`IEEEtran` style of bibliography was followed in the dissertation.
