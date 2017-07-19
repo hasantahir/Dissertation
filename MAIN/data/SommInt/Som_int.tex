@@ -26,7 +26,7 @@ Here we follow the well-established approach of field computation for planar, la
 %%
 %%
 %%
-\subsection{Transmission line representation of Maxwell's equations}
+\subsection{Transmission Line Representation of Maxwell's Equations}
 %
 As shown in Fig. \ref{fig:TL_equivalent}a, it is assumed that the structure is unbounded in the lateral direction, and excited only by an electric source. The electric and magnetic fields are given by the Maxwell's equations in frequency-domain,
 %
@@ -203,7 +203,7 @@ where $\psi$ is the angle between $\v{k_{\p}}$ and the positive x-axis. A transm
   \centering
   \def\svgwidth{.75\linewidth}
   \input{data/sommint/figures/xsystem.pdf_tex}
-  \caption{Coordinate System transformation in the spectral domain}
+  \caption{Coordinate system transformation in the spectral domain}
   \label{fig:SpCS}
 \end{figure}
 
@@ -303,14 +303,14 @@ Assuming only electric sources existing in space, the corresponding TL sources, 
   \centering
   \def\svgwidth{.75\linewidth}
   \input{data/sommint/figures/sources.pdf_tex}
-  \caption{Electric Source representation in a transmission line network}
+  \caption{Electric source representation in a transmission line network}
   \label{fig:J_sources}
 \end{figure}
 %
 %%
 %%
 %%
-\subsection{Green functions for the TL equations}
+\subsection{Green Functions for the TL Equations}
 %
 To obtain the transmission line voltages and currents that define the spectral fields in \eqref{eq:totalEHVI}, we introduce the one-dimensional transmission line Green functions (TLGFs) that are analogous to the spatial domain DGFs in \eqref{eq:dyadic}. Following \cite{Felsen1994,Michalski2005}, we define $V_i(z,z')$ and $I_i(z,z')$ as the voltage and current respectively, at a point $z$ along the transmission line due to a unit-strength current source located at $z'$. Similarly, $V_v(z,z')$ and $I_v(z,z')$ are the respective voltage and current due to a unit-strength voltage source. Analogous to \eqref{eq:dyadic} which is augmented by magnetic sources, we write:
 %
@@ -539,7 +539,7 @@ Following similar procedure, the remaining components of both electric and magne
       \hline \hline
     \end{tabular}
   \end{center}
-  \caption{Scalar Green functions for computation of electric field due to an electric current source \cite{Michalski2005}}
+  \caption{Scalar Green functions for computation of electric field due to an electric current source. Adapted from \cite{Michalski2005}}
   \label{tab:EJ}
 \end{table}
 %
@@ -565,13 +565,13 @@ Following similar procedure, the remaining components of both electric and magne
       \hline \hline
     \end{tabular}
   \end{center}
-  \caption{Scalar Green functions for computation of magnetic field due to an electric current source \cite{Michalski2005}}
+  \caption{Scalar Green functions for computation of magnetic field due to an electric current source. Adapted from \cite{Michalski2005}}
   \label{tab:HJ}
 \end{table}
 %%
 %%
 %%
-\subsection{Introducing Potential functions}
+\subsection{Introducing Potential Functions}
 %
 As evident in Tables \ref{tab:EJ} and \ref{tab:HJ}, the spatial domain DGFs that directly describe fields are tedious. An alternative formulation using vector potential functions considerably reduces the computation complexity. The approach is commonly known as mixed potentials integral equation (MPIE) formulation. From the Maxwell's equations, we know that,
 %
@@ -678,7 +678,7 @@ where $Z^{\mathrm{TE}} = \O \u/ k_z^{\mathrm{TE}}$.
 %%
 %%
 %%
-\subsection{Spatial domain DGFs}
+\subsection{Spatial Domain DGFs}
 %
 The spectral domain vector potentials defined in \eqref{eq:G^A_general_form} can be conveniently written in a matrix form containing scalar elements,
 %
@@ -709,7 +709,7 @@ A Fourier inversion following a similar procedure used to convert fields DGFs \e
       \hline \hline
     \end{tabular}
   \end{center}
-  \caption{Scalar potential Green functions expressed in terms of TLGFs \cite{Michalski2015}}
+  \caption{Scalar potential Green functions expressed in terms of TLGFs}
   \label{tab:G_scalar_list}
 \end{table}
 %
@@ -718,7 +718,7 @@ The above formulation is applicable to only multilayer structures in which the l
 %%
 %%
 %%
-\section{Computation of Transmission line Green functions}
+\section{Computation of Transmission Line Green functions}
 %
 The voltage and current at any point in a transmission line can be obtained \cite{Felsen1994} using simple network analysis techniques. Each layer in the multilayer structure is represented by a section in the transmission line which is specified by its characteristic impedance $Z$ and the propagation constant $k_z$. As an example, an equivalent TL network for a semiconductor heterostructure that forms the substrate of the modern transistors is shown in Fig. \ref{fig:TL_equivalent}.
 %
@@ -726,7 +726,7 @@ The voltage and current at any point in a transmission line can be obtained \cit
   \centering
   \def\svgwidth{.75\linewidth}
   \input{data/sommint/figures/mlayers.pdf_tex}
-  \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network}
+  \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) equivalent transmission line network}
   \label{fig:TL_equivalent}
 \end{figure}
 %
@@ -796,11 +796,11 @@ To compute the SIs, real-axis integration using a combination of \emph{tanh-sinh
   \centering
   \def\svgwidth{.75\linewidth}
   \input{data/sommint/figures/2deg_sheet.pdf_tex}
-  \caption{(a) 2DEG sheet in surrounded by freespace, (b) Equivalent transmission line circuit consisting of a shunt impedance}
+  \caption{(a) 2DEG sheet in surrounded by freespace, (b) equivalent transmission line circuit consisting of a shunt impedance}
   \label{fig:2deg_TL_equivalent}
 \end{figure}
 %
-Next we consider the case of an infinitesimally thin sheet of 2DEG located on the x-y plane and surrounded by freespace. A horizontal electric dipole is placed at a height $h$ above the sheet. The surface conductivity of the thin sheet is expressed in terms of a Drude-type model:
+Next we consider the case of an infinitesimally thin sheet of 2DEG located on the x-y plane and surrounded by freespace illustrated along with its TL model in Fig. \ref{fig:2deg_TL_equivalent}. A horizontal electric dipole is placed at a height $h$ above the sheet. The surface conductivity of the thin sheet is expressed in terms of a Drude-type model:
 %
 \begin{equation}
   \sigma_s = \frac{N_s e^2 \tau}{m^{\ast}}\frac{1}{1 + \j \O \tau},
@@ -822,13 +822,11 @@ in which $\Delta$ is the thickness of the 2DEG region, $\E_r$ is the dielectric 
       \label{fig:conductivity_gan}}
       \subfloat[]{\includegraphics[width=3in]{eps_2deg_gan.tikz}
           \label{fig:epsilon_gan}}
-  \caption{Electrical properties of GaN/AlGaN based 2DEG at room temperature (a) Surface conductivity \eqref{eq:sigma_s} (b) Dielectric function \eqref{eq:epsilon_2deg} }
+  \caption{Electrical properties of a GaN/AlGaN 2DEG at 295 K, (a) surface conductivity \eqref{eq:sigma_s} (b) dielectric function \eqref{eq:epsilon_2deg} }
   \label{fig:Electric_properties_2DEG}
 \end{figure}
 %
-The equivalent transmission line network used to calculate the reflection coefficients consists of a simple circuit of two parallel impedances \cite{Hanson2008,Lovat2012,Gomez-Diaz2013} which is shown in Fig. \ref{fig:2deg_TL_equivalent}.
-
-Assuming the source lies on the top of the 2DEG, the down-looking impedance of the shunt configuration circuit is,
+The equivalent transmission line network used to calculate the reflection coefficients consists of a simple circuit of two parallel impedances \cite{Hanson2008,Lovat2012,Gomez-Diaz2013}. Assuming the source lies on the top of the 2DEG, the down-looking impedance of the shunt configuration circuit is,
 %
 \begin{equation}
   Z^{\downarrow}(z_0^+) = \frac{Z^{\downarrow}(z_0^-)}{ 1 + \sigma_s \, Z^{\downarrow}(z_0^-)}
@@ -851,7 +849,7 @@ where it is noted that $\sigma_s$ has the dimensions of admittance, and $Z^{\dow
   \label{tab:Gamma_2deg_freespace}
 \end{table}
 %
-\subsubsection{Location of poles}
+\subsubsection{Location of Poles}
 %
 The integrands of the SIs in \eqref{eq:somm_Gxx}-\eqref{eq:somm_Gzx} contain poles that are associated with the zeros of the integrand denominator. For a thin sheet in free-space, the poles can be analytically found by applying using the transverse resonance (TR) condition \cite[Sec. 2.4]{Felsen1994}, which requires that the total impedance at any point ($z =0$ in this case) must be zero. Using the TM parameters given in Table \ref{tab:Gamma_2deg_freespace} and \eqref{eq:2deg_downlooking_imp_from_top}, we write:
 %
@@ -913,19 +911,17 @@ A mode is termed as proper only when the pole lies in the fourth quadrant of the
   \caption{Components of $G^{\mathrm A}$ computed for a GaN/AlGaN based 2DEG sheet suspended in freespace. The cryogenic surface conductivity of the sheet is $\sigma_s = \num[round-precision=2]{7.6e-8} - \num[round-precision=3]{j 2.98e-3}\, \SI{}{\siemens}$ corresponding to $\SI[round-precision=2]{5.6}{\THz}$ at a temperature ($\SI{3}{\K}$). (a) $G^{\mathrm A}_{xx}$, (b) $G^{\mathrm A}_{zx}$}
   \label{fig:G^A_Gan_sheet_3k}
 \end{figure}
-
-Figure \ref{fig:G^A_Gan_sheet_3k} shows the components of the potential GF, $G^{\mathrm A}$, due to a horizontally oriented electric dipole located on the top side of the sheet. The observation point also lies on the same side as the source. The freespace GF is also plotted in each figure as a reference. In the near-field region that corresponds to normalized lateral distances less than $\num{1e-1}$, the overall field contribution on the sheet mainly comes from the source since the slope of the curve is the same as in freespace GF. The change in slope in the intermediate region shows the existence of plasmon like surface waves. The propagation length of the surface waves fundamentally depends on the loss which manifests in the form of real part of the conductivity. In Fig. \ref{fig:G^A_Gan_sheet_RT} in which the GFs are computed at room temperature, the plasmonic contribution decays substantially faster owing to the lossy nature of the 2DEG at room temperature. On the other hand, when the 2DEG is kept in a cryogenic environment, the real part is decreased by at least three order of magnitude resulting in an extremely low-loss setup that permits much larger propagation lengths. In Fig. \ref{fig:G^A_Gan_sheet_3k}, the GFs are computed at cryogenic temperature and the increase in propagation length is noticeable in the intermediate to far field region.
-
+%
+Figures \ref{fig:G^A_Gan_sheet_RT} and \ref{fig:G^A_Gan_sheet_3k} show the components of the potential GF, $G^{\mathrm A}$, due to a horizontally oriented electric dipole located on the top side of the sheet. The observation point also lies on the same side as the source. The freespace GF is also plotted in each figure as a reference. In the near-field region that corresponds to normalized lateral distances less than $\num{1e-1}$, the overall field contribution on the sheet mainly comes from the source since the slope of the curve is the same as in freespace GF. The change in slope in the intermediate region shows the existence of plasmon like surface waves. The propagation length of the surface waves fundamentally depends on the loss which manifests in the form of real part of the conductivity. In Fig. \ref{fig:G^A_Gan_sheet_RT} in which the GFs are computed at room temperature, the plasmonic contribution decays substantially faster owing to the lossy nature of the 2DEG at room temperature. On the other hand, when the 2DEG is kept in a cryogenic environment, the real part is decreased by at least three order of magnitude resulting in an extremely low-loss setup that permits much larger propagation lengths. In Fig. \ref{fig:G^A_Gan_sheet_3k}, the GFs are computed at cryogenic temperature and the increase in propagation length is noticeable in the intermediate to far field region.
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%
-
 
 % \section{Conclusion}
 %%
 %%
 %%
-In this chapter, a transmission line network based technique is discussed through which spectral and subsequently spatial domain potential GFs have been derived for a multilayer structure, with the aim to explore surface wave propagation in the terahertz frequency range. Of particular interest is an infinitesimally thin sheet of free-charges known as a 2DEG, for which components of the potential GFs are computed. Through the location of the analytically poles in the complex plane, it was shown that when the surface conductivity of the sheet has a negative imaginary part, proper TM modes exist. The required condition holds true for III-V heterostructures in the terahertz frequency range. Furthermore, the GFs exhibit plasmonic behavior in the intermediate to far-field region beyond the plasmons decay due to the loss present in the sheet.
+In this section, a transmission line network based technique is discussed through which spectral and subsequently spatial domain potential GFs have been derived for a multilayer structure, with the aim to explore surface wave propagation in the terahertz frequency range. Of particular interest is an infinitesimally thin sheet of free-charges known as a 2DEG, for which components of the potential GFs are computed. Through the location of the analytically poles in the complex plane, it was shown that when the surface conductivity of the sheet has a negative imaginary part, proper TM modes exist. The required condition holds true for III-V heterostructures in the terahertz frequency range. Furthermore, the GFs exhibit plasmonic behavior in the intermediate to far-field region beyond the plasmons decay due to the loss present in the sheet.
 
 %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%

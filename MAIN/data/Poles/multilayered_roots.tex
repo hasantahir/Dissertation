@@ -1,15 +1,15 @@
 \chapter{\uppercase{Surface waves extraction of a conductive sheet embedded in a multilayer environment}}
 
-In this chapter, we compute the dispersion diagrams of an infinitesimally thin conductive that lies embedded in a stack of semiconductors. The existence of surface wave propagation is investigated by searching for poles of an equivalent transmission line Green function determined by the multilayer structure. A numerical root-finding routine is presented that permits complex-valued solutions and avoids singularities in the complex plane.
-
+In this section, we compute the dispersion diagrams of an infinitesimally thin conductive that lies embedded in a stack of semiconductors. The existence of surface wave propagation is investigated by searching for poles of an equivalent transmission line Green function determined by the multilayer structure. A numerical root-finding routine is presented that permits complex-valued solutions and avoids singularities in the complex plane.
+%
 \section{Theory}
 %%
 %%%
 %%%
 %%%
-\subsection{Equivalent TL network of semiconductor heterostructures}
+\subsection{Equivalent TL Network of Semiconductor Heterostructures}
 %
-Modern field-effect transistors are engineered by epitaxially growing multiple layers of semiconducting materials with slightly different dielectric properties and band-gap energies. Of particular interest to the microwave and radiofrequency (RF) community are the group III-V materials in which extra-ordinary electromagnetic interfacial phenomena is observed in the terahertz frequency domain, mainly due to formation of a two-dimensional electron gas (2DEG) at the interface. To develop an understanding of the unusual electromagnetic properties of what are commonly known as semiconductor heterostructures, we construct an equivalent transmission model of the layered structure using the theory discussed in the previous chapter.
+Modern field-effect transistors are engineered by epitaxially growing multiple layers of semiconducting materials with slightly different dielectric properties and band-gap energies. Of particular interest to the microwave and radiofrequency (RF) community are the group III-V materials in which extra-ordinary electromagnetic interfacial phenomena is observed in the terahertz frequency domain, mainly due to formation of a two-dimensional electron gas (2DEG) at the interface. To develop an understanding of the unusual electromagnetic properties of what are commonly known as semiconductor heterostructures, we construct an equivalent transmission model of the layered structure using the theory discussed in the previous section.
 
 An illustration of a multilayer setup with a heterostructure near the top of the transistor substrate, through which modern devices like the high electron mobility transistor operate, is shown in Fig. \ref{fig:TL_equivalent_poles}a. Although a number of other material layers lie underneath the heterostructure that are essential to the fabrication process, primarily to strengthen the epitaxial structure, only the top layers are conducive to an electric field. Moreover, since the widths of the layers in the heterostructure are much smaller than the rest of the layers in the substrate stack, we assume that the heterostructure is unbounded from the bottom.
 
@@ -28,11 +28,10 @@ In a transmission line analogue, the equivalent representation of a conductive s
   \centering
   \def\svgwidth{\linewidth}
   \input{data/poles/figures/multilayers.pdf_tex}
-  \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) Equivalent transmission line network}
+  \caption{(a) Multilayer structure typically found in a high electron mobility transistor, (b) equivalent transmission line network}
   \label{fig:TL_equivalent_poles}
 \end{figure}
 %
-
 We determine the dispersion relation in a 2DEG region which lies embedded in a semiconductor stack. As stated earlier, the active state of the transistor in which a current flows through the 2DEG corresponds to a TM-mode transmission line network. It must also be mentioned that a similar TL analogue can be obtained if the physical structure is excited by a TM-polarized plane wave. The dispersion relation can be written using the transverse resonance method that requires the total admittance as seen from the 2DEG (at z = 0) to be zero \cite{Felsen1994,Gomez-Diaz2012},
 %
 \begin{equation}
@@ -48,7 +47,7 @@ A nontrivial solution of \eqref{eq:dispersion} in terms of the propagation const
 %%%%%%%%%%
 %%%%%%%%%%
 %%%%%%%%%%
-\section{Surface waves extraction technique}
+\section{Surface Waves Extraction Technique}
 %
 We seek to solve \eqref{eq:def} in the complex z-plane to obtain the zeros, $z_k$ in a given search region $\mathbb{C}$. For a multilayer problem such as the one shown in Fig. \ref{fig:TL_equivalent_poles}a, $f$ represents the dispersion relation \eqref{eq:dispersion} which, in fact is the denominator of the  transmission line Green function (TLGF). From hereon, $k_{\p}$ is replaced by $z$ for notational simplicity. Depending on the location of the zeros of the function $f$ in the complex plane, $z_k$'s can be termed as the surface wave modes of the multilayer or synonymously, poles of the TLGF.
 %
@@ -79,13 +78,13 @@ Argument principle method (APM) is a robust, complex root-finding algorithm in w
   \centering
   \def\svgwidth{.5\linewidth}
   \input{data/poles/figures/zplane.pdf_tex}
-  \caption{Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular controur $\Gamma$}
+  \caption{Illustration of the root-finding routine in the presence of branch point singularities. Only proper modes are sought within a rectangular contour $\Gamma$}
   \label{fig:zplane}
 \end{figure}
 %%
 %%
 %%
-\subsection{Counting the zeros}
+\subsection{Counting the Zeros}
 %
 To develop an efficient method of locating the zeros, we assume that the function $f$ is analytic, which implies that it is differentiable and free from any singularities. It is also required that $f$ is non-zero at the boundary, $\Gamma$ of the region $\mathbb{C}$. The search region is set as rectangular, mainly because of ease in programming it. The number of zeros, $N$ inside a region with a boundary $\Gamma$ can be found using the Cauchy's integral theorem \cite[pg. 71]{Krantz1999,Delves1967c},
 %
@@ -94,7 +93,7 @@ To develop an efficient method of locating the zeros, we assume that the functio
   \label{eq:cauchyth}
 \end{equation}
 %
-where the integrand is a logarithmic derivative of the function. The analytical derivative of functions such as found in dispersion relations like \eqref{eq:dispersion} are seldom readily-available and it is generally cumbersome to compute. In this chapter, we use approximate the derivative by a finite difference formula,
+where the integrand is a logarithmic derivative of the function. The analytical derivative of functions such as found in dispersion relations like \eqref{eq:dispersion} are seldom readily-available and it is generally cumbersome to compute. In this section, we use approximate the derivative by a finite difference formula,
 %
 \begin{equation}
   f'(z) = \frac{f(z + h) - f(z - h)}{2 h},
@@ -115,9 +114,9 @@ The value of both the integrals, i.e., \eqref{eq:cauchyth} and \eqref{eq:numzero
 %%
 %%
 %%
-\subsection{Locating the zeros}
+\subsection{Locating the Zeros}
 %
-In this chapter, we use the derivative-free approach \eqref{eq:numzeros} to compute the number of zeros and further on. After predicting the number of zeros, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
+In this section, we use the derivative-free approach \eqref{eq:numzeros} to compute the number of zeros and further on. After predicting the number of zeros, the function $f$ is then approximated by an associated \emph{formal orthogonal polynomial} (FOP), $\mathcal P$ of degree $N$, equal to the number of zeros. A necessary condition during approximation is that $\mathcal P$ must have the same roots, $z_k$ where $k = 1,2,...,N$ as $f$. Furthermore, as stated earlier $N$ must be less than $N_r$ to avoid a too-high order polynomial for which the root-finding procedure would be very slow.
 
 The polynomial $\mathcal P$ can be represented in a Lagrange form:
 %
@@ -226,7 +225,7 @@ where the column vector $\mathbf{z}$ is an eigenvector and $\lambda_k$'s are the
 %%
 %%
 %%
-\subsection{Refining the roots}
+\subsection{Refining the Roots}
 %
 % Approximating a function in a given contour with many zeros requires a higher-order polynomial that introduces computational problems. In addition, the integrals of the moments in \eqref{eq:sk} need to be evaluated with a higher-accuracy and the mapping between $s_k$ and $\alpha_k$ \eqref{eq:newtid} rseults in an ill-conditioned system. To overcome such pitfalls, a limit is enforced on the number of zeros in a given region. If the number of zeros exceeds a predetermined value $M$, the size of the search region is subdivided \cite{Delves1967c}.
 The accuracy of the roots obtained from the eigenvalues, $\lambda_k$ of \eqref{eq:evp} is not always high. However, $\lambda_k$'s is an excellent initial guess for any iterative root-search routine from the class of Householder's methods. We choose the \emph{Newton} method \cite{Press2007} having quadratic convergence and the iteration formula:
@@ -241,9 +240,9 @@ with $f'(x)$ is the first order derivative approximated by a finite difference f
 %%
 %%
 %%
-\subsection{Avoiding singularities}
+\subsection{Avoiding Singularities}
 %
-As mentioned earlier, the argument principle method requires the function to be analytic without any singularities. In this chapter, we explicitly deal with the dispersion relation \eqref{eq:dispersion} which is the denominator expression of the transmission line Green function. Therefore, branch point singularities only occur due to the presence of multivalued square roots that appear in the definition of the propagation constant, $k_{z,i} = (k_i^2 - k_x^2)^{1/2}$ in which $i =1,\dots, N$ and, $N$ being the number of layers, $k_i$ is the wavenumber of the $i$-th layer and $k_x$ is the propagation constant in the lateral direction. The branch points exist only when the top and bottom layers are unbounded. The dispersion relation shows an even dependence on $k_{zi}$ due to the layers that are bounded, hence they do not  contribute any branch points \cite[Section~5.3a]{Felsen1994}. In the worst case where the top and bottom layers are open and different from each other, two branch points exist in the complex plane that must be either removed or avoided in order to make the function analytic in the search region. Additionally, branch cuts emerge out of the branch points and there must not be any intersection with the contour of the search region.
+As mentioned earlier, the argument principle method requires the function to be analytic without any singularities. In this section, we explicitly deal with the dispersion relation \eqref{eq:dispersion} which is the denominator expression of the transmission line Green function. Therefore, branch point singularities only occur due to the presence of multivalued square roots that appear in the definition of the propagation constant, $k_{z,i} = (k_i^2 - k_x^2)^{1/2}$ in which $i =1,\dots, N$ and, $N$ being the number of layers, $k_i$ is the wavenumber of the $i$-th layer and $k_x$ is the propagation constant in the lateral direction. The branch points exist only when the top and bottom layers are unbounded. The dispersion relation shows an even dependence on $k_{zi}$ due to the layers that are bounded, hence they do not  contribute any branch points \cite[Section~5.3a]{Felsen1994}. In the worst case where the top and bottom layers are open and different from each other, two branch points exist in the complex plane that must be either removed or avoided in order to make the function analytic in the search region. Additionally, branch cuts emerge out of the branch points and there must not be any intersection with the contour of the search region.
 
 To remove the branch point singularities, the complex z-plane is typically mapped to another plane $\zeta$, by a transformation that unfolds the Riemann surface. For example, a trigonometric transformation such as \cite{Michalski2006,Polimeridis_2007},
 %
@@ -259,7 +258,7 @@ removes the branch point due to the multivalued propagation constant, $k_{zi}$, 
 %
 %
 
-In this chapter, our goal is to find the surface waves from the dispersion relation. We only seek the \emph{proper modes}, which are the roots of \eqref{eq:dispersion} that lie to the right of the branch point corresponding to $\max(k_{z1},k_{zN})$. In order to satisfy the Sommerfeld radiation condition which requires all fields to decay to zero at infinity, the proper sheet of the Riemann surface of the square-root function needs to be selected. This is accomplished by enforcing that the imaginary part of $k_{zi}$ that contributes a branch point, is negative everywhere.
+In this section, our goal is to find the surface waves from the dispersion relation. We only seek the \emph{proper modes}, which are the roots of \eqref{eq:dispersion} that lie to the right of the branch point corresponding to $\max(k_{z1},k_{zN})$. In order to satisfy the Sommerfeld radiation condition which requires all fields to decay to zero at infinity, the proper sheet of the Riemann surface of the square-root function needs to be selected. This is accomplished by enforcing that the imaginary part of $k_{zi}$ that contributes a branch point, is negative everywhere.
 %
 \begin{equation}
   \Im (k_{zi}) < 0
@@ -271,7 +270,7 @@ In this chapter, our goal is to find the surface waves from the dispersion relat
 %%%%%%%%%%%%%%%
 \section{Results}
 %
-\subsection{MIM waveguide}
+\subsection{MIM Waveguide}
 %
 %
 We first compute the modes of a metal-insulator-metal (MIM) waveguide described in \cite{Kocabas2009}. An air-filled region of thickness $d = \lambda/4$, where $\lambda = \SI{1550}{\nm}$ is sandwiched between two metal layers having permittivity $\E_m$. We first consider a lossless case in which $\E_m$ has a value of $-143.4967$, because of which the complex plane is essentially free from any branch-point singularities. For a TM case the dispersion relation is written as:
@@ -336,11 +335,11 @@ Next, we consider the lossy case where the permittivity of metal layers is $\E_m
       \hfil
       \subfloat[]{\includegraphics[height=2.5in]{kocabas_lossy.tikz}
           \label{fig:mim_lossy}}
-  \caption{TM modes of a MIM waveguide (a) Lossless case, $(\E_m = \num{-143.4967})$ (b) Lossy case, $(\E_m = \num{-143.4967 + j 9.5173})$}
+  \caption{TM modes of a MIM waveguide: (a) lossless case, $(\E_m = \num{-143.4967})$ (b) lossy case, $(\E_m = \num{-143.4967 + j 9.5173})$}
   \label{fig:mim}
 \end{figure}
 %
-\subsection{Embedded conductive sheets}
+\subsection{Embedded Conductive Sheets}
 %
 %
 Here we plot the dispersion curves of a 2DEG which is considered as a thin sheet embedded in a semiconductor heterostructure. We look at three types of structures,
@@ -363,7 +362,7 @@ that are classified, based on the presence of a perfectly conducting covering la
   \subfloat[]{\def\svgwidth{.3\linewidth}
   \input{data/poles/figures/backgated.pdf_tex}
   \label{fig:backgated}} \hfil
-  \caption{2DEG embedded in a semiconductor heterostructure at $z=0$ (a) Gated  (b) Ungated (c) Backgated}
+  \caption{2DEG embedded in a semiconductor heterostructure at $z=0$. (a) Gated, (b) backgated, and (c) ungated.}
   \label{fig:2deg_structure_types}
 \end{figure}
 %
@@ -386,8 +385,7 @@ We consider GaN/AlGaN (gallium nitride / aluminum gallium nitride)  heterostruct
  \label{tab:equations}
 \end{table}
 %
-
-The dispersion curves for each structure type at varying temperatures and electron concentrations are plotted in Fig. \ref{fig:dispersion_hif_lowT}.
+The dispersion curves for each structure type at varying temperatures and electron concentrations are plotted in Figs. \ref{fig:dispersion_hif_lowT} and \ref{fig:dispersion_hif_hiT}.
 %
 \begin{sidewaysfigure}
   \centering
@@ -397,11 +395,10 @@ The dispersion curves for each structure type at varying temperatures and electr
   \label{fig:backgated_hf_lt}}
   \subfloat[]{\includegraphics[height = 2.8in]{ungated_disp.tikz}
   \label{fig:ungated_hf_lt}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
   \label{fig:dispersion_hif_lowT}
 \end{sidewaysfigure}
 %
-
 To observe the effect of temperature, we now plot the dispersion curves at room temperature ($T = \SI{295}{\kelvin}$) which corresponds to a scattering time, $\tau$ of $\SI{114}{\fs}$.
 % %
 \begin{sidewaysfigure}
@@ -412,11 +409,10 @@ To observe the effect of temperature, we now plot the dispersion curves at room 
   \label{fig:backgated_hf_ht}}
   \subfloat[]{\includegraphics[height = 2.8in]{ungated_disp_lossy.tikz}
   \label{fig:ungated_hf_ht}}
-  \caption{Dispersion Curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated (c) Ungated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{5e13}{\cm^{-2}}$ at \SI{295}{\kelvin}. (a) Gated, (b) backgated, and (c) ungated.}
   \label{fig:dispersion_hif_hiT}
 \end{sidewaysfigure}
 %
-
 The conducting layer in the gated and back-gated cases depicts the gate terminal which is voltage biased in a normal transistor operation. By varying the voltage, we can subsequently modify the electron density in the 2DEG channel. In Figs. \ref{fig:dispersion_lof_lowT} and \ref{fig:dispersion_lof_hiT}, the dispersion curves of gated and backgated structures are plotted for $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{} and \SI{295}{\kelvin} respectively.
 % % %
 \begin{figure}[!htbp]
@@ -425,23 +421,22 @@ The conducting layer in the gated and back-gated cases depicts the gate terminal
       \label{fig:gated_lf_lt}}
   \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_low.tikz}
   \label{fig:backgated_lf_lt}}
-  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{\kelvin} (a) Gated (b) Backgated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{3}{\kelvin}. (a) Gated and (b) backgated.}
   \label{fig:dispersion_lof_lowT}
   \end{center}
 \end{figure}
 %
-
 \begin{figure}[!htbp]
   \begin{center}
   \subfloat[]{\includegraphics[height=2.8in]{gated_disp_lossy_low.tikz}
       \label{fig:gated_lf_ht}}
   \subfloat[]{\includegraphics[height=2.8in]{backgated_disp_lossy_low.tikz}
   \label{fig:backgated_lf_ht}}
-  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{295}{\kelvin} (a) Gated (b) Backgated}
+  \caption{Dispersion curves plotted for a GaN/AlGaN heterostructure with $N_s = \SI{1e12}{\cm^{-2}}$ at \SI{295}{\kelvin}. (a) Gated, and (b) backgated.}
   \label{fig:dispersion_lof_hiT}
   \end{center}
 \end{figure}
-
+%
 In the results shown, the lowest order $\text{TM}_0$ is plotted in all cases. By comparing the plots in Fig. \ref{fig:dispersion_hif_lowT} with the corresponding plots in Fig. \ref{fig:dispersion_hif_lowT}, it is apparent that by increasing the temperature from liquid helium state tot room temperature, loss expressed in terms of the imaginary part of the propagation constant is introduced. The imaginary part and the light line are enhanced for illustration.
 
 The propagation constant belonging to the gated region exhibits a linear relationship \cite{Sydoruk2015,Ando1982} as shown in Figs. \ref{fig:gated_hf_lt} and \ref{fig:gated_hf_ht}. Whereas a parabolic type dispersion curve is observed for the ungated region in Figs. \ref{fig:ungated_hf_lt} and \ref{fig:ungated_hf_ht}. For the backgated structure, the plot is initially linear for lower frequencies, followed by a parabolic region. The behavior is shown in Figs. \ref{fig:backgated_hf_lt} and

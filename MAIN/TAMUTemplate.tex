@@ -35,8 +35,21 @@
 \usepackage{tocloft}
 \usepackage[rm, tiny, center, compact]{titlesec}
 \usepackage{indentfirst}
-\usepackage{etoolbox}
+\usepackage{etoolbox} % Do this to remove LOF chapter gaps
+% \makeatletter
+% % \patchcmd{<cmd>}{<search>}{<replace>}{<succes>}{<failure>}
+% \patchcmd{\@chapter}{\addtocontents{lof}{\protect\addvspace{10\p@}}}{}{}{}% LoF
+% \patchcmd{\@chapter}{\addtocontents{lot}{\protect\addvspace{10\p@}}}{}{}{}% LoT
+% \makeatother
 
+\usepackage{xpatch}
+
+\makeatletter
+\xpatchcmd{\@chapter}{%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+}{}{}{}
+\makeatother
 \usepackage{tocvsec2}
 \usepackage[titletoc]{appendix}
 \usepackage{appendix}
@@ -103,7 +116,7 @@
 %%%%%%%%%% ENCODING
 %%%%%%%%%%
 \usepackage[utf8x]{inputenc} % Use it to include other characters than ABC
-\usepackage[T1]{fontenc} % sane font encoding
+% \usepackage[T1]{fontenc} % sane font encoding
 \usepackage{textcomp} % provide lots of new symbols
 \usepackage{lmodern}
 \usepackage[sc,osf]{mathpazo}% for math
@@ -179,42 +192,37 @@ urlcolor={black}
   \endgroup
 }
 
+
+\makeatletter
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                       \if@mainmatter
+                         \refstepcounter{chapter}%
+                         \typeout{\@chapapp\space\thechapter.}%
+                         \addcontentsline{toc}{chapter}%
+                                   {\protect\numberline{\thechapter}#1}%
+                       \else
+                         \addcontentsline{toc}{chapter}{#1}%
+                       \fi
+                    \else
+                      \addcontentsline{toc}{chapter}{#1}%
+                    \fi
+                    \chaptermark{#1}%
+%                    \addtocontents{lof}{\protect\addvspace{10\p@}}% NEW
+%                    \addtocontents{lot}{\protect\addvspace{10\p@}}% NEW
+                    \if@twocolumn
+                      \@topnewpage[\@makechapterhead{#2}]%
+                    \else
+                      \@makechapterhead{#2}%
+                      \@afterheading
+                    \fi}
+\makeatother
 % %%%%%%%%%%
 % %%%%%%%%%% Glossaries
 % %%%%%%%%%%
-% \usepackage[section,sanitize]{glossaries}
-% \usepackage{glossary-longragged}
-%
-% \newglossarystyle{wspr}{%
-%   \renewenvironment{theglossary}%
-%     {\begin{longtable}{@{}l@{\,}>{\raggedright}p{\glsdescwidth}%
-%        >{\raggedright}p{\glspagelistwidth}@{}}}%
-%     {\end{longtable}}%
-%   \renewcommand*{\glossaryheader}{%
-%     \bfseries\entryname~&\bfseries\descriptionname&
-%     \bfseries\pagelistname\tabularnewline\endhead}%
-%   \renewcommand*{\glsgroupheading}[1]{}%
-%   \renewcommand*{\glossaryentryfield}[5]{%
-%     \glsentryitem{##1}\glstarget{##1}{##2} & ##3 & ##5\tabularnewline}%
-%   \renewcommand*{\glossarysubentryfield}[6]{%
-%      &
-%      \glssubentryitem{##2}%
-%      \glstarget{##2}{\strut}##4 & ##6\tabularnewline}%
-%   \renewcommand*{\glsgroupskip}{ & &\tabularnewline}%
-% }
-%
-% \glossarystyle{wspr}
-% \glsdisablehyper
-%
-% \makeglossaries
-% \renewcommand\glossaryname{Nomenclature}
-% \renewcommand\entryname{Symbol}
-% \renewcommand\pagelistname{Page}
-% %\addtolength\glsdescwidth{1cm}
-% \addtolength\glspagelistwidth{1.8cm}
 
 
-\usepackage{docmute}
+
+% \usepackage{docmute}
 
 %%%%%%%%%%
 %%%%%%%%%% TIPS and TRICKS
@@ -334,7 +342,7 @@ urlcolor={black}
 \renewcommand{\tamupapertype}{Dissertation}
 
 %Your full name goes here, as it is in university records. Check your student record on Howdy if there is any mismatch.
-\renewcommand{\tamufullname}{Hasan Tahir Abbas}
+\renewcommand{\tamufullname}{Hasan T. Abbas}
 
 %The degree title goes here. See the OGAPS site for more info.
 \renewcommand{\tamudegree}{Doctor of Philosophy}
