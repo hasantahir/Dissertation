@@ -12,6 +12,7 @@
         \PreviewEnvironment{tikzpicture}
         \setlength\PreviewBorder{0mm}
 
+        \usepackage{physics}
         \begin{document}
 
         %Angle Definitions
@@ -19,7 +20,7 @@
 
         %set the plot display orientation
         %syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
-        \tdplotsetmaincoords{60}{130}
+\tdplotsetmaincoords{60}{110}
 
         %define polar coordinates for some vector
         %TODO: look into using 3d spherical coordinate system
@@ -29,69 +30,73 @@
 
         %start tikz picture, and use the tdplot_main_coords style to implement the display 
         %coordinate transformation provided by 3dplot
-        \begin{tikzpicture}[scale=2]
+        \begin{tikzpicture}[scale=2,tdplot_main_coords]
 
 
 
         %set up some lengths 
         %-----------------------
         \pgfmathsetmacro{\len}{2}
-        \pgfmathsetmacro{\h}{.5}
-        \pgfmathsetmacro{\l}{.25}
+        \pgfmathsetmacro{\h}{0}
+        \pgfmathsetmacro{\l}{1}
 
         %set up some coordinates 
         %-----------------------
         \coordinate (O) at (0,0,0);
         \coordinate (S) at (0,\h,0);
+        \coordinate (T) at (0,0,\l/2);
 
         % Define P through spherical coordinates
-        \tdplotsetcoord{P}{\rvec}{\thetavec}{\phivec}
+        \tdplotsetcoord{P}{\rvec}{\thetavec - 30}{\phivec}
         %draw figure contents
         %--------------------
 
-        \tikzset{facestyle/.style={fill=lightgray,draw=black,thin,dashed, line join=round}}
-        % face "back" 
-        \begin{scope}[canvas is yx plane at z=-\len]
-          \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
-        \end{scope}
-        % face  "left"
-        \begin{scope}[canvas is yz plane at x=-\len]
-          \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
-        \end{scope}
-        % face "front"
-        \begin{scope}[canvas is yx plane at z=\len]
-          \path[facestyle, shade] (-.5,-\len) rectangle (0,\len) ;
-        \end{scope}
-        % face  "right"
-        \begin{scope}[canvas is yz plane at x=\len]
-          \path[facestyle, shade] (-.5,-\len) rectangle (0,\len);
-        \end{scope}
-        % face "top" 
-        \begin{scope}[canvas is zx plane at y =0]
-         \path[facestyle] (-\len,-\len) node[anchor=south east]{\textcircled{\raisebox{-0.9pt}{1}}} node[anchor=north west]{\textcircled{\raisebox{-0.9pt}{2}}} rectangle (\len,\len)  ;
-        \end{scope}
+        % \tikzset{facestyle/.style={fill=lightgray,draw=black,thin,dashed, line join=round}}
+        % % face "back" 
+        % \begin{scope}[canvas is yx plane at z=-\len]
+        %   \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
+        % \end{scope}
+        % % face  "left"
+        % \begin{scope}[canvas is yz plane at x=-\len]
+        %   \path[facestyle,shade] (-.5,-\len) rectangle (0,\len);
+        % \end{scope}
+        % % face "front"
+        % \begin{scope}[canvas is yx plane at z=\len]
+        %   \path[facestyle, shade] (-.5,-\len) rectangle (0,\len) ;
+        % \end{scope}
+        % % face  "right"
+        % \begin{scope}[canvas is yz plane at x=\len]
+        %   \path[facestyle, shade] (-.5,-\len) rectangle (0,\len);
+        % \end{scope}
+        % % face "top" 
+        % \begin{scope}[canvas is zx plane at y =0]
+        %  \path[facestyle] (-\len,-\len) node[anchor=south east]{\textcircled{\raisebox{-0.9pt}{1}}} node[anchor=north west]{\textcircled{\raisebox{-0.9pt}{2}}} rectangle (\len,\len)  ;
+        % \end{scope}
 
         %draw the main coordinate system axes
         \draw[thin,-stealth] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
-        \draw[thin,-stealth] (0,0,0) -- (0,1,0) node[anchor=north east]{$z$};
-        \draw[thin,-stealth] (0,0,0) -- (0,0,1) node[anchor=south]{$y$};
+        \draw[thin,-stealth] (0,0,0) -- (0,1,0) node[anchor=north east]{$y$};
+        \draw[thin,-stealth] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
 
         %draw the negative coordinate system axes
         \draw[thin,dashed] (0,0,0) -- (-1,0,0);
-        \draw[thin,dashed] (0,0,0) -- (0,0,-1);
+        \draw[thin,dashed] (0,0,0) -- (0,-1,0);
         % \draw[thick,dashed] (0,0,0) -- (0,0,-.5);
 
         %draw a vector from origin to point (P) 
-        \draw[-stealth,color=black] (O) -- node[anchor=south west]{$\bf{r}$} (P) ;
+        % \draw[-stealth,color=black] (O) -- node[midway, anchor=east]{$\va{r}$} (P) ;
 
-        %draw a vector from source to point (P) 
-        \draw[-stealth,color=black] (S) -- node[anchor=south east]{$\bf{r'}$} (P);
+        %draw a vector from origin to point (P) 
+        \draw[-stealth,color=black] (O) -- node[midway, anchor=south]{$\va{r}$} (P) ;
+
+        % %draw a vector from source to point (P) 
+        \draw[-stealth,color=black] (T) -- node[anchor=south east]{$\bf{r'}$} (P);
 
                 %draw a vector from source to point (P) 
         \draw[color=black] (P) node[anchor=south]{$P$};
 
         % draw the Dipole
-        \draw[-stealth,very thick, color=red] (0,\h - \l/2,0) --  node[anchor=north east]{$Il$} (0,\h + \l/2,0) node[color = black, anchor=north east]{$h$};
+        \draw[-stealth,very thick, color=red] (0,0,\h - \l/2) --  node[anchor=north east]{} (0,0,\h + \l/2) node[color = black, anchor= east]{$I \dd{l}$};
             % \draw[-stealth,very thick, color=red] (0,0,\h) -- (0,0,\h) node[anchor=south]{$h$};
 
 
